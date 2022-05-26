@@ -26,12 +26,14 @@ Description: "Patient needing a transplant"
 * extension contains 
     $us-core-race named race 0..1 MS and
     $us-core-ethnicity named ethnicity 0..1 MS and
-    nmdp-race named nmdprace 0..1 MS
+    nmdp-race named nmdprace 0..1 MS and
+    nmdp-ethnicity named nmdpethnicity 0..1 MS
 * obeys rac-1
+* obeys eth-1
 
 Instance: MSPatientExample
 InstanceOf: MSPatient
-Description: "An example of a patient needing a donor using us-core-race code."
+Description: "Example of a patient needing a donor using us-core-race and us-core-ethnicity codes."
 * name
   * given[0] = "Jane"
   * family = "Everyperson"
@@ -50,7 +52,7 @@ Description: "An example of a patient needing a donor using us-core-race code."
 
 Instance: MSPatientExample2
 InstanceOf: MSPatient
-Description: "An example of a patient needing a donor using NMDP race code."
+Description: "Example of a patient needing a donor using NMDP race code."
 * name
   * given[0] = "Joe"
   * family = "Everyperson"
@@ -63,10 +65,12 @@ Description: "An example of a patient needing a donor using NMDP race code."
 * address.postalCode = "55401"
 * telecom[0].value = "1-612-555-1234"
 * extension[nmdprace].valueCodeableConcept.coding = $NMDPRace#EURWRC "North American or European"
+* extension[nmdpethnicity].valueCodeableConcept.coding = $NMDPEthnicity#NHIS "Not Hispanic or Latino"
+
 
 Instance: MSPatientExample3
 InstanceOf: MSPatient
-Description: "An example of a patient without a race code - this should generate an error."
+Description: "Example of a patient without a race code - this should generate an error."
 * name
   * given[0] = "Jason"
   * family = "Everyperson"
@@ -81,7 +85,7 @@ Description: "An example of a patient without a race code - this should generate
 
 Instance: MSPatientExample4
 InstanceOf: MSPatient
-Description: "An example of a patient needing a donor using us-core-race code but not us-core-ethnicity - this should generate an error"
+Description: "Example of a patient needing a donor using us-core-race code but not us-core-ethnicity - this should generate an error"
 * name
   * given[0] = "Jona"
   * family = "Everyperson"
@@ -106,7 +110,7 @@ Description: "Transplant Center"
 
 Instance: TCExample
 InstanceOf: transplantcenter
-Description: "An example of a Transplant Center."
+Description: "Example of a Transplant Center."
 * name = "My Transplant Center"
 * identifier.system = "http://terminology.nmdp.org/identifier/transplantcenter"
 * identifier.value = "000"
@@ -123,7 +127,7 @@ Description: "Patient Sample"
 
 Instance: MSSpecimenExample
 InstanceOf: MSSpecimen
-Description: "An example patient specimen."
+Description: "Example patient specimen."
 * identifier.system = "http://terminology.nmdp.org/identifier/transplantcenter"
 * identifier.value = "000"
 * subject = Reference(MSPatientExample)
@@ -138,7 +142,7 @@ Description: "Transplant Center Coordinator"
 
 Instance: CoordinatorExample
 InstanceOf: transplantcentercoordinator
-Description: "An example of a Transplant Center Coordinator."
+Description: "Example of a Transplant Center Coordinator."
 * name
   * given[0] = "Jill"
   * family = "Doe"
@@ -168,12 +172,22 @@ Id: nmdp-race
 Title: "NMDP Race Code Extension"
 Description: "Extension to use NMDP Race Codes"
 * value[x] only CodeableConcept
-* valueCodeableConcept.coding.code from NMDPRaceCodes (required)
+* valueCodeableConcept.coding.code from nmdp-race-codes (required)
+
+Extension: NMDPEthnicity
+Id: nmdp-ethnicity
+Title: "NMDP Ethnicity Code Extension"
+Description: "Extension to use NMDP Ethnicity Codes"
+* value[x] only CodeableConcept
+* valueCodeableConcept.coding.code from nmdp-ethnicity-codes (required)
+
 
 Invariant: rac-1
 Severity: #error
 Description: "Shall use either NMDP Race extension or us-core-race"
-// Expression: "extension[nmdprace].exists() or extension[race].exists()"
-// Expression: "extension.exists(url = 'http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race') or extension.exists(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race')"
-Expression: "extension.exists(url = 'http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race') or (extension.exists(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity')) and extension.exists(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race')"
-// Expression: "extension.exists(url = 'http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race' or (url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' and url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race'))"
+Expression: "extension.exists(url = 'http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race' or url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race')"
+
+Invariant: eth-1
+Severity: #error
+Description: "Shall use either NMDP ethnicity extension or us-core-ethnicity"
+Expression: "extension.exists(url = 'http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-ethnicity' or url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity')"

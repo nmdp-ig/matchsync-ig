@@ -69,4 +69,16 @@ Description: "Rh status of Patient"
 * code = $LNC#10331-7 "Rh [Type] in Blood"
 * effectiveDateTime 1..1 MS
 * value[x] only CodeableConcept
-* valueCodeableConcept from loinc-abo-codes
+* valueCodeableConcept from loinc-posneg-codes
+
+Instance: MSRhObsExample
+InstanceOf: ms-rhstatus-observation
+Description: "Example of patient Rh status"
+* status = #final
+* subject = Reference(MSPatientExample)
+* valueCodeableConcept
+  * coding
+    * system = $LNC
+    * code = 	#LA6576-8	
+    * display = "Positive"
+* effectiveDateTime = "2022-05-01"
