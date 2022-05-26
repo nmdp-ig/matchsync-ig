@@ -1,0 +1,244 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsource/CodeSystem/nmdp-race-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "nmdp-race-cs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.nmdp.org/codesystem/race defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AAFA<a name=\"nmdp-race-cs-AAFA\"> </a></td><td>African American</td></tr><tr><td style=\"white-space:nowrap\">AFA<a name=\"nmdp-race-cs-AFA\"> </a></td><td>Unspecified</td></tr><tr><td style=\"white-space:nowrap\">AFB<a name=\"nmdp-race-cs-AFB\"> </a></td><td>African</td></tr><tr><td style=\"white-space:nowrap\">AINDI<a name=\"nmdp-race-cs-AINDI\"> </a></td><td>South Asian</td></tr><tr><td style=\"white-space:nowrap\">AISC<a name=\"nmdp-race-cs-AISC\"> </a></td><td>American Indian South or Centr</td></tr><tr><td style=\"white-space:nowrap\">ALANAM<a name=\"nmdp-race-cs-ALANAM\"> </a></td><td>Alaska Native or Aleut</td></tr><tr><td style=\"white-space:nowrap\">AMIND<a name=\"nmdp-race-cs-AMIND\"> </a></td><td>North American Indian</td></tr><tr><td style=\"white-space:nowrap\">API<a name=\"nmdp-race-cs-API\"> </a></td><td>Unspecified</td></tr><tr><td style=\"white-space:nowrap\">CARB<a name=\"nmdp-race-cs-CARB\"> </a></td><td>Black Caribbean</td></tr><tr><td style=\"white-space:nowrap\">CARHIS<a name=\"nmdp-race-cs-CARHIS\"> </a></td><td>Caribbean Hispanic</td></tr><tr><td style=\"white-space:nowrap\">CARIBI<a name=\"nmdp-race-cs-CARIBI\"> </a></td><td>Caribbean Indian</td></tr><tr><td style=\"white-space:nowrap\">CAU<a name=\"nmdp-race-cs-CAU\"> </a></td><td>Unspecified</td></tr><tr><td style=\"white-space:nowrap\">DEC<a name=\"nmdp-race-cs-DEC\"> </a></td><td>Declines or No Race Selected</td></tr><tr><td style=\"white-space:nowrap\">EEURO<a name=\"nmdp-race-cs-EEURO\"> </a></td><td>Eastern European</td></tr><tr><td style=\"white-space:nowrap\">EURWRC<a name=\"nmdp-race-cs-EURWRC\"> </a></td><td>North American or European</td></tr><tr><td style=\"white-space:nowrap\">FILII<a name=\"nmdp-race-cs-FILII\"> </a></td><td>Filipino</td></tr><tr><td style=\"white-space:nowrap\">GUAMAN<a name=\"nmdp-race-cs-GUAMAN\"> </a></td><td>Guamanian</td></tr><tr><td style=\"white-space:nowrap\">HAWAII<a name=\"nmdp-race-cs-HAWAII\"> </a></td><td>Hawaiian</td></tr><tr><td style=\"white-space:nowrap\">HAWI<a name=\"nmdp-race-cs-HAWI\"> </a></td><td>Unspecified</td></tr><tr><td style=\"white-space:nowrap\">HIS<a name=\"nmdp-race-cs-HIS\"> </a></td><td>Unspecified Hispanic</td></tr><tr><td style=\"white-space:nowrap\">JAPI<a name=\"nmdp-race-cs-JAPI\"> </a></td><td>Japanese</td></tr><tr><td style=\"white-space:nowrap\">KORI<a name=\"nmdp-race-cs-KORI\"> </a></td><td>Korean</td></tr><tr><td style=\"white-space:nowrap\">MAFA<a name=\"nmdp-race-cs-MAFA\"> </a></td><td>Multiple Black</td></tr><tr><td style=\"white-space:nowrap\">MAPI<a name=\"nmdp-race-cs-MAPI\"> </a></td><td>Multiple Asian/Pacific Islndr</td></tr><tr><td style=\"white-space:nowrap\">MCAU<a name=\"nmdp-race-cs-MCAU\"> </a></td><td>Multiple Caucasian</td></tr><tr><td style=\"white-space:nowrap\">MEDIT<a name=\"nmdp-race-cs-MEDIT\"> </a></td><td>Mediterranean</td></tr><tr><td style=\"white-space:nowrap\">MENAFC<a name=\"nmdp-race-cs-MENAFC\"> </a></td><td>MidEast/No. Coast of Africa</td></tr><tr><td style=\"white-space:nowrap\">MHAW<a name=\"nmdp-race-cs-MHAW\"> </a></td><td>Multiple Nat. Hw/Oth Pa. Isln</td></tr><tr><td style=\"white-space:nowrap\">MHIS<a name=\"nmdp-race-cs-MHIS\"> </a></td><td>Multiple Hispanic</td></tr><tr><td style=\"white-space:nowrap\">MIDEAS<a name=\"nmdp-race-cs-MIDEAS\"> </a></td><td>Middle Eastern</td></tr><tr><td style=\"white-space:nowrap\">MNAM<a name=\"nmdp-race-cs-MNAM\"> </a></td><td>Multiple Native American</td></tr><tr><td style=\"white-space:nowrap\">MSWHIS<a name=\"nmdp-race-cs-MSWHIS\"> </a></td><td>Mexican or Chicano</td></tr><tr><td style=\"white-space:nowrap\">MULTI<a name=\"nmdp-race-cs-MULTI\"> </a></td><td>Multiple Race</td></tr><tr><td style=\"white-space:nowrap\">NAM<a name=\"nmdp-race-cs-NAM\"> </a></td><td>Unspecified</td></tr><tr><td style=\"white-space:nowrap\">NAMB<a name=\"nmdp-race-cs-NAMB\"> </a></td><td>North American Black</td></tr><tr><td style=\"white-space:nowrap\">NAMER<a name=\"nmdp-race-cs-NAMER\"> </a></td><td>North American</td></tr><tr><td style=\"white-space:nowrap\">NCAFRI<a name=\"nmdp-race-cs-NCAFRI\"> </a></td><td>North Coast of Africa</td></tr><tr><td style=\"white-space:nowrap\">NCHI<a name=\"nmdp-race-cs-NCHI\"> </a></td><td>Chinese</td></tr><tr><td style=\"white-space:nowrap\">NEURO<a name=\"nmdp-race-cs-NEURO\"> </a></td><td>Northern European</td></tr><tr><td style=\"white-space:nowrap\">OPI<a name=\"nmdp-race-cs-OPI\"> </a></td><td>Other Pacific Islander</td></tr><tr><td style=\"white-space:nowrap\">OTH<a name=\"nmdp-race-cs-OTH\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">SAMOAN<a name=\"nmdp-race-cs-SAMOAN\"> </a></td><td>Samoan</td></tr><tr><td style=\"white-space:nowrap\">SCAHIS<a name=\"nmdp-race-cs-SCAHIS\"> </a></td><td>South/Cntrl Amer. Hisp.</td></tr><tr><td style=\"white-space:nowrap\">SCAMB<a name=\"nmdp-race-cs-SCAMB\"> </a></td><td>Black South or Central America</td></tr><tr><td style=\"white-space:nowrap\">SCSEAI<a name=\"nmdp-race-cs-SCSEAI\"> </a></td><td>Other Southeast Asian</td></tr><tr><td style=\"white-space:nowrap\">UNK<a name=\"nmdp-race-cs-UNK\"> </a></td><td>Unknown/Question Not Asked</td></tr><tr><td style=\"white-space:nowrap\">VIET<a name=\"nmdp-race-cs-VIET\"> </a></td><td>Vietnamese</td></tr><tr><td style=\"white-space:nowrap\">WCARIB<a name=\"nmdp-race-cs-WCARIB\"> </a></td><td>White Caribbean</td></tr><tr><td style=\"white-space:nowrap\">WEURO<a name=\"nmdp-race-cs-WEURO\"> </a></td><td>Western European</td></tr><tr><td style=\"white-space:nowrap\">WSCA<a name=\"nmdp-race-cs-WSCA\"> </a></td><td>White South or Central America</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://terminology.nmdp.org/codesystem/race"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "NMDPRaceCS"];
+  fhir:CodeSystem.title [ fhir:value "NMDP Race Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2022-05-26T09:36:20-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "NMDP"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "NMDP" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "CodeSystem of NMDP Diseases"];
+  fhir:CodeSystem.copyright [ fhir:value "National Marrow Donor Program"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "50"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "AAFA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "African American" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "AFA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unspecified" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "AFB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "African" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "AINDI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "South Asian" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "AISC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "American Indian South or Centr" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "ALANAM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Alaska Native or Aleut" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "AMIND" ];
+     fhir:CodeSystem.concept.display [ fhir:value "North American Indian" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "API" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unspecified" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "CARB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Black Caribbean" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "CARHIS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Caribbean Hispanic" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "CARIBI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Caribbean Indian" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "CAU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unspecified" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "DEC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Declines or No Race Selected" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "EEURO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eastern European" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "EURWRC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "North American or European" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "FILII" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Filipino" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "GUAMAN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Guamanian" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "HAWAII" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hawaiian" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "HAWI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unspecified" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "HIS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unspecified Hispanic" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "JAPI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Japanese" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "KORI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Korean" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "MAFA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multiple Black" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "MAPI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multiple Asian/Pacific Islndr" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "MCAU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multiple Caucasian" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "MEDIT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mediterranean" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "MENAFC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "MidEast/No. Coast of Africa" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "MHAW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multiple Nat. Hw/Oth Pa. Isln" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "MHIS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multiple Hispanic" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "MIDEAS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Middle Eastern" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "MNAM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multiple Native American" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "MSWHIS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mexican or Chicano" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "MULTI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multiple Race" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "NAM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unspecified" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "NAMB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "North American Black" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "NAMER" ];
+     fhir:CodeSystem.concept.display [ fhir:value "North American" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "NCAFRI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "North Coast of Africa" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "NCHI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chinese" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "NEURO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Northern European" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "OPI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other Pacific Islander" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "OTH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "SAMOAN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Samoan" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "SCAHIS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "South/Cntrl Amer. Hisp." ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "SCAMB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Black South or Central America" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "SCSEAI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other Southeast Asian" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "UNK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown/Question Not Asked" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "VIET" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vietnamese" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "WCARIB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "White Caribbean" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "WEURO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Western European" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "WSCA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "White South or Central America" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsource/CodeSystem/nmdp-race-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

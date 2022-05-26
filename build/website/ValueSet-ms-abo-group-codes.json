@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ms-abo-group-codes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-nmdp-abo-codes.html\">http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-abo-codes</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-loinc-abo-codes.html\">http://loinc.org/vs/LL2419-1</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-sct-abo-group.html\">http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group</a></li></ul></div>"
+  },
+  "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/ms-abo-group-codes",
+  "version": "0.1.0",
+  "name": "MSABOGroup",
+  "title": "ABO Group Codes for MatchSource",
+  "status": "active",
+  "date": "2022-05-26T09:36:20-05:00",
+  "publisher": "NMDP",
+  "contact": [
+    {
+      "name": "NMDP",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://bethematch.org"
+        }
+      ]
+    }
+  ],
+  "description": "ABO Group Codes for MatchSource. Combines LOINC and NMDP codes",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-abo-codes"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://loinc.org/vs/LL2419-1"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group"
+        ]
+      }
+    ]
+  }
+}

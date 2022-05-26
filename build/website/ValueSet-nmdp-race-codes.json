@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "id": "nmdp-race-codes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-race-cs.html\"><code>http://terminology.nmdp.org/codesystem/race</code></a></li></ul></div>"
+  },
+  "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-race-codes",
+  "version": "0.1.0",
+  "name": "NMDPRaceCodes",
+  "title": "NMDP Race Code Value Set",
+  "status": "active",
+  "date": "2022-05-26T09:36:20-05:00",
+  "publisher": "NMDP",
+  "contact": [
+    {
+      "name": "NMDP",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://bethematch.org"
+        }
+      ]
+    }
+  ],
+  "description": "NMDP Race Codes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.nmdp.org/codesystem/race"
+      }
+    ]
+  }
+}

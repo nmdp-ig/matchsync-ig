@@ -1,0 +1,76 @@
+{
+  "resourceType": "Patient",
+  "id": "MSPatientExample",
+  "meta": {
+    "profile": [
+      "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Jane Everyperson </b> female, DoB: 1974-12-25</p></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "White"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+    },
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Non Hispanic or Latino"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Non Hispanic or Latino"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+    }
+  ],
+  "name": [
+    {
+      "family": "Everyperson",
+      "given": [
+        "Jane"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-612-555-1234"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1974-12-25",
+  "address": [
+    {
+      "line": [
+        "123 Main St"
+      ],
+      "city": "Minneapolis",
+      "state": "MN",
+      "postalCode": "55401",
+      "country": "USA"
+    }
+  ]
+}

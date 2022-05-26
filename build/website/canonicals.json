@@ -1,0 +1,191 @@
+[
+  {
+    "id": "matchsource",
+    "type": "ImplementationGuide",
+    "url": "http://fhir.nmdp.org/ig/matchsource/ImplementationGuide/matchsource",
+    "version": "0.1.0",
+    "name": "MatchSourceIG"
+  },
+  {
+    "id": "ms-abogroup-observation",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-abogroup-observation",
+    "version": "0.1.0",
+    "name": "MSABOGroupObservation"
+  },
+  {
+    "id": "ms-height-observation",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-height-observation",
+    "version": "0.1.0",
+    "name": "MSHeightObservation"
+  },
+  {
+    "id": "ms-rhstatus-observation",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-rhstatus-observation",
+    "version": "0.1.0",
+    "name": "MSRhStatusObservation"
+  },
+  {
+    "id": "ms-weight-observation",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-weight-observation",
+    "version": "0.1.0",
+    "name": "MSWeightObservation"
+  },
+  {
+    "id": "msdiagnosis",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msdiagnosis",
+    "version": "0.1.0",
+    "name": "MSDiagnosis"
+  },
+  {
+    "id": "mspatient",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient",
+    "version": "0.1.0",
+    "name": "MSPatient"
+  },
+  {
+    "id": "msspecimen",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen",
+    "version": "0.1.0",
+    "name": "MSSpecimen"
+  },
+  {
+    "id": "nmdp-race",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race",
+    "version": "0.1.0",
+    "name": "NMDPRace"
+  },
+  {
+    "id": "transplantcenter",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcenter",
+    "version": "0.1.0",
+    "name": "TransplantCenter"
+  },
+  {
+    "id": "transplantcentercoordinator",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcentercoordinator",
+    "version": "0.1.0",
+    "name": "TransplantCenterCoordinator"
+  },
+  {
+    "id": "ms-abo-group-codes",
+    "type": "ValueSet",
+    "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/ms-abo-group-codes",
+    "version": "0.1.0",
+    "name": "MSABOGroup"
+  },
+  {
+    "id": "nmdp-abo-codes",
+    "type": "ValueSet",
+    "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-abo-codes",
+    "version": "0.1.0",
+    "name": "NMDPABOCodes"
+  },
+  {
+    "id": "nmdp-disease-codes",
+    "type": "ValueSet",
+    "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-disease-codes",
+    "version": "0.1.0",
+    "name": "NMDPDiseaseCodes"
+  },
+  {
+    "id": "nmdp-diseasestage-codes",
+    "type": "ValueSet",
+    "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-diseasestage-codes",
+    "version": "0.1.0",
+    "name": "NMDPDiseasStageCodes"
+  },
+  {
+    "id": "nmdp-language-codes",
+    "type": "ValueSet",
+    "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-language-codes",
+    "version": "0.1.0",
+    "name": "NMDPLanguageCodes"
+  },
+  {
+    "id": "nmdp-race-codes",
+    "type": "ValueSet",
+    "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-race-codes",
+    "version": "0.1.0",
+    "name": "NMDPRaceCodes"
+  },
+  {
+    "id": "nmdp-rh-status-codes",
+    "type": "ValueSet",
+    "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-rh-status-codes",
+    "version": "0.1.0",
+    "name": "NMDPRhStatusCodes"
+  },
+  {
+    "id": "sct-abo-group",
+    "type": "ValueSet",
+    "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group",
+    "version": "0.1.0",
+    "name": "SCTABOGroup"
+  },
+  {
+    "id": "loinc-abo-codes",
+    "type": "ValueSet",
+    "url": "http://loinc.org/vs/LL2419-1",
+    "version": "0.1.0",
+    "name": "LNCABOGroup"
+  },
+  {
+    "id": "loinc-PosNeg-codes",
+    "type": "ValueSet",
+    "url": "http://loinc.org/vs/LL360-9",
+    "version": "0.1.0",
+    "name": "PosNeg"
+  },
+  {
+    "id": "nmdp-abo-group-cs",
+    "type": "CodeSystem",
+    "url": "http://terminology.nmdp.org/codesystem/abogroup",
+    "version": "0.1.0",
+    "name": "NMDPABOCS"
+  },
+  {
+    "id": "nmdp-disease-cs",
+    "type": "CodeSystem",
+    "url": "http://terminology.nmdp.org/codesystem/disease",
+    "version": "0.1.0",
+    "name": "NMDPDiseaseCS"
+  },
+  {
+    "id": "nmdp-diseasestage-cs",
+    "type": "CodeSystem",
+    "url": "http://terminology.nmdp.org/codesystem/diseasestage",
+    "version": "0.1.0",
+    "name": "NMDPDiseaseStageCS"
+  },
+  {
+    "id": "nmdp-language-cs",
+    "type": "CodeSystem",
+    "url": "http://terminology.nmdp.org/codesystem/language",
+    "version": "0.1.0",
+    "name": "NMDPLanguageCS"
+  },
+  {
+    "id": "nmdp-race-cs",
+    "type": "CodeSystem",
+    "url": "http://terminology.nmdp.org/codesystem/race",
+    "version": "0.1.0",
+    "name": "NMDPRaceCS"
+  },
+  {
+    "id": "nmdp-rh-status-cs",
+    "type": "CodeSystem",
+    "url": "http://terminology.nmdp.org/codesystem/rhstatus",
+    "version": "0.1.0",
+    "name": "NMDPRhStatusCS"
+  }
+]
