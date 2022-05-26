@@ -8,9 +8,9 @@
   <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-language-codes"/>
   <version value="0.1.0"/>
   <name value="NMDPLanguageCodes"/>
-  <title value="NMDP Language Code Value Set"/>
+  <title value="NMDP Language Value Set"/>
   <status value="active"/>
-  <date value="2022-05-26T09:36:20-05:00"/>
+  <date value="2022-05-26T13:36:13-05:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -19,7 +19,7 @@
       <value value="http://bethematch.org"/>
     </telecom>
   </contact>
-  <description value="NMDP Language Codes"/>
+  <description value="NMDP language codes"/>
   <compose>
     <include>
       <system value="http://terminology.nmdp.org/codesystem/language"/>

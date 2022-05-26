@@ -14,10 +14,10 @@
   ];
   fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-diseasestage-codes"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
-  fhir:ValueSet.name [ fhir:value "NMDPDiseasStageCodes"];
-  fhir:ValueSet.title [ fhir:value "NMDP Disease Stage Code Value Set"];
+  fhir:ValueSet.name [ fhir:value "NMDPDiseasStageVS"];
+  fhir:ValueSet.title [ fhir:value "NMDP Disease Stage Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-05-26T09:36:20-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-05-26T13:36:13-05:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "NMDP"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -28,7 +28,7 @@
        fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "NMDP Disease Stage Codes"];
+  fhir:ValueSet.description [ fhir:value "NMDP disease stage codes"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;

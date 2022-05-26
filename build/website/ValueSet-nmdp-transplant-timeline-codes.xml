@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nmdp-transplant-timeline-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-nmdp-transplant-timeline-cs.html"><code>http://terminology.nmdp.org/codesystem/transplanttimeline</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-transplant-timeline-codes"/>
+  <version value="0.1.0"/>
+  <name value="NMDPTransplantTimelineVS"/>
+  <title value="NMDP Transplant Timeline Value Set"/>
+  <status value="active"/>
+  <date value="2022-05-26T13:36:13-05:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="NMDP transplant timeline codes"/>
+  <compose>
+    <include>
+      <system value="http://terminology.nmdp.org/codesystem/transplanttimeline"/>
+    </include>
+  </compose>
+</ValueSet>

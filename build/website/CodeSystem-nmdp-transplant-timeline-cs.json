@@ -1,0 +1,61 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nmdp-transplant-timeline-cs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.nmdp.org/codesystem/transplanttimeline defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">&lt;4w<a name=\"nmdp-transplant-timeline-cs-.604w\"> </a></td><td>Less than 4 weeks</td></tr><tr><td style=\"white-space:nowrap\">4-6w<a name=\"nmdp-transplant-timeline-cs-4-6w\"> </a></td><td>Between 4-6 weeks</td></tr><tr><td style=\"white-space:nowrap\">7-12w<a name=\"nmdp-transplant-timeline-cs-7-12w\"> </a></td><td>Between 7-12 weeks</td></tr><tr><td style=\"white-space:nowrap\">12w-6m<a name=\"nmdp-transplant-timeline-cs-12w-6m\"> </a></td><td>Over 12 weeks - up to 6 months</td></tr><tr><td style=\"white-space:nowrap\">&gt;6m<a name=\"nmdp-transplant-timeline-cs-.626m\"> </a></td><td>Greater than 6 months</td></tr><tr><td style=\"white-space:nowrap\">NA<a name=\"nmdp-transplant-timeline-cs-NA\"> </a></td><td>N/A : MUD Transplant not preferred treatment</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"nmdp-transplant-timeline-cs-P\"> </a></td><td>Pending, Case manager to follow up</td></tr></table></div>"
+  },
+  "url": "http://terminology.nmdp.org/codesystem/transplanttimeline",
+  "version": "0.1.0",
+  "name": "NMDPTransplantTimelineCS",
+  "title": "NMDP Transplant Timeline Code System",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-05-26T13:36:13-05:00",
+  "publisher": "NMDP",
+  "contact": [
+    {
+      "name": "NMDP",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://bethematch.org"
+        }
+      ]
+    }
+  ],
+  "description": "Code System for NMDP transplant timeline",
+  "copyright": "National Marrow Donor Program",
+  "content": "complete",
+  "count": 7,
+  "concept": [
+    {
+      "code": "<4w",
+      "display": "Less than 4 weeks"
+    },
+    {
+      "code": "4-6w",
+      "display": "Between 4-6 weeks"
+    },
+    {
+      "code": "7-12w",
+      "display": "Between 7-12 weeks"
+    },
+    {
+      "code": "12w-6m",
+      "display": "Over 12 weeks - up to 6 months"
+    },
+    {
+      "code": ">6m",
+      "display": "Greater than 6 months"
+    },
+    {
+      "code": "NA",
+      "display": "N/A : MUD Transplant not preferred treatment"
+    },
+    {
+      "code": "P",
+      "display": "Pending, Case manager to follow up"
+    }
+  ]
+}

@@ -7,10 +7,10 @@
   </text>
   <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-race-codes"/>
   <version value="0.1.0"/>
-  <name value="NMDPRaceCodes"/>
-  <title value="NMDP Race Code Value Set"/>
+  <name value="NMDPRaceVS"/>
+  <title value="NMDP Race Value Set"/>
   <status value="active"/>
-  <date value="2022-05-26T09:36:20-05:00"/>
+  <date value="2022-05-26T13:36:13-05:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -19,7 +19,7 @@
       <value value="http://bethematch.org"/>
     </telecom>
   </contact>
-  <description value="NMDP Race Codes"/>
+  <description value="NMDP race codes"/>
   <compose>
     <include>
       <system value="http://terminology.nmdp.org/codesystem/race"/>

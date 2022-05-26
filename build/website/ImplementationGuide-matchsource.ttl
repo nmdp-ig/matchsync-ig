@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "MatchSourceIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-05-26T09:36:20-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-05-26T13:36:13-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "NMDP"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -461,25 +461,25 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/nmdp-race" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-ethnicity>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/nmdp-ethnicity" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Race Code Extension" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension to use NMDP Race Codes" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Ethnicity Code Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension to use NMDP Ethnicity Codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/loinc-abo-codes>;
-         fhir:Reference.reference [ fhir:value "ValueSet/loinc-abo-codes" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/nmdp-race" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LOINC ABO group" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC codes for ABO Blood Group" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Race Code Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension to use NMDP Race Codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 11;
@@ -489,11 +489,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/ms-abo-group-codes>;
-         fhir:Reference.reference [ fhir:value "ValueSet/ms-abo-group-codes" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/loinc-abo-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/loinc-abo-codes" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ABO Group Codes for MatchSource" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ABO Group Codes for MatchSource. Combines LOINC and NMDP codes" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LOINC ABO group Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC codes for ABO blood group" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 12;
@@ -503,11 +503,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-abo-codes>;
-         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-abo-codes" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/ms-abo-group-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ms-abo-group-codes" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Codes for Blood Group" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP Codes for Blood Group" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MatchSource ABO Group Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MatchSource ABO group codes. Combines LOINC, Snomed, and NMDP codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 13;
@@ -517,11 +517,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-diseasestage-codes>;
-         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-diseasestage-codes" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/ms-rh-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ms-rh-codes" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Disease Stage Code Value Set" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP Disease Stage Codes" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Matchsource Rh Value Sets" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MatchSource codes for blood Rh. Combines NMDP and LOINC code" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 14;
@@ -531,11 +531,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-disease-codes>;
-         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-disease-codes" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-abo-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-abo-codes" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Disease Code Value Set" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP Disease Codes" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Blood Group Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP blood group codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 15;
@@ -545,11 +545,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-language-codes>;
-         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-language-codes" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-diseasestage-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-diseasestage-codes" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Language Code Value Set" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP Language Codes" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Disease Stage Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP disease stage codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 16;
@@ -559,14 +559,56 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-race-codes>;
-         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-race-codes" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-disease-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-disease-codes" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Race Code Value Set" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP Race Codes" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Disease Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP disease codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-ethnicity-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-ethnicity-codes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Ethnicity Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP ethnicity codes" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-language-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-language-codes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Language Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP language codes" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-race-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-race-codes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Race Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP race codes" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -577,37 +619,52 @@
          fhir:Reference.reference [ fhir:value "ValueSet/nmdp-rh-status-codes" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Codes for Rh status" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP Codes for Rh staus" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP codes for Rh staus" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/loinc-PosNeg-codes>;
-         fhir:Reference.reference [ fhir:value "ValueSet/loinc-PosNeg-codes" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-transplant-timeline-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-transplant-timeline-codes" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pos|Neg" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Transplant Timeline Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP transplant timeline codes" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/loinc-posneg-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/loinc-posneg-codes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LOINC Pos|Neg Value Set" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC codes for Positive and Negative" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group>;
-         fhir:Reference.reference [ fhir:value "ValueSet/sct-abo-group" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/sct-abo-group-codes" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Snomed CT ABO group" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Snomed CT ABO group Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Snomed CT codes for ABO blood group" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -618,10 +675,10 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-abo-group-cs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Blood Group Code System" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP Code System of Blood Group" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP ABO blood groups" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -632,10 +689,10 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-disease-cs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Disease Code System" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem of NMDP Diseases" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP diseases" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -646,10 +703,24 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-diseasestage-cs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Disease Stage Code System" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem of NMDP disease stages" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP disease stages" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23;
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/CodeSystem/nmdp-ethnicity-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-ethnicity-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Ethnicity Code System" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP ethnicity" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -660,10 +731,10 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-language-cs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Language Code System" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem of NMDP languages" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP languages" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 24;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -674,10 +745,10 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-race-cs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Race Code System" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem of NMDP Diseases" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP diseases" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -688,10 +759,24 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-rh-status-cs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Rh Code System" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP Code System for Rh Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP Rh Status" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/CodeSystem/nmdp-transplant-timeline-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-transplant-timeline-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDP Transplant Timeline Code System" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP transplant timeline" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -702,13 +787,13 @@
          fhir:Reference.reference [ fhir:value "Practitioner/CoordinatorExample" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CoordinatorExample" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of a Transplant Center Coordinator." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a Transplant Center Coordinator." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcentercoordinator";
          fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcentercoordinator>
        ]
      ], [
-       fhir:index 27;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -725,7 +810,7 @@
          fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-abogroup-observation>
        ]
      ], [
-       fhir:index 28;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -742,7 +827,7 @@
          fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msdiagnosis>
        ]
      ], [
-       fhir:index 29;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -759,7 +844,7 @@
          fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-height-observation>
        ]
      ], [
-       fhir:index 30;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -770,13 +855,13 @@
          fhir:Reference.reference [ fhir:value "Patient/MSPatientExample" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSPatientExample" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of a patient needing a donor using us-core-race code." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient needing a donor using us-core-race and us-core-ethnicity codes." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient";
          fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient>
        ]
      ], [
-       fhir:index 31;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -787,13 +872,13 @@
          fhir:Reference.reference [ fhir:value "Patient/MSPatientExample2" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSPatientExample2" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of a patient needing a donor using NMDP race code." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient needing a donor using NMDP race code." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient";
          fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient>
        ]
      ], [
-       fhir:index 32;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -804,13 +889,13 @@
          fhir:Reference.reference [ fhir:value "Patient/MSPatientExample3" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSPatientExample3" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of a patient without a race code - this should generate an error." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient without a race code - this should generate an error." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient";
          fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient>
        ]
      ], [
-       fhir:index 33;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -821,13 +906,30 @@
          fhir:Reference.reference [ fhir:value "Patient/MSPatientExample4" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSPatientExample4" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of a patient needing a donor using us-core-race code but not us-core-ethnicity - this should generate an error" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient needing a donor using us-core-race code but not us-core-ethnicity - this should generate an error" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient";
          fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient>
        ]
      ], [
-       fhir:index 34;
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/Observation/MSRhObsExample>;
+         fhir:Reference.reference [ fhir:value "Observation/MSRhObsExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSRhObsExample" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of patient Rh status" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-rhstatus-observation";
+         fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-rhstatus-observation>
+       ]
+     ], [
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -838,13 +940,13 @@
          fhir:Reference.reference [ fhir:value "Specimen/MSSpecimenExample" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSSpecimenExample" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example patient specimen." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example patient specimen." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen";
          fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen>
        ]
      ], [
-       fhir:index 35;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -861,7 +963,7 @@
          fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-weight-observation>
        ]
      ], [
-       fhir:index 36;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -872,7 +974,7 @@
          fhir:Reference.reference [ fhir:value "Organization/TCExample" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TCExample" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of a Transplant Center." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a Transplant Center." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcenter";
          fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcenter>

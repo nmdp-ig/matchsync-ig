@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "MatchSourceIG",
   "status": "draft",
-  "date": "2022-05-26T09:36:20-05:00",
+  "date": "2022-05-26T13:36:13-05:00",
   "publisher": "NMDP",
   "contact": [
     {
@@ -471,6 +471,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/nmdp-ethnicity"
+        },
+        "name": "NMDP Ethnicity Code Extension",
+        "description": "Extension to use NMDP Ethnicity Codes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/nmdp-race"
         },
         "name": "NMDP Race Code Extension",
@@ -487,8 +501,8 @@
         "reference": {
           "reference": "ValueSet/loinc-abo-codes"
         },
-        "name": "LOINC ABO group",
-        "description": "LOINC codes for ABO Blood Group",
+        "name": "LOINC ABO group Value Set",
+        "description": "LOINC codes for ABO blood group",
         "exampleBoolean": false
       },
       {
@@ -501,8 +515,22 @@
         "reference": {
           "reference": "ValueSet/ms-abo-group-codes"
         },
-        "name": "ABO Group Codes for MatchSource",
-        "description": "ABO Group Codes for MatchSource. Combines LOINC and NMDP codes",
+        "name": "MatchSource ABO Group Value Set",
+        "description": "MatchSource ABO group codes. Combines LOINC, Snomed, and NMDP codes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ms-rh-codes"
+        },
+        "name": "Matchsource Rh Value Sets",
+        "description": "MatchSource codes for blood Rh. Combines NMDP and LOINC code",
         "exampleBoolean": false
       },
       {
@@ -515,8 +543,8 @@
         "reference": {
           "reference": "ValueSet/nmdp-abo-codes"
         },
-        "name": "NMDP Codes for Blood Group",
-        "description": "NMDP Codes for Blood Group",
+        "name": "NMDP Blood Group Value Set",
+        "description": "NMDP blood group codes",
         "exampleBoolean": false
       },
       {
@@ -529,8 +557,8 @@
         "reference": {
           "reference": "ValueSet/nmdp-diseasestage-codes"
         },
-        "name": "NMDP Disease Stage Code Value Set",
-        "description": "NMDP Disease Stage Codes",
+        "name": "NMDP Disease Stage Value Set",
+        "description": "NMDP disease stage codes",
         "exampleBoolean": false
       },
       {
@@ -543,8 +571,22 @@
         "reference": {
           "reference": "ValueSet/nmdp-disease-codes"
         },
-        "name": "NMDP Disease Code Value Set",
-        "description": "NMDP Disease Codes",
+        "name": "NMDP Disease Value Set",
+        "description": "NMDP disease codes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/nmdp-ethnicity-codes"
+        },
+        "name": "NMDP Ethnicity Value Set",
+        "description": "NMDP ethnicity codes",
         "exampleBoolean": false
       },
       {
@@ -557,8 +599,8 @@
         "reference": {
           "reference": "ValueSet/nmdp-language-codes"
         },
-        "name": "NMDP Language Code Value Set",
-        "description": "NMDP Language Codes",
+        "name": "NMDP Language Value Set",
+        "description": "NMDP language codes",
         "exampleBoolean": false
       },
       {
@@ -571,8 +613,8 @@
         "reference": {
           "reference": "ValueSet/nmdp-race-codes"
         },
-        "name": "NMDP Race Code Value Set",
-        "description": "NMDP Race Codes",
+        "name": "NMDP Race Value Set",
+        "description": "NMDP race codes",
         "exampleBoolean": false
       },
       {
@@ -586,7 +628,7 @@
           "reference": "ValueSet/nmdp-rh-status-codes"
         },
         "name": "NMDP Codes for Rh status",
-        "description": "NMDP Codes for Rh staus",
+        "description": "NMDP codes for Rh staus",
         "exampleBoolean": false
       },
       {
@@ -597,9 +639,23 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/loinc-PosNeg-codes"
+          "reference": "ValueSet/nmdp-transplant-timeline-codes"
         },
-        "name": "Pos|Neg",
+        "name": "NMDP Transplant Timeline Value Set",
+        "description": "NMDP transplant timeline codes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/loinc-posneg-codes"
+        },
+        "name": "LOINC Pos|Neg Value Set",
         "description": "LOINC codes for Positive and Negative",
         "exampleBoolean": false
       },
@@ -611,9 +667,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/sct-abo-group"
+          "reference": "ValueSet/sct-abo-group-codes"
         },
-        "name": "Snomed CT ABO group",
+        "name": "Snomed CT ABO group Value Set",
+        "description": "Snomed CT codes for ABO blood group",
         "exampleBoolean": false
       },
       {
@@ -627,7 +684,7 @@
           "reference": "CodeSystem/nmdp-abo-group-cs"
         },
         "name": "NMDP Blood Group Code System",
-        "description": "NMDP Code System of Blood Group",
+        "description": "Code System for NMDP ABO blood groups",
         "exampleBoolean": false
       },
       {
@@ -641,7 +698,7 @@
           "reference": "CodeSystem/nmdp-disease-cs"
         },
         "name": "NMDP Disease Code System",
-        "description": "CodeSystem of NMDP Diseases",
+        "description": "Code System for NMDP diseases",
         "exampleBoolean": false
       },
       {
@@ -655,7 +712,21 @@
           "reference": "CodeSystem/nmdp-diseasestage-cs"
         },
         "name": "NMDP Disease Stage Code System",
-        "description": "CodeSystem of NMDP disease stages",
+        "description": "Code System for NMDP disease stages",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/nmdp-ethnicity-cs"
+        },
+        "name": "NMDP Ethnicity Code System",
+        "description": "Code System for NMDP ethnicity",
         "exampleBoolean": false
       },
       {
@@ -669,7 +740,7 @@
           "reference": "CodeSystem/nmdp-language-cs"
         },
         "name": "NMDP Language Code System",
-        "description": "CodeSystem of NMDP languages",
+        "description": "Code System for NMDP languages",
         "exampleBoolean": false
       },
       {
@@ -683,7 +754,7 @@
           "reference": "CodeSystem/nmdp-race-cs"
         },
         "name": "NMDP Race Code System",
-        "description": "CodeSystem of NMDP Diseases",
+        "description": "Code System for NMDP diseases",
         "exampleBoolean": false
       },
       {
@@ -697,7 +768,21 @@
           "reference": "CodeSystem/nmdp-rh-status-cs"
         },
         "name": "NMDP Rh Code System",
-        "description": "NMDP Code System for Rh Status",
+        "description": "Code System for NMDP Rh Status",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/nmdp-transplant-timeline-cs"
+        },
+        "name": "NMDP Transplant Timeline Code System",
+        "description": "Code System for NMDP transplant timeline",
         "exampleBoolean": false
       },
       {
@@ -711,7 +796,7 @@
           "reference": "Practitioner/CoordinatorExample"
         },
         "name": "CoordinatorExample",
-        "description": "An example of a Transplant Center Coordinator.",
+        "description": "Example of a Transplant Center Coordinator.",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcentercoordinator"
       },
       {
@@ -767,7 +852,7 @@
           "reference": "Patient/MSPatientExample"
         },
         "name": "MSPatientExample",
-        "description": "An example of a patient needing a donor using us-core-race code.",
+        "description": "Example of a patient needing a donor using us-core-race and us-core-ethnicity codes.",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"
       },
       {
@@ -781,7 +866,7 @@
           "reference": "Patient/MSPatientExample2"
         },
         "name": "MSPatientExample2",
-        "description": "An example of a patient needing a donor using NMDP race code.",
+        "description": "Example of a patient needing a donor using NMDP race code.",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"
       },
       {
@@ -795,7 +880,7 @@
           "reference": "Patient/MSPatientExample3"
         },
         "name": "MSPatientExample3",
-        "description": "An example of a patient without a race code - this should generate an error.",
+        "description": "Example of a patient without a race code - this should generate an error.",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"
       },
       {
@@ -809,8 +894,22 @@
           "reference": "Patient/MSPatientExample4"
         },
         "name": "MSPatientExample4",
-        "description": "An example of a patient needing a donor using us-core-race code but not us-core-ethnicity - this should generate an error",
+        "description": "Example of a patient needing a donor using us-core-race code but not us-core-ethnicity - this should generate an error",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/MSRhObsExample"
+        },
+        "name": "MSRhObsExample",
+        "description": "Example of patient Rh status",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-rhstatus-observation"
       },
       {
         "extension": [
@@ -823,7 +922,7 @@
           "reference": "Specimen/MSSpecimenExample"
         },
         "name": "MSSpecimenExample",
-        "description": "An example patient specimen.",
+        "description": "Example patient specimen.",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen"
       },
       {
@@ -851,7 +950,7 @@
           "reference": "Organization/TCExample"
         },
         "name": "TCExample",
-        "description": "An example of a Transplant Center.",
+        "description": "Example of a Transplant Center.",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcenter"
       }
     ],

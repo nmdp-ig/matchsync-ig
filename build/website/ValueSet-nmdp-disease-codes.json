@@ -7,10 +7,10 @@
   },
   "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-disease-codes",
   "version": "0.1.0",
-  "name": "NMDPDiseaseCodes",
-  "title": "NMDP Disease Code Value Set",
+  "name": "NMDPDiseaseVS",
+  "title": "NMDP Disease Value Set",
   "status": "active",
-  "date": "2022-05-26T09:36:20-05:00",
+  "date": "2022-05-26T13:36:13-05:00",
   "publisher": "NMDP",
   "contact": [
     {
@@ -23,7 +23,7 @@
       ]
     }
   ],
-  "description": "NMDP Disease Codes",
+  "description": "NMDP disease codes",
   "compose": {
     "include": [
       {

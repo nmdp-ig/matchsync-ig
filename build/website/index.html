@@ -178,27 +178,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 This IG describes how a bundle of FHIR resources may be used to 
 to POST to an NMDP endpoint for the registering aPatient with MatchSource.</p>
 
-<p>As of now, it mostly contains Structure Definitions, Code Systems, ValueSets and examples. It does not yet contain much in
-the way of narrative regarding how to submit this data to an endpoint.</p>
+<p>As of now, it mostly contains Structure Definitions, Code Systems, ValueSets and examples. It does not yet contain info on how to submit this data to an endpoint. It also needs more narrative to explain how to use the profiles and other artifacts.</p>
 
-<p>This IG describes FHIR profiles for</p>
+<p>This IG describes FHIR profiles and examples for</p>
 <ul>
   <li>Patient needing the transplant</li>
-  <li>Condition to describe the patient’s diagnois, date of diagnois, and stage</li>
+  <li>Condition to describe the patient’s diagnois</li>
   <li>Specimen to identify the specimen Id of the Patient</li>
   <li>Observation for patient weight</li>
   <li>Observation for patient height</li>
   <li>Observation for patient ABO blood group type</li>
+  <li>Observation for patient Rh status</li>
   <li>Organization for Transplant Center</li>
   <li>Practioner to identify the Transplant Center Coordinator</li>
+  <li>Extensions to use NMDP race and ethnicity with Patient resource</li>
 </ul>
 
 <p>Work To Do:</p>
 <ul>
   <li>HLA</li>
   <li>what identifers should be specified?</li>
-  <li>profile Observations for Rh</li>
-  <li>profile and example for Bundle</li>
+  <li>profiles/examples for
+    <ul>
+      <li>tranplant timeline</li>
+      <li>Bundle</li>
+    </ul>
+  </li>
   <li>and more</li>
 </ul>
 
@@ -229,7 +234,7 @@ the way of narrative regarding how to submit this data to an endpoint.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package matchsource#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 26, 2022 09:36-0500">2022-05-26</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package matchsource#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 26, 2022 13:36-0500">2022-05-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

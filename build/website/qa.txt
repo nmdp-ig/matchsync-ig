@@ -1,53 +1,59 @@
 ﻿MatchSourceIG : Validation Results
 =========================================
 
-err = 2, warn = 4, info = 7
+err = 3, warn = 2, info = 9
 IG Publisher Version: 1.1.120
-Generated Thu May 26 09:38:22 CDT 2022. FHIR version 4.0.1 for matchsource#0.1.0 (canonical = http://fhir.nmdp.org/ig/matchsource)
- Build Errors : 0 / 2 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/ImplementationGuide-matchsource : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/codesystem-nmdp-abo-group-cs : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/codesystem-nmdp-disease-cs : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/codesystem-nmdp-diseasestage-cs : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/codesystem-nmdp-language-cs : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/codesystem-nmdp-race-cs : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/codesystem-nmdp-rh-status-cs : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/condition-MSDiagnosisExample : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/observation-MSABOObsExample : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/observation-MSHeightObsExample : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/observation-MSWeightObsExample : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/organization-TCExample : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/patient-MSPatientExample : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/patient-MSPatientExample2 : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/patient-MSPatientExample3 : 1 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/patient-MSPatientExample4 : 1 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/practitioner-CoordinatorExample : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/specimen-MSSpecimenExample : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/structuredefinition-ms-abogroup-observation : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/structuredefinition-ms-height-observation : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/structuredefinition-ms-rhstatus-observation : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/structuredefinition-ms-weight-observation : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/structuredefinition-msdiagnosis : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/structuredefinition-mspatient : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/structuredefinition-msspecimen : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/structuredefinition-nmdp-race : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/structuredefinition-transplantcenter : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/structuredefinition-transplantcentercoordinator : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/valueset-loinc-PosNeg-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/valueset-loinc-abo-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/valueset-ms-abo-group-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/valueset-nmdp-abo-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/valueset-nmdp-disease-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/valueset-nmdp-diseasestage-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/valueset-nmdp-language-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/valueset-nmdp-race-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/valueset-nmdp-rh-status-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/MatchSourceIG/fsh-generated/resources/valueset-sct-abo-group : 0 / 0 / 1
+Generated Thu May 26 13:38:32 CDT 2022. FHIR version 4.0.1 for matchsource#0.1.0 (canonical = http://fhir.nmdp.org/ig/matchsource)
+ Build Errors : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ImplementationGuide-matchsource : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-abo-group-cs : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-disease-cs : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-diseasestage-cs : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-ethnicity-cs : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-language-cs : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-race-cs : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-rh-status-cs : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-transplant-timeline-cs : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/condition-MSDiagnosisExample : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/observation-MSABOObsExample : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/observation-MSHeightObsExample : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/observation-MSRhObsExample : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/observation-MSWeightObsExample : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/organization-TCExample : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/patient-MSPatientExample : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/patient-MSPatientExample2 : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/patient-MSPatientExample3 : 2 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/patient-MSPatientExample4 : 1 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/practitioner-CoordinatorExample : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/specimen-MSSpecimenExample : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-ms-abogroup-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-ms-height-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-ms-rhstatus-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-ms-weight-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-msdiagnosis : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-mspatient : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-msspecimen : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-nmdp-ethnicity : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-nmdp-race : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-transplantcenter : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-transplantcentercoordinator : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-loinc-abo-codes : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-loinc-posneg-codes : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-ms-abo-group-codes : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-ms-rh-codes : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-abo-codes : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-disease-codes : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-diseasestage-codes : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-ethnicity-codes : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-language-codes : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-race-codes : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-rh-status-codes : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-transplant-timeline-codes : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-sct-abo-group-codes : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[2].url: The correct canonical URL for this dependency is http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/sct-abo-group.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 == fsh-generated/resources/ImplementationGuide-matchsource.json ==
 == fsh-generated/resources/CodeSystem-nmdp-abo-group-cs.json ==
 INFORMATION: CodeSystem/nmdp-abo-group-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
@@ -55,15 +61,20 @@ INFORMATION: CodeSystem/nmdp-abo-group-cs: CodeSystem: CodeSystems SHOULD have a
 INFORMATION: CodeSystem/nmdp-disease-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-nmdp-diseasestage-cs.json ==
 INFORMATION: CodeSystem/nmdp-diseasestage-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/CodeSystem-nmdp-ethnicity-cs.json ==
+INFORMATION: CodeSystem/nmdp-ethnicity-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-nmdp-language-cs.json ==
 INFORMATION: CodeSystem/nmdp-language-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-nmdp-race-cs.json ==
 INFORMATION: CodeSystem/nmdp-race-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-nmdp-rh-status-cs.json ==
 INFORMATION: CodeSystem/nmdp-rh-status-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/CodeSystem-nmdp-transplant-timeline-cs.json ==
+INFORMATION: CodeSystem/nmdp-transplant-timeline-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/Condition-MSDiagnosisExample.json ==
 == fsh-generated/resources/Observation-MSABOObsExample.json ==
 == fsh-generated/resources/Observation-MSHeightObsExample.json ==
+== fsh-generated/resources/Observation-MSRhObsExample.json ==
 == fsh-generated/resources/Observation-MSWeightObsExample.json ==
 == fsh-generated/resources/Organization-TCExample.json ==
 == fsh-generated/resources/Patient-MSPatientExample.json ==
@@ -71,28 +82,32 @@ WARNING: Patient/MSPatientExample: Patient.extension[1].extension[0].value.ofTyp
 == fsh-generated/resources/Patient-MSPatientExample2.json ==
 == fsh-generated/resources/Patient-MSPatientExample3.json ==
 ERROR: Patient/MSPatientExample3: Patient: rac-1: 'Shall use either NMDP Race extension or us-core-race' Rule 'Shall use either NMDP Race extension or us-core-race' Failed
+ERROR: Patient/MSPatientExample3: Patient: eth-1: 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Rule 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Failed
 == fsh-generated/resources/Patient-MSPatientExample4.json ==
-ERROR: Patient/MSPatientExample4: Patient: rac-1: 'Shall use either NMDP Race extension or us-core-race' Rule 'Shall use either NMDP Race extension or us-core-race' Failed
+ERROR: Patient/MSPatientExample4: Patient: eth-1: 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Rule 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Failed
 == fsh-generated/resources/Practitioner-CoordinatorExample.json ==
 == fsh-generated/resources/Specimen-MSSpecimenExample.json ==
 == fsh-generated/resources/StructureDefinition-ms-abogroup-observation.json ==
 == fsh-generated/resources/StructureDefinition-ms-height-observation.json ==
 == fsh-generated/resources/StructureDefinition-ms-rhstatus-observation.json ==
-WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-rhstatus-observation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ms-weight-observation.json ==
 == fsh-generated/resources/StructureDefinition-msdiagnosis.json ==
 == fsh-generated/resources/StructureDefinition-mspatient.json ==
 == fsh-generated/resources/StructureDefinition-msspecimen.json ==
+== fsh-generated/resources/StructureDefinition-nmdp-ethnicity.json ==
 == fsh-generated/resources/StructureDefinition-nmdp-race.json ==
 == fsh-generated/resources/StructureDefinition-transplantcenter.json ==
 == fsh-generated/resources/StructureDefinition-transplantcentercoordinator.json ==
-== fsh-generated/resources/ValueSet-loinc-PosNeg-codes.json ==
 == fsh-generated/resources/ValueSet-loinc-abo-codes.json ==
+== fsh-generated/resources/ValueSet-loinc-posneg-codes.json ==
 == fsh-generated/resources/ValueSet-ms-abo-group-codes.json ==
+== fsh-generated/resources/ValueSet-ms-rh-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-abo-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-disease-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-diseasestage-codes.json ==
+== fsh-generated/resources/ValueSet-nmdp-ethnicity-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-language-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-race-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-rh-status-codes.json ==
-== fsh-generated/resources/ValueSet-sct-abo-group.json ==
+== fsh-generated/resources/ValueSet-nmdp-transplant-timeline-codes.json ==
+== fsh-generated/resources/ValueSet-sct-abo-group-codes.json ==

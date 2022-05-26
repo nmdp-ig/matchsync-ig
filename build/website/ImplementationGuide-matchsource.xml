@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="MatchSourceIG"/>
   <status value="draft"/>
-  <date value="2022-05-26T09:36:20-05:00"/>
+  <date value="2022-05-26T13:36:13-05:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -317,6 +317,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/nmdp-ethnicity"/>
+      </reference>
+      <name value="NMDP Ethnicity Code Extension"/>
+      <description value="Extension to use NMDP Ethnicity Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/nmdp-race"/>
       </reference>
       <name value="NMDP Race Code Extension"/>
@@ -330,8 +341,8 @@
       <reference>
         <reference value="ValueSet/loinc-abo-codes"/>
       </reference>
-      <name value="LOINC ABO group"/>
-      <description value="LOINC codes for ABO Blood Group"/>
+      <name value="LOINC ABO group Value Set"/>
+      <description value="LOINC codes for ABO blood group"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -341,8 +352,19 @@
       <reference>
         <reference value="ValueSet/ms-abo-group-codes"/>
       </reference>
-      <name value="ABO Group Codes for MatchSource"/>
-      <description value="ABO Group Codes for MatchSource. Combines LOINC and NMDP codes"/>
+      <name value="MatchSource ABO Group Value Set"/>
+      <description value="MatchSource ABO group codes. Combines LOINC, Snomed, and NMDP codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ms-rh-codes"/>
+      </reference>
+      <name value="Matchsource Rh Value Sets"/>
+      <description value="MatchSource codes for blood Rh. Combines NMDP and LOINC code"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -352,8 +374,8 @@
       <reference>
         <reference value="ValueSet/nmdp-abo-codes"/>
       </reference>
-      <name value="NMDP Codes for Blood Group"/>
-      <description value="NMDP Codes for Blood Group"/>
+      <name value="NMDP Blood Group Value Set"/>
+      <description value="NMDP blood group codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -363,8 +385,8 @@
       <reference>
         <reference value="ValueSet/nmdp-diseasestage-codes"/>
       </reference>
-      <name value="NMDP Disease Stage Code Value Set"/>
-      <description value="NMDP Disease Stage Codes"/>
+      <name value="NMDP Disease Stage Value Set"/>
+      <description value="NMDP disease stage codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -374,8 +396,19 @@
       <reference>
         <reference value="ValueSet/nmdp-disease-codes"/>
       </reference>
-      <name value="NMDP Disease Code Value Set"/>
-      <description value="NMDP Disease Codes"/>
+      <name value="NMDP Disease Value Set"/>
+      <description value="NMDP disease codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nmdp-ethnicity-codes"/>
+      </reference>
+      <name value="NMDP Ethnicity Value Set"/>
+      <description value="NMDP ethnicity codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -385,8 +418,8 @@
       <reference>
         <reference value="ValueSet/nmdp-language-codes"/>
       </reference>
-      <name value="NMDP Language Code Value Set"/>
-      <description value="NMDP Language Codes"/>
+      <name value="NMDP Language Value Set"/>
+      <description value="NMDP language codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -396,8 +429,8 @@
       <reference>
         <reference value="ValueSet/nmdp-race-codes"/>
       </reference>
-      <name value="NMDP Race Code Value Set"/>
-      <description value="NMDP Race Codes"/>
+      <name value="NMDP Race Value Set"/>
+      <description value="NMDP race codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -408,7 +441,7 @@
         <reference value="ValueSet/nmdp-rh-status-codes"/>
       </reference>
       <name value="NMDP Codes for Rh status"/>
-      <description value="NMDP Codes for Rh staus"/>
+      <description value="NMDP codes for Rh staus"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -416,9 +449,20 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/loinc-PosNeg-codes"/>
+        <reference value="ValueSet/nmdp-transplant-timeline-codes"/>
       </reference>
-      <name value="Pos|Neg"/>
+      <name value="NMDP Transplant Timeline Value Set"/>
+      <description value="NMDP transplant timeline codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/loinc-posneg-codes"/>
+      </reference>
+      <name value="LOINC Pos|Neg Value Set"/>
       <description value="LOINC codes for Positive and Negative"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -427,9 +471,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/sct-abo-group"/>
+        <reference value="ValueSet/sct-abo-group-codes"/>
       </reference>
-      <name value="Snomed CT ABO group"/>
+      <name value="Snomed CT ABO group Value Set"/>
+      <description value="Snomed CT codes for ABO blood group"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -440,7 +485,7 @@
         <reference value="CodeSystem/nmdp-abo-group-cs"/>
       </reference>
       <name value="NMDP Blood Group Code System"/>
-      <description value="NMDP Code System of Blood Group"/>
+      <description value="Code System for NMDP ABO blood groups"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -451,7 +496,7 @@
         <reference value="CodeSystem/nmdp-disease-cs"/>
       </reference>
       <name value="NMDP Disease Code System"/>
-      <description value="CodeSystem of NMDP Diseases"/>
+      <description value="Code System for NMDP diseases"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -462,7 +507,18 @@
         <reference value="CodeSystem/nmdp-diseasestage-cs"/>
       </reference>
       <name value="NMDP Disease Stage Code System"/>
-      <description value="CodeSystem of NMDP disease stages"/>
+      <description value="Code System for NMDP disease stages"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-ethnicity-cs"/>
+      </reference>
+      <name value="NMDP Ethnicity Code System"/>
+      <description value="Code System for NMDP ethnicity"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -473,7 +529,7 @@
         <reference value="CodeSystem/nmdp-language-cs"/>
       </reference>
       <name value="NMDP Language Code System"/>
-      <description value="CodeSystem of NMDP languages"/>
+      <description value="Code System for NMDP languages"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -484,7 +540,7 @@
         <reference value="CodeSystem/nmdp-race-cs"/>
       </reference>
       <name value="NMDP Race Code System"/>
-      <description value="CodeSystem of NMDP Diseases"/>
+      <description value="Code System for NMDP diseases"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -495,7 +551,18 @@
         <reference value="CodeSystem/nmdp-rh-status-cs"/>
       </reference>
       <name value="NMDP Rh Code System"/>
-      <description value="NMDP Code System for Rh Status"/>
+      <description value="Code System for NMDP Rh Status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-transplant-timeline-cs"/>
+      </reference>
+      <name value="NMDP Transplant Timeline Code System"/>
+      <description value="Code System for NMDP transplant timeline"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -506,7 +573,7 @@
         <reference value="Practitioner/CoordinatorExample"/>
       </reference>
       <name value="CoordinatorExample"/>
-      <description value="An example of a Transplant Center Coordinator."/>
+      <description value="Example of a Transplant Center Coordinator."/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcentercoordinator"/>
     </resource>
     <resource>
@@ -550,7 +617,7 @@
         <reference value="Patient/MSPatientExample"/>
       </reference>
       <name value="MSPatientExample"/>
-      <description value="An example of a patient needing a donor using us-core-race code."/>
+      <description value="Example of a patient needing a donor using us-core-race and us-core-ethnicity codes."/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"/>
     </resource>
     <resource>
@@ -561,7 +628,7 @@
         <reference value="Patient/MSPatientExample2"/>
       </reference>
       <name value="MSPatientExample2"/>
-      <description value="An example of a patient needing a donor using NMDP race code."/>
+      <description value="Example of a patient needing a donor using NMDP race code."/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"/>
     </resource>
     <resource>
@@ -572,7 +639,7 @@
         <reference value="Patient/MSPatientExample3"/>
       </reference>
       <name value="MSPatientExample3"/>
-      <description value="An example of a patient without a race code - this should generate an error."/>
+      <description value="Example of a patient without a race code - this should generate an error."/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"/>
     </resource>
     <resource>
@@ -583,8 +650,19 @@
         <reference value="Patient/MSPatientExample4"/>
       </reference>
       <name value="MSPatientExample4"/>
-      <description value="An example of a patient needing a donor using us-core-race code but not us-core-ethnicity - this should generate an error"/>
+      <description value="Example of a patient needing a donor using us-core-race code but not us-core-ethnicity - this should generate an error"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MSRhObsExample"/>
+      </reference>
+      <name value="MSRhObsExample"/>
+      <description value="Example of patient Rh status"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-rhstatus-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -594,7 +672,7 @@
         <reference value="Specimen/MSSpecimenExample"/>
       </reference>
       <name value="MSSpecimenExample"/>
-      <description value="An example patient specimen."/>
+      <description value="Example patient specimen."/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen"/>
     </resource>
     <resource>
@@ -616,7 +694,7 @@
         <reference value="Organization/TCExample"/>
       </reference>
       <name value="TCExample"/>
-      <description value="An example of a Transplant Center."/>
+      <description value="Example of a Transplant Center."/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcenter"/>
     </resource>
     <page>

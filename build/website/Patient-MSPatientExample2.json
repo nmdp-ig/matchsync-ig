@@ -22,6 +22,18 @@
           }
         ]
       }
+    },
+    {
+      "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-ethnicity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.nmdp.org/codesystem/ethnicity",
+            "code": "NHIS",
+            "display": "Not Hispanic or Latino"
+          }
+        ]
+      }
     }
   ],
   "name": [

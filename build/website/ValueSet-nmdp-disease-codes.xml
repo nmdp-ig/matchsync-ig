@@ -7,10 +7,10 @@
   </text>
   <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-disease-codes"/>
   <version value="0.1.0"/>
-  <name value="NMDPDiseaseCodes"/>
-  <title value="NMDP Disease Code Value Set"/>
+  <name value="NMDPDiseaseVS"/>
+  <title value="NMDP Disease Value Set"/>
   <status value="active"/>
-  <date value="2022-05-26T09:36:20-05:00"/>
+  <date value="2022-05-26T13:36:13-05:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -19,7 +19,7 @@
       <value value="http://bethematch.org"/>
     </telecom>
   </contact>
-  <description value="NMDP Disease Codes"/>
+  <description value="NMDP disease codes"/>
   <compose>
     <include>
       <system value="http://terminology.nmdp.org/codesystem/disease"/>

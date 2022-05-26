@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "41e96dee-2cf3-4f2d-9cdd-79f9988c6cbc",
+  "id" : "10d179dd-4187-46f2-83f1-80c6f9d8b527",
   "meta" : {
-    "lastUpdated" : "2022-05-26T09:36:20.758-05:00"
+    "lastUpdated" : "2022-05-26T13:36:13.301-05:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -16,10 +16,10 @@
       },
       "url" : "http://loinc.org/vs/LL2419-1",
       "version" : "0.1.0",
-      "name" : "LNCABOGroup",
-      "title" : "LOINC ABO group",
+      "name" : "LNCABOGroupVS",
+      "title" : "LOINC ABO group Value Set",
       "status" : "active",
-      "date" : "2022-05-26T09:36:20-05:00",
+      "date" : "2022-05-26T13:36:13-05:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -28,11 +28,11 @@
           "value" : "http://bethematch.org"
         }]
       }],
-      "description" : "LOINC codes for ABO Blood Group",
+      "description" : "LOINC codes for ABO blood group",
       "copyright" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.",
       "expansion" : {
-        "identifier" : "urn:uuid:1b8da588-c9f9-4ee1-9b8a-277b63f3c85c",
-        "timestamp" : "2022-05-26T09:37:48-05:00",
+        "identifier" : "urn:uuid:ab05cfca-ac82-4429-9e0b-7d7aa3f2c664",
+        "timestamp" : "2022-05-26T13:37:46-05:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -76,14 +76,14 @@
       "id" : "ms-abo-group-codes",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 13 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-nmdp-abo-group-cs.html\">NMDP Blood Group Code System v0.1.0 (CodeSystem)</a></li><li><a href=\"ValueSet-loinc-abo-codes.html\">LOINC ABO group v0.1.0 (ValueSet)</a></li><li><a href=\"ValueSet-nmdp-abo-codes.html\">NMDP Codes for Blood Group v0.1.0 (ValueSet)</a></li><li>Loinc v2.72</li><li><a href=\"ValueSet-sct-abo-group.html\">Snomed CT ABO group v0.1.0 (ValueSet)</a></li><li>SNOMED CT International edition 31-Mar 2022</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-A\"> </a>  <a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-A\">A</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>A</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-B\"> </a>  <a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-B\">B</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>B</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-O\"> </a>  <a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-O\">O</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>O</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-AB\"> </a>  <a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-AB\">AB</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>AB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-nil\"> </a>  <a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-nil\">nil</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>no data</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA19710-5\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA19710-5.html\">LA19710-5</a></td><td>http://loinc.org</td><td>Group A</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA19709-7\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA19709-7.html\">LA19709-7</a></td><td>http://loinc.org</td><td>Group B</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA19708-9\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA19708-9.html\">LA19708-9</a></td><td>http://loinc.org</td><td>Group O</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA28449-9\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA28449-9.html\">LA28449-9</a></td><td>http://loinc.org</td><td>Group AB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-112144000\"> </a>  <a href=\"http://snomed.info/id/112144000\">112144000</a></td><td>http://snomed.info/sct</td><td>Blood group A (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-165743006\"> </a>  <a href=\"http://snomed.info/id/165743006\">165743006</a></td><td>http://snomed.info/sct</td><td>Blood group AB (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-112149005\"> </a>  <a href=\"http://snomed.info/id/112149005\">112149005</a></td><td>http://snomed.info/sct</td><td>Blood group B (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-58460004\"> </a>  <a href=\"http://snomed.info/id/58460004\">58460004</a></td><td>http://snomed.info/sct</td><td>Blood group O (finding)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 13 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-nmdp-abo-group-cs.html\">NMDP Blood Group Code System v0.1.0 (CodeSystem)</a></li><li><a href=\"ValueSet-loinc-abo-codes.html\">LOINC ABO group Value Set v0.1.0 (ValueSet)</a></li><li><a href=\"ValueSet-nmdp-abo-codes.html\">NMDP Blood Group Value Set v0.1.0 (ValueSet)</a></li><li>Loinc v2.72</li><li>SNOMED CT International edition 31-Mar 2022</li><li><a href=\"ValueSet-sct-abo-group-codes.html\">Snomed CT ABO group Value Set v0.1.0 (ValueSet)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-A\"> </a>  <a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-A\">A</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>A</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-B\"> </a>  <a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-B\">B</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>B</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-O\"> </a>  <a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-O\">O</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>O</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-AB\"> </a>  <a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-AB\">AB</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>AB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-nil\"> </a>  <a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-nil\">nil</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>no data</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA19710-5\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA19710-5.html\">LA19710-5</a></td><td>http://loinc.org</td><td>Group A</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA19709-7\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA19709-7.html\">LA19709-7</a></td><td>http://loinc.org</td><td>Group B</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA19708-9\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA19708-9.html\">LA19708-9</a></td><td>http://loinc.org</td><td>Group O</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA28449-9\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA28449-9.html\">LA28449-9</a></td><td>http://loinc.org</td><td>Group AB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-112144000\"> </a>  <a href=\"http://snomed.info/id/112144000\">112144000</a></td><td>http://snomed.info/sct</td><td>Blood group A (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-165743006\"> </a>  <a href=\"http://snomed.info/id/165743006\">165743006</a></td><td>http://snomed.info/sct</td><td>Blood group AB (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-112149005\"> </a>  <a href=\"http://snomed.info/id/112149005\">112149005</a></td><td>http://snomed.info/sct</td><td>Blood group B (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-58460004\"> </a>  <a href=\"http://snomed.info/id/58460004\">58460004</a></td><td>http://snomed.info/sct</td><td>Blood group O (finding)</td></tr></table></div>"
       },
       "url" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/ms-abo-group-codes",
       "version" : "0.1.0",
-      "name" : "MSABOGroup",
-      "title" : "ABO Group Codes for MatchSource",
+      "name" : "MSABOGroupVS",
+      "title" : "MatchSource ABO Group Value Set",
       "status" : "active",
-      "date" : "2022-05-26T09:36:20-05:00",
+      "date" : "2022-05-26T13:36:13-05:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -92,10 +92,10 @@
           "value" : "http://bethematch.org"
         }]
       }],
-      "description" : "ABO Group Codes for MatchSource. Combines LOINC and NMDP codes",
+      "description" : "MatchSource ABO group codes. Combines LOINC, Snomed, and NMDP codes",
       "expansion" : {
-        "identifier" : "urn:uuid:399c89ac-aa94-4fe0-9714-9964de05c030",
-        "timestamp" : "2022-05-26T09:37:48-05:00",
+        "identifier" : "urn:uuid:0b96c476-5894-4e2b-973b-95fd49fe654a",
+        "timestamp" : "2022-05-26T13:37:46-05:00",
         "total" : 13,
         "parameter" : [{
           "name" : "excludeNested",
@@ -123,7 +123,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group|0.1.0"
+          "valueUri" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group-codes|0.1.0"
         },
         {
           "name" : "version",
@@ -198,6 +198,96 @@
     }
   },
   {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/ms-rh-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "ms-rh-codes",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"ValueSet-nmdp-rh-status-codes.html\">NMDP Codes for Rh status v0.1.0 (ValueSet)</a></li><li><a href=\"ValueSet-loinc-posneg-codes.html\">LOINC Pos|Neg Value Set v0.1.0 (ValueSet)</a></li><li>Loinc v2.72</li><li><a href=\"CodeSystem-nmdp-rh-status-cs.html\">NMDP Rh Code System v0.1.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-rhstatus-I\"> </a>  <a href=\"CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-I\">I</a></td><td>http://terminology.nmdp.org/codesystem/rhstatus</td><td>Indeterminant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-rhstatus-P\"> </a>  <a href=\"CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-P\">P</a></td><td>http://terminology.nmdp.org/codesystem/rhstatus</td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-rhstatus-N\"> </a>  <a href=\"CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-N\">N</a></td><td>http://terminology.nmdp.org/codesystem/rhstatus</td><td>Negative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-rhstatus-D\"> </a>  <a href=\"CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-D\">D</a></td><td>http://terminology.nmdp.org/codesystem/rhstatus</td><td>Indeterminant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-rhstatus-nil\"> </a>  <a href=\"CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-nil\">nil</a></td><td>http://terminology.nmdp.org/codesystem/rhstatus</td><td>no data</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6576-8\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA6576-8.html\">LA6576-8</a></td><td>http://loinc.org</td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6577-6\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA6577-6.html\">LA6577-6</a></td><td>http://loinc.org</td><td>Negative</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/ms-rh-codes",
+      "version" : "0.1.0",
+      "name" : "MSRhVS",
+      "title" : "Matchsource Rh Value Sets",
+      "status" : "active",
+      "date" : "2022-05-26T13:36:13-05:00",
+      "publisher" : "NMDP",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "MatchSource codes for blood Rh. Combines NMDP and LOINC code",
+      "expansion" : {
+        "identifier" : "urn:uuid:14d49356-bc41-47f6-a4ae-87ad6bcd4a82",
+        "timestamp" : "2022-05-26T13:37:46-05:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-rh-status-codes|0.1.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/rhstatus|0.1.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org/vs/LL360-9|0.1.0"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.72"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/rhstatus",
+          "code" : "I",
+          "display" : "Indeterminant"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/rhstatus",
+          "code" : "P",
+          "display" : "Positive"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/rhstatus",
+          "code" : "N",
+          "display" : "Negative"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/rhstatus",
+          "code" : "D",
+          "display" : "Indeterminant"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/rhstatus",
+          "code" : "nil",
+          "display" : "no data"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA6576-8",
+          "display" : "Positive"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA6577-6",
+          "display" : "Negative"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-abo-codes",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -208,10 +298,10 @@
       },
       "url" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-abo-codes",
       "version" : "0.1.0",
-      "name" : "NMDPABOCodes",
-      "title" : "NMDP Codes for Blood Group",
+      "name" : "NMDPABOVS",
+      "title" : "NMDP Blood Group Value Set",
       "status" : "active",
-      "date" : "2022-05-26T09:36:20-05:00",
+      "date" : "2022-05-26T13:36:13-05:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -220,10 +310,10 @@
           "value" : "http://bethematch.org"
         }]
       }],
-      "description" : "NMDP Codes for Blood Group",
+      "description" : "NMDP blood group codes",
       "expansion" : {
-        "identifier" : "urn:uuid:4057b100-600a-4053-b249-1ec473b5e685",
-        "timestamp" : "2022-05-26T09:37:48-05:00",
+        "identifier" : "urn:uuid:8987e97d-f2c4-4df4-97e4-2985a9eaecff",
+        "timestamp" : "2022-05-26T13:37:46-05:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -272,10 +362,10 @@
       },
       "url" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-diseasestage-codes",
       "version" : "0.1.0",
-      "name" : "NMDPDiseasStageCodes",
-      "title" : "NMDP Disease Stage Code Value Set",
+      "name" : "NMDPDiseasStageVS",
+      "title" : "NMDP Disease Stage Value Set",
       "status" : "active",
-      "date" : "2022-05-26T09:36:20-05:00",
+      "date" : "2022-05-26T13:36:13-05:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -284,10 +374,10 @@
           "value" : "http://bethematch.org"
         }]
       }],
-      "description" : "NMDP Disease Stage Codes",
+      "description" : "NMDP disease stage codes",
       "expansion" : {
-        "identifier" : "urn:uuid:0689b8c7-a069-4fbf-9b8a-85ec56a2871b",
-        "timestamp" : "2022-05-26T09:37:48-05:00",
+        "identifier" : "urn:uuid:768d1434-509b-438f-ab11-60ad42926b3d",
+        "timestamp" : "2022-05-26T13:37:47-05:00",
         "total" : 8,
         "parameter" : [{
           "name" : "excludeNested",
@@ -351,10 +441,10 @@
       },
       "url" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-disease-codes",
       "version" : "0.1.0",
-      "name" : "NMDPDiseaseCodes",
-      "title" : "NMDP Disease Code Value Set",
+      "name" : "NMDPDiseaseVS",
+      "title" : "NMDP Disease Value Set",
       "status" : "active",
-      "date" : "2022-05-26T09:36:20-05:00",
+      "date" : "2022-05-26T13:36:13-05:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -363,10 +453,10 @@
           "value" : "http://bethematch.org"
         }]
       }],
-      "description" : "NMDP Disease Codes",
+      "description" : "NMDP disease codes",
       "expansion" : {
-        "identifier" : "urn:uuid:685fe14b-0283-41d5-8088-6ae101969016",
-        "timestamp" : "2022-05-26T09:37:48-05:00",
+        "identifier" : "urn:uuid:0242d008-c82d-4c5b-b6f6-79e581e529e9",
+        "timestamp" : "2022-05-26T13:37:47-05:00",
         "total" : 100,
         "parameter" : [{
           "name" : "excludeNested",
@@ -880,6 +970,60 @@
     }
   },
   {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-ethnicity-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "nmdp-ethnicity-codes",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-ethnicity-cs.html\">NMDP Ethnicity Code System v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-nmdp-ethnicity-cs.html\"><code>http://terminology.nmdp.org/codesystem/ethnicity</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-ethnicity-NHIS\"> </a>  <a href=\"CodeSystem-nmdp-ethnicity-cs.html#nmdp-ethnicity-cs-NHIS\">NHIS</a></td><td>Not Hispanic or Latino</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-ethnicity-HIS\"> </a>  <a href=\"CodeSystem-nmdp-ethnicity-cs.html#nmdp-ethnicity-cs-HIS\">HIS</a></td><td>Hispanic or Latino</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-ethnicity-nil\"> </a>  <a href=\"CodeSystem-nmdp-ethnicity-cs.html#nmdp-ethnicity-cs-nil\">nil</a></td><td>No data</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-ethnicity-codes",
+      "version" : "0.1.0",
+      "name" : "NMDPEthnicityVS",
+      "title" : "NMDP Ethnicity Value Set",
+      "status" : "active",
+      "date" : "2022-05-26T13:36:13-05:00",
+      "publisher" : "NMDP",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "NMDP ethnicity codes",
+      "expansion" : {
+        "identifier" : "urn:uuid:c2fcec75-7d01-4011-8ed3-b424ba187313",
+        "timestamp" : "2022-05-26T13:37:47-05:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/ethnicity|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/ethnicity",
+          "code" : "NHIS",
+          "display" : "Not Hispanic or Latino"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/ethnicity",
+          "code" : "HIS",
+          "display" : "Hispanic or Latino"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/ethnicity",
+          "code" : "nil",
+          "display" : "No data"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-language-codes",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -891,9 +1035,9 @@
       "url" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-language-codes",
       "version" : "0.1.0",
       "name" : "NMDPLanguageCodes",
-      "title" : "NMDP Language Code Value Set",
+      "title" : "NMDP Language Value Set",
       "status" : "active",
-      "date" : "2022-05-26T09:36:20-05:00",
+      "date" : "2022-05-26T13:36:13-05:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -902,10 +1046,10 @@
           "value" : "http://bethematch.org"
         }]
       }],
-      "description" : "NMDP Language Codes",
+      "description" : "NMDP language codes",
       "expansion" : {
-        "identifier" : "urn:uuid:1defb55f-16e5-415d-8642-594ecc332bdc",
-        "timestamp" : "2022-05-26T09:37:49-05:00",
+        "identifier" : "urn:uuid:8f9bfd74-044b-4519-8b7b-24d95f05cd42",
+        "timestamp" : "2022-05-26T13:37:47-05:00",
         "total" : 14,
         "parameter" : [{
           "name" : "excludeNested",
@@ -999,10 +1143,10 @@
       },
       "url" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-race-codes",
       "version" : "0.1.0",
-      "name" : "NMDPRaceCodes",
-      "title" : "NMDP Race Code Value Set",
+      "name" : "NMDPRaceVS",
+      "title" : "NMDP Race Value Set",
       "status" : "active",
-      "date" : "2022-05-26T09:36:20-05:00",
+      "date" : "2022-05-26T13:36:13-05:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -1011,10 +1155,10 @@
           "value" : "http://bethematch.org"
         }]
       }],
-      "description" : "NMDP Race Codes",
+      "description" : "NMDP race codes",
       "expansion" : {
-        "identifier" : "urn:uuid:9e35b4bf-8b21-43fc-8974-c4886e9ff093",
-        "timestamp" : "2022-05-26T09:37:49-05:00",
+        "identifier" : "urn:uuid:f4bfbc81-10d2-43fa-bd8d-f130def0ba6b",
+        "timestamp" : "2022-05-26T13:37:47-05:00",
         "total" : 50,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1288,10 +1432,10 @@
       },
       "url" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-rh-status-codes",
       "version" : "0.1.0",
-      "name" : "NMDPRhStatusCodes",
+      "name" : "NMDPRhStatusVS",
       "title" : "NMDP Codes for Rh status",
       "status" : "active",
-      "date" : "2022-05-26T09:36:20-05:00",
+      "date" : "2022-05-26T13:36:13-05:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -1300,10 +1444,10 @@
           "value" : "http://bethematch.org"
         }]
       }],
-      "description" : "NMDP Codes for Rh staus",
+      "description" : "NMDP codes for Rh staus",
       "expansion" : {
-        "identifier" : "urn:uuid:dc597f19-bc0b-4ad4-8b05-a6161bf7f61f",
-        "timestamp" : "2022-05-26T09:37:49-05:00",
+        "identifier" : "urn:uuid:7fb717da-8cc7-4e7c-a0b9-1ebf6719c6c1",
+        "timestamp" : "2022-05-26T13:37:47-05:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1342,20 +1486,94 @@
     }
   },
   {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-transplant-timeline-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "nmdp-transplant-timeline-codes",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-transplant-timeline-cs.html\">NMDP Transplant Timeline Code System v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-nmdp-transplant-timeline-cs.html\"><code>http://terminology.nmdp.org/codesystem/transplanttimeline</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline--4w\"> </a>  <a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-.604w\">&lt;4w</a></td><td>Less than 4 weeks</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-4-6w\"> </a>  <a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-4-6w\">4-6w</a></td><td>Between 4-6 weeks</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-7-12w\"> </a>  <a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-7-12w\">7-12w</a></td><td>Between 7-12 weeks</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-12w-6m\"> </a>  <a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-12w-6m\">12w-6m</a></td><td>Over 12 weeks - up to 6 months</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline--6m\"> </a>  <a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-.626m\">&gt;6m</a></td><td>Greater than 6 months</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-NA\"> </a>  <a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-NA\">NA</a></td><td>N/A : MUD Transplant not preferred treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-P\"> </a>  <a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-P\">P</a></td><td>Pending, Case manager to follow up</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-transplant-timeline-codes",
+      "version" : "0.1.0",
+      "name" : "NMDPTransplantTimelineVS",
+      "title" : "NMDP Transplant Timeline Value Set",
+      "status" : "active",
+      "date" : "2022-05-26T13:36:13-05:00",
+      "publisher" : "NMDP",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "NMDP transplant timeline codes",
+      "expansion" : {
+        "identifier" : "urn:uuid:8b25f51c-6954-4b45-af3b-0e1bd3d8af5b",
+        "timestamp" : "2022-05-26T13:37:47-05:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/transplanttimeline|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+          "code" : "<4w",
+          "display" : "Less than 4 weeks"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+          "code" : "4-6w",
+          "display" : "Between 4-6 weeks"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+          "code" : "7-12w",
+          "display" : "Between 7-12 weeks"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+          "code" : "12w-6m",
+          "display" : "Over 12 weeks - up to 6 months"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+          "code" : ">6m",
+          "display" : "Greater than 6 months"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+          "code" : "NA",
+          "display" : "N/A : MUD Transplant not preferred treatment"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+          "code" : "P",
+          "display" : "Pending, Case manager to follow up"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://loinc.org/vs/LL360-9",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "loinc-PosNeg-codes",
+      "id" : "loinc-posneg-codes",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.72</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6576-8\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA6576-8.html\">LA6576-8</a></td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6577-6\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA6577-6.html\">LA6577-6</a></td><td>Negative</td></tr></table></div>"
       },
       "url" : "http://loinc.org/vs/LL360-9",
       "version" : "0.1.0",
-      "name" : "PosNeg",
-      "title" : "Pos|Neg",
+      "name" : "PosNegVS",
+      "title" : "LOINC Pos|Neg Value Set",
       "status" : "active",
-      "date" : "2022-05-26T09:36:20-05:00",
+      "date" : "2022-05-26T13:36:13-05:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -1367,8 +1585,8 @@
       "description" : "LOINC codes for Positive and Negative",
       "copyright" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.",
       "expansion" : {
-        "identifier" : "urn:uuid:3b0f035a-5b43-4986-969d-ba4a181b3071",
-        "timestamp" : "2022-05-26T09:37:49-05:00",
+        "identifier" : "urn:uuid:0e4fd51d-04ff-4bb2-a9ac-d93f3659ae7d",
+        "timestamp" : "2022-05-26T13:37:47-05:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1396,20 +1614,20 @@
     }
   },
   {
-    "fullUrl" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group",
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group-codes",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "sct-abo-group",
+      "id" : "sct-abo-group-codes",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Mar 2022</p><p>All codes in this table are from the system <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-112144000\"> </a>  <a href=\"http://snomed.info/id/112144000\">112144000</a></td><td>Blood group A (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-165743006\"> </a>  <a href=\"http://snomed.info/id/165743006\">165743006</a></td><td>Blood group AB (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-112149005\"> </a>  <a href=\"http://snomed.info/id/112149005\">112149005</a></td><td>Blood group B (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-58460004\"> </a>  <a href=\"http://snomed.info/id/58460004\">58460004</a></td><td>Blood group O (finding)</td></tr></table></div>"
       },
-      "url" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group",
+      "url" : "http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group-codes",
       "version" : "0.1.0",
-      "name" : "SCTABOGroup",
-      "title" : "Snomed CT ABO group",
+      "name" : "SCTABOGroupVS",
+      "title" : "Snomed CT ABO group Value Set",
       "status" : "active",
-      "date" : "2022-05-26T09:36:20-05:00",
+      "date" : "2022-05-26T13:36:13-05:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -1418,9 +1636,10 @@
           "value" : "http://bethematch.org"
         }]
       }],
+      "description" : "Snomed CT codes for ABO blood group",
       "expansion" : {
-        "identifier" : "urn:uuid:61046098-93a7-4d3d-9dcc-890894230836",
-        "timestamp" : "2022-05-26T09:37:49-05:00",
+        "identifier" : "urn:uuid:adaa7ea0-7260-43e1-b662-e524d66d1abe",
+        "timestamp" : "2022-05-26T13:37:47-05:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
