@@ -9,3 +9,6 @@ Alias: $nmdp-race = http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp
 Alias: $nmdp-ethnicity = http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-ethnicity
 Alias: $LNC = http://loinc.org
 Alias: $SCT = http://snomed.info/sct
+Alias: $GLSCodeSystem = http://glstring.org
+Alias: $HLAGeneIDCS = http://www.genenames.org/geneId
+Alias: $HLAGenegroupCS = http://www.genenames.org/genegroup

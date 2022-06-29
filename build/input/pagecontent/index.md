@@ -10,20 +10,21 @@ This IG describes FHIR profiles and examples for
 + Patient needing the transplant
 + Condition to describe the patient's diagnois
 + Specimen to identify the specimen Id of the Patient
-+ Observation for patient weight
-+ Observation for patient height
-+ Observation for patient ABO blood group type
-+ Observation for patient Rh status
++ Observations for 
+  + weight
+  + height
+  + ABO blood group type
+  + Rh status
+  + transplant timeline
+  + HLA genotypes 
 + Organization for Transplant Center
 + Practioner to identify the Transplant Center Coordinator
 + Extensions to use NMDP race and ethnicity with Patient resource
-
++ FHIR bundles to contain it all
+  
 Work To Do:
-+ HLA
 + what identifers should be specified?
-+ profiles/examples for 
-  + tranplant timeline
-  + Bundle
-+ and more
++ more work on code systems and value sets
++ verify what is required and what is optional
 
 Click on the Artifacts tab above to see the contents of this IG.

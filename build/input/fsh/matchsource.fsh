@@ -2,6 +2,7 @@ Profile:  MSPatient
 Parent:   Patient
 Id:       mspatient
 Description: "Patient needing a transplant"
+* insert MetaSecurityRules
 * name 1..* MS
 * name.given 1..* MS
 * name.family 1..1 MS
@@ -34,6 +35,7 @@ Description: "Patient needing a transplant"
 Instance: MSPatientExample
 InstanceOf: MSPatient
 Description: "Example of a patient needing a donor using us-core-race and us-core-ethnicity codes."
+* meta.security[TransplantCenter].code = #tc_123
 * name
   * given[0] = "Jane"
   * family = "Everyperson"
@@ -53,6 +55,7 @@ Description: "Example of a patient needing a donor using us-core-race and us-cor
 Instance: MSPatientExample2
 InstanceOf: MSPatient
 Description: "Example of a patient needing a donor using NMDP race code."
+* meta.security[TransplantCenter].code = #tc_123
 * name
   * given[0] = "Joe"
   * family = "Everyperson"
@@ -71,6 +74,7 @@ Description: "Example of a patient needing a donor using NMDP race code."
 Instance: MSPatientExample3
 InstanceOf: MSPatient
 Description: "Example of a patient without a race code - this should generate an error."
+* meta.security[TransplantCenter].code = #tc_123
 * name
   * given[0] = "Jason"
   * family = "Everyperson"
@@ -86,6 +90,7 @@ Description: "Example of a patient without a race code - this should generate an
 Instance: MSPatientExample4
 InstanceOf: MSPatient
 Description: "Example of a patient needing a donor using us-core-race code but not us-core-ethnicity - this should generate an error"
+* meta.security[TransplantCenter].code = #tc_123
 * name
   * given[0] = "Jona"
   * family = "Everyperson"
@@ -106,11 +111,13 @@ Parent: Organization
 Id:     transplantcenter
 Description: "Transplant Center"
 // contains transplantCenterEnterpriseId
+* insert MetaSecurityRules
 * identifier 1..* MS
 
 Instance: TCExample
 InstanceOf: transplantcenter
 Description: "Example of a Transplant Center."
+* meta.security[TransplantCenter].code = #tc_123
 * name = "My Transplant Center"
 * identifier.system = "http://terminology.nmdp.org/identifier/transplantcenter"
 * identifier.value = "000"
@@ -121,6 +128,7 @@ Id:     msspecimen
 Description: "Patient Sample"
 // TC Sample ID
 // for HLA report?
+* insert MetaSecurityRules
 * identifier 1..* MS
 * subject 1..1 MS
 * subject only Reference(mspatient)
@@ -128,6 +136,7 @@ Description: "Patient Sample"
 Instance: MSSpecimenExample
 InstanceOf: MSSpecimen
 Description: "Example patient specimen."
+* meta.security[TransplantCenter].code = #tc_123
 * identifier.system = "http://terminology.nmdp.org/identifier/transplantcenter"
 * identifier.value = "000"
 * subject = Reference(MSPatientExample)
@@ -136,6 +145,7 @@ Profile: TransplantCenterCoordinator
 Parent: Practitioner
 Id: transplantcentercoordinator
 Description: "Transplant Center Coordinator"
+* insert MetaSecurityRules
 * name 1..1 MS
 * name.given 1..* MS
 * name.family 1..1 MS
@@ -143,29 +153,41 @@ Description: "Transplant Center Coordinator"
 Instance: CoordinatorExample
 InstanceOf: transplantcentercoordinator
 Description: "Example of a Transplant Center Coordinator."
+* meta.security[TransplantCenter].code = #tc_123
 * name
-  * given[0] = "Jill"
-  * family = "Doe"
+  * given[0] = "Bart"
+  * family = "Simpson"
 
 Profile: MSDiagnosis
 Parent: Condition
 Id: msdiagnosis
 Description: "Diagnosis"
+* insert MetaSecurityRules
 * code 1..1 MS
 * code from nmdp-disease-codes (required)
 * subject 1..1 MS
 * subject only Reference(mspatient)
 * recordedDate 1..1 MS
 
-Instance: MSDiagnosisExample
+Instance: MSDiagnosisExample-OND
 InstanceOf: msdiagnosis
 Description: "Example of a Diagnois"
+* meta.security[TransplantCenter].code = #tc_123
 * code.coding[0].system = "http://terminology.nmdp.org/codesystem/disease"
 * code.coding[0].code = #OND
 * code.coding[0].display = "OTHER NON-MALIGNANT DISEASE"
 * subject = Reference(MSPatientExample)
 * recordedDate = "2021-11-01"
 
+Instance: MSDiagnosisExample-AML
+InstanceOf: msdiagnosis
+Description: "Example of a Diagnois: AML"
+* meta.security[TransplantCenter].code = #tc_123
+* code.coding[0].system = "http://terminology.nmdp.org/codesystem/disease"
+* code.coding[0].code = #AML
+* code.coding[0].display = "ACUTE MYELOGENOUS LEUKEMIA"
+* subject = Reference(MSPatientExample)
+* recordedDate = "2021-11-01"
 
 Extension: NMDPRace
 Id: nmdp-race
@@ -191,3 +213,8 @@ Invariant: eth-1
 Severity: #error
 Description: "Shall use either NMDP ethnicity extension or us-core-ethnicity"
 Expression: "extension.exists(url = 'http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-ethnicity' or url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity')"
+
+Invariant:  sec-rc
+Severity:   #error
+Description: "Use transplant center identifier for security tag"
+Expression: "matches('^tc_[0-9]{5}$')"

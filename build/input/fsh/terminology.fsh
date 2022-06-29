@@ -384,7 +384,7 @@ Description: "Code System for NMDP transplant timeline"
 * #<4w      "Less than 4 weeks"
 * #4-6w     "Between 4-6 weeks"
 * #7-12w    "Between 7-12 weeks"
-* #12w-6m     "Over 12 weeks - up to 6 months"
+* #12w-6m   "Over 12 weeks - up to 6 months"
 * #>6m      "Greater than 6 months"
 * #NA       "N/A : MUD Transplant not preferred treatment"
 * #P        "Pending, Case manager to follow up"
@@ -394,3 +394,36 @@ Id: nmdp-transplant-timeline-codes
 Title: "NMDP Transplant Timeline Value Set"
 Description: "NMDP transplant timeline codes"
 * include codes from system nmdp-transplant-timeline-cs
+
+CodeSystem: NMDPPreferredProductCS
+Title: "NMDP Preferred Product for Transplant"
+Id: nmdp-preferred-product-cs
+Description: "NMDP Preferred Product for MatchSource patient"
+* ^url = "http://terminology.nmdp.org/codesystem/preferredproduct"
+* ^version = "2022"
+* ^status = #active
+* ^experimental = true
+* ^publisher = "NMDP"
+* ^copyright = "National Marrow Donor Program"
+* #PBSC     "Peripheral Blood Stem Cell (Aphaeresis)"
+// * #HPC, Aphresis
+* #BM   "HPC, Marrow"
+* #CB   "HPC, Cord Blood"
+* #NP   "No preference"
+* #UNK  "Unknown"
+
+
+ValueSet: NMDPPreferredProductVS
+Id: nmdp-preferred-product-codes
+Title: "NMDP Preferred Product Value Set"
+Description: "NMDP preferred product codes"
+* include codes from system nmdp-preferred-product-cs
+
+
+ValueSet: HPCProductVS
+Id: preferred-product-codes
+Title: "SNOMED HPC Value Set"
+Description: "SNOMED HPC Value Set"
+* include codes from system nmdp-preferred-product-cs
+
+* $SCT#41988001    "Bone marrow derived hematopoietic stem cell"

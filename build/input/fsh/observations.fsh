@@ -2,12 +2,14 @@ Profile: MSWeightObservation
 Parent: observation-bodyweight
 Id: ms-weight-observation
 Description: "Weight of Patient"
+* insert MetaSecurityRules
 * subject 1..1 MS
 * subject only Reference(mspatient) 
 
 Instance: MSWeightObsExample
 InstanceOf: ms-weight-observation
 Description: "Example of patient weight"
+* meta.security[TransplantCenter].code = #tc_123
 * status = #final
 * subject = Reference(MSPatientExample)
 * valueQuantity
@@ -21,12 +23,14 @@ Profile: MSHeightObservation
 Parent: observation-bodyheight
 Id: ms-height-observation
 Description: "Height of Patient"
+* insert MetaSecurityRules
 * subject 1..1 MS
 * subject only Reference(mspatient) 
 
 Instance: MSHeightObsExample
 InstanceOf: ms-height-observation
 Description: "Example of patient height"
+* meta.security[TransplantCenter].code = #tc_123
 * status = #final
 * subject = Reference(MSPatientExample)
 * valueQuantity
@@ -39,6 +43,7 @@ Profile: MSABOGroupObservation
 Parent: Observation
 Id: ms-abogroup-observation
 Description: "ABO Blood Group of Patient"
+* insert MetaSecurityRules
 * subject 1..1 MS
 * subject only Reference(mspatient) 
 * code = $LNC#883-9 "ABO group [Type] in Blood"
@@ -49,6 +54,7 @@ Description: "ABO Blood Group of Patient"
 Instance: MSABOObsExample
 InstanceOf: ms-abogroup-observation
 Description: "Example of patient ABO"
+* meta.security[TransplantCenter].code = #tc_123
 * status = #final
 * subject = Reference(MSPatientExample)
 // * code.coding[0] = $LNC#883-9 "ABO group [Type] in Blood"
@@ -59,11 +65,11 @@ Description: "Example of patient ABO"
     * display = "Group A"
 * effectiveDateTime = "2022-05-01"
 
-
 Profile: MSRhStatusObservation
 Parent: Observation
 Id: ms-rhstatus-observation
 Description: "Rh status of Patient"
+* insert MetaSecurityRules
 * subject 1..1 MS
 * subject only Reference(mspatient) 
 * code = $LNC#10331-7 "Rh [Type] in Blood"
@@ -74,6 +80,7 @@ Description: "Rh status of Patient"
 Instance: MSRhObsExample
 InstanceOf: ms-rhstatus-observation
 Description: "Example of patient Rh status"
+* meta.security[TransplantCenter].code = #tc_123
 * status = #final
 * subject = Reference(MSPatientExample)
 * valueCodeableConcept
@@ -81,4 +88,52 @@ Description: "Example of patient Rh status"
     * system = $LNC
     * code = 	#LA6576-8	
     * display = "Positive"
+* effectiveDateTime = "2022-05-01"
+
+Profile: MSPreferredProduct
+Parent: Observation
+Id: ms-preferred-product-observation
+Description: "Preferred product for transplant"
+* insert MetaSecurityRules
+* code.text = "Preferred Product"
+* effectiveDateTime 1..1 MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from nmdp-preferred-product-codes
+
+Instance: MSPreferredProductExample
+InstanceOf: ms-preferred-product-observation
+Description: "Example of preferred product"
+* meta.security[TransplantCenter].code = #tc_123
+* status = #final
+* code.text = "Preferred Product"
+* subject = Reference(MSPatientExample)
+* valueCodeableConcept
+  * coding
+    * system = "http://terminology.nmdp.org/codesystem/preferredproduct"
+    * code = 	#PBSC
+    * display = "Peripheral Blood Stem Cell (Aphaeresis)"
+* effectiveDateTime = "2022-05-01"
+
+Profile: MSTransplantTimeline
+Parent: Observation
+Id: ms-transplant-timeline-observation
+Description: "Transplant timeline for patient"
+* insert MetaSecurityRules
+* code.text = "Transplant Timeline"
+* effectiveDateTime 1..1 MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from nmdp-transplant-timeline-codes
+
+Instance: MSTransplantTimelineExample
+InstanceOf: ms-transplant-timeline-observation
+Description: "Example of transplant timeline"
+* meta.security[TransplantCenter].code = #tc_123
+* status = #final
+* code.text = "Transplant Timeline"
+* subject = Reference(MSPatientExample)
+* valueCodeableConcept
+  * coding
+    * system = "http://terminology.nmdp.org/codesystem/transplanttimeline"
+    * code = 	#P
+    * display = "Pending, Case manager to follow up"
 * effectiveDateTime = "2022-05-01"
