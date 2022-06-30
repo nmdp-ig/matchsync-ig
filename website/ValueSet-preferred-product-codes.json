@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "id": "preferred-product-codes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-preferred-product-cs.html\"><code>http://terminology.nmdp.org/codesystem/preferredproduct</code></a></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/41988001\">41988001</a></td><td>Bone marrow derived hematopoietic stem cell</td></tr></table></li></ul></div>"
+  },
+  "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/preferred-product-codes",
+  "version": "0.1.0",
+  "name": "HPCProductVS",
+  "title": "SNOMED HPC Value Set",
+  "status": "active",
+  "date": "2022-06-29T21:07:13-05:00",
+  "publisher": "NMDP",
+  "contact": [
+    {
+      "name": "NMDP",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://bethematch.org"
+        }
+      ]
+    }
+  ],
+  "description": "SNOMED HPC Value Set",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.nmdp.org/codesystem/preferredproduct"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "41988001",
+            "display": "Bone marrow derived hematopoietic stem cell"
+          }
+        ]
+      }
+    ]
+  }
+}

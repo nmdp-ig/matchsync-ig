@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsource/CodeSystem/nmdp-ethnicity-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "nmdp-ethnicity-cs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.nmdp.org/codesystem/ethnicity defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">NHIS<a name=\"nmdp-ethnicity-cs-NHIS\"> </a></td><td>Not Hispanic or Latino</td></tr><tr><td style=\"white-space:nowrap\">HIS<a name=\"nmdp-ethnicity-cs-HIS\"> </a></td><td>Hispanic or Latino</td></tr><tr><td style=\"white-space:nowrap\">nil<a name=\"nmdp-ethnicity-cs-nil\"> </a></td><td>No data</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://terminology.nmdp.org/codesystem/ethnicity"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "NMDPEthnicityCS"];
+  fhir:CodeSystem.title [ fhir:value "NMDP Ethnicity Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2022-06-29T21:07:13-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "NMDP"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "NMDP" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Code System for NMDP ethnicity"];
+  fhir:CodeSystem.copyright [ fhir:value "National Marrow Donor Program"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "NHIS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Not Hispanic or Latino" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "HIS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hispanic or Latino" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "nil" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No data" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsource/CodeSystem/nmdp-ethnicity-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

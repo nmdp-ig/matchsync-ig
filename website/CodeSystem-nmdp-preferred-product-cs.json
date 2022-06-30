@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nmdp-preferred-product-cs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.nmdp.org/codesystem/preferredproduct defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PBSC<a name=\"nmdp-preferred-product-cs-PBSC\"> </a></td><td>Peripheral Blood Stem Cell (Aphaeresis)</td></tr><tr><td style=\"white-space:nowrap\">BM<a name=\"nmdp-preferred-product-cs-BM\"> </a></td><td>HPC, Marrow</td></tr><tr><td style=\"white-space:nowrap\">CB<a name=\"nmdp-preferred-product-cs-CB\"> </a></td><td>HPC, Cord Blood</td></tr><tr><td style=\"white-space:nowrap\">NP<a name=\"nmdp-preferred-product-cs-NP\"> </a></td><td>No preference</td></tr><tr><td style=\"white-space:nowrap\">UNK<a name=\"nmdp-preferred-product-cs-UNK\"> </a></td><td>Unknown</td></tr></table></div>"
+  },
+  "url": "http://terminology.nmdp.org/codesystem/preferredproduct",
+  "version": "0.1.0",
+  "name": "NMDPPreferredProductCS",
+  "title": "NMDP Preferred Product for Transplant",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-06-29T21:07:13-05:00",
+  "publisher": "NMDP",
+  "contact": [
+    {
+      "name": "NMDP",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://bethematch.org"
+        }
+      ]
+    }
+  ],
+  "description": "NMDP Preferred Product for MatchSource patient",
+  "copyright": "National Marrow Donor Program",
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "PBSC",
+      "display": "Peripheral Blood Stem Cell (Aphaeresis)"
+    },
+    {
+      "code": "BM",
+      "display": "HPC, Marrow"
+    },
+    {
+      "code": "CB",
+      "display": "HPC, Cord Blood"
+    },
+    {
+      "code": "NP",
+      "display": "No preference"
+    },
+    {
+      "code": "UNK",
+      "display": "Unknown"
+    }
+  ]
+}

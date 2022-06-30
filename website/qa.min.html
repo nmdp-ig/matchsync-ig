@@ -1,0 +1,744 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = errors = 3, warn = 31, info = 88, 5 -->
+<head>
+  <title>MatchSourceIG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for MatchSourceIG</h1>
+ <p>Generated Wed Jun 29 21:12:03 CDT 2022, FHIR version 4.0.1 for matchsource#0.1.0 (canonical = <a href="http://fhir.nmdp.org/ig/matchsource">http://fhir.nmdp.org/ig/matchsource</a> (<a href="http://fhir.nmdp.org/ig/matchsource/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.121, which is out of date. The current version is v1.1.122 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = matchsource, Canonical = http://fhir.nmdp.org/ig/matchsource</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> matchsource</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.nmdp.org/ig/matchsource</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/3.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.us.core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core/STU4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4Xu3LMQoAIBADwftr/v8GtdbqEAthAtMspJJUx9rYW8ftHwAA+NcRAAAAXplLq0BWj/rZigAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.bulkdata</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.1 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/bulkdata</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/bulkdata/STU1.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> us.nlm.vsac</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.3.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.org/packages/us.nlm.vsac</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.org/packages/us.nlm.vsac</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.us.mcode</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/mcode</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/mcode/STU2</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.us.core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core/STU4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.genomics-reporting</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/genomics-reporting</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/genomics-reporting/STU2</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#current</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.nmdp.org/ig/matchsource (Problem #1 with package-list.json at http://fhir.nmdp.org/ig/matchsource: Invalid HTTP response 404 from https://fhir.nmdp.org/ig/matchsource/package-list.json?nocache=1656554830139 (Not Found) (content in /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/fhir-http-2.log))</td></tr>
+ <tr><td>Summary:</td><td> errors = 3, warn = 31, info = 88, broken links = 5</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>5</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_bmilius_Documents_src_github-nmdp-ig_matchsource-ig_build_fsh-generated_resources_bundle-BundleExample-Full"><b>/Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/bundle-BundleExample-Full</b></a></td><td><b>0</b></td><td><b>22</b></td><td><b>37</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_bmilius_Documents_src_github-nmdp-ig_matchsource-ig_build_fsh-generated_resources_bundle-BundleExample-Minimal"><b>/Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/bundle-BundleExample-Minimal</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>7</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_bmilius_Documents_src_github-nmdp-ig_matchsource-ig_build_fsh-generated_resources_patient-MSPatientExample"><b>/Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/patient-MSPatientExample</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_bmilius_Documents_src_github-nmdp-ig_matchsource-ig_build_fsh-generated_resources_patient-MSPatientExample3"><b>/Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/patient-MSPatientExample3</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_bmilius_Documents_src_github-nmdp-ig_matchsource-ig_build_fsh-generated_resources_patient-MSPatientExample4"><b>/Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/patient-MSPatientExample4</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_bmilius_Documents_src_github-nmdp-ig_matchsource-ig_build_fsh-generated_resources_structuredefinition-hla-genotype"><b>/Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-hla-genotype</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_bmilius_Documents_src_github-nmdp-ig_matchsource-ig_build_fsh-generated_resources_valueset-preferred-product-codes"><b>/Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-preferred-product-codes</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.dependency[2].url</b></td><td><b>warning</b></td><td title=""><b>The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ImplementationGuide.dependency[2].url</b></td><td><b>information</b></td><td title=""><b>The correct canonical URL for this dependency is http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.dependency[3].url</b></td><td><b>warning</b></td><td title=""><b>The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ImplementationGuide.dependency[3].url</b></td><td><b>information</b></td><td title=""><b>The correct canonical URL for this dependency is http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-a.html#l12088">output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1240, column 175</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for &quot;HGNC:4931&quot; cannot be resolved (valid targets: 57 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-b.html#l12088">output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1240, column 175</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for &quot;HGNC:4932&quot; cannot be resolved (valid targets: 57 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-c.html#l12088">output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1240, column 175</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for &quot;HGNC:4933&quot; cannot be resolved (valid targets: 57 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-dpb1.html#l12088">output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1240, column 175</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for &quot;HGNC:4940&quot; cannot be resolved (valid targets: 57 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-drb1.html#l12088">output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1240, column 175</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for &quot;HGNC:4948&quot; cannot be resolved (valid targets: 57 targets)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_github-nmdp-ig_matchsource-ig_build_fsh-generated_resources_bundle-BundleExample-Full"> </a>
+<h2><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(130)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-MSBundle.html">MatchSource Bundle</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-mspatient.html">MSPatient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-mspatient.html">MSPatient</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-transplantcentercoordinator.html">TransplantCenterCoordinator</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> and <i>this.</i><a href="StructureDefinition-transplantcentercoordinator.html">TransplantCenterCoordinator</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-msdiagnosis.html">MSDiagnosis</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <i>this.</i><a href="StructureDefinition-msdiagnosis.html">MSDiagnosis</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-ms-rhstatus-observation.html">MSRhStatusObservation</a>, <i>this.</i><a href="StructureDefinition-ms-abogroup-observation.html">MSABOGroupObservation</a>, <i>this.</i><a href="StructureDefinition-ms-rhstatus-observation.html">MSRhStatusObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-ms-transplant-timeline-observation.html">MSTransplantTimeline</a>, <i>this.</i><a href="StructureDefinition-ms-preferred-product-observation.html">MSPreferredProduct</a>, <i>this.</i><a href="StructureDefinition-ms-height-observation.html">MSHeightObservation</a>, <i>this.</i><a href="StructureDefinition-ms-weight-observation.html">MSWeightObservation</a>, <i>this.</i><a href="StructureDefinition-hla-a.html">HLA_A</a>, <i>this.</i><a href="StructureDefinition-hla-b.html">HLA_B</a>, <i>this.</i><a href="StructureDefinition-hla-c.html">HLA_C</a>, <i>this.</i><a href="StructureDefinition-hla-drb1.html">HLA_DRB1</a>, <i>this.</i><a href="StructureDefinition-hla-dpb1.html">HLA_DPB1</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-ms-rhstatus-observation.html">MSRhStatusObservation</a>, <i>this.</i><a href="StructureDefinition-ms-abogroup-observation.html">MSABOGroupObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-ms-abogroup-observation.html">MSABOGroupObservation</a>, <i>this.</i><a href="StructureDefinition-ms-transplant-timeline-observation.html">MSTransplantTimeline</a>, <i>this.</i><a href="StructureDefinition-ms-preferred-product-observation.html">MSPreferredProduct</a>, <i>this.</i><a href="StructureDefinition-ms-height-observation.html">MSHeightObservation</a>, <i>this.</i><a href="StructureDefinition-ms-weight-observation.html">MSWeightObservation</a>, <i>this.</i><a href="StructureDefinition-hla-a.html">HLA_A</a>, <i>this.</i><a href="StructureDefinition-hla-b.html">HLA_B</a>, <i>this.</i><a href="StructureDefinition-hla-c.html">HLA_C</a>, <i>this.</i><a href="StructureDefinition-hla-drb1.html">HLA_DRB1</a>, <i>this.</i><a href="StructureDefinition-hla-dpb1.html">HLA_DPB1</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[5].resource: Validated against <i>this.</i><a href="StructureDefinition-ms-rhstatus-observation.html">MSRhStatusObservation</a>, <i>this.</i><a href="StructureDefinition-ms-transplant-timeline-observation.html">MSTransplantTimeline</a> (per meta), <i>this.</i><a href="StructureDefinition-ms-abogroup-observation.html">MSABOGroupObservation</a>, <i>this.</i><a href="StructureDefinition-ms-transplant-timeline-observation.html">MSTransplantTimeline</a>, <i>this.</i><a href="StructureDefinition-ms-preferred-product-observation.html">MSPreferredProduct</a>, <i>this.</i><a href="StructureDefinition-ms-height-observation.html">MSHeightObservation</a>, <i>this.</i><a href="StructureDefinition-ms-weight-observation.html">MSWeightObservation</a>, <i>this.</i><a href="StructureDefinition-hla-a.html">HLA_A</a>, <i>this.</i><a href="StructureDefinition-hla-b.html">HLA_B</a>, <i>this.</i><a href="StructureDefinition-hla-c.html">HLA_C</a>, <i>this.</i><a href="StructureDefinition-hla-drb1.html">HLA_DRB1</a>, <i>this.</i><a href="StructureDefinition-hla-dpb1.html">HLA_DPB1</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[6].resource: Validated against <i>this.</i><a href="StructureDefinition-ms-rhstatus-observation.html">MSRhStatusObservation</a>, <i>this.</i><a href="StructureDefinition-ms-preferred-product-observation.html">MSPreferredProduct</a> (per meta), <i>this.</i><a href="StructureDefinition-ms-abogroup-observation.html">MSABOGroupObservation</a>, <i>this.</i><a href="StructureDefinition-ms-transplant-timeline-observation.html">MSTransplantTimeline</a>, <i>this.</i><a href="StructureDefinition-ms-preferred-product-observation.html">MSPreferredProduct</a>, <i>this.</i><a href="StructureDefinition-ms-height-observation.html">MSHeightObservation</a>, <i>this.</i><a href="StructureDefinition-ms-weight-observation.html">MSWeightObservation</a>, <i>this.</i><a href="StructureDefinition-hla-a.html">HLA_A</a>, <i>this.</i><a href="StructureDefinition-hla-b.html">HLA_B</a>, <i>this.</i><a href="StructureDefinition-hla-c.html">HLA_C</a>, <i>this.</i><a href="StructureDefinition-hla-drb1.html">HLA_DRB1</a>, <i>this.</i><a href="StructureDefinition-hla-dpb1.html">HLA_DPB1</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[7].resource: Validated against <i>this.</i><a href="StructureDefinition-transplantcenter.html">TransplantCenter</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-transplantcenter.html">TransplantCenter</a> (per meta)</li><li>Bundle.entry[8].resource: Validated against <i>this.</i><a href="StructureDefinition-ms-rhstatus-observation.html">MSRhStatusObservation</a>, <i>this.</i><a href="StructureDefinition-hla-a.html">HLA_A</a> (per meta), <i>this.</i><a href="StructureDefinition-ms-abogroup-observation.html">MSABOGroupObservation</a>, <i>this.</i><a href="StructureDefinition-ms-transplant-timeline-observation.html">MSTransplantTimeline</a>, <i>this.</i><a href="StructureDefinition-ms-preferred-product-observation.html">MSPreferredProduct</a>, <i>this.</i><a href="StructureDefinition-ms-height-observation.html">MSHeightObservation</a>, <i>this.</i><a href="StructureDefinition-ms-weight-observation.html">MSWeightObservation</a>, <i>this.</i><a href="StructureDefinition-hla-a.html">HLA_A</a>, <i>this.</i><a href="StructureDefinition-hla-b.html">HLA_B</a>, <i>this.</i><a href="StructureDefinition-hla-c.html">HLA_C</a>, <i>this.</i><a href="StructureDefinition-hla-drb1.html">HLA_DRB1</a>, <i>this.</i><a href="StructureDefinition-hla-dpb1.html">HLA_DPB1</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[9].resource: Validated against <i>this.</i><a href="StructureDefinition-ms-rhstatus-observation.html">MSRhStatusObservation</a>, <i>this.</i><a href="StructureDefinition-hla-b.html">HLA_B</a> (per meta), <i>this.</i><a href="StructureDefinition-ms-abogroup-observation.html">MSABOGroupObservation</a>, <i>this.</i><a href="StructureDefinition-ms-transplant-timeline-observation.html">MSTransplantTimeline</a>, <i>this.</i><a href="StructureDefinition-ms-preferred-product-observation.html">MSPreferredProduct</a>, <i>this.</i><a href="StructureDefinition-ms-height-observation.html">MSHeightObservation</a>, <i>this.</i><a href="StructureDefinition-ms-weight-observation.html">MSWeightObservation</a>, <i>this.</i><a href="StructureDefinition-hla-a.html">HLA_A</a>, <i>this.</i><a href="StructureDefinition-hla-b.html">HLA_B</a>, <i>this.</i><a href="StructureDefinition-hla-c.html">HLA_C</a>, <i>this.</i><a href="StructureDefinition-hla-drb1.html">HLA_DRB1</a>, <i>this.</i><a href="StructureDefinition-hla-dpb1.html">HLA_DPB1</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[10].resource: Validated against <i>this.</i><a href="StructureDefinition-ms-rhstatus-observation.html">MSRhStatusObservation</a>, <i>this.</i><a href="StructureDefinition-hla-c.html">HLA_C</a> (per meta), <i>this.</i><a href="StructureDefinition-ms-abogroup-observation.html">MSABOGroupObservation</a>, <i>this.</i><a href="StructureDefinition-ms-transplant-timeline-observation.html">MSTransplantTimeline</a>, <i>this.</i><a href="StructureDefinition-ms-preferred-product-observation.html">MSPreferredProduct</a>, <i>this.</i><a href="StructureDefinition-ms-height-observation.html">MSHeightObservation</a>, <i>this.</i><a href="StructureDefinition-ms-weight-observation.html">MSWeightObservation</a>, <i>this.</i><a href="StructureDefinition-hla-a.html">HLA_A</a>, <i>this.</i><a href="StructureDefinition-hla-b.html">HLA_B</a>, <i>this.</i><a href="StructureDefinition-hla-c.html">HLA_C</a>, <i>this.</i><a href="StructureDefinition-hla-drb1.html">HLA_DRB1</a>, <i>this.</i><a href="StructureDefinition-hla-dpb1.html">HLA_DPB1</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[11].resource: Validated against <i>this.</i><a href="StructureDefinition-ms-rhstatus-observation.html">MSRhStatusObservation</a>, <i>this.</i><a href="StructureDefinition-hla-drb1.html">HLA_DRB1</a> (per meta), <i>this.</i><a href="StructureDefinition-ms-abogroup-observation.html">MSABOGroupObservation</a>, <i>this.</i><a href="StructureDefinition-ms-transplant-timeline-observation.html">MSTransplantTimeline</a>, <i>this.</i><a href="StructureDefinition-ms-preferred-product-observation.html">MSPreferredProduct</a>, <i>this.</i><a href="StructureDefinition-ms-height-observation.html">MSHeightObservation</a>, <i>this.</i><a href="StructureDefinition-ms-weight-observation.html">MSWeightObservation</a>, <i>this.</i><a href="StructureDefinition-hla-a.html">HLA_A</a>, <i>this.</i><a href="StructureDefinition-hla-b.html">HLA_B</a>, <i>this.</i><a href="StructureDefinition-hla-c.html">HLA_C</a>, <i>this.</i><a href="StructureDefinition-hla-drb1.html">HLA_DRB1</a>, <i>this.</i><a href="StructureDefinition-hla-dpb1.html">HLA_DPB1</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[12].resource: Validated against <i>this.</i><a href="StructureDefinition-ms-rhstatus-observation.html">MSRhStatusObservation</a>, <i>this.</i><a href="StructureDefinition-hla-dpb1.html">HLA_DPB1</a> (per meta), <i>this.</i><a href="StructureDefinition-ms-abogroup-observation.html">MSABOGroupObservation</a>, <i>this.</i><a href="StructureDefinition-ms-transplant-timeline-observation.html">MSTransplantTimeline</a>, <i>this.</i><a href="StructureDefinition-ms-preferred-product-observation.html">MSPreferredProduct</a>, <i>this.</i><a href="StructureDefinition-ms-height-observation.html">MSHeightObservation</a>, <i>this.</i><a href="StructureDefinition-ms-weight-observation.html">MSWeightObservation</a>, <i>this.</i><a href="StructureDefinition-hla-a.html">HLA_A</a>, <i>this.</i><a href="StructureDefinition-hla-b.html">HLA_B</a>, <i>this.</i><a href="StructureDefinition-hla-c.html">HLA_C</a>, <i>this.</i><a href="StructureDefinition-hla-drb1.html">HLA_DRB1</a>, <i>this.</i><a href="StructureDefinition-hla-dpb1.html">HLA_DPB1</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.meta.security[0] (l6/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.meta.security[0] (l24/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource.extension[1].extension[0].value.ofType(Coding) (l62/c36)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for urn:oid:2.16.840.1.113883.6.238#2186-5 should be one of 'Not Hispanic or Latino' instead of 'Non Hispanic or Latino' for 'urn:oid:2.16.840.1.113883.6.238#2186-5'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(Patient).meta.security[0] (l24/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource.ofType(Patient).extension[1].extension[0].value.ofType(Coding) (l62/c36)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for urn:oid:2.16.840.1.113883.6.238#2186-5 should be one of 'Not Hispanic or Latino' instead of 'Non Hispanic or Latino' for 'urn:oid:2.16.840.1.113883.6.238#2186-5'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[1].resource.meta.security[0] (l105/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[1].resource.ofType(Practitioner).meta.security[0] (l105/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[2].resource.meta.security[0] (l131/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[2].resource.ofType(Condition).meta.security[0] (l131/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.ofType(Condition).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[3].resource.meta.security[0] (l162/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[3].resource.ofType(Observation).meta.security[0] (l162/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[4].resource.meta.security[0] (l203/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[4].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[4].resource.ofType(Observation).meta.security[0] (l203/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[4].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[5].resource.meta.security[0] (l244/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[5].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[5].resource.ofType(Observation).meta.security[0] (l244/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[5].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[6].resource.meta.security[0] (l279/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[6].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[6].resource.ofType(Observation).meta.security[0] (l279/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[6].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[7].resource.meta.security[0] (l314/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[7].resource.ofType(Organization).meta.security[0] (l314/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[8].resource.meta.security[0] (l339/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[8].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[8].resource.value.ofType(CodeableConcept).coding[0] (l368/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[8].resource.ofType(Observation).meta.security[0] (l339/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[8].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[8].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l368/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[9].resource.meta.security[0] (l409/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[9].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[9].resource.value.ofType(CodeableConcept).coding[0] (l438/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[9].resource.ofType(Observation).meta.security[0] (l409/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[9].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[9].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l438/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[10].resource.meta.security[0] (l479/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[10].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[10].resource.value.ofType(CodeableConcept).coding[0] (l508/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[10].resource.ofType(Observation).meta.security[0] (l479/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[10].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[10].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l508/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[11].resource.meta.security[0] (l549/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[11].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[11].resource.value.ofType(CodeableConcept).coding[0] (l578/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[11].resource.ofType(Observation).meta.security[0] (l549/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[11].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[11].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l578/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[12].resource.meta.security[0] (l619/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[12].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[12].resource.value.ofType(CodeableConcept).coding[0] (l648/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[12].resource.ofType(Observation).meta.security[0] (l619/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[12].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[12].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l648/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_github-nmdp-ig_matchsource-ig_build_fsh-generated_resources_bundle-BundleExample-Minimal"> </a>
+<h2><a href="Bundle-BundleExample-Minimal.html">fsh-generated/resources/Bundle-BundleExample-Minimal.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(10)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-MSBundle.html">MatchSource Bundle</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-mspatient.html">MSPatient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-mspatient.html">MSPatient</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-transplantcentercoordinator.html">TransplantCenterCoordinator</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> and <i>this.</i><a href="StructureDefinition-transplantcentercoordinator.html">TransplantCenterCoordinator</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-msdiagnosis.html">MSDiagnosis</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <i>this.</i><a href="StructureDefinition-msdiagnosis.html">MSDiagnosis</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.meta.security[0] (l6/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.meta.security[0] (l24/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource.extension[1].extension[0].value.ofType(Coding) (l62/c36)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for urn:oid:2.16.840.1.113883.6.238#2186-5 should be one of 'Not Hispanic or Latino' instead of 'Non Hispanic or Latino' for 'urn:oid:2.16.840.1.113883.6.238#2186-5'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(Patient).meta.security[0] (l24/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource.ofType(Patient).extension[1].extension[0].value.ofType(Coding) (l62/c36)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for urn:oid:2.16.840.1.113883.6.238#2186-5 should be one of 'Not Hispanic or Latino' instead of 'Non Hispanic or Latino' for 'urn:oid:2.16.840.1.113883.6.238#2186-5'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[1].resource.meta.security[0] (l105/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[1].resource.ofType(Practitioner).meta.security[0] (l105/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[2].resource.meta.security[0] (l131/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[2].resource.ofType(Condition).meta.security[0] (l131/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.ofType(Condition).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_github-nmdp-ig_matchsource-ig_build_fsh-generated_resources_patient-MSPatientExample"> </a>
+<h2><a href="Patient-MSPatientExample.html">fsh-generated/resources/Patient-MSPatientExample.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-mspatient.html">MSPatient</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.meta.security[0] (l6/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.extension[1].extension[0].value.ofType(Coding) (l44/c30)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for urn:oid:2.16.840.1.113883.6.238#2186-5 should be one of 'Not Hispanic or Latino' instead of 'Non Hispanic or Latino' for 'urn:oid:2.16.840.1.113883.6.238#2186-5'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_github-nmdp-ig_matchsource-ig_build_fsh-generated_resources_patient-MSPatientExample3"> </a>
+<h2><a href="Patient-MSPatientExample3.html">fsh-generated/resources/Patient-MSPatientExample3.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-mspatient.html">MSPatient</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient (l1/c2)</b></td><td><b>error</b></td><td title="rac-1: 'Shall use either NMDP Race extension or us-core-race' Rule 'Shall use either NMDP Race extension or us-core-race' Failed"><b>rac-1: 'Shall use either NMDP Race extension or us-core-race' Rule 'Shall use either NMDP Race extension or us-core-race' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient (l1/c2)</b></td><td><b>error</b></td><td title="eth-1: 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Rule 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Failed"><b>eth-1: 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Rule 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.meta.security[0] (l6/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_github-nmdp-ig_matchsource-ig_build_fsh-generated_resources_patient-MSPatientExample4"> </a>
+<h2><a href="Patient-MSPatientExample4.html">fsh-generated/resources/Patient-MSPatientExample4.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-mspatient.html">MSPatient</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient (l1/c2)</b></td><td><b>error</b></td><td title="eth-1: 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Rule 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Failed"><b>eth-1: 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Rule 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.meta.security[0] (l6/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_github-nmdp-ig_matchsource-ig_build_fsh-generated_resources_structuredefinition-hla-genotype"> </a>
+<h2><a href="StructureDefinition-hla-genotype.html">fsh-generated/resources/StructureDefinition-hla-genotype.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.snapshot.element[35].pattern.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) </b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-genotype')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_github-nmdp-ig_matchsource-ig_build_fsh-generated_resources_valueset-preferred-product-codes"> </a>
+<h2><a href="ValueSet-preferred-product-codes.html">fsh-generated/resources/ValueSet-preferred-product-codes.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[1].concept[0]</b></td><td><b>warning</b></td><td title=""><b>The code 41988001 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"> </a>
+<h2>BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Minimal.html">fsh-generated/resources/Bundle-BundleExample-Minimal.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Minimal.html">fsh-generated/resources/Bundle-BundleExample-Minimal.json</a></td><td><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_PassThrough_TX_Message"> </a>
+<h2>Terminology_PassThrough_TX_Message</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Display Name for urn:oid:2.16.840.1.113883.6.238#2186-5 should be one of 'Not Hispanic or Latino' instead of 'Non Hispanic or Latino' for 'urn:oid:2.16.840.1.113883.6.238#2186-5'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Display Name for urn:oid:2.16.840.1.113883.6.238#2186-5 should be one of 'Not Hispanic or Latino' instead of 'Non Hispanic or Latino' for 'urn:oid:2.16.840.1.113883.6.238#2186-5'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Minimal.html">fsh-generated/resources/Bundle-BundleExample-Minimal.json</a></td><td><b>Display Name for urn:oid:2.16.840.1.113883.6.238#2186-5 should be one of 'Not Hispanic or Latino' instead of 'Non Hispanic or Latino' for 'urn:oid:2.16.840.1.113883.6.238#2186-5'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-BundleExample-Minimal.html">fsh-generated/resources/Bundle-BundleExample-Minimal.json</a></td><td><b>Display Name for urn:oid:2.16.840.1.113883.6.238#2186-5 should be one of 'Not Hispanic or Latino' instead of 'Non Hispanic or Latino' for 'urn:oid:2.16.840.1.113883.6.238#2186-5'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-MSPatientExample.html">fsh-generated/resources/Patient-MSPatientExample.json</a></td><td><b>Display Name for urn:oid:2.16.840.1.113883.6.238#2186-5 should be one of 'Not Hispanic or Latino' instead of 'Non Hispanic or Latino' for 'urn:oid:2.16.840.1.113883.6.238#2186-5'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Full.html">fsh-generated/resources/Bundle-BundleExample-Full.json</a></td><td><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Minimal.html">fsh-generated/resources/Bundle-BundleExample-Minimal.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Minimal.html">fsh-generated/resources/Bundle-BundleExample-Minimal.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Minimal.html">fsh-generated/resources/Bundle-BundleExample-Minimal.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Minimal.html">fsh-generated/resources/Bundle-BundleExample-Minimal.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Minimal.html">fsh-generated/resources/Bundle-BundleExample-Minimal.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Minimal.html">fsh-generated/resources/Bundle-BundleExample-Minimal.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BundleExample-Minimal.html">fsh-generated/resources/Bundle-BundleExample-Minimal.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Condition-MSDiagnosisExample-AML.html">fsh-generated/resources/Condition-MSDiagnosisExample-AML.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Condition-MSDiagnosisExample-OND.html">fsh-generated/resources/Condition-MSDiagnosisExample-OND.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-HLA-A-Example.html">fsh-generated/resources/Observation-HLA-A-Example.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-HLA-A-Example.html">fsh-generated/resources/Observation-HLA-A-Example.json</a></td><td><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-HLA-B-Example.html">fsh-generated/resources/Observation-HLA-B-Example.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-HLA-B-Example.html">fsh-generated/resources/Observation-HLA-B-Example.json</a></td><td><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-HLA-C-Example.html">fsh-generated/resources/Observation-HLA-C-Example.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-HLA-C-Example.html">fsh-generated/resources/Observation-HLA-C-Example.json</a></td><td><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-HLA-DPB1-Example.html">fsh-generated/resources/Observation-HLA-DPB1-Example.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-HLA-DPB1-Example.html">fsh-generated/resources/Observation-HLA-DPB1-Example.json</a></td><td><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-HLA-DRB1-Example.html">fsh-generated/resources/Observation-HLA-DRB1-Example.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-HLA-DRB1-Example.html">fsh-generated/resources/Observation-HLA-DRB1-Example.json</a></td><td><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-MSABOObsExample.html">fsh-generated/resources/Observation-MSABOObsExample.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-MSHeightObsExample.html">fsh-generated/resources/Observation-MSHeightObsExample.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-MSPreferredProductExample.html">fsh-generated/resources/Observation-MSPreferredProductExample.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-MSRhObsExample.html">fsh-generated/resources/Observation-MSRhObsExample.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-MSTransplantTimelineExample.html">fsh-generated/resources/Observation-MSTransplantTimelineExample.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-MSWeightObsExample.html">fsh-generated/resources/Observation-MSWeightObsExample.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Organization-TCExample.html">fsh-generated/resources/Organization-TCExample.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-MSPatientExample.html">fsh-generated/resources/Patient-MSPatientExample.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-MSPatientExample2.html">fsh-generated/resources/Patient-MSPatientExample2.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-MSPatientExample3.html">fsh-generated/resources/Patient-MSPatientExample3.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-MSPatientExample4.html">fsh-generated/resources/Patient-MSPatientExample4.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Practitioner-CoordinatorExample.html">fsh-generated/resources/Practitioner-CoordinatorExample.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Specimen-MSSpecimenExample.html">fsh-generated/resources/Specimen-MSSpecimenExample.json</a></td><td><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+</body>
+</html>

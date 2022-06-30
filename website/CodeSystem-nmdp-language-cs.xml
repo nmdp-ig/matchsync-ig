@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nmdp-language-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://terminology.nmdp.org/codesystem/language defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ARA<a name="nmdp-language-cs-ARA"> </a></td><td>Arabic</td></tr><tr><td style="white-space:nowrap">CHI<a name="nmdp-language-cs-CHI"> </a></td><td>Chinese-Mandarin</td></tr><tr><td style="white-space:nowrap">ENG<a name="nmdp-language-cs-ENG"> </a></td><td>English</td></tr><tr><td style="white-space:nowrap">FRN<a name="nmdp-language-cs-FRN"> </a></td><td>French</td></tr><tr><td style="white-space:nowrap">GER<a name="nmdp-language-cs-GER"> </a></td><td>German</td></tr><tr><td style="white-space:nowrap">ITA<a name="nmdp-language-cs-ITA"> </a></td><td>Italian</td></tr><tr><td style="white-space:nowrap">JPN<a name="nmdp-language-cs-JPN"> </a></td><td>Japanese</td></tr><tr><td style="white-space:nowrap">KOR<a name="nmdp-language-cs-KOR"> </a></td><td>Korean</td></tr><tr><td style="white-space:nowrap">OTH<a name="nmdp-language-cs-OTH"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">POR<a name="nmdp-language-cs-POR"> </a></td><td>Portuguese</td></tr><tr><td style="white-space:nowrap">RUS<a name="nmdp-language-cs-RUS"> </a></td><td>Russian</td></tr><tr><td style="white-space:nowrap">SPA<a name="nmdp-language-cs-SPA"> </a></td><td>Spanish</td></tr><tr><td style="white-space:nowrap">VTM<a name="nmdp-language-cs-VTM"> </a></td><td>Vietnamese</td></tr><tr><td style="white-space:nowrap">nil<a name="nmdp-language-cs-nil"> </a></td><td>no data</td></tr></table></div>
+  </text>
+  <url value="http://terminology.nmdp.org/codesystem/language"/>
+  <version value="0.1.0"/>
+  <name value="NMDPLanguageCS"/>
+  <title value="NMDP Language Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-06-29T21:07:13-05:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="Code System for NMDP languages"/>
+  <copyright value="National Marrow Donor Program"/>
+  <content value="complete"/>
+  <count value="14"/>
+  <concept>
+    <code value="ARA"/>
+    <display value="Arabic"/>
+  </concept>
+  <concept>
+    <code value="CHI"/>
+    <display value="Chinese-Mandarin"/>
+  </concept>
+  <concept>
+    <code value="ENG"/>
+    <display value="English"/>
+  </concept>
+  <concept>
+    <code value="FRN"/>
+    <display value="French"/>
+  </concept>
+  <concept>
+    <code value="GER"/>
+    <display value="German"/>
+  </concept>
+  <concept>
+    <code value="ITA"/>
+    <display value="Italian"/>
+  </concept>
+  <concept>
+    <code value="JPN"/>
+    <display value="Japanese"/>
+  </concept>
+  <concept>
+    <code value="KOR"/>
+    <display value="Korean"/>
+  </concept>
+  <concept>
+    <code value="OTH"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="POR"/>
+    <display value="Portuguese"/>
+  </concept>
+  <concept>
+    <code value="RUS"/>
+    <display value="Russian"/>
+  </concept>
+  <concept>
+    <code value="SPA"/>
+    <display value="Spanish"/>
+  </concept>
+  <concept>
+    <code value="VTM"/>
+    <display value="Vietnamese"/>
+  </concept>
+  <concept>
+    <code value="nil"/>
+    <display value="no data"/>
+  </concept>
+</CodeSystem>

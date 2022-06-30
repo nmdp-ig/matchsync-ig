@@ -96,6 +96,8 @@ Id: ms-preferred-product-observation
 Description: "Preferred product for transplant"
 * insert MetaSecurityRules
 * code.text = "Preferred Product"
+* subject 1..1 MS
+* subject only Reference(mspatient)
 * effectiveDateTime 1..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from nmdp-preferred-product-codes
@@ -120,6 +122,8 @@ Id: ms-transplant-timeline-observation
 Description: "Transplant timeline for patient"
 * insert MetaSecurityRules
 * code.text = "Transplant Timeline"
+* subject 1..1 MS
+* subject only Reference(mspatient)
 * effectiveDateTime 1..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from nmdp-transplant-timeline-codes

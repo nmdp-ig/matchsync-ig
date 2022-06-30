@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsource/CodeSystem/nmdp-diseasestage-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "nmdp-diseasestage-cs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.nmdp.org/codesystem/diseasestage defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AP<a name=\"nmdp-diseasestage-cs-AP\"> </a></td><td>Accelerated Phase</td></tr><tr><td style=\"white-space:nowrap\">BP<a name=\"nmdp-diseasestage-cs-BP\"> </a></td><td>Blastic Phase</td></tr><tr><td style=\"white-space:nowrap\">CP<a name=\"nmdp-diseasestage-cs-CP\"> </a></td><td>Chronic Phase</td></tr><tr><td style=\"white-space:nowrap\">CR<a name=\"nmdp-diseasestage-cs-CR\"> </a></td><td>Complete Remission</td></tr><tr><td style=\"white-space:nowrap\">IF<a name=\"nmdp-diseasestage-cs-IF\"> </a></td><td>Induction Failure</td></tr><tr><td style=\"white-space:nowrap\">IT<a name=\"nmdp-diseasestage-cs-IT\"> </a></td><td>Induction Therapy</td></tr><tr><td style=\"white-space:nowrap\">RE<a name=\"nmdp-diseasestage-cs-RE\"> </a></td><td>Relapse</td></tr><tr><td style=\"white-space:nowrap\">RM<a name=\"nmdp-diseasestage-cs-RM\"> </a></td><td>Remission</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://terminology.nmdp.org/codesystem/diseasestage"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "NMDPDiseaseStageCS"];
+  fhir:CodeSystem.title [ fhir:value "NMDP Disease Stage Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2022-06-29T21:07:13-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "NMDP"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "NMDP" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Code System for NMDP disease stages"];
+  fhir:CodeSystem.copyright [ fhir:value "National Marrow Donor Program"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "8"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "AP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Accelerated Phase" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "BP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Blastic Phase" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "CP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chronic Phase" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "CR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Complete Remission" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "IF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Induction Failure" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "IT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Induction Therapy" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "RE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Relapse" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "RM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Remission" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsource/CodeSystem/nmdp-diseasestage-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
