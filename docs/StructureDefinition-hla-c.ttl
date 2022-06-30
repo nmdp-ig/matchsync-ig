@@ -26,7 +26,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "HLA_C"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-06-29T21:07:13-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-06-30T09:28:59-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "NMDP"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -3479,7 +3479,7 @@
        fhir:ElementDefinition.short [ fhir:value "Specimen used for this observation" ];
        fhir:ElementDefinition.definition [ fhir:value "The specimen that was used when this observation was made." ];
        fhir:ElementDefinition.comment [ fhir:value "Should only be used if not implicit in code found in `Observation.code`.  Observations are not made on specimens themselves; they are made on a subject, but in many cases by the means of a specimen. Note that although specimens are often involved, they are not always tracked and reported explicitly. Also note that observation resources may be used in contexts that track the specimen explicitly (e.g. Diagnostic Report)." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Observation.specimen" ];
@@ -3490,9 +3490,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Specimen";
+           fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Specimen>
+           fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3507,6 +3507,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [

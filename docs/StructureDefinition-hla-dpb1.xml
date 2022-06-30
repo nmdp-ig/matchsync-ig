@@ -22,7 +22,7 @@
   <version value="0.1.0"/>
   <name value="HLA_DPB1"/>
   <status value="active"/>
-  <date value="2022-06-29T21:07:13-05:00"/>
+  <date value="2022-06-30T09:28:59-05:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -2713,7 +2713,7 @@
       <short value="Specimen used for this observation"/>
       <definition value="The specimen that was used when this observation was made."/>
       <comment value="Should only be used if not implicit in code found in `Observation.code`.  Observations are not made on specimens themselves; they are made on a subject, but in many cases by the means of a specimen. Note that although specimens are often involved, they are not always tracked and reported explicitly. Also note that observation resources may be used in contexts that track the specimen explicitly (e.g. Diagnostic Report)."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="Observation.specimen"/>
@@ -2722,7 +2722,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
+        <targetProfile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2732,6 +2732,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>

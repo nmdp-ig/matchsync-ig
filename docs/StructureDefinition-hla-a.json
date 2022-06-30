@@ -19,7 +19,7 @@
   "version": "0.1.0",
   "name": "HLA_A",
   "status": "active",
-  "date": "2022-06-29T21:07:13-05:00",
+  "date": "2022-06-30T09:28:59-05:00",
   "publisher": "NMDP",
   "contact": [
     {
@@ -3300,7 +3300,7 @@
         "short": "Specimen used for this observation",
         "definition": "The specimen that was used when this observation was made.",
         "comment": "Should only be used if not implicit in code found in `Observation.code`.  Observations are not made on specimens themselves; they are made on a subject, but in many cases by the means of a specimen. Note that although specimens are often involved, they are not always tracked and reported explicitly. Also note that observation resources may be used in contexts that track the specimen explicitly (e.g. Diagnostic Report).",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Observation.specimen",
@@ -3311,7 +3311,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Specimen"
+              "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen"
             ]
           }
         ],
@@ -3325,6 +3325,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "mustSupport": true,
         "isModifier": false,
         "isSummary": false,
         "mapping": [

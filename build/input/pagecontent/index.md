@@ -9,13 +9,14 @@ As of now, it mostly contains Structure Definitions, Code Systems, ValueSets and
 This IG describes FHIR profiles and examples for
 + Patient needing the transplant
 + Condition to describe the patient's diagnois
-+ Specimen to identify the specimen Id of the Patient
++ Specimen to identify the Id specimen used for HLA genotyping
 + Observations for 
   + weight
   + height
   + ABO blood group type
   + Rh status
   + transplant timeline
+  + preferred product
   + HLA genotypes 
 + Organization for Transplant Center
 + Practioner to identify the Transplant Center Coordinator

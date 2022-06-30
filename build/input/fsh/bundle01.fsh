@@ -17,11 +17,12 @@ Description: "Collection Bundle for MatchSource"
     msObsPreferredProduct 0..1 MS and
     msObsHeight 0..1 MS and
     msObsWeight 0..1 MS and
-    hlaa 0..1 MS and
-    hlab 0..1 MS and
-    hlac 0..1 MS and
-    hladrb1 0..1 MS and
-    hladpb1 0..1 MS
+    msSpecimen 0..1 MS and
+    hla-a 0..1 MS and
+    hla-b 0..1 MS and
+    hla-c 0..1 MS and
+    hla-drb1 0..1 MS and
+    hla-dpb1 0..1 MS
 * entry[msPatient].resource only MSPatient
 * entry[msPatient] ^short = "MatchSource Patient"
 * entry[msPatient] ^definition = "The MatchSource Patient whose data is included in the bundle (required element)."
@@ -52,21 +53,24 @@ Description: "Collection Bundle for MatchSource"
 * entry[msOrgTransplantCenter].resource only TransplantCenter
 * entry[msOrgTransplantCenter] ^short = "Transplant Center"
 * entry[msOrgTransplantCenter] ^definition = "Transplant Center"
-* entry[hlaa].resource only HLA_A
-* entry[hlaa] ^short = "HLA-A"
-* entry[hlaa] ^definition = "HLA-A genotype in GL String format"
-* entry[hlab].resource only HLA_B
-* entry[hlab] ^short = "HLA-B"
-* entry[hlab] ^definition = "HLA-B genotype in GL String format"
-* entry[hlac].resource only HLA_C
-* entry[hlac] ^short = "HLA-C"
-* entry[hlac] ^definition = "HLA-C genotype in GL String format"
-* entry[hladrb1].resource only HLA_DRB1
-* entry[hladrb1] ^short = "HLA-DRB1"
-* entry[hladrb1] ^definition = "HLA-DBR1 genotype in GL String format"
-* entry[hladpb1].resource only HLA_DPB1
-* entry[hladpb1] ^short = "HLA-DPB1"
-* entry[hladpb1] ^definition = "HLA-DPB1 genotype in GL String format"
+* entry[msSpecimen].resource only MSSpecimen
+* entry[msSpecimen] ^short = "Specimen used for HLA genotyping"
+* entry[msSpecimen] ^definition = "Specimen used for HLA genotyping. The identifier found here can be used to link to an HML file if submitted."
+* entry[hla-a].resource only HLA_A
+* entry[hla-a] ^short = "HLA-A"
+* entry[hla-a] ^definition = "HLA-A genotype in GL String format"
+* entry[hla-b].resource only HLA_B
+* entry[hla-b] ^short = "HLA-B"
+* entry[hla-b] ^definition = "HLA-B genotype in GL String format"
+* entry[hla-c].resource only HLA_C
+* entry[hla-c] ^short = "HLA-C"
+* entry[hla-c] ^definition = "HLA-C genotype in GL String format"
+* entry[hla-drb1].resource only HLA_DRB1
+* entry[hla-drb1] ^short = "HLA-DRB1"
+* entry[hla-drb1] ^definition = "HLA-DBR1 genotype in GL String format"
+* entry[hla-dpb1].resource only HLA_DPB1
+* entry[hla-dpb1] ^short = "HLA-DPB1"
+* entry[hla-dpb1] ^definition = "HLA-DPB1 genotype in GL String format"
 
 Instance: BundleExample-Minimal
 InstanceOf: MSBundle
@@ -105,13 +109,15 @@ Description: "Full Bundle Example for MatchSource"
 * entry[msObsPreferredProduct].fullUrl = "urn:uuid:d93ec14e-8dc1-442b-a3c1-4da9c149d5c2"
 * entry[msOrgTransplantCenter].resource = TCExample
 * entry[msOrgTransplantCenter].fullUrl = "urn:uuid:25a64d4a-3bdc-4313-a486-d5dd7ed0902c"
-* entry[hlaa].resource = HLA_A_Example
-* entry[hlaa].fullUrl = "urn:uuid:a5aaa397-1544-4ff9-9329-38d6ac4f54c6"
-* entry[hlab].resource = HLA_B_Example
-* entry[hlab].fullUrl = "urn:uuid:164773ed-663e-4ba4-9982-9d5a6d802a4e"
-* entry[hlac].resource = HLA_C_Example
-* entry[hlac].fullUrl = "urn:uuid:650d90c6-8648-4b6c-a25b-8969bc26f061"
-* entry[hladrb1].resource = HLA_DRB1_Example
-* entry[hladrb1].fullUrl = "urn:uuid:f1b883e6-cfa4-4475-bf45-499ad8d471ae"
-* entry[hladpb1].resource = HLA_DPB1_Example
-* entry[hladpb1].fullUrl = "urn:uuid:cdaec3a2-77bd-4125-a5e0-72b68fd77e0a"
+* entry[msSpecimen].resource = MSSpecimenExample
+* entry[msSpecimen].fullUrl = "urn:uuid:6cc0a753-ff82-4099-b477-08a57474a951"
+* entry[hla-a].resource = HLA_A_Example
+* entry[hla-a].fullUrl = "urn:uuid:a5aaa397-1544-4ff9-9329-38d6ac4f54c6"
+* entry[hla-b].resource = HLA_B_Example
+* entry[hla-b].fullUrl = "urn:uuid:164773ed-663e-4ba4-9982-9d5a6d802a4e"
+* entry[hla-c].resource = HLA_C_Example
+* entry[hla-c].fullUrl = "urn:uuid:650d90c6-8648-4b6c-a25b-8969bc26f061"
+* entry[hla-drb1].resource = HLA_DRB1_Example
+* entry[hla-drb1].fullUrl = "urn:uuid:f1b883e6-cfa4-4475-bf45-499ad8d471ae"
+* entry[hla-dpb1].resource = HLA_DPB1_Example
+* entry[hla-dpb1].fullUrl = "urn:uuid:cdaec3a2-77bd-4125-a5e0-72b68fd77e0a"

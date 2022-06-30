@@ -57,22 +57,26 @@
      fhir:Bundle.entry.resource <urn:uuid:25a64d4a-3bdc-4313-a486-d5dd7ed0902c>
   ], [
      fhir:index 8;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:6cc0a753-ff82-4099-b477-08a57474a951" ];
+     fhir:Bundle.entry.resource <urn:uuid:6cc0a753-ff82-4099-b477-08a57474a951>
+  ], [
+     fhir:index 9;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:a5aaa397-1544-4ff9-9329-38d6ac4f54c6" ];
      fhir:Bundle.entry.resource <urn:uuid:a5aaa397-1544-4ff9-9329-38d6ac4f54c6>
   ], [
-     fhir:index 9;
+     fhir:index 10;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:164773ed-663e-4ba4-9982-9d5a6d802a4e" ];
      fhir:Bundle.entry.resource <urn:uuid:164773ed-663e-4ba4-9982-9d5a6d802a4e>
   ], [
-     fhir:index 10;
+     fhir:index 11;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:650d90c6-8648-4b6c-a25b-8969bc26f061" ];
      fhir:Bundle.entry.resource <urn:uuid:650d90c6-8648-4b6c-a25b-8969bc26f061>
   ], [
-     fhir:index 11;
+     fhir:index 12;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:f1b883e6-cfa4-4475-bf45-499ad8d471ae" ];
      fhir:Bundle.entry.resource <urn:uuid:f1b883e6-cfa4-4475-bf45-499ad8d471ae>
   ], [
-     fhir:index 12;
+     fhir:index 13;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:cdaec3a2-77bd-4125-a5e0-72b68fd77e0a" ];
      fhir:Bundle.entry.resource <urn:uuid:cdaec3a2-77bd-4125-a5e0-72b68fd77e0a>
   ] .
@@ -397,6 +401,34 @@
   ];
   fhir:Organization.name [ fhir:value "My Transplant Center"] .
 
+<urn:uuid:6cc0a753-ff82-4099-b477-08a57474a951> a fhir:Specimen;
+  fhir:Resource.id [ fhir:value "MSSpecimenExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen";
+       fhir:index 0;
+       fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen>
+     ];
+     fhir:Meta.security [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ];
+       fhir:Coding.code [ fhir:value "tc_123" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"MSSpecimenExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-msspecimen.html\">MSSpecimen</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>identifier</b>: id: 000</p><p><b>subject</b>: <a href=\"#Patient_MSPatientExample\">See above (Patient/MSPatientExample)</a></p></div>"
+  ];
+  fhir:Specimen.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://terminology.nmdp.org/identifier/transplantcenter" ];
+     fhir:Identifier.value [ fhir:value "000" ]
+  ];
+  fhir:Specimen.subject [
+     fhir:link <http://fhir.nmdp.org/ig/matchsource/Patient/MSPatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/MSPatientExample" ]
+  ] .
+
 <urn:uuid:a5aaa397-1544-4ff9-9329-38d6ac4f54c6> a fhir:Observation;
   fhir:Resource.id [ fhir:value "HLA-A-Example"];
   fhir:Resource.meta [
@@ -413,7 +445,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HLA-A-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hla-a.html\">HLA_A</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genotype display name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#84413-4)</span></p><p><b>subject</b>: <a href=\"#Patient_MSPatientExample\">See above (Patient/MSPatientExample)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (glstring.org#hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02)</span></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Gene studied [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48018-6)</span></td><td>HLA-A <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem</a>#HGNC:4931)</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HLA-A-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hla-a.html\">HLA_A</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genotype display name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#84413-4)</span></p><p><b>subject</b>: <a href=\"#Patient_MSPatientExample\">See above (Patient/MSPatientExample)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (glstring.org#hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02)</span></p><p><b>specimen</b>: <a href=\"#Specimen_MSSpecimenExample\">See above (Specimen/MSSpecimenExample)</a></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Gene studied [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48018-6)</span></td><td>HLA-A <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem</a>#HGNC:4931)</span></td></tr></table></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -443,6 +475,10 @@
        fhir:Coding.system [ fhir:value "http://glstring.org" ];
        fhir:Coding.code [ fhir:value "hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02" ]
      ]
+  ];
+  fhir:Observation.specimen [
+     fhir:link <http://fhir.nmdp.org/ig/matchsource/Specimen/MSSpecimenExample>;
+     fhir:Reference.reference [ fhir:value "Specimen/MSSpecimenExample" ]
   ];
   fhir:Observation.component [
      fhir:index 0;
@@ -480,7 +516,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HLA-B-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hla-b.html\">HLA_B</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genotype display name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#84413-4)</span></p><p><b>subject</b>: <a href=\"#Patient_MSPatientExample\">See above (Patient/MSPatientExample)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (glstring.org#hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01)</span></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Gene studied [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48018-6)</span></td><td>HLA-B <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem</a>#HGNC:4932)</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HLA-B-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hla-b.html\">HLA_B</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genotype display name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#84413-4)</span></p><p><b>subject</b>: <a href=\"#Patient_MSPatientExample\">See above (Patient/MSPatientExample)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (glstring.org#hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01)</span></p><p><b>specimen</b>: <a href=\"#Specimen_MSSpecimenExample\">See above (Specimen/MSSpecimenExample)</a></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Gene studied [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48018-6)</span></td><td>HLA-B <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem</a>#HGNC:4932)</span></td></tr></table></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -510,6 +546,10 @@
        fhir:Coding.system [ fhir:value "http://glstring.org" ];
        fhir:Coding.code [ fhir:value "hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01" ]
      ]
+  ];
+  fhir:Observation.specimen [
+     fhir:link <http://fhir.nmdp.org/ig/matchsource/Specimen/MSSpecimenExample>;
+     fhir:Reference.reference [ fhir:value "Specimen/MSSpecimenExample" ]
   ];
   fhir:Observation.component [
      fhir:index 0;
@@ -547,7 +587,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HLA-C-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hla-c.html\">HLA_C</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genotype display name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#84413-4)</span></p><p><b>subject</b>: <a href=\"#Patient_MSPatientExample\">See above (Patient/MSPatientExample)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: hla#3.25.0#HLA-C*01:02:01:01+HLA-C*01:03:01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (glstring.org#hla#3.25.0#HLA-C*01:02:01:01+HLA-C*01:03:01)</span></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Gene studied [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48018-6)</span></td><td>HLA-C <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem</a>#HGNC:4933)</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HLA-C-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hla-c.html\">HLA_C</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genotype display name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#84413-4)</span></p><p><b>subject</b>: <a href=\"#Patient_MSPatientExample\">See above (Patient/MSPatientExample)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: hla#3.25.0#HLA-C*01:02:01:01+HLA-C*01:03:01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (glstring.org#hla#3.25.0#HLA-C*01:02:01:01+HLA-C*01:03:01)</span></p><p><b>specimen</b>: <a href=\"#Specimen_MSSpecimenExample\">See above (Specimen/MSSpecimenExample)</a></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Gene studied [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48018-6)</span></td><td>HLA-C <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem</a>#HGNC:4933)</span></td></tr></table></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -577,6 +617,10 @@
        fhir:Coding.system [ fhir:value "http://glstring.org" ];
        fhir:Coding.code [ fhir:value "hla#3.25.0#HLA-C*01:02:01:01+HLA-C*01:03:01" ]
      ]
+  ];
+  fhir:Observation.specimen [
+     fhir:link <http://fhir.nmdp.org/ig/matchsource/Specimen/MSSpecimenExample>;
+     fhir:Reference.reference [ fhir:value "Specimen/MSSpecimenExample" ]
   ];
   fhir:Observation.component [
      fhir:index 0;
@@ -614,7 +658,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HLA-DRB1-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hla-drb1.html\">HLA_DRB1</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genotype display name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#84413-4)</span></p><p><b>subject</b>: <a href=\"#Patient_MSPatientExample\">See above (Patient/MSPatientExample)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: hla#3.25.0#HLA-DRB1*01:01:01:01+HLA-DRB1*01:02:01:01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (glstring.org#hla#3.25.0#HLA-DRB1*01:01:01:01+HLA-DRB1*01:02:01:01)</span></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Gene studied [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48018-6)</span></td><td>HLA-DRB1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem</a>#HGNC:4948)</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HLA-DRB1-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hla-drb1.html\">HLA_DRB1</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genotype display name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#84413-4)</span></p><p><b>subject</b>: <a href=\"#Patient_MSPatientExample\">See above (Patient/MSPatientExample)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: hla#3.25.0#HLA-DRB1*01:01:01:01+HLA-DRB1*01:02:01:01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (glstring.org#hla#3.25.0#HLA-DRB1*01:01:01:01+HLA-DRB1*01:02:01:01)</span></p><p><b>specimen</b>: <a href=\"#Specimen_MSSpecimenExample\">See above (Specimen/MSSpecimenExample)</a></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Gene studied [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48018-6)</span></td><td>HLA-DRB1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem</a>#HGNC:4948)</span></td></tr></table></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -644,6 +688,10 @@
        fhir:Coding.system [ fhir:value "http://glstring.org" ];
        fhir:Coding.code [ fhir:value "hla#3.25.0#HLA-DRB1*01:01:01:01+HLA-DRB1*01:02:01:01" ]
      ]
+  ];
+  fhir:Observation.specimen [
+     fhir:link <http://fhir.nmdp.org/ig/matchsource/Specimen/MSSpecimenExample>;
+     fhir:Reference.reference [ fhir:value "Specimen/MSSpecimenExample" ]
   ];
   fhir:Observation.component [
      fhir:index 0;
@@ -681,7 +729,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HLA-DPB1-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hla-dpb1.html\">HLA_DPB1</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genotype display name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#84413-4)</span></p><p><b>subject</b>: <a href=\"#Patient_MSPatientExample\">See above (Patient/MSPatientExample)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: hla#3.25.0#HLA-DPB1*01:01:01:01+HLA-DPB1*02:01:02:01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (glstring.org#hla#3.25.0#HLA-DPB1*01:01:01:01+HLA-DPB1*02:01:02:01)</span></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Gene studied [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48018-6)</span></td><td>HLA-DPB1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem</a>#HGNC:4940)</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"HLA-DPB1-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hla-dpb1.html\">HLA_DPB1</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genotype display name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#84413-4)</span></p><p><b>subject</b>: <a href=\"#Patient_MSPatientExample\">See above (Patient/MSPatientExample)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: hla#3.25.0#HLA-DPB1*01:01:01:01+HLA-DPB1*02:01:02:01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (glstring.org#hla#3.25.0#HLA-DPB1*01:01:01:01+HLA-DPB1*02:01:02:01)</span></p><p><b>specimen</b>: <a href=\"#Specimen_MSSpecimenExample\">See above (Specimen/MSSpecimenExample)</a></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Gene studied [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48018-6)</span></td><td>HLA-DPB1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem</a>#HGNC:4940)</span></td></tr></table></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -711,6 +759,10 @@
        fhir:Coding.system [ fhir:value "http://glstring.org" ];
        fhir:Coding.code [ fhir:value "hla#3.25.0#HLA-DPB1*01:01:01:01+HLA-DPB1*02:01:02:01" ]
      ]
+  ];
+  fhir:Observation.specimen [
+     fhir:link <http://fhir.nmdp.org/ig/matchsource/Specimen/MSSpecimenExample>;
+     fhir:Reference.reference [ fhir:value "Specimen/MSSpecimenExample" ]
   ];
   fhir:Observation.component [
      fhir:index 0;

@@ -12,6 +12,8 @@ Description:    "HLA Genotype profile of genotype observation"
 * insert MetaSecurityRules
 * subject 1..1 MS
 * subject only Reference(mspatient)
+* specimen 1..1 MS
+* specimen only Reference(msspecimen)
 * effectiveDateTime 1..1 MS
 
 // * code.coding.display = "Genotype display name"
@@ -46,6 +48,7 @@ Description: "Example of HLA-A"
 * meta.security[TransplantCenter].code = #tc_123
 * status = #final
 * subject = Reference(MSPatientExample)
+* specimen = Reference(MSSpecimenExample)
 * effectiveDateTime = "2022-05-01"
 * valueCodeableConcept.coding[GL] = $GLSCodeSystem#hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02
 
@@ -61,6 +64,7 @@ InstanceOf: HLA_B
 Description: "Example of HLA-B"
 * meta.security[TransplantCenter].code = #tc_123
 * subject = Reference(MSPatientExample)
+* specimen = Reference(MSSpecimenExample)
 * status = #final
 * effectiveDateTime = "2022-05-01"
 * valueCodeableConcept.coding[GL] = $GLSCodeSystem#hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01
@@ -79,6 +83,7 @@ Description: "Example of HLA-C"
 * meta.security[TransplantCenter].code = #tc_123
 * status = #final
 * subject = Reference(MSPatientExample)
+* specimen = Reference(MSSpecimenExample)
 * effectiveDateTime = "2022-05-01"
 * valueCodeableConcept.coding[GL] = $GLSCodeSystem#hla#3.25.0#HLA-C*01:02:01:01+HLA-C*01:03:01
 
@@ -96,6 +101,7 @@ Description: "Example of HLA-DRB1"
 * meta.security[TransplantCenter].code = #tc_123
 * status = #final
 * subject = Reference(MSPatientExample)
+* specimen = Reference(MSSpecimenExample)
 * effectiveDateTime = "2022-05-01"
 * valueCodeableConcept.coding[GL] = $GLSCodeSystem#hla#3.25.0#HLA-DRB1*01:01:01:01+HLA-DRB1*01:02:01:01
 
@@ -112,6 +118,7 @@ InstanceOf: HLA_DPB1
 Description: "Example of HLA-DRB1"
 * meta.security[TransplantCenter].code = #tc_123
 * subject = Reference(MSPatientExample)
+* specimen = Reference(MSSpecimenExample)
 * status = #final
 * effectiveDateTime = "2022-05-01"
 * valueCodeableConcept.coding[GL] = $GLSCodeSystem#hla#3.25.0#HLA-DPB1*01:01:01:01+HLA-DPB1*02:01:02:01
