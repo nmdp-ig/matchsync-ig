@@ -17,7 +17,7 @@ This IG describes FHIR profiles and examples for
   + Rh status
   + transplant timeline
   + preferred product
-  + HLA genotypes 
+  + HLA genotypes
 + Organization for Transplant Center
 + Practioner to identify the Transplant Center Coordinator
 + Extensions to use NMDP race and ethnicity with Patient resource

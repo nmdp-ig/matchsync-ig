@@ -148,7 +148,7 @@ Description: "Full Bundle Example for MatchSource"
 * entry[hla-drb4].resource = HLA_DRB4_Example
 * entry[hla-drb4].fullUrl = "urn:uuid:19b03168-c8d3-482f-9c7d-a8a6d8cb4fb9"
 * entry[hla-drb5].resource = HLA_DRB5_Example
-* entry[hla-drb5].fullUrl = "urn:uuid:f1b883e6-cfa4-4475-bf45-499ad8d471ae"
+* entry[hla-drb5].fullUrl = "urn:uuid:4715c695-ff42-4f9c-9aca-22a7b73965cc"
 * entry[hla-dpa1].resource = HLA_DPA1_Example
 * entry[hla-dpa1].fullUrl = "urn:uuid:94b72573-b656-41d5-83a5-a7127ff47486"
 * entry[hla-dpb1].resource = HLA_DPB1_Example

@@ -101,7 +101,7 @@ Description: "Genotype for HLA-DPB1"
 
 Instance: HLA_DPB1_Example
 InstanceOf: HLA_DPB1
-Description: "Example of HLA-DRB1"
+Description: "Example of HLA-DPB1"
 * meta.security[TransplantCenter].code = #tc_123
 * subject = Reference(MSPatientExample)
 * specimen = Reference(MSSpecimenExample)
@@ -134,7 +134,7 @@ Profile: HLA_DQA1
 Parent: HLAGenotype
 Id: hla-dqa1
 Description: "Genotype for HLA-DQA1"
-* component[gene-studied].valueCodeableConcept = $HLAGeneIDCS#HGNC:4938  "HLA-DPA1"
+* component[gene-studied].valueCodeableConcept = $HLAGeneIDCS#HGNC:4942   "HLA-DQA1"
 
 Instance: HLA_DQA1_Example
 InstanceOf: HLA_DQA1
@@ -152,7 +152,7 @@ Profile: HLA_DQB1
 Parent: HLAGenotype
 Id: hla-dqb1
 Description: "Genotype for HLA-DQB1"
-* component[gene-studied].valueCodeableConcept = $HLAGeneIDCS#HGNC:4938  "HLA-DPB1"
+* component[gene-studied].valueCodeableConcept = $HLAGeneIDCS#HGNC:4944  "HLA-DQB1"
 
 Instance: HLA_DQB1_Example
 InstanceOf: HLA_DQB1
@@ -239,3 +239,16 @@ Description: "Example of HLA-DRB5"
 * valueCodeableConcept.coding[GL] = $GLSCodeSystem#hla#3.25.0#HLA-DRB5
 
 // -----------------
+
+Instance: HLA_Multilocus_Genotype
+InstanceOf: HLAGenotype
+Description: "Multilocus Genotype of HLA-A, HLA-B, and HLA-DRB1"
+* meta.security[TransplantCenter].code = #tc_123
+* status = #final
+* subject = Reference(MSPatientExample)
+* specimen = Reference(MSSpecimenExample)
+* effectiveDateTime = "2022-05-01"
+* component[gene-studied][+].valueCodeableConcept = $HLAGeneIDCS#HGNC:4931 "HLA-A"
+* component[gene-studied][+].valueCodeableConcept = $HLAGeneIDCS#HGNC:4932 "HLA-B"
+* component[gene-studied][+].valueCodeableConcept = $HLAGeneIDCS#HGNC:4948 "HLA-DRB1"
+* valueCodeableConcept.coding[GL] = $GLSCodeSystem#hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02^HLA-B*57:01:01:01+HLA-B*15:01:01:01^HLA-DRB1*01:01:01:01+HLA-DRB1*01:02:01:01

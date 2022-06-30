@@ -49,8 +49,8 @@ Description: "Example of a patient needing a donor using us-core-race and us-cor
 * telecom[0].value = "1-612-555-1234"
 * extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2106-3 "White"
 * extension[race].extension[text].valueString = "White"
-* extension[ethnicity].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "Non Hispanic or Latino"
-* extension[ethnicity].extension[text].valueString = "Non Hispanic or Latino"
+* extension[ethnicity].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "Not Hispanic or Latino"
+* extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
 
 Instance: MSPatientExample2
 InstanceOf: MSPatient
@@ -125,7 +125,7 @@ Description: "Example of a Transplant Center."
 Profile: MSSpecimen
 Parent: Specimen
 Id:     msspecimen
-Description: "Patient Sample"
+Description: "Patient sample used for HLA typing"
 // TC Sample ID
 // for HLA report?
 * insert MetaSecurityRules
