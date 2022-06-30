@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="MatchSourceIG"/>
   <status value="draft"/>
-  <date value="2022-06-30T09:28:59-05:00"/>
+  <date value="2022-06-30T15:55:55-05:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -32,12 +32,12 @@
     <version value="4.0.0"/>
   </dependsOn>
   <dependsOn id="mcode">
-    <uri value="http://hl7.org/fhir/us/mcode"/>
+    <uri value="http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode"/>
     <packageId value="hl7.fhir.us.mcode"/>
     <version value="2.0.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_genomics_reporting">
-    <uri value="http://hl7.org/fhir/uv/genomics-reporting"/>
+    <uri value="http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting"/>
     <packageId value="hl7.fhir.uv.genomics-reporting"/>
     <version value="2.0.0"/>
   </dependsOn>
@@ -267,6 +267,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/hla-dpa1"/>
+      </reference>
+      <name value="HLA_DPA1"/>
+      <description value="Genotype for HLA-DPA1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/hla-dpb1"/>
       </reference>
       <name value="HLA_DPB1"/>
@@ -278,10 +289,65 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/hla-dqa1"/>
+      </reference>
+      <name value="HLA_DQA1"/>
+      <description value="Genotype for HLA-DQA1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-dqb1"/>
+      </reference>
+      <name value="HLA_DQB1"/>
+      <description value="Genotype for HLA-DQB1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/hla-drb1"/>
       </reference>
       <name value="HLA_DRB1"/>
       <description value="Genotype for HLA-DRB1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-drb3"/>
+      </reference>
+      <name value="HLA_DRB3"/>
+      <description value="Genotype for HLA-DRB3"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-drb4"/>
+      </reference>
+      <name value="HLA_DRB4"/>
+      <description value="Genotype for HLA-DRB4"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-drb5"/>
+      </reference>
+      <name value="HLA_DRB5"/>
+      <description value="Genotype for HLA-DRB5"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -369,7 +435,7 @@
         <reference value="StructureDefinition/msspecimen"/>
       </reference>
       <name value="MSSpecimen"/>
-      <description value="Patient Sample"/>
+      <description value="Patient sample used for HLA typing"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -806,11 +872,44 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/HLA-DPA1-Example"/>
+      </reference>
+      <name value="HLA_DPA1_Example"/>
+      <description value="Example of HLA-DPA1"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpa1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/HLA-DPB1-Example"/>
       </reference>
       <name value="HLA_DPB1_Example"/>
-      <description value="Example of HLA-DRB1"/>
+      <description value="Example of HLA-DPB1"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpb1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HLA-DQA1-Example"/>
+      </reference>
+      <name value="HLA_DQA1_Example"/>
+      <description value="Example of HLA-DQA1"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqa1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HLA-DQB1-Example"/>
+      </reference>
+      <name value="HLA_DQB1_Example"/>
+      <description value="Example of HLA-DQB1"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqb1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -822,6 +921,50 @@
       <name value="HLA_DRB1_Example"/>
       <description value="Example of HLA-DRB1"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HLA-DRB3-Example"/>
+      </reference>
+      <name value="HLA_DRB3_Example"/>
+      <description value="Example of HLA-DRB3"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb3"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HLA-DRB4-Example"/>
+      </reference>
+      <name value="HLA_DRB4_Example"/>
+      <description value="Example of HLA-DRB4"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb4"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HLA-DRB5-Example"/>
+      </reference>
+      <name value="HLA_DRB5_Example"/>
+      <description value="Example of HLA-DRB5"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb5"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HLA-Multilocus-Genotype"/>
+      </reference>
+      <name value="HLA_Multilocus_Genotype"/>
+      <description value="Multilocus Genotype of HLA-A, HLA-B, and HLA-DRB1"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-genotype"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

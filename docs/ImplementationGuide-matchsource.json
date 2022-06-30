@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "MatchSourceIG",
   "status": "draft",
-  "date": "2022-06-30T09:28:59-05:00",
+  "date": "2022-06-30T15:55:55-05:00",
   "publisher": "NMDP",
   "contact": [
     {
@@ -42,13 +42,13 @@
     },
     {
       "id": "mcode",
-      "uri": "http://hl7.org/fhir/us/mcode",
+      "uri": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode",
       "packageId": "hl7.fhir.us.mcode",
       "version": "2.0.0"
     },
     {
       "id": "hl7_fhir_uv_genomics_reporting",
-      "uri": "http://hl7.org/fhir/uv/genomics-reporting",
+      "uri": "http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting",
       "packageId": "hl7.fhir.uv.genomics-reporting",
       "version": "2.0.0"
     }
@@ -407,6 +407,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/hla-dpa1"
+        },
+        "name": "HLA_DPA1",
+        "description": "Genotype for HLA-DPA1",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/hla-dpb1"
         },
         "name": "HLA_DPB1",
@@ -421,10 +435,80 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/hla-dqa1"
+        },
+        "name": "HLA_DQA1",
+        "description": "Genotype for HLA-DQA1",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hla-dqb1"
+        },
+        "name": "HLA_DQB1",
+        "description": "Genotype for HLA-DQB1",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/hla-drb1"
         },
         "name": "HLA_DRB1",
         "description": "Genotype for HLA-DRB1",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hla-drb3"
+        },
+        "name": "HLA_DRB3",
+        "description": "Genotype for HLA-DRB3",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hla-drb4"
+        },
+        "name": "HLA_DRB4",
+        "description": "Genotype for HLA-DRB4",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hla-drb5"
+        },
+        "name": "HLA_DRB5",
+        "description": "Genotype for HLA-DRB5",
         "exampleBoolean": false
       },
       {
@@ -536,7 +620,7 @@
           "reference": "StructureDefinition/msspecimen"
         },
         "name": "MSSpecimen",
-        "description": "Patient Sample",
+        "description": "Patient sample used for HLA typing",
         "exampleBoolean": false
       },
       {
@@ -1093,11 +1177,53 @@
           }
         ],
         "reference": {
+          "reference": "Observation/HLA-DPA1-Example"
+        },
+        "name": "HLA_DPA1_Example",
+        "description": "Example of HLA-DPA1",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpa1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
           "reference": "Observation/HLA-DPB1-Example"
         },
         "name": "HLA_DPB1_Example",
-        "description": "Example of HLA-DRB1",
+        "description": "Example of HLA-DPB1",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpb1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/HLA-DQA1-Example"
+        },
+        "name": "HLA_DQA1_Example",
+        "description": "Example of HLA-DQA1",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqa1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/HLA-DQB1-Example"
+        },
+        "name": "HLA_DQB1_Example",
+        "description": "Example of HLA-DQB1",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqb1"
       },
       {
         "extension": [
@@ -1112,6 +1238,62 @@
         "name": "HLA_DRB1_Example",
         "description": "Example of HLA-DRB1",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/HLA-DRB3-Example"
+        },
+        "name": "HLA_DRB3_Example",
+        "description": "Example of HLA-DRB3",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb3"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/HLA-DRB4-Example"
+        },
+        "name": "HLA_DRB4_Example",
+        "description": "Example of HLA-DRB4",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb4"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/HLA-DRB5-Example"
+        },
+        "name": "HLA_DRB5_Example",
+        "description": "Example of HLA-DRB5",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb5"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/HLA-Multilocus-Genotype"
+        },
+        "name": "HLA_Multilocus_Genotype",
+        "description": "Multilocus Genotype of HLA-A, HLA-B, and HLA-DRB1",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-genotype"
       },
       {
         "extension": [

@@ -35,6 +35,13 @@
     "name": "HLA_C"
   },
   {
+    "id": "hla-dpa1",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpa1",
+    "version": "0.1.0",
+    "name": "HLA_DPA1"
+  },
+  {
     "id": "hla-dpb1",
     "type": "StructureDefinition",
     "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpb1",
@@ -42,11 +49,46 @@
     "name": "HLA_DPB1"
   },
   {
+    "id": "hla-dqa1",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqa1",
+    "version": "0.1.0",
+    "name": "HLA_DQA1"
+  },
+  {
+    "id": "hla-dqb1",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqb1",
+    "version": "0.1.0",
+    "name": "HLA_DQB1"
+  },
+  {
     "id": "hla-drb1",
     "type": "StructureDefinition",
     "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb1",
     "version": "0.1.0",
     "name": "HLA_DRB1"
+  },
+  {
+    "id": "hla-drb3",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb3",
+    "version": "0.1.0",
+    "name": "HLA_DRB3"
+  },
+  {
+    "id": "hla-drb4",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb4",
+    "version": "0.1.0",
+    "name": "HLA_DRB4"
+  },
+  {
+    "id": "hla-drb5",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb5",
+    "version": "0.1.0",
+    "name": "HLA_DRB5"
   },
   {
     "id": "hla-genotype",

@@ -48,12 +48,12 @@
        fhir:Extension.valueCoding [
          fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.238" ];
          fhir:Coding.code [ fhir:value "2186-5" ];
-         fhir:Coding.display [ fhir:value "Non Hispanic or Latino" ]
+         fhir:Coding.display [ fhir:value "Not Hispanic or Latino" ]
        ]
      ], [
        fhir:index 1;
        fhir:Extension.url [ fhir:value "text" ];
-       fhir:Extension.valueString [ fhir:value "Non Hispanic or Latino" ]
+       fhir:Extension.valueString [ fhir:value "Not Hispanic or Latino" ]
      ];
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity" ]
   ];
