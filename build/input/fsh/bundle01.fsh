@@ -22,7 +22,13 @@ Description: "Collection Bundle for MatchSource"
     hla-b 0..1 MS and
     hla-c 0..1 MS and
     hla-drb1 0..1 MS and
-    hla-dpb1 0..1 MS
+    hla-drb3 0..1 MS and
+    hla-drb4 0..1 MS and
+    hla-drb5 0..1 MS and
+    hla-dpa1 0..1 MS and
+    hla-dpb1 0..1 MS and
+    hla-dqa1 0..1 MS and
+    hla-dqb1 0..1 MS
 * entry[msPatient].resource only MSPatient
 * entry[msPatient] ^short = "MatchSource Patient"
 * entry[msPatient] ^definition = "The MatchSource Patient whose data is included in the bundle (required element)."
@@ -68,9 +74,27 @@ Description: "Collection Bundle for MatchSource"
 * entry[hla-drb1].resource only HLA_DRB1
 * entry[hla-drb1] ^short = "HLA-DRB1"
 * entry[hla-drb1] ^definition = "HLA-DBR1 genotype in GL String format"
+* entry[hla-drb3].resource only HLA_DRB3
+* entry[hla-drb3] ^short = "HLA-DRB3"
+* entry[hla-drb3] ^definition = "HLA-DBR3 genotype in GL String format"
+* entry[hla-drb4].resource only HLA_DRB4
+* entry[hla-drb4] ^short = "HLA-DRB4"
+* entry[hla-drb4] ^definition = "HLA-DBR4 genotype in GL String format"
+* entry[hla-drb5].resource only HLA_DRB5
+* entry[hla-drb5] ^short = "HLA-DRB5"
+* entry[hla-drb5] ^definition = "HLA-DBR5 genotype in GL String format"
+* entry[hla-dpa1].resource only HLA_DPA1
+* entry[hla-dpa1] ^short = "HLA-DPA1"
+* entry[hla-dpa1] ^definition = "HLA-DPA1 genotype in GL String format"
 * entry[hla-dpb1].resource only HLA_DPB1
 * entry[hla-dpb1] ^short = "HLA-DPB1"
 * entry[hla-dpb1] ^definition = "HLA-DPB1 genotype in GL String format"
+* entry[hla-dqa1].resource only HLA_DQA1
+* entry[hla-dqa1] ^short = "HLA-DQA1"
+* entry[hla-dqa1] ^definition = "HLA-DQA1 genotype in GL String format"
+* entry[hla-dqb1].resource only HLA_DQB1
+* entry[hla-dqb1] ^short = "HLA-DQB1"
+* entry[hla-dqb1] ^definition = "HLA-DQB1 genotype in GL String format"
 
 Instance: BundleExample-Minimal
 InstanceOf: MSBundle
@@ -119,5 +143,17 @@ Description: "Full Bundle Example for MatchSource"
 * entry[hla-c].fullUrl = "urn:uuid:650d90c6-8648-4b6c-a25b-8969bc26f061"
 * entry[hla-drb1].resource = HLA_DRB1_Example
 * entry[hla-drb1].fullUrl = "urn:uuid:f1b883e6-cfa4-4475-bf45-499ad8d471ae"
+* entry[hla-drb3].resource = HLA_DRB3_Example
+* entry[hla-drb3].fullUrl = "urn:uuid:d3f52975-12f8-444a-8d3c-531e8e8be894"
+* entry[hla-drb4].resource = HLA_DRB4_Example
+* entry[hla-drb4].fullUrl = "urn:uuid:19b03168-c8d3-482f-9c7d-a8a6d8cb4fb9"
+* entry[hla-drb5].resource = HLA_DRB5_Example
+* entry[hla-drb5].fullUrl = "urn:uuid:f1b883e6-cfa4-4475-bf45-499ad8d471ae"
+* entry[hla-dpa1].resource = HLA_DPA1_Example
+* entry[hla-dpa1].fullUrl = "urn:uuid:94b72573-b656-41d5-83a5-a7127ff47486"
 * entry[hla-dpb1].resource = HLA_DPB1_Example
 * entry[hla-dpb1].fullUrl = "urn:uuid:cdaec3a2-77bd-4125-a5e0-72b68fd77e0a"
+* entry[hla-dqa1].resource = HLA_DQA1_Example
+* entry[hla-dqa1].fullUrl = "urn:uuid:0d6e4fcb-ded4-4137-afec-d1590b3f97bd"
+* entry[hla-dqb1].resource = HLA_DQB1_Example
+* entry[hla-dqb1].fullUrl = "urn:uuid:2a318b29-97bc-43de-8439-5a3ff5950bc1"
