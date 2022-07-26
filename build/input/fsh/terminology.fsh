@@ -395,6 +395,8 @@ Title: "NMDP Transplant Timeline Value Set"
 Description: "NMDP transplant timeline codes"
 * include codes from system nmdp-transplant-timeline-cs
 
+// Preferred Product ------------------
+
 CodeSystem: NMDPPreferredProductCS
 Title: "NMDP Preferred Product for Transplant"
 Id: nmdp-preferred-product-cs
@@ -405,12 +407,11 @@ Description: "NMDP Preferred Product for MatchSource patient"
 * ^experimental = true
 * ^publisher = "NMDP"
 * ^copyright = "National Marrow Donor Program"
-* #PBSC     "Peripheral Blood Stem Cell (Aphaeresis)"
-// * #HPC, Aphresis
-* #BM   "HPC, Marrow"
-* #CB   "HPC, Cord Blood"
-* #NP   "No preference"
-* #UNK  "Unknown"
+* #PBSC     "HPC, Apheresis"
+* #Marrow   "HPC, Marrow"
+* #CBU      "HPC, Cord Blood"
+* #NP       "No preference"
+* #U        "Unknown"
 
 
 ValueSet: NMDPPreferredProductVS
@@ -419,11 +420,4 @@ Title: "NMDP Preferred Product Value Set"
 Description: "NMDP preferred product codes"
 * include codes from system nmdp-preferred-product-cs
 
-
-ValueSet: HPCProductVS
-Id: preferred-product-codes
-Title: "SNOMED HPC Value Set"
-Description: "SNOMED HPC Value Set"
-* include codes from system nmdp-preferred-product-cs
-
-// * $SCT#41988001    "Bone marrow derived hematopoietic stem cell"
+//  ------------------

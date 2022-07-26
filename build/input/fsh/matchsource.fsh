@@ -167,6 +167,15 @@ Description: "Diagnosis"
 * code from nmdp-disease-codes (required)
 * subject 1..1 MS
 * subject only Reference(mspatient)
+* stage.summary.coding ^slicing.discriminator.type = #pattern
+* stage.summary.coding ^slicing.discriminator.path = "system"
+* stage.summary.coding ^slicing.rules = #open
+* stage.summary.coding ^slicing.description = "NMDP Disease Stage"
+* stage.summary.coding contains
+    NMDPDiseaseStage 1..1 MS
+* stage.summary.coding[NMDPDiseaseStage].system = "http://terminology.nmdp.org/codesystem/diseasestage"
+* stage.summary.coding[NMDPDiseaseStage].code from nmdp-diseasestage-codes (required)
+* stage.summary.coding[NMDPDiseaseStage].code 1..1
 * recordedDate 1..1 MS
 
 Instance: MSDiagnosisExample-OND
@@ -188,6 +197,10 @@ Description: "Example of a Diagnois: AML"
 * code.coding[0].display = "ACUTE MYELOGENOUS LEUKEMIA"
 * subject = Reference(MSPatientExample)
 * recordedDate = "2021-11-01"
+* stage.summary.coding[NMDPDiseaseStage].system = "http://terminology.nmdp.org/codesystem/diseasestage"
+* stage.summary.coding[NMDPDiseaseStage].code = #AP
+* stage.summary.coding[NMDPDiseaseStage].display = "Accelerated Phase"
+
 
 Extension: NMDPRace
 Id: nmdp-race
