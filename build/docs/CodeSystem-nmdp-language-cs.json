@@ -1,0 +1,89 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nmdp-language-cs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.nmdp.org/codesystem/language defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ARA<a name=\"nmdp-language-cs-ARA\"> </a></td><td>Arabic</td></tr><tr><td style=\"white-space:nowrap\">CHI<a name=\"nmdp-language-cs-CHI\"> </a></td><td>Chinese-Mandarin</td></tr><tr><td style=\"white-space:nowrap\">ENG<a name=\"nmdp-language-cs-ENG\"> </a></td><td>English</td></tr><tr><td style=\"white-space:nowrap\">FRN<a name=\"nmdp-language-cs-FRN\"> </a></td><td>French</td></tr><tr><td style=\"white-space:nowrap\">GER<a name=\"nmdp-language-cs-GER\"> </a></td><td>German</td></tr><tr><td style=\"white-space:nowrap\">ITA<a name=\"nmdp-language-cs-ITA\"> </a></td><td>Italian</td></tr><tr><td style=\"white-space:nowrap\">JPN<a name=\"nmdp-language-cs-JPN\"> </a></td><td>Japanese</td></tr><tr><td style=\"white-space:nowrap\">KOR<a name=\"nmdp-language-cs-KOR\"> </a></td><td>Korean</td></tr><tr><td style=\"white-space:nowrap\">OTH<a name=\"nmdp-language-cs-OTH\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">POR<a name=\"nmdp-language-cs-POR\"> </a></td><td>Portuguese</td></tr><tr><td style=\"white-space:nowrap\">RUS<a name=\"nmdp-language-cs-RUS\"> </a></td><td>Russian</td></tr><tr><td style=\"white-space:nowrap\">SPA<a name=\"nmdp-language-cs-SPA\"> </a></td><td>Spanish</td></tr><tr><td style=\"white-space:nowrap\">VTM<a name=\"nmdp-language-cs-VTM\"> </a></td><td>Vietnamese</td></tr><tr><td style=\"white-space:nowrap\">nil<a name=\"nmdp-language-cs-nil\"> </a></td><td>no data</td></tr></table></div>"
+  },
+  "url": "http://terminology.nmdp.org/codesystem/language",
+  "version": "0.1.0",
+  "name": "NMDPLanguageCS",
+  "title": "NMDP Language Code System",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-07-26T16:10:15-05:00",
+  "publisher": "NMDP",
+  "contact": [
+    {
+      "name": "NMDP",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://bethematch.org"
+        }
+      ]
+    }
+  ],
+  "description": "Code System for NMDP languages",
+  "copyright": "National Marrow Donor Program",
+  "content": "complete",
+  "count": 14,
+  "concept": [
+    {
+      "code": "ARA",
+      "display": "Arabic"
+    },
+    {
+      "code": "CHI",
+      "display": "Chinese-Mandarin"
+    },
+    {
+      "code": "ENG",
+      "display": "English"
+    },
+    {
+      "code": "FRN",
+      "display": "French"
+    },
+    {
+      "code": "GER",
+      "display": "German"
+    },
+    {
+      "code": "ITA",
+      "display": "Italian"
+    },
+    {
+      "code": "JPN",
+      "display": "Japanese"
+    },
+    {
+      "code": "KOR",
+      "display": "Korean"
+    },
+    {
+      "code": "OTH",
+      "display": "Other"
+    },
+    {
+      "code": "POR",
+      "display": "Portuguese"
+    },
+    {
+      "code": "RUS",
+      "display": "Russian"
+    },
+    {
+      "code": "SPA",
+      "display": "Spanish"
+    },
+    {
+      "code": "VTM",
+      "display": "Vietnamese"
+    },
+    {
+      "code": "nil",
+      "display": "no data"
+    }
+  ]
+}

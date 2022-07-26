@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nmdp-abo-group-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://terminology.nmdp.org/codesystem/abogroup defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">A<a name="nmdp-abo-group-cs-A"> </a></td><td>A</td></tr><tr><td style="white-space:nowrap">B<a name="nmdp-abo-group-cs-B"> </a></td><td>B</td></tr><tr><td style="white-space:nowrap">O<a name="nmdp-abo-group-cs-O"> </a></td><td>O</td></tr><tr><td style="white-space:nowrap">AB<a name="nmdp-abo-group-cs-AB"> </a></td><td>AB</td></tr><tr><td style="white-space:nowrap">nil<a name="nmdp-abo-group-cs-nil"> </a></td><td>no data</td></tr></table></div>
+  </text>
+  <url value="http://terminology.nmdp.org/codesystem/abogroup"/>
+  <version value="0.1.0"/>
+  <name value="NMDPABOCS"/>
+  <title value="NMDP Blood Group Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-07-26T16:10:15-05:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="Code System for NMDP ABO blood groups"/>
+  <copyright value="National Marrow Donor Program"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="A"/>
+    <display value="A"/>
+  </concept>
+  <concept>
+    <code value="B"/>
+    <display value="B"/>
+  </concept>
+  <concept>
+    <code value="O"/>
+    <display value="O"/>
+  </concept>
+  <concept>
+    <code value="AB"/>
+    <display value="AB"/>
+  </concept>
+  <concept>
+    <code value="nil"/>
+    <display value="no data"/>
+  </concept>
+</CodeSystem>

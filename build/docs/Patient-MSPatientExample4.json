@@ -1,0 +1,65 @@
+{
+  "resourceType": "Patient",
+  "id": "MSPatientExample4",
+  "meta": {
+    "profile": [
+      "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"
+    ],
+    "security": [
+      {
+        "system": "http://terminology.nmdp.org/codesystem/transplant-center",
+        "code": "tc_123"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Jona Everyperson </b> male, DoB: 1974-12-25</p></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "White"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+    }
+  ],
+  "name": [
+    {
+      "family": "Everyperson",
+      "given": [
+        "Jona"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-612-555-1234"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1974-12-25",
+  "address": [
+    {
+      "line": [
+        "123 Main St"
+      ],
+      "city": "Minneapolis",
+      "state": "MN",
+      "postalCode": "55401",
+      "country": "USA"
+    }
+  ]
+}

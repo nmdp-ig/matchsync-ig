@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="MSPatientExample4"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"/>
+    <security>
+      <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+      <code value="tc_123"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Jona Everyperson </b> male, DoB: 1974-12-25</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2106-3"/>
+        <display value="White"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="White"/>
+    </extension>
+  </extension>
+  <name>
+    <family value="Everyperson"/>
+    <given value="Jona"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="1-612-555-1234"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1974-12-25"/>
+  <address>
+    <line value="123 Main St"/>
+    <city value="Minneapolis"/>
+    <state value="MN"/>
+    <postalCode value="55401"/>
+    <country value="USA"/>
+  </address>
+</Patient>
