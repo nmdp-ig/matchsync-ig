@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "MatchSourceIG",
   "status": "draft",
-  "date": "2022-06-30T15:55:55-05:00",
+  "date": "2022-07-26T16:10:15-05:00",
   "publisher": "NMDP",
   "contact": [
     {
@@ -533,10 +533,38 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MSBundle"
+          "reference": "StructureDefinition/ms-bundle"
         },
         "name": "MatchSource Bundle",
         "description": "Collection Bundle for MatchSource",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ms-bundle-hla-multilocus"
+        },
+        "name": "MatchSource Bundle with single multilocus HLA",
+        "description": "Collection Bundle for MatchSource with single HLA multilocus Observation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ms-bundle-hla-separate"
+        },
+        "name": "MatchSource Bundle with Separate HLA",
+        "description": "Collection Bundle for MatchSource with separate HLA Observations for each locus",
         "exampleBoolean": false
       },
       {
@@ -719,20 +747,6 @@
         },
         "name": "HLA Gene Name Value Set",
         "description": "HLA HGNC GeneIds Valueset",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/preferred-product-codes"
-        },
-        "name": "SNOMED HPC Value Set",
-        "description": "SNOMED HPC Value Set",
         "exampleBoolean": false
       },
       {
@@ -1093,11 +1107,25 @@
           }
         ],
         "reference": {
-          "reference": "Bundle/BundleExample-Full"
+          "reference": "Bundle/BundleExample-Full-HLA-Separate"
         },
-        "name": "Matchsource Bundle Example - Full",
-        "description": "Full Bundle Example for MatchSource",
-        "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/MSBundle"
+        "name": "Matchsource Bundle Example - Full with HLA in separate observations for each locus",
+        "description": "Full Bundle Example for MatchSource, with each HLA allele in a separate genotype observation",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-separate"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/BundleExample-Full-Multilocus-HLA"
+        },
+        "name": "Matchsource Bundle Example - Full, HLA with multilocus genotype",
+        "description": "Full Bundle Example for MatchSource with multilocus HLA genotype",
+        "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-multilocus"
       },
       {
         "extension": [
@@ -1111,7 +1139,7 @@
         },
         "name": "Matchsource Bundle Example - Mimimal",
         "description": "Minimual Bundle Example for MatchSource",
-        "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/MSBundle"
+        "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle"
       },
       {
         "extension": [
@@ -1137,7 +1165,7 @@
         "reference": {
           "reference": "Observation/HLA-A-Example"
         },
-        "name": "HLA_A_Example",
+        "name": "HLA-A-Example",
         "description": "Example of HLA-A",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-a"
       },
@@ -1151,7 +1179,7 @@
         "reference": {
           "reference": "Observation/HLA-B-Example"
         },
-        "name": "HLA_B_Example",
+        "name": "HLA-B-Example",
         "description": "Example of HLA-B",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-b"
       },
@@ -1165,7 +1193,7 @@
         "reference": {
           "reference": "Observation/HLA-C-Example"
         },
-        "name": "HLA_C_Example",
+        "name": "HLA-C-Example",
         "description": "Example of HLA-C",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-c"
       },
@@ -1179,7 +1207,7 @@
         "reference": {
           "reference": "Observation/HLA-DPA1-Example"
         },
-        "name": "HLA_DPA1_Example",
+        "name": "HLA-DPA1-Example",
         "description": "Example of HLA-DPA1",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpa1"
       },
@@ -1193,7 +1221,7 @@
         "reference": {
           "reference": "Observation/HLA-DPB1-Example"
         },
-        "name": "HLA_DPB1_Example",
+        "name": "HLA-DPB1-Example",
         "description": "Example of HLA-DPB1",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpb1"
       },
@@ -1207,7 +1235,7 @@
         "reference": {
           "reference": "Observation/HLA-DQA1-Example"
         },
-        "name": "HLA_DQA1_Example",
+        "name": "HLA-DQA1-Example",
         "description": "Example of HLA-DQA1",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqa1"
       },
@@ -1221,7 +1249,7 @@
         "reference": {
           "reference": "Observation/HLA-DQB1-Example"
         },
-        "name": "HLA_DQB1_Example",
+        "name": "HLA-DQB1-Example",
         "description": "Example of HLA-DQB1",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqb1"
       },
@@ -1235,7 +1263,7 @@
         "reference": {
           "reference": "Observation/HLA-DRB1-Example"
         },
-        "name": "HLA_DRB1_Example",
+        "name": "HLA-DRB1-Example",
         "description": "Example of HLA-DRB1",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb1"
       },
@@ -1249,7 +1277,7 @@
         "reference": {
           "reference": "Observation/HLA-DRB3-Example"
         },
-        "name": "HLA_DRB3_Example",
+        "name": "HLA-DRB3-Example",
         "description": "Example of HLA-DRB3",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb3"
       },
@@ -1263,7 +1291,7 @@
         "reference": {
           "reference": "Observation/HLA-DRB4-Example"
         },
-        "name": "HLA_DRB4_Example",
+        "name": "HLA-DRB4-Example",
         "description": "Example of HLA-DRB4",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb4"
       },
@@ -1277,7 +1305,7 @@
         "reference": {
           "reference": "Observation/HLA-DRB5-Example"
         },
-        "name": "HLA_DRB5_Example",
+        "name": "HLA-DRB5-Example",
         "description": "Example of HLA-DRB5",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb5"
       },
@@ -1289,10 +1317,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/HLA-Multilocus-Genotype"
+          "reference": "Observation/HLA-Multilocus-Genotype-Example"
         },
-        "name": "HLA_Multilocus_Genotype",
-        "description": "Multilocus Genotype of HLA-A, HLA-B, and HLA-DRB1",
+        "name": "HLA-Multilocus-Genotype-Example",
+        "description": "Multilocus Genotype of HLA-A, HLA-B, HLA-DRB1, and HLA-DRB3",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-genotype"
       },
       {

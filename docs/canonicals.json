@@ -7,13 +7,6 @@
     "name": "MatchSourceIG"
   },
   {
-    "id": "MSBundle",
-    "type": "StructureDefinition",
-    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/MSBundle",
-    "version": "0.1.0",
-    "name": "MSBundle"
-  },
-  {
     "id": "hla-a",
     "type": "StructureDefinition",
     "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-a",
@@ -103,6 +96,27 @@
     "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-abogroup-observation",
     "version": "0.1.0",
     "name": "MSABOGroupObservation"
+  },
+  {
+    "id": "ms-bundle",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle",
+    "version": "0.1.0",
+    "name": "MSBundle"
+  },
+  {
+    "id": "ms-bundle-hla-multilocus",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-multilocus",
+    "version": "0.1.0",
+    "name": "MSBundle_HLA_Multilocus"
+  },
+  {
+    "id": "ms-bundle-hla-separate",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-separate",
+    "version": "0.1.0",
+    "name": "MSBundle_HLA_Separate"
   },
   {
     "id": "ms-height-observation",
@@ -271,13 +285,6 @@
     "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-transplant-timeline-codes",
     "version": "0.1.0",
     "name": "NMDPTransplantTimelineVS"
-  },
-  {
-    "id": "preferred-product-codes",
-    "type": "ValueSet",
-    "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/preferred-product-codes",
-    "version": "0.1.0",
-    "name": "HPCProductVS"
   },
   {
     "id": "sct-abo-group-codes",

@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "nmdp-preferred-product-cs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.nmdp.org/codesystem/preferredproduct defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PBSC<a name=\"nmdp-preferred-product-cs-PBSC\"> </a></td><td>Peripheral Blood Stem Cell (Aphaeresis)</td></tr><tr><td style=\"white-space:nowrap\">BM<a name=\"nmdp-preferred-product-cs-BM\"> </a></td><td>HPC, Marrow</td></tr><tr><td style=\"white-space:nowrap\">CB<a name=\"nmdp-preferred-product-cs-CB\"> </a></td><td>HPC, Cord Blood</td></tr><tr><td style=\"white-space:nowrap\">NP<a name=\"nmdp-preferred-product-cs-NP\"> </a></td><td>No preference</td></tr><tr><td style=\"white-space:nowrap\">UNK<a name=\"nmdp-preferred-product-cs-UNK\"> </a></td><td>Unknown</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.nmdp.org/codesystem/preferredproduct defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PBSC<a name=\"nmdp-preferred-product-cs-PBSC\"> </a></td><td>HPC, Apheresis</td></tr><tr><td style=\"white-space:nowrap\">Marrow<a name=\"nmdp-preferred-product-cs-Marrow\"> </a></td><td>HPC, Marrow</td></tr><tr><td style=\"white-space:nowrap\">CBU<a name=\"nmdp-preferred-product-cs-CBU\"> </a></td><td>HPC, Cord Blood</td></tr><tr><td style=\"white-space:nowrap\">NP<a name=\"nmdp-preferred-product-cs-NP\"> </a></td><td>No preference</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"nmdp-preferred-product-cs-U\"> </a></td><td>Unknown</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://terminology.nmdp.org/codesystem/preferredproduct"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
@@ -18,7 +18,7 @@
   fhir:CodeSystem.title [ fhir:value "NMDP Preferred Product for Transplant"];
   fhir:CodeSystem.status [ fhir:value "active"];
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2022-06-30T15:55:55-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-07-26T16:10:15-05:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "NMDP"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -36,14 +36,14 @@
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "PBSC" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Peripheral Blood Stem Cell (Aphaeresis)" ]
+     fhir:CodeSystem.concept.display [ fhir:value "HPC, Apheresis" ]
   ], [
      fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "BM" ];
+     fhir:CodeSystem.concept.code [ fhir:value "Marrow" ];
      fhir:CodeSystem.concept.display [ fhir:value "HPC, Marrow" ]
   ], [
      fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "CB" ];
+     fhir:CodeSystem.concept.code [ fhir:value "CBU" ];
      fhir:CodeSystem.concept.display [ fhir:value "HPC, Cord Blood" ]
   ], [
      fhir:index 3;
@@ -51,7 +51,7 @@
      fhir:CodeSystem.concept.display [ fhir:value "No preference" ]
   ], [
      fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "UNK" ];
+     fhir:CodeSystem.concept.code [ fhir:value "U" ];
      fhir:CodeSystem.concept.display [ fhir:value "Unknown" ]
   ] .
 

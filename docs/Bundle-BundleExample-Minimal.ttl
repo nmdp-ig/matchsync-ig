@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "BundleExample-Minimal"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/MSBundle";
+       fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle";
        fhir:index 0;
-       fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/MSBundle>
+       fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle>
      ];
      fhir:Meta.security [
        fhir:index 0;
@@ -157,7 +157,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"MSDiagnosisExample-AML\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-msdiagnosis.html\">MSDiagnosis</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>code</b>: ACUTE MYELOGENOUS LEUKEMIA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nmdp-disease-cs.html\">NMDP Disease Code System</a>#AML)</span></p><p><b>subject</b>: <a href=\"#Patient_MSPatientExample\">See above (Patient/MSPatientExample)</a></p><p><b>recordedDate</b>: 2021-11-01</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"MSDiagnosisExample-AML\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-msdiagnosis.html\">MSDiagnosis</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>code</b>: ACUTE MYELOGENOUS LEUKEMIA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nmdp-disease-cs.html\">NMDP Disease Code System</a>#AML)</span></p><p><b>subject</b>: <a href=\"#Patient_MSPatientExample\">See above (Patient/MSPatientExample)</a></p><p><b>recordedDate</b>: 2021-11-01</p><h3>Stages</h3><table class=\"grid\"><tr><td>-</td><td><b>Summary</b></td></tr><tr><td>*</td><td>Accelerated Phase <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nmdp-diseasestage-cs.html\">NMDP Disease Stage Code System</a>#AP)</span></td></tr></table></div>"
   ];
   fhir:Condition.code [
      fhir:CodeableConcept.coding [
@@ -171,7 +171,18 @@
      fhir:link <http://fhir.nmdp.org/ig/matchsource/Patient/MSPatientExample>;
      fhir:Reference.reference [ fhir:value "Patient/MSPatientExample" ]
   ];
-  fhir:Condition.recordedDate [ fhir:value "2021-11-01"^^xsd:date] .
+  fhir:Condition.recordedDate [ fhir:value "2021-11-01"^^xsd:date];
+  fhir:Condition.stage [
+     fhir:index 0;
+     fhir:Condition.stage.summary [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/diseasestage" ];
+         fhir:Coding.code [ fhir:value "AP" ];
+         fhir:Coding.display [ fhir:value "Accelerated Phase" ]
+       ]
+     ]
+  ] .
 
 # - ontology header ------------------------------------------------------------
 

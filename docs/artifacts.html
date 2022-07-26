@@ -271,11 +271,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-MSBundle.html"
-                     title="StructureDefinition/MSBundle">MatchSource Bundle</a>
+                  <a href="StructureDefinition-ms-bundle.html"
+                     title="StructureDefinition/ms-bundle">MatchSource Bundle</a>
                </td>
                <td>
 <p>Collection Bundle for MatchSource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ms-bundle-hla-multilocus.html"
+                     title="StructureDefinition/ms-bundle-hla-multilocus">MatchSource Bundle with single multilocus HLA</a>
+               </td>
+               <td>
+<p>Collection Bundle for MatchSource with single HLA multilocus Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ms-bundle-hla-separate.html"
+                     title="StructureDefinition/ms-bundle-hla-separate">MatchSource Bundle with Separate HLA</a>
+               </td>
+               <td>
+<p>Collection Bundle for MatchSource with separate HLA Observations for each locus</p>
 </td>
             </tr>
             <tr>
@@ -417,15 +435,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>HLA HGNC GeneIds Valueset</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-preferred-product-codes.html"
-                     title="ValueSet/preferred-product-codes">SNOMED HPC Value Set</a>
-               </td>
-               <td>
-<p>SNOMED HPC Value Set</p>
 </td>
             </tr>
             <tr>
@@ -674,10 +683,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-BundleExample-Full.html" title="Bundle/BundleExample-Full">Matchsource Bundle Example - Full</a>
+                  <a href="Bundle-BundleExample-Full-HLA-Separate.html"
+                     title="Bundle/BundleExample-Full-HLA-Separate">Matchsource Bundle Example - Full with HLA in separate observations for each locus</a>
                </td>
                <td>
-<p>Full Bundle Example for MatchSource</p>
+<p>Full Bundle Example for MatchSource, with each HLA allele in a separate genotype observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-BundleExample-Full-Multilocus-HLA.html"
+                     title="Bundle/BundleExample-Full-Multilocus-HLA">Matchsource Bundle Example - Full, HLA with multilocus genotype</a>
+               </td>
+               <td>
+<p>Full Bundle Example for MatchSource with multilocus HLA genotype</p>
 </td>
             </tr>
             <tr>
@@ -700,7 +719,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-HLA-A-Example.html" title="Observation/HLA-A-Example">HLA_A_Example</a>
+                  <a href="Observation-HLA-A-Example.html" title="Observation/HLA-A-Example">HLA-A-Example</a>
                </td>
                <td>
 <p>Example of HLA-A</p>
@@ -708,7 +727,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-HLA-B-Example.html" title="Observation/HLA-B-Example">HLA_B_Example</a>
+                  <a href="Observation-HLA-B-Example.html" title="Observation/HLA-B-Example">HLA-B-Example</a>
                </td>
                <td>
 <p>Example of HLA-B</p>
@@ -716,7 +735,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-HLA-C-Example.html" title="Observation/HLA-C-Example">HLA_C_Example</a>
+                  <a href="Observation-HLA-C-Example.html" title="Observation/HLA-C-Example">HLA-C-Example</a>
                </td>
                <td>
 <p>Example of HLA-C</p>
@@ -725,7 +744,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-HLA-DPA1-Example.html"
-                     title="Observation/HLA-DPA1-Example">HLA_DPA1_Example</a>
+                     title="Observation/HLA-DPA1-Example">HLA-DPA1-Example</a>
                </td>
                <td>
 <p>Example of HLA-DPA1</p>
@@ -734,7 +753,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-HLA-DPB1-Example.html"
-                     title="Observation/HLA-DPB1-Example">HLA_DPB1_Example</a>
+                     title="Observation/HLA-DPB1-Example">HLA-DPB1-Example</a>
                </td>
                <td>
 <p>Example of HLA-DPB1</p>
@@ -743,7 +762,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-HLA-DQA1-Example.html"
-                     title="Observation/HLA-DQA1-Example">HLA_DQA1_Example</a>
+                     title="Observation/HLA-DQA1-Example">HLA-DQA1-Example</a>
                </td>
                <td>
 <p>Example of HLA-DQA1</p>
@@ -752,7 +771,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-HLA-DQB1-Example.html"
-                     title="Observation/HLA-DQB1-Example">HLA_DQB1_Example</a>
+                     title="Observation/HLA-DQB1-Example">HLA-DQB1-Example</a>
                </td>
                <td>
 <p>Example of HLA-DQB1</p>
@@ -761,7 +780,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-HLA-DRB1-Example.html"
-                     title="Observation/HLA-DRB1-Example">HLA_DRB1_Example</a>
+                     title="Observation/HLA-DRB1-Example">HLA-DRB1-Example</a>
                </td>
                <td>
 <p>Example of HLA-DRB1</p>
@@ -770,7 +789,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-HLA-DRB3-Example.html"
-                     title="Observation/HLA-DRB3-Example">HLA_DRB3_Example</a>
+                     title="Observation/HLA-DRB3-Example">HLA-DRB3-Example</a>
                </td>
                <td>
 <p>Example of HLA-DRB3</p>
@@ -779,7 +798,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-HLA-DRB4-Example.html"
-                     title="Observation/HLA-DRB4-Example">HLA_DRB4_Example</a>
+                     title="Observation/HLA-DRB4-Example">HLA-DRB4-Example</a>
                </td>
                <td>
 <p>Example of HLA-DRB4</p>
@@ -788,7 +807,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-HLA-DRB5-Example.html"
-                     title="Observation/HLA-DRB5-Example">HLA_DRB5_Example</a>
+                     title="Observation/HLA-DRB5-Example">HLA-DRB5-Example</a>
                </td>
                <td>
 <p>Example of HLA-DRB5</p>
@@ -796,11 +815,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-HLA-Multilocus-Genotype.html"
-                     title="Observation/HLA-Multilocus-Genotype">HLA_Multilocus_Genotype</a>
+                  <a href="Observation-HLA-Multilocus-Genotype-Example.html"
+                     title="Observation/HLA-Multilocus-Genotype-Example">HLA-Multilocus-Genotype-Example</a>
                </td>
                <td>
-<p>Multilocus Genotype of HLA-A, HLA-B, and HLA-DRB1</p>
+<p>Multilocus Genotype of HLA-A, HLA-B, HLA-DRB1, and HLA-DRB3</p>
 </td>
             </tr>
             <tr>
@@ -951,7 +970,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package matchsource#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 30, 2022 15:55-0500">2022-06-30</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package matchsource#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 26, 2022 16:10-0500">2022-07-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

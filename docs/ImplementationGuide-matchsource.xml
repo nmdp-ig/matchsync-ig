@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="MatchSourceIG"/>
   <status value="draft"/>
-  <date value="2022-06-30T15:55:55-05:00"/>
+  <date value="2022-07-26T16:10:15-05:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -366,10 +366,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/MSBundle"/>
+        <reference value="StructureDefinition/ms-bundle"/>
       </reference>
       <name value="MatchSource Bundle"/>
       <description value="Collection Bundle for MatchSource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ms-bundle-hla-multilocus"/>
+      </reference>
+      <name value="MatchSource Bundle with single multilocus HLA"/>
+      <description value="Collection Bundle for MatchSource with single HLA multilocus Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ms-bundle-hla-separate"/>
+      </reference>
+      <name value="MatchSource Bundle with Separate HLA"/>
+      <description value="Collection Bundle for MatchSource with separate HLA Observations for each locus"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -513,17 +535,6 @@
       </reference>
       <name value="HLA Gene Name Value Set"/>
       <description value="HLA HGNC GeneIds Valueset"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/preferred-product-codes"/>
-      </reference>
-      <name value="SNOMED HPC Value Set"/>
-      <description value="SNOMED HPC Value Set"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -806,11 +817,22 @@
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/BundleExample-Full"/>
+        <reference value="Bundle/BundleExample-Full-HLA-Separate"/>
       </reference>
-      <name value="Matchsource Bundle Example - Full"/>
-      <description value="Full Bundle Example for MatchSource"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/MSBundle"/>
+      <name value="Matchsource Bundle Example - Full with HLA in separate observations for each locus"/>
+      <description value="Full Bundle Example for MatchSource, with each HLA allele in a separate genotype observation"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-separate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/BundleExample-Full-Multilocus-HLA"/>
+      </reference>
+      <name value="Matchsource Bundle Example - Full, HLA with multilocus genotype"/>
+      <description value="Full Bundle Example for MatchSource with multilocus HLA genotype"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-multilocus"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -821,7 +843,7 @@
       </reference>
       <name value="Matchsource Bundle Example - Mimimal"/>
       <description value="Minimual Bundle Example for MatchSource"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/MSBundle"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -841,7 +863,7 @@
       <reference>
         <reference value="Observation/HLA-A-Example"/>
       </reference>
-      <name value="HLA_A_Example"/>
+      <name value="HLA-A-Example"/>
       <description value="Example of HLA-A"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-a"/>
     </resource>
@@ -852,7 +874,7 @@
       <reference>
         <reference value="Observation/HLA-B-Example"/>
       </reference>
-      <name value="HLA_B_Example"/>
+      <name value="HLA-B-Example"/>
       <description value="Example of HLA-B"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-b"/>
     </resource>
@@ -863,7 +885,7 @@
       <reference>
         <reference value="Observation/HLA-C-Example"/>
       </reference>
-      <name value="HLA_C_Example"/>
+      <name value="HLA-C-Example"/>
       <description value="Example of HLA-C"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-c"/>
     </resource>
@@ -874,7 +896,7 @@
       <reference>
         <reference value="Observation/HLA-DPA1-Example"/>
       </reference>
-      <name value="HLA_DPA1_Example"/>
+      <name value="HLA-DPA1-Example"/>
       <description value="Example of HLA-DPA1"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpa1"/>
     </resource>
@@ -885,7 +907,7 @@
       <reference>
         <reference value="Observation/HLA-DPB1-Example"/>
       </reference>
-      <name value="HLA_DPB1_Example"/>
+      <name value="HLA-DPB1-Example"/>
       <description value="Example of HLA-DPB1"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpb1"/>
     </resource>
@@ -896,7 +918,7 @@
       <reference>
         <reference value="Observation/HLA-DQA1-Example"/>
       </reference>
-      <name value="HLA_DQA1_Example"/>
+      <name value="HLA-DQA1-Example"/>
       <description value="Example of HLA-DQA1"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqa1"/>
     </resource>
@@ -907,7 +929,7 @@
       <reference>
         <reference value="Observation/HLA-DQB1-Example"/>
       </reference>
-      <name value="HLA_DQB1_Example"/>
+      <name value="HLA-DQB1-Example"/>
       <description value="Example of HLA-DQB1"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqb1"/>
     </resource>
@@ -918,7 +940,7 @@
       <reference>
         <reference value="Observation/HLA-DRB1-Example"/>
       </reference>
-      <name value="HLA_DRB1_Example"/>
+      <name value="HLA-DRB1-Example"/>
       <description value="Example of HLA-DRB1"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb1"/>
     </resource>
@@ -929,7 +951,7 @@
       <reference>
         <reference value="Observation/HLA-DRB3-Example"/>
       </reference>
-      <name value="HLA_DRB3_Example"/>
+      <name value="HLA-DRB3-Example"/>
       <description value="Example of HLA-DRB3"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb3"/>
     </resource>
@@ -940,7 +962,7 @@
       <reference>
         <reference value="Observation/HLA-DRB4-Example"/>
       </reference>
-      <name value="HLA_DRB4_Example"/>
+      <name value="HLA-DRB4-Example"/>
       <description value="Example of HLA-DRB4"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb4"/>
     </resource>
@@ -951,7 +973,7 @@
       <reference>
         <reference value="Observation/HLA-DRB5-Example"/>
       </reference>
-      <name value="HLA_DRB5_Example"/>
+      <name value="HLA-DRB5-Example"/>
       <description value="Example of HLA-DRB5"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb5"/>
     </resource>
@@ -960,10 +982,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/HLA-Multilocus-Genotype"/>
+        <reference value="Observation/HLA-Multilocus-Genotype-Example"/>
       </reference>
-      <name value="HLA_Multilocus_Genotype"/>
-      <description value="Multilocus Genotype of HLA-A, HLA-B, and HLA-DRB1"/>
+      <name value="HLA-Multilocus-Genotype-Example"/>
+      <description value="Multilocus Genotype of HLA-A, HLA-B, HLA-DRB1, and HLA-DRB3"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-genotype"/>
     </resource>
     <resource>

@@ -43,65 +43,7 @@
     }
   ],
   "profiles": {
-    "Bundle": [
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/MSBundle",
-        "title": "MatchSource Bundle"
-      }
-    ],
     "Observation": [
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-a",
-        "title": "HLA_A"
-      },
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-b",
-        "title": "HLA_B"
-      },
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-c",
-        "title": "HLA_C"
-      },
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpa1",
-        "title": "HLA_DPA1"
-      },
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpb1",
-        "title": "HLA_DPB1"
-      },
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqa1",
-        "title": "HLA_DQA1"
-      },
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqb1",
-        "title": "HLA_DQB1"
-      },
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb1",
-        "title": "HLA_DRB1"
-      },
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb3",
-        "title": "HLA_DRB3"
-      },
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb4",
-        "title": "HLA_DRB4"
-      },
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb5",
-        "title": "HLA_DRB5"
-      },
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-genotype",
-        "title": "HLA Genotype Observation"
-      },
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-abogroup-observation",
-        "title": "MSABOGroupObservation"
-      },
       {
         "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-height-observation",
         "title": "MSHeightObservation"
@@ -121,6 +63,20 @@
       {
         "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-weight-observation",
         "title": "MSWeightObservation"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle",
+        "title": "MatchSource Bundle"
+      },
+      {
+        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-multilocus",
+        "title": "MatchSource Bundle with single multilocus HLA"
+      },
+      {
+        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-separate",
+        "title": "MatchSource Bundle with Separate HLA"
       }
     ],
     "Condition": [
