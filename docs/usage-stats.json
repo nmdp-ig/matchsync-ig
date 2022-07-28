@@ -40,6 +40,13 @@
         "boolean",
         "string"
       ]
+    },
+    {
+      "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/number-of-remissions",
+      "title": "Number of Remissions of Primary Diagnosis",
+      "types": [
+        "integer"
+      ]
     }
   ],
   "profiles": {
@@ -116,6 +123,10 @@
     ],
     "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race": [
       "Patient"
+    ],
+    "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/number-of-remissions": [
+      "Bundle.entry.resource",
+      "Condition"
     ],
     "http://hl7.org/fhir/StructureDefinition/bodySite": [
       "Observation"

@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "MatchSourceIG",
   "status": "draft",
-  "date": "2022-07-26T16:47:03-05:00",
+  "date": "2022-07-28T10:15:20-05:00",
   "publisher": "NMDP",
   "contact": [
     {
@@ -733,6 +733,20 @@
         },
         "name": "NMDP Race Code Extension",
         "description": "Extension to use NMDP Race Codes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/number-of-remissions"
+        },
+        "name": "Number of Remissions of Primary Diagnosis",
+        "description": "Number of Remissions of Primary Diagnosis",
         "exampleBoolean": false
       },
       {

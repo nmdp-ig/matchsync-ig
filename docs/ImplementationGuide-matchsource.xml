@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="MatchSourceIG"/>
   <status value="draft"/>
-  <date value="2022-07-26T16:47:03-05:00"/>
+  <date value="2022-07-28T10:15:20-05:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -524,6 +524,17 @@
       </reference>
       <name value="NMDP Race Code Extension"/>
       <description value="Extension to use NMDP Race Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/number-of-remissions"/>
+      </reference>
+      <name value="Number of Remissions of Primary Diagnosis"/>
+      <description value="Number of Remissions of Primary Diagnosis"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

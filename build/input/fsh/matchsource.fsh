@@ -163,6 +163,7 @@ Parent: Condition
 Id: msdiagnosis
 Description: "Diagnosis"
 * insert MetaSecurityRules
+* extension contains NumberOfRemissions named NumberOfRemissions 0..1
 * code 1..1 MS
 * code from nmdp-disease-codes (required)
 * subject 1..1 MS
@@ -178,6 +179,13 @@ Description: "Diagnosis"
 * stage.summary.coding[NMDPDiseaseStage].code 1..1
 * recordedDate 1..1 MS
 
+Extension: NumberOfRemissions
+Id:        number-of-remissions
+Title:     "Number of Remissions of Primary Diagnosis"
+Description: "Number of Remissions of Primary Diagnosis"
+* value[x] only integer
+
+
 Instance: MSDiagnosisExample-OND
 InstanceOf: msdiagnosis
 Description: "Example of a Diagnois"
@@ -191,6 +199,7 @@ Description: "Example of a Diagnois"
 Instance: MSDiagnosisExample-AML
 InstanceOf: msdiagnosis
 Description: "Example of a Diagnois: AML"
+* extension[NumberOfRemissions].valueInteger = 0
 * meta.security[TransplantCenter].code = #tc_123
 * code.coding[0].system = "http://terminology.nmdp.org/codesystem/disease"
 * code.coding[0].code = #AML

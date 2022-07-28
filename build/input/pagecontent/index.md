@@ -8,7 +8,7 @@ As of now, it mostly contains Structure Definitions, Code Systems, ValueSets and
 
 This IG describes FHIR profiles and examples for
 + Patient needing the transplant
-+ Condition to describe the patient's diagnosis and disease stage
++ Condition to describe the patient's diagnosis, disease stage, and number of remissions
 + Specimen to identify the Id of the specimen used for HLA genotyping
 + Observations for 
   + weight
