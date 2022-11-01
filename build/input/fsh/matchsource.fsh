@@ -21,7 +21,7 @@ Description: "Patient needing a transplant"
 * telecom.system = #phone
 * generalPractitioner 0..1 MS
 * generalPractitioner only Reference(transplantcentercoordinator)
-* identifier 0..1 MS
+* identifier 0..* MS
 * managingOrganization 0..1 MS
 * managingOrganization only Reference(transplantcenter)
 * extension contains 
@@ -158,7 +158,7 @@ Description: "Example of a Transplant Center Coordinator."
   * given[0] = "Bart"
   * family = "Simpson"
 
-Profile: MSDiagnosis
+Profile: MSPrimaryDiagnosis
 Parent: Condition
 Id: msdiagnosis
 Description: "Diagnosis"
@@ -178,6 +178,27 @@ Description: "Diagnosis"
 * stage.summary.coding[NMDPDiseaseStage].code from nmdp-diseasestage-codes (required)
 * stage.summary.coding[NMDPDiseaseStage].code 1..1
 * recordedDate 1..1 MS
+
+
+// Profile: MSSecondaryDiagnosis
+// Parent: Condition
+// Id: msdiagnosis
+// Description: "Diagnosis"
+// * insert MetaSecurityRules
+// * code 1..1 MS
+// * code from nmdp-disease-codes (required)
+// * subject 1..1 MS
+// * subject only Reference(mspatient)
+// * stage.summary.coding ^slicing.discriminator.type = #pattern
+// * stage.summary.coding ^slicing.discriminator.path = "system"
+// * stage.summary.coding ^slicing.rules = #open
+// * stage.summary.coding ^slicing.description = "NMDP Disease Stage"
+// * stage.summary.coding contains
+//     NMDPDiseaseStage 1..1 MS
+// * stage.summary.coding[NMDPDiseaseStage].system = "http://terminology.nmdp.org/codesystem/diseasestage"
+// * stage.summary.coding[NMDPDiseaseStage].code from nmdp-diseasestage-codes (required)
+// * stage.summary.coding[NMDPDiseaseStage].code 1..1
+// * recordedDate 1..1 MS
 
 Extension: NumberOfRemissions
 Id:        number-of-remissions

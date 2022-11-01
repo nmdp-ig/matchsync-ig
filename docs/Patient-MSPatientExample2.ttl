@@ -22,7 +22,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Joe Everyperson </b> male, DoB: 1974-12-25</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Joe Everyperson </b> male, DoB: 1974-12-25</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 1-612-555-1234</li><li>123 Main St Minneapolis MN 55401 USA </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension to use NMDP Ethnicity Codes\"><a href=\"StructureDefinition-nmdp-ethnicity.html\">NMDP Ethnicity Code Extension:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://terminology.nmdp.org/codesystem/ethnicity NHIS}\">Not Hispanic or Latino</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension to use NMDP Race Codes\"><a href=\"StructureDefinition-nmdp-race.html\">NMDP Race Code Extension:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://terminology.nmdp.org/codesystem/race EURWRC}\">North American or European</span></li></ul></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;

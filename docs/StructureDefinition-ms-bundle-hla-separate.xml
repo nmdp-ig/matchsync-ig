@@ -39,7 +39,7 @@
   <name value="MSBundle_HLA_Separate"/>
   <title value="MatchSource Bundle with Separate HLA"/>
   <status value="active"/>
-  <date value="2022-07-28T10:15:20-05:00"/>
+  <date value="2022-10-31T18:02:56-05:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -192,7 +192,7 @@
       </base>
       <type>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
-          <valueUrl value="string"/>
+          <valueUrl value="id"/>
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
@@ -13797,8 +13797,8 @@
     <element id="Bundle.entry:hla-a.resource">
       <path value="Bundle.entry.resource"/>
       <short value="Genotype"/>
-      <definition value="Measurements and simple assertions made about a patient, device or other subject."/>
-      <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc."/>
+      <definition value="A finding that a patient has a specific genotype."/>
+      <comment value="Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants."/>
       <alias value="Vital Signs"/>
       <alias value="Measurement"/>
       <alias value="Results"/>
@@ -13876,7 +13876,7 @@
         <xpath value="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </constraint>
-      <mustSupport value="true"/>
+      <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -14845,8 +14845,8 @@
     <element id="Bundle.entry:hla-b.resource">
       <path value="Bundle.entry.resource"/>
       <short value="Genotype"/>
-      <definition value="Measurements and simple assertions made about a patient, device or other subject."/>
-      <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc."/>
+      <definition value="A finding that a patient has a specific genotype."/>
+      <comment value="Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants."/>
       <alias value="Vital Signs"/>
       <alias value="Measurement"/>
       <alias value="Results"/>
@@ -14924,7 +14924,7 @@
         <xpath value="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </constraint>
-      <mustSupport value="true"/>
+      <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -15893,8 +15893,8 @@
     <element id="Bundle.entry:hla-c.resource">
       <path value="Bundle.entry.resource"/>
       <short value="Genotype"/>
-      <definition value="Measurements and simple assertions made about a patient, device or other subject."/>
-      <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc."/>
+      <definition value="A finding that a patient has a specific genotype."/>
+      <comment value="Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants."/>
       <alias value="Vital Signs"/>
       <alias value="Measurement"/>
       <alias value="Results"/>
@@ -15972,7 +15972,7 @@
         <xpath value="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </constraint>
-      <mustSupport value="true"/>
+      <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -16941,8 +16941,8 @@
     <element id="Bundle.entry:hla-drb1.resource">
       <path value="Bundle.entry.resource"/>
       <short value="Genotype"/>
-      <definition value="Measurements and simple assertions made about a patient, device or other subject."/>
-      <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc."/>
+      <definition value="A finding that a patient has a specific genotype."/>
+      <comment value="Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants."/>
       <alias value="Vital Signs"/>
       <alias value="Measurement"/>
       <alias value="Results"/>
@@ -17020,7 +17020,7 @@
         <xpath value="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </constraint>
-      <mustSupport value="true"/>
+      <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -17989,8 +17989,8 @@
     <element id="Bundle.entry:hla-drb3.resource">
       <path value="Bundle.entry.resource"/>
       <short value="Genotype"/>
-      <definition value="Measurements and simple assertions made about a patient, device or other subject."/>
-      <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc."/>
+      <definition value="A finding that a patient has a specific genotype."/>
+      <comment value="Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants."/>
       <alias value="Vital Signs"/>
       <alias value="Measurement"/>
       <alias value="Results"/>
@@ -18068,7 +18068,7 @@
         <xpath value="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </constraint>
-      <mustSupport value="true"/>
+      <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -19037,8 +19037,8 @@
     <element id="Bundle.entry:hla-drb4.resource">
       <path value="Bundle.entry.resource"/>
       <short value="Genotype"/>
-      <definition value="Measurements and simple assertions made about a patient, device or other subject."/>
-      <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc."/>
+      <definition value="A finding that a patient has a specific genotype."/>
+      <comment value="Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants."/>
       <alias value="Vital Signs"/>
       <alias value="Measurement"/>
       <alias value="Results"/>
@@ -19116,7 +19116,7 @@
         <xpath value="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </constraint>
-      <mustSupport value="true"/>
+      <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -20085,8 +20085,8 @@
     <element id="Bundle.entry:hla-drb5.resource">
       <path value="Bundle.entry.resource"/>
       <short value="Genotype"/>
-      <definition value="Measurements and simple assertions made about a patient, device or other subject."/>
-      <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc."/>
+      <definition value="A finding that a patient has a specific genotype."/>
+      <comment value="Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants."/>
       <alias value="Vital Signs"/>
       <alias value="Measurement"/>
       <alias value="Results"/>
@@ -20164,7 +20164,7 @@
         <xpath value="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </constraint>
-      <mustSupport value="true"/>
+      <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -21133,8 +21133,8 @@
     <element id="Bundle.entry:hla-dpa1.resource">
       <path value="Bundle.entry.resource"/>
       <short value="Genotype"/>
-      <definition value="Measurements and simple assertions made about a patient, device or other subject."/>
-      <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc."/>
+      <definition value="A finding that a patient has a specific genotype."/>
+      <comment value="Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants."/>
       <alias value="Vital Signs"/>
       <alias value="Measurement"/>
       <alias value="Results"/>
@@ -21212,7 +21212,7 @@
         <xpath value="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </constraint>
-      <mustSupport value="true"/>
+      <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -22181,8 +22181,8 @@
     <element id="Bundle.entry:hla-dpb1.resource">
       <path value="Bundle.entry.resource"/>
       <short value="Genotype"/>
-      <definition value="Measurements and simple assertions made about a patient, device or other subject."/>
-      <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc."/>
+      <definition value="A finding that a patient has a specific genotype."/>
+      <comment value="Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants."/>
       <alias value="Vital Signs"/>
       <alias value="Measurement"/>
       <alias value="Results"/>
@@ -22260,7 +22260,7 @@
         <xpath value="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </constraint>
-      <mustSupport value="true"/>
+      <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -23229,8 +23229,8 @@
     <element id="Bundle.entry:hla-dqa1.resource">
       <path value="Bundle.entry.resource"/>
       <short value="Genotype"/>
-      <definition value="Measurements and simple assertions made about a patient, device or other subject."/>
-      <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc."/>
+      <definition value="A finding that a patient has a specific genotype."/>
+      <comment value="Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants."/>
       <alias value="Vital Signs"/>
       <alias value="Measurement"/>
       <alias value="Results"/>
@@ -23308,7 +23308,7 @@
         <xpath value="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </constraint>
-      <mustSupport value="true"/>
+      <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -24277,8 +24277,8 @@
     <element id="Bundle.entry:hla-dqb1.resource">
       <path value="Bundle.entry.resource"/>
       <short value="Genotype"/>
-      <definition value="Measurements and simple assertions made about a patient, device or other subject."/>
-      <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc."/>
+      <definition value="A finding that a patient has a specific genotype."/>
+      <comment value="Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants."/>
       <alias value="Vital Signs"/>
       <alias value="Measurement"/>
       <alias value="Results"/>
@@ -24356,7 +24356,7 @@
         <xpath value="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       </constraint>
-      <mustSupport value="true"/>
+      <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>

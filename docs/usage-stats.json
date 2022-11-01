@@ -89,7 +89,7 @@
     "Condition": [
       {
         "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msdiagnosis",
-        "title": "MSDiagnosis"
+        "title": "MSPrimaryDiagnosis"
       }
     ],
     "Patient": [
@@ -172,6 +172,10 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"

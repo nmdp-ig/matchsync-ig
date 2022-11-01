@@ -30,9 +30,9 @@
   </extension>
   <url value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msdiagnosis"/>
   <version value="0.1.0"/>
-  <name value="MSDiagnosis"/>
+  <name value="MSPrimaryDiagnosis"/>
   <status value="active"/>
-  <date value="2022-07-28T10:15:20-05:00"/>
+  <date value="2022-10-31T18:02:56-05:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -203,7 +203,7 @@
       </base>
       <type>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
-          <valueUrl value="string"/>
+          <valueUrl value="id"/>
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>

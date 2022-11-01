@@ -20,7 +20,7 @@
   "name": "MSBundle_HLA_Separate",
   "title": "MatchSource Bundle with Separate HLA",
   "status": "active",
-  "date": "2022-07-28T10:15:20-05:00",
+  "date": "2022-10-31T18:02:56-05:00",
   "publisher": "NMDP",
   "contact": [
     {
@@ -189,7 +189,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-                "valueUrl": "string"
+                "valueUrl": "id"
               }
             ],
             "code": "http://hl7.org/fhirpath/System.String"
@@ -16808,8 +16808,8 @@
         "id": "Bundle.entry:hla-a.resource",
         "path": "Bundle.entry.resource",
         "short": "Genotype",
-        "definition": "Measurements and simple assertions made about a patient, device or other subject.",
-        "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.",
+        "definition": "A finding that a patient has a specific genotype.",
+        "comment": "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants.",
         "alias": [
           "Vital Signs",
           "Measurement",
@@ -16899,7 +16899,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
-        "mustSupport": true,
+        "mustSupport": false,
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -18086,8 +18086,8 @@
         "id": "Bundle.entry:hla-b.resource",
         "path": "Bundle.entry.resource",
         "short": "Genotype",
-        "definition": "Measurements and simple assertions made about a patient, device or other subject.",
-        "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.",
+        "definition": "A finding that a patient has a specific genotype.",
+        "comment": "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants.",
         "alias": [
           "Vital Signs",
           "Measurement",
@@ -18177,7 +18177,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
-        "mustSupport": true,
+        "mustSupport": false,
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -19364,8 +19364,8 @@
         "id": "Bundle.entry:hla-c.resource",
         "path": "Bundle.entry.resource",
         "short": "Genotype",
-        "definition": "Measurements and simple assertions made about a patient, device or other subject.",
-        "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.",
+        "definition": "A finding that a patient has a specific genotype.",
+        "comment": "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants.",
         "alias": [
           "Vital Signs",
           "Measurement",
@@ -19455,7 +19455,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
-        "mustSupport": true,
+        "mustSupport": false,
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -20642,8 +20642,8 @@
         "id": "Bundle.entry:hla-drb1.resource",
         "path": "Bundle.entry.resource",
         "short": "Genotype",
-        "definition": "Measurements and simple assertions made about a patient, device or other subject.",
-        "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.",
+        "definition": "A finding that a patient has a specific genotype.",
+        "comment": "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants.",
         "alias": [
           "Vital Signs",
           "Measurement",
@@ -20733,7 +20733,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
-        "mustSupport": true,
+        "mustSupport": false,
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -21920,8 +21920,8 @@
         "id": "Bundle.entry:hla-drb3.resource",
         "path": "Bundle.entry.resource",
         "short": "Genotype",
-        "definition": "Measurements and simple assertions made about a patient, device or other subject.",
-        "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.",
+        "definition": "A finding that a patient has a specific genotype.",
+        "comment": "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants.",
         "alias": [
           "Vital Signs",
           "Measurement",
@@ -22011,7 +22011,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
-        "mustSupport": true,
+        "mustSupport": false,
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -23198,8 +23198,8 @@
         "id": "Bundle.entry:hla-drb4.resource",
         "path": "Bundle.entry.resource",
         "short": "Genotype",
-        "definition": "Measurements and simple assertions made about a patient, device or other subject.",
-        "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.",
+        "definition": "A finding that a patient has a specific genotype.",
+        "comment": "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants.",
         "alias": [
           "Vital Signs",
           "Measurement",
@@ -23289,7 +23289,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
-        "mustSupport": true,
+        "mustSupport": false,
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -24476,8 +24476,8 @@
         "id": "Bundle.entry:hla-drb5.resource",
         "path": "Bundle.entry.resource",
         "short": "Genotype",
-        "definition": "Measurements and simple assertions made about a patient, device or other subject.",
-        "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.",
+        "definition": "A finding that a patient has a specific genotype.",
+        "comment": "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants.",
         "alias": [
           "Vital Signs",
           "Measurement",
@@ -24567,7 +24567,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
-        "mustSupport": true,
+        "mustSupport": false,
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -25754,8 +25754,8 @@
         "id": "Bundle.entry:hla-dpa1.resource",
         "path": "Bundle.entry.resource",
         "short": "Genotype",
-        "definition": "Measurements and simple assertions made about a patient, device or other subject.",
-        "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.",
+        "definition": "A finding that a patient has a specific genotype.",
+        "comment": "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants.",
         "alias": [
           "Vital Signs",
           "Measurement",
@@ -25845,7 +25845,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
-        "mustSupport": true,
+        "mustSupport": false,
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -27032,8 +27032,8 @@
         "id": "Bundle.entry:hla-dpb1.resource",
         "path": "Bundle.entry.resource",
         "short": "Genotype",
-        "definition": "Measurements and simple assertions made about a patient, device or other subject.",
-        "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.",
+        "definition": "A finding that a patient has a specific genotype.",
+        "comment": "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants.",
         "alias": [
           "Vital Signs",
           "Measurement",
@@ -27123,7 +27123,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
-        "mustSupport": true,
+        "mustSupport": false,
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -28310,8 +28310,8 @@
         "id": "Bundle.entry:hla-dqa1.resource",
         "path": "Bundle.entry.resource",
         "short": "Genotype",
-        "definition": "Measurements and simple assertions made about a patient, device or other subject.",
-        "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.",
+        "definition": "A finding that a patient has a specific genotype.",
+        "comment": "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants.",
         "alias": [
           "Vital Signs",
           "Measurement",
@@ -28401,7 +28401,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
-        "mustSupport": true,
+        "mustSupport": false,
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -29588,8 +29588,8 @@
         "id": "Bundle.entry:hla-dqb1.resource",
         "path": "Bundle.entry.resource",
         "short": "Genotype",
-        "definition": "Measurements and simple assertions made about a patient, device or other subject.",
-        "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.",
+        "definition": "A finding that a patient has a specific genotype.",
+        "comment": "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants.",
         "alias": [
           "Vital Signs",
           "Measurement",
@@ -29679,7 +29679,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
-        "mustSupport": true,
+        "mustSupport": false,
         "isModifier": false,
         "isSummary": false,
         "mapping": [

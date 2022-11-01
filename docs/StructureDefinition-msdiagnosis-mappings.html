@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MATCHSOURCE\MSDiagnosis - Mappings - FHIR v4.0.1</title>
+    <title>MATCHSOURCE\MSPrimaryDiagnosis - Mappings - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.17"}
-    h3,h4,h5,h6{--heading-prefix:"2.17"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.20"}
+    h3,h4,h5,h6{--heading-prefix:"2.20"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -98,7 +98,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MSDiagnosis</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MSPrimaryDiagnosis</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -184,7 +184,7 @@
 
 
 <a name="root"> </a>
-<h2 id="root">Resource Profile: MSDiagnosis - Mappings</h2>
+<h2 id="root">Resource Profile: MSPrimaryDiagnosis - Mappings</h2>
   <table class="colsi">
     <tr>
 
@@ -192,7 +192,7 @@
         
           Active
           
-            as of 2022-07-28
+            as of 2022-10-31
           
         
       </td>
@@ -209,7 +209,7 @@
 
 
   <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>MSDiagnosis</b></td></tr>
+ <tr><td colspan="3"><b>MSPrimaryDiagnosis</b></td></tr>
  <tr><td>Condition</td><td>Event</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Event.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;clinicalStatus</td><td>Event.status</td> </tr>
@@ -223,7 +223,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Event.note</td> </tr>
 </table>
 <a name="sct-concept"> </a><h3>Mappings for SNOMED CT Concept Domain Binding (http://snomed.info/conceptdomain)</h3><table class="grid">
- <tr><td colspan="3"><b>MSDiagnosis</b></td></tr>
+ <tr><td colspan="3"><b>MSPrimaryDiagnosis</b></td></tr>
  <tr><td>Condition</td><td>&lt; 243796009 |Situation with explicit context| : 246090004 |Associated finding| = ( ( &lt; 404684003 |Clinical finding| MINUS ( &lt;&lt; 420134006 |Propensity to adverse reactions| OR &lt;&lt; 473010000 |Hypersensitivity condition| OR &lt;&lt; 79899007 |Drug interaction| OR &lt;&lt; 69449002 |Drug action| OR &lt;&lt; 441742003 |Evaluation finding| OR &lt;&lt; 307824009 |Administrative status| OR &lt;&lt; 385356007 |Tumor stage finding|)) OR &lt; 272379006 |Event|)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;clinicalStatus</td><td>&lt; 303105007 |Disease phases|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;verificationStatus</td><td>&lt; 410514004 |Finding context value|</td> </tr>
@@ -246,7 +246,7 @@ OR &lt; 272379006 |Event|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>&lt; 404684003 |Clinical finding|</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>MSDiagnosis</b></td></tr>
+ <tr><td colspan="3"><b>MSPrimaryDiagnosis</b></td></tr>
  <tr><td>Condition</td><td>PPR message</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;security</td><td></td> </tr>
@@ -279,7 +279,7 @@ OR &lt; 272379006 |Event|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>NTE child of PRB</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>MSDiagnosis</b></td></tr>
+ <tr><td colspan="3"><b>MSPrimaryDiagnosis</b></td></tr>
  <tr><td>Condition</td><td>Entity. Role, or Act, Observation[classCode=OBS, moodCode=EVN, code=ASSERTION, value&lt;Diagnosis]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
@@ -340,7 +340,7 @@ OR &lt; 272379006 |Event|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=&quot;annotation&quot;].value</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>MSDiagnosis</b></td></tr>
+ <tr><td colspan="3"><b>MSPrimaryDiagnosis</b></td></tr>
  <tr><td>Condition</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;clinicalStatus</td><td>FiveWs.status</td> </tr>
@@ -360,7 +360,7 @@ OR &lt; 272379006 |Event|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;detail</td><td>FiveWs.why[x]</td> </tr>
 </table>
 <a name="sct-attr"> </a><h3>Mappings for SNOMED CT Attribute Binding (http://snomed.org/attributebinding)</h3><table class="grid">
- <tr><td colspan="3"><b>MSDiagnosis</b></td></tr>
+ <tr><td colspan="3"><b>MSPrimaryDiagnosis</b></td></tr>
  <tr><td>Condition</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;verificationStatus</td><td>408729009</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;severity</td><td>246112005</td> </tr>
@@ -420,9 +420,9 @@ OR &lt; 272379006 |Event|</td> </tr>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package matchsource#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 28, 2022 10:15-0500">2022-07-28</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package matchsource#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 31, 2022 18:02-0500">2022-10-31</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

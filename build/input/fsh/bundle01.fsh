@@ -22,7 +22,7 @@ Description: "Collection Bundle for MatchSource"
 * entry[msPatient].resource only MSPatient
 * entry[msPatient] ^short = "MatchSource Patient"
 * entry[msPatient] ^definition = "The MatchSource Patient whose data is included in the bundle (required element)."
-* entry[msDiagnosis].resource only MSDiagnosis
+* entry[msDiagnosis].resource only MSPrimaryDiagnosis
 * entry[msDiagnosis] ^short = "Diagnois for MatchSource Patient"
 * entry[msDiagnosis] ^definition = "The Diagnosis for the MatchSource patient (required element)."
 * entry[msCoordinator].resource only TransplantCenterCoordinator

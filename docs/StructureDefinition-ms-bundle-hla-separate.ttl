@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "MSBundle_HLA_Separate"];
   fhir:StructureDefinition.title [ fhir:value "MatchSource Bundle with Separate HLA"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-28T10:15:20-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-31T18:02:56-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "NMDP"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -220,7 +220,7 @@
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
-           fhir:Extension.valueUrl [ fhir:value "string" ]
+           fhir:Extension.valueUrl [ fhir:value "id" ]
          ];
          fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
        ];
@@ -18096,8 +18096,8 @@
        fhir:Element.id [ fhir:value "Bundle.entry:hla-a.resource" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.short [ fhir:value "Genotype" ];
-       fhir:ElementDefinition.definition [ fhir:value "Measurements and simple assertions made about a patient, device or other subject." ];
-       fhir:ElementDefinition.comment [ fhir:value "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc." ];
+       fhir:ElementDefinition.definition [ fhir:value "A finding that a patient has a specific genotype." ];
+       fhir:ElementDefinition.comment [ fhir:value "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants." ];
        fhir:ElementDefinition.alias [
          fhir:value "Vital Signs";
          fhir:index 0
@@ -18214,7 +18214,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -19479,8 +19479,8 @@
        fhir:Element.id [ fhir:value "Bundle.entry:hla-b.resource" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.short [ fhir:value "Genotype" ];
-       fhir:ElementDefinition.definition [ fhir:value "Measurements and simple assertions made about a patient, device or other subject." ];
-       fhir:ElementDefinition.comment [ fhir:value "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc." ];
+       fhir:ElementDefinition.definition [ fhir:value "A finding that a patient has a specific genotype." ];
+       fhir:ElementDefinition.comment [ fhir:value "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants." ];
        fhir:ElementDefinition.alias [
          fhir:value "Vital Signs";
          fhir:index 0
@@ -19597,7 +19597,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -20862,8 +20862,8 @@
        fhir:Element.id [ fhir:value "Bundle.entry:hla-c.resource" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.short [ fhir:value "Genotype" ];
-       fhir:ElementDefinition.definition [ fhir:value "Measurements and simple assertions made about a patient, device or other subject." ];
-       fhir:ElementDefinition.comment [ fhir:value "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc." ];
+       fhir:ElementDefinition.definition [ fhir:value "A finding that a patient has a specific genotype." ];
+       fhir:ElementDefinition.comment [ fhir:value "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants." ];
        fhir:ElementDefinition.alias [
          fhir:value "Vital Signs";
          fhir:index 0
@@ -20980,7 +20980,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -22245,8 +22245,8 @@
        fhir:Element.id [ fhir:value "Bundle.entry:hla-drb1.resource" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.short [ fhir:value "Genotype" ];
-       fhir:ElementDefinition.definition [ fhir:value "Measurements and simple assertions made about a patient, device or other subject." ];
-       fhir:ElementDefinition.comment [ fhir:value "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc." ];
+       fhir:ElementDefinition.definition [ fhir:value "A finding that a patient has a specific genotype." ];
+       fhir:ElementDefinition.comment [ fhir:value "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants." ];
        fhir:ElementDefinition.alias [
          fhir:value "Vital Signs";
          fhir:index 0
@@ -22363,7 +22363,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -23628,8 +23628,8 @@
        fhir:Element.id [ fhir:value "Bundle.entry:hla-drb3.resource" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.short [ fhir:value "Genotype" ];
-       fhir:ElementDefinition.definition [ fhir:value "Measurements and simple assertions made about a patient, device or other subject." ];
-       fhir:ElementDefinition.comment [ fhir:value "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc." ];
+       fhir:ElementDefinition.definition [ fhir:value "A finding that a patient has a specific genotype." ];
+       fhir:ElementDefinition.comment [ fhir:value "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants." ];
        fhir:ElementDefinition.alias [
          fhir:value "Vital Signs";
          fhir:index 0
@@ -23746,7 +23746,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -25011,8 +25011,8 @@
        fhir:Element.id [ fhir:value "Bundle.entry:hla-drb4.resource" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.short [ fhir:value "Genotype" ];
-       fhir:ElementDefinition.definition [ fhir:value "Measurements and simple assertions made about a patient, device or other subject." ];
-       fhir:ElementDefinition.comment [ fhir:value "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc." ];
+       fhir:ElementDefinition.definition [ fhir:value "A finding that a patient has a specific genotype." ];
+       fhir:ElementDefinition.comment [ fhir:value "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants." ];
        fhir:ElementDefinition.alias [
          fhir:value "Vital Signs";
          fhir:index 0
@@ -25129,7 +25129,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -26394,8 +26394,8 @@
        fhir:Element.id [ fhir:value "Bundle.entry:hla-drb5.resource" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.short [ fhir:value "Genotype" ];
-       fhir:ElementDefinition.definition [ fhir:value "Measurements and simple assertions made about a patient, device or other subject." ];
-       fhir:ElementDefinition.comment [ fhir:value "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc." ];
+       fhir:ElementDefinition.definition [ fhir:value "A finding that a patient has a specific genotype." ];
+       fhir:ElementDefinition.comment [ fhir:value "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants." ];
        fhir:ElementDefinition.alias [
          fhir:value "Vital Signs";
          fhir:index 0
@@ -26512,7 +26512,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -27777,8 +27777,8 @@
        fhir:Element.id [ fhir:value "Bundle.entry:hla-dpa1.resource" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.short [ fhir:value "Genotype" ];
-       fhir:ElementDefinition.definition [ fhir:value "Measurements and simple assertions made about a patient, device or other subject." ];
-       fhir:ElementDefinition.comment [ fhir:value "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc." ];
+       fhir:ElementDefinition.definition [ fhir:value "A finding that a patient has a specific genotype." ];
+       fhir:ElementDefinition.comment [ fhir:value "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants." ];
        fhir:ElementDefinition.alias [
          fhir:value "Vital Signs";
          fhir:index 0
@@ -27895,7 +27895,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -29160,8 +29160,8 @@
        fhir:Element.id [ fhir:value "Bundle.entry:hla-dpb1.resource" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.short [ fhir:value "Genotype" ];
-       fhir:ElementDefinition.definition [ fhir:value "Measurements and simple assertions made about a patient, device or other subject." ];
-       fhir:ElementDefinition.comment [ fhir:value "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc." ];
+       fhir:ElementDefinition.definition [ fhir:value "A finding that a patient has a specific genotype." ];
+       fhir:ElementDefinition.comment [ fhir:value "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants." ];
        fhir:ElementDefinition.alias [
          fhir:value "Vital Signs";
          fhir:index 0
@@ -29278,7 +29278,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -30543,8 +30543,8 @@
        fhir:Element.id [ fhir:value "Bundle.entry:hla-dqa1.resource" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.short [ fhir:value "Genotype" ];
-       fhir:ElementDefinition.definition [ fhir:value "Measurements and simple assertions made about a patient, device or other subject." ];
-       fhir:ElementDefinition.comment [ fhir:value "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc." ];
+       fhir:ElementDefinition.definition [ fhir:value "A finding that a patient has a specific genotype." ];
+       fhir:ElementDefinition.comment [ fhir:value "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants." ];
        fhir:ElementDefinition.alias [
          fhir:value "Vital Signs";
          fhir:index 0
@@ -30661,7 +30661,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -31926,8 +31926,8 @@
        fhir:Element.id [ fhir:value "Bundle.entry:hla-dqb1.resource" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.short [ fhir:value "Genotype" ];
-       fhir:ElementDefinition.definition [ fhir:value "Measurements and simple assertions made about a patient, device or other subject." ];
-       fhir:ElementDefinition.comment [ fhir:value "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc." ];
+       fhir:ElementDefinition.definition [ fhir:value "A finding that a patient has a specific genotype." ];
+       fhir:ElementDefinition.comment [ fhir:value "Defines those properties that are common for all findings of genetic characteristics - namely genotype, haplotype and any of the types of variants." ];
        fhir:ElementDefinition.alias [
          fhir:value "Vital Signs";
          fhir:index 0
@@ -32044,7 +32044,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
