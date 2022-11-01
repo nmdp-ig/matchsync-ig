@@ -7,11 +7,116 @@
     "name": "MatchSourceIG"
   },
   {
+    "id": "hla-a",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-a",
+    "version": "0.1.0",
+    "name": "HLA_A"
+  },
+  {
+    "id": "hla-b",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-b",
+    "version": "0.1.0",
+    "name": "HLA_B"
+  },
+  {
+    "id": "hla-c",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-c",
+    "version": "0.1.0",
+    "name": "HLA_C"
+  },
+  {
+    "id": "hla-dpa1",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpa1",
+    "version": "0.1.0",
+    "name": "HLA_DPA1"
+  },
+  {
+    "id": "hla-dpb1",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpb1",
+    "version": "0.1.0",
+    "name": "HLA_DPB1"
+  },
+  {
+    "id": "hla-dqa1",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqa1",
+    "version": "0.1.0",
+    "name": "HLA_DQA1"
+  },
+  {
+    "id": "hla-dqb1",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqb1",
+    "version": "0.1.0",
+    "name": "HLA_DQB1"
+  },
+  {
+    "id": "hla-drb1",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb1",
+    "version": "0.1.0",
+    "name": "HLA_DRB1"
+  },
+  {
+    "id": "hla-drb3",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb3",
+    "version": "0.1.0",
+    "name": "HLA_DRB3"
+  },
+  {
+    "id": "hla-drb4",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb4",
+    "version": "0.1.0",
+    "name": "HLA_DRB4"
+  },
+  {
+    "id": "hla-drb5",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb5",
+    "version": "0.1.0",
+    "name": "HLA_DRB5"
+  },
+  {
+    "id": "hla-genotype",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-genotype",
+    "version": "0.1.0",
+    "name": "HLAGenotype"
+  },
+  {
     "id": "ms-abogroup-observation",
     "type": "StructureDefinition",
     "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-abogroup-observation",
     "version": "0.1.0",
     "name": "MSABOGroupObservation"
+  },
+  {
+    "id": "ms-bundle",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle",
+    "version": "0.1.0",
+    "name": "MSBundle"
+  },
+  {
+    "id": "ms-bundle-hla-multilocus",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-multilocus",
+    "version": "0.1.0",
+    "name": "MSBundle_HLA_Multilocus"
+  },
+  {
+    "id": "ms-bundle-hla-separate",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-separate",
+    "version": "0.1.0",
+    "name": "MSBundle_HLA_Separate"
   },
   {
     "id": "ms-height-observation",
@@ -21,11 +126,25 @@
     "name": "MSHeightObservation"
   },
   {
+    "id": "ms-preferred-product-observation",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-preferred-product-observation",
+    "version": "0.1.0",
+    "name": "MSPreferredProduct"
+  },
+  {
     "id": "ms-rhstatus-observation",
     "type": "StructureDefinition",
     "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-rhstatus-observation",
     "version": "0.1.0",
     "name": "MSRhStatusObservation"
+  },
+  {
+    "id": "ms-transplant-timeline-observation",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-transplant-timeline-observation",
+    "version": "0.1.0",
+    "name": "MSTransplantTimeline"
   },
   {
     "id": "ms-weight-observation",
@@ -39,7 +158,7 @@
     "type": "StructureDefinition",
     "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msdiagnosis",
     "version": "0.1.0",
-    "name": "MSDiagnosis"
+    "name": "MSPrimaryDiagnosis"
   },
   {
     "id": "mspatient",
@@ -70,6 +189,13 @@
     "name": "NMDPRace"
   },
   {
+    "id": "number-of-remissions",
+    "type": "StructureDefinition",
+    "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/number-of-remissions",
+    "version": "0.1.0",
+    "name": "NumberOfRemissions"
+  },
+  {
     "id": "transplantcenter",
     "type": "StructureDefinition",
     "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcenter",
@@ -82,6 +208,13 @@
     "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcentercoordinator",
     "version": "0.1.0",
     "name": "TransplantCenterCoordinator"
+  },
+  {
+    "id": "hla-geneid-valueset",
+    "type": "ValueSet",
+    "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/hla-geneid-valueset",
+    "version": "0.1.0",
+    "name": "HLAGeneIdVS"
   },
   {
     "id": "ms-abo-group-codes",
@@ -131,6 +264,13 @@
     "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-language-codes",
     "version": "0.1.0",
     "name": "NMDPLanguageCodes"
+  },
+  {
+    "id": "nmdp-preferred-product-codes",
+    "type": "ValueSet",
+    "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-preferred-product-codes",
+    "version": "0.1.0",
+    "name": "NMDPPreferredProductVS"
   },
   {
     "id": "nmdp-race-codes",
@@ -210,6 +350,13 @@
     "name": "NMDPLanguageCS"
   },
   {
+    "id": "nmdp-preferred-product-cs",
+    "type": "CodeSystem",
+    "url": "http://terminology.nmdp.org/codesystem/preferredproduct",
+    "version": "0.1.0",
+    "name": "NMDPPreferredProductCS"
+  },
+  {
     "id": "nmdp-race-cs",
     "type": "CodeSystem",
     "url": "http://terminology.nmdp.org/codesystem/race",
@@ -229,5 +376,19 @@
     "url": "http://terminology.nmdp.org/codesystem/transplanttimeline",
     "version": "0.1.0",
     "name": "NMDPTransplantTimelineCS"
+  },
+  {
+    "id": "hla-genename-codesystem",
+    "type": "CodeSystem",
+    "url": "http://www.genenames.org/geneId",
+    "version": "0.1.0",
+    "name": "HLAGeneIdCS"
+  },
+  {
+    "id": "glstring-codesystem",
+    "type": "CodeSystem",
+    "url": "http://www.glstring.org",
+    "version": "0.1.0",
+    "name": "GLStringCS"
   }
 ]

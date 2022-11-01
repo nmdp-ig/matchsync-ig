@@ -1,113 +1,421 @@
 ﻿MatchSourceIG : Validation Results
 =========================================
 
-err = 3, warn = 2, info = 9
-IG Publisher Version: 1.1.120
-Generated Thu May 26 13:38:32 CDT 2022. FHIR version 4.0.1 for matchsource#0.1.0 (canonical = http://fhir.nmdp.org/ig/matchsource)
- Build Errors : 0 / 1 / 1
+err = 3, warn = 78, info = 115
+IG Publisher Version: 1.2.12
+Generated Mon Oct 31 18:07:19 CDT 2022. FHIR version 4.0.1 for matchsource#0.1.0 (canonical = http://fhir.nmdp.org/ig/matchsource)
+ Build Errors : 44 / 4 / 0
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Bundle-BundleExample-Full-HLA-Separate : 0 / 19 / 54
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Bundle-BundleExample-Full-Multilocus-HLA : 0 / 22 / 54
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Bundle-BundleExample-Minimal : 0 / 2 / 17
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-glstring-codesystem : 0 / 2 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-hla-genename-codesystem : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-abo-group-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-disease-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-diseasestage-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-ethnicity-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-language-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-preferred-product-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-race-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-rh-status-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-transplant-timeline-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Condition-MSDiagnosisExample-AML : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Condition-MSDiagnosisExample-OND : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ImplementationGuide-matchsource : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-abo-group-cs : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-disease-cs : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-diseasestage-cs : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-ethnicity-cs : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-language-cs : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-race-cs : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-rh-status-cs : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/codesystem-nmdp-transplant-timeline-cs : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/condition-MSDiagnosisExample : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/observation-MSABOObsExample : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/observation-MSHeightObsExample : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/observation-MSRhObsExample : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/observation-MSWeightObsExample : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/organization-TCExample : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/patient-MSPatientExample : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/patient-MSPatientExample2 : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/patient-MSPatientExample3 : 2 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/patient-MSPatientExample4 : 1 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/practitioner-CoordinatorExample : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/specimen-MSSpecimenExample : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-ms-abogroup-observation : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-ms-height-observation : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-ms-rhstatus-observation : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-ms-weight-observation : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-msdiagnosis : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-mspatient : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-msspecimen : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-nmdp-ethnicity : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-nmdp-race : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-transplantcenter : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/structuredefinition-transplantcentercoordinator : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-loinc-abo-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-loinc-posneg-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-ms-abo-group-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-ms-rh-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-abo-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-disease-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-diseasestage-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-ethnicity-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-language-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-race-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-rh-status-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-nmdp-transplant-timeline-codes : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/valueset-sct-abo-group-codes : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-A-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-B-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-C-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DPA1-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DPB1-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DQA1-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DQB1-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DRB1-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DRB3-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DRB4-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DRB5-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-Multilocus-Genotype-Example : 0 / 2 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-MSABOObsExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-MSHeightObsExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-MSPreferredProductExample : 0 / 2 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-MSRhObsExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-MSTransplantTimelineExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-MSWeightObsExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Organization-TCExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Patient-MSPatientExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Patient-MSPatientExample2 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Patient-MSPatientExample3 : 2 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Patient-MSPatientExample4 : 1 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Practitioner-CoordinatorExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Specimen-MSSpecimenExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-a : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-b : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-c : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-dpa1 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-dpb1 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-dqa1 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-dqb1 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-drb1 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-drb3 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-drb4 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-drb5 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-genotype : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-abogroup-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle-hla-multilocus : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle-hla-separate : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-height-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-preferred-product-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-rhstatus-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-transplant-timeline-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-weight-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-msdiagnosis : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-mspatient : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-msspecimen : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-nmdp-ethnicity : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-nmdp-race : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-number-of-remissions : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-transplantcenter : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-transplantcentercoordinator : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-hla-geneid-valueset : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-loinc-abo-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-loinc-posneg-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-ms-abo-group-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-ms-rh-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-abo-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-disease-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-diseasestage-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-ethnicity-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-language-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-preferred-product-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-race-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-rh-status-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-transplant-timeline-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-sct-abo-group-codes : 0 / 1 / 1
 </table>
 == n/a ==
-WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-INFORMATION: ImplementationGuide.dependency[2].url: The correct canonical URL for this dependency is http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-== fsh-generated/resources/ImplementationGuide-matchsource.json ==
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 408, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 680, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1004, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1276, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 408, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 680, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1004, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1276, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 408, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 680, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1004, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1276, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 408, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 680, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1004, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1276, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 408, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 680, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1004, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1276, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 408, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 680, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1004, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1276, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 408, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 680, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1004, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1276, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 408, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 680, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1004, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1276, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 408, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 680, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1004, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1276, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 408, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 680, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1004, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1276, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 408, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 680, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1004, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1276, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: The HTML fragment 'cross-version-analysis.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: The HTML fragment 'dependency-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Bundle-BundleExample-Full-HLA-Separate.json ==
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[0].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[0].resource.ofType(Patient).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[1].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[1].resource.ofType(Practitioner).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[2].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[2].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[2].resource.ofType(Condition).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[2].resource.ofType(Condition).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[3].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[3].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[3].resource.ofType(Observation).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[3].resource.ofType(Observation).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[4].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[4].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[4].resource.ofType(Observation).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[4].resource.ofType(Observation).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[5].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[5].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[5].resource.ofType(Observation).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[5].resource.ofType(Observation).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.value.ofType(CodeableConcept): Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.value.ofType(CodeableConcept).coding[0]: Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.ofType(Observation).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.ofType(Observation).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[7].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[7].resource.ofType(Organization).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[8].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[8].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[8].resource.ofType(Specimen).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[8].resource.ofType(Specimen).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[9].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[9].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[9].resource.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[9].resource.specimen: Entry 8 matches the reference Specimen/MSSpecimenExample by type and id but it's fullUrl urn:uuid:6cc0a753-ff82-4099-b477-08a57474a951 does not match the full target URL urn:uuid:MSSpecimenExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[9].resource.ofType(Observation).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[9].resource.ofType(Observation).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[9].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[9].resource.ofType(Observation).specimen: Entry 8 matches the reference Specimen/MSSpecimenExample by type and id but it's fullUrl urn:uuid:6cc0a753-ff82-4099-b477-08a57474a951 does not match the full target URL urn:uuid:MSSpecimenExample by Bundle resolution rules
+== fsh-generated/resources/Bundle-BundleExample-Full-Multilocus-HLA.json ==
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[0].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[0].resource.ofType(Patient).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[1].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[1].resource.ofType(Practitioner).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[2].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[2].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[2].resource.ofType(Condition).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[2].resource.ofType(Condition).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[3].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[3].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[3].resource.ofType(Observation).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[3].resource.ofType(Observation).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[4].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[4].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[4].resource.ofType(Observation).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[4].resource.ofType(Observation).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[5].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[5].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[5].resource.ofType(Observation).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[5].resource.ofType(Observation).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.value.ofType(CodeableConcept): Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.value.ofType(CodeableConcept).coding[0]: Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.ofType(Observation).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.ofType(Observation).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[7].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[7].resource.ofType(Organization).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[8].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[8].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[8].resource.ofType(Specimen).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[8].resource.ofType(Specimen).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.specimen: Entry 8 matches the reference Specimen/MSSpecimenExample by type and id but it's fullUrl urn:uuid:6cc0a753-ff82-4099-b477-08a57474a951 does not match the full target URL urn:uuid:MSSpecimenExample by Bundle resolution rules
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.component[3].value.ofType(CodeableConcept): Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 2 choices from 'HLA-DRB1, HLA-DRB1', not 'HLA-DRB3'
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.component[3].value.ofType(CodeableConcept).coding[0]: Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 1 choices from 'HLA-DRB1', not 'HLA-DRB3' for 'http://www.genenames.org/geneId#HGNC:4948'
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.ofType(Observation).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.ofType(Observation).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.ofType(Observation).specimen: Entry 8 matches the reference Specimen/MSSpecimenExample by type and id but it's fullUrl urn:uuid:6cc0a753-ff82-4099-b477-08a57474a951 does not match the full target URL urn:uuid:MSSpecimenExample by Bundle resolution rules
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.ofType(Observation).component[3].value.ofType(CodeableConcept).coding[0]: Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 1 choices from 'HLA-DRB1', not 'HLA-DRB3' for 'http://www.genenames.org/geneId#HGNC:4948'
+== fsh-generated/resources/Bundle-BundleExample-Minimal.json ==
+INFORMATION: Bundle/BundleExample-Minimal: Bundle.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Minimal: Bundle.entry[0].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Minimal: Bundle.entry[0].resource.ofType(Patient).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Minimal: Bundle.entry[1].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Minimal: Bundle.entry[1].resource.ofType(Practitioner).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Minimal: Bundle.entry[2].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Minimal: Bundle.entry[2].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Minimal: Bundle.entry[2].resource.ofType(Condition).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Minimal: Bundle.entry[2].resource.ofType(Condition).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
+== fsh-generated/resources/CodeSystem-glstring-codesystem.json ==
+INFORMATION: CodeSystem/glstring-codesystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/glstring-codesystem: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/glstring-codesystem: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-hla-genename-codesystem.json ==
+INFORMATION: CodeSystem/hla-genename-codesystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/hla-genename-codesystem: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-nmdp-abo-group-cs.json ==
 INFORMATION: CodeSystem/nmdp-abo-group-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/nmdp-abo-group-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-nmdp-disease-cs.json ==
 INFORMATION: CodeSystem/nmdp-disease-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/nmdp-disease-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-nmdp-diseasestage-cs.json ==
 INFORMATION: CodeSystem/nmdp-diseasestage-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/nmdp-diseasestage-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-nmdp-ethnicity-cs.json ==
 INFORMATION: CodeSystem/nmdp-ethnicity-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/nmdp-ethnicity-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-nmdp-language-cs.json ==
 INFORMATION: CodeSystem/nmdp-language-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/nmdp-language-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-nmdp-preferred-product-cs.json ==
+INFORMATION: CodeSystem/nmdp-preferred-product-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/nmdp-preferred-product-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-nmdp-race-cs.json ==
 INFORMATION: CodeSystem/nmdp-race-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/nmdp-race-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-nmdp-rh-status-cs.json ==
 INFORMATION: CodeSystem/nmdp-rh-status-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/nmdp-rh-status-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-nmdp-transplant-timeline-cs.json ==
 INFORMATION: CodeSystem/nmdp-transplant-timeline-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-== fsh-generated/resources/Condition-MSDiagnosisExample.json ==
+WARNING: CodeSystem/nmdp-transplant-timeline-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/Condition-MSDiagnosisExample-AML.json ==
+INFORMATION: Condition/MSDiagnosisExample-AML: Condition.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Condition-MSDiagnosisExample-OND.json ==
+INFORMATION: Condition/MSDiagnosisExample-OND: Condition.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/ImplementationGuide-matchsource.json ==
+== fsh-generated/resources/Observation-HLA-A-Example.json ==
+INFORMATION: Observation/HLA-A-Example: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Observation/HLA-A-Example: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-HLA-B-Example.json ==
+INFORMATION: Observation/HLA-B-Example: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Observation/HLA-B-Example: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-HLA-C-Example.json ==
+INFORMATION: Observation/HLA-C-Example: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Observation/HLA-C-Example: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-HLA-DPA1-Example.json ==
+INFORMATION: Observation/HLA-DPA1-Example: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Observation/HLA-DPA1-Example: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-HLA-DPB1-Example.json ==
+INFORMATION: Observation/HLA-DPB1-Example: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Observation/HLA-DPB1-Example: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-HLA-DQA1-Example.json ==
+INFORMATION: Observation/HLA-DQA1-Example: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Observation/HLA-DQA1-Example: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-HLA-DQB1-Example.json ==
+INFORMATION: Observation/HLA-DQB1-Example: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Observation/HLA-DQB1-Example: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-HLA-DRB1-Example.json ==
+INFORMATION: Observation/HLA-DRB1-Example: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Observation/HLA-DRB1-Example: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-HLA-DRB3-Example.json ==
+INFORMATION: Observation/HLA-DRB3-Example: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Observation/HLA-DRB3-Example: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-HLA-DRB4-Example.json ==
+INFORMATION: Observation/HLA-DRB4-Example: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Observation/HLA-DRB4-Example: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-HLA-DRB5-Example.json ==
+INFORMATION: Observation/HLA-DRB5-Example: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Observation/HLA-DRB5-Example: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-HLA-Multilocus-Genotype-Example.json ==
+INFORMATION: Observation/HLA-Multilocus-Genotype-Example: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Observation/HLA-Multilocus-Genotype-Example: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
+WARNING: Observation/HLA-Multilocus-Genotype-Example: Observation.component[3].value.ofType(CodeableConcept): Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 2 choices from 'HLA-DRB1, HLA-DRB1', not 'HLA-DRB3'
+WARNING: Observation/HLA-Multilocus-Genotype-Example: Observation.component[3].value.ofType(CodeableConcept).coding[0]: Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 1 choices from 'HLA-DRB1', not 'HLA-DRB3' for 'http://www.genenames.org/geneId#HGNC:4948'
 == fsh-generated/resources/Observation-MSABOObsExample.json ==
+INFORMATION: Observation/MSABOObsExample: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-MSHeightObsExample.json ==
+INFORMATION: Observation/MSHeightObsExample: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-MSPreferredProductExample.json ==
+INFORMATION: Observation/MSPreferredProductExample: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Observation/MSPreferredProductExample: Observation.value.ofType(CodeableConcept): Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'
+WARNING: Observation/MSPreferredProductExample: Observation.value.ofType(CodeableConcept).coding[0]: Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'
 == fsh-generated/resources/Observation-MSRhObsExample.json ==
+INFORMATION: Observation/MSRhObsExample: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-MSTransplantTimelineExample.json ==
+INFORMATION: Observation/MSTransplantTimelineExample: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-MSWeightObsExample.json ==
+INFORMATION: Observation/MSWeightObsExample: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Organization-TCExample.json ==
+INFORMATION: Organization/TCExample: Organization.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Patient-MSPatientExample.json ==
-WARNING: Patient/MSPatientExample: Patient.extension[1].extension[0].value.ofType(Coding): Display Name for urn:oid:2.16.840.1.113883.6.238#2186-5 should be one of 'Not Hispanic or Latino' instead of 'Non Hispanic or Latino' for 'urn:oid:2.16.840.1.113883.6.238#2186-5'
+INFORMATION: Patient/MSPatientExample: Patient.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Patient-MSPatientExample2.json ==
+INFORMATION: Patient/MSPatientExample2: Patient.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Patient-MSPatientExample3.json ==
-ERROR: Patient/MSPatientExample3: Patient: rac-1: 'Shall use either NMDP Race extension or us-core-race' Rule 'Shall use either NMDP Race extension or us-core-race' Failed
-ERROR: Patient/MSPatientExample3: Patient: eth-1: 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Rule 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Failed
+ERROR: Patient/MSPatientExample3: Patient: Rule rac-1: 'Shall use either NMDP Race extension or us-core-race' Failed
+ERROR: Patient/MSPatientExample3: Patient: Rule eth-1: 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Failed
+INFORMATION: Patient/MSPatientExample3: Patient.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Patient-MSPatientExample4.json ==
-ERROR: Patient/MSPatientExample4: Patient: eth-1: 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Rule 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Failed
+ERROR: Patient/MSPatientExample4: Patient: Rule eth-1: 'Shall use either NMDP ethnicity extension or us-core-ethnicity' Failed
+INFORMATION: Patient/MSPatientExample4: Patient.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Practitioner-CoordinatorExample.json ==
+INFORMATION: Practitioner/CoordinatorExample: Practitioner.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Specimen-MSSpecimenExample.json ==
+INFORMATION: Specimen/MSSpecimenExample: Specimen.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-hla-a.json ==
+INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+== fsh-generated/resources/StructureDefinition-hla-b.json ==
+INFORMATION: StructureDefinition/hla-b: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+== fsh-generated/resources/StructureDefinition-hla-c.json ==
+INFORMATION: StructureDefinition/hla-c: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+== fsh-generated/resources/StructureDefinition-hla-dpa1.json ==
+INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+== fsh-generated/resources/StructureDefinition-hla-dpb1.json ==
+INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+== fsh-generated/resources/StructureDefinition-hla-dqa1.json ==
+INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+== fsh-generated/resources/StructureDefinition-hla-dqb1.json ==
+INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+== fsh-generated/resources/StructureDefinition-hla-drb1.json ==
+INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+== fsh-generated/resources/StructureDefinition-hla-drb3.json ==
+INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+== fsh-generated/resources/StructureDefinition-hla-drb4.json ==
+INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+== fsh-generated/resources/StructureDefinition-hla-drb5.json ==
+INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+== fsh-generated/resources/StructureDefinition-hla-genotype.json ==
+INFORMATION: StructureDefinition/hla-genotype: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
 == fsh-generated/resources/StructureDefinition-ms-abogroup-observation.json ==
+== fsh-generated/resources/StructureDefinition-ms-bundle.json ==
+== fsh-generated/resources/StructureDefinition-ms-bundle-hla-multilocus.json ==
+== fsh-generated/resources/StructureDefinition-ms-bundle-hla-separate.json ==
 == fsh-generated/resources/StructureDefinition-ms-height-observation.json ==
+== fsh-generated/resources/StructureDefinition-ms-preferred-product-observation.json ==
 == fsh-generated/resources/StructureDefinition-ms-rhstatus-observation.json ==
+== fsh-generated/resources/StructureDefinition-ms-transplant-timeline-observation.json ==
 == fsh-generated/resources/StructureDefinition-ms-weight-observation.json ==
 == fsh-generated/resources/StructureDefinition-msdiagnosis.json ==
 == fsh-generated/resources/StructureDefinition-mspatient.json ==
 == fsh-generated/resources/StructureDefinition-msspecimen.json ==
 == fsh-generated/resources/StructureDefinition-nmdp-ethnicity.json ==
 == fsh-generated/resources/StructureDefinition-nmdp-race.json ==
+== fsh-generated/resources/StructureDefinition-number-of-remissions.json ==
 == fsh-generated/resources/StructureDefinition-transplantcenter.json ==
 == fsh-generated/resources/StructureDefinition-transplantcentercoordinator.json ==
+== fsh-generated/resources/ValueSet-hla-geneid-valueset.json ==
+WARNING: ValueSet/hla-geneid-valueset: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-loinc-abo-codes.json ==
+WARNING: ValueSet/loinc-abo-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-loinc-posneg-codes.json ==
+WARNING: ValueSet/loinc-posneg-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-ms-abo-group-codes.json ==
+WARNING: ValueSet/ms-abo-group-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-ms-rh-codes.json ==
+WARNING: ValueSet/ms-rh-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-nmdp-abo-codes.json ==
+WARNING: ValueSet/nmdp-abo-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-nmdp-disease-codes.json ==
+WARNING: ValueSet/nmdp-disease-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-nmdp-diseasestage-codes.json ==
+WARNING: ValueSet/nmdp-diseasestage-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-nmdp-ethnicity-codes.json ==
+WARNING: ValueSet/nmdp-ethnicity-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-nmdp-language-codes.json ==
+WARNING: ValueSet/nmdp-language-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-nmdp-preferred-product-codes.json ==
+WARNING: ValueSet/nmdp-preferred-product-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-nmdp-race-codes.json ==
+WARNING: ValueSet/nmdp-race-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-nmdp-rh-status-codes.json ==
+WARNING: ValueSet/nmdp-rh-status-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-nmdp-transplant-timeline-codes.json ==
+WARNING: ValueSet/nmdp-transplant-timeline-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-sct-abo-group-codes.json ==
+WARNING: ValueSet/sct-abo-group-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile

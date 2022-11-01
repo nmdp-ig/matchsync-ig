@@ -13,11 +13,16 @@
        fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient";
        fhir:index 0;
        fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient>
+     ];
+     fhir:Meta.security [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ];
+       fhir:Coding.code [ fhir:value "tc_123" ]
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Jason Everyperson </b> male, DoB: 1974-12-25</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jason Everyperson </b> male, DoB: 1974-12-25</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 1-612-555-1234</li><li>123 Main St Minneapolis MN 55401 USA </li></ul></td></tr></table></div>"
   ];
   fhir:Patient.name [
      fhir:index 0;

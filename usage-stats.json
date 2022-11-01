@@ -40,31 +40,56 @@
         "boolean",
         "string"
       ]
+    },
+    {
+      "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/number-of-remissions",
+      "title": "Number of Remissions of Primary Diagnosis",
+      "types": [
+        "integer"
+      ]
     }
   ],
   "profiles": {
     "Observation": [
       {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-abogroup-observation",
-        "title": "MSABOGroupObservation"
-      },
-      {
         "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-height-observation",
         "title": "MSHeightObservation"
+      },
+      {
+        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-preferred-product-observation",
+        "title": "MSPreferredProduct"
       },
       {
         "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-rhstatus-observation",
         "title": "MSRhStatusObservation"
       },
       {
+        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-transplant-timeline-observation",
+        "title": "MSTransplantTimeline"
+      },
+      {
         "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-weight-observation",
         "title": "MSWeightObservation"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle",
+        "title": "MatchSource Bundle"
+      },
+      {
+        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-multilocus",
+        "title": "MatchSource Bundle with single multilocus HLA"
+      },
+      {
+        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-separate",
+        "title": "MatchSource Bundle with Separate HLA"
       }
     ],
     "Condition": [
       {
         "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msdiagnosis",
-        "title": "MSDiagnosis"
+        "title": "MSPrimaryDiagnosis"
       }
     ],
     "Patient": [
@@ -99,6 +124,13 @@
     "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race": [
       "Patient"
     ],
+    "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/number-of-remissions": [
+      "Bundle.entry.resource",
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/bodySite": [
+      "Observation"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -116,6 +148,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding": [
+      "Observation"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
@@ -138,6 +173,10 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
     ],
@@ -145,9 +184,11 @@
       "ImplementationGuide.definition.resource"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Bundle.entry.resource",
       "Patient"
     ]
   }

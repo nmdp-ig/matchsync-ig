@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsource/Observation/MSPreferredProductExample> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "MSPreferredProductExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-preferred-product-observation";
+       fhir:index 0;
+       fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-preferred-product-observation>
+     ];
+     fhir:Meta.security [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ];
+       fhir:Coding.code [ fhir:value "tc_123" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MSPreferredProductExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"MSPreferredProductExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ms-preferred-product-observation.html\">MSPreferredProduct</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>code</b>: Preferred Product <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Patient/MSPatientExample</a> \" EVERYPERSON\"</p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: Peripheral Blood Stem Cell (Aphaeresis) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nmdp-preferred-product-cs.html\">NMDP Preferred Product for Transplant</a>#PBSC)</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.text [ fhir:value "Preferred Product" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://fhir.nmdp.org/ig/matchsource/Patient/MSPatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/MSPatientExample" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2022-05-01"^^xsd:date];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/preferredproduct" ];
+       fhir:Coding.code [ fhir:value "PBSC" ];
+       fhir:Coding.display [ fhir:value "Peripheral Blood Stem Cell (Aphaeresis)" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsource/Observation/MSPreferredProductExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nmdp-preferred-product-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://terminology.nmdp.org/codesystem/preferredproduct</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">PBSC<a name="nmdp-preferred-product-cs-PBSC"> </a></td><td>HPC, Apheresis</td></tr><tr><td style="white-space:nowrap">Marrow<a name="nmdp-preferred-product-cs-Marrow"> </a></td><td>HPC, Marrow</td></tr><tr><td style="white-space:nowrap">CBU<a name="nmdp-preferred-product-cs-CBU"> </a></td><td>HPC, Cord Blood</td></tr><tr><td style="white-space:nowrap">NP<a name="nmdp-preferred-product-cs-NP"> </a></td><td>No preference</td></tr><tr><td style="white-space:nowrap">U<a name="nmdp-preferred-product-cs-U"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="http://terminology.nmdp.org/codesystem/preferredproduct"/>
+  <version value="0.1.0"/>
+  <name value="NMDPPreferredProductCS"/>
+  <title value="NMDP Preferred Product for Transplant"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-10-31T18:02:56-05:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="NMDP Preferred Product for MatchSource patient"/>
+  <copyright value="National Marrow Donor Program"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="PBSC"/>
+    <display value="HPC, Apheresis"/>
+  </concept>
+  <concept>
+    <code value="Marrow"/>
+    <display value="HPC, Marrow"/>
+  </concept>
+  <concept>
+    <code value="CBU"/>
+    <display value="HPC, Cord Blood"/>
+  </concept>
+  <concept>
+    <code value="NP"/>
+    <display value="No preference"/>
+  </concept>
+  <concept>
+    <code value="U"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,188 @@
+{
+  "resourceType": "Bundle",
+  "id": "BundleExample-Minimal",
+  "meta": {
+    "profile": [
+      "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle"
+    ],
+    "security": [
+      {
+        "system": "http://terminology.nmdp.org/codesystem/transplant-center",
+        "code": "tc_123"
+      }
+    ]
+  },
+  "type": "collection",
+  "timestamp": "2020-11-24T23:50:50-05:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "MSPatientExample",
+        "meta": {
+          "profile": [
+            "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.nmdp.org/codesystem/transplant-center",
+              "code": "tc_123"
+            }
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"MSPatientExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient \"MSPatientExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mspatient.html\">MSPatient</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><blockquote><p><b>US Core Race Extension</b></p><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><p><b>value</b>: Not Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2186-5 = 'Not Hispanic or Latino', stated as 'Not Hispanic or Latino')</p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>name</b>: Jane Everyperson </p><p><b>telecom</b>: ph: 1-612-555-1234</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1974-12-25</p><p><b>address</b>: 123 Main St Minneapolis MN 55401 USA </p></div>"
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "code": "2106-3",
+                  "display": "White"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "White"
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+          },
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "code": "2186-5",
+                  "display": "Not Hispanic or Latino"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "Not Hispanic or Latino"
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+          }
+        ],
+        "name": [
+          {
+            "family": "Everyperson",
+            "given": [
+              "Jane"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "1-612-555-1234"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1974-12-25",
+        "address": [
+          {
+            "line": [
+              "123 Main St"
+            ],
+            "city": "Minneapolis",
+            "state": "MN",
+            "postalCode": "55401",
+            "country": "USA"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cef4702d-cbe1-447b-b671-588dbfb40bb5",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "CoordinatorExample",
+        "meta": {
+          "profile": [
+            "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcentercoordinator"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.nmdp.org/codesystem/transplant-center",
+              "code": "tc_123"
+            }
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"CoordinatorExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner \"CoordinatorExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-transplantcentercoordinator.html\">TransplantCenterCoordinator</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>name</b>: Bart Simpson </p></div>"
+        },
+        "name": [
+          {
+            "family": "Simpson",
+            "given": [
+              "Bart"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:be7873b5-9685-42a9-9815-6d048e6dcc8f",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "MSDiagnosisExample-AML",
+        "meta": {
+          "profile": [
+            "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msdiagnosis"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.nmdp.org/codesystem/transplant-center",
+              "code": "tc_123"
+            }
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"MSDiagnosisExample-AML\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition \"MSDiagnosisExample-AML\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-msdiagnosis.html\">MSPrimaryDiagnosis</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>Number of Remissions of Primary Diagnosis</b>: 0</p><p><b>code</b>: ACUTE MYELOGENOUS LEUKEMIA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nmdp-disease-cs.html\">NMDP Disease Code System</a>#AML)</span></p><p><b>subject</b>: <a href=\"#Patient_MSPatientExample\">See above (Patient/MSPatientExample)</a></p><p><b>recordedDate</b>: 2021-11-01</p><h3>Stages</h3><table class=\"grid\"><tr><td>-</td><td><b>Summary</b></td></tr><tr><td>*</td><td>Accelerated Phase <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nmdp-diseasestage-cs.html\">NMDP Disease Stage Code System</a>#AP)</span></td></tr></table></div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/number-of-remissions",
+            "valueInteger": 0
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://terminology.nmdp.org/codesystem/disease",
+              "code": "AML",
+              "display": "ACUTE MYELOGENOUS LEUKEMIA"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/MSPatientExample"
+        },
+        "recordedDate": "2021-11-01",
+        "stage": [
+          {
+            "summary": {
+              "coding": [
+                {
+                  "system": "http://terminology.nmdp.org/codesystem/diseasestage",
+                  "code": "AP",
+                  "display": "Accelerated Phase"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

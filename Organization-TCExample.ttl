@@ -13,11 +13,16 @@
        fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcenter";
        fhir:index 0;
        fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcenter>
+     ];
+     fhir:Meta.security [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ];
+       fhir:Coding.code [ fhir:value "tc_123" ]
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"TCExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-transplantcenter.html\">TransplantCenter</a></p></div><p><b>identifier</b>: id: 000</p><p><b>name</b>: My Transplant Center</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"TCExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization \"TCExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-transplantcenter.html\">TransplantCenter</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>identifier</b>: id: 000</p><p><b>name</b>: My Transplant Center</p></div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;
