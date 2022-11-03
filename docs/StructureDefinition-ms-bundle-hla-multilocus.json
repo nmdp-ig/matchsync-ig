@@ -20,7 +20,7 @@
   "name": "MSBundle_HLA_Multilocus",
   "title": "MatchSource Bundle with single multilocus HLA",
   "status": "active",
-  "date": "2022-10-31T18:02:56-05:00",
+  "date": "2022-11-02T14:44:07-05:00",
   "publisher": "NMDP",
   "contact": [
     {
@@ -2829,7 +2829,7 @@
         "id": "Bundle.entry:msPatient.resource",
         "path": "Bundle.entry.resource",
         "short": "Information about an individual or animal receiving health care services",
-        "definition": "Demographics and other administrative information about an individual or animal receiving care or other health-related services.",
+        "definition": "The US Core Patient Profile is based upon the core FHIR Patient Resource and designed to meet the applicable patient demographic data elements from the 2015 Edition Common Clinical Data Set.",
         "alias": [
           "SubjectOfCare Client Resident"
         ],
@@ -2914,6 +2914,7 @@
             "source": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"
           }
         ],
+        "mustSupport": false,
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -2928,6 +2929,10 @@
           {
             "identity": "cda",
             "map": "ClinicalDocument.recordTarget.patientRole"
+          },
+          {
+            "identity": "argonaut-dq-dstu2",
+            "map": "Patient"
           }
         ]
       },

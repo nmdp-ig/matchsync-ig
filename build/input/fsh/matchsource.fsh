@@ -1,5 +1,5 @@
 Profile:  MSPatient
-Parent:   Patient
+Parent:   us-core-patient
 Id:       mspatient
 Description: "Patient needing a transplant"
 * insert MetaSecurityRules
@@ -11,7 +11,7 @@ Description: "Patient needing a transplant"
 * address 1..1 MS
 * address.line 1..* MS
 * address.country 1..1 MS
-* address.city 1..1 MS
+* address.city 1..1 MS  
 * address.state 1..1 MS
 * address.postalCode 1..1 MS
 * communication 0..* MS
@@ -21,12 +21,12 @@ Description: "Patient needing a transplant"
 * telecom.system = #phone
 * generalPractitioner 0..1 MS
 * generalPractitioner only Reference(transplantcentercoordinator)
-* identifier 0..* MS
+* identifier 1..* MS
 * managingOrganization 0..1 MS
 * managingOrganization only Reference(transplantcenter)
 * extension contains 
-    $us-core-race named race 0..1 MS and
-    $us-core-ethnicity named ethnicity 0..1 MS and
+    // $uscore-race named usrace 0..1 MS and
+    // $uscore-ethnicity named usethnicity 0..1 MS and
     nmdp-race named nmdprace 0..1 MS and
     nmdp-ethnicity named nmdpethnicity 0..1 MS
 * obeys rac-1
@@ -51,6 +51,8 @@ Description: "Example of a patient needing a donor using us-core-race and us-cor
 * extension[race].extension[text].valueString = "White"
 * extension[ethnicity].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "Not Hispanic or Latino"
 * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
+* identifier.system = "http://example.org/mrn"
+* identifier.value = "123"
 
 Instance: MSPatientExample2
 InstanceOf: MSPatient
@@ -69,7 +71,8 @@ Description: "Example of a patient needing a donor using NMDP race code."
 * telecom[0].value = "1-612-555-1234"
 * extension[nmdprace].valueCodeableConcept.coding = $NMDPRace#EURWRC "North American or European"
 * extension[nmdpethnicity].valueCodeableConcept.coding = $NMDPEthnicity#NHIS "Not Hispanic or Latino"
-
+* identifier.system = "http://example.org/mrn"
+* identifier.value = "123"
 
 Instance: MSPatientExample3
 InstanceOf: MSPatient
@@ -86,6 +89,8 @@ Description: "Example of a patient without a race code - this should generate an
 * address.state = "MN"
 * address.postalCode = "55401"
 * telecom[0].value = "1-612-555-1234"
+* identifier.system = "http://example.org/mrn"
+* identifier.value = "123"
 
 Instance: MSPatientExample4
 InstanceOf: MSPatient
@@ -104,7 +109,8 @@ Description: "Example of a patient needing a donor using us-core-race code but n
 * telecom[0].value = "1-612-555-1234"
 * extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2106-3 "White"
 * extension[race].extension[text].valueString = "White"
-
+* identifier.system = "http://example.org/mrn"
+* identifier.value = "123"
 
 Profile: TransplantCenter
 Parent: Organization
