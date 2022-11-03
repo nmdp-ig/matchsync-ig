@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "MSBundle_HLA_Multilocus"];
   fhir:StructureDefinition.title [ fhir:value "MatchSource Bundle with single multilocus HLA"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-10-31T18:02:56-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-02T14:44:07-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "NMDP"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -3003,7 +3003,7 @@
        fhir:Element.id [ fhir:value "Bundle.entry:msPatient.resource" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.short [ fhir:value "Information about an individual or animal receiving health care services" ];
-       fhir:ElementDefinition.definition [ fhir:value "Demographics and other administrative information about an individual or animal receiving care or other health-related services." ];
+       fhir:ElementDefinition.definition [ fhir:value "The US Core Patient Profile is based upon the core FHIR Patient Resource and designed to meet the applicable patient demographic data elements from the 2015 Edition Common Clinical Data Set." ];
        fhir:ElementDefinition.alias [
          fhir:value "SubjectOfCare Client Resident";
          fhir:index 0
@@ -3109,6 +3109,7 @@
            fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -3123,6 +3124,10 @@
          fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "cda" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "ClinicalDocument.recordTarget.patientRole" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "argonaut-dq-dstu2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Patient" ]
        ]
      ], [
        fhir:index 70;

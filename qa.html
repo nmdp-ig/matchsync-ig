@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for MatchSourceIG</h1>
- <p>Generated Mon Oct 31 18:07:18 CDT 2022, FHIR version 4.0.1 for matchsource#0.1.0 (canonical = <a href="http://fhir.nmdp.org/ig/matchsource">http://fhir.nmdp.org/ig/matchsource</a> (<a href="http://fhir.nmdp.org/ig/matchsource/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Wed Nov 02 14:47:38 CDT 2022, FHIR version 4.0.1 for matchsource#0.1.0 (canonical = <a href="http://fhir.nmdp.org/ig/matchsource">http://fhir.nmdp.org/ig/matchsource</a> (<a href="http://fhir.nmdp.org/ig/matchsource/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.2.12</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = matchsource, Canonical = http://fhir.nmdp.org/ig/matchsource</td></tr>
@@ -60,7 +60,7 @@
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.nmdp.org/ig/matchsource (Problem #1 with package-list.json at http://fhir.nmdp.org/ig/matchsource: Invalid HTTP response 404 from https://fhir.nmdp.org/ig/matchsource/package-list.json?nocache=1667257374121 (Not Found) (content in /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/fhir-http-2.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.nmdp.org/ig/matchsource (Problem #1 with package-list.json at http://fhir.nmdp.org/ig/matchsource: Invalid HTTP response 404 from https://fhir.nmdp.org/ig/matchsource/package-list.json?nocache=1667418244783 (Not Found) (content in /var/folders/tz/3rrsdjx94d5fj_z_trln782xzm_j0b/T/fhir-http-2.log))</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>Summary:</td><td> errors = 3, warn = 78, info = 115, broken links = 44</td></tr>
 </table>
@@ -499,118 +499,118 @@
      <td><b>Bundle.entry[0].resource.ofType(Patient).meta.security[0] (l24/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[1].resource.meta.security[0] (l105/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[1].resource.meta.security[0] (l111/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[1].resource.ofType(Practitioner).meta.security[0] (l105/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Practitioner).meta.security[0] (l111/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[2].resource.meta.security[0] (l131/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[2].resource.meta.security[0] (l137/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[2].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[2].resource.ofType(Condition).meta.security[0] (l131/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[2].resource.ofType(Condition).meta.security[0] (l137/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[2].resource.ofType(Condition).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[3].resource.meta.security[0] (l181/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[3].resource.meta.security[0] (l187/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[3].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[3].resource.ofType(Observation).meta.security[0] (l181/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[3].resource.ofType(Observation).meta.security[0] (l187/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[3].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[4].resource.meta.security[0] (l222/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[4].resource.meta.security[0] (l228/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[4].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[4].resource.ofType(Observation).meta.security[0] (l222/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[4].resource.ofType(Observation).meta.security[0] (l228/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[4].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[5].resource.meta.security[0] (l263/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[5].resource.meta.security[0] (l269/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[5].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[5].resource.ofType(Observation).meta.security[0] (l263/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[5].resource.ofType(Observation).meta.security[0] (l269/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[5].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[6].resource.meta.security[0] (l298/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[6].resource.meta.security[0] (l304/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[6].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[6].resource.value.ofType(CodeableConcept) (l315/c22)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'"><b>Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'</b></td>
+     <td><b>Bundle.entry[6].resource.value.ofType(CodeableConcept) (l321/c22)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'"><b>Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[6].resource.value.ofType(CodeableConcept).coding[0] (l316/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'</b></td>
+     <td><b>Bundle.entry[6].resource.value.ofType(CodeableConcept).coding[0] (l322/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[6].resource.ofType(Observation).meta.security[0] (l298/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[6].resource.ofType(Observation).meta.security[0] (l304/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[6].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[6].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l316/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'</b></td>
+     <td><b>Bundle.entry[6].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l322/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[7].resource.meta.security[0] (l333/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[7].resource.meta.security[0] (l339/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[7].resource.ofType(Organization).meta.security[0] (l333/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[7].resource.ofType(Organization).meta.security[0] (l339/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[8].resource.meta.security[0] (l358/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[8].resource.meta.security[0] (l364/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[8].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[8].resource.ofType(Specimen).meta.security[0] (l358/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[8].resource.ofType(Specimen).meta.security[0] (l364/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[8].resource.ofType(Specimen).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[9].resource.meta.security[0] (l385/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[9].resource.meta.security[0] (l391/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[9].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[9].resource.value.ofType(CodeableConcept).coding[0] (l414/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[9].resource.value.ofType(CodeableConcept).coding[0] (l420/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[9].resource.specimen</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 8 matches the reference Specimen/MSSpecimenExample by type and id but it's fullUrl urn:uuid:6cc0a753-ff82-4099-b477-08a57474a951 does not match the full target URL urn:uuid:MSSpecimenExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[9].resource.ofType(Observation).meta.security[0] (l385/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[9].resource.ofType(Observation).meta.security[0] (l391/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[9].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[9].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l414/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[9].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l420/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[9].resource.ofType(Observation).specimen</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 8 matches the reference Specimen/MSSpecimenExample by type and id but it's fullUrl urn:uuid:6cc0a753-ff82-4099-b477-08a57474a951 does not match the full target URL urn:uuid:MSSpecimenExample by Bundle resolution rules</b></td>
@@ -635,130 +635,130 @@
      <td><b>Bundle.entry[0].resource.ofType(Patient).meta.security[0] (l24/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[1].resource.meta.security[0] (l105/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[1].resource.meta.security[0] (l111/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[1].resource.ofType(Practitioner).meta.security[0] (l105/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Practitioner).meta.security[0] (l111/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[2].resource.meta.security[0] (l131/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[2].resource.meta.security[0] (l137/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[2].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[2].resource.ofType(Condition).meta.security[0] (l131/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[2].resource.ofType(Condition).meta.security[0] (l137/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[2].resource.ofType(Condition).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[3].resource.meta.security[0] (l181/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[3].resource.meta.security[0] (l187/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[3].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[3].resource.ofType(Observation).meta.security[0] (l181/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[3].resource.ofType(Observation).meta.security[0] (l187/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[3].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[4].resource.meta.security[0] (l222/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[4].resource.meta.security[0] (l228/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[4].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[4].resource.ofType(Observation).meta.security[0] (l222/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[4].resource.ofType(Observation).meta.security[0] (l228/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[4].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[5].resource.meta.security[0] (l263/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[5].resource.meta.security[0] (l269/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[5].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[5].resource.ofType(Observation).meta.security[0] (l263/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[5].resource.ofType(Observation).meta.security[0] (l269/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[5].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[6].resource.meta.security[0] (l298/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[6].resource.meta.security[0] (l304/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[6].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[6].resource.value.ofType(CodeableConcept) (l315/c22)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'"><b>Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'</b></td>
+     <td><b>Bundle.entry[6].resource.value.ofType(CodeableConcept) (l321/c22)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'"><b>Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[6].resource.value.ofType(CodeableConcept).coding[0] (l316/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'</b></td>
+     <td><b>Bundle.entry[6].resource.value.ofType(CodeableConcept).coding[0] (l322/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[6].resource.ofType(Observation).meta.security[0] (l298/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[6].resource.ofType(Observation).meta.security[0] (l304/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[6].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[6].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l316/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'</b></td>
+     <td><b>Bundle.entry[6].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l322/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[7].resource.meta.security[0] (l333/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[7].resource.meta.security[0] (l339/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[7].resource.ofType(Organization).meta.security[0] (l333/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[7].resource.ofType(Organization).meta.security[0] (l339/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[8].resource.meta.security[0] (l358/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[8].resource.meta.security[0] (l364/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[8].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[8].resource.ofType(Specimen).meta.security[0] (l358/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[8].resource.ofType(Specimen).meta.security[0] (l364/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[8].resource.ofType(Specimen).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[9].resource.meta.security[0] (l385/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[9].resource.meta.security[0] (l391/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[9].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[9].resource.value.ofType(CodeableConcept).coding[0] (l414/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[9].resource.value.ofType(CodeableConcept).coding[0] (l420/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[9].resource.specimen</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 8 matches the reference Specimen/MSSpecimenExample by type and id but it's fullUrl urn:uuid:6cc0a753-ff82-4099-b477-08a57474a951 does not match the full target URL urn:uuid:MSSpecimenExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[9].resource.component[3].value.ofType(CodeableConcept) (l488/c26)</b></td><td><b>warning</b></td><td title="Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 2 choices from 'HLA-DRB1, HLA-DRB1', not 'HLA-DRB3'"><b>Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 2 choices from 'HLA-DRB1, HLA-DRB1', not 'HLA-DRB3'</b></td>
+     <td><b>Bundle.entry[9].resource.component[3].value.ofType(CodeableConcept) (l494/c26)</b></td><td><b>warning</b></td><td title="Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 2 choices from 'HLA-DRB1, HLA-DRB1', not 'HLA-DRB3'"><b>Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 2 choices from 'HLA-DRB1, HLA-DRB1', not 'HLA-DRB3'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[9].resource.component[3].value.ofType(CodeableConcept).coding[0] (l489/c18)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 1 choices from 'HLA-DRB1', not 'HLA-DRB3' for 'http://www.genenames.org/geneId#HGNC:4948'</b></td>
+     <td><b>Bundle.entry[9].resource.component[3].value.ofType(CodeableConcept).coding[0] (l495/c18)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 1 choices from 'HLA-DRB1', not 'HLA-DRB3' for 'http://www.genenames.org/geneId#HGNC:4948'</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[9].resource.ofType(Observation).meta.security[0] (l385/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[9].resource.ofType(Observation).meta.security[0] (l391/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[9].resource.ofType(Observation).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[9].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l414/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[9].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0] (l420/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://glstring.org' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[9].resource.ofType(Observation).specimen</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 8 matches the reference Specimen/MSSpecimenExample by type and id but it's fullUrl urn:uuid:6cc0a753-ff82-4099-b477-08a57474a951 does not match the full target URL urn:uuid:MSSpecimenExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[9].resource.ofType(Observation).component[3].value.ofType(CodeableConcept).coding[0] (l489/c18)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 1 choices from 'HLA-DRB1', not 'HLA-DRB3' for 'http://www.genenames.org/geneId#HGNC:4948'</b></td>
+     <td><b>Bundle.entry[9].resource.ofType(Observation).component[3].value.ofType(CodeableConcept).coding[0] (l495/c18)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 1 choices from 'HLA-DRB1', not 'HLA-DRB3' for 'http://www.genenames.org/geneId#HGNC:4948'</b></td>
    </tr>
 </table>
 <hr/>
@@ -780,19 +780,19 @@
      <td><b>Bundle.entry[0].resource.ofType(Patient).meta.security[0] (l24/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[1].resource.meta.security[0] (l105/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[1].resource.meta.security[0] (l111/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[1].resource.ofType(Practitioner).meta.security[0] (l105/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Practitioner).meta.security[0] (l111/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[2].resource.meta.security[0] (l131/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[2].resource.meta.security[0] (l137/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[2].resource.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[2].resource.ofType(Condition).meta.security[0] (l131/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
+     <td><b>Bundle.entry[2].resource.ofType(Condition).meta.security[0] (l137/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[2].resource.ofType(Condition).subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules</b></td>
