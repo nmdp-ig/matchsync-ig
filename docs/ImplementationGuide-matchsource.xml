@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="MatchSourceIG"/>
   <status value="draft"/>
-  <date value="2022-11-02T14:44:07-05:00"/>
+  <date value="2022-12-01T09:35:21-06:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -24,7 +24,7 @@
   <dependsOn id="hl7tx">
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="4.0.0"/>
+    <version value="5.0.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_us_core">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
@@ -925,28 +925,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/nmdp-ethnicity"/>
-      </reference>
-      <name value="NMDP Ethnicity Code Extension"/>
-      <description value="Extension to use NMDP Ethnicity Codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/nmdp-race"/>
-      </reference>
-      <name value="NMDP Race Code Extension"/>
-      <description value="Extension to use NMDP Race Codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/number-of-remissions"/>
       </reference>
       <name value="Number of Remissions of Primary Diagnosis"/>
@@ -1489,7 +1467,7 @@
         <reference value="Patient/MSPatientExample3"/>
       </reference>
       <name value="MSPatientExample3"/>
-      <description value="Example of a patient without a race code - this should generate an error."/>
+      <description value="Example of a patient without a race code"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"/>
     </resource>
     <resource>
@@ -1500,7 +1478,7 @@
         <reference value="Patient/MSPatientExample4"/>
       </reference>
       <name value="MSPatientExample4"/>
-      <description value="Example of a patient needing a donor using us-core-race code but not us-core-ethnicity - this should generate an error"/>
+      <description value="Example of a patient needing a donor using us-core-race code but not us-core-ethnicity"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"/>
     </resource>
     <resource>

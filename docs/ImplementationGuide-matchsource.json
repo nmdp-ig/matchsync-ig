@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "MatchSourceIG",
   "status": "draft",
-  "date": "2022-11-02T14:44:07-05:00",
+  "date": "2022-12-01T09:35:21-06:00",
   "publisher": "NMDP",
   "contact": [
     {
@@ -32,7 +32,7 @@
       "id": "hl7tx",
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
-      "version": "4.0.0"
+      "version": "5.0.0"
     },
     {
       "id": "hl7_fhir_us_core",
@@ -1391,34 +1391,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/nmdp-ethnicity"
-        },
-        "name": "NMDP Ethnicity Code Extension",
-        "description": "Extension to use NMDP Ethnicity Codes",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/nmdp-race"
-        },
-        "name": "NMDP Race Code Extension",
-        "description": "Extension to use NMDP Race Codes",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/number-of-remissions"
         },
         "name": "Number of Remissions of Primary Diagnosis",
@@ -2108,7 +2080,7 @@
           "reference": "Patient/MSPatientExample3"
         },
         "name": "MSPatientExample3",
-        "description": "Example of a patient without a race code - this should generate an error.",
+        "description": "Example of a patient without a race code",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"
       },
       {
@@ -2122,7 +2094,7 @@
           "reference": "Patient/MSPatientExample4"
         },
         "name": "MSPatientExample4",
-        "description": "Example of a patient needing a donor using us-core-race code but not us-core-ethnicity - this should generate an error",
+        "description": "Example of a patient needing a donor using us-core-race code but not us-core-ethnicity",
         "exampleCanonical": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"
       },
       {

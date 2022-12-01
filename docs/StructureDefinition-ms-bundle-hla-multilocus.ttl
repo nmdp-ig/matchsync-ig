@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "MSBundle_HLA_Multilocus"];
   fhir:StructureDefinition.title [ fhir:value "MatchSource Bundle with single multilocus HLA"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-02T14:44:07-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-12-01T09:35:21-06:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "NMDP"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -3087,26 +3087,6 @@
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/DomainResource";
            fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
-         ]
-       ], [
-         fhir:index 5;
-         fhir:ElementDefinition.constraint.key [ fhir:value "rac-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Shall use either NMDP Race extension or us-core-race" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists(url = 'http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race' or url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race')" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient";
-           fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient>
-         ]
-       ], [
-         fhir:index 6;
-         fhir:ElementDefinition.constraint.key [ fhir:value "eth-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Shall use either NMDP ethnicity extension or us-core-ethnicity" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists(url = 'http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-ethnicity' or url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity')" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient";
-           fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];

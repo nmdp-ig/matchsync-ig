@@ -20,7 +20,7 @@
   "name": "MSBundle_HLA_Multilocus",
   "title": "MatchSource Bundle with single multilocus HLA",
   "status": "active",
-  "date": "2022-11-02T14:44:07-05:00",
+  "date": "2022-12-01T09:35:21-06:00",
   "publisher": "NMDP",
   "contact": [
     {
@@ -2898,20 +2898,6 @@
             "expression": "text.`div`.exists()",
             "xpath": "exists(f:text/h:div)",
             "source": "http://hl7.org/fhir/StructureDefinition/DomainResource"
-          },
-          {
-            "key": "rac-1",
-            "severity": "error",
-            "human": "Shall use either NMDP Race extension or us-core-race",
-            "expression": "extension.exists(url = 'http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race' or url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race')",
-            "source": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"
-          },
-          {
-            "key": "eth-1",
-            "severity": "error",
-            "human": "Shall use either NMDP ethnicity extension or us-core-ethnicity",
-            "expression": "extension.exists(url = 'http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-ethnicity' or url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity')",
-            "source": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"
           }
         ],
         "mustSupport": false,

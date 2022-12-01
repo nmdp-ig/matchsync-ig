@@ -4,44 +4,6 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-ethnicity",
-      "title": "NMDP Ethnicity Code Extension",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
-      ]
-    },
-    {
-      "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race",
-      "title": "NMDP Race Code Extension",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
-      ]
-    },
-    {
       "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/number-of-remissions",
       "title": "Number of Remissions of Primary Diagnosis",
       "types": [
@@ -118,12 +80,6 @@
     ]
   },
   "usage": {
-    "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-ethnicity": [
-      "Patient"
-    ],
-    "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race": [
-      "Patient"
-    ],
     "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/number-of-remissions": [
       "Bundle.entry.resource",
       "Condition"
