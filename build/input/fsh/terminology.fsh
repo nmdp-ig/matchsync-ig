@@ -421,3 +421,16 @@ Description: "NMDP preferred product codes"
 * include codes from system nmdp-preferred-product-cs
 
 //  ------------------
+
+
+CodeSystem: NMDPTCCS
+Title: "NMDP Transplant Center Code System"
+Id: nmdp-disease-cs
+Description: "Code System for NMDP Transplant Center"
+* ^url = "http://terminology.nmdp.org/codesystem/transplantcenter"
+* ^version = "2022"
+* ^status = #active
+* ^experimental = false
+* ^publisher = "NMDP"
+* ^copyright = "National Marrow Donor Program"
+* #ABL     "ACUTE BILINEAGE LEUKEMIA"
