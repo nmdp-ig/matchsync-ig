@@ -1,8 +1,8 @@
 Profile: MSBundle
 Id: ms-bundle
 Parent: Bundle
-Title: "MatchSource Bundle"
-Description: "Collection Bundle for MatchSource"
+Title: "MatchSync Bundle"
+Description: "Collection Bundle for MatchSync"
 * insert MetaSecurityRules
 * insert BundleEntrySlicingRules
 * entry and entry.resource MS
@@ -20,20 +20,20 @@ Description: "Collection Bundle for MatchSource"
     msObsWeight 0..1 MS and
     msSpecimen 0..1 MS
 * entry[msPatient].resource only MSPatient
-* entry[msPatient] ^short = "MatchSource Patient"
-* entry[msPatient] ^definition = "The MatchSource Patient whose data is included in the bundle (required element)."
+* entry[msPatient] ^short = "MatchSync Patient"
+* entry[msPatient] ^definition = "The MatchSync Patient whose data is included in the bundle (required element)."
 * entry[msDiagnosis].resource only MSPrimaryDiagnosis
-* entry[msDiagnosis] ^short = "Diagnois for MatchSource Patient"
-* entry[msDiagnosis] ^definition = "The Diagnosis for the MatchSource patient (required element)."
+* entry[msDiagnosis] ^short = "Diagnois for MatchSync Patient"
+* entry[msDiagnosis] ^definition = "The Diagnosis for the MatchSync patient (required element)."
 * entry[msCoordinator].resource only TransplantCenterCoordinator
 * entry[msCoordinator] ^short = "Search Coordinator for Patient needing transplant"
-* entry[msCoordinator] ^definition = "The Search Coordinator for the MatchSource patient (required element)."
+* entry[msCoordinator] ^definition = "The Search Coordinator for the MatchSync patient (required element)."
 * entry[msObsRh].resource only MSRhStatusObservation
 * entry[msObsRh] ^short = "Rh status of the patient"
-* entry[msObsRh] ^definition = "The Rh status of the MatchSource patient"
+* entry[msObsRh] ^definition = "The Rh status of the MatchSync patient"
 * entry[msObsABO].resource only MSABOGroupObservation
 * entry[msObsABO] ^short = "ABO blood group"
-* entry[msObsABO] ^definition = "The ABO blood group of the MatchSource patient"
+* entry[msObsABO] ^definition = "The ABO blood group of the MatchSync patient"
 * entry[msObsTimeline].resource only MSTransplantTimeline
 * entry[msObsTimeline] ^short = "Transplant timeline"
 * entry[msObsTimeline] ^definition = "Where the patient is in the tranplant timeline."
@@ -57,8 +57,8 @@ Description: "Collection Bundle for MatchSource"
 Profile: MSBundle_HLA_Separate
 Id: ms-bundle-hla-separate
 Parent: MSBundle
-Title: "MatchSource Bundle with Separate HLA"
-Description: "Collection Bundle for MatchSource with separate HLA Observations for each locus"
+Title: "MatchSync Bundle with Separate HLA"
+Description: "Collection Bundle for MatchSync with separate HLA Observations for each locus"
 * insert BundleEntrySlicingRules
 * entry and entry.resource MS
 * entry contains
@@ -112,8 +112,8 @@ Description: "Collection Bundle for MatchSource with separate HLA Observations f
 Profile: MSBundle_HLA_Multilocus
 Id: ms-bundle-hla-multilocus
 Parent: MSBundle
-Title: "MatchSource Bundle with single multilocus HLA"
-Description: "Collection Bundle for MatchSource with single HLA multilocus Observation"
+Title: "MatchSync Bundle with single multilocus HLA"
+Description: "Collection Bundle for MatchSync with single HLA multilocus Observation"
 * insert BundleEntrySlicingRules
 * entry and entry.resource MS
 * entry contains hla-multi 1..1 MS
@@ -124,8 +124,8 @@ Description: "Collection Bundle for MatchSource with single HLA multilocus Obser
 
 Instance: BundleExample-Minimal
 InstanceOf: MSBundle
-Title: "Matchsource Bundle Example - Mimimal"
-Description: "Minimual Bundle Example for MatchSource"
+Title: "MatchSync Bundle Example - Mimimal"
+Description: "Minimual Bundle Example for MatchSync"
 * meta.security[TransplantCenter].code = #tc_123
 * type = #collection
 * timestamp = 2020-11-24T23:50:50-05:00
@@ -138,8 +138,8 @@ Description: "Minimual Bundle Example for MatchSource"
 
 Instance: BundleExample-Full-HLA-Separate
 InstanceOf: MSBundle_HLA_Separate
-Title: "Matchsource Bundle Example - Full with HLA in separate observations for each locus"
-Description: "Full Bundle Example for MatchSource, with each HLA allele in a separate genotype observation"
+Title: "MatchSync Bundle Example - Full with HLA in separate observations for each locus"
+Description: "Full Bundle Example for MatchSync, with each HLA allele in a separate genotype observation"
 * meta.security[TransplantCenter].code = #tc_123
 * type = #collection
 * timestamp = 2020-11-24T23:50:50-05:00
@@ -187,8 +187,8 @@ Description: "Full Bundle Example for MatchSource, with each HLA allele in a sep
 
 Instance: BundleExample-Full-Multilocus-HLA
 InstanceOf: MSBundle_HLA_Multilocus
-Title: "Matchsource Bundle Example - Full, HLA with multilocus genotype"
-Description: "Full Bundle Example for MatchSource with multilocus HLA genotype"
+Title: "MatchSync Bundle Example - Full, HLA with multilocus genotype"
+Description: "Full Bundle Example for MatchSync with multilocus HLA genotype"
 * meta.security[TransplantCenter].code = #tc_123
 * type = #collection
 * timestamp = 2020-11-24T23:50:50-05:00

@@ -1,34 +1,28 @@
 {
-  "resourceType": "ValueSet",
-  "id": "nmdp-language-codes",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-language-cs.html\"><code>http://terminology.nmdp.org/codesystem/language</code></a></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "nmdp-language-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-language-cs.html\"><code>http://terminology.nmdp.org/codesystem/language</code></a></li></ul></div>"
   },
-  "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-language-codes",
-  "version": "0.1.0",
-  "name": "NMDPLanguageCodes",
-  "title": "NMDP Language Value Set",
-  "status": "active",
-  "date": "2022-12-01T09:35:21-06:00",
-  "publisher": "NMDP",
-  "contact": [
-    {
-      "name": "NMDP",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://bethematch.org"
-        }
-      ]
-    }
-  ],
-  "description": "NMDP language codes",
-  "compose": {
-    "include": [
-      {
-        "system": "http://terminology.nmdp.org/codesystem/language"
-      }
-    ]
+  "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes",
+  "version" : "0.1.0",
+  "name" : "NMDPLanguageCodes",
+  "title" : "NMDP Language Value Set",
+  "status" : "active",
+  "date" : "2023-01-12T09:36:27-06:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "NMDP language codes",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/language"
+    }]
   }
 }

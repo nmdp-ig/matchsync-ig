@@ -5,21 +5,21 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/CodeSystem/nmdp-diseasestage-cs> a fhir:CodeSystem;
+<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-diseasestage-cs> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "nmdp-diseasestage-cs"];
+  fhir:Resource.id [ fhir:value "nmdp-diseasestage-cs"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://terminology.nmdp.org/codesystem/diseasestage</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AP<a name=\"nmdp-diseasestage-cs-AP\"> </a></td><td>Accelerated Phase</td></tr><tr><td style=\"white-space:nowrap\">BP<a name=\"nmdp-diseasestage-cs-BP\"> </a></td><td>Blastic Phase</td></tr><tr><td style=\"white-space:nowrap\">CP<a name=\"nmdp-diseasestage-cs-CP\"> </a></td><td>Chronic Phase</td></tr><tr><td style=\"white-space:nowrap\">CR<a name=\"nmdp-diseasestage-cs-CR\"> </a></td><td>Complete Remission</td></tr><tr><td style=\"white-space:nowrap\">IF<a name=\"nmdp-diseasestage-cs-IF\"> </a></td><td>Induction Failure</td></tr><tr><td style=\"white-space:nowrap\">IT<a name=\"nmdp-diseasestage-cs-IT\"> </a></td><td>Induction Therapy</td></tr><tr><td style=\"white-space:nowrap\">RE<a name=\"nmdp-diseasestage-cs-RE\"> </a></td><td>Relapse</td></tr><tr><td style=\"white-space:nowrap\">RM<a name=\"nmdp-diseasestage-cs-RM\"> </a></td><td>Remission</td></tr></table></div>"
-  ];
-  fhir:CodeSystem.url [ fhir:value "http://terminology.nmdp.org/codesystem/diseasestage"];
-  fhir:CodeSystem.version [ fhir:value "0.1.0"];
-  fhir:CodeSystem.name [ fhir:value "NMDPDiseaseStageCS"];
-  fhir:CodeSystem.title [ fhir:value "NMDP Disease Stage Code System"];
-  fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2022-12-01T09:35:21-06:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "NMDP"];
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "http://terminology.nmdp.org/codesystem/diseasestage"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "NMDPDiseaseStageCS"]; # 
+  fhir:CodeSystem.title [ fhir:value "NMDP Disease Stage Code System"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-01-12T09:36:27-06:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "NMDP"]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "NMDP" ];
@@ -28,11 +28,11 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
      ]
-  ];
-  fhir:CodeSystem.description [ fhir:value "Code System for NMDP disease stages"];
-  fhir:CodeSystem.copyright [ fhir:value "National Marrow Donor Program"];
-  fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "8"^^xsd:nonNegativeInteger];
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Code System for NMDP disease stages"]; # 
+  fhir:CodeSystem.copyright [ fhir:value "National Marrow Donor Program"]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "8"^^xsd:nonNegativeInteger]; # 
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "AP" ];
@@ -65,11 +65,11 @@
      fhir:index 7;
      fhir:CodeSystem.concept.code [ fhir:value "RM" ];
      fhir:CodeSystem.concept.display [ fhir:value "Remission" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/CodeSystem/nmdp-diseasestage-cs.ttl> a owl:Ontology;
+<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-diseasestage-cs.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

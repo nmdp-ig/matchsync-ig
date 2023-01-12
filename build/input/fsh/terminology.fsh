@@ -227,8 +227,8 @@ Description: "Snomed CT codes for ABO blood group"
 
 ValueSet: MSABOGroupVS
 Id: ms-abo-group-codes
-Title: "MatchSource ABO Group Value Set"
-Description: "MatchSource ABO group codes. Combines LOINC, Snomed, and NMDP codes"
+Title: "MatchSync ABO Group Value Set"
+Description: "MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes"
 * include codes from valueset nmdp-abo-codes
 * include codes from valueset loinc-abo-codes
 * include codes from valueset sct-abo-group-codes
@@ -272,8 +272,8 @@ Description: "LOINC codes for Positive and Negative"
 
 ValueSet: MSRhVS
 Id: ms-rh-codes
-Title: "Matchsource Rh Value Sets"
-Description: "MatchSource codes for blood Rh. Combines NMDP and LOINC code"
+Title: "MatchSync Rh Value Sets"
+Description: "MatchSync codes for blood Rh. Combines NMDP and LOINC code"
 * include codes from valueset nmdp-rh-status-codes
 * include codes from valueset loinc-posneg-codes
 
@@ -400,7 +400,7 @@ Description: "NMDP transplant timeline codes"
 CodeSystem: NMDPPreferredProductCS
 Title: "NMDP Preferred Product for Transplant"
 Id: nmdp-preferred-product-cs
-Description: "NMDP Preferred Product for MatchSource patient"
+Description: "NMDP Preferred Product for MatchSync patient"
 * ^url = "http://terminology.nmdp.org/codesystem/preferredproduct"
 * ^version = "2022"
 * ^status = #active
@@ -423,14 +423,14 @@ Description: "NMDP preferred product codes"
 //  ------------------
 
 
-CodeSystem: NMDPTCCS
-Title: "NMDP Transplant Center Code System"
-Id: nmdp-disease-cs
-Description: "Code System for NMDP Transplant Center"
-* ^url = "http://terminology.nmdp.org/codesystem/transplantcenter"
-* ^version = "2022"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "NMDP"
-* ^copyright = "National Marrow Donor Program"
-* #ABL     "ACUTE BILINEAGE LEUKEMIA"
+// CodeSystem: NMDPTCCS
+// Title: "NMDP Transplant Center Code System"
+// Id: nmdp-disease-cs
+// Description: "Code System for NMDP Transplant Center"
+// * ^url = "http://terminology.nmdp.org/codesystem/transplantcenter"
+// * ^version = "2022"
+// * ^status = #active
+// * ^experimental = false
+// * ^publisher = "NMDP"
+// * ^copyright = "National Marrow Donor Program"
+// * #ABL     "ACUTE BILINEAGE LEUKEMIA"

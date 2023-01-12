@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/ValueSet/loinc-abo-codes> a fhir:ValueSet;
+<http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-abo-codes> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "loinc-abo-codes"];
+  fhir:Resource.id [ fhir:value "loinc-abo-codes"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA19710-5.html\">LA19710-5</a></td><td>Group A</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA19709-7.html\">LA19709-7</a></td><td>Group B</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA19708-9.html\">LA19708-9</a></td><td>Group O</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/LA28449-9.html\">LA28449-9</a></td><td>Group AB</td></tr></table></li></ul></div>"
-  ];
-  fhir:ValueSet.url [ fhir:value "http://loinc.org/vs/LL2419-1"];
-  fhir:ValueSet.version [ fhir:value "0.1.0"];
-  fhir:ValueSet.name [ fhir:value "LNCABOGroupVS"];
-  fhir:ValueSet.title [ fhir:value "LOINC ABO group Value Set"];
-  fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-12-01T09:35:21-06:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "NMDP"];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA19710-5/\">LA19710-5</a></td><td>Group A</td></tr><tr><td><a href=\"https://loinc.org/LA19709-7/\">LA19709-7</a></td><td>Group B</td></tr><tr><td><a href=\"https://loinc.org/LA19708-9/\">LA19708-9</a></td><td>Group O</td></tr><tr><td><a href=\"https://loinc.org/LA28449-9/\">LA28449-9</a></td><td>Group AB</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://loinc.org/vs/LL2419-1"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "LNCABOGroupVS"]; # 
+  fhir:ValueSet.title [ fhir:value "LOINC ABO group Value Set"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2023-01-12T09:36:27-06:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "NMDP"]; # 
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "NMDP" ];
@@ -27,9 +27,9 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
      ]
-  ];
-  fhir:ValueSet.description [ fhir:value "LOINC codes for ABO blood group"];
-  fhir:ValueSet.copyright [ fhir:value "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."];
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "LOINC codes for ABO blood group"]; # 
+  fhir:ValueSet.copyright [ fhir:value "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."]; # 
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
@@ -52,11 +52,11 @@
          fhir:ValueSet.compose.include.concept.display [ fhir:value "Group AB" ]
        ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/ValueSet/loinc-abo-codes.ttl> a owl:Ontology;
+<http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-abo-codes.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

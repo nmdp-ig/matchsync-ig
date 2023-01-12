@@ -1,143 +1,143 @@
-﻿MatchSourceIG : Validation Results
+﻿MatchSyncIG : Validation Results
 =========================================
 
 err = 0, warn = 78, info = 115
-IG Publisher Version: 1.2.12 Out of date - current version is 1.2.21
-Generated Thu Dec 01 09:40:58 CST 2022. FHIR version 4.0.1 for matchsource#0.1.0 (canonical = http://fhir.nmdp.org/ig/matchsource)
+IG Publisher Version: 1.2.26
+Generated Thu Jan 12 09:45:57 CST 2023. FHIR version 4.0.1 for matchsync#0.1.0 (canonical = http://fhir.nmdp.org/ig/matchsync)
  Build Errors : 44 / 4 / 0
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Bundle-BundleExample-Full-HLA-Separate : 0 / 19 / 54
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Bundle-BundleExample-Full-Multilocus-HLA : 0 / 22 / 54
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Bundle-BundleExample-Minimal : 0 / 2 / 17
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-glstring-codesystem : 0 / 2 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-hla-genename-codesystem : 0 / 1 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-abo-group-cs : 0 / 1 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-disease-cs : 0 / 1 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-diseasestage-cs : 0 / 1 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-ethnicity-cs : 0 / 1 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-language-cs : 0 / 1 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-preferred-product-cs : 0 / 1 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-race-cs : 0 / 1 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-rh-status-cs : 0 / 1 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/CodeSystem-nmdp-transplant-timeline-cs : 0 / 1 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Condition-MSDiagnosisExample-AML : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Condition-MSDiagnosisExample-OND : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ImplementationGuide-matchsource : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-A-Example : 0 / 0 / 3
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-B-Example : 0 / 0 / 3
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-C-Example : 0 / 0 / 3
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DPA1-Example : 0 / 0 / 3
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DPB1-Example : 0 / 0 / 3
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DQA1-Example : 0 / 0 / 3
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DQB1-Example : 0 / 0 / 3
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DRB1-Example : 0 / 0 / 3
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DRB3-Example : 0 / 0 / 3
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DRB4-Example : 0 / 0 / 3
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-DRB5-Example : 0 / 0 / 3
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-HLA-Multilocus-Genotype-Example : 0 / 2 / 3
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-MSABOObsExample : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-MSHeightObsExample : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-MSPreferredProductExample : 0 / 2 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-MSRhObsExample : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-MSTransplantTimelineExample : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Observation-MSWeightObsExample : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Organization-TCExample : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Patient-MSPatientExample : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Patient-MSPatientExample2 : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Patient-MSPatientExample3 : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Patient-MSPatientExample4 : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Practitioner-CoordinatorExample : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/Specimen-MSSpecimenExample : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-a : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-b : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-c : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-dpa1 : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-dpb1 : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-dqa1 : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-dqb1 : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-drb1 : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-drb3 : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-drb4 : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-drb5 : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-hla-genotype : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-abogroup-observation : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle-hla-multilocus : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle-hla-separate : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-height-observation : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-preferred-product-observation : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-rhstatus-observation : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-transplant-timeline-observation : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-ms-weight-observation : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-msdiagnosis : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-mspatient : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-msspecimen : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-number-of-remissions : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-transplantcenter : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/StructureDefinition-transplantcentercoordinator : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-hla-geneid-valueset : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-loinc-abo-codes : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-loinc-posneg-codes : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-ms-abo-group-codes : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-ms-rh-codes : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-abo-codes : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-disease-codes : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-diseasestage-codes : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-ethnicity-codes : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-language-codes : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-preferred-product-codes : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-race-codes : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-rh-status-codes : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-nmdp-transplant-timeline-codes : 0 / 1 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/fsh-generated/resources/ValueSet-sct-abo-group-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Bundle-BundleExample-Full-HLA-Separate : 0 / 19 / 54
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Bundle-BundleExample-Full-Multilocus-HLA : 0 / 22 / 54
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Bundle-BundleExample-Minimal : 0 / 2 / 17
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/CodeSystem-glstring-codesystem : 0 / 2 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/CodeSystem-hla-genename-codesystem : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-abo-group-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-disease-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-diseasestage-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-ethnicity-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-language-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-preferred-product-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-race-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-rh-status-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-transplant-timeline-cs : 0 / 1 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Condition-MSDiagnosisExample-AML : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Condition-MSDiagnosisExample-OND : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ImplementationGuide-matchsync : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-HLA-A-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-HLA-B-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-HLA-C-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DPA1-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DPB1-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DQA1-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DQB1-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DRB1-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DRB3-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DRB4-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DRB5-Example : 0 / 0 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-HLA-Multilocus-Genotype-Example : 0 / 2 / 3
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-MSABOObsExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-MSHeightObsExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-MSPreferredProductExample : 0 / 2 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-MSRhObsExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-MSTransplantTimelineExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Observation-MSWeightObsExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Organization-TCExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample2 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample3 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample4 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Practitioner-CoordinatorExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Specimen-MSSpecimenExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-a : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-b : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-c : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-dpa1 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-dpb1 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-dqa1 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-dqb1 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-drb1 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-drb3 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-drb4 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-drb5 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-genotype : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-abogroup-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle-hla-multilocus : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle-hla-separate : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-height-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-preferred-product-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-rhstatus-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-transplant-timeline-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-weight-observation : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-msdiagnosis : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-mspatient : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-msspecimen : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-number-of-remissions : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-transplantcenter : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-transplantcentercoordinator : 0 / 0 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ValueSet-hla-geneid-valueset : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ValueSet-loinc-abo-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ValueSet-loinc-posneg-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ValueSet-ms-abo-group-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ValueSet-ms-rh-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-abo-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-disease-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-diseasestage-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-ethnicity-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-language-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-preferred-product-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-race-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-rh-status-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-transplant-timeline-codes : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/ValueSet-sct-abo-group-codes : 0 / 1 / 1
 </table>
 == n/a ==
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsource-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
-WARNING: 2: The HTML fragment 'cross-version-analysis.xhtml' is not included anywhere in the produced implementation guide
-WARNING: 3: The HTML fragment 'dependency-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-BundleExample-Full-HLA-Separate.json ==
 INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
@@ -163,11 +163,11 @@ INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[5].resource.of
 WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[5].resource.ofType(Observation).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
 INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
-WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.value.ofType(CodeableConcept): Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'
-WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.value.ofType(CodeableConcept).coding[0]: Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.value.ofType(CodeableConcept): Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.value.ofType(CodeableConcept).coding[0]: Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'
 INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.ofType(Observation).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.ofType(Observation).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
-WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'
+WARNING: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[6].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'
 INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[7].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[7].resource.ofType(Organization).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 INFORMATION: Bundle/BundleExample-Full-HLA-Separate: Bundle.entry[8].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
@@ -206,11 +206,11 @@ INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[5].resource.
 WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[5].resource.ofType(Observation).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
 INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
-WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.value.ofType(CodeableConcept): Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'
-WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.value.ofType(CodeableConcept).coding[0]: Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.value.ofType(CodeableConcept): Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.value.ofType(CodeableConcept).coding[0]: Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'
 INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.ofType(Observation).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.ofType(Observation).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
-WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[6].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'
 INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[7].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[7].resource.ofType(Organization).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[8].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
@@ -222,12 +222,12 @@ WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.subj
 INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
 WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.specimen: Entry 8 matches the reference Specimen/MSSpecimenExample by type and id but it's fullUrl urn:uuid:6cc0a753-ff82-4099-b477-08a57474a951 does not match the full target URL urn:uuid:MSSpecimenExample by Bundle resolution rules
 WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.component[3].value.ofType(CodeableConcept): Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 2 choices from 'HLA-DRB1, HLA-DRB1', not 'HLA-DRB3'
-WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.component[3].value.ofType(CodeableConcept).coding[0]: Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 1 choices from 'HLA-DRB1', not 'HLA-DRB3' for 'http://www.genenames.org/geneId#HGNC:4948'
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.component[3].value.ofType(CodeableConcept).coding[0]: Display Name for http://www.genenames.org/geneId#HGNC:4948 should be 'HLA-DRB1', not 'HLA-DRB3' for 'http://www.genenames.org/geneId#HGNC:4948'
 INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.ofType(Observation).meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.ofType(Observation).subject: Entry 0 matches the reference Patient/MSPatientExample by type and id but it's fullUrl urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc does not match the full target URL urn:uuid:MSPatientExample by Bundle resolution rules
 INFORMATION: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
 WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.ofType(Observation).specimen: Entry 8 matches the reference Specimen/MSSpecimenExample by type and id but it's fullUrl urn:uuid:6cc0a753-ff82-4099-b477-08a57474a951 does not match the full target URL urn:uuid:MSSpecimenExample by Bundle resolution rules
-WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.ofType(Observation).component[3].value.ofType(CodeableConcept).coding[0]: Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 1 choices from 'HLA-DRB1', not 'HLA-DRB3' for 'http://www.genenames.org/geneId#HGNC:4948'
+WARNING: Bundle/BundleExample-Full-Multilocus-HLA: Bundle.entry[9].resource.ofType(Observation).component[3].value.ofType(CodeableConcept).coding[0]: Display Name for http://www.genenames.org/geneId#HGNC:4948 should be 'HLA-DRB1', not 'HLA-DRB3' for 'http://www.genenames.org/geneId#HGNC:4948'
 == fsh-generated/resources/Bundle-BundleExample-Minimal.json ==
 INFORMATION: Bundle/BundleExample-Minimal: Bundle.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 INFORMATION: Bundle/BundleExample-Minimal: Bundle.entry[0].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
@@ -276,7 +276,7 @@ WARNING: CodeSystem/nmdp-transplant-timeline-cs: CodeSystem: The ShareableCodeSy
 INFORMATION: Condition/MSDiagnosisExample-AML: Condition.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Condition-MSDiagnosisExample-OND.json ==
 INFORMATION: Condition/MSDiagnosisExample-OND: Condition.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
-== fsh-generated/resources/ImplementationGuide-matchsource.json ==
+== fsh-generated/resources/ImplementationGuide-matchsync.json ==
 == fsh-generated/resources/Observation-HLA-A-Example.json ==
 INFORMATION: Observation/HLA-A-Example: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 INFORMATION: Observation/HLA-A-Example: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
@@ -314,15 +314,15 @@ INFORMATION: Observation/HLA-DRB5-Example: Observation.value.ofType(CodeableConc
 INFORMATION: Observation/HLA-Multilocus-Genotype-Example: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 INFORMATION: Observation/HLA-Multilocus-Genotype-Example: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://glstring.org' is unknown so the code cannot be validated
 WARNING: Observation/HLA-Multilocus-Genotype-Example: Observation.component[3].value.ofType(CodeableConcept): Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 2 choices from 'HLA-DRB1, HLA-DRB1', not 'HLA-DRB3'
-WARNING: Observation/HLA-Multilocus-Genotype-Example: Observation.component[3].value.ofType(CodeableConcept).coding[0]: Display Name for http://www.genenames.org/geneId#HGNC:4948 should be one of 1 choices from 'HLA-DRB1', not 'HLA-DRB3' for 'http://www.genenames.org/geneId#HGNC:4948'
+WARNING: Observation/HLA-Multilocus-Genotype-Example: Observation.component[3].value.ofType(CodeableConcept).coding[0]: Display Name for http://www.genenames.org/geneId#HGNC:4948 should be 'HLA-DRB1', not 'HLA-DRB3' for 'http://www.genenames.org/geneId#HGNC:4948'
 == fsh-generated/resources/Observation-MSABOObsExample.json ==
 INFORMATION: Observation/MSABOObsExample: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-MSHeightObsExample.json ==
 INFORMATION: Observation/MSHeightObsExample: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-MSPreferredProductExample.json ==
 INFORMATION: Observation/MSPreferredProductExample: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
-WARNING: Observation/MSPreferredProductExample: Observation.value.ofType(CodeableConcept): Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'
-WARNING: Observation/MSPreferredProductExample: Observation.value.ofType(CodeableConcept).coding[0]: Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be one of 1 choices from 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'
+WARNING: Observation/MSPreferredProductExample: Observation.value.ofType(CodeableConcept): Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)'
+WARNING: Observation/MSPreferredProductExample: Observation.value.ofType(CodeableConcept).coding[0]: Display Name for http://terminology.nmdp.org/codesystem/preferredproduct#PBSC should be 'HPC, Apheresis', not 'Peripheral Blood Stem Cell (Aphaeresis)' for 'http://terminology.nmdp.org/codesystem/preferredproduct#PBSC'
 == fsh-generated/resources/Observation-MSRhObsExample.json ==
 INFORMATION: Observation/MSRhObsExample: Observation.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-MSTransplantTimelineExample.json ==
@@ -344,29 +344,29 @@ INFORMATION: Practitioner/CoordinatorExample: Practitioner.meta.security[0]: Cod
 == fsh-generated/resources/Specimen-MSSpecimenExample.json ==
 INFORMATION: Specimen/MSSpecimenExample: Specimen.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-hla-a.json ==
-INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-b.json ==
-INFORMATION: StructureDefinition/hla-b: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+INFORMATION: StructureDefinition/hla-b: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-c.json ==
-INFORMATION: StructureDefinition/hla-c: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+INFORMATION: StructureDefinition/hla-c: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-dpa1.json ==
-INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-dpb1.json ==
-INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-dqa1.json ==
-INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-dqb1.json ==
-INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-drb1.json ==
-INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-drb3.json ==
-INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-drb4.json ==
-INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-drb5.json ==
-INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-genotype.json ==
-INFORMATION: StructureDefinition/hla-genotype: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+INFORMATION: StructureDefinition/hla-genotype: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-ms-abogroup-observation.json ==
 == fsh-generated/resources/StructureDefinition-ms-bundle.json ==
 == fsh-generated/resources/StructureDefinition-ms-bundle-hla-multilocus.json ==

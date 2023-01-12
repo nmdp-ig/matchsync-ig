@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/CodeSystem/glstring-codesystem> a fhir:CodeSystem;
+<http://fhir.nmdp.org/ig/matchsync/CodeSystem/glstring-codesystem> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "glstring-codesystem"];
+  fhir:Resource.id [ fhir:value "glstring-codesystem"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://www.glstring.org</code> defines many codes, but they are not represented here</p></div>"
-  ];
-  fhir:CodeSystem.url [ fhir:value "http://www.glstring.org"];
-  fhir:CodeSystem.version [ fhir:value "0.1.0"];
-  fhir:CodeSystem.name [ fhir:value "GLStringCS"];
-  fhir:CodeSystem.title [ fhir:value "Genotype List String Code CodeSystem"];
-  fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-12-01T09:35:21-06:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "NMDP"];
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "http://www.glstring.org"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "GLStringCS"]; # 
+  fhir:CodeSystem.title [ fhir:value "Genotype List String Code CodeSystem"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-01-12T09:36:27-06:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "NMDP"]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "NMDP" ];
@@ -27,15 +27,15 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
      ]
-  ];
-  fhir:CodeSystem.description [ fhir:value "Genotype List String Codesystem used for HLA reporting"];
-  fhir:CodeSystem.copyright [ fhir:value "National Marrow Donor Program"];
-  fhir:CodeSystem.compositional [ fhir:value "true"^^xsd:boolean];
-  fhir:CodeSystem.content [ fhir:value "not-present"] .
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Genotype List String Codesystem used for HLA reporting"]; # 
+  fhir:CodeSystem.copyright [ fhir:value "National Marrow Donor Program"]; # 
+  fhir:CodeSystem.compositional [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "not-present"] . # 
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/CodeSystem/glstring-codesystem.ttl> a owl:Ontology;
+<http://fhir.nmdp.org/ig/matchsync/CodeSystem/glstring-codesystem.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

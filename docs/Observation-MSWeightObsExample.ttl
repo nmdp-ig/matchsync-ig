@@ -6,26 +6,26 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/Observation/MSWeightObsExample> a fhir:Observation;
+<http://fhir.nmdp.org/ig/matchsync/Observation/MSWeightObsExample> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "MSWeightObsExample"];
+  fhir:Resource.id [ fhir:value "MSWeightObsExample"]; # 
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-weight-observation";
+       fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-weight-observation";
        fhir:index 0;
-       fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-weight-observation>
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-weight-observation>
      ];
      fhir:Meta.security [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ];
        fhir:Coding.code [ fhir:value "tc_123" ]
      ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MSWeightObsExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"MSWeightObsExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ms-weight-observation.html\">MSWeightObservation</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Patient/MSPatientExample</a> \" EVERYPERSON\"</p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: 70 kilogram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg = 'kg')</span></p></div>"
-  ];
-  fhir:Observation.status [ fhir:value "final"];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MSWeightObsExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MSWeightObsExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ms-weight-observation.html\">MSWeightObservation</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Patient/MSPatientExample</a> &quot; EVERYPERSON&quot;</p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: 70 kilogram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg = 'kg')</span></p></div>"
+  ]; # 
+  fhir:Observation.status [ fhir:value "final"]; # 
   fhir:Observation.category [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -33,7 +33,7 @@
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
        fhir:Coding.code [ fhir:value "vital-signs" ]
      ]
-  ];
+  ]; # 
   fhir:Observation.code [
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -41,22 +41,22 @@
        fhir:Coding.system [ fhir:value "http://loinc.org" ];
        fhir:Coding.code [ fhir:value "29463-7" ]
      ]
-  ];
+  ]; # 
   fhir:Observation.subject [
-     fhir:link <http://fhir.nmdp.org/ig/matchsource/Patient/MSPatientExample>;
+     fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample>;
      fhir:Reference.reference [ fhir:value "Patient/MSPatientExample" ]
-  ];
-  fhir:Observation.effectiveDateTime [ fhir:value "2022-05-01"^^xsd:date];
+  ]; # 
+  fhir:Observation.effectiveDateTime [ fhir:value "2022-05-01"^^xsd:date]; # 
   fhir:Observation.valueQuantity [
      fhir:Quantity.value [ fhir:value "70"^^xsd:decimal ];
      fhir:Quantity.unit [ fhir:value "kilogram" ];
      fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
      fhir:Quantity.code [ fhir:value "kg" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/Observation/MSWeightObsExample.ttl> a owl:Ontology;
+<http://fhir.nmdp.org/ig/matchsync/Observation/MSWeightObsExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

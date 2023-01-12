@@ -3,11 +3,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ms-bundle-hla-multilocus"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ms-bundle-hla-multilocus-definitions.html#Bundle">Bundle</a><a name="Bundle"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ms-bundle.html">MSBundle</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Contains a collection of resources</span></td></tr>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ms-bundle-hla-multilocus-definitions.html#Bundle">Bundle</a><a name="Bundle"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ms-bundle.html">MSBundle</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Contains a collection of resources</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ms-bundle-hla-multilocus-definitions.html#Bundle.entry">entry</a><a name="Bundle.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4..<span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Entry in the bundle - will have a resource or information</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck05.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-ms-bundle-hla-multilocus-definitions.html#Bundle.entry:hla-multi" title="Slice hla-multi: HLA multilocus genotype in GL String format">entry:hla-multi</a><a name="Bundle.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">HLA multilocus genotype</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck040.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ms-bundle-hla-multilocus-definitions.html#Bundle.entry:hla-multi.resource">resource</a><a name="Bundle.entry.resource"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-hla-genotype.html" title="Observation">HLAGenotype</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Genotype</span></td></tr>
-<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
     <valueString value="Foundation.Other"/>
@@ -15,12 +15,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="not-classified"/>
   </extension>
-  <url value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-multilocus"/>
+  <url value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-multilocus"/>
   <version value="0.1.0"/>
   <name value="MSBundle_HLA_Multilocus"/>
-  <title value="MatchSource Bundle with single multilocus HLA"/>
+  <title value="MatchSync Bundle with single multilocus HLA"/>
   <status value="active"/>
-  <date value="2022-12-01T09:35:21-06:00"/>
+  <date value="2023-01-12T09:36:27-06:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -29,7 +29,7 @@
       <value value="http://bethematch.org"/>
     </telecom>
   </contact>
-  <description value="Collection Bundle for MatchSource with single HLA multilocus Observation"/>
+  <description value="Collection Bundle for MatchSync with single HLA multilocus Observation"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="v2"/>
@@ -54,7 +54,7 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Bundle"/>
-  <baseDefinition value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle"/>
+  <baseDefinition value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle"/>
   <derivation value="constraint"/>
   <snapshot>
     <element id="Bundle">
@@ -2124,8 +2124,8 @@
     <element id="Bundle.entry:msPatient">
       <path value="Bundle.entry"/>
       <sliceName value="msPatient"/>
-      <short value="MatchSource Patient"/>
-      <definition value="The MatchSource Patient whose data is included in the bundle (required element)."/>
+      <short value="MatchSync Patient"/>
+      <definition value="The MatchSync Patient whose data is included in the bundle (required element)."/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -2336,7 +2336,7 @@
       </base>
       <type>
         <code value="Patient"/>
-        <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"/>
+        <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -3148,8 +3148,8 @@
     <element id="Bundle.entry:msDiagnosis">
       <path value="Bundle.entry"/>
       <sliceName value="msDiagnosis"/>
-      <short value="Diagnois for MatchSource Patient"/>
-      <definition value="The Diagnosis for the MatchSource patient (required element)."/>
+      <short value="Diagnois for MatchSync Patient"/>
+      <definition value="The Diagnosis for the MatchSync patient (required element)."/>
       <min value="1"/>
       <max value="*"/>
       <base>
@@ -3359,7 +3359,7 @@
       </base>
       <type>
         <code value="Condition"/>
-        <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msdiagnosis"/>
+        <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis"/>
       </type>
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice">
@@ -4205,7 +4205,7 @@
       <path value="Bundle.entry"/>
       <sliceName value="msCoordinator"/>
       <short value="Search Coordinator for Patient needing transplant"/>
-      <definition value="The Search Coordinator for the MatchSource patient (required element)."/>
+      <definition value="The Search Coordinator for the MatchSync patient (required element)."/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -4415,7 +4415,7 @@
       </base>
       <type>
         <code value="Practitioner"/>
-        <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcentercoordinator"/>
+        <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcentercoordinator"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -5437,7 +5437,7 @@
       </base>
       <type>
         <code value="Organization"/>
-        <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcenter"/>
+        <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcenter"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -6257,7 +6257,7 @@
       <path value="Bundle.entry"/>
       <sliceName value="msObsRh"/>
       <short value="Rh status of the patient"/>
-      <definition value="The Rh status of the MatchSource patient"/>
+      <definition value="The Rh status of the MatchSync patient"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -6472,7 +6472,7 @@
       </base>
       <type>
         <code value="Observation"/>
-        <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-rhstatus-observation"/>
+        <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-rhstatus-observation"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -7304,7 +7304,7 @@
       <path value="Bundle.entry"/>
       <sliceName value="msObsABO"/>
       <short value="ABO blood group"/>
-      <definition value="The ABO blood group of the MatchSource patient"/>
+      <definition value="The ABO blood group of the MatchSync patient"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -7519,7 +7519,7 @@
       </base>
       <type>
         <code value="Observation"/>
-        <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-abogroup-observation"/>
+        <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-abogroup-observation"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -8566,7 +8566,7 @@
       </base>
       <type>
         <code value="Observation"/>
-        <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-transplant-timeline-observation"/>
+        <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-transplant-timeline-observation"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -9613,7 +9613,7 @@
       </base>
       <type>
         <code value="Observation"/>
-        <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-preferred-product-observation"/>
+        <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -10660,7 +10660,7 @@
       </base>
       <type>
         <code value="Observation"/>
-        <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-height-observation"/>
+        <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -11715,7 +11715,7 @@
       </base>
       <type>
         <code value="Observation"/>
-        <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-weight-observation"/>
+        <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-weight-observation"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -12765,7 +12765,7 @@
       </base>
       <type>
         <code value="Specimen"/>
-        <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen"/>
+        <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msspecimen"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -13784,7 +13784,7 @@
       </base>
       <type>
         <code value="Observation"/>
-        <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-genotype"/>
+        <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-genotype"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -14665,7 +14665,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Observation"/>
-        <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-genotype"/>
+        <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-genotype"/>
       </type>
     </element>
   </differential>

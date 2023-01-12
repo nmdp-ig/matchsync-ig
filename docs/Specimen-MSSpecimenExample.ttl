@@ -5,38 +5,38 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/Specimen/MSSpecimenExample> a fhir:Specimen;
+<http://fhir.nmdp.org/ig/matchsync/Specimen/MSSpecimenExample> a fhir:Specimen;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "MSSpecimenExample"];
+  fhir:Resource.id [ fhir:value "MSSpecimenExample"]; # 
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen";
+       fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msspecimen";
        fhir:index 0;
-       fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen>
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msspecimen>
      ];
      fhir:Meta.security [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ];
        fhir:Coding.code [ fhir:value "tc_123" ]
      ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"MSSpecimenExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen \"MSSpecimenExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-msspecimen.html\">MSSpecimen</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>identifier</b>: id: 000</p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Patient/MSPatientExample</a> \" EVERYPERSON\"</p></div>"
-  ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"MSSpecimenExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen &quot;MSSpecimenExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-msspecimen.html\">MSSpecimen</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>identifier</b>: id: 000</p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Patient/MSPatientExample</a> &quot; EVERYPERSON&quot;</p></div>"
+  ]; # 
   fhir:Specimen.identifier [
      fhir:index 0;
      fhir:Identifier.system [ fhir:value "http://terminology.nmdp.org/identifier/transplantcenter" ];
      fhir:Identifier.value [ fhir:value "000" ]
-  ];
+  ]; # 
   fhir:Specimen.subject [
-     fhir:link <http://fhir.nmdp.org/ig/matchsource/Patient/MSPatientExample>;
+     fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample>;
      fhir:Reference.reference [ fhir:value "Patient/MSPatientExample" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/Specimen/MSSpecimenExample.ttl> a owl:Ontology;
+<http://fhir.nmdp.org/ig/matchsync/Specimen/MSSpecimenExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

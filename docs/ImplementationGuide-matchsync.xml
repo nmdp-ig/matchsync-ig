@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="matchsource"/>
+  <id value="matchsync"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MatchSourceIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsource/ImplementationGuide/matchsource</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MatchSyncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/matchsync</pre></div>
   </text>
-  <url value="http://fhir.nmdp.org/ig/matchsource/ImplementationGuide/matchsource"/>
+  <url value="http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/matchsync"/>
   <version value="0.1.0"/>
-  <name value="MatchSourceIG"/>
+  <name value="MatchSyncIG"/>
   <status value="draft"/>
-  <date value="2022-12-01T09:35:21-06:00"/>
+  <date value="2023-01-12T09:36:27-06:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -18,10 +18,13 @@
       <value value="http://bethematch.org"/>
     </telecom>
   </contact>
-  <packageId value="matchsource"/>
+  <packageId value="matchsync"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
     <version value="5.0.0"/>
@@ -223,7 +226,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://fhir.nmdp.org/ig/matchsource/history.html"/>
+        <valueString value="http://fhir.nmdp.org/ig/matchsync/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -519,7 +522,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://fhir.nmdp.org/ig/matchsource/history.html"/>
+        <valueString value="http://fhir.nmdp.org/ig/matchsync/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -784,8 +787,8 @@
       <reference>
         <reference value="StructureDefinition/ms-bundle"/>
       </reference>
-      <name value="MatchSource Bundle"/>
-      <description value="Collection Bundle for MatchSource"/>
+      <name value="MatchSync Bundle"/>
+      <description value="Collection Bundle for MatchSync"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -795,8 +798,8 @@
       <reference>
         <reference value="StructureDefinition/ms-bundle-hla-multilocus"/>
       </reference>
-      <name value="MatchSource Bundle with single multilocus HLA"/>
-      <description value="Collection Bundle for MatchSource with single HLA multilocus Observation"/>
+      <name value="MatchSync Bundle with single multilocus HLA"/>
+      <description value="Collection Bundle for MatchSync with single HLA multilocus Observation"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -806,8 +809,8 @@
       <reference>
         <reference value="StructureDefinition/ms-bundle-hla-separate"/>
       </reference>
-      <name value="MatchSource Bundle with Separate HLA"/>
-      <description value="Collection Bundle for MatchSource with separate HLA Observations for each locus"/>
+      <name value="MatchSync Bundle with Separate HLA"/>
+      <description value="Collection Bundle for MatchSync with separate HLA Observations for each locus"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -960,8 +963,8 @@
       <reference>
         <reference value="ValueSet/ms-abo-group-codes"/>
       </reference>
-      <name value="MatchSource ABO Group Value Set"/>
-      <description value="MatchSource ABO group codes. Combines LOINC, Snomed, and NMDP codes"/>
+      <name value="MatchSync ABO Group Value Set"/>
+      <description value="MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -971,8 +974,8 @@
       <reference>
         <reference value="ValueSet/ms-rh-codes"/>
       </reference>
-      <name value="Matchsource Rh Value Sets"/>
-      <description value="MatchSource codes for blood Rh. Combines NMDP and LOINC code"/>
+      <name value="MatchSync Rh Value Sets"/>
+      <description value="MatchSync codes for blood Rh. Combines NMDP and LOINC code"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1181,7 +1184,7 @@
         <reference value="CodeSystem/nmdp-preferred-product-cs"/>
       </reference>
       <name value="NMDP Preferred Product for Transplant"/>
-      <description value="NMDP Preferred Product for MatchSource patient"/>
+      <description value="NMDP Preferred Product for MatchSync patient"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1224,9 +1227,9 @@
       <reference>
         <reference value="Bundle/BundleExample-Full-HLA-Separate"/>
       </reference>
-      <name value="Matchsource Bundle Example - Full with HLA in separate observations for each locus"/>
-      <description value="Full Bundle Example for MatchSource, with each HLA allele in a separate genotype observation"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-separate"/>
+      <name value="MatchSync Bundle Example - Full with HLA in separate observations for each locus"/>
+      <description value="Full Bundle Example for MatchSync, with each HLA allele in a separate genotype observation"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-separate"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1235,9 +1238,9 @@
       <reference>
         <reference value="Bundle/BundleExample-Full-Multilocus-HLA"/>
       </reference>
-      <name value="Matchsource Bundle Example - Full, HLA with multilocus genotype"/>
-      <description value="Full Bundle Example for MatchSource with multilocus HLA genotype"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-multilocus"/>
+      <name value="MatchSync Bundle Example - Full, HLA with multilocus genotype"/>
+      <description value="Full Bundle Example for MatchSync with multilocus HLA genotype"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-multilocus"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1246,9 +1249,9 @@
       <reference>
         <reference value="Bundle/BundleExample-Minimal"/>
       </reference>
-      <name value="Matchsource Bundle Example - Mimimal"/>
-      <description value="Minimual Bundle Example for MatchSource"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle"/>
+      <name value="MatchSync Bundle Example - Mimimal"/>
+      <description value="Minimual Bundle Example for MatchSync"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1259,7 +1262,7 @@
       </reference>
       <name value="CoordinatorExample"/>
       <description value="Example of a Transplant Center Coordinator."/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcentercoordinator"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcentercoordinator"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1270,7 +1273,7 @@
       </reference>
       <name value="HLA-A-Example"/>
       <description value="Example of HLA-A"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-a"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-a"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1281,7 +1284,7 @@
       </reference>
       <name value="HLA-B-Example"/>
       <description value="Example of HLA-B"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-b"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-b"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1292,7 +1295,7 @@
       </reference>
       <name value="HLA-C-Example"/>
       <description value="Example of HLA-C"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-c"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-c"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1303,7 +1306,7 @@
       </reference>
       <name value="HLA-DPA1-Example"/>
       <description value="Example of HLA-DPA1"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpa1"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dpa1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1314,7 +1317,7 @@
       </reference>
       <name value="HLA-DPB1-Example"/>
       <description value="Example of HLA-DPB1"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dpb1"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dpb1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1325,7 +1328,7 @@
       </reference>
       <name value="HLA-DQA1-Example"/>
       <description value="Example of HLA-DQA1"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqa1"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dqa1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1336,7 +1339,7 @@
       </reference>
       <name value="HLA-DQB1-Example"/>
       <description value="Example of HLA-DQB1"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-dqb1"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dqb1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1347,7 +1350,7 @@
       </reference>
       <name value="HLA-DRB1-Example"/>
       <description value="Example of HLA-DRB1"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb1"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1358,7 +1361,7 @@
       </reference>
       <name value="HLA-DRB3-Example"/>
       <description value="Example of HLA-DRB3"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb3"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb3"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1369,7 +1372,7 @@
       </reference>
       <name value="HLA-DRB4-Example"/>
       <description value="Example of HLA-DRB4"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb4"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb4"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1380,7 +1383,7 @@
       </reference>
       <name value="HLA-DRB5-Example"/>
       <description value="Example of HLA-DRB5"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-drb5"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb5"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1391,7 +1394,7 @@
       </reference>
       <name value="HLA-Multilocus-Genotype-Example"/>
       <description value="Multilocus Genotype of HLA-A, HLA-B, HLA-DRB1, and HLA-DRB3"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-genotype"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-genotype"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1402,7 +1405,7 @@
       </reference>
       <name value="MSABOObsExample"/>
       <description value="Example of patient ABO"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-abogroup-observation"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-abogroup-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1413,7 +1416,7 @@
       </reference>
       <name value="MSDiagnosisExample-AML"/>
       <description value="Example of a Diagnois: AML"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msdiagnosis"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1424,7 +1427,7 @@
       </reference>
       <name value="MSDiagnosisExample-OND"/>
       <description value="Example of a Diagnois"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msdiagnosis"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1435,7 +1438,7 @@
       </reference>
       <name value="MSHeightObsExample"/>
       <description value="Example of patient height"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-height-observation"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1446,7 +1449,7 @@
       </reference>
       <name value="MSPatientExample"/>
       <description value="Example of a patient needing a donor using us-core-race and us-core-ethnicity codes."/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1457,7 +1460,7 @@
       </reference>
       <name value="MSPatientExample2"/>
       <description value="Example of a patient needing a donor using NMDP race code."/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1468,7 +1471,7 @@
       </reference>
       <name value="MSPatientExample3"/>
       <description value="Example of a patient without a race code"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1479,7 +1482,7 @@
       </reference>
       <name value="MSPatientExample4"/>
       <description value="Example of a patient needing a donor using us-core-race code but not us-core-ethnicity"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1490,7 +1493,7 @@
       </reference>
       <name value="MSPreferredProductExample"/>
       <description value="Example of preferred product"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-preferred-product-observation"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1501,7 +1504,7 @@
       </reference>
       <name value="MSRhObsExample"/>
       <description value="Example of patient Rh status"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-rhstatus-observation"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-rhstatus-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1512,7 +1515,7 @@
       </reference>
       <name value="MSSpecimenExample"/>
       <description value="Example patient specimen."/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msspecimen"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1523,7 +1526,7 @@
       </reference>
       <name value="MSTransplantTimelineExample"/>
       <description value="Example of transplant timeline"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-transplant-timeline-observation"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-transplant-timeline-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1534,7 +1537,7 @@
       </reference>
       <name value="MSWeightObsExample"/>
       <description value="Example of patient weight"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-weight-observation"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-weight-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1545,7 +1548,7 @@
       </reference>
       <name value="TCExample"/>
       <description value="Example of a Transplant Center."/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcenter"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcenter"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

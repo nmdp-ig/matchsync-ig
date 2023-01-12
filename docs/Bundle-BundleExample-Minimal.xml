@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="BundleExample-Minimal"/>
   <meta>
-    <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle"/>
+    <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle"/>
     <security>
       <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
       <code value="tc_123"/>
@@ -17,14 +17,14 @@
       <Patient>
         <id value="MSPatientExample"/>
         <meta>
-          <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"/>
+          <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"/>
           <security>
             <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
             <code value="tc_123"/>
           </security>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="MSPatientExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient "MSPatientExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mspatient.html">MSPatient</a></p><p style="margin-bottom: 0px">Security Labels: <span title="{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><blockquote><p><b>US Core Race Extension</b></p><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><p><b>value</b>: Not Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2186-5 = 'Not Hispanic or Latino', stated as 'Not Hispanic or Latino')</p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>identifier</b>: id: 123</p><p><b>name</b>: Jane Everyperson </p><p><b>telecom</b>: ph: 1-612-555-1234</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1974-12-25</p><p><b>address</b>: 123 Main St Minneapolis MN 55401 USA </p></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="MSPatientExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;MSPatientExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mspatient.html">MSPatient</a></p><p style="margin-bottom: 0px">Security Labels: <span title="{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><blockquote><p><b>US Core Race Extension</b></p><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><p><b>value</b>: Not Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2186-5 = 'Not Hispanic or Latino', stated as 'Not Hispanic or Latino')</p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>identifier</b>: id: 123</p><p><b>name</b>: Jane Everyperson </p><p><b>telecom</b>: ph: 1-612-555-1234</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1974-12-25</p><p><b>address</b>: 123 Main St Minneapolis MN 55401 USA </p></div>
         </text>
         <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
           <extension url="ombCategory">
@@ -80,14 +80,14 @@
       <Practitioner>
         <id value="CoordinatorExample"/>
         <meta>
-          <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcentercoordinator"/>
+          <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcentercoordinator"/>
           <security>
             <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
             <code value="tc_123"/>
           </security>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="CoordinatorExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner "CoordinatorExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-transplantcentercoordinator.html">TransplantCenterCoordinator</a></p><p style="margin-bottom: 0px">Security Labels: <span title="{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>name</b>: Bart Simpson </p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="CoordinatorExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;CoordinatorExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-transplantcentercoordinator.html">TransplantCenterCoordinator</a></p><p style="margin-bottom: 0px">Security Labels: <span title="{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>name</b>: Bart Simpson </p></div>
         </text>
         <name>
           <family value="Simpson"/>
@@ -102,16 +102,16 @@
       <Condition>
         <id value="MSDiagnosisExample-AML"/>
         <meta>
-          <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msdiagnosis"/>
+          <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis"/>
           <security>
             <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
             <code value="tc_123"/>
           </security>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="MSDiagnosisExample-AML"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition "MSDiagnosisExample-AML" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-msdiagnosis.html">MSPrimaryDiagnosis</a></p><p style="margin-bottom: 0px">Security Labels: <span title="{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>Number of Remissions of Primary Diagnosis</b>: 0</p><p><b>code</b>: ACUTE MYELOGENOUS LEUKEMIA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-nmdp-disease-cs.html">NMDP Disease Code System</a>#AML)</span></p><p><b>subject</b>: <a href="#Patient_MSPatientExample">See above (Patient/MSPatientExample)</a></p><p><b>recordedDate</b>: 2021-11-01</p><h3>Stages</h3><table class="grid"><tr><td>-</td><td><b>Summary</b></td></tr><tr><td>*</td><td>Accelerated Phase <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-nmdp-diseasestage-cs.html">NMDP Disease Stage Code System</a>#AP)</span></td></tr></table></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="MSDiagnosisExample-AML"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;MSDiagnosisExample-AML&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-msdiagnosis.html">MSPrimaryDiagnosis</a></p><p style="margin-bottom: 0px">Security Labels: <span title="{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>Number of Remissions of Primary Diagnosis</b>: 0</p><p><b>code</b>: ACUTE MYELOGENOUS LEUKEMIA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-nmdp-disease-cs.html">NMDP Disease Code System</a>#AML)</span></p><p><b>subject</b>: <a href="#Patient_MSPatientExample">See above (Patient/MSPatientExample)</a></p><p><b>recordedDate</b>: 2021-11-01</p><h3>Stages</h3><table class="grid"><tr><td>-</td><td><b>Summary</b></td></tr><tr><td>*</td><td>Accelerated Phase <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-nmdp-diseasestage-cs.html">NMDP Disease Stage Code System</a>#AP)</span></td></tr></table></div>
         </text>
-        <extension url="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/number-of-remissions">
+        <extension url="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/number-of-remissions">
           <valueInteger value="0"/>
         </extension>
         <code>

@@ -5,21 +5,21 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/CodeSystem/nmdp-rh-status-cs> a fhir:CodeSystem;
+<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-rh-status-cs> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "nmdp-rh-status-cs"];
+  fhir:Resource.id [ fhir:value "nmdp-rh-status-cs"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://terminology.nmdp.org/codesystem/rhstatus</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"nmdp-rh-status-cs-I\"> </a></td><td>Indeterminant</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"nmdp-rh-status-cs-P\"> </a></td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"nmdp-rh-status-cs-N\"> </a></td><td>Negative</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"nmdp-rh-status-cs-D\"> </a></td><td>Indeterminant</td></tr><tr><td style=\"white-space:nowrap\">nil<a name=\"nmdp-rh-status-cs-nil\"> </a></td><td>no data</td></tr></table></div>"
-  ];
-  fhir:CodeSystem.url [ fhir:value "http://terminology.nmdp.org/codesystem/rhstatus"];
-  fhir:CodeSystem.version [ fhir:value "0.1.0"];
-  fhir:CodeSystem.name [ fhir:value "NMDPRhStatusCS"];
-  fhir:CodeSystem.title [ fhir:value "NMDP Rh Code System"];
-  fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2022-12-01T09:35:21-06:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "NMDP"];
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "http://terminology.nmdp.org/codesystem/rhstatus"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "NMDPRhStatusCS"]; # 
+  fhir:CodeSystem.title [ fhir:value "NMDP Rh Code System"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-01-12T09:36:27-06:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "NMDP"]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "NMDP" ];
@@ -28,11 +28,11 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
      ]
-  ];
-  fhir:CodeSystem.description [ fhir:value "Code System for NMDP Rh Status"];
-  fhir:CodeSystem.copyright [ fhir:value "National Marrow Donor Program"];
-  fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Code System for NMDP Rh Status"]; # 
+  fhir:CodeSystem.copyright [ fhir:value "National Marrow Donor Program"]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger]; # 
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "I" ];
@@ -53,11 +53,11 @@
      fhir:index 4;
      fhir:CodeSystem.concept.code [ fhir:value "nil" ];
      fhir:CodeSystem.concept.display [ fhir:value "no data" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/CodeSystem/nmdp-rh-status-cs.ttl> a owl:Ontology;
+<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-rh-status-cs.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="440ed8a6-7a5c-4872-b025-64147d992874"/>
+  <id value="2713f8a7-07b6-49f3-b372-32e0ad626434"/>
   <meta>
-    <lastUpdated value="2022-12-01T09:35:21.721-06:00"/>
+    <lastUpdated value="2023-01-12T09:36:27.559-06:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsource/ValueSet/ms-rh-codes"/>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-rh-codes"/>
     <resource>
       <ValueSet>
         <id value="ms-rh-codes"/>
@@ -19,10 +19,10 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="ValueSet-nmdp-rh-status-codes.html">NMDP Codes for Rh status v0.1.0 (ValueSet)</a>
+                  <a href="ValueSet-loinc-posneg-codes.html">LOINC Pos|Neg Value Set v0.1.0 (ValueSet)</a>
                 </li>
                 <li>
-                  <a href="ValueSet-loinc-posneg-codes.html">LOINC Pos|Neg Value Set v0.1.0 (ValueSet)</a>
+                  <a href="ValueSet-nmdp-rh-status-codes.html">NMDP Codes for Rh status v0.1.0 (ValueSet)</a>
                 </li>
                 <li>Loinc v2.73</li>
                 <li>
@@ -85,7 +85,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---loinc.org-LA6576-8"> </a>  
-                  <a href="http://details.loinc.org/LOINC/LA6576-8.html">LA6576-8</a>
+                  <a href="https://loinc.org/LA6576-8/">LA6576-8</a>
                 </td>
                 <td>http://loinc.org</td>
                 <td>Positive</td>
@@ -93,7 +93,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---loinc.org-LA6577-6"> </a>  
-                  <a href="http://details.loinc.org/LOINC/LA6577-6.html">LA6577-6</a>
+                  <a href="https://loinc.org/LA6577-6/">LA6577-6</a>
                 </td>
                 <td>http://loinc.org</td>
                 <td>Negative</td>
@@ -101,12 +101,12 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/ms-rh-codes"/>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-rh-codes"/>
         <version value="0.1.0"/>
         <name value="MSRhVS"/>
-        <title value="Matchsource Rh Value Sets"/>
+        <title value="MatchSync Rh Value Sets"/>
         <status value="active"/>
-        <date value="2022-12-01T09:35:21-06:00"/>
+        <date value="2023-01-12T09:36:27-06:00"/>
         <publisher value="NMDP"/>
         <contact>
           <name value="NMDP"/>
@@ -115,10 +115,10 @@
             <value value="http://bethematch.org"/>
           </telecom>
         </contact>
-        <description value="MatchSource codes for blood Rh. Combines NMDP and LOINC code"/>
+        <description value="MatchSync codes for blood Rh. Combines NMDP and LOINC code"/>
         <expansion>
-          <identifier value="urn:uuid:04701d7b-2955-4db8-8a4f-3fde4d5ee774"/>
-          <timestamp value="2022-12-01T09:37:11-06:00"/>
+          <identifier value="urn:uuid:5f21cda8-6ded-41f6-8f08-870e5b9a3738"/>
+          <timestamp value="2023-01-12T09:38:41-06:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -126,7 +126,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-rh-status-codes|0.1.0"/>
+            <valueUri value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes|0.1.0"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -208,7 +208,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---loinc.org-LA6576-8"> </a>  
-                  <a href="http://details.loinc.org/LOINC/LA6576-8.html">LA6576-8</a>
+                  <a href="https://loinc.org/LA6576-8/">LA6576-8</a>
                 </td>
                 <td>http://loinc.org</td>
                 <td>Positive</td>
@@ -216,7 +216,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---loinc.org-LA6577-6"> </a>  
-                  <a href="http://details.loinc.org/LOINC/LA6577-6.html">LA6577-6</a>
+                  <a href="https://loinc.org/LA6577-6/">LA6577-6</a>
                 </td>
                 <td>http://loinc.org</td>
                 <td>Negative</td>
@@ -229,7 +229,7 @@
         <name value="PosNegVS"/>
         <title value="LOINC Pos|Neg Value Set"/>
         <status value="active"/>
-        <date value="2022-12-01T09:35:21-06:00"/>
+        <date value="2023-01-12T09:36:27-06:00"/>
         <publisher value="NMDP"/>
         <contact>
           <name value="NMDP"/>
@@ -241,8 +241,8 @@
         <description value="LOINC codes for Positive and Negative"/>
         <copyright value="This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."/>
         <expansion>
-          <identifier value="urn:uuid:ed1c3091-3acf-4fe2-8cfd-a595acb85cfc"/>
-          <timestamp value="2022-12-01T09:37:12-06:00"/>
+          <identifier value="urn:uuid:85e053b7-936a-4996-a3ec-58ffa7010ddb"/>
+          <timestamp value="2023-01-12T09:38:42-06:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -271,7 +271,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-language-codes"/>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes"/>
     <resource>
       <ValueSet>
         <id value="nmdp-language-codes"/>
@@ -409,12 +409,12 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-language-codes"/>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes"/>
         <version value="0.1.0"/>
         <name value="NMDPLanguageCodes"/>
         <title value="NMDP Language Value Set"/>
         <status value="active"/>
-        <date value="2022-12-01T09:35:21-06:00"/>
+        <date value="2023-01-12T09:36:27-06:00"/>
         <publisher value="NMDP"/>
         <contact>
           <name value="NMDP"/>
@@ -425,8 +425,8 @@
         </contact>
         <description value="NMDP language codes"/>
         <expansion>
-          <identifier value="urn:uuid:48f91008-c017-4f6b-b117-f22d6a83b73a"/>
-          <timestamp value="2022-12-01T09:37:12-06:00"/>
+          <identifier value="urn:uuid:ecd1bb97-bcca-44cf-9ab9-ef37093a1387"/>
+          <timestamp value="2023-01-12T09:38:42-06:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -511,7 +511,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-race-codes"/>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-race-codes"/>
     <resource>
       <ValueSet>
         <id value="nmdp-race-codes"/>
@@ -937,12 +937,12 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-race-codes"/>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-race-codes"/>
         <version value="0.1.0"/>
         <name value="NMDPRaceVS"/>
         <title value="NMDP Race Value Set"/>
         <status value="active"/>
-        <date value="2022-12-01T09:35:21-06:00"/>
+        <date value="2023-01-12T09:36:27-06:00"/>
         <publisher value="NMDP"/>
         <contact>
           <name value="NMDP"/>
@@ -953,8 +953,8 @@
         </contact>
         <description value="NMDP race codes"/>
         <expansion>
-          <identifier value="urn:uuid:fe702be0-47de-45cd-b125-5a039cfae99d"/>
-          <timestamp value="2022-12-01T09:37:12-06:00"/>
+          <identifier value="urn:uuid:d9124fe5-d26f-4e5b-b812-6d82cce8f76f"/>
+          <timestamp value="2023-01-12T09:38:42-06:00"/>
           <total value="50"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1219,7 +1219,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-ethnicity-codes"/>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-ethnicity-codes"/>
     <resource>
       <ValueSet>
         <id value="nmdp-ethnicity-codes"/>
@@ -1269,12 +1269,12 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-ethnicity-codes"/>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-ethnicity-codes"/>
         <version value="0.1.0"/>
         <name value="NMDPEthnicityVS"/>
         <title value="NMDP Ethnicity Value Set"/>
         <status value="active"/>
-        <date value="2022-12-01T09:35:21-06:00"/>
+        <date value="2023-01-12T09:36:27-06:00"/>
         <publisher value="NMDP"/>
         <contact>
           <name value="NMDP"/>
@@ -1285,8 +1285,8 @@
         </contact>
         <description value="NMDP ethnicity codes"/>
         <expansion>
-          <identifier value="urn:uuid:b24957ba-879f-4f45-83c5-e967ebf866b7"/>
-          <timestamp value="2022-12-01T09:37:13-06:00"/>
+          <identifier value="urn:uuid:972ef2a2-af7f-4a2c-8a9f-8f2d704f8329"/>
+          <timestamp value="2023-01-12T09:38:42-06:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1316,7 +1316,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsource/ValueSet/ms-abo-group-codes"/>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-group-codes"/>
     <resource>
       <ValueSet>
         <id value="ms-abo-group-codes"/>
@@ -1331,16 +1331,16 @@
                   <a href="CodeSystem-nmdp-abo-group-cs.html">NMDP Blood Group Code System v0.1.0 (CodeSystem)</a>
                 </li>
                 <li>
+                  <a href="ValueSet-sct-abo-group-codes.html">Snomed CT ABO group Value Set v0.1.0 (ValueSet)</a>
+                </li>
+                <li>
                   <a href="ValueSet-loinc-abo-codes.html">LOINC ABO group Value Set v0.1.0 (ValueSet)</a>
                 </li>
+                <li>Loinc v2.73</li>
                 <li>
                   <a href="ValueSet-nmdp-abo-codes.html">NMDP Blood Group Value Set v0.1.0 (ValueSet)</a>
                 </li>
-                <li>Loinc v2.73</li>
                 <li>SNOMED CT International edition 31-Jul 2022</li>
-                <li>
-                  <a href="ValueSet-sct-abo-group-codes.html">Snomed CT ABO group Value Set v0.1.0 (ValueSet)</a>
-                </li>
               </ul>
             </div>
             <table class="codes">
@@ -1398,7 +1398,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---loinc.org-LA19710-5"> </a>  
-                  <a href="http://details.loinc.org/LOINC/LA19710-5.html">LA19710-5</a>
+                  <a href="https://loinc.org/LA19710-5/">LA19710-5</a>
                 </td>
                 <td>http://loinc.org</td>
                 <td>Group A</td>
@@ -1406,7 +1406,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---loinc.org-LA19709-7"> </a>  
-                  <a href="http://details.loinc.org/LOINC/LA19709-7.html">LA19709-7</a>
+                  <a href="https://loinc.org/LA19709-7/">LA19709-7</a>
                 </td>
                 <td>http://loinc.org</td>
                 <td>Group B</td>
@@ -1414,7 +1414,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---loinc.org-LA19708-9"> </a>  
-                  <a href="http://details.loinc.org/LOINC/LA19708-9.html">LA19708-9</a>
+                  <a href="https://loinc.org/LA19708-9/">LA19708-9</a>
                 </td>
                 <td>http://loinc.org</td>
                 <td>Group O</td>
@@ -1422,7 +1422,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---loinc.org-LA28449-9"> </a>  
-                  <a href="http://details.loinc.org/LOINC/LA28449-9.html">LA28449-9</a>
+                  <a href="https://loinc.org/LA28449-9/">LA28449-9</a>
                 </td>
                 <td>http://loinc.org</td>
                 <td>Group AB</td>
@@ -1462,12 +1462,12 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/ms-abo-group-codes"/>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-group-codes"/>
         <version value="0.1.0"/>
         <name value="MSABOGroupVS"/>
-        <title value="MatchSource ABO Group Value Set"/>
+        <title value="MatchSync ABO Group Value Set"/>
         <status value="active"/>
-        <date value="2022-12-01T09:35:21-06:00"/>
+        <date value="2023-01-12T09:36:27-06:00"/>
         <publisher value="NMDP"/>
         <contact>
           <name value="NMDP"/>
@@ -1476,10 +1476,10 @@
             <value value="http://bethematch.org"/>
           </telecom>
         </contact>
-        <description value="MatchSource ABO group codes. Combines LOINC, Snomed, and NMDP codes"/>
+        <description value="MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes"/>
         <expansion>
-          <identifier value="urn:uuid:43fea334-6bdd-42b1-87b2-d35aecc55329"/>
-          <timestamp value="2022-12-01T09:37:13-06:00"/>
+          <identifier value="urn:uuid:33993388-1648-467c-b189-a172bc37d59f"/>
+          <timestamp value="2023-01-12T09:38:42-06:00"/>
           <total value="13"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1487,7 +1487,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-abo-codes|0.1.0"/>
+            <valueUri value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes|0.1.0"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -1507,7 +1507,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group-codes|0.1.0"/>
+            <valueUri value="http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes|0.1.0"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -1583,7 +1583,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-preferred-product-codes"/>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes"/>
     <resource>
       <ValueSet>
         <id value="nmdp-preferred-product-codes"/>
@@ -1649,12 +1649,12 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-preferred-product-codes"/>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes"/>
         <version value="0.1.0"/>
         <name value="NMDPPreferredProductVS"/>
         <title value="NMDP Preferred Product Value Set"/>
         <status value="active"/>
-        <date value="2022-12-01T09:35:21-06:00"/>
+        <date value="2023-01-12T09:36:27-06:00"/>
         <publisher value="NMDP"/>
         <contact>
           <name value="NMDP"/>
@@ -1665,8 +1665,8 @@
         </contact>
         <description value="NMDP preferred product codes"/>
         <expansion>
-          <identifier value="urn:uuid:d54dbc5d-1a69-430e-8a1c-7e36a4cbad04"/>
-          <timestamp value="2022-12-01T09:37:33-06:00"/>
+          <identifier value="urn:uuid:73363cd4-4b8e-454f-a106-22e2e8a03f8a"/>
+          <timestamp value="2023-01-12T09:39:10-06:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1706,7 +1706,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-disease-codes"/>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes"/>
     <resource>
       <ValueSet>
         <id value="nmdp-disease-codes"/>
@@ -2532,12 +2532,12 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-disease-codes"/>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes"/>
         <version value="0.1.0"/>
         <name value="NMDPDiseaseVS"/>
         <title value="NMDP Disease Value Set"/>
         <status value="active"/>
-        <date value="2022-12-01T09:35:21-06:00"/>
+        <date value="2023-01-12T09:36:27-06:00"/>
         <publisher value="NMDP"/>
         <contact>
           <name value="NMDP"/>
@@ -2548,8 +2548,8 @@
         </contact>
         <description value="NMDP disease codes"/>
         <expansion>
-          <identifier value="urn:uuid:852f10d2-b25a-460d-8a1b-311b28595f8e"/>
-          <timestamp value="2022-12-01T09:37:44-06:00"/>
+          <identifier value="urn:uuid:38b69c53-2110-4d15-8e9b-327565f0c640"/>
+          <timestamp value="2023-01-12T09:39:38-06:00"/>
           <total value="100"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3064,7 +3064,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-abo-codes"/>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes"/>
     <resource>
       <ValueSet>
         <id value="nmdp-abo-codes"/>
@@ -3130,12 +3130,12 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-abo-codes"/>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes"/>
         <version value="0.1.0"/>
         <name value="NMDPABOVS"/>
         <title value="NMDP Blood Group Value Set"/>
         <status value="active"/>
-        <date value="2022-12-01T09:35:21-06:00"/>
+        <date value="2023-01-12T09:36:27-06:00"/>
         <publisher value="NMDP"/>
         <contact>
           <name value="NMDP"/>
@@ -3146,8 +3146,8 @@
         </contact>
         <description value="NMDP blood group codes"/>
         <expansion>
-          <identifier value="urn:uuid:434e3692-4b9b-43b2-ae78-bf245bd82903"/>
-          <timestamp value="2022-12-01T09:37:51-06:00"/>
+          <identifier value="urn:uuid:89dd0110-b56a-4e58-943c-609e1d788cff"/>
+          <timestamp value="2023-01-12T09:39:50-06:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3187,7 +3187,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-transplant-timeline-codes"/>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes"/>
     <resource>
       <ValueSet>
         <id value="nmdp-transplant-timeline-codes"/>
@@ -3269,12 +3269,12 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-transplant-timeline-codes"/>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes"/>
         <version value="0.1.0"/>
         <name value="NMDPTransplantTimelineVS"/>
         <title value="NMDP Transplant Timeline Value Set"/>
         <status value="active"/>
-        <date value="2022-12-01T09:35:21-06:00"/>
+        <date value="2023-01-12T09:36:27-06:00"/>
         <publisher value="NMDP"/>
         <contact>
           <name value="NMDP"/>
@@ -3285,8 +3285,8 @@
         </contact>
         <description value="NMDP transplant timeline codes"/>
         <expansion>
-          <identifier value="urn:uuid:e6456900-04d3-459a-b8eb-39a90c76fd30"/>
-          <timestamp value="2022-12-01T09:37:51-06:00"/>
+          <identifier value="urn:uuid:042f2a1f-ad45-43d1-8603-4bed4a533a94"/>
+          <timestamp value="2023-01-12T09:39:50-06:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3336,7 +3336,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group-codes"/>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes"/>
     <resource>
       <ValueSet>
         <id value="sct-abo-group-codes"/>
@@ -3392,12 +3392,12 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group-codes"/>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes"/>
         <version value="0.1.0"/>
         <name value="SCTABOGroupVS"/>
         <title value="Snomed CT ABO group Value Set"/>
         <status value="active"/>
-        <date value="2022-12-01T09:35:21-06:00"/>
+        <date value="2023-01-12T09:36:27-06:00"/>
         <publisher value="NMDP"/>
         <contact>
           <name value="NMDP"/>
@@ -3408,8 +3408,8 @@
         </contact>
         <description value="Snomed CT codes for ABO blood group"/>
         <expansion>
-          <identifier value="urn:uuid:a7fb0653-33be-4c3c-ad68-3e1f0ddb75c1"/>
-          <timestamp value="2022-12-01T09:37:52-06:00"/>
+          <identifier value="urn:uuid:790c0b67-c8f5-4ff6-9ca0-c6280f420610"/>
+          <timestamp value="2023-01-12T09:39:50-06:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3472,7 +3472,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---loinc.org-LA19710-5"> </a>  
-                  <a href="http://details.loinc.org/LOINC/LA19710-5.html">LA19710-5</a>
+                  <a href="https://loinc.org/LA19710-5/">LA19710-5</a>
                 </td>
                 <td>http://loinc.org</td>
                 <td>Group A</td>
@@ -3480,7 +3480,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---loinc.org-LA19709-7"> </a>  
-                  <a href="http://details.loinc.org/LOINC/LA19709-7.html">LA19709-7</a>
+                  <a href="https://loinc.org/LA19709-7/">LA19709-7</a>
                 </td>
                 <td>http://loinc.org</td>
                 <td>Group B</td>
@@ -3488,7 +3488,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---loinc.org-LA19708-9"> </a>  
-                  <a href="http://details.loinc.org/LOINC/LA19708-9.html">LA19708-9</a>
+                  <a href="https://loinc.org/LA19708-9/">LA19708-9</a>
                 </td>
                 <td>http://loinc.org</td>
                 <td>Group O</td>
@@ -3496,7 +3496,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---loinc.org-LA28449-9"> </a>  
-                  <a href="http://details.loinc.org/LOINC/LA28449-9.html">LA28449-9</a>
+                  <a href="https://loinc.org/LA28449-9/">LA28449-9</a>
                 </td>
                 <td>http://loinc.org</td>
                 <td>Group AB</td>
@@ -3509,7 +3509,7 @@
         <name value="LNCABOGroupVS"/>
         <title value="LOINC ABO group Value Set"/>
         <status value="active"/>
-        <date value="2022-12-01T09:35:21-06:00"/>
+        <date value="2023-01-12T09:36:27-06:00"/>
         <publisher value="NMDP"/>
         <contact>
           <name value="NMDP"/>
@@ -3521,8 +3521,8 @@
         <description value="LOINC codes for ABO blood group"/>
         <copyright value="This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."/>
         <expansion>
-          <identifier value="urn:uuid:eec387e2-ab3f-42a6-97e6-2442aef73fd5"/>
-          <timestamp value="2022-12-01T09:38:03-06:00"/>
+          <identifier value="urn:uuid:8b846671-8adc-48ac-bd43-01cc7128bf33"/>
+          <timestamp value="2023-01-12T09:40:29-06:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3561,7 +3561,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-diseasestage-codes"/>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes"/>
     <resource>
       <ValueSet>
         <id value="nmdp-diseasestage-codes"/>
@@ -3651,12 +3651,12 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-diseasestage-codes"/>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes"/>
         <version value="0.1.0"/>
         <name value="NMDPDiseasStageVS"/>
         <title value="NMDP Disease Stage Value Set"/>
         <status value="active"/>
-        <date value="2022-12-01T09:35:21-06:00"/>
+        <date value="2023-01-12T09:36:27-06:00"/>
         <publisher value="NMDP"/>
         <contact>
           <name value="NMDP"/>
@@ -3667,8 +3667,8 @@
         </contact>
         <description value="NMDP disease stage codes"/>
         <expansion>
-          <identifier value="urn:uuid:a86f2856-884f-4fc3-bb1e-de4c31909efd"/>
-          <timestamp value="2022-12-01T09:38:06-06:00"/>
+          <identifier value="urn:uuid:0031a78f-e49d-4f6a-a1ca-e91bece17350"/>
+          <timestamp value="2023-01-12T09:40:39-06:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3723,7 +3723,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsource/ValueSet/hla-geneid-valueset"/>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset"/>
     <resource>
       <ValueSet>
         <id value="hla-geneid-valueset"/>
@@ -4368,12 +4368,12 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/hla-geneid-valueset"/>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset"/>
         <version value="0.1.0"/>
         <name value="HLAGeneIdVS"/>
         <title value="HLA Gene Name Value Set"/>
         <status value="active"/>
-        <date value="2022-12-01T09:35:21-06:00"/>
+        <date value="2023-01-12T09:36:27-06:00"/>
         <publisher value="NMDP"/>
         <contact>
           <name value="NMDP"/>
@@ -4384,8 +4384,8 @@
         </contact>
         <description value="HLA HGNC GeneIds Valueset"/>
         <expansion>
-          <identifier value="urn:uuid:7c1db295-7215-4f6d-9ea6-1333da061373"/>
-          <timestamp value="2022-12-01T09:38:21-06:00"/>
+          <identifier value="urn:uuid:a60a83b0-68ec-49df-b31e-0805d744a63f"/>
+          <timestamp value="2023-01-12T09:41:18-06:00"/>
           <total value="44"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4620,7 +4620,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-rh-status-codes"/>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes"/>
     <resource>
       <ValueSet>
         <id value="nmdp-rh-status-codes"/>
@@ -4686,12 +4686,12 @@
             </table>
           </div>
         </text>
-        <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-rh-status-codes"/>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes"/>
         <version value="0.1.0"/>
         <name value="NMDPRhStatusVS"/>
         <title value="NMDP Codes for Rh status"/>
         <status value="active"/>
-        <date value="2022-12-01T09:35:21-06:00"/>
+        <date value="2023-01-12T09:36:27-06:00"/>
         <publisher value="NMDP"/>
         <contact>
           <name value="NMDP"/>
@@ -4702,8 +4702,8 @@
         </contact>
         <description value="NMDP codes for Rh staus"/>
         <expansion>
-          <identifier value="urn:uuid:ce1a87e1-96db-49e2-bc2d-39400adaaa3b"/>
-          <timestamp value="2022-12-01T09:38:21-06:00"/>
+          <identifier value="urn:uuid:f8d424ca-15e1-4eed-ba52-9adc962a1765"/>
+          <timestamp value="2023-01-12T09:41:18-06:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

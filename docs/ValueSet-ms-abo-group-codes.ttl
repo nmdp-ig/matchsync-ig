@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/ValueSet/ms-abo-group-codes> a fhir:ValueSet;
+<http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-group-codes> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ms-abo-group-codes"];
+  fhir:Resource.id [ fhir:value "ms-abo-group-codes"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-nmdp-abo-codes.html\">http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-abo-codes</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-loinc-abo-codes.html\">http://loinc.org/vs/LL2419-1</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-sct-abo-group-codes.html\">http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group-codes</a></li></ul></div>"
-  ];
-  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/matchsource/ValueSet/ms-abo-group-codes"];
-  fhir:ValueSet.version [ fhir:value "0.1.0"];
-  fhir:ValueSet.name [ fhir:value "MSABOGroupVS"];
-  fhir:ValueSet.title [ fhir:value "MatchSource ABO Group Value Set"];
-  fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-12-01T09:35:21-06:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "NMDP"];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-nmdp-abo-codes.html\">http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-loinc-abo-codes.html\">http://loinc.org/vs/LL2419-1</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-sct-abo-group-codes.html\">http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes</a></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-group-codes"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "MSABOGroupVS"]; # 
+  fhir:ValueSet.title [ fhir:value "MatchSync ABO Group Value Set"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2023-01-12T09:36:27-06:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "NMDP"]; # 
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "NMDP" ];
@@ -27,15 +27,15 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
      ]
-  ];
-  fhir:ValueSet.description [ fhir:value "MatchSource ABO group codes. Combines LOINC, Snomed, and NMDP codes"];
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes"]; # 
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
        fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-abo-codes";
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes";
          fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-abo-codes>
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes>
        ]
      ], [
        fhir:index 1;
@@ -47,16 +47,16 @@
      ], [
        fhir:index 2;
        fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group-codes";
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes";
          fhir:index 0;
-         fhir:link <http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group-codes>
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes>
        ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/ValueSet/ms-abo-group-codes.ttl> a owl:Ontology;
+<http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-group-codes.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

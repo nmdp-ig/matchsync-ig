@@ -258,12 +258,12 @@ Description: "Example of a Diagnois: AML"
 // Invariant: rac-1
 // Severity: #error
 // Description: "Shall use either NMDP Race extension or us-core-race"
-// Expression: "extension.exists(url = 'http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race' or url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race')"
+// Expression: "extension.exists(url = 'http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-race' or url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race')"
 
 // Invariant: eth-1
 // Severity: #error
 // Description: "Shall use either NMDP ethnicity extension or us-core-ethnicity"
-// Expression: "extension.exists(url = 'http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-ethnicity' or url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity')"
+// Expression: "extension.exists(url = 'http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-ethnicity' or url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity')"
 
 Invariant:  sec-rc
 Severity:   #error
