@@ -19,8 +19,8 @@ Description: "Patient needing a transplant"
 * telecom.value 1..1 MS
 * telecom.system 1..1 MS 
 * telecom.system = #phone
-* generalPractitioner 0..1 MS
-* generalPractitioner only Reference(transplantcentercoordinator)
+* generalPractitioner 0..* MS
+* generalPractitioner only Reference(nmdp-practitioner-role)
 * identifier 1..* MS
 * managingOrganization 0..1 MS
 * managingOrganization only Reference(transplantcenter)
@@ -149,18 +149,47 @@ Description: "Example patient specimen."
 * identifier.value = "000"
 * subject = Reference(MSPatientExample)
 
-Profile: TransplantCenterCoordinator
+Profile: NMDPPractitionerRole
+Parent: PractitionerRole
+Id: nmdp-practitioner-role
+Description: "NMDP Practitioner Role"
+* insert MetaSecurityRules
+* code from nmdp-practitioner-role-vs (required)
+* practitioner only Reference(nmdp-practitioner)
+
+Profile: NMDPPractitioner
 Parent: Practitioner
-Id: transplantcentercoordinator
-Description: "Transplant Center Coordinator"
+Id: nmdp-practitioner
+Description: "NMDP Practitioner"
 * insert MetaSecurityRules
 * name 1..1 MS
 * name.given 1..* MS
 * name.family 1..1 MS
 
-Instance: CoordinatorExample
-InstanceOf: transplantcentercoordinator
-Description: "Example of a Transplant Center Coordinator."
+Instance: ReferringPhysicianExample
+InstanceOf: NMDPPractitionerRole
+Description: "Example of Referring Physician Role"
+* meta.security[TransplantCenter].code = #tc_123
+* code = $NMDP-PR#referringphysician "Referring Physician"
+* practitioner = Reference(PractitionerExample)
+
+Instance: TCPhysicianExample
+InstanceOf: NMDPPractitionerRole
+Description: "Example of Transplant Center Physician Role"
+* meta.security[TransplantCenter].code = #tc_123
+* code = $NMDP-PR#tcphysician "Transplant Center Physician"
+* practitioner = Reference(PractitionerExample)
+
+Instance: TCCoordinatorExample
+InstanceOf: NMDPPractitionerRole
+Description: "Example of Transplant Center Coordinotor Role"
+* meta.security[TransplantCenter].code = #tc_123
+* code = $NMDP-PR#tccoordinator "Transplant Center Coordinator"
+* practitioner = Reference(PractitionerExample)
+
+Instance: PractitionerExample
+InstanceOf: NMDPPractitioner
+Description: "Example of a practitioner."
 * meta.security[TransplantCenter].code = #tc_123
 * name
   * given[0] = "Bart"

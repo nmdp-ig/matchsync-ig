@@ -113,7 +113,7 @@ Description: "Example of preferred product"
   * coding
     * system = "http://terminology.nmdp.org/codesystem/preferredproduct"
     * code = 	#PBSC
-    * display = "Peripheral Blood Stem Cell (Aphaeresis)"
+    * display = "HPC, Apheresis"
 * effectiveDateTime = "2022-05-01"
 
 Profile: MSTransplantTimeline

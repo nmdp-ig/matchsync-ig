@@ -256,7 +256,7 @@ Description: "Multilocus Genotype of HLA-A, HLA-B, HLA-DRB1, and HLA-DRB3"
 * component[gene-studied][+].valueCodeableConcept = $HLAGeneIDCS#HGNC:4931 "HLA-A"
 * component[gene-studied][+].valueCodeableConcept = $HLAGeneIDCS#HGNC:4932 "HLA-B"
 * component[gene-studied][+].valueCodeableConcept = $HLAGeneIDCS#HGNC:4948 "HLA-DRB1"
-* component[gene-studied][+].valueCodeableConcept = $HLAGeneIDCS#HGNC:4948 "HLA-DRB3"
+* component[gene-studied][+].valueCodeableConcept = $HLAGeneIDCS#HGNC:4951 "HLA-DRB3"
 * valueCodeableConcept.coding[GL] = $GLSCodeSystem#hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02^HLA-B*57:01:01:01+HLA-B*15:01:01:01^HLA-DRB1*01:01:01:01+HLA-DRB1*01:02:01:01+HLA-DRB3*01:01:02:01
 
 // -----------------

@@ -12,3 +12,5 @@ Alias: $SCT = http://snomed.info/sct
 Alias: $GLSCodeSystem = http://glstring.org
 Alias: $HLAGeneIDCS = http://www.genenames.org/geneId
 Alias: $HLAGenegroupCS = http://www.genenames.org/genegroup
+Alias: $ICD10 = http://hl7.org/fhir/sid/icd-10-cm
+Alias: $NMDP-PR = http://terminology.nmdp.org/codesystem/practitionerrole

@@ -7,7 +7,8 @@ Description: "Code System for NMDP diseases"
 * ^url = "http://terminology.nmdp.org/codesystem/disease"
 * ^version = "2022"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
+* ^caseSensitive = true
 * ^publisher = "NMDP"
 * ^copyright = "National Marrow Donor Program"
 * #ABL     "ACUTE BILINEAGE LEUKEMIA"
@@ -116,6 +117,7 @@ Id: nmdp-disease-codes
 Title: "NMDP Disease Value Set"
 Description: "NMDP disease codes"
 * include codes from system nmdp-disease-cs
+* ^experimental = true
 
 
 CodeSystem: NMDPDiseaseStageCS
@@ -125,7 +127,8 @@ Description: "Code System for NMDP disease stages"
 * ^url = "http://terminology.nmdp.org/codesystem/diseasestage"
 * ^version = "2022"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
+* ^caseSensitive = true
 * ^publisher = "NMDP"
 * ^copyright = "National Marrow Donor Program"
 * #AP      "Accelerated Phase"
@@ -142,6 +145,7 @@ Id: nmdp-diseasestage-codes
 Title: "NMDP Disease Stage Value Set"
 Description: "NMDP disease stage codes"
 * include codes from system nmdp-diseasestage-cs
+* ^experimental = true
 
 // Language ----------------
 
@@ -152,7 +156,8 @@ Description: "Code System for NMDP languages"
 * ^url = "http://terminology.nmdp.org/codesystem/language"
 * ^version = "2022"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
+* ^caseSensitive = true
 * ^publisher = "NMDP"
 * ^copyright = "National Marrow Donor Program"
 * #ARA     "Arabic"
@@ -175,6 +180,7 @@ Id: nmdp-language-codes
 Title: "NMDP Language Value Set"
 Description: "NMDP language codes"
 * include codes from system nmdp-language-cs
+* ^experimental = true
 
 
 // ABO ----------------
@@ -186,7 +192,8 @@ Description: "Code System for NMDP ABO blood groups"
 * ^url = "http://terminology.nmdp.org/codesystem/abogroup"
 * ^version = "2022"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
+* ^caseSensitive = true
 * ^publisher = "NMDP"
 * ^copyright = "National Marrow Donor Program"
 * #A "A"
@@ -200,6 +207,7 @@ Title: "NMDP Blood Group Value Set"
 Id: nmdp-abo-codes
 Description: "NMDP blood group codes"
 * include codes from system nmdp-abo-group-cs
+* ^experimental = true
 
 ValueSet: LNCABOGroupVS
 Id: loinc-abo-codes
@@ -210,6 +218,7 @@ Description: "LOINC codes for ABO blood group"
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * ^version = "Loinc_2.72"
 * ^publisher = "Regenstrief Institute, Inc."
+* ^experimental = true
 * $LNC#LA19710-5  "Group A"
 * $LNC#LA19709-7  "Group B"
 * $LNC#LA19708-9  "Group O"
@@ -220,6 +229,7 @@ Id: sct-abo-group-codes
 Title: "Snomed CT ABO group Value Set"
 Description: "Snomed CT codes for ABO blood group"
 // * include codes from system http://snomed.info/sct where concept is-a #112143006
+* ^experimental = true
 * $SCT#112144000    "Blood group A (finding)"
 * $SCT#165743006    "Blood group AB (finding)"
 * $SCT#112149005    "Blood group B (finding)"
@@ -232,6 +242,7 @@ Description: "MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes"
 * include codes from valueset nmdp-abo-codes
 * include codes from valueset loinc-abo-codes
 * include codes from valueset sct-abo-group-codes
+* ^experimental = true
 
 // Rh ----------------
 
@@ -242,7 +253,8 @@ Description: "Code System for NMDP Rh Status"
 * ^url = "http://terminology.nmdp.org/codesystem/rhstatus"
 * ^version = "2022"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
+* ^caseSensitive = true
 * ^publisher = "NMDP"
 * ^copyright = "National Marrow Donor Program"
 * #I "Indeterminant"
@@ -256,6 +268,7 @@ Title: "NMDP Codes for Rh status"
 Id: nmdp-rh-status-codes
 Description: "NMDP codes for Rh staus"
 * include codes from system nmdp-rh-status-cs
+* ^experimental = true
 
 ValueSet: PosNegVS
 Id: loinc-posneg-codes
@@ -267,6 +280,7 @@ Description: "LOINC codes for Positive and Negative"
 * ^version = "Loinc_2.72"
 * ^publisher = "Regenstrief Institute, Inc."
 // * include codes from valueset http://loinc.org/vs/LL360-9
+* ^experimental = true
 * $LNC#LA6576-8  "Positive"
 * $LNC#LA6577-6  "Negative" 
 
@@ -276,6 +290,7 @@ Title: "MatchSync Rh Value Sets"
 Description: "MatchSync codes for blood Rh. Combines NMDP and LOINC code"
 * include codes from valueset nmdp-rh-status-codes
 * include codes from valueset loinc-posneg-codes
+* ^experimental = true
 
 // Race ----------------
 
@@ -286,7 +301,8 @@ Description: "Code System for NMDP diseases"
 * ^url = "http://terminology.nmdp.org/codesystem/race"
 * ^version = "2022"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
+* ^caseSensitive = true
 * ^publisher = "NMDP"
 * ^copyright = "National Marrow Donor Program"
 * #AAFA    "African American"
@@ -345,6 +361,7 @@ Id: nmdp-race-codes
 Title: "NMDP Race Value Set"
 Description: "NMDP race codes"
 * include codes from system nmdp-race-cs
+* ^experimental = true
 
 // Ethnicity ---------------
 
@@ -355,7 +372,8 @@ Description: "Code System for NMDP ethnicity"
 * ^url = "http://terminology.nmdp.org/codesystem/ethnicity"
 * ^version = "2022"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
+* ^caseSensitive = true
 * ^publisher = "NMDP"
 * ^copyright = "National Marrow Donor Program"
 * #NHIS     "Not Hispanic or Latino"
@@ -367,6 +385,7 @@ Id: nmdp-ethnicity-codes
 Title: "NMDP Ethnicity Value Set"
 Description: "NMDP ethnicity codes"
 * include codes from system nmdp-ethnicity-cs
+* ^experimental = true
 
 
 // Transplant timeline ------------------
@@ -379,6 +398,7 @@ Description: "Code System for NMDP transplant timeline"
 * ^version = "2022"
 * ^status = #active
 * ^experimental = true
+* ^caseSensitive = true
 * ^publisher = "NMDP"
 * ^copyright = "National Marrow Donor Program"
 * #<4w      "Less than 4 weeks"
@@ -394,6 +414,7 @@ Id: nmdp-transplant-timeline-codes
 Title: "NMDP Transplant Timeline Value Set"
 Description: "NMDP transplant timeline codes"
 * include codes from system nmdp-transplant-timeline-cs
+* ^experimental = true
 
 // Preferred Product ------------------
 
@@ -405,6 +426,7 @@ Description: "NMDP Preferred Product for MatchSync patient"
 * ^version = "2022"
 * ^status = #active
 * ^experimental = true
+* ^caseSensitive = true
 * ^publisher = "NMDP"
 * ^copyright = "National Marrow Donor Program"
 * #PBSC     "HPC, Apheresis"
@@ -419,9 +441,19 @@ Id: nmdp-preferred-product-codes
 Title: "NMDP Preferred Product Value Set"
 Description: "NMDP preferred product codes"
 * include codes from system nmdp-preferred-product-cs
+* ^experimental = true
+
 
 //  ------------------
 
+ValueSet: ICD10GVHDVS
+Id: icd10-gvhd-codes
+Title: "GVHD ICD-10 Codes"
+Description: "GVHD ICD-10 Codes"
+* include codes from system $ICD10 where concept is-a #D89.81 "Graft-versus-host disease"
+* ^experimental = true
+
+//  ------------------
 
 // CodeSystem: NMDPTCCS
 // Title: "NMDP Transplant Center Code System"
@@ -431,6 +463,31 @@ Description: "NMDP preferred product codes"
 // * ^version = "2022"
 // * ^status = #active
 // * ^experimental = false
+// * ^caseSensitive = true
 // * ^publisher = "NMDP"
 // * ^copyright = "National Marrow Donor Program"
 // * #ABL     "ACUTE BILINEAGE LEUKEMIA"
+
+CodeSystem: NMDPPractitionerRoleCS
+Title: "NMDP Practitioner Roles"
+Id: nmdp-practitioner-role-cs
+Description: "NMDP Practitioner Roles"
+* ^url = "http://terminology.nmdp.org/codesystem/practitionerrole"
+* ^compositional = true
+* ^version = "1.0"
+* ^status = #active
+* ^version = "2023"
+* ^experimental = true
+* ^caseSensitive = true
+* ^copyright = "National Marrow Donor Program"
+* ^publisher = "NMDP"
+* #referringphysician "Referring Physician"
+* #tcphysician "Transplant Center Physician"
+* #tccoordinator "Transplant Center Coordinator"
+
+ValueSet:  NMDPPractitionerRoleVS
+Title: "NMDP Practitioner Role Value Set"
+Id: nmdp-practitioner-role-vs
+Description:  "NMDP Practitioner Role Value Set"
+* include codes from system nmdp-practitioner-role-cs
+* ^experimental = true
