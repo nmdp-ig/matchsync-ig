@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "MatchSyncIG",
   "status" : "draft",
-  "date" : "2023-01-12T09:36:27-06:00",
+  "date" : "2023-02-16T14:43:10-06:00",
   "publisher" : "NMDP",
   "contact" : [{
     "name" : "NMDP",
@@ -168,6 +168,17 @@
       {
         "url" : "value",
         "valueString" : "http://terminology.nmdp.org/codesystem/transplanttimeline"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://terminology.nmdp.org/codesystem/practitionerrole"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -575,6 +586,17 @@
       {
         "url" : "value",
         "valueString" : "http://terminology.nmdp.org/codesystem/transplanttimeline"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://terminology.nmdp.org/codesystem/practitionerrole"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1158,10 +1180,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/transplantcenter"
+        "reference" : "StructureDefinition/nmdp-practitioner"
       },
-      "name" : "TransplantCenter",
-      "description" : "Transplant Center",
+      "name" : "NMDPPractitioner",
+      "description" : "NMDP Practitioner",
       "exampleBoolean" : false
     },
     {
@@ -1170,10 +1192,22 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/transplantcentercoordinator"
+        "reference" : "StructureDefinition/nmdp-practitioner-role"
       },
-      "name" : "TransplantCenterCoordinator",
-      "description" : "Transplant Center Coordinator",
+      "name" : "NMDPPractitionerRole",
+      "description" : "NMDP Practitioner Role",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/transplantcenter"
+      },
+      "name" : "TransplantCenter",
+      "description" : "Transplant Center",
       "exampleBoolean" : false
     },
     {
@@ -1198,6 +1232,18 @@
       },
       "name" : "HLA Gene Name Value Set",
       "description" : "HLA HGNC GeneIds Valueset",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/icd10-gvhd-codes"
+      },
+      "name" : "GVHD ICD-10 Codes",
+      "description" : "GVHD ICD-10 Codes",
       "exampleBoolean" : false
     },
     {
@@ -1294,6 +1340,18 @@
       },
       "name" : "NMDP Language Value Set",
       "description" : "NMDP language codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nmdp-practitioner-role-vs"
+      },
+      "name" : "NMDP Practitioner Role Value Set",
+      "description" : "NMDP Practitioner Role Value Set",
       "exampleBoolean" : false
     },
     {
@@ -1458,6 +1516,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/nmdp-practitioner-role-cs"
+      },
+      "name" : "NMDP Practitioner Roles",
+      "description" : "NMDP Practitioner Roles",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/nmdp-preferred-product-cs"
       },
       "name" : "NMDP Preferred Product for Transplant",
@@ -1499,54 +1569,6 @@
       "name" : "NMDP Transplant Timeline Code System",
       "description" : "Code System for NMDP transplant timeline",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/BundleExample-Full-HLA-Separate"
-      },
-      "name" : "MatchSync Bundle Example - Full with HLA in separate observations for each locus",
-      "description" : "Full Bundle Example for MatchSync, with each HLA allele in a separate genotype observation",
-      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-separate"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/BundleExample-Full-Multilocus-HLA"
-      },
-      "name" : "MatchSync Bundle Example - Full, HLA with multilocus genotype",
-      "description" : "Full Bundle Example for MatchSync with multilocus HLA genotype",
-      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-multilocus"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/BundleExample-Minimal"
-      },
-      "name" : "MatchSync Bundle Example - Mimimal",
-      "description" : "Minimual Bundle Example for MatchSync",
-      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/CoordinatorExample"
-      },
-      "name" : "CoordinatorExample",
-      "description" : "Example of a Transplant Center Coordinator.",
-      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcentercoordinator"
     },
     {
       "extension" : [{
@@ -1851,6 +1873,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/PractitionerExample"
+      },
+      "name" : "PractitionerExample",
+      "description" : "Example of a practitioner.",
+      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/ReferringPhysicianExample"
+      },
+      "name" : "ReferringPhysicianExample",
+      "description" : "Example of Referring Physician Role",
+      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/TCCoordinatorExample"
+      },
+      "name" : "TCCoordinatorExample",
+      "description" : "Example of Transplant Center Coordinotor Role",
+      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
       }],
       "reference" : {
@@ -1859,6 +1917,18 @@
       "name" : "TCExample",
       "description" : "Example of a Transplant Center.",
       "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcenter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/TCPhysicianExample"
+      },
+      "name" : "TCPhysicianExample",
+      "description" : "Example of Transplant Center Physician Role",
+      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"
     }],
     "page" : {
       "extension" : [{

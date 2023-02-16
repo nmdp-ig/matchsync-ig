@@ -3,14 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="ms-abo-group-codes"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-nmdp-abo-codes.html">http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes</a></li><li>Import all the codes that are contained in <a href="ValueSet-loinc-abo-codes.html">http://loinc.org/vs/LL2419-1</a></li><li>Import all the codes that are contained in <a href="ValueSet-sct-abo-group-codes.html">http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes</a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-nmdp-abo-codes.html">NMDP Blood Group Value Set</a></li><li>Import all the codes that are contained in <a href="ValueSet-loinc-abo-codes.html">LOINC ABO group Value Set</a></li><li>Import all the codes that are contained in <a href="ValueSet-sct-abo-group-codes.html">Snomed CT ABO group Value Set</a></li></ul></div>
   </text>
   <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-group-codes"/>
   <version value="0.1.0"/>
   <name value="MSABOGroupVS"/>
   <title value="MatchSync ABO Group Value Set"/>
   <status value="active"/>
-  <date value="2023-01-12T09:36:27-06:00"/>
+  <experimental value="true"/>
+  <date value="2023-02-16T14:43:10-06:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "nmdp-practitioner-role-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://terminology.nmdp.org/codesystem/practitionerrole</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">referringphysician<a name=\"nmdp-practitioner-role-cs-referringphysician\"> </a></td><td>Referring Physician</td></tr><tr><td style=\"white-space:nowrap\">tcphysician<a name=\"nmdp-practitioner-role-cs-tcphysician\"> </a></td><td>Transplant Center Physician</td></tr><tr><td style=\"white-space:nowrap\">tccoordinator<a name=\"nmdp-practitioner-role-cs-tccoordinator\"> </a></td><td>Transplant Center Coordinator</td></tr></table></div>"
+  },
+  "url" : "http://terminology.nmdp.org/codesystem/practitionerrole",
+  "version" : "0.1.0",
+  "name" : "NMDPPractitionerRoleCS",
+  "title" : "NMDP Practitioner Roles",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-02-16T14:43:10-06:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "NMDP Practitioner Roles",
+  "copyright" : "National Marrow Donor Program",
+  "caseSensitive" : true,
+  "compositional" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "referringphysician",
+    "display" : "Referring Physician"
+  },
+  {
+    "code" : "tcphysician",
+    "display" : "Transplant Center Physician"
+  },
+  {
+    "code" : "tccoordinator",
+    "display" : "Transplant Center Coordinator"
+  }]
+}

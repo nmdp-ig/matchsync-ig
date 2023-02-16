@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "nmdp-practitioner-role-vs"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-practitioner-role-cs.html\"><code>http://terminology.nmdp.org/codesystem/practitionerrole</code></a></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "NMDPPractitionerRoleVS"]; # 
+  fhir:ValueSet.title [ fhir:value "NMDP Practitioner Role Value Set"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-16T14:43:10-06:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "NMDP"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "NMDP" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "NMDP Practitioner Role Value Set"]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.nmdp.org/codesystem/practitionerrole" ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

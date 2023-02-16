@@ -10,7 +10,7 @@
     </security>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="MSPreferredProductExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;MSPreferredProductExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ms-preferred-product-observation.html">MSPreferredProduct</a></p><p style="margin-bottom: 0px">Security Labels: <span title="{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>code</b>: Preferred Product <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-MSPatientExample.html">Patient/MSPatientExample</a> &quot; EVERYPERSON&quot;</p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: Peripheral Blood Stem Cell (Aphaeresis) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-nmdp-preferred-product-cs.html">NMDP Preferred Product for Transplant</a>#PBSC)</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="MSPreferredProductExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;MSPreferredProductExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ms-preferred-product-observation.html">MSPreferredProduct</a></p><p style="margin-bottom: 0px">Security Labels: <span title="{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>code</b>: Preferred Product <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-MSPatientExample.html">Patient/MSPatientExample</a> &quot; EVERYPERSON&quot;</p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: HPC, Apheresis <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-nmdp-preferred-product-cs.html">NMDP Preferred Product for Transplant</a>#PBSC)</span></p></div>
   </text>
   <status value="final"/>
   <code>
@@ -24,7 +24,7 @@
     <coding>
       <system value="http://terminology.nmdp.org/codesystem/preferredproduct"/>
       <code value="PBSC"/>
-      <display value="Peripheral Blood Stem Cell (Aphaeresis)"/>
+      <display value="HPC, Apheresis"/>
     </coding>
   </valueCodeableConcept>
 </Observation>

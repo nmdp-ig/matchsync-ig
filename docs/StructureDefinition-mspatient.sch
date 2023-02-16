@@ -19,7 +19,6 @@
       <sch:assert test="count(f:birthDate) &gt;= 1">birthDate: minimum cardinality of 'birthDate' is 1</sch:assert>
       <sch:assert test="count(f:address) &gt;= 1">address: minimum cardinality of 'address' is 1</sch:assert>
       <sch:assert test="count(f:address) &lt;= 1">address: maximum cardinality of 'address' is 1</sch:assert>
-      <sch:assert test="count(f:generalPractitioner) &lt;= 1">generalPractitioner: maximum cardinality of 'generalPractitioner' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

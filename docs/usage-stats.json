@@ -66,22 +66,27 @@
         "title": "MSSpecimen"
       }
     ],
+    "Practitioner": [
+      {
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner",
+        "title": "NMDPPractitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role",
+        "title": "NMDPPractitionerRole"
+      }
+    ],
     "Organization": [
       {
         "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcenter",
         "title": "TransplantCenter"
       }
-    ],
-    "Practitioner": [
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcentercoordinator",
-        "title": "TransplantCenterCoordinator"
-      }
     ]
   },
   "usage": {
     "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/number-of-remissions": [
-      "Bundle.entry.resource",
       "Condition"
     ],
     "http://hl7.org/fhir/StructureDefinition/bodySite": [
@@ -146,11 +151,9 @@
       "Patient"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
-      "Bundle.entry.resource",
       "Patient"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
-      "Bundle.entry.resource",
       "Patient"
     ]
   }

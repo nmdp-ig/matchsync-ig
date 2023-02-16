@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "2713f8a7-07b6-49f3-b372-32e0ad626434",
+  "id" : "69eac83c-74f4-4689-80f8-0df3e5642af3",
   "meta" : {
-    "lastUpdated" : "2023-01-12T09:36:27.559-06:00"
+    "lastUpdated" : "2023-02-16T14:43:10.304-06:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,8 @@
       "name" : "MSRhVS",
       "title" : "MatchSync Rh Value Sets",
       "status" : "active",
-      "date" : "2023-01-12T09:36:27-06:00",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -30,8 +31,8 @@
       }],
       "description" : "MatchSync codes for blood Rh. Combines NMDP and LOINC code",
       "expansion" : {
-        "identifier" : "urn:uuid:5f21cda8-6ded-41f6-8f08-870e5b9a3738",
-        "timestamp" : "2023-01-12T09:38:41-06:00",
+        "identifier" : "urn:uuid:6d71669a-f5c0-41c9-b314-960e86463fc3",
+        "timestamp" : "2023-02-16T14:44:04-06:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -109,7 +110,8 @@
       "name" : "PosNegVS",
       "title" : "LOINC Pos|Neg Value Set",
       "status" : "active",
-      "date" : "2023-01-12T09:36:27-06:00",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -121,8 +123,8 @@
       "description" : "LOINC codes for Positive and Negative",
       "copyright" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.",
       "expansion" : {
-        "identifier" : "urn:uuid:85e053b7-936a-4996-a3ec-58ffa7010ddb",
-        "timestamp" : "2023-01-12T09:38:42-06:00",
+        "identifier" : "urn:uuid:817c399a-0a71-4aa4-9de5-28caf1e9aea2",
+        "timestamp" : "2023-02-16T14:44:04-06:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -163,7 +165,8 @@
       "name" : "NMDPLanguageCodes",
       "title" : "NMDP Language Value Set",
       "status" : "active",
-      "date" : "2023-01-12T09:36:27-06:00",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -174,8 +177,8 @@
       }],
       "description" : "NMDP language codes",
       "expansion" : {
-        "identifier" : "urn:uuid:ecd1bb97-bcca-44cf-9ab9-ef37093a1387",
-        "timestamp" : "2023-01-12T09:38:42-06:00",
+        "identifier" : "urn:uuid:6d12de0b-6811-4e52-b899-3e3cb3bacec7",
+        "timestamp" : "2023-02-16T14:44:04-06:00",
         "total" : 14,
         "parameter" : [{
           "name" : "excludeNested",
@@ -272,7 +275,8 @@
       "name" : "NMDPRaceVS",
       "title" : "NMDP Race Value Set",
       "status" : "active",
-      "date" : "2023-01-12T09:36:27-06:00",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -283,8 +287,8 @@
       }],
       "description" : "NMDP race codes",
       "expansion" : {
-        "identifier" : "urn:uuid:d9124fe5-d26f-4e5b-b812-6d82cce8f76f",
-        "timestamp" : "2023-01-12T09:38:42-06:00",
+        "identifier" : "urn:uuid:42deabfe-f0b3-449f-a620-e70dd2206f67",
+        "timestamp" : "2023-02-16T14:44:05-06:00",
         "total" : 50,
         "parameter" : [{
           "name" : "excludeNested",
@@ -561,7 +565,8 @@
       "name" : "NMDPEthnicityVS",
       "title" : "NMDP Ethnicity Value Set",
       "status" : "active",
-      "date" : "2023-01-12T09:36:27-06:00",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -572,8 +577,8 @@
       }],
       "description" : "NMDP ethnicity codes",
       "expansion" : {
-        "identifier" : "urn:uuid:972ef2a2-af7f-4a2c-8a9f-8f2d704f8329",
-        "timestamp" : "2023-01-12T09:38:42-06:00",
+        "identifier" : "urn:uuid:8832939e-ef35-4c7f-b008-5ec0323140ef",
+        "timestamp" : "2023-02-16T14:44:05-06:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -615,7 +620,8 @@
       "name" : "MSABOGroupVS",
       "title" : "MatchSync ABO Group Value Set",
       "status" : "active",
-      "date" : "2023-01-12T09:36:27-06:00",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -626,8 +632,8 @@
       }],
       "description" : "MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes",
       "expansion" : {
-        "identifier" : "urn:uuid:33993388-1648-467c-b189-a172bc37d59f",
-        "timestamp" : "2023-01-12T09:38:42-06:00",
+        "identifier" : "urn:uuid:4765445c-ef73-4e50-a03a-9a2467db878f",
+        "timestamp" : "2023-02-16T14:44:05-06:00",
         "total" : 13,
         "parameter" : [{
           "name" : "excludeNested",
@@ -743,7 +749,8 @@
       "name" : "NMDPPreferredProductVS",
       "title" : "NMDP Preferred Product Value Set",
       "status" : "active",
-      "date" : "2023-01-12T09:36:27-06:00",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -754,8 +761,8 @@
       }],
       "description" : "NMDP preferred product codes",
       "expansion" : {
-        "identifier" : "urn:uuid:73363cd4-4b8e-454f-a106-22e2e8a03f8a",
-        "timestamp" : "2023-01-12T09:39:10-06:00",
+        "identifier" : "urn:uuid:9f279a83-de47-40fa-bcc6-64296927b8fa",
+        "timestamp" : "2023-02-16T14:44:25-06:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -794,6 +801,75 @@
     }
   },
   {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "icd10-gvhd-codes",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on http://hl7.org/fhir/sid/icd-10-cm version 2021</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-D89.81\"> </a>  D89.81</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Graft-versus-host disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-D89.810\"> </a>  D89.810</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Acute graft-versus-host disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-D89.811\"> </a>  D89.811</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Chronic graft-versus-host disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-D89.812\"> </a>  D89.812</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Acute on chronic graft-versus-host disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-D89.813\"> </a>  D89.813</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Graft-versus-host disease, unspecified</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes",
+      "version" : "0.1.0",
+      "name" : "ICD10GVHDVS",
+      "title" : "GVHD ICD-10 Codes",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
+      "publisher" : "NMDP",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "GVHD ICD-10 Codes",
+      "expansion" : {
+        "identifier" : "urn:uuid:f7df8ddd-b9eb-41c0-b253-290a39bac8a5",
+        "timestamp" : "2023-02-16T14:44:25-06:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2021"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "D89.81",
+          "display" : "Graft-versus-host disease"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "D89.810",
+          "display" : "Acute graft-versus-host disease"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "D89.811",
+          "display" : "Chronic graft-versus-host disease"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "D89.812",
+          "display" : "Acute on chronic graft-versus-host disease"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "D89.813",
+          "display" : "Graft-versus-host disease, unspecified"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -807,7 +883,8 @@
       "name" : "NMDPDiseaseVS",
       "title" : "NMDP Disease Value Set",
       "status" : "active",
-      "date" : "2023-01-12T09:36:27-06:00",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -818,8 +895,8 @@
       }],
       "description" : "NMDP disease codes",
       "expansion" : {
-        "identifier" : "urn:uuid:38b69c53-2110-4d15-8e9b-327565f0c640",
-        "timestamp" : "2023-01-12T09:39:38-06:00",
+        "identifier" : "urn:uuid:0f7d1598-671a-4025-b80a-01c6041fff56",
+        "timestamp" : "2023-02-16T14:44:35-06:00",
         "total" : 100,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1346,7 +1423,8 @@
       "name" : "NMDPABOVS",
       "title" : "NMDP Blood Group Value Set",
       "status" : "active",
-      "date" : "2023-01-12T09:36:27-06:00",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -1357,8 +1435,8 @@
       }],
       "description" : "NMDP blood group codes",
       "expansion" : {
-        "identifier" : "urn:uuid:89dd0110-b56a-4e58-943c-609e1d788cff",
-        "timestamp" : "2023-01-12T09:39:50-06:00",
+        "identifier" : "urn:uuid:d024c6dd-bbc3-41cd-918b-983399ddb439",
+        "timestamp" : "2023-02-16T14:44:41-06:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1410,7 +1488,8 @@
       "name" : "NMDPTransplantTimelineVS",
       "title" : "NMDP Transplant Timeline Value Set",
       "status" : "active",
-      "date" : "2023-01-12T09:36:27-06:00",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -1421,8 +1500,8 @@
       }],
       "description" : "NMDP transplant timeline codes",
       "expansion" : {
-        "identifier" : "urn:uuid:042f2a1f-ad45-43d1-8603-4bed4a533a94",
-        "timestamp" : "2023-01-12T09:39:50-06:00",
+        "identifier" : "urn:uuid:7a9b099a-c165-4057-b03a-6aaeb822d2d9",
+        "timestamp" : "2023-02-16T14:44:41-06:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1484,7 +1563,8 @@
       "name" : "SCTABOGroupVS",
       "title" : "Snomed CT ABO group Value Set",
       "status" : "active",
-      "date" : "2023-01-12T09:36:27-06:00",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -1495,8 +1575,8 @@
       }],
       "description" : "Snomed CT codes for ABO blood group",
       "expansion" : {
-        "identifier" : "urn:uuid:790c0b67-c8f5-4ff6-9ca0-c6280f420610",
-        "timestamp" : "2023-01-12T09:39:50-06:00",
+        "identifier" : "urn:uuid:3529e133-cf72-4416-bc7f-6d2847f7437c",
+        "timestamp" : "2023-02-16T14:44:41-06:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1547,7 +1627,8 @@
       "name" : "LNCABOGroupVS",
       "title" : "LOINC ABO group Value Set",
       "status" : "active",
-      "date" : "2023-01-12T09:36:27-06:00",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -1559,8 +1640,8 @@
       "description" : "LOINC codes for ABO blood group",
       "copyright" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.",
       "expansion" : {
-        "identifier" : "urn:uuid:8b846671-8adc-48ac-bd43-01cc7128bf33",
-        "timestamp" : "2023-01-12T09:40:29-06:00",
+        "identifier" : "urn:uuid:2546b40c-e105-464f-aa42-dd56dbde1236",
+        "timestamp" : "2023-02-16T14:44:52-06:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1611,7 +1692,8 @@
       "name" : "NMDPDiseasStageVS",
       "title" : "NMDP Disease Stage Value Set",
       "status" : "active",
-      "date" : "2023-01-12T09:36:27-06:00",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -1622,8 +1704,8 @@
       }],
       "description" : "NMDP disease stage codes",
       "expansion" : {
-        "identifier" : "urn:uuid:0031a78f-e49d-4f6a-a1ca-e91bece17350",
-        "timestamp" : "2023-01-12T09:40:39-06:00",
+        "identifier" : "urn:uuid:76476662-d62d-4e9b-998a-b61a2784dbba",
+        "timestamp" : "2023-02-16T14:44:53-06:00",
         "total" : 8,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1683,14 +1765,15 @@
       "id" : "hla-geneid-valueset",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 44 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4931\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584931\">HGNC:4931</a></td><td>http://www.genenames.org/geneId</td><td>HLA-A</td><td><div><p>major histocompatibility complex, class I, A</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4932\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584932\">HGNC:4932</a></td><td>http://www.genenames.org/geneId</td><td>HLA-B</td><td><div><p>major histocompatibility complex, class I, B</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4933\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584933\">HGNC:4933</a></td><td>http://www.genenames.org/geneId</td><td>HLA-C</td><td><div><p>major histocompatibility complex, class I, C</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4934\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584934\">HGNC:4934</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DMA</td><td><div><p>major histocompatibility complex, class II, DM alpha</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4935\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584935\">HGNC:4935</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DMB</td><td><div><p>major histocompatibility complex, class II, DM beta</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4936\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584936\">HGNC:4936</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DOA</td><td><div><p>major histocompatibility complex, class II, DO alpha</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4937\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584937\">HGNC:4937</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DOB</td><td><div><p>major histocompatibility complex, class II, DO beta</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4938\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584938\">HGNC:4938</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DPA1</td><td><div><p>major histocompatibility complex, class II, DP alpha 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4939\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584939\">HGNC:4939</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DPA2</td><td><div><p>major histocompatibility complex, class II, DP alpha 2 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-19393\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819393\">HGNC:19393</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DPA3</td><td><div><p>major histocompatibility complex, class II, DP alpha 3 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4940\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584940\">HGNC:4940</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DPB1</td><td><div><p>major histocompatibility complex, class II, DP beta 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4941\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584941\">HGNC:4941</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DPB2</td><td><div><p>major histocompatibility complex, class II, DP beta 2 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4942\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584942\">HGNC:4942</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DQA1</td><td><div><p>major histocompatibility complex, class II, DQ alpha 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4943\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584943\">HGNC:4943</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DQA2</td><td><div><p>major histocompatibility complex, class II, DQ alpha 2</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4944\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584944\">HGNC:4944</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DQB1</td><td><div><p>major histocompatibility complex, class II, DQ beta 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4945\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584945\">HGNC:4945</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DQB2</td><td><div><p>major histocompatibility complex, class II, DQ beta 2</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4946\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584946\">HGNC:4946</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DQB3</td><td><div><p>major histocompatibility complex, class II, DQ beta 3</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4947\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584947\">HGNC:4947</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRA</td><td><div><p>major histocompatibility complex, class II, DR alpha</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4948\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584948\">HGNC:4948</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB1</td><td><div><p>major histocompatibility complex, class II, DR beta 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4950\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584950\">HGNC:4950</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB2</td><td><div><p>major histocompatibility complex, class II, DR beta 2 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4951\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584951\">HGNC:4951</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB3</td><td><div><p>major histocompatibility complex, class II, DR beta 3</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4952\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584952\">HGNC:4952</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB4</td><td><div><p>major histocompatibility complex, class II, DR beta 4</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4953\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584953\">HGNC:4953</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB5</td><td><div><p>major histocompatibility complex, class II, DR beta 5</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4954\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584954\">HGNC:4954</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB6</td><td><div><p>major histocompatibility complex, class II, DR beta 6 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4955\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584955\">HGNC:4955</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB7</td><td><div><p>major histocompatibility complex, class II, DR beta 7 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4956\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584956\">HGNC:4956</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB8</td><td><div><p>major histocompatibility complex, class II, DR beta 8 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4957\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584957\">HGNC:4957</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB9</td><td><div><p>major histocompatibility complex, class II, DR beta 9 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4962\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584962\">HGNC:4962</a></td><td>http://www.genenames.org/geneId</td><td>HLA-E</td><td><div><p>major histocompatibility complex, class I, E</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4963\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584963\">HGNC:4963</a></td><td>http://www.genenames.org/geneId</td><td>HLA-F</td><td><div><p>major histocompatibility complex, class I, F</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4964\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584964\">HGNC:4964</a></td><td>http://www.genenames.org/geneId</td><td>HLA-G</td><td><div><p>major histocompatibility complex, class I, G</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4965\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584965\">HGNC:4965</a></td><td>http://www.genenames.org/geneId</td><td>HLA-H</td><td><div><p>major histocompatibility complex, class I, H (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4967\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584967\">HGNC:4967</a></td><td>http://www.genenames.org/geneId</td><td>HLA-J</td><td><div><p>major histocompatibility complex, class I, J (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4969\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584969\">HGNC:4969</a></td><td>http://www.genenames.org/geneId</td><td>HLA-K</td><td><div><p>major histocompatibility complex, class I, K (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4970\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584970\">HGNC:4970</a></td><td>http://www.genenames.org/geneId</td><td>HLA-L</td><td><div><p>major histocompatibility complex, class I, L (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-19406\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819406\">HGNC:19406</a></td><td>http://www.genenames.org/geneId</td><td>HLA-N</td><td><div><p>major histocompatibility complex, class I, N (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-21196\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5821196\">HGNC:21196</a></td><td>http://www.genenames.org/geneId</td><td>HLA-P</td><td><div><p>major histocompatibility complex, class I, P (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-19395\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819395\">HGNC:19395</a></td><td>http://www.genenames.org/geneId</td><td>HLA-S</td><td><div><p>major histocompatibility complex, class I, S (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-23478\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823478\">HGNC:23478</a></td><td>http://www.genenames.org/geneId</td><td>HLA-T</td><td><div><p>major histocompatibility complex, class I, T (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-23477\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823477\">HGNC:23477</a></td><td>http://www.genenames.org/geneId</td><td>HLA-U</td><td><div><p>major histocompatibility complex, class I, U (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-23482\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823482\">HGNC:23482</a></td><td>http://www.genenames.org/geneId</td><td>HLA-V</td><td><div><p>major histocompatibility complex, class I, V (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-23425\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823425\">HGNC:23425</a></td><td>http://www.genenames.org/geneId</td><td>HLA-W</td><td><div><p>major histocompatibility complex, class I, W (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-19385\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819385\">HGNC:19385</a></td><td>http://www.genenames.org/geneId</td><td>HLA-X</td><td><div><p>major histocompatibility complex, class I, X (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-33913\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5833913\">HGNC:33913</a></td><td>http://www.genenames.org/geneId</td><td>HLA-Y</td><td><div><p>major histocompatibility complex, class I, Y (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-19394\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819394\">HGNC:19394</a></td><td>http://www.genenames.org/geneId</td><td>HLA-Z</td><td><div><p>major histocompatibility complex, class I, Z (pseudogene)</p>\n</div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 44 concepts</p><p style=\"border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px\">Expansion based on code system fragment <a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem v0.1.0 (CodeSystem)</a></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4931\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584931\">HGNC:4931</a></td><td>http://www.genenames.org/geneId</td><td>HLA-A</td><td><div><p>major histocompatibility complex, class I, A</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4932\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584932\">HGNC:4932</a></td><td>http://www.genenames.org/geneId</td><td>HLA-B</td><td><div><p>major histocompatibility complex, class I, B</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4933\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584933\">HGNC:4933</a></td><td>http://www.genenames.org/geneId</td><td>HLA-C</td><td><div><p>major histocompatibility complex, class I, C</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4934\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584934\">HGNC:4934</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DMA</td><td><div><p>major histocompatibility complex, class II, DM alpha</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4935\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584935\">HGNC:4935</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DMB</td><td><div><p>major histocompatibility complex, class II, DM beta</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4936\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584936\">HGNC:4936</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DOA</td><td><div><p>major histocompatibility complex, class II, DO alpha</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4937\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584937\">HGNC:4937</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DOB</td><td><div><p>major histocompatibility complex, class II, DO beta</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4938\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584938\">HGNC:4938</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DPA1</td><td><div><p>major histocompatibility complex, class II, DP alpha 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4939\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584939\">HGNC:4939</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DPA2</td><td><div><p>major histocompatibility complex, class II, DP alpha 2 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-19393\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819393\">HGNC:19393</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DPA3</td><td><div><p>major histocompatibility complex, class II, DP alpha 3 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4940\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584940\">HGNC:4940</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DPB1</td><td><div><p>major histocompatibility complex, class II, DP beta 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4941\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584941\">HGNC:4941</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DPB2</td><td><div><p>major histocompatibility complex, class II, DP beta 2 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4942\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584942\">HGNC:4942</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DQA1</td><td><div><p>major histocompatibility complex, class II, DQ alpha 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4943\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584943\">HGNC:4943</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DQA2</td><td><div><p>major histocompatibility complex, class II, DQ alpha 2</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4944\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584944\">HGNC:4944</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DQB1</td><td><div><p>major histocompatibility complex, class II, DQ beta 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4945\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584945\">HGNC:4945</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DQB2</td><td><div><p>major histocompatibility complex, class II, DQ beta 2</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4946\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584946\">HGNC:4946</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DQB3</td><td><div><p>major histocompatibility complex, class II, DQ beta 3</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4947\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584947\">HGNC:4947</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRA</td><td><div><p>major histocompatibility complex, class II, DR alpha</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4948\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584948\">HGNC:4948</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB1</td><td><div><p>major histocompatibility complex, class II, DR beta 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4950\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584950\">HGNC:4950</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB2</td><td><div><p>major histocompatibility complex, class II, DR beta 2 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4951\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584951\">HGNC:4951</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB3</td><td><div><p>major histocompatibility complex, class II, DR beta 3</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4952\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584952\">HGNC:4952</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB4</td><td><div><p>major histocompatibility complex, class II, DR beta 4</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4953\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584953\">HGNC:4953</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB5</td><td><div><p>major histocompatibility complex, class II, DR beta 5</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4954\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584954\">HGNC:4954</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB6</td><td><div><p>major histocompatibility complex, class II, DR beta 6 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4955\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584955\">HGNC:4955</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB7</td><td><div><p>major histocompatibility complex, class II, DR beta 7 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4956\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584956\">HGNC:4956</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB8</td><td><div><p>major histocompatibility complex, class II, DR beta 8 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4957\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584957\">HGNC:4957</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB9</td><td><div><p>major histocompatibility complex, class II, DR beta 9 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4962\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584962\">HGNC:4962</a></td><td>http://www.genenames.org/geneId</td><td>HLA-E</td><td><div><p>major histocompatibility complex, class I, E</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4963\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584963\">HGNC:4963</a></td><td>http://www.genenames.org/geneId</td><td>HLA-F</td><td><div><p>major histocompatibility complex, class I, F</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4964\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584964\">HGNC:4964</a></td><td>http://www.genenames.org/geneId</td><td>HLA-G</td><td><div><p>major histocompatibility complex, class I, G</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4965\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584965\">HGNC:4965</a></td><td>http://www.genenames.org/geneId</td><td>HLA-H</td><td><div><p>major histocompatibility complex, class I, H (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4967\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584967\">HGNC:4967</a></td><td>http://www.genenames.org/geneId</td><td>HLA-J</td><td><div><p>major histocompatibility complex, class I, J (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4969\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584969\">HGNC:4969</a></td><td>http://www.genenames.org/geneId</td><td>HLA-K</td><td><div><p>major histocompatibility complex, class I, K (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4970\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584970\">HGNC:4970</a></td><td>http://www.genenames.org/geneId</td><td>HLA-L</td><td><div><p>major histocompatibility complex, class I, L (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-19406\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819406\">HGNC:19406</a></td><td>http://www.genenames.org/geneId</td><td>HLA-N</td><td><div><p>major histocompatibility complex, class I, N (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-21196\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5821196\">HGNC:21196</a></td><td>http://www.genenames.org/geneId</td><td>HLA-P</td><td><div><p>major histocompatibility complex, class I, P (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-19395\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819395\">HGNC:19395</a></td><td>http://www.genenames.org/geneId</td><td>HLA-S</td><td><div><p>major histocompatibility complex, class I, S (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-23478\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823478\">HGNC:23478</a></td><td>http://www.genenames.org/geneId</td><td>HLA-T</td><td><div><p>major histocompatibility complex, class I, T (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-23477\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823477\">HGNC:23477</a></td><td>http://www.genenames.org/geneId</td><td>HLA-U</td><td><div><p>major histocompatibility complex, class I, U (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-23482\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823482\">HGNC:23482</a></td><td>http://www.genenames.org/geneId</td><td>HLA-V</td><td><div><p>major histocompatibility complex, class I, V (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-23425\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823425\">HGNC:23425</a></td><td>http://www.genenames.org/geneId</td><td>HLA-W</td><td><div><p>major histocompatibility complex, class I, W (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-19385\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819385\">HGNC:19385</a></td><td>http://www.genenames.org/geneId</td><td>HLA-X</td><td><div><p>major histocompatibility complex, class I, X (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-33913\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5833913\">HGNC:33913</a></td><td>http://www.genenames.org/geneId</td><td>HLA-Y</td><td><div><p>major histocompatibility complex, class I, Y (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-19394\"> </a>  <a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819394\">HGNC:19394</a></td><td>http://www.genenames.org/geneId</td><td>HLA-Z</td><td><div><p>major histocompatibility complex, class I, Z (pseudogene)</p>\n</div></td></tr></table></div>"
       },
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset",
       "version" : "0.1.0",
       "name" : "HLAGeneIdVS",
       "title" : "HLA Gene Name Value Set",
       "status" : "active",
-      "date" : "2023-01-12T09:36:27-06:00",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -1701,8 +1784,8 @@
       }],
       "description" : "HLA HGNC GeneIds Valueset",
       "expansion" : {
-        "identifier" : "urn:uuid:a60a83b0-68ec-49df-b31e-0805d744a63f",
-        "timestamp" : "2023-01-12T09:41:18-06:00",
+        "identifier" : "urn:uuid:4b8f70a8-6834-4e95-92c3-7f8e55c1415a",
+        "timestamp" : "2023-02-16T14:45:04-06:00",
         "total" : 44,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1710,6 +1793,10 @@
         },
         {
           "name" : "version",
+          "valueUri" : "http://www.genenames.org/geneId|0.1.0"
+        },
+        {
+          "name" : "fragment",
           "valueUri" : "http://www.genenames.org/geneId|0.1.0"
         }],
         "contains" : [{
@@ -1936,6 +2023,61 @@
     }
   },
   {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "nmdp-practitioner-role-vs",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-practitioner-role-cs.html\">NMDP Practitioner Roles v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-practitionerrole-referringphysician\"> </a>  <a href=\"CodeSystem-nmdp-practitioner-role-cs.html#nmdp-practitioner-role-cs-referringphysician\">referringphysician</a></td><td>http://terminology.nmdp.org/codesystem/practitionerrole</td><td>Referring Physician</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-practitionerrole-tcphysician\"> </a>  <a href=\"CodeSystem-nmdp-practitioner-role-cs.html#nmdp-practitioner-role-cs-tcphysician\">tcphysician</a></td><td>http://terminology.nmdp.org/codesystem/practitionerrole</td><td>Transplant Center Physician</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-practitionerrole-tccoordinator\"> </a>  <a href=\"CodeSystem-nmdp-practitioner-role-cs.html#nmdp-practitioner-role-cs-tccoordinator\">tccoordinator</a></td><td>http://terminology.nmdp.org/codesystem/practitionerrole</td><td>Transplant Center Coordinator</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs",
+      "version" : "0.1.0",
+      "name" : "NMDPPractitionerRoleVS",
+      "title" : "NMDP Practitioner Role Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
+      "publisher" : "NMDP",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "NMDP Practitioner Role Value Set",
+      "expansion" : {
+        "identifier" : "urn:uuid:efbd6905-3c88-4a43-89b9-6b559a57bdde",
+        "timestamp" : "2023-02-16T14:45:04-06:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/practitionerrole|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/practitionerrole",
+          "code" : "referringphysician",
+          "display" : "Referring Physician"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/practitionerrole",
+          "code" : "tcphysician",
+          "display" : "Transplant Center Physician"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/practitionerrole",
+          "code" : "tccoordinator",
+          "display" : "Transplant Center Coordinator"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1949,7 +2091,8 @@
       "name" : "NMDPRhStatusVS",
       "title" : "NMDP Codes for Rh status",
       "status" : "active",
-      "date" : "2023-01-12T09:36:27-06:00",
+      "experimental" : true,
+      "date" : "2023-02-16T14:43:10-06:00",
       "publisher" : "NMDP",
       "contact" : [{
         "name" : "NMDP",
@@ -1960,8 +2103,8 @@
       }],
       "description" : "NMDP codes for Rh staus",
       "expansion" : {
-        "identifier" : "urn:uuid:f8d424ca-15e1-4eed-ba52-9adc962a1765",
-        "timestamp" : "2023-01-12T09:41:18-06:00",
+        "identifier" : "urn:uuid:ec27d1af-3b5a-4ef0-bc3d-adab12469ce1",
+        "timestamp" : "2023-02-16T14:45:04-06:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",

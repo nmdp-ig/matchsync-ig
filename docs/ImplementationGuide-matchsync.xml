@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="MatchSyncIG"/>
   <status value="draft"/>
-  <date value="2023-01-12T09:36:27-06:00"/>
+  <date value="2023-02-16T14:43:10-06:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -131,6 +131,14 @@
       </extension>
       <extension url="value">
         <valueString value="http://terminology.nmdp.org/codesystem/transplanttimeline"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://terminology.nmdp.org/codesystem/practitionerrole"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -427,6 +435,14 @@
       </extension>
       <extension url="value">
         <valueString value="http://terminology.nmdp.org/codesystem/transplanttimeline"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://terminology.nmdp.org/codesystem/practitionerrole"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -906,10 +922,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/transplantcenter"/>
+        <reference value="StructureDefinition/nmdp-practitioner"/>
       </reference>
-      <name value="TransplantCenter"/>
-      <description value="Transplant Center"/>
+      <name value="NMDPPractitioner"/>
+      <description value="NMDP Practitioner"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -917,10 +933,21 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/transplantcentercoordinator"/>
+        <reference value="StructureDefinition/nmdp-practitioner-role"/>
       </reference>
-      <name value="TransplantCenterCoordinator"/>
-      <description value="Transplant Center Coordinator"/>
+      <name value="NMDPPractitionerRole"/>
+      <description value="NMDP Practitioner Role"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/transplantcenter"/>
+      </reference>
+      <name value="TransplantCenter"/>
+      <description value="Transplant Center"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -943,6 +970,17 @@
       </reference>
       <name value="HLA Gene Name Value Set"/>
       <description value="HLA HGNC GeneIds Valueset"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/icd10-gvhd-codes"/>
+      </reference>
+      <name value="GVHD ICD-10 Codes"/>
+      <description value="GVHD ICD-10 Codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1031,6 +1069,17 @@
       </reference>
       <name value="NMDP Language Value Set"/>
       <description value="NMDP language codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nmdp-practitioner-role-vs"/>
+      </reference>
+      <name value="NMDP Practitioner Role Value Set"/>
+      <description value="NMDP Practitioner Role Value Set"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1181,6 +1230,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/nmdp-practitioner-role-cs"/>
+      </reference>
+      <name value="NMDP Practitioner Roles"/>
+      <description value="NMDP Practitioner Roles"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/nmdp-preferred-product-cs"/>
       </reference>
       <name value="NMDP Preferred Product for Transplant"/>
@@ -1219,50 +1279,6 @@
       <name value="NMDP Transplant Timeline Code System"/>
       <description value="Code System for NMDP transplant timeline"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/BundleExample-Full-HLA-Separate"/>
-      </reference>
-      <name value="MatchSync Bundle Example - Full with HLA in separate observations for each locus"/>
-      <description value="Full Bundle Example for MatchSync, with each HLA allele in a separate genotype observation"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-separate"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/BundleExample-Full-Multilocus-HLA"/>
-      </reference>
-      <name value="MatchSync Bundle Example - Full, HLA with multilocus genotype"/>
-      <description value="Full Bundle Example for MatchSync with multilocus HLA genotype"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-multilocus"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/BundleExample-Minimal"/>
-      </reference>
-      <name value="MatchSync Bundle Example - Mimimal"/>
-      <description value="Minimual Bundle Example for MatchSync"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/CoordinatorExample"/>
-      </reference>
-      <name value="CoordinatorExample"/>
-      <description value="Example of a Transplant Center Coordinator."/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcentercoordinator"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1541,6 +1557,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/PractitionerExample"/>
+      </reference>
+      <name value="PractitionerExample"/>
+      <description value="Example of a practitioner."/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/ReferringPhysicianExample"/>
+      </reference>
+      <name value="ReferringPhysicianExample"/>
+      <description value="Example of Referring Physician Role"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/TCCoordinatorExample"/>
+      </reference>
+      <name value="TCCoordinatorExample"/>
+      <description value="Example of Transplant Center Coordinotor Role"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <reference>
@@ -1549,6 +1598,17 @@
       <name value="TCExample"/>
       <description value="Example of a Transplant Center."/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcenter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/TCPhysicianExample"/>
+      </reference>
+      <name value="TCPhysicianExample"/>
+      <description value="Example of Transplant Center Physician Role"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

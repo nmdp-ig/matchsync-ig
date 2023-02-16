@@ -175,6 +175,20 @@
     "name" : "MSSpecimen"
   },
   {
+    "id" : "nmdp-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner",
+    "version" : "0.1.0",
+    "name" : "NMDPPractitioner"
+  },
+  {
+    "id" : "nmdp-practitioner-role",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role",
+    "version" : "0.1.0",
+    "name" : "NMDPPractitionerRole"
+  },
+  {
     "id" : "number-of-remissions",
     "type" : "StructureDefinition",
     "url" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/number-of-remissions",
@@ -189,18 +203,18 @@
     "name" : "TransplantCenter"
   },
   {
-    "id" : "transplantcentercoordinator",
-    "type" : "StructureDefinition",
-    "url" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcentercoordinator",
-    "version" : "0.1.0",
-    "name" : "TransplantCenterCoordinator"
-  },
-  {
     "id" : "hla-geneid-valueset",
     "type" : "ValueSet",
     "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset",
     "version" : "0.1.0",
     "name" : "HLAGeneIdVS"
+  },
+  {
+    "id" : "icd10-gvhd-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes",
+    "version" : "0.1.0",
+    "name" : "ICD10GVHDVS"
   },
   {
     "id" : "ms-abo-group-codes",
@@ -250,6 +264,13 @@
     "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes",
     "version" : "0.1.0",
     "name" : "NMDPLanguageCodes"
+  },
+  {
+    "id" : "nmdp-practitioner-role-vs",
+    "type" : "ValueSet",
+    "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs",
+    "version" : "0.1.0",
+    "name" : "NMDPPractitionerRoleVS"
   },
   {
     "id" : "nmdp-preferred-product-codes",
@@ -334,6 +355,13 @@
     "url" : "http://terminology.nmdp.org/codesystem/language",
     "version" : "0.1.0",
     "name" : "NMDPLanguageCS"
+  },
+  {
+    "id" : "nmdp-practitioner-role-cs",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.nmdp.org/codesystem/practitionerrole",
+    "version" : "0.1.0",
+    "name" : "NMDPPractitionerRoleCS"
   },
   {
     "id" : "nmdp-preferred-product-cs",

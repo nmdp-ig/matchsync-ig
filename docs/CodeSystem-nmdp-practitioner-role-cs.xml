@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nmdp-practitioner-role-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://terminology.nmdp.org/codesystem/practitionerrole</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">referringphysician<a name="nmdp-practitioner-role-cs-referringphysician"> </a></td><td>Referring Physician</td></tr><tr><td style="white-space:nowrap">tcphysician<a name="nmdp-practitioner-role-cs-tcphysician"> </a></td><td>Transplant Center Physician</td></tr><tr><td style="white-space:nowrap">tccoordinator<a name="nmdp-practitioner-role-cs-tccoordinator"> </a></td><td>Transplant Center Coordinator</td></tr></table></div>
+  </text>
+  <url value="http://terminology.nmdp.org/codesystem/practitionerrole"/>
+  <version value="0.1.0"/>
+  <name value="NMDPPractitionerRoleCS"/>
+  <title value="NMDP Practitioner Roles"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-02-16T14:43:10-06:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="NMDP Practitioner Roles"/>
+  <copyright value="National Marrow Donor Program"/>
+  <caseSensitive value="true"/>
+  <compositional value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="referringphysician"/>
+    <display value="Referring Physician"/>
+  </concept>
+  <concept>
+    <code value="tcphysician"/>
+    <display value="Transplant Center Physician"/>
+  </concept>
+  <concept>
+    <code value="tccoordinator"/>
+    <display value="Transplant Center Coordinator"/>
+  </concept>
+</CodeSystem>

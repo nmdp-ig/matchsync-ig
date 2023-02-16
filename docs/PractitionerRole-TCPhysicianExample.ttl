@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/PractitionerRole/TCPhysicianExample> a fhir:PractitionerRole;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "TCPhysicianExample"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role";
+       fhir:index 0;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role>
+     ];
+     fhir:Meta.security [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ];
+       fhir:Coding.code [ fhir:value "tc_123" ]
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"TCPhysicianExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;TCPhysicianExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nmdp-practitioner-role.html\">NMDPPractitionerRole</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>practitioner</b>: <a href=\"Practitioner-PractitionerExample.html\">Practitioner/PractitionerExample</a> &quot; SIMPSON&quot;</p><p><b>code</b>: Transplant Center Physician <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nmdp-practitioner-role-cs.html\">NMDP Practitioner Roles</a>#tcphysician)</span></p></div>"
+  ]; # 
+  fhir:PractitionerRole.practitioner [
+     fhir:link <http://fhir.nmdp.org/ig/matchsync/Practitioner/PractitionerExample>;
+     fhir:Reference.reference [ fhir:value "Practitioner/PractitionerExample" ]
+  ]; # 
+  fhir:PractitionerRole.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/practitionerrole" ];
+       fhir:Coding.code [ fhir:value "tcphysician" ];
+       fhir:Coding.display [ fhir:value "Transplant Center Physician" ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/PractitionerRole/TCPhysicianExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
