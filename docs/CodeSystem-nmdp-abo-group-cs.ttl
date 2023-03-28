@@ -5,61 +5,49 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-abo-group-cs> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "nmdp-abo-group-cs"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://terminology.nmdp.org/codesystem/abogroup</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"nmdp-abo-group-cs-A\"> </a></td><td>A</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"nmdp-abo-group-cs-B\"> </a></td><td>B</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"nmdp-abo-group-cs-O\"> </a></td><td>O</td></tr><tr><td style=\"white-space:nowrap\">AB<a name=\"nmdp-abo-group-cs-AB\"> </a></td><td>AB</td></tr><tr><td style=\"white-space:nowrap\">nil<a name=\"nmdp-abo-group-cs-nil\"> </a></td><td>no data</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://terminology.nmdp.org/codesystem/abogroup"]; # 
-  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "NMDPABOCS"]; # 
-  fhir:CodeSystem.title [ fhir:value "NMDP Blood Group Code System"]; # 
-  fhir:CodeSystem.status [ fhir:value "active"]; # 
-  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2023-02-16T14:43:10-06:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "NMDP"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "NMDP" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "Code System for NMDP ABO blood groups"]; # 
-  fhir:CodeSystem.copyright [ fhir:value "National Marrow Donor Program"]; # 
-  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
-  fhir:CodeSystem.content [ fhir:value "complete"]; # 
-  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "A" ];
-     fhir:CodeSystem.concept.display [ fhir:value "A" ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "B" ];
-     fhir:CodeSystem.concept.display [ fhir:value "B" ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "O" ];
-     fhir:CodeSystem.concept.display [ fhir:value "O" ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "AB" ];
-     fhir:CodeSystem.concept.display [ fhir:value "AB" ]
-  ], [
-     fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "nil" ];
-     fhir:CodeSystem.concept.display [ fhir:value "no data" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-abo-group-cs.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-abo-group-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nmdp-abo-group-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://terminology.nmdp.org/codesystem/abogroup</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"nmdp-abo-group-cs-A\"> </a></td><td>A</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"nmdp-abo-group-cs-B\"> </a></td><td>B</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"nmdp-abo-group-cs-O\"> </a></td><td>O</td></tr><tr><td style=\"white-space:nowrap\">AB<a name=\"nmdp-abo-group-cs-AB\"> </a></td><td>AB</td></tr><tr><td style=\"white-space:nowrap\">nil<a name=\"nmdp-abo-group-cs-nil\"> </a></td><td>no data</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.nmdp.org/codesystem/abogroup"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "NMDPABOCS"] ; # 
+  fhir:title [ fhir:v "NMDP Blood Group Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-03-28T10:23:42-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NMDP"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NMDP" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://bethematch.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code System for NMDP ABO blood groups"] ; # 
+  fhir:copyright [ fhir:v "National Marrow Donor Program"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "A" ] ;
+     fhir:display [ fhir:v "A" ]
+  ] [
+     fhir:code [ fhir:v "B" ] ;
+     fhir:display [ fhir:v "B" ]
+  ] [
+     fhir:code [ fhir:v "O" ] ;
+     fhir:display [ fhir:v "O" ]
+  ] [
+     fhir:code [ fhir:v "AB" ] ;
+     fhir:display [ fhir:v "AB" ]
+  ] [
+     fhir:code [ fhir:v "nil" ] ;
+     fhir:display [ fhir:v "no data" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

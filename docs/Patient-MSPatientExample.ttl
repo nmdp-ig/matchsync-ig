@@ -5,94 +5,73 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample> a fhir:Patient;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "MSPatientExample"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient";
-       fhir:index 0;
+<http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MSPatientExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"^^xsd:anyURI ;
        fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient>
-     ];
-     fhir:Meta.security [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ];
-       fhir:Coding.code [ fhir:value "tc_123" ]
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jane Everyperson </b> female, DoB: 1974-12-25 ( id: 123)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 1-612-555-1234</li><li>123 Main St Minneapolis MN 55401 USA </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2186-5\">Race &amp; Ethnicity - CDC</a> 2186-5: Not Hispanic or Latino</li><li>text: Not Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2106-3\">Race &amp; Ethnicity - CDC</a> 2106-3: White</li><li>text: White</li></ul></td></tr></table></div>"
-  ]; # 
-  fhir:DomainResource.extension [
-     fhir:index 0;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "ombCategory" ];
-       fhir:Extension.valueCoding [
-         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.238" ];
-         fhir:Coding.code [ fhir:value "2106-3" ];
-         fhir:Coding.display [ fhir:value "White" ]
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jane Everyperson </b> female, DoB: 1974-12-25 ( id: 123)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 1-612-555-1234</li><li>123 Main St Minneapolis MN 55401 USA </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2186-5\">Race &amp; Ethnicity - CDC</a> 2186-5: Not Hispanic or Latino</li><li>text: Not Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2106-3\">Race &amp; Ethnicity - CDC</a> 2106-3: White</li><li>text: White</li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2106-3" ] ;
+         fhir:display [ fhir:v "White" ]
        ]
-     ], [
-       fhir:index 1;
-       fhir:Extension.url [ fhir:value "text" ];
-       fhir:Extension.valueString [ fhir:value "White" ]
-     ];
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race" ]
-  ], [
-     fhir:index 1;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "ombCategory" ];
-       fhir:Extension.valueCoding [
-         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.238" ];
-         fhir:Coding.code [ fhir:value "2186-5" ];
-         fhir:Coding.display [ fhir:value "Not Hispanic or Latino" ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "White" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2186-5" ] ;
+         fhir:display [ fhir:v "Not Hispanic or Latino" ]
        ]
-     ], [
-       fhir:index 1;
-       fhir:Extension.url [ fhir:value "text" ];
-       fhir:Extension.valueString [ fhir:value "Not Hispanic or Latino" ]
-     ];
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity" ]
-  ]; # 
-  fhir:Patient.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://example.org/mrn" ];
-     fhir:Identifier.value [ fhir:value "123" ]
-  ]; # 
-  fhir:Patient.name [
-     fhir:index 0;
-     fhir:HumanName.family [ fhir:value "Everyperson" ];
-     fhir:HumanName.given [
-       fhir:value "Jane";
-       fhir:index 0
-     ]
-  ]; # 
-  fhir:Patient.telecom [
-     fhir:index 0;
-     fhir:ContactPoint.system [ fhir:value "phone" ];
-     fhir:ContactPoint.value [ fhir:value "1-612-555-1234" ]
-  ]; # 
-  fhir:Patient.gender [ fhir:value "female"]; # 
-  fhir:Patient.birthDate [ fhir:value "1974-12-25"^^xsd:date]; # 
-  fhir:Patient.address [
-     fhir:index 0;
-     fhir:Address.line [
-       fhir:value "123 Main St";
-       fhir:index 0
-     ];
-     fhir:Address.city [ fhir:value "Minneapolis" ];
-     fhir:Address.state [ fhir:value "MN" ];
-     fhir:Address.postalCode [ fhir:value "55401" ];
-     fhir:Address.country [ fhir:value "USA" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Not Hispanic or Latino" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://example.org/mrn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Everyperson" ] ;
+     fhir:given ( [ fhir:v "Jane" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "1-612-555-1234" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1974-12-25"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "123 Main St" ] ) ;
+     fhir:city [ fhir:v "Minneapolis" ] ;
+     fhir:state [ fhir:v "MN" ] ;
+     fhir:postalCode [ fhir:v "55401" ] ;
+     fhir:country [ fhir:v "USA" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

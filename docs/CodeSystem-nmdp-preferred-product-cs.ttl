@@ -5,61 +5,49 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-preferred-product-cs> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "nmdp-preferred-product-cs"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://terminology.nmdp.org/codesystem/preferredproduct</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PBSC<a name=\"nmdp-preferred-product-cs-PBSC\"> </a></td><td>HPC, Apheresis</td></tr><tr><td style=\"white-space:nowrap\">Marrow<a name=\"nmdp-preferred-product-cs-Marrow\"> </a></td><td>HPC, Marrow</td></tr><tr><td style=\"white-space:nowrap\">CBU<a name=\"nmdp-preferred-product-cs-CBU\"> </a></td><td>HPC, Cord Blood</td></tr><tr><td style=\"white-space:nowrap\">NP<a name=\"nmdp-preferred-product-cs-NP\"> </a></td><td>No preference</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"nmdp-preferred-product-cs-U\"> </a></td><td>Unknown</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://terminology.nmdp.org/codesystem/preferredproduct"]; # 
-  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "NMDPPreferredProductCS"]; # 
-  fhir:CodeSystem.title [ fhir:value "NMDP Preferred Product for Transplant"]; # 
-  fhir:CodeSystem.status [ fhir:value "active"]; # 
-  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2023-02-16T14:43:10-06:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "NMDP"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "NMDP" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "NMDP Preferred Product for MatchSync patient"]; # 
-  fhir:CodeSystem.copyright [ fhir:value "National Marrow Donor Program"]; # 
-  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
-  fhir:CodeSystem.content [ fhir:value "complete"]; # 
-  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "PBSC" ];
-     fhir:CodeSystem.concept.display [ fhir:value "HPC, Apheresis" ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "Marrow" ];
-     fhir:CodeSystem.concept.display [ fhir:value "HPC, Marrow" ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "CBU" ];
-     fhir:CodeSystem.concept.display [ fhir:value "HPC, Cord Blood" ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "NP" ];
-     fhir:CodeSystem.concept.display [ fhir:value "No preference" ]
-  ], [
-     fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "U" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-preferred-product-cs.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-preferred-product-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nmdp-preferred-product-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://terminology.nmdp.org/codesystem/preferredproduct</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PBSC<a name=\"nmdp-preferred-product-cs-PBSC\"> </a></td><td>HPC, Apheresis</td></tr><tr><td style=\"white-space:nowrap\">Marrow<a name=\"nmdp-preferred-product-cs-Marrow\"> </a></td><td>HPC, Marrow</td></tr><tr><td style=\"white-space:nowrap\">CBU<a name=\"nmdp-preferred-product-cs-CBU\"> </a></td><td>HPC, Cord Blood</td></tr><tr><td style=\"white-space:nowrap\">NP<a name=\"nmdp-preferred-product-cs-NP\"> </a></td><td>No preference</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"nmdp-preferred-product-cs-U\"> </a></td><td>Unknown</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.nmdp.org/codesystem/preferredproduct"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "NMDPPreferredProductCS"] ; # 
+  fhir:title [ fhir:v "NMDP Preferred Product for Transplant"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-03-28T10:23:42-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NMDP"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NMDP" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://bethematch.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "NMDP Preferred Product for MatchSync patient"] ; # 
+  fhir:copyright [ fhir:v "National Marrow Donor Program"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "PBSC" ] ;
+     fhir:display [ fhir:v "HPC, Apheresis" ]
+  ] [
+     fhir:code [ fhir:v "Marrow" ] ;
+     fhir:display [ fhir:v "HPC, Marrow" ]
+  ] [
+     fhir:code [ fhir:v "CBU" ] ;
+     fhir:display [ fhir:v "HPC, Cord Blood" ]
+  ] [
+     fhir:code [ fhir:v "NP" ] ;
+     fhir:display [ fhir:v "No preference" ]
+  ] [
+     fhir:code [ fhir:v "U" ] ;
+     fhir:display [ fhir:v "Unknown" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

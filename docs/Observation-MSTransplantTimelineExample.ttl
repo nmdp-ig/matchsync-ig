@@ -5,47 +5,40 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsync/Observation/MSTransplantTimelineExample> a fhir:Observation;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "MSTransplantTimelineExample"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-transplant-timeline-observation";
-       fhir:index 0;
+<http://fhir.nmdp.org/ig/matchsync/Observation/MSTransplantTimelineExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MSTransplantTimelineExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-transplant-timeline-observation"^^xsd:anyURI ;
        fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-transplant-timeline-observation>
-     ];
-     fhir:Meta.security [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ];
-       fhir:Coding.code [ fhir:value "tc_123" ]
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MSTransplantTimelineExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MSTransplantTimelineExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ms-transplant-timeline-observation.html\">MSTransplantTimeline</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>code</b>: Transplant Timeline <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Patient/MSPatientExample</a> &quot; EVERYPERSON&quot;</p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: Pending, Case manager to follow up <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html\">NMDP Transplant Timeline Code System</a>#P)</span></p></div>"
-  ]; # 
-  fhir:Observation.status [ fhir:value "final"]; # 
-  fhir:Observation.code [
-     fhir:CodeableConcept.text [ fhir:value "Transplant Timeline" ]
-  ]; # 
-  fhir:Observation.subject [
-     fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample>;
-     fhir:Reference.reference [ fhir:value "Patient/MSPatientExample" ]
-  ]; # 
-  fhir:Observation.effectiveDateTime [ fhir:value "2022-05-01"^^xsd:date]; # 
-  fhir:Observation.valueCodeableConcept [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplanttimeline" ];
-       fhir:Coding.code [ fhir:value "P" ];
-       fhir:Coding.display [ fhir:value "Pending, Case manager to follow up" ]
-     ]
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MSTransplantTimelineExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MSTransplantTimelineExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ms-transplant-timeline-observation.html\">MSTransplantTimeline</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>code</b>: Transplant Timeline <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Patient/MSPatientExample</a> &quot; EVERYPERSON&quot;</p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: Pending, Case manager to follow up <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html\">NMDP Transplant Timeline Code System</a>#P)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Transplant Timeline" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample> ;
+     fhir:reference [ fhir:v "Patient/MSPatientExample" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-05-01"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplanttimeline"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "P" ] ;
+       fhir:display [ fhir:v "Pending, Case manager to follow up" ]
+     ] )
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.nmdp.org/ig/matchsync/Observation/MSTransplantTimelineExample.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

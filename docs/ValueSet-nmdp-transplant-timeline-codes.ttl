@@ -5,42 +5,34 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "nmdp-transplant-timeline-codes"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-transplant-timeline-cs.html\"><code>http://terminology.nmdp.org/codesystem/transplanttimeline</code></a></li></ul></div>"
-  ]; # 
-  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes"]; # 
-  fhir:ValueSet.version [ fhir:value "0.1.0"]; # 
-  fhir:ValueSet.name [ fhir:value "NMDPTransplantTimelineVS"]; # 
-  fhir:ValueSet.title [ fhir:value "NMDP Transplant Timeline Value Set"]; # 
-  fhir:ValueSet.status [ fhir:value "active"]; # 
-  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean]; # 
-  fhir:ValueSet.date [ fhir:value "2023-02-16T14:43:10-06:00"^^xsd:dateTime]; # 
-  fhir:ValueSet.publisher [ fhir:value "NMDP"]; # 
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "NMDP" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
-     ]
-  ]; # 
-  fhir:ValueSet.description [ fhir:value "NMDP transplant timeline codes"]; # 
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplanttimeline" ]
-     ]
+<http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nmdp-transplant-timeline-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-transplant-timeline-cs.html\"><code>http://terminology.nmdp.org/codesystem/transplanttimeline</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "NMDPTransplantTimelineVS"] ; # 
+  fhir:title [ fhir:v "NMDP Transplant Timeline Value Set"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-03-28T10:23:42-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NMDP"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NMDP" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://bethematch.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "NMDP transplant timeline codes"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplanttimeline"^^xsd:anyURI ]
+     ] )
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 
