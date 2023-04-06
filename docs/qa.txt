@@ -1,10 +1,11 @@
 ﻿MatchSyncIG : Validation Results
 =========================================
 
-err = 0, warn = 3, info = 54
-IG Publisher Version: 1.2.54 Out of date - current version is 1.3.3
-Generated Tue Mar 28 10:30:14 CDT 2023. FHIR version 4.0.1 for matchsync#0.1.0 (canonical = http://fhir.nmdp.org/ig/matchsync)
+err = 0, warn = 16, info = 71
+IG Publisher Version: 1.2.54 Out of date - current version is 1.3.4
+Generated Thu Apr 06 10:52:55 CDT 2023. FHIR version 4.0.1 for matchsync#0.1.0 (canonical = http://fhir.nmdp.org/ig/matchsync)
  Build Errors : 44 / 0 / 0
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Bundle-BundleExample-Practitioner : 0 / 14 / 37
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/CodeSystem-glstring-codesystem : 0 / 0 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/CodeSystem-hla-genename-codesystem : 0 / 0 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-abo-group-cs : 0 / 0 / 1
@@ -43,10 +44,12 @@ Generated Tue Mar 28 10:30:14 CDT 2023. FHIR version 4.0.1 for matchsync#0.1.0 (
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample2 : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample3 : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample4 : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Practitioner-PractitionerExample : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/PractitionerRole-ReferringPhysicianExample : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/PractitionerRole-TCCoordinatorExample : 0 / 0 / 2
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/PractitionerRole-TCPhysicianExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample5 : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Practitioner-PhysicianExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Practitioner-SearchCoordinatorExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/PractitionerRole-ReferringPhysicianRoleExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/PractitionerRole-SearchCoordinatorRoleExample : 0 / 0 / 2
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/PractitionerRole-TCPhysicianRoleExample : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/Specimen-MSSpecimenExample : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-a : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-b : 0 / 0 / 2
@@ -61,7 +64,7 @@ Generated Tue Mar 28 10:30:14 CDT 2023. FHIR version 4.0.1 for matchsync#0.1.0 (
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-drb5 : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-genotype : 0 / 0 / 2
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-abogroup-observation : 0 / 0 / 1
- /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle : 0 / 1 / 1
+ /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle : 0 / 0 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle-hla-multilocus : 0 / 1 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle-hla-separate : 0 / 1 / 1
  /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-height-observation : 0 / 0 / 1
@@ -139,6 +142,36 @@ ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/Str
 ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 681, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
 ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1005, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
 ERROR: /Users/bmilius/Documents/src/github-nmdp-ig/matchsync-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1277, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
+== fsh-generated/resources/Bundle-BundleExample-Practitioner.json ==
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[0].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[0].resource.generalPractitioner[0]: Entry 1 matches the reference PractitionerRole/ReferringPhysicianRoleExample by type and id but it's fullUrl urn:uuid:95122680-4f5b-48e2-84fc-b9add1d17b74 does not match the full target URL urn:uuid:ReferringPhysicianRoleExample by Bundle resolution rules
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[0].resource.generalPractitioner[1]: Entry 2 matches the reference PractitionerRole/TCPhysicianRoleExample by type and id but it's fullUrl urn:uuid:89dc053e-b913-4246-8521-916b8ccafa64 does not match the full target URL urn:uuid:TCPhysicianRoleExample by Bundle resolution rules
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[0].resource.generalPractitioner[2]: Entry 3 matches the reference PractitionerRole/SearchCoordinatorRoleExample by type and id but it's fullUrl urn:uuid:5408e53f-d871-4f6b-9322-134d21b6ad00 does not match the full target URL urn:uuid:SearchCoordinatorRoleExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[0].resource/*Patient/MSPatientExample5*/.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[0].resource/*Patient/MSPatientExample5*/.generalPractitioner[0]: Entry 1 matches the reference PractitionerRole/ReferringPhysicianRoleExample by type and id but it's fullUrl urn:uuid:95122680-4f5b-48e2-84fc-b9add1d17b74 does not match the full target URL urn:uuid:ReferringPhysicianRoleExample by Bundle resolution rules
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[0].resource/*Patient/MSPatientExample5*/.generalPractitioner[1]: Entry 2 matches the reference PractitionerRole/TCPhysicianRoleExample by type and id but it's fullUrl urn:uuid:89dc053e-b913-4246-8521-916b8ccafa64 does not match the full target URL urn:uuid:TCPhysicianRoleExample by Bundle resolution rules
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[0].resource/*Patient/MSPatientExample5*/.generalPractitioner[2]: Entry 3 matches the reference PractitionerRole/SearchCoordinatorRoleExample by type and id but it's fullUrl urn:uuid:5408e53f-d871-4f6b-9322-134d21b6ad00 does not match the full target URL urn:uuid:SearchCoordinatorRoleExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[1].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[1].resource.practitioner: Entry 5 matches the reference Practitioner/PhysicianExample by type and id but it's fullUrl urn:uuid:22900ccb-c3eb-421d-b2be-c488b3ef9cde does not match the full target URL urn:uuid:PhysicianExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[1].resource/*PractitionerRole/ReferringPhysicianRoleExample*/.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[1].resource/*PractitionerRole/ReferringPhysicianRoleExample*/.practitioner: Entry 5 matches the reference Practitioner/PhysicianExample by type and id but it's fullUrl urn:uuid:22900ccb-c3eb-421d-b2be-c488b3ef9cde does not match the full target URL urn:uuid:PhysicianExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[2].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[2].resource.practitioner: Entry 5 matches the reference Practitioner/PhysicianExample by type and id but it's fullUrl urn:uuid:22900ccb-c3eb-421d-b2be-c488b3ef9cde does not match the full target URL urn:uuid:PhysicianExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[2].resource/*PractitionerRole/TCPhysicianRoleExample*/.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[2].resource/*PractitionerRole/TCPhysicianRoleExample*/.practitioner: Entry 5 matches the reference Practitioner/PhysicianExample by type and id but it's fullUrl urn:uuid:22900ccb-c3eb-421d-b2be-c488b3ef9cde does not match the full target URL urn:uuid:PhysicianExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[3].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[3].resource.practitioner: Entry 4 matches the reference Practitioner/SearchCoordinatorExample by type and id but it's fullUrl urn:uuid:e157c476-08be-4f65-ab51-882ad14334c6 does not match the full target URL urn:uuid:SearchCoordinatorExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[3].resource/*PractitionerRole/SearchCoordinatorRoleExample*/.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[3].resource/*PractitionerRole/SearchCoordinatorRoleExample*/.practitioner: Entry 4 matches the reference Practitioner/SearchCoordinatorExample by type and id but it's fullUrl urn:uuid:e157c476-08be-4f65-ab51-882ad14334c6 does not match the full target URL urn:uuid:SearchCoordinatorExample by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[4].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[4].resource/*Practitioner/SearchCoordinatorExample*/.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[5].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[5].resource/*Practitioner/PhysicianExample*/.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource.subject: Entry 0 matches the reference Patient/MSPatientExample5 by type and id but it's fullUrl urn:uuid:b80aa60a-fe3e-4aa4-bd4b-23f68cfc7425 does not match the full target URL urn:uuid:MSPatientExample5 by Bundle resolution rules
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource/*Condition/MSDiagnosisExample-AML*/.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource/*Condition/MSDiagnosisExample-AML*/.subject: Entry 0 matches the reference Patient/MSPatientExample5 by type and id but it's fullUrl urn:uuid:b80aa60a-fe3e-4aa4-bd4b-23f68cfc7425 does not match the full target URL urn:uuid:MSPatientExample5 by Bundle resolution rules
 == fsh-generated/resources/CodeSystem-glstring-codesystem.json ==
 == fsh-generated/resources/CodeSystem-hla-genename-codesystem.json ==
 == fsh-generated/resources/CodeSystem-nmdp-abo-group-cs.json ==
@@ -214,14 +247,18 @@ INFORMATION: Patient/MSPatientExample2: Patient.meta.security[0]: Code System UR
 INFORMATION: Patient/MSPatientExample3: Patient.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Patient-MSPatientExample4.json ==
 INFORMATION: Patient/MSPatientExample4: Patient.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
-== fsh-generated/resources/Practitioner-PractitionerExample.json ==
-INFORMATION: Practitioner/PractitionerExample: Practitioner.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
-== fsh-generated/resources/PractitionerRole-ReferringPhysicianExample.json ==
-INFORMATION: PractitionerRole/ReferringPhysicianExample: PractitionerRole.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
-== fsh-generated/resources/PractitionerRole-TCCoordinatorExample.json ==
-INFORMATION: PractitionerRole/TCCoordinatorExample: PractitionerRole.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
-== fsh-generated/resources/PractitionerRole-TCPhysicianExample.json ==
-INFORMATION: PractitionerRole/TCPhysicianExample: PractitionerRole.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Patient-MSPatientExample5.json ==
+INFORMATION: Patient/MSPatientExample5: Patient.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Practitioner-PhysicianExample.json ==
+INFORMATION: Practitioner/PhysicianExample: Practitioner.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/Practitioner-SearchCoordinatorExample.json ==
+INFORMATION: Practitioner/SearchCoordinatorExample: Practitioner.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/PractitionerRole-ReferringPhysicianRoleExample.json ==
+INFORMATION: PractitionerRole/ReferringPhysicianRoleExample: PractitionerRole.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/PractitionerRole-SearchCoordinatorRoleExample.json ==
+INFORMATION: PractitionerRole/SearchCoordinatorRoleExample: PractitionerRole.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
+== fsh-generated/resources/PractitionerRole-TCPhysicianRoleExample.json ==
+INFORMATION: PractitionerRole/TCPhysicianRoleExample: PractitionerRole.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/Specimen-MSSpecimenExample.json ==
 INFORMATION: Specimen/MSSpecimenExample: Specimen.meta.security[0]: Code System URI 'http://terminology.nmdp.org/codesystem/transplant-center' is unknown so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-hla-a.json ==
@@ -250,7 +287,6 @@ INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[
 INFORMATION: StructureDefinition/hla-genotype: StructureDefinition.snapshot.element[31].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-ms-abogroup-observation.json ==
 == fsh-generated/resources/StructureDefinition-ms-bundle.json ==
-WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ms-bundle-hla-multilocus.json ==
 WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-multilocus'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ms-bundle-hla-separate.json ==

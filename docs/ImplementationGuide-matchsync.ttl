@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "MatchSyncIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-03-28T10:23:42-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-06T10:47:25-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NMDP"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NMDP" ] ;
@@ -1438,6 +1438,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Bundle/BundleExample-Practitioner> ;
+         fhir:reference [ fhir:v "Bundle/BundleExample-Practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "MatchSync Bundle Example - Practioners" ] ;
+       fhir:description [ fhir:v "MatchSync Bundle Example with Search Coordinator, Referring Physician, and TC Physician" ] ;
+       fhir:example [
+         fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle"^^xsd:anyURI ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
@@ -1738,6 +1753,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample5> ;
+         fhir:reference [ fhir:v "Patient/MSPatientExample5" ]
+       ] ;
+       fhir:name [ fhir:v "MSPatientExample5" ] ;
+       fhir:description [ fhir:v "Example of a patient needing a donor using NMDP race code." ] ;
+       fhir:example [
+         fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"^^xsd:anyURI ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
@@ -1816,10 +1846,10 @@
          fhir:value [ fhir:v "Practitioner" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsync/Practitioner/PractitionerExample> ;
-         fhir:reference [ fhir:v "Practitioner/PractitionerExample" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Practitioner/PhysicianExample> ;
+         fhir:reference [ fhir:v "Practitioner/PhysicianExample" ]
        ] ;
-       fhir:name [ fhir:v "PractitionerExample" ] ;
+       fhir:name [ fhir:v "PhysicianExample" ] ;
        fhir:description [ fhir:v "Example of a practitioner." ] ;
        fhir:example [
          fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"^^xsd:anyURI ;
@@ -1831,10 +1861,10 @@
          fhir:value [ fhir:v "PractitionerRole" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsync/PractitionerRole/ReferringPhysicianExample> ;
-         fhir:reference [ fhir:v "PractitionerRole/ReferringPhysicianExample" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/PractitionerRole/ReferringPhysicianRoleExample> ;
+         fhir:reference [ fhir:v "PractitionerRole/ReferringPhysicianRoleExample" ]
        ] ;
-       fhir:name [ fhir:v "ReferringPhysicianExample" ] ;
+       fhir:name [ fhir:v "ReferringPhysicianRoleExample" ] ;
        fhir:description [ fhir:v "Example of Referring Physician Role" ] ;
        fhir:example [
          fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"^^xsd:anyURI ;
@@ -1843,13 +1873,28 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Practitioner/SearchCoordinatorExample> ;
+         fhir:reference [ fhir:v "Practitioner/SearchCoordinatorExample" ]
+       ] ;
+       fhir:name [ fhir:v "SearchCoordinatorExample" ] ;
+       fhir:description [ fhir:v "Example of a practitioner." ] ;
+       fhir:example [
+         fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"^^xsd:anyURI ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "PractitionerRole" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsync/PractitionerRole/TCCoordinatorExample> ;
-         fhir:reference [ fhir:v "PractitionerRole/TCCoordinatorExample" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/PractitionerRole/SearchCoordinatorRoleExample> ;
+         fhir:reference [ fhir:v "PractitionerRole/SearchCoordinatorRoleExample" ]
        ] ;
-       fhir:name [ fhir:v "TCCoordinatorExample" ] ;
+       fhir:name [ fhir:v "SearchCoordinatorRoleExample" ] ;
        fhir:description [ fhir:v "Example of Transplant Center Coordinotor Role" ] ;
        fhir:example [
          fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"^^xsd:anyURI ;
@@ -1876,10 +1921,10 @@
          fhir:value [ fhir:v "PractitionerRole" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsync/PractitionerRole/TCPhysicianExample> ;
-         fhir:reference [ fhir:v "PractitionerRole/TCPhysicianExample" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/PractitionerRole/TCPhysicianRoleExample> ;
+         fhir:reference [ fhir:v "PractitionerRole/TCPhysicianRoleExample" ]
        ] ;
-       fhir:name [ fhir:v "TCPhysicianExample" ] ;
+       fhir:name [ fhir:v "TCPhysicianRoleExample" ] ;
        fhir:description [ fhir:v "Example of Transplant Center Physician Role" ] ;
        fhir:example [
          fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"^^xsd:anyURI ;

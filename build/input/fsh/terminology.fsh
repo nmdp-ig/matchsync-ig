@@ -483,7 +483,7 @@ Description: "NMDP Practitioner Roles"
 * ^publisher = "NMDP"
 * #referringphysician "Referring Physician"
 * #tcphysician "Transplant Center Physician"
-* #tccoordinator "Transplant Center Coordinator"
+* #searchcoordinator "Search Coordinator"
 
 ValueSet:  NMDPPractitionerRoleVS
 Title: "NMDP Practitioner Role Value Set"

@@ -20,7 +20,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"MSDiagnosisExample-AML\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;MSDiagnosisExample-AML&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-msdiagnosis.html\">MSPrimaryDiagnosis</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>Number of Remissions of Primary Diagnosis</b>: 0</p><p><b>code</b>: ACUTE MYELOGENOUS LEUKEMIA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nmdp-disease-cs.html\">NMDP Disease Code System</a>#AML)</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Patient/MSPatientExample</a> &quot; EVERYPERSON&quot;</p><p><b>recordedDate</b>: 2021-11-01</p><h3>Stages</h3><table class=\"grid\"><tr><td>-</td><td><b>Summary</b></td></tr><tr><td>*</td><td>Accelerated Phase <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nmdp-diseasestage-cs.html\">NMDP Disease Stage Code System</a>#AP)</span></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"MSDiagnosisExample-AML\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;MSDiagnosisExample-AML&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-msdiagnosis.html\">MSPrimaryDiagnosis</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>Number of Remissions of Primary Diagnosis</b>: 0</p><p><b>code</b>: ACUTE MYELOGENOUS LEUKEMIA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nmdp-disease-cs.html\">NMDP Disease Code System</a>#AML)</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample5.html\">Patient/MSPatientExample5</a> &quot; EVERYPERSON&quot;</p><p><b>recordedDate</b>: 2021-11-01</p><h3>Stages</h3><table class=\"grid\"><tr><td>-</td><td><b>Summary</b></td></tr><tr><td>*</td><td>Accelerated Phase <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nmdp-diseasestage-cs.html\">NMDP Disease Stage Code System</a>#AP)</span></td></tr></table></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/number-of-remissions"^^xsd:anyURI ] ;
@@ -34,8 +34,8 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample> ;
-     fhir:reference [ fhir:v "Patient/MSPatientExample" ]
+     fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample5> ;
+     fhir:reference [ fhir:v "Patient/MSPatientExample5" ]
   ] ; # 
   fhir:recordedDate [ fhir:v "2021-11-01"^^xsd:date] ; # 
   fhir:stage ( [

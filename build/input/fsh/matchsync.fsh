@@ -114,6 +114,29 @@ Description: "Example of a patient needing a donor using us-core-race code but n
 * identifier.system = "http://example.org/mrn"
 * identifier.value = "123"
 
+Instance: MSPatientExample5
+InstanceOf: MSPatient
+Description: "Example of a patient needing a donor using NMDP race code."
+* meta.security[TransplantCenter].code = #tc_123
+* name
+  * given[0] = "Joe"
+  * family = "Everyperson"
+* gender = #male
+* birthDate = "1974-12-25"
+* address.line[0] = "123 Main St"
+* address.country = "USA"
+* address.city = "Minneapolis"
+* address.state = "MN"
+* address.postalCode = "55401"
+* telecom[0].value = "1-612-555-1234"
+// * extension[nmdprace].valueCodeableConcept.coding = $NMDPRace#EURWRC "North American or European"
+// * extension[nmdpethnicity].valueCodeableConcept.coding = $NMDPEthnicity#NHIS "Not Hispanic or Latino"
+* identifier.system = "http://example.org/mrn"
+* identifier.value = "123"
+* generalPractitioner[+] = Reference(ReferringPhysicianRoleExample)
+* generalPractitioner[+] = Reference(TCPhysicianRoleExample)
+* generalPractitioner[+] = Reference(SearchCoordinatorRoleExample)
+
 Profile: TransplantCenter
 Parent: Organization
 Id:     transplantcenter
@@ -148,52 +171,6 @@ Description: "Example patient specimen."
 * identifier.system = "http://terminology.nmdp.org/identifier/transplantcenter"
 * identifier.value = "000"
 * subject = Reference(MSPatientExample)
-
-Profile: NMDPPractitionerRole
-Parent: PractitionerRole
-Id: nmdp-practitioner-role
-Description: "NMDP Practitioner Role"
-* insert MetaSecurityRules
-* code from nmdp-practitioner-role-vs (required)
-* practitioner only Reference(nmdp-practitioner)
-
-Profile: NMDPPractitioner
-Parent: Practitioner
-Id: nmdp-practitioner
-Description: "NMDP Practitioner"
-* insert MetaSecurityRules
-* name 1..1 MS
-* name.given 1..* MS
-* name.family 1..1 MS
-
-Instance: ReferringPhysicianExample
-InstanceOf: NMDPPractitionerRole
-Description: "Example of Referring Physician Role"
-* meta.security[TransplantCenter].code = #tc_123
-* code = $NMDP-PR#referringphysician "Referring Physician"
-* practitioner = Reference(PractitionerExample)
-
-Instance: TCPhysicianExample
-InstanceOf: NMDPPractitionerRole
-Description: "Example of Transplant Center Physician Role"
-* meta.security[TransplantCenter].code = #tc_123
-* code = $NMDP-PR#tcphysician "Transplant Center Physician"
-* practitioner = Reference(PractitionerExample)
-
-Instance: TCCoordinatorExample
-InstanceOf: NMDPPractitionerRole
-Description: "Example of Transplant Center Coordinotor Role"
-* meta.security[TransplantCenter].code = #tc_123
-* code = $NMDP-PR#tccoordinator "Transplant Center Coordinator"
-* practitioner = Reference(PractitionerExample)
-
-Instance: PractitionerExample
-InstanceOf: NMDPPractitioner
-Description: "Example of a practitioner."
-* meta.security[TransplantCenter].code = #tc_123
-* name
-  * given[0] = "Bart"
-  * family = "Simpson"
 
 Profile: MSPrimaryDiagnosis
 Parent: Condition
@@ -262,7 +239,7 @@ Description: "Example of a Diagnois: AML"
 * code.coding[0].system = "http://terminology.nmdp.org/codesystem/disease"
 * code.coding[0].code = #AML
 * code.coding[0].display = "ACUTE MYELOGENOUS LEUKEMIA"
-* subject = Reference(MSPatientExample)
+* subject = Reference(MSPatientExample5)
 * recordedDate = "2021-11-01"
 * stage.summary.coding[NMDPDiseaseStage].system = "http://terminology.nmdp.org/codesystem/diseasestage"
 * stage.summary.coding[NMDPDiseaseStage].code = #AP

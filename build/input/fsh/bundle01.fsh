@@ -10,7 +10,8 @@ Description: "Collection Bundle for MatchSync"
     // These resources are required per Conformance > Supported Profiles.
     msPatient 1..1 MS and
     msDiagnosis 1..* MS and
-    msCoordinator 1..1 MS and
+    msPractitionerRole 0..* MS and
+    msPractitioner 0..* MS and
     msOrgTransplantCenter 0..1 MS and
     msObsRh 0..1 MS and
     msObsABO 0..1 MS and
@@ -25,9 +26,12 @@ Description: "Collection Bundle for MatchSync"
 * entry[msDiagnosis].resource only MSPrimaryDiagnosis
 * entry[msDiagnosis] ^short = "Diagnois for MatchSync Patient"
 * entry[msDiagnosis] ^definition = "The Diagnosis for the MatchSync patient (required element)."
-// * entry[msCoordinator].resource only TransplantCenterCoordinator
-// * entry[msCoordinator] ^short = "Search Coordinator for Patient needing transplant"
-// * entry[msCoordinator] ^definition = "The Search Coordinator for the MatchSync patient (required element)."
+* entry[msPractitionerRole].resource only NMDPPractitionerRole
+* entry[msPractitionerRole] ^short = "Practitioner Role for the MacthSync patient needing transplant"
+* entry[msPractitionerRole] ^definition = "Practitioner Role for the MatchSync patient."
+* entry[msPractitioner].resource only NMDPPractitioner
+* entry[msPractitioner] ^short = "Practitioner  for the MacthSync patient needing transplant"
+* entry[msPractitioner] ^definition = "Practitioner for the MatchSync patient."
 * entry[msObsRh].resource only MSRhStatusObservation
 * entry[msObsRh] ^short = "Rh status of the patient"
 * entry[msObsRh] ^definition = "The Rh status of the MatchSync patient"
@@ -120,6 +124,41 @@ Description: "Collection Bundle for MatchSync with single HLA multilocus Observa
 * entry[hla-multi].resource only hla-genotype
 * entry[hla-multi] ^short = "HLA multilocus genotype"
 * entry[hla-multi] ^definition = "HLA multilocus genotype in GL String format"
+
+Instance: BundleExample-Practitioner
+InstanceOf: MSBundle
+Title: "MatchSync Bundle Example - Practioners"
+Description: "MatchSync Bundle Example with Search Coordinator, Referring Physician, and TC Physician"
+* meta.security[TransplantCenter].code = #tc_123
+* type = #collection
+* timestamp = 2020-11-24T23:50:50-05:00
+* entry[msPatient]
+    * resource = MSPatientExample5
+    * fullUrl = "urn:uuid:b80aa60a-fe3e-4aa4-bd4b-23f68cfc7425"
+* entry[msPractitionerRole][+]
+    * resource = ReferringPhysicianRoleExample
+    * fullUrl = "urn:uuid:95122680-4f5b-48e2-84fc-b9add1d17b74"
+* entry[msPractitionerRole][+]
+    * resource = TCPhysicianRoleExample
+    * fullUrl = "urn:uuid:89dc053e-b913-4246-8521-916b8ccafa64"
+* entry[msPractitionerRole][+]
+    * resource = SearchCoordinatorRoleExample
+    * fullUrl = "urn:uuid:5408e53f-d871-4f6b-9322-134d21b6ad00"
+* entry[msPractitioner][+]
+    * resource = SearchCoordinatorExample
+    * fullUrl = "urn:uuid:e157c476-08be-4f65-ab51-882ad14334c6"
+* entry[msPractitioner][+]
+    * resource = PhysicianExample
+    * fullUrl = "urn:uuid:22900ccb-c3eb-421d-b2be-c488b3ef9cde"
+* entry[msDiagnosis]
+    * resource = MSDiagnosisExample-AML
+    * fullUrl = "urn:uuid:6eba3a8f-5ac8-4e85-9fd7-57c5fa70796d"
+
+// * entry[msPatient].fullUrl = "urn:uuid:cc111e78-15eb-430d-b337-a4418494bedc"
+// * entry[msCoordinator].resource = CoordinatorExample
+// * entry[msCoordinator].fullUrl = "urn:uuid:cef4702d-cbe1-447b-b671-588dbfb40bb5"
+// * entry[msDiagnosis].resource = MSDiagnosisExample-AML
+// * entry[msDiagnosis].fullUrl = "urn:uuid:be7873b5-9685-42a9-9815-6d048e6dcc8f"
 
 
 // Instance: BundleExample-Minimal

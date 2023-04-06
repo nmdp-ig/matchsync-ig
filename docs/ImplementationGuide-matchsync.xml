@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="MatchSyncIG"/>
   <status value="draft"/>
-  <date value="2023-03-28T10:23:42-05:00"/>
+  <date value="2023-04-06T10:47:25-05:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -1282,6 +1282,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/BundleExample-Practitioner"/>
+      </reference>
+      <name value="MatchSync Bundle Example - Practioners"/>
+      <description value="MatchSync Bundle Example with Search Coordinator, Referring Physician, and TC Physician"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -1502,6 +1513,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/MSPatientExample5"/>
+      </reference>
+      <name value="MSPatientExample5"/>
+      <description value="Example of a patient needing a donor using NMDP race code."/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -1560,9 +1582,9 @@
         <valueString value="Practitioner"/>
       </extension>
       <reference>
-        <reference value="Practitioner/PractitionerExample"/>
+        <reference value="Practitioner/PhysicianExample"/>
       </reference>
-      <name value="PractitionerExample"/>
+      <name value="PhysicianExample"/>
       <description value="Example of a practitioner."/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"/>
     </resource>
@@ -1571,20 +1593,31 @@
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
-        <reference value="PractitionerRole/ReferringPhysicianExample"/>
+        <reference value="PractitionerRole/ReferringPhysicianRoleExample"/>
       </reference>
-      <name value="ReferringPhysicianExample"/>
+      <name value="ReferringPhysicianRoleExample"/>
       <description value="Example of Referring Physician Role"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/SearchCoordinatorExample"/>
+      </reference>
+      <name value="SearchCoordinatorExample"/>
+      <description value="Example of a practitioner."/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
-        <reference value="PractitionerRole/TCCoordinatorExample"/>
+        <reference value="PractitionerRole/SearchCoordinatorRoleExample"/>
       </reference>
-      <name value="TCCoordinatorExample"/>
+      <name value="SearchCoordinatorRoleExample"/>
       <description value="Example of Transplant Center Coordinotor Role"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"/>
     </resource>
@@ -1604,9 +1637,9 @@
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
-        <reference value="PractitionerRole/TCPhysicianExample"/>
+        <reference value="PractitionerRole/TCPhysicianRoleExample"/>
       </reference>
-      <name value="TCPhysicianExample"/>
+      <name value="TCPhysicianRoleExample"/>
       <description value="Example of Transplant Center Physician Role"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"/>
     </resource>
