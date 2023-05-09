@@ -1,0 +1,12 @@
+{
+    "website" : {
+      "style" : "fhir.layout",
+      "url" : "http://fhir.nmdp.org/ig",
+      "server" : "apache",
+      "org" : "NMDP",
+      "layout" : {
+        "id" : "nmdp.fhir.[code]",
+        "canonical": "http://fhir.nmdp.org/ig/[code]"
+      }
+    }
+  }

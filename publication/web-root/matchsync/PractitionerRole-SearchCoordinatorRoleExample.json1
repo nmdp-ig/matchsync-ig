@@ -1,0 +1,25 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "SearchCoordinatorRoleExample",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"],
+    "security" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplant-center",
+      "code" : "tc_123"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"SearchCoordinatorRoleExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;SearchCoordinatorRoleExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nmdp-practitioner-role.html\">NMDPPractitionerRole</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>practitioner</b>: <a href=\"Practitioner-SearchCoordinatorExample.html\">Practitioner/SearchCoordinatorExample</a> &quot; SIMPSON&quot;</p><p><b>code</b>: Search Coordinator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nmdp-practitioner-role-cs.html\">NMDP Practitioner Roles</a>#searchcoordinator)</span></p></div>"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/SearchCoordinatorExample"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/practitionerrole",
+      "code" : "searchcoordinator",
+      "display" : "Search Coordinator"
+    }]
+  }]
+}

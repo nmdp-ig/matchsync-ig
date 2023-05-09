@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="MSPatientExample2"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"/>
+    <security>
+      <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+      <code value="tc_123"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Joe Everyperson </b> male, DoB: 1974-12-25 ( id: 123)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li>ph: 1-612-555-1234</li><li>123 Main St Minneapolis MN 55401 USA </li></ul></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://example.org/mrn"/>
+    <value value="123"/>
+  </identifier>
+  <name>
+    <family value="Everyperson"/>
+    <given value="Joe"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="1-612-555-1234"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1974-12-25"/>
+  <address>
+    <line value="123 Main St"/>
+    <city value="Minneapolis"/>
+    <state value="MN"/>
+    <postalCode value="55401"/>
+    <country value="USA"/>
+  </address>
+</Patient>

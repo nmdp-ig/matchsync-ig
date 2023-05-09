@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"/>
+    <security>
+      <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+      <code value="tc_123"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nmdp-practitioner.html">NMDPPractitioner</a></p><p style="margin-bottom: 0px">Security Labels: <span title="{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>name</b>: Lisa Simpson </p></div>
+  </text>
+  <name>
+    <family value="Simpson"/>
+    <given value="Lisa"/>
+  </name>
+</Practitioner>

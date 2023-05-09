@@ -14,3 +14,11 @@ RuleSet: BundleEntrySlicingRules
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry ^slicing.description = "Slicing based on the profile conformance of the entry"
+
+RuleSet: uuidEntries(instanceuuid)
+* entry[+].fullUrl = "urn:uuid:{instanceuuid}"
+* entry[=].resource = {instanceuuid}
+
+RuleSet: postRequest(resource)
+* entry[=].request.method = #POST
+* entry[=].request.url = {resource}

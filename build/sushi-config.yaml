@@ -3,7 +3,7 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: matchsync
+id: nmdp.fhir.matchsync
 canonical: http://fhir.nmdp.org/ig/matchsync
 name: MatchSyncIG
 # title: Example Title
@@ -34,7 +34,7 @@ dependencies:
    hl7.fhir.uv.genomics-reporting:
     #  uri: http://hl7.org/fhir/uv/genomics-reporting
      uri: http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting
-     version: 1.0.0
+     version: 2.0.0
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -97,6 +97,11 @@ parameters:
 menu:
   Home: index.html
   Artifacts: artifacts.html
+  Table of Contents: toc.html
+  Guidance: 
+  Appendices: Appendices.html
+  Support:
+    "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

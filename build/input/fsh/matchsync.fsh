@@ -134,8 +134,11 @@ Description: "Example of a patient needing a donor using NMDP race code."
 * identifier.system = "http://example.org/mrn"
 * identifier.value = "123"
 * generalPractitioner[+] = Reference(ReferringPhysicianRoleExample)
+  * display = "Referring Physician"
 * generalPractitioner[+] = Reference(TCPhysicianRoleExample)
+  * display = "TC Physician"
 * generalPractitioner[+] = Reference(SearchCoordinatorRoleExample)
+  * display = "Search Coordinator"
 
 Profile: TransplantCenter
 Parent: Organization

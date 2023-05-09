@@ -1,0 +1,2111 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "d4bd8ecb-9667-4b15-832a-231373e5d236",
+  "meta" : {
+    "lastUpdated" : "2023-05-09T13:39:12.829-05:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-rh-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"ValueSet-loinc-posneg-codes.html\">LOINC Pos|Neg Value Set v0.1.0 (ValueSet)</a></li><li><a href=\"ValueSet-nmdp-rh-status-codes.html\">NMDP Codes for Rh status v0.1.0 (ValueSet)</a></li><li>Loinc v2.74</li><li><a href=\"CodeSystem-nmdp-rh-status-cs.html\">NMDP Rh Code System v0.1.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-rhstatus-I\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-I\">I</a></td><td>http://terminology.nmdp.org/codesystem/rhstatus</td><td>Indeterminant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-rhstatus-P\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-P\">P</a></td><td>http://terminology.nmdp.org/codesystem/rhstatus</td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-rhstatus-N\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-N\">N</a></td><td>http://terminology.nmdp.org/codesystem/rhstatus</td><td>Negative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-rhstatus-D\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-D\">D</a></td><td>http://terminology.nmdp.org/codesystem/rhstatus</td><td>Indeterminant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-rhstatus-nil\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-nil\">nil</a></td><td>http://terminology.nmdp.org/codesystem/rhstatus</td><td>no data</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6576-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA6576-8/\">LA6576-8</a></td><td>http://loinc.org</td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6577-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA6577-6/\">LA6577-6</a></td><td>http://loinc.org</td><td>Negative</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-rh-codes",
+      "version" : "0.1.0",
+      "name" : "MSRhVS",
+      "title" : "MatchSync Rh Value Sets",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "MatchSync codes for blood Rh. Combines NMDP and LOINC code",
+      "expansion" : {
+        "identifier" : "urn:uuid:cc5369d6-dd3f-4c10-a429-599b4dda8fab",
+        "timestamp" : "2023-05-09T13:41:16-05:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes|0.1.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/rhstatus|0.1.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org/vs/LL360-9|0.1.0"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.74"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/rhstatus",
+          "code" : "I",
+          "display" : "Indeterminant"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/rhstatus",
+          "code" : "P",
+          "display" : "Positive"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/rhstatus",
+          "code" : "N",
+          "display" : "Negative"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/rhstatus",
+          "code" : "D",
+          "display" : "Indeterminant"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/rhstatus",
+          "code" : "nil",
+          "display" : "no data"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA6576-8",
+          "display" : "Positive"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA6577-6",
+          "display" : "Negative"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://loinc.org/vs/LL360-9",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.74</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6576-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA6576-8/\">LA6576-8</a></td><td>http://loinc.org</td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6577-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA6577-6/\">LA6577-6</a></td><td>http://loinc.org</td><td>Negative</td></tr></table></div>"
+      },
+      "url" : "http://loinc.org/vs/LL360-9",
+      "version" : "0.1.0",
+      "name" : "PosNegVS",
+      "title" : "LOINC Pos|Neg Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "LOINC codes for Positive and Negative",
+      "copyright" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.",
+      "expansion" : {
+        "identifier" : "urn:uuid:b213ebc6-4a40-4d74-a0a9-e5ef93211f67",
+        "timestamp" : "2023-05-09T13:41:17-05:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.74"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA6576-8",
+          "display" : "Positive"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA6577-6",
+          "display" : "Negative"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 14 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-language-cs.html\">NMDP Language Code System v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-language-ARA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-language-cs.html#nmdp-language-cs-ARA\">ARA</a></td><td>http://terminology.nmdp.org/codesystem/language</td><td>Arabic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-language-CHI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-language-cs.html#nmdp-language-cs-CHI\">CHI</a></td><td>http://terminology.nmdp.org/codesystem/language</td><td>Chinese-Mandarin</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-language-ENG\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-language-cs.html#nmdp-language-cs-ENG\">ENG</a></td><td>http://terminology.nmdp.org/codesystem/language</td><td>English</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-language-FRN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-language-cs.html#nmdp-language-cs-FRN\">FRN</a></td><td>http://terminology.nmdp.org/codesystem/language</td><td>French</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-language-GER\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-language-cs.html#nmdp-language-cs-GER\">GER</a></td><td>http://terminology.nmdp.org/codesystem/language</td><td>German</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-language-ITA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-language-cs.html#nmdp-language-cs-ITA\">ITA</a></td><td>http://terminology.nmdp.org/codesystem/language</td><td>Italian</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-language-JPN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-language-cs.html#nmdp-language-cs-JPN\">JPN</a></td><td>http://terminology.nmdp.org/codesystem/language</td><td>Japanese</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-language-KOR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-language-cs.html#nmdp-language-cs-KOR\">KOR</a></td><td>http://terminology.nmdp.org/codesystem/language</td><td>Korean</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-language-OTH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-language-cs.html#nmdp-language-cs-OTH\">OTH</a></td><td>http://terminology.nmdp.org/codesystem/language</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-language-POR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-language-cs.html#nmdp-language-cs-POR\">POR</a></td><td>http://terminology.nmdp.org/codesystem/language</td><td>Portuguese</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-language-RUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-language-cs.html#nmdp-language-cs-RUS\">RUS</a></td><td>http://terminology.nmdp.org/codesystem/language</td><td>Russian</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-language-SPA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-language-cs.html#nmdp-language-cs-SPA\">SPA</a></td><td>http://terminology.nmdp.org/codesystem/language</td><td>Spanish</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-language-VTM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-language-cs.html#nmdp-language-cs-VTM\">VTM</a></td><td>http://terminology.nmdp.org/codesystem/language</td><td>Vietnamese</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-language-nil\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-language-cs.html#nmdp-language-cs-nil\">nil</a></td><td>http://terminology.nmdp.org/codesystem/language</td><td>no data</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes",
+      "version" : "0.1.0",
+      "name" : "NMDPLanguageCodes",
+      "title" : "NMDP Language Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "NMDP language codes",
+      "expansion" : {
+        "identifier" : "urn:uuid:407fff9b-13f9-4b5a-83d5-d2d75644bc6d",
+        "timestamp" : "2023-05-09T13:41:17-05:00",
+        "total" : 14,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/language|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/language",
+          "code" : "ARA",
+          "display" : "Arabic"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/language",
+          "code" : "CHI",
+          "display" : "Chinese-Mandarin"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/language",
+          "code" : "ENG",
+          "display" : "English"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/language",
+          "code" : "FRN",
+          "display" : "French"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/language",
+          "code" : "GER",
+          "display" : "German"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/language",
+          "code" : "ITA",
+          "display" : "Italian"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/language",
+          "code" : "JPN",
+          "display" : "Japanese"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/language",
+          "code" : "KOR",
+          "display" : "Korean"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/language",
+          "code" : "OTH",
+          "display" : "Other"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/language",
+          "code" : "POR",
+          "display" : "Portuguese"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/language",
+          "code" : "RUS",
+          "display" : "Russian"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/language",
+          "code" : "SPA",
+          "display" : "Spanish"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/language",
+          "code" : "VTM",
+          "display" : "Vietnamese"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/language",
+          "code" : "nil",
+          "display" : "no data"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-race-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 50 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-race-cs.html\">NMDP Race Code System v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-AAFA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-AAFA\">AAFA</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>African American</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-AFA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-AFA\">AFA</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-AFB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-AFB\">AFB</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>African</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-AINDI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-AINDI\">AINDI</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>South Asian</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-AISC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-AISC\">AISC</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>American Indian South or Centr</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-ALANAM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-ALANAM\">ALANAM</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Alaska Native or Aleut</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-AMIND\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-AMIND\">AMIND</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>North American Indian</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-API\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-API\">API</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-CARB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-CARB\">CARB</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Black Caribbean</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-CARHIS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-CARHIS\">CARHIS</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Caribbean Hispanic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-CARIBI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-CARIBI\">CARIBI</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Caribbean Indian</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-CAU\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-CAU\">CAU</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-DEC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-DEC\">DEC</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Declines or No Race Selected</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-EEURO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-EEURO\">EEURO</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Eastern European</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-EURWRC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-EURWRC\">EURWRC</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>North American or European</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-FILII\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-FILII\">FILII</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Filipino</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-GUAMAN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-GUAMAN\">GUAMAN</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Guamanian</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-HAWAII\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-HAWAII\">HAWAII</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Hawaiian</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-HAWI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-HAWI\">HAWI</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-HIS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-HIS\">HIS</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Unspecified Hispanic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-JAPI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-JAPI\">JAPI</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Japanese</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-KORI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-KORI\">KORI</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Korean</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-MAFA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-MAFA\">MAFA</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Multiple Black</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-MAPI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-MAPI\">MAPI</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Multiple Asian/Pacific Islndr</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-MCAU\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-MCAU\">MCAU</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Multiple Caucasian</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-MEDIT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-MEDIT\">MEDIT</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Mediterranean</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-MENAFC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-MENAFC\">MENAFC</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>MidEast/No. Coast of Africa</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-MHAW\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-MHAW\">MHAW</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Multiple Nat. Hw/Oth Pa. Isln</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-MHIS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-MHIS\">MHIS</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Multiple Hispanic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-MIDEAS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-MIDEAS\">MIDEAS</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Middle Eastern</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-MNAM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-MNAM\">MNAM</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Multiple Native American</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-MSWHIS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-MSWHIS\">MSWHIS</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Mexican or Chicano</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-MULTI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-MULTI\">MULTI</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Multiple Race</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-NAM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-NAM\">NAM</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-NAMB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-NAMB\">NAMB</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>North American Black</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-NAMER\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-NAMER\">NAMER</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>North American</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-NCAFRI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-NCAFRI\">NCAFRI</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>North Coast of Africa</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-NCHI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-NCHI\">NCHI</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Chinese</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-NEURO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-NEURO\">NEURO</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Northern European</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-OPI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-OPI\">OPI</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Other Pacific Islander</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-OTH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-OTH\">OTH</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-SAMOAN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-SAMOAN\">SAMOAN</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Samoan</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-SCAHIS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-SCAHIS\">SCAHIS</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>South/Cntrl Amer. Hisp.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-SCAMB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-SCAMB\">SCAMB</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Black South or Central America</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-SCSEAI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-SCSEAI\">SCSEAI</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Other Southeast Asian</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-UNK\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-UNK\">UNK</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Unknown/Question Not Asked</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-VIET\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-VIET\">VIET</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Vietnamese</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-WCARIB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-WCARIB\">WCARIB</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>White Caribbean</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-WEURO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-WEURO\">WEURO</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>Western European</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-race-WSCA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-race-cs.html#nmdp-race-cs-WSCA\">WSCA</a></td><td>http://terminology.nmdp.org/codesystem/race</td><td>White South or Central America</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-race-codes",
+      "version" : "0.1.0",
+      "name" : "NMDPRaceVS",
+      "title" : "NMDP Race Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "NMDP race codes",
+      "expansion" : {
+        "identifier" : "urn:uuid:3be13a56-e833-4932-8a62-ab733a3c5345",
+        "timestamp" : "2023-05-09T13:41:17-05:00",
+        "total" : 50,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/race|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "AAFA",
+          "display" : "African American"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "AFA",
+          "display" : "Unspecified"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "AFB",
+          "display" : "African"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "AINDI",
+          "display" : "South Asian"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "AISC",
+          "display" : "American Indian South or Centr"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "ALANAM",
+          "display" : "Alaska Native or Aleut"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "AMIND",
+          "display" : "North American Indian"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "API",
+          "display" : "Unspecified"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "CARB",
+          "display" : "Black Caribbean"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "CARHIS",
+          "display" : "Caribbean Hispanic"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "CARIBI",
+          "display" : "Caribbean Indian"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "CAU",
+          "display" : "Unspecified"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "DEC",
+          "display" : "Declines or No Race Selected"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "EEURO",
+          "display" : "Eastern European"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "EURWRC",
+          "display" : "North American or European"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "FILII",
+          "display" : "Filipino"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "GUAMAN",
+          "display" : "Guamanian"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "HAWAII",
+          "display" : "Hawaiian"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "HAWI",
+          "display" : "Unspecified"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "HIS",
+          "display" : "Unspecified Hispanic"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "JAPI",
+          "display" : "Japanese"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "KORI",
+          "display" : "Korean"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "MAFA",
+          "display" : "Multiple Black"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "MAPI",
+          "display" : "Multiple Asian/Pacific Islndr"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "MCAU",
+          "display" : "Multiple Caucasian"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "MEDIT",
+          "display" : "Mediterranean"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "MENAFC",
+          "display" : "MidEast/No. Coast of Africa"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "MHAW",
+          "display" : "Multiple Nat. Hw/Oth Pa. Isln"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "MHIS",
+          "display" : "Multiple Hispanic"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "MIDEAS",
+          "display" : "Middle Eastern"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "MNAM",
+          "display" : "Multiple Native American"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "MSWHIS",
+          "display" : "Mexican or Chicano"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "MULTI",
+          "display" : "Multiple Race"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "NAM",
+          "display" : "Unspecified"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "NAMB",
+          "display" : "North American Black"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "NAMER",
+          "display" : "North American"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "NCAFRI",
+          "display" : "North Coast of Africa"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "NCHI",
+          "display" : "Chinese"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "NEURO",
+          "display" : "Northern European"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "OPI",
+          "display" : "Other Pacific Islander"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "OTH",
+          "display" : "Other"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "SAMOAN",
+          "display" : "Samoan"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "SCAHIS",
+          "display" : "South/Cntrl Amer. Hisp."
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "SCAMB",
+          "display" : "Black South or Central America"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "SCSEAI",
+          "display" : "Other Southeast Asian"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "UNK",
+          "display" : "Unknown/Question Not Asked"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "VIET",
+          "display" : "Vietnamese"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "WCARIB",
+          "display" : "White Caribbean"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "WEURO",
+          "display" : "Western European"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/race",
+          "code" : "WSCA",
+          "display" : "White South or Central America"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-ethnicity-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-ethnicity-cs.html\">NMDP Ethnicity Code System v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-ethnicity-NHIS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-ethnicity-cs.html#nmdp-ethnicity-cs-NHIS\">NHIS</a></td><td>http://terminology.nmdp.org/codesystem/ethnicity</td><td>Not Hispanic or Latino</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-ethnicity-HIS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-ethnicity-cs.html#nmdp-ethnicity-cs-HIS\">HIS</a></td><td>http://terminology.nmdp.org/codesystem/ethnicity</td><td>Hispanic or Latino</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-ethnicity-nil\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-ethnicity-cs.html#nmdp-ethnicity-cs-nil\">nil</a></td><td>http://terminology.nmdp.org/codesystem/ethnicity</td><td>No data</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-ethnicity-codes",
+      "version" : "0.1.0",
+      "name" : "NMDPEthnicityVS",
+      "title" : "NMDP Ethnicity Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "NMDP ethnicity codes",
+      "expansion" : {
+        "identifier" : "urn:uuid:a368d067-9aa1-4042-add9-30ccf4b50edd",
+        "timestamp" : "2023-05-09T13:41:17-05:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/ethnicity|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/ethnicity",
+          "code" : "NHIS",
+          "display" : "Not Hispanic or Latino"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/ethnicity",
+          "code" : "HIS",
+          "display" : "Hispanic or Latino"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/ethnicity",
+          "code" : "nil",
+          "display" : "No data"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-group-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 13 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-nmdp-abo-group-cs.html\">NMDP Blood Group Code System v0.1.0 (CodeSystem)</a></li><li><a href=\"ValueSet-sct-abo-group-codes.html\">Snomed CT ABO group Value Set v0.1.0 (ValueSet)</a></li><li><a href=\"ValueSet-loinc-abo-codes.html\">LOINC ABO group Value Set v0.1.0 (ValueSet)</a></li><li>Loinc v2.74</li><li><a href=\"ValueSet-nmdp-abo-codes.html\">NMDP Blood Group Value Set v0.1.0 (ValueSet)</a></li><li>SNOMED CT International edition 31-Jan 2023</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-A\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-A\">A</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>A</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-B\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-B\">B</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>B</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-O\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-O\">O</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>O</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-AB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-AB\">AB</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>AB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-nil\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-nil\">nil</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>no data</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA19710-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA19710-5/\">LA19710-5</a></td><td>http://loinc.org</td><td>Group A</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA19709-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA19709-7/\">LA19709-7</a></td><td>http://loinc.org</td><td>Group B</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA19708-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA19708-9/\">LA19708-9</a></td><td>http://loinc.org</td><td>Group O</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA28449-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA28449-9/\">LA28449-9</a></td><td>http://loinc.org</td><td>Group AB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-112144000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/112144000\">112144000</a></td><td>http://snomed.info/sct</td><td>Blood group A (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-165743006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/165743006\">165743006</a></td><td>http://snomed.info/sct</td><td>Blood group AB (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-112149005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/112149005\">112149005</a></td><td>http://snomed.info/sct</td><td>Blood group B (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-58460004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58460004\">58460004</a></td><td>http://snomed.info/sct</td><td>Blood group O (finding)</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-group-codes",
+      "version" : "0.1.0",
+      "name" : "MSABOGroupVS",
+      "title" : "MatchSync ABO Group Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes",
+      "expansion" : {
+        "identifier" : "urn:uuid:9de81f75-a7c8-4cea-9d40-b909b8b9ecbf",
+        "timestamp" : "2023-05-09T13:41:17-05:00",
+        "total" : 13,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes|0.1.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/abogroup|0.1.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org/vs/LL2419-1|0.1.0"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.74"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes|0.1.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/abogroup",
+          "code" : "A",
+          "display" : "A"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/abogroup",
+          "code" : "B",
+          "display" : "B"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/abogroup",
+          "code" : "O",
+          "display" : "O"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/abogroup",
+          "code" : "AB",
+          "display" : "AB"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/abogroup",
+          "code" : "nil",
+          "display" : "no data"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA19710-5",
+          "display" : "Group A"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA19709-7",
+          "display" : "Group B"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA19708-9",
+          "display" : "Group O"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA28449-9",
+          "display" : "Group AB"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "112144000",
+          "display" : "Blood group A (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "165743006",
+          "display" : "Blood group AB (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "112149005",
+          "display" : "Blood group B (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "58460004",
+          "display" : "Blood group O (finding)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-preferred-product-cs.html\">NMDP Preferred Product for Transplant v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-preferredproduct-PBSC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-preferred-product-cs.html#nmdp-preferred-product-cs-PBSC\">PBSC</a></td><td>http://terminology.nmdp.org/codesystem/preferredproduct</td><td>HPC, Apheresis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-preferredproduct-Marrow\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-preferred-product-cs.html#nmdp-preferred-product-cs-Marrow\">Marrow</a></td><td>http://terminology.nmdp.org/codesystem/preferredproduct</td><td>HPC, Marrow</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-preferredproduct-CBU\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-preferred-product-cs.html#nmdp-preferred-product-cs-CBU\">CBU</a></td><td>http://terminology.nmdp.org/codesystem/preferredproduct</td><td>HPC, Cord Blood</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-preferredproduct-NP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-preferred-product-cs.html#nmdp-preferred-product-cs-NP\">NP</a></td><td>http://terminology.nmdp.org/codesystem/preferredproduct</td><td>No preference</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-preferredproduct-U\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-preferred-product-cs.html#nmdp-preferred-product-cs-U\">U</a></td><td>http://terminology.nmdp.org/codesystem/preferredproduct</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes",
+      "version" : "0.1.0",
+      "name" : "NMDPPreferredProductVS",
+      "title" : "NMDP Preferred Product Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "NMDP preferred product codes",
+      "expansion" : {
+        "identifier" : "urn:uuid:8ec1c19c-29f1-4a54-816c-154845292c5e",
+        "timestamp" : "2023-05-09T13:41:35-05:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/preferredproduct|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/preferredproduct",
+          "code" : "PBSC",
+          "display" : "HPC, Apheresis"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/preferredproduct",
+          "code" : "Marrow",
+          "display" : "HPC, Marrow"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/preferredproduct",
+          "code" : "CBU",
+          "display" : "HPC, Cord Blood"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/preferredproduct",
+          "code" : "NP",
+          "display" : "No preference"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/preferredproduct",
+          "code" : "U",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on http://hl7.org/fhir/sid/icd-10-cm version 2021</p><table class=\"codes\"><tr><td><b>Level</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td><a name=\"http---hl7.org-fhir-sid-icd-10-cm-D89.81\"> </a>1</td><td style=\"white-space:nowrap\">\u00a0\u00a0D89.81</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Graft-versus-host disease</td></tr><tr><td><a name=\"http---hl7.org-fhir-sid-icd-10-cm-D89.810\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0D89.810</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Acute graft-versus-host disease</td></tr><tr><td><a name=\"http---hl7.org-fhir-sid-icd-10-cm-D89.811\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0D89.811</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Chronic graft-versus-host disease</td></tr><tr><td><a name=\"http---hl7.org-fhir-sid-icd-10-cm-D89.812\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0D89.812</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Acute on chronic graft-versus-host disease</td></tr><tr><td><a name=\"http---hl7.org-fhir-sid-icd-10-cm-D89.813\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0D89.813</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Graft-versus-host disease, unspecified</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes",
+      "version" : "0.1.0",
+      "name" : "ICD10GVHDVS",
+      "title" : "GVHD ICD-10 Codes",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "GVHD ICD-10 Codes",
+      "expansion" : {
+        "identifier" : "urn:uuid:a6e90236-4785-41ae-8c35-0fb1d9431775",
+        "timestamp" : "2023-05-09T13:41:35-05:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2021"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "D89.81",
+          "display" : "Graft-versus-host disease",
+          "contains" : [{
+            "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+            "code" : "D89.810",
+            "display" : "Acute graft-versus-host disease"
+          },
+          {
+            "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+            "code" : "D89.811",
+            "display" : "Chronic graft-versus-host disease"
+          },
+          {
+            "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+            "code" : "D89.812",
+            "display" : "Acute on chronic graft-versus-host disease"
+          },
+          {
+            "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+            "code" : "D89.813",
+            "display" : "Graft-versus-host disease, unspecified"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 100 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-disease-cs.html\">NMDP Disease Code System v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-ABL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-ABL\">ABL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ACUTE BILINEAGE LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-AISA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-AISA\">AISA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ACQ IDIOPATH SIDERBLASTIC ANEM</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-ALD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-ALD\">ALD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ADRENOLEUKODYSTROPHY</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-ALL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-ALL\">ALL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ACUTE LYMPHOBLASTIC LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-AMCL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-AMCL\">AMCL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ACUTE MAST CELL LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-AMEGCT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-AMEGCT\">AMEGCT</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>AMEGAKARYOCY/CONGENTIAL THROM</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-AML\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-AML\">AML</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ACUTE MYELOGENOUS LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-ASPGL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-ASPGL\">ASPGL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ASPARTYL GLUCOSAMINIDASE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-AT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-AT\">AT</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ATAXIA-TELANGIECTASIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-AUL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-AUL\">AUL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ACUTE UNDIFFERENTIATED LEUK-MO</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-BGLUD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-BGLUD\">BGLUD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>BETA-GLUCURONIDASE DEFICIENCY</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-BLSYND\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-BLSYND\">BLSYND</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>BARE LYMPHOCYTE SYNDROME</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-BRCA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-BRCA\">BRCA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>BREAST CANCER</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-BTHAL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-BTHAL\">BTHAL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>BETA THALASSEMIA MAJOR</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-C-HHYP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-C-HHYP\">C-HHYP</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>CARTILAGE-HAIR HYPOPLASIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-CGD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-CGD\">CGD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>CHRONIC GRANULOMATOUS DISEASE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-CID\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-CID\">CID</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>COMBINED IMMUNODEFICIENCY</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-CLL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-CLL\">CLL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>CHRONIC LYMPHOCYTIC LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-CML\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-CML\">CML</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>CHRONIC MYELOGENOUS LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-CMML\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-CMML\">CMML</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>CHRONIC MYELOMONOCYTIC LEUK</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-CNSCA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-CNSCA\">CNSCA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>CENTRAL NERVOUS SYSTEM TUMORS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-DIGRGE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-DIGRGE\">DIGRGE</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>DI GEORGE SYNDROME</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-ETC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-ETC\">ETC</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ESSENTIAL THROMOBOCYTHEMIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-EWINGS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-EWINGS\">EWINGS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>EWINGS SARCOMA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-FA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-FA\">FA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>FANCONI ANEMIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-FEL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-FEL\">FEL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>FAMILIAL ERYTHROPHAGOCYTIC</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-FUCOSI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-FUCOSI\">FUCOSI</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>FUCOSIDOSIS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-GAUCHR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-GAUCHR\">GAUCHR</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>GAUCHER'S DISEASE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-GLTROM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-GLTROM\">GLTROM</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>GLANZMANNS THROMBASTHENIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-GLUCST\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-GLUCST\">GLUCST</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>GLUCOSE STORAGE DISEASE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-HCL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-HCL\">HCL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>HAIRY CELL LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-HISX\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-HISX\">HISX</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>HISTIOCYTOSIS-X</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-HIV\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-HIV\">HIV</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>HIV INFECTION</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-HL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-HL\">HL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>HODGKINS LYMPHOMA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-HPGC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-HPGC\">HPGC</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>HEMOPHAGOCYTOSIS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-HUNTER\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-HUNTER\">HUNTER</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>HUNTER SYNDROME (MPS-II)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-HURLER\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-HURLER\">HURLER</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>HURLER SYNDROME (MPS-IH)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-ICELL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-ICELL\">ICELL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>I-CELL DISEASE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-IMDNP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-IMDNP\">IMDNP</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>IMMUNE DEFICIENCY + NEUTROPEN</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-JCML\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-JCML\">JCML</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>JUVENILE CHRONIC MYELOGENOUS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-KOSTMN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-KOSTMN\">KOSTMN</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>KOSTMANN'S AGRANULOCYTOSIS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-KRABBE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-KRABBE\">KRABBE</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>KRABBE DISEASE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-LAD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-LAD\">LAD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>LEUKOCYTE ADHESION DEFICIENCY</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-LN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-LN\">LN</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>LESCH-NYHAN</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-LNS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-LNS\">LNS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>LESCH-NYHAN</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-LYSOST\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-LYSOST\">LYSOST</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>LYSOSOMAL STORAGE DISEASE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-MANNO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MANNO\">MANNO</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MANNOSIDOSIS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-MARLAM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MARLAM\">MARLAM</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MAROTEAUX-LAMY (MPS-VI)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-MDS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MDS\">MDS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MYELODYSPLASTIC DISORDER</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-MFMM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MFMM\">MFMM</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MYELOFIBRO MYELOID METAPLASIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-MLD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MLD\">MLD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>METACHROMATIC LEUKODYSTROPHY</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-MM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MM\">MM</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MULTIPLE MYELOMA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-MORQUA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MORQUA\">MORQUA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MORQUIO A - MPS IVA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-MORQUB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MORQUB\">MORQUB</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MORQUIO B - MPS IVB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-MORQUO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MORQUO\">MORQUO</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MORQUIO (MPS-IV)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-MPS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MPS\">MPS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MUCOPOLYSACCHARIDOSIS (MPS-V)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-N-P\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-N-P\">N-P</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>NEIMAN-PICK DISEASE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-NB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-NB\">NB</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>NEUROBLASTOMA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-NCL1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-NCL1\">NCL1</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ENZYME NCL 1</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-NCL2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-NCL2\">NCL2</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ENZYME NCL 2</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-NEUTAD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-NEUTAD\">NEUTAD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>NEUTROPHIL ACTIN DEFICIENCY</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-NEUTD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-NEUTD\">NEUTD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>CHEDIAK-HIGASHI SYNDROME</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-NHL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-NHL\">NHL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>NON-HODGKINS LYMPHOMA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OCID\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OCID\">OCID</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHR COMBINED IMMUNODEFICIENCY</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OHIS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OHIS\">OHIS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER HISTIOCYTIC DISORDERS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OIEA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OIEA\">OIEA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTH ERYTHROCYT DIFFERENTIATION</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OIIS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OIIS\">OIIS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER IMMUNE SYSTEM</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OIMD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OIMD\">OIMD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTH INHER METABOLISM DISORD</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OIMDL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OIMDL\">OIMDL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTH MUCOLIPIDOSES</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OIMDP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OIMDP\">OIMDP</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTH MUCOPOLYSACCHARIDOSIS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OIPA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OIPA\">OIPA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTH ABNORMALITIES OR PLATELETS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OMDS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OMDS\">OMDS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER MYELODYSPLASTIC DISORDER</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OMF\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OMF\">OMF</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER MYLEOFIBROSIS/MYLEOSCLER</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OMMEN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OMMEN\">OMMEN</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OMMEN'S SYNDROME</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OMS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OMS\">OMS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTH MALIGNANCY, SPECIFY</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OND\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OND\">OND</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER NON-MALIGNANT DISEASE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OOL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OOL\">OOL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER LEUKEMIA SPECIFY</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OPCD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OPCD\">OPCD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER PLASMA CELL DISORDER</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OSCID\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OSCID\">OSCID</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER SCID</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OST\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OST\">OST</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OSTEOPETROSIS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-OTHHGP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OTHHGP\">OTHHGP</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER HEMOGLOBINOPATHY</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-PCL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-PCL\">PCL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>PLASMA CELL LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-PHILLY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-PHILLY\">PHILLY</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>PROLYMPHOCYTIC LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-PNH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-PNH\">PNH</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>PAROXYSMAL NOCTURNAL HEMOGLOB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-PV\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-PV\">PV</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>POLYCYTHEMIA VERA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-RA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-RA\">RA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>REFRACTORY ANEMIA (RA)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-RAEB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-RAEB\">RAEB</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>REFRACT ANEMIA-EXCESS BLASTS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-RAEBIT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-RAEBIT\">RAEBIT</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>REFRACT ANEMIA-EX. BLAST TRAN</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-RCA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-RCA\">RCA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>PURE RED CELL APLASIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-RCC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-RCC\">RCC</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>RENAL CELL CARCINOMA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-RETDG\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-RETDG\">RETDG</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>RETICULAR DYSGENESIS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-SAA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SAA\">SAA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SEVERE APLASTIC ANEMIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-SANFIA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SANFIA\">SANFIA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SANFILIPPO A - MPS IIIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-SANFIB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SANFIB\">SANFIB</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SANFILIPPO B - MPS IIIB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-SANFIC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SANFIC\">SANFIC</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SANFILIPPO C - MPS IIIC</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-SANFID\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SANFID\">SANFID</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ANFILIPPO D - MPS IIID</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-SANFIL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SANFIL\">SANFIL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SANFILLIPPO (MPS-III)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-SCA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SCA\">SCA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SICKLE CELL ANEMIA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-SCHEIE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SCHEIE\">SCHEIE</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SCHEIE SYNDROME (MPS-IS)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-disease-SCID\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SCID\">SCID</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SEVERE COMBINED IMMUNODEF</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes",
+      "version" : "0.1.0",
+      "name" : "NMDPDiseaseVS",
+      "title" : "NMDP Disease Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "NMDP disease codes",
+      "expansion" : {
+        "identifier" : "urn:uuid:eed49132-4703-4821-8068-4b2405406722",
+        "timestamp" : "2023-05-09T13:41:47-05:00",
+        "total" : 100,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/disease|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "ABL",
+          "display" : "ACUTE BILINEAGE LEUKEMIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "AISA",
+          "display" : "ACQ IDIOPATH SIDERBLASTIC ANEM"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "ALD",
+          "display" : "ADRENOLEUKODYSTROPHY"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "ALL",
+          "display" : "ACUTE LYMPHOBLASTIC LEUKEMIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "AMCL",
+          "display" : "ACUTE MAST CELL LEUKEMIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "AMEGCT",
+          "display" : "AMEGAKARYOCY/CONGENTIAL THROM"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "AML",
+          "display" : "ACUTE MYELOGENOUS LEUKEMIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "ASPGL",
+          "display" : "ASPARTYL GLUCOSAMINIDASE"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "AT",
+          "display" : "ATAXIA-TELANGIECTASIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "AUL",
+          "display" : "ACUTE UNDIFFERENTIATED LEUK-MO"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "BGLUD",
+          "display" : "BETA-GLUCURONIDASE DEFICIENCY"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "BLSYND",
+          "display" : "BARE LYMPHOCYTE SYNDROME"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "BRCA",
+          "display" : "BREAST CANCER"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "BTHAL",
+          "display" : "BETA THALASSEMIA MAJOR"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "C-HHYP",
+          "display" : "CARTILAGE-HAIR HYPOPLASIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "CGD",
+          "display" : "CHRONIC GRANULOMATOUS DISEASE"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "CID",
+          "display" : "COMBINED IMMUNODEFICIENCY"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "CLL",
+          "display" : "CHRONIC LYMPHOCYTIC LEUKEMIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "CML",
+          "display" : "CHRONIC MYELOGENOUS LEUKEMIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "CMML",
+          "display" : "CHRONIC MYELOMONOCYTIC LEUK"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "CNSCA",
+          "display" : "CENTRAL NERVOUS SYSTEM TUMORS"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "DIGRGE",
+          "display" : "DI GEORGE SYNDROME"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "ETC",
+          "display" : "ESSENTIAL THROMOBOCYTHEMIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "EWINGS",
+          "display" : "EWINGS SARCOMA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "FA",
+          "display" : "FANCONI ANEMIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "FEL",
+          "display" : "FAMILIAL ERYTHROPHAGOCYTIC"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "FUCOSI",
+          "display" : "FUCOSIDOSIS"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "GAUCHR",
+          "display" : "GAUCHER'S DISEASE"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "GLTROM",
+          "display" : "GLANZMANNS THROMBASTHENIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "GLUCST",
+          "display" : "GLUCOSE STORAGE DISEASE"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "HCL",
+          "display" : "HAIRY CELL LEUKEMIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "HISX",
+          "display" : "HISTIOCYTOSIS-X"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "HIV",
+          "display" : "HIV INFECTION"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "HL",
+          "display" : "HODGKINS LYMPHOMA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "HPGC",
+          "display" : "HEMOPHAGOCYTOSIS"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "HUNTER",
+          "display" : "HUNTER SYNDROME (MPS-II)"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "HURLER",
+          "display" : "HURLER SYNDROME (MPS-IH)"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "ICELL",
+          "display" : "I-CELL DISEASE"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "IMDNP",
+          "display" : "IMMUNE DEFICIENCY + NEUTROPEN"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "JCML",
+          "display" : "JUVENILE CHRONIC MYELOGENOUS"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "KOSTMN",
+          "display" : "KOSTMANN'S AGRANULOCYTOSIS"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "KRABBE",
+          "display" : "KRABBE DISEASE"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "LAD",
+          "display" : "LEUKOCYTE ADHESION DEFICIENCY"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "LN",
+          "display" : "LESCH-NYHAN"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "LNS",
+          "display" : "LESCH-NYHAN"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "LYSOST",
+          "display" : "LYSOSOMAL STORAGE DISEASE"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "MANNO",
+          "display" : "MANNOSIDOSIS"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "MARLAM",
+          "display" : "MAROTEAUX-LAMY (MPS-VI)"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "MDS",
+          "display" : "MYELODYSPLASTIC DISORDER"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "MFMM",
+          "display" : "MYELOFIBRO MYELOID METAPLASIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "MLD",
+          "display" : "METACHROMATIC LEUKODYSTROPHY"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "MM",
+          "display" : "MULTIPLE MYELOMA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "MORQUA",
+          "display" : "MORQUIO A - MPS IVA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "MORQUB",
+          "display" : "MORQUIO B - MPS IVB"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "MORQUO",
+          "display" : "MORQUIO (MPS-IV)"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "MPS",
+          "display" : "MUCOPOLYSACCHARIDOSIS (MPS-V)"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "N-P",
+          "display" : "NEIMAN-PICK DISEASE"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "NB",
+          "display" : "NEUROBLASTOMA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "NCL1",
+          "display" : "ENZYME NCL 1"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "NCL2",
+          "display" : "ENZYME NCL 2"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "NEUTAD",
+          "display" : "NEUTROPHIL ACTIN DEFICIENCY"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "NEUTD",
+          "display" : "CHEDIAK-HIGASHI SYNDROME"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "NHL",
+          "display" : "NON-HODGKINS LYMPHOMA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OCID",
+          "display" : "OTHR COMBINED IMMUNODEFICIENCY"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OHIS",
+          "display" : "OTHER HISTIOCYTIC DISORDERS"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OIEA",
+          "display" : "OTH ERYTHROCYT DIFFERENTIATION"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OIIS",
+          "display" : "OTHER IMMUNE SYSTEM"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OIMD",
+          "display" : "OTH INHER METABOLISM DISORD"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OIMDL",
+          "display" : "OTH MUCOLIPIDOSES"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OIMDP",
+          "display" : "OTH MUCOPOLYSACCHARIDOSIS"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OIPA",
+          "display" : "OTH ABNORMALITIES OR PLATELETS"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OMDS",
+          "display" : "OTHER MYELODYSPLASTIC DISORDER"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OMF",
+          "display" : "OTHER MYLEOFIBROSIS/MYLEOSCLER"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OMMEN",
+          "display" : "OMMEN'S SYNDROME"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OMS",
+          "display" : "OTH MALIGNANCY, SPECIFY"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OND",
+          "display" : "OTHER NON-MALIGNANT DISEASE"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OOL",
+          "display" : "OTHER LEUKEMIA SPECIFY"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OPCD",
+          "display" : "OTHER PLASMA CELL DISORDER"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OSCID",
+          "display" : "OTHER SCID"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OST",
+          "display" : "OSTEOPETROSIS"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "OTHHGP",
+          "display" : "OTHER HEMOGLOBINOPATHY"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "PCL",
+          "display" : "PLASMA CELL LEUKEMIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "PHILLY",
+          "display" : "PROLYMPHOCYTIC LEUKEMIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "PNH",
+          "display" : "PAROXYSMAL NOCTURNAL HEMOGLOB"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "PV",
+          "display" : "POLYCYTHEMIA VERA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "RA",
+          "display" : "REFRACTORY ANEMIA (RA)"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "RAEB",
+          "display" : "REFRACT ANEMIA-EXCESS BLASTS"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "RAEBIT",
+          "display" : "REFRACT ANEMIA-EX. BLAST TRAN"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "RCA",
+          "display" : "PURE RED CELL APLASIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "RCC",
+          "display" : "RENAL CELL CARCINOMA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "RETDG",
+          "display" : "RETICULAR DYSGENESIS"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "SAA",
+          "display" : "SEVERE APLASTIC ANEMIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "SANFIA",
+          "display" : "SANFILIPPO A - MPS IIIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "SANFIB",
+          "display" : "SANFILIPPO B - MPS IIIB"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "SANFIC",
+          "display" : "SANFILIPPO C - MPS IIIC"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "SANFID",
+          "display" : "ANFILIPPO D - MPS IIID"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "SANFIL",
+          "display" : "SANFILLIPPO (MPS-III)"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "SCA",
+          "display" : "SICKLE CELL ANEMIA"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "SCHEIE",
+          "display" : "SCHEIE SYNDROME (MPS-IS)"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/disease",
+          "code" : "SCID",
+          "display" : "SEVERE COMBINED IMMUNODEF"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-abo-group-cs.html\">NMDP Blood Group Code System v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-A\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-A\">A</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>A</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-B\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-B\">B</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>B</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-O\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-O\">O</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>O</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-AB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-AB\">AB</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>AB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-abogroup-nil\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-nil\">nil</a></td><td>http://terminology.nmdp.org/codesystem/abogroup</td><td>no data</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes",
+      "version" : "0.1.0",
+      "name" : "NMDPABOVS",
+      "title" : "NMDP Blood Group Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "NMDP blood group codes",
+      "expansion" : {
+        "identifier" : "urn:uuid:10366aac-9658-4180-be7b-c616ac58c938",
+        "timestamp" : "2023-05-09T13:41:54-05:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/abogroup|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/abogroup",
+          "code" : "A",
+          "display" : "A"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/abogroup",
+          "code" : "B",
+          "display" : "B"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/abogroup",
+          "code" : "O",
+          "display" : "O"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/abogroup",
+          "code" : "AB",
+          "display" : "AB"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/abogroup",
+          "code" : "nil",
+          "display" : "no data"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-transplant-timeline-cs.html\">NMDP Transplant Timeline Code System v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline--4w\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-.604w\">&lt;4w</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Less than 4 weeks</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-4-6w\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-4-6w\">4-6w</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Between 4-6 weeks</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-7-12w\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-7-12w\">7-12w</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Between 7-12 weeks</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-12w-6m\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-12w-6m\">12w-6m</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Over 12 weeks - up to 6 months</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline--6m\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-.626m\">&gt;6m</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Greater than 6 months</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-NA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-NA\">NA</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>N/A : MUD Transplant not preferred treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-P\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-P\">P</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Pending, Case manager to follow up</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes",
+      "version" : "0.1.0",
+      "name" : "NMDPTransplantTimelineVS",
+      "title" : "NMDP Transplant Timeline Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "NMDP transplant timeline codes",
+      "expansion" : {
+        "identifier" : "urn:uuid:3a4815b0-e55c-4607-bf97-4a79f6ac16ae",
+        "timestamp" : "2023-05-09T13:41:54-05:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/transplanttimeline|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+          "code" : "<4w",
+          "display" : "Less than 4 weeks"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+          "code" : "4-6w",
+          "display" : "Between 4-6 weeks"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+          "code" : "7-12w",
+          "display" : "Between 7-12 weeks"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+          "code" : "12w-6m",
+          "display" : "Over 12 weeks - up to 6 months"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+          "code" : ">6m",
+          "display" : "Greater than 6 months"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+          "code" : "NA",
+          "display" : "N/A : MUD Transplant not preferred treatment"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+          "code" : "P",
+          "display" : "Pending, Case manager to follow up"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2023</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-112144000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/112144000\">112144000</a></td><td>http://snomed.info/sct</td><td>Blood group A (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-165743006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/165743006\">165743006</a></td><td>http://snomed.info/sct</td><td>Blood group AB (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-112149005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/112149005\">112149005</a></td><td>http://snomed.info/sct</td><td>Blood group B (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-58460004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58460004\">58460004</a></td><td>http://snomed.info/sct</td><td>Blood group O (finding)</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes",
+      "version" : "0.1.0",
+      "name" : "SCTABOGroupVS",
+      "title" : "Snomed CT ABO group Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "Snomed CT codes for ABO blood group",
+      "expansion" : {
+        "identifier" : "urn:uuid:ee037357-fc54-4041-901e-47e8fcf7b633",
+        "timestamp" : "2023-05-09T13:41:54-05:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "112144000",
+          "display" : "Blood group A (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "165743006",
+          "display" : "Blood group AB (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "112149005",
+          "display" : "Blood group B (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "58460004",
+          "display" : "Blood group O (finding)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://loinc.org/vs/LL2419-1",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.74</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA19710-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA19710-5/\">LA19710-5</a></td><td>http://loinc.org</td><td>Group A</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA19709-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA19709-7/\">LA19709-7</a></td><td>http://loinc.org</td><td>Group B</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA19708-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA19708-9/\">LA19708-9</a></td><td>http://loinc.org</td><td>Group O</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA28449-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA28449-9/\">LA28449-9</a></td><td>http://loinc.org</td><td>Group AB</td></tr></table></div>"
+      },
+      "url" : "http://loinc.org/vs/LL2419-1",
+      "version" : "0.1.0",
+      "name" : "LNCABOGroupVS",
+      "title" : "LOINC ABO group Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "LOINC codes for ABO blood group",
+      "copyright" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.",
+      "expansion" : {
+        "identifier" : "urn:uuid:695de62a-5a7c-4bf7-938d-82d1942ed0cd",
+        "timestamp" : "2023-05-09T13:42:07-05:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.74"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA19710-5",
+          "display" : "Group A"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA19709-7",
+          "display" : "Group B"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA19708-9",
+          "display" : "Group O"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA28449-9",
+          "display" : "Group AB"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 8 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-diseasestage-cs.html\">NMDP Disease Stage Code System v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-diseasestage-AP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-AP\">AP</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Accelerated Phase</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-diseasestage-BP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-BP\">BP</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Blastic Phase</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-diseasestage-CP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-CP\">CP</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Chronic Phase</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-diseasestage-CR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-CR\">CR</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Complete Remission</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-diseasestage-IF\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-IF\">IF</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Induction Failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-diseasestage-IT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-IT\">IT</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Induction Therapy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-diseasestage-RE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-RE\">RE</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Relapse</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-diseasestage-RM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-RM\">RM</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Remission</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes",
+      "version" : "0.1.0",
+      "name" : "NMDPDiseasStageVS",
+      "title" : "NMDP Disease Stage Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "NMDP disease stage codes",
+      "expansion" : {
+        "identifier" : "urn:uuid:96a34934-b86f-492e-b7ac-b7f6f0b944eb",
+        "timestamp" : "2023-05-09T13:42:10-05:00",
+        "total" : 8,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/diseasestage|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/diseasestage",
+          "code" : "AP",
+          "display" : "Accelerated Phase"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/diseasestage",
+          "code" : "BP",
+          "display" : "Blastic Phase"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/diseasestage",
+          "code" : "CP",
+          "display" : "Chronic Phase"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/diseasestage",
+          "code" : "CR",
+          "display" : "Complete Remission"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/diseasestage",
+          "code" : "IF",
+          "display" : "Induction Failure"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/diseasestage",
+          "code" : "IT",
+          "display" : "Induction Therapy"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/diseasestage",
+          "code" : "RE",
+          "display" : "Relapse"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/diseasestage",
+          "code" : "RM",
+          "display" : "Remission"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 44 concepts</p><p style=\"border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px\">Expansion based on code system fragment <a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem v0.1.0 (CodeSystem)</a></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4931\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584931\">HGNC:4931</a></td><td>http://www.genenames.org/geneId</td><td>HLA-A</td><td><div><p>major histocompatibility complex, class I, A</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4932\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584932\">HGNC:4932</a></td><td>http://www.genenames.org/geneId</td><td>HLA-B</td><td><div><p>major histocompatibility complex, class I, B</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4933\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584933\">HGNC:4933</a></td><td>http://www.genenames.org/geneId</td><td>HLA-C</td><td><div><p>major histocompatibility complex, class I, C</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4934\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584934\">HGNC:4934</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DMA</td><td><div><p>major histocompatibility complex, class II, DM alpha</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4935\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584935\">HGNC:4935</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DMB</td><td><div><p>major histocompatibility complex, class II, DM beta</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4936\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584936\">HGNC:4936</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DOA</td><td><div><p>major histocompatibility complex, class II, DO alpha</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4937\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584937\">HGNC:4937</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DOB</td><td><div><p>major histocompatibility complex, class II, DO beta</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4938\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584938\">HGNC:4938</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DPA1</td><td><div><p>major histocompatibility complex, class II, DP alpha 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4939\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584939\">HGNC:4939</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DPA2</td><td><div><p>major histocompatibility complex, class II, DP alpha 2 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-19393\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819393\">HGNC:19393</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DPA3</td><td><div><p>major histocompatibility complex, class II, DP alpha 3 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4940\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584940\">HGNC:4940</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DPB1</td><td><div><p>major histocompatibility complex, class II, DP beta 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4941\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584941\">HGNC:4941</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DPB2</td><td><div><p>major histocompatibility complex, class II, DP beta 2 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4942\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584942\">HGNC:4942</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DQA1</td><td><div><p>major histocompatibility complex, class II, DQ alpha 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4943\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584943\">HGNC:4943</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DQA2</td><td><div><p>major histocompatibility complex, class II, DQ alpha 2</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4944\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584944\">HGNC:4944</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DQB1</td><td><div><p>major histocompatibility complex, class II, DQ beta 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4945\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584945\">HGNC:4945</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DQB2</td><td><div><p>major histocompatibility complex, class II, DQ beta 2</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4946\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584946\">HGNC:4946</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DQB3</td><td><div><p>major histocompatibility complex, class II, DQ beta 3</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4947\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584947\">HGNC:4947</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRA</td><td><div><p>major histocompatibility complex, class II, DR alpha</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4948\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584948\">HGNC:4948</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB1</td><td><div><p>major histocompatibility complex, class II, DR beta 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4950\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584950\">HGNC:4950</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB2</td><td><div><p>major histocompatibility complex, class II, DR beta 2 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4951\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584951\">HGNC:4951</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB3</td><td><div><p>major histocompatibility complex, class II, DR beta 3</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4952\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584952\">HGNC:4952</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB4</td><td><div><p>major histocompatibility complex, class II, DR beta 4</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4953\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584953\">HGNC:4953</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB5</td><td><div><p>major histocompatibility complex, class II, DR beta 5</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4954\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584954\">HGNC:4954</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB6</td><td><div><p>major histocompatibility complex, class II, DR beta 6 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4955\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584955\">HGNC:4955</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB7</td><td><div><p>major histocompatibility complex, class II, DR beta 7 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4956\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584956\">HGNC:4956</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB8</td><td><div><p>major histocompatibility complex, class II, DR beta 8 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4957\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584957\">HGNC:4957</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DRB9</td><td><div><p>major histocompatibility complex, class II, DR beta 9 (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4962\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584962\">HGNC:4962</a></td><td>http://www.genenames.org/geneId</td><td>HLA-E</td><td><div><p>major histocompatibility complex, class I, E</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4963\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584963\">HGNC:4963</a></td><td>http://www.genenames.org/geneId</td><td>HLA-F</td><td><div><p>major histocompatibility complex, class I, F</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4964\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584964\">HGNC:4964</a></td><td>http://www.genenames.org/geneId</td><td>HLA-G</td><td><div><p>major histocompatibility complex, class I, G</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4965\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584965\">HGNC:4965</a></td><td>http://www.genenames.org/geneId</td><td>HLA-H</td><td><div><p>major histocompatibility complex, class I, H (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4967\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584967\">HGNC:4967</a></td><td>http://www.genenames.org/geneId</td><td>HLA-J</td><td><div><p>major histocompatibility complex, class I, J (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4969\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584969\">HGNC:4969</a></td><td>http://www.genenames.org/geneId</td><td>HLA-K</td><td><div><p>major histocompatibility complex, class I, K (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-4970\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584970\">HGNC:4970</a></td><td>http://www.genenames.org/geneId</td><td>HLA-L</td><td><div><p>major histocompatibility complex, class I, L (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-19406\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819406\">HGNC:19406</a></td><td>http://www.genenames.org/geneId</td><td>HLA-N</td><td><div><p>major histocompatibility complex, class I, N (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-21196\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5821196\">HGNC:21196</a></td><td>http://www.genenames.org/geneId</td><td>HLA-P</td><td><div><p>major histocompatibility complex, class I, P (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-19395\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819395\">HGNC:19395</a></td><td>http://www.genenames.org/geneId</td><td>HLA-S</td><td><div><p>major histocompatibility complex, class I, S (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-23478\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823478\">HGNC:23478</a></td><td>http://www.genenames.org/geneId</td><td>HLA-T</td><td><div><p>major histocompatibility complex, class I, T (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-23477\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823477\">HGNC:23477</a></td><td>http://www.genenames.org/geneId</td><td>HLA-U</td><td><div><p>major histocompatibility complex, class I, U (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-23482\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823482\">HGNC:23482</a></td><td>http://www.genenames.org/geneId</td><td>HLA-V</td><td><div><p>major histocompatibility complex, class I, V (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-23425\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823425\">HGNC:23425</a></td><td>http://www.genenames.org/geneId</td><td>HLA-W</td><td><div><p>major histocompatibility complex, class I, W (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-19385\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819385\">HGNC:19385</a></td><td>http://www.genenames.org/geneId</td><td>HLA-X</td><td><div><p>major histocompatibility complex, class I, X (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-33913\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5833913\">HGNC:33913</a></td><td>http://www.genenames.org/geneId</td><td>HLA-Y</td><td><div><p>major histocompatibility complex, class I, Y (pseudogene)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.genenames.org-geneId-HGNC-19394\"> </a>\u00a0\u00a0<a href=\"CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819394\">HGNC:19394</a></td><td>http://www.genenames.org/geneId</td><td>HLA-Z</td><td><div><p>major histocompatibility complex, class I, Z (pseudogene)</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset",
+      "version" : "0.1.0",
+      "name" : "HLAGeneIdVS",
+      "title" : "HLA Gene Name Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "HLA HGNC GeneIds Valueset",
+      "expansion" : {
+        "identifier" : "urn:uuid:031b59bb-6386-4d10-8c0b-61ecab5c5ffa",
+        "timestamp" : "2023-05-09T13:42:22-05:00",
+        "total" : 44,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://www.genenames.org/geneId|0.1.0"
+        },
+        {
+          "name" : "fragment",
+          "valueCanonical" : "http://www.genenames.org/geneId|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4931",
+          "display" : "HLA-A"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4932",
+          "display" : "HLA-B"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4933",
+          "display" : "HLA-C"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4934",
+          "display" : "HLA-DMA"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4935",
+          "display" : "HLA-DMB"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4936",
+          "display" : "HLA-DOA"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4937",
+          "display" : "HLA-DOB"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4938",
+          "display" : "HLA-DPA1"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4939",
+          "display" : "HLA-DPA2"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:19393",
+          "display" : "HLA-DPA3"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4940",
+          "display" : "HLA-DPB1"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4941",
+          "display" : "HLA-DPB2"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4942",
+          "display" : "HLA-DQA1"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4943",
+          "display" : "HLA-DQA2"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4944",
+          "display" : "HLA-DQB1"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4945",
+          "display" : "HLA-DQB2"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4946",
+          "display" : "HLA-DQB3"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4947",
+          "display" : "HLA-DRA"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4948",
+          "display" : "HLA-DRB1"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4950",
+          "display" : "HLA-DRB2"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4951",
+          "display" : "HLA-DRB3"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4952",
+          "display" : "HLA-DRB4"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4953",
+          "display" : "HLA-DRB5"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4954",
+          "display" : "HLA-DRB6"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4955",
+          "display" : "HLA-DRB7"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4956",
+          "display" : "HLA-DRB8"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4957",
+          "display" : "HLA-DRB9"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4962",
+          "display" : "HLA-E"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4963",
+          "display" : "HLA-F"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4964",
+          "display" : "HLA-G"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4965",
+          "display" : "HLA-H"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4967",
+          "display" : "HLA-J"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4969",
+          "display" : "HLA-K"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:4970",
+          "display" : "HLA-L"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:19406",
+          "display" : "HLA-N"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:21196",
+          "display" : "HLA-P"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:19395",
+          "display" : "HLA-S"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:23478",
+          "display" : "HLA-T"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:23477",
+          "display" : "HLA-U"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:23482",
+          "display" : "HLA-V"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:23425",
+          "display" : "HLA-W"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:19385",
+          "display" : "HLA-X"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:33913",
+          "display" : "HLA-Y"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:19394",
+          "display" : "HLA-Z"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-practitioner-role-cs.html\">NMDP Practitioner Roles v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-practitionerrole-referringphysician\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-practitioner-role-cs.html#nmdp-practitioner-role-cs-referringphysician\">referringphysician</a></td><td>http://terminology.nmdp.org/codesystem/practitionerrole</td><td>Referring Physician</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-practitionerrole-tcphysician\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-practitioner-role-cs.html#nmdp-practitioner-role-cs-tcphysician\">tcphysician</a></td><td>http://terminology.nmdp.org/codesystem/practitionerrole</td><td>Transplant Center Physician</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-practitionerrole-searchcoordinator\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-practitioner-role-cs.html#nmdp-practitioner-role-cs-searchcoordinator\">searchcoordinator</a></td><td>http://terminology.nmdp.org/codesystem/practitionerrole</td><td>Search Coordinator</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs",
+      "version" : "0.1.0",
+      "name" : "NMDPPractitionerRoleVS",
+      "title" : "NMDP Practitioner Role Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "NMDP Practitioner Role Value Set",
+      "expansion" : {
+        "identifier" : "urn:uuid:0cd104a7-db71-47ba-937b-6e57967c3eec",
+        "timestamp" : "2023-05-09T13:42:22-05:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/practitionerrole|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/practitionerrole",
+          "code" : "referringphysician",
+          "display" : "Referring Physician"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/practitionerrole",
+          "code" : "tcphysician",
+          "display" : "Transplant Center Physician"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/practitionerrole",
+          "code" : "searchcoordinator",
+          "display" : "Search Coordinator"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-rh-status-cs.html\">NMDP Rh Code System v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-rhstatus-I\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-I\">I</a></td><td>http://terminology.nmdp.org/codesystem/rhstatus</td><td>Indeterminant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-rhstatus-P\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-P\">P</a></td><td>http://terminology.nmdp.org/codesystem/rhstatus</td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-rhstatus-N\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-N\">N</a></td><td>http://terminology.nmdp.org/codesystem/rhstatus</td><td>Negative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-rhstatus-D\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-D\">D</a></td><td>http://terminology.nmdp.org/codesystem/rhstatus</td><td>Indeterminant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-rhstatus-nil\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-nil\">nil</a></td><td>http://terminology.nmdp.org/codesystem/rhstatus</td><td>no data</td></tr></table></div>"
+      },
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes",
+      "version" : "0.1.0",
+      "name" : "NMDPRhStatusVS",
+      "title" : "NMDP Codes for Rh status",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2023-05-09T13:39:12-05:00",
+      "contact" : [{
+        "name" : "NMDP",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://bethematch.org"
+        }]
+      }],
+      "description" : "NMDP codes for Rh staus",
+      "expansion" : {
+        "identifier" : "urn:uuid:140f0d18-142e-40a3-aca1-39d940ec5730",
+        "timestamp" : "2023-05-09T13:42:23-05:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.nmdp.org/codesystem/rhstatus|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.nmdp.org/codesystem/rhstatus",
+          "code" : "I",
+          "display" : "Indeterminant"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/rhstatus",
+          "code" : "P",
+          "display" : "Positive"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/rhstatus",
+          "code" : "N",
+          "display" : "Negative"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/rhstatus",
+          "code" : "D",
+          "display" : "Indeterminant"
+        },
+        {
+          "system" : "http://terminology.nmdp.org/codesystem/rhstatus",
+          "code" : "nil",
+          "display" : "no data"
+        }]
+      }
+    }
+  }]
+}

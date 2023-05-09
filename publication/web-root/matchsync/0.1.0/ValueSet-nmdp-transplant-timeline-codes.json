@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nmdp-transplant-timeline-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-transplant-timeline-cs.html\"><code>http://terminology.nmdp.org/codesystem/transplanttimeline</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes",
+  "version" : "0.1.0",
+  "name" : "NMDPTransplantTimelineVS",
+  "title" : "NMDP Transplant Timeline Value Set",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-05-09T13:30:22-05:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "NMDP transplant timeline codes",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline"
+    }]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nmdp-language-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-language-cs.html\"><code>http://terminology.nmdp.org/codesystem/language</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes",
+  "version" : "0.1.0",
+  "name" : "NMDPLanguageCodes",
+  "title" : "NMDP Language Value Set",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-05-09T13:30:22-05:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "NMDP language codes",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/language"
+    }]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "ad78058a-c0fe-4ea0-bc86-d2f3770a1944",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"],
+    "security" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplant-center",
+      "code" : "tc_123"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"ad78058a-c0fe-4ea0-bc86-d2f3770a1944\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;ad78058a-c0fe-4ea0-bc86-d2f3770a1944&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nmdp-practitioner-role.html\">NMDPPractitionerRole</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>practitioner</b>: <a href=\"Bundle-BundleExample-Practitioner.html#urn-uuid-fe6acf5d-ed53-4758-8d38-10d915c984af\">urn:uuid:fe6acf5d-ed53-4758-8d38-10d915c984af: Bart Simpson</a></p><p><b>code</b>: Search Coordinator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-nmdp-practitioner-role-cs.html\">NMDP Practitioner Roles</a>#searchcoordinator)</span></p></div>"
+  },
+  "practitioner" : {
+    "reference" : "urn:uuid:fe6acf5d-ed53-4758-8d38-10d915c984af",
+    "display" : "Bart Simpson"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/practitionerrole",
+      "code" : "searchcoordinator",
+      "display" : "Search Coordinator"
+    }]
+  }]
+}
