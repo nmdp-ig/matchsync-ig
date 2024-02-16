@@ -224,6 +224,26 @@ Description: "LOINC codes for ABO blood group"
 * $LNC#LA19708-9  "Group O"
 * $LNC#LA28449-9  "Group AB"
 
+ValueSet: LNCABORHGroupVS
+Id: loinc-abo-rh-codes
+Title: "LOINC ABO RH group Value Set"
+Description: "LOINC codes for ABO RH blood group"
+* ^url = "http://loinc.org/vs/LL2972-9"
+* ^status = #active
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
+* ^version = "Loinc_2.72"
+* ^publisher = "Regenstrief Institute, Inc."
+* ^experimental = true
+//update these codes for the answer list
+* $LNC#LA21321-7  "O Pos"
+* $LNC#LA21322-5  "O Neg"
+* $LNC#LA21325-8  "A Pos"
+* $LNC#LA21326-6  "A Neg"
+* $LNC#LA21327-4  "B Pos"
+* $LNC#LA21328-2  "B Neg"
+* $LNC#LA21323-3  "AB Pos"
+* $LNC#LA21324-1  "AB Neg"
+
 ValueSet: SCTABOGroupVS
 Id: sct-abo-group-codes
 Title: "Snomed CT ABO group Value Set"

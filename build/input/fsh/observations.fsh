@@ -39,6 +39,32 @@ Description: "Example of patient height"
   * code = #cm
 * effectiveDateTime = "2022-05-01"
 
+Profile: MSABORHObservation
+Parent: Observation
+Id: ms-aborhgroup-observation
+Description: "ABO and Rh group [Type] in Blood"
+* insert MetaSecurityRules
+* subject 1..1 MS
+* subject only Reference(mspatient) 
+* code = $LNC#882-1 "ABO and Rh group [Type] in Blood"
+* effectiveDateTime 1..1 MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from loinc-abo-rh-codes 
+
+Instance: MSABORHObsExample
+InstanceOf: ms-aborhgroup-observation
+Description: "Example of patient ABO and RH"
+* meta.security[TransplantCenter].code = #tc_123
+* status = #final
+* subject = Reference(MSPatientExample)
+// * code.coding[0] = $LNC#883-9 "ABO group [Type] in Blood"
+* valueCodeableConcept
+  * coding
+    * system = $LNC
+    * code = 	#LA21321-7
+    * display = "O Pos"
+* effectiveDateTime = "2022-05-01"
+
 Profile: MSABOGroupObservation
 Parent: Observation
 Id: ms-abogroup-observation
