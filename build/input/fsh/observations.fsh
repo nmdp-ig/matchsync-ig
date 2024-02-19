@@ -47,6 +47,7 @@ Description: "ABO and Rh group [Type] in Blood"
 * subject 1..1 MS
 * subject only Reference(mspatient) 
 * code = $LNC#882-1 "ABO and Rh group [Type] in Blood"
+// * code = $LNC#2972-9 "ABO and Rh group [Type] in Blood"
 * effectiveDateTime 1..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from loinc-abo-rh-codes 
@@ -57,7 +58,7 @@ Description: "Example of patient ABO and RH"
 * meta.security[TransplantCenter].code = #tc_123
 * status = #final
 * subject = Reference(MSPatientExample)
-// * code.coding[0] = $LNC#883-9 "ABO group [Type] in Blood"
+// * code.coding[0] = $LNC#LL2972-9 "ABO group [Type] in Blood"
 * valueCodeableConcept
   * coding
     * system = $LNC
