@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MATCHSOURCE\HLA Gene Name Value Set - FHIR v4.0.1</title>
+    <title>HLA Gene Name Value Set -  v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -29,18 +29,18 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.30"}
-    h3,h4,h5,h6{--heading-prefix:"2.30"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.30"}
+    h3,h4,h5,h6{--heading-prefix:"5.30"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -82,6 +82,25 @@
   <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="Guidance.html">Guidance</a>
+  </li>
+  <li>
+    <a href="Appendices.html">Appendices</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -107,7 +126,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MatchSourceIG - Local Development build (v0.1.0). See the <a href="http://fhir.nmdp.org/ig/matchsource/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MatchSyncIG - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -122,6 +141,7 @@
   <li class="active">
     <a href="#">Narrative Content</a>
   </li>
+
 
 
   
@@ -150,15 +170,15 @@
 
   <a name="root"> </a>
   <h2 id="root">ValueSet: HLA Gene Name Value Set
-
+(Experimental)
   </h2>
   <table class="colsi">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.nmdp.org/ig/matchsource/ValueSet/hla-geneid-valueset<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/matchsource/ValueSet/hla-geneid-valueset"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/matchsource/ValueSet/hla-geneid-valueset|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset|0.1.0"/></span>
       </td>
     </tr>
 
@@ -174,7 +194,7 @@
         
           Active
           
-            as of 2022-11-02
+            as of 2024-02-19
           
         
       </td>
@@ -200,17 +220,6 @@
   </p>
   
 <ul>
- <li><a href="StructureDefinition-hla-a.html">HLA_A</a></li>
- <li><a href="StructureDefinition-hla-b.html">HLA_B</a></li>
- <li><a href="StructureDefinition-hla-c.html">HLA_C</a></li>
- <li><a href="StructureDefinition-hla-dpa1.html">HLA_DPA1</a></li>
- <li><a href="StructureDefinition-hla-dpb1.html">HLA_DPB1</a></li>
- <li><a href="StructureDefinition-hla-dqa1.html">HLA_DQA1</a></li>
- <li><a href="StructureDefinition-hla-dqb1.html">HLA_DQB1</a></li>
- <li><a href="StructureDefinition-hla-drb1.html">HLA_DRB1</a></li>
- <li><a href="StructureDefinition-hla-drb3.html">HLA_DRB3</a></li>
- <li><a href="StructureDefinition-hla-drb4.html">HLA_DRB4</a></li>
- <li><a href="StructureDefinition-hla-drb5.html">HLA_DRB5</a></li>
  <li><a href="StructureDefinition-hla-genotype.html">HLA Genotype Observation</a></li>
 </ul>
 
@@ -224,13 +233,13 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-hla-genename-codesystem.html"><code>http://www.genenames.org/geneId</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584931">HGNC:4931</a></td><td>HLA-A</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584932">HGNC:4932</a></td><td>HLA-B</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584933">HGNC:4933</a></td><td>HLA-C</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584934">HGNC:4934</a></td><td>HLA-DMA</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584935">HGNC:4935</a></td><td>HLA-DMB</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584936">HGNC:4936</a></td><td>HLA-DOA</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584937">HGNC:4937</a></td><td>HLA-DOB</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584938">HGNC:4938</a></td><td>HLA-DPA1</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584939">HGNC:4939</a></td><td>HLA-DPA2</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819393">HGNC:19393</a></td><td>HLA-DPA3</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584940">HGNC:4940</a></td><td>HLA-DPB1</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584941">HGNC:4941</a></td><td>HLA-DPB2</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584942">HGNC:4942</a></td><td>HLA-DQA1</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584943">HGNC:4943</a></td><td>HLA-DQA2</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584944">HGNC:4944</a></td><td>HLA-DQB1</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584945">HGNC:4945</a></td><td>HLA-DQB2</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584946">HGNC:4946</a></td><td>HLA-DQB3</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584947">HGNC:4947</a></td><td>HLA-DRA</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584948">HGNC:4948</a></td><td>HLA-DRB1</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584950">HGNC:4950</a></td><td>HLA-DRB2</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584951">HGNC:4951</a></td><td>HLA-DRB3</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584952">HGNC:4952</a></td><td>HLA-DRB4</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584953">HGNC:4953</a></td><td>HLA-DRB5</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584954">HGNC:4954</a></td><td>HLA-DRB6</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584955">HGNC:4955</a></td><td>HLA-DRB7</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584956">HGNC:4956</a></td><td>HLA-DRB8</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584957">HGNC:4957</a></td><td>HLA-DRB9</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584962">HGNC:4962</a></td><td>HLA-E</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584963">HGNC:4963</a></td><td>HLA-F</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584964">HGNC:4964</a></td><td>HLA-G</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584965">HGNC:4965</a></td><td>HLA-H</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584967">HGNC:4967</a></td><td>HLA-J</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584969">HGNC:4969</a></td><td>HLA-K</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584970">HGNC:4970</a></td><td>HLA-L</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819406">HGNC:19406</a></td><td>HLA-N</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5821196">HGNC:21196</a></td><td>HLA-P</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819395">HGNC:19395</a></td><td>HLA-S</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823478">HGNC:23478</a></td><td>HLA-T</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823477">HGNC:23477</a></td><td>HLA-U</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823482">HGNC:23482</a></td><td>HLA-V</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5823425">HGNC:23425</a></td><td>HLA-W</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819385">HGNC:19385</a></td><td>HLA-X</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5833913">HGNC:33913</a></td><td>HLA-Y</td></tr><tr><td><a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.5819394">HGNC:19394</a></td><td>HLA-Z</td></tr></table></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-hla-genename-codesystem.html"><code>http://www.genenames.org/geneId</code></a></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 44 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-hla-genename-codesystem.html">HLA HGNC GeneID CodeSystem v0.1.0 (CodeSystem)</a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---www.genenames.org-geneId-HGNC-4931"> </a>  <a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584931">HGNC:4931</a></td><td>http://www.genenames.org/geneId</td><td>HLA-A</td><td><div><p>major histocompatibility complex, class I, A</p>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment <a href="CodeSystem-hla-genename-codesystem.html">http://www.genenames.org/geneId HLA HGNC GeneID CodeSystem v0.1.0 (CodeSystem)</a></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-hla-genename-codesystem.html">codesystem HLA HGNC GeneID CodeSystem v0.1.0 (CodeSystem)</a></p><p>This value set contains at least 44 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---www.genenames.org-geneId-HGNC-4931"> </a>  <a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584931">HGNC:4931</a></td><td>http://www.genenames.org/geneId</td><td>HLA-A</td><td><div><p>major histocompatibility complex, class I, A</p>
 </div></td></tr><tr><td style="white-space:nowrap"><a name="http---www.genenames.org-geneId-HGNC-4932"> </a>  <a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584932">HGNC:4932</a></td><td>http://www.genenames.org/geneId</td><td>HLA-B</td><td><div><p>major histocompatibility complex, class I, B</p>
 </div></td></tr><tr><td style="white-space:nowrap"><a name="http---www.genenames.org-geneId-HGNC-4933"> </a>  <a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584933">HGNC:4933</a></td><td>http://www.genenames.org/geneId</td><td>HLA-C</td><td><div><p>major histocompatibility complex, class I, C</p>
 </div></td></tr><tr><td style="white-space:nowrap"><a name="http---www.genenames.org-geneId-HGNC-4934"> </a>  <a href="CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC.584934">HGNC:4934</a></td><td>http://www.genenames.org/geneId</td><td>HLA-DMA</td><td><div><p>major histocompatibility complex, class II, DM alpha</p>
@@ -339,7 +348,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package matchsource#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 2, 2022 14:44-0500">2022-11-02</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 19, 2024 18:37-0600">2024-02-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

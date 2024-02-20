@@ -1,87 +1,75 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <http://loinc.org/rdf#> .
+@prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/Observation/HLA-C-Example> a fhir:Observation;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "HLA-C-Example"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-c";
-       fhir:index 0;
-       fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/hla-c>
-     ];
-     fhir:Meta.security [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ];
-       fhir:Coding.code [ fhir:value "tc_123" ]
+<http://fhir.nmdp.org/ig/matchsync/Observation/HLA-C-Example> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HLA-C-Example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-c"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-c>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HLA-C-Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HLA-C-Example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hla-c.html\">HLA_C</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genotype name Patient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#84413-4)</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Patient/MSPatientExample</a> &quot; EVERYPERSON&quot;</p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: hla#3.25.0#HLA-C*01:02:01:01+HLA-C*01:03:01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (glstring.org#hla#3.25.0#HLA-C*01:02:01:01+HLA-C*01:03:01)</span></p><p><b>specimen</b>: <a href=\"Specimen-MSSpecimenExample.html\">Specimen/MSSpecimenExample</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Gene studied ID <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48018-6)</span></td><td>HLA-C <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem</a>#HGNC:4933)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:84413-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "84413-4" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample> ;
+     fhir:reference [ fhir:v "Patient/MSPatientExample" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-05-01"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://glstring.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "hla#3.25.0#HLA-C*01:02:01:01+HLA-C*01:03:01" ]
+     ] )
+  ] ; # 
+  fhir:specimen [
+     fhir:link <http://fhir.nmdp.org/ig/matchsync/Specimen/MSSpecimenExample> ;
+     fhir:reference [ fhir:v "Specimen/MSSpecimenExample" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48018-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48018-6" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://www.genenames.org/geneId"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HGNC:4933" ] ;
+         fhir:display [ fhir:v "HLA-C" ]
+       ] )
      ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HLA-C-Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"HLA-C-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hla-c.html\">HLA_C</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genotype display name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#84413-4)</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Patient/MSPatientExample</a> \" EVERYPERSON\"</p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: hla#3.25.0#HLA-C*01:02:01:01+HLA-C*01:03:01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (glstring.org#hla#3.25.0#HLA-C*01:02:01:01+HLA-C*01:03:01)</span></p><p><b>specimen</b>: <a href=\"Specimen-MSSpecimenExample.html\">Specimen/MSSpecimenExample</a></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Gene studied [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48018-6)</span></td><td>HLA-C <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hla-genename-codesystem.html\">HLA HGNC GeneID CodeSystem</a>#HGNC:4933)</span></td></tr></table></div>"
-  ];
-  fhir:Observation.status [ fhir:value "final"];
-  fhir:Observation.category [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
-       fhir:Coding.code [ fhir:value "laboratory" ]
-     ]
-  ];
-  fhir:Observation.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a loinc:84413-4;
-       fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "84413-4" ]
-     ]
-  ];
-  fhir:Observation.subject [
-     fhir:link <http://fhir.nmdp.org/ig/matchsource/Patient/MSPatientExample>;
-     fhir:Reference.reference [ fhir:value "Patient/MSPatientExample" ]
-  ];
-  fhir:Observation.effectiveDateTime [ fhir:value "2022-05-01"^^xsd:date];
-  fhir:Observation.valueCodeableConcept [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://glstring.org" ];
-       fhir:Coding.code [ fhir:value "hla#3.25.0#HLA-C*01:02:01:01+HLA-C*01:03:01" ]
-     ]
-  ];
-  fhir:Observation.specimen [
-     fhir:link <http://fhir.nmdp.org/ig/matchsource/Specimen/MSSpecimenExample>;
-     fhir:Reference.reference [ fhir:value "Specimen/MSSpecimenExample" ]
-  ];
-  fhir:Observation.component [
-     fhir:index 0;
-     fhir:Observation.component.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:48018-6;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "48018-6" ]
-       ]
-     ];
-     fhir:Observation.component.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://www.genenames.org/geneId" ];
-         fhir:Coding.code [ fhir:value "HGNC:4933" ];
-         fhir:Coding.display [ fhir:value "HLA-C" ]
-       ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.nmdp.org/ig/matchsource/Observation/HLA-C-Example.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

@@ -3,7 +3,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="nmdp-preferred-product-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://terminology.nmdp.org/codesystem/preferredproduct</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">PBSC<a name="nmdp-preferred-product-cs-PBSC"> </a></td><td>HPC, Apheresis</td></tr><tr><td style="white-space:nowrap">Marrow<a name="nmdp-preferred-product-cs-Marrow"> </a></td><td>HPC, Marrow</td></tr><tr><td style="white-space:nowrap">CBU<a name="nmdp-preferred-product-cs-CBU"> </a></td><td>HPC, Cord Blood</td></tr><tr><td style="white-space:nowrap">NP<a name="nmdp-preferred-product-cs-NP"> </a></td><td>No preference</td></tr><tr><td style="white-space:nowrap">U<a name="nmdp-preferred-product-cs-U"> </a></td><td>Unknown</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/preferredproduct</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">PBSC<a name="nmdp-preferred-product-cs-PBSC"> </a></td><td>HPC, Apheresis</td></tr><tr><td style="white-space:nowrap">Marrow<a name="nmdp-preferred-product-cs-Marrow"> </a></td><td>HPC, Marrow</td></tr><tr><td style="white-space:nowrap">CBU<a name="nmdp-preferred-product-cs-CBU"> </a></td><td>HPC, Cord Blood</td></tr><tr><td style="white-space:nowrap">NP<a name="nmdp-preferred-product-cs-NP"> </a></td><td>No preference</td></tr><tr><td style="white-space:nowrap">U<a name="nmdp-preferred-product-cs-U"> </a></td><td>Unknown</td></tr></table></div>
   </text>
   <url value="http://terminology.nmdp.org/codesystem/preferredproduct"/>
   <version value="0.1.0"/>
@@ -11,7 +11,7 @@
   <title value="NMDP Preferred Product for Transplant"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2022-11-02T14:44:07-05:00"/>
+  <date value="2024-02-19T18:37:26-06:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -20,8 +20,9 @@
       <value value="http://bethematch.org"/>
     </telecom>
   </contact>
-  <description value="NMDP Preferred Product for MatchSource patient"/>
+  <description value="NMDP Preferred Product for MatchSync patient"/>
   <copyright value="National Marrow Donor Program"/>
+  <caseSensitive value="true"/>
   <content value="complete"/>
   <count value="5"/>
   <concept>

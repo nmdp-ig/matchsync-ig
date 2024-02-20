@@ -1,48 +1,10 @@
 {
-  "package": "matchsource",
+  "package": "nmdp.fhir.matchsync",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-ethnicity",
-      "title": "NMDP Ethnicity Code Extension",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
-      ]
-    },
-    {
-      "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race",
-      "title": "NMDP Race Code Extension",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
-      ]
-    },
-    {
-      "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/number-of-remissions",
+      "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/number-of-remissions",
       "title": "Number of Remissions of Primary Diagnosis",
       "types": [
         "integer"
@@ -52,79 +14,79 @@
   "profiles": {
     "Observation": [
       {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-height-observation",
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation",
         "title": "MSHeightObservation"
       },
       {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-preferred-product-observation",
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation",
         "title": "MSPreferredProduct"
       },
       {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-rhstatus-observation",
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-rhstatus-observation",
         "title": "MSRhStatusObservation"
       },
       {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-transplant-timeline-observation",
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-transplant-timeline-observation",
         "title": "MSTransplantTimeline"
       },
       {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-weight-observation",
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-weight-observation",
         "title": "MSWeightObservation"
       }
     ],
     "Bundle": [
       {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle",
-        "title": "MatchSource Bundle"
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle",
+        "title": "MatchSync Bundle"
       },
       {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-multilocus",
-        "title": "MatchSource Bundle with single multilocus HLA"
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-multilocus",
+        "title": "MatchSync Bundle with single multilocus HLA"
       },
       {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/ms-bundle-hla-separate",
-        "title": "MatchSource Bundle with Separate HLA"
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-separate",
+        "title": "MatchSync Bundle with Separate HLA"
       }
     ],
     "Condition": [
       {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msdiagnosis",
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis",
         "title": "MSPrimaryDiagnosis"
       }
     ],
     "Patient": [
       {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient",
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient",
         "title": "MSPatient"
       }
     ],
     "Specimen": [
       {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/msspecimen",
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msspecimen",
         "title": "MSSpecimen"
-      }
-    ],
-    "Organization": [
-      {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcenter",
-        "title": "TransplantCenter"
       }
     ],
     "Practitioner": [
       {
-        "url": "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcentercoordinator",
-        "title": "TransplantCenterCoordinator"
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner",
+        "title": "NMDPPractitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role",
+        "title": "NMDPPractitionerRole"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcenter",
+        "title": "TransplantCenter"
       }
     ]
   },
   "usage": {
-    "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-ethnicity": [
-      "Patient"
-    ],
-    "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race": [
-      "Patient"
-    ],
-    "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/number-of-remissions": [
+    "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/number-of-remissions": [
       "Bundle.entry.resource",
       "Condition"
     ],
@@ -140,9 +102,6 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
-      "StructureDefinition.snapshot.element.binding"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
@@ -152,13 +111,7 @@
     "http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding": [
       "Observation"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
-      "StructureDefinition"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
-      "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
@@ -167,11 +120,8 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
-      "StructureDefinition"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "StructureDefinition.snapshot.element"
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
       "ImplementationGuide.definition.page",
@@ -179,6 +129,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"

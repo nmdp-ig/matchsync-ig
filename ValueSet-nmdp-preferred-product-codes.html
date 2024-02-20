@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MATCHSOURCE\NMDP Preferred Product Value Set - FHIR v4.0.1</title>
+    <title>NMDP Preferred Product Value Set -  v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -29,18 +29,18 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.39"}
-    h3,h4,h5,h6{--heading-prefix:"2.39"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.42"}
+    h3,h4,h5,h6{--heading-prefix:"5.42"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -82,6 +82,25 @@
   <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="Guidance.html">Guidance</a>
+  </li>
+  <li>
+    <a href="Appendices.html">Appendices</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -107,7 +126,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MatchSourceIG - Local Development build (v0.1.0). See the <a href="http://fhir.nmdp.org/ig/matchsource/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MatchSyncIG - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -122,6 +141,7 @@
   <li class="active">
     <a href="#">Narrative Content</a>
   </li>
+
 
 
   
@@ -150,15 +170,15 @@
 
   <a name="root"> </a>
   <h2 id="root">ValueSet: NMDP Preferred Product Value Set
-
+(Experimental)
   </h2>
   <table class="colsi">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-preferred-product-codes<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-preferred-product-codes"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-preferred-product-codes|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes|0.1.0"/></span>
       </td>
     </tr>
 
@@ -174,7 +194,7 @@
         
           Active
           
-            as of 2022-11-02
+            as of 2024-02-19
           
         
       </td>
@@ -219,7 +239,7 @@
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 5 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-nmdp-preferred-product-cs.html">NMDP Preferred Product for Transplant v0.1.0 (CodeSystem)</a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-preferredproduct-PBSC"> </a>  <a href="CodeSystem-nmdp-preferred-product-cs.html#nmdp-preferred-product-cs-PBSC">PBSC</a></td><td>http://terminology.nmdp.org/codesystem/preferredproduct</td><td>HPC, Apheresis</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-preferredproduct-Marrow"> </a>  <a href="CodeSystem-nmdp-preferred-product-cs.html#nmdp-preferred-product-cs-Marrow">Marrow</a></td><td>http://terminology.nmdp.org/codesystem/preferredproduct</td><td>HPC, Marrow</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-preferredproduct-CBU"> </a>  <a href="CodeSystem-nmdp-preferred-product-cs.html#nmdp-preferred-product-cs-CBU">CBU</a></td><td>http://terminology.nmdp.org/codesystem/preferredproduct</td><td>HPC, Cord Blood</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-preferredproduct-NP"> </a>  <a href="CodeSystem-nmdp-preferred-product-cs.html#nmdp-preferred-product-cs-NP">NP</a></td><td>http://terminology.nmdp.org/codesystem/preferredproduct</td><td>No preference</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-preferredproduct-U"> </a>  <a href="CodeSystem-nmdp-preferred-product-cs.html#nmdp-preferred-product-cs-U">U</a></td><td>http://terminology.nmdp.org/codesystem/preferredproduct</td><td>Unknown</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-nmdp-preferred-product-cs.html">codesystem NMDP Preferred Product for Transplant v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-preferredproduct-PBSC"> </a>  <a href="CodeSystem-nmdp-preferred-product-cs.html#nmdp-preferred-product-cs-PBSC">PBSC</a></td><td>http://terminology.nmdp.org/codesystem/preferredproduct</td><td>HPC, Apheresis</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-preferredproduct-Marrow"> </a>  <a href="CodeSystem-nmdp-preferred-product-cs.html#nmdp-preferred-product-cs-Marrow">Marrow</a></td><td>http://terminology.nmdp.org/codesystem/preferredproduct</td><td>HPC, Marrow</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-preferredproduct-CBU"> </a>  <a href="CodeSystem-nmdp-preferred-product-cs.html#nmdp-preferred-product-cs-CBU">CBU</a></td><td>http://terminology.nmdp.org/codesystem/preferredproduct</td><td>HPC, Cord Blood</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-preferredproduct-NP"> </a>  <a href="CodeSystem-nmdp-preferred-product-cs.html#nmdp-preferred-product-cs-NP">NP</a></td><td>http://terminology.nmdp.org/codesystem/preferredproduct</td><td>No preference</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-preferredproduct-U"> </a>  <a href="CodeSystem-nmdp-preferred-product-cs.html#nmdp-preferred-product-cs-U">U</a></td><td>http://terminology.nmdp.org/codesystem/preferredproduct</td><td>Unknown</td></tr></table></div>
 
   <hr/>
   <p>
@@ -284,7 +304,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package matchsource#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 2, 2022 14:44-0500">2022-11-02</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 19, 2024 18:37-0600">2024-02-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

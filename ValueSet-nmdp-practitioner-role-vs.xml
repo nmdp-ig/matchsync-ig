@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nmdp-practitioner-role-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-nmdp-practitioner-role-cs.html"><code>http://terminology.nmdp.org/codesystem/practitionerrole</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs"/>
+  <version value="0.1.0"/>
+  <name value="NMDPPractitionerRoleVS"/>
+  <title value="NMDP Practitioner Role Value Set"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-02-19T18:37:26-06:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="NMDP Practitioner Role Value Set"/>
+  <compose>
+    <include>
+      <system value="http://terminology.nmdp.org/codesystem/practitionerrole"/>
+    </include>
+  </compose>
+</ValueSet>

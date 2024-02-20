@@ -5,61 +5,44 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.nmdp.org/ig/matchsource/Patient/MSPatientExample3> a fhir:Patient;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "MSPatientExample3"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient";
-       fhir:index 0;
-       fhir:link <http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient>
-     ];
-     fhir:Meta.security [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ];
-       fhir:Coding.code [ fhir:value "tc_123" ]
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jason Everyperson </b> male, DoB: 1974-12-25 ( id: 123)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 1-612-555-1234</li><li>123 Main St Minneapolis MN 55401 USA </li></ul></td></tr></table></div>"
-  ];
-  fhir:Patient.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://example.org/mrn" ];
-     fhir:Identifier.value [ fhir:value "123" ]
-  ];
-  fhir:Patient.name [
-     fhir:index 0;
-     fhir:HumanName.family [ fhir:value "Everyperson" ];
-     fhir:HumanName.given [
-       fhir:value "Jason";
-       fhir:index 0
-     ]
-  ];
-  fhir:Patient.telecom [
-     fhir:index 0;
-     fhir:ContactPoint.system [ fhir:value "phone" ];
-     fhir:ContactPoint.value [ fhir:value "1-612-555-1234" ]
-  ];
-  fhir:Patient.gender [ fhir:value "male"];
-  fhir:Patient.birthDate [ fhir:value "1974-12-25"^^xsd:date];
-  fhir:Patient.address [
-     fhir:index 0;
-     fhir:Address.line [
-       fhir:value "123 Main St";
-       fhir:index 0
-     ];
-     fhir:Address.city [ fhir:value "Minneapolis" ];
-     fhir:Address.state [ fhir:value "MN" ];
-     fhir:Address.postalCode [ fhir:value "55401" ];
-     fhir:Address.country [ fhir:value "USA" ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.nmdp.org/ig/matchsource/Patient/MSPatientExample3.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample3> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MSPatientExample3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jason Everyperson </b> male, DoB: 1974-12-25 ( <code>http://example.org/mrn</code>/123)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 1-612-555-1234</li><li>123 Main St Minneapolis MN 55401 USA </li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://example.org/mrn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Everyperson" ] ;
+     fhir:given ( [ fhir:v "Jason" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "1-612-555-1234" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1974-12-25"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "123 Main St" ] ) ;
+     fhir:city [ fhir:v "Minneapolis" ] ;
+     fhir:state [ fhir:v "MN" ] ;
+     fhir:postalCode [ fhir:v "55401" ] ;
+     fhir:country [ fhir:v "USA" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

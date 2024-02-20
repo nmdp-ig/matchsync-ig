@@ -5,12 +5,13 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/112144000">112144000</a></td><td>Blood group A (finding)</td></tr><tr><td><a href="http://snomed.info/id/165743006">165743006</a></td><td>Blood group AB (finding)</td></tr><tr><td><a href="http://snomed.info/id/112149005">112149005</a></td><td>Blood group B (finding)</td></tr><tr><td><a href="http://snomed.info/id/58460004">58460004</a></td><td>Blood group O (finding)</td></tr></table></li></ul></div>
   </text>
-  <url value="http://fhir.nmdp.org/ig/matchsource/ValueSet/sct-abo-group-codes"/>
+  <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes"/>
   <version value="0.1.0"/>
   <name value="SCTABOGroupVS"/>
   <title value="Snomed CT ABO group Value Set"/>
   <status value="active"/>
-  <date value="2022-11-02T14:44:07-05:00"/>
+  <experimental value="true"/>
+  <date value="2024-02-19T18:37:26-06:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>

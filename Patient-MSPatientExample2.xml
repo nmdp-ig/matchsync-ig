@@ -3,33 +3,15 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="MSPatientExample2"/>
   <meta>
-    <profile value="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/mspatient"/>
+    <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"/>
     <security>
       <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
       <code value="tc_123"/>
     </security>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Joe Everyperson </b> male, DoB: 1974-12-25 ( id: 123)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li>ph: 1-612-555-1234</li><li>123 Main St Minneapolis MN 55401 USA </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Extension to use NMDP Ethnicity Codes"><a href="StructureDefinition-nmdp-ethnicity.html">NMDP Ethnicity Code Extension:</a></td><td colspan="3"><ul><li><span title="Codes: {http://terminology.nmdp.org/codesystem/ethnicity NHIS}">Not Hispanic or Latino</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Extension to use NMDP Race Codes"><a href="StructureDefinition-nmdp-race.html">NMDP Race Code Extension:</a></td><td colspan="3"><ul><li><span title="Codes: {http://terminology.nmdp.org/codesystem/race EURWRC}">North American or European</span></li></ul></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Joe Everyperson </b> male, DoB: 1974-12-25 ( <code>http://example.org/mrn</code>/123)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li>ph: 1-612-555-1234</li><li>123 Main St Minneapolis MN 55401 USA </li></ul></td></tr></table></div>
   </text>
-  <extension url="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-race">
-    <valueCodeableConcept>
-      <coding>
-        <system value="http://terminology.nmdp.org/codesystem/race"/>
-        <code value="EURWRC"/>
-        <display value="North American or European"/>
-      </coding>
-    </valueCodeableConcept>
-  </extension>
-  <extension url="http://fhir.nmdp.org/ig/matchsource/StructureDefinition/nmdp-ethnicity">
-    <valueCodeableConcept>
-      <coding>
-        <system value="http://terminology.nmdp.org/codesystem/ethnicity"/>
-        <code value="NHIS"/>
-        <display value="Not Hispanic or Latino"/>
-      </coding>
-    </valueCodeableConcept>
-  </extension>
   <identifier>
     <system value="http://example.org/mrn"/>
     <value value="123"/>

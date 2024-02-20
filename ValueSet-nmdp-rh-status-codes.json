@@ -1,34 +1,29 @@
 {
-  "resourceType": "ValueSet",
-  "id": "nmdp-rh-status-codes",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-rh-status-cs.html\"><code>http://terminology.nmdp.org/codesystem/rhstatus</code></a></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "nmdp-rh-status-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-rh-status-cs.html\"><code>http://terminology.nmdp.org/codesystem/rhstatus</code></a></li></ul></div>"
   },
-  "url": "http://fhir.nmdp.org/ig/matchsource/ValueSet/nmdp-rh-status-codes",
-  "version": "0.1.0",
-  "name": "NMDPRhStatusVS",
-  "title": "NMDP Codes for Rh status",
-  "status": "active",
-  "date": "2022-11-02T14:44:07-05:00",
-  "publisher": "NMDP",
-  "contact": [
-    {
-      "name": "NMDP",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://bethematch.org"
-        }
-      ]
-    }
-  ],
-  "description": "NMDP codes for Rh staus",
-  "compose": {
-    "include": [
-      {
-        "system": "http://terminology.nmdp.org/codesystem/rhstatus"
-      }
-    ]
+  "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes",
+  "version" : "0.1.0",
+  "name" : "NMDPRhStatusVS",
+  "title" : "NMDP Codes for Rh status",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-02-19T18:37:26-06:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "NMDP codes for Rh staus",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/rhstatus"
+    }]
   }
 }

@@ -1,26 +1,20 @@
 {
-  "resourceType": "Organization",
-  "id": "TCExample",
-  "meta": {
-    "profile": [
-      "http://fhir.nmdp.org/ig/matchsource/StructureDefinition/transplantcenter"
-    ],
-    "security": [
-      {
-        "system": "http://terminology.nmdp.org/codesystem/transplant-center",
-        "code": "tc_123"
-      }
-    ]
+  "resourceType" : "Organization",
+  "id" : "TCExample",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcenter"],
+    "security" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplant-center",
+      "code" : "tc_123"
+    }]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"TCExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization \"TCExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-transplantcenter.html\">TransplantCenter</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>identifier</b>: id: 000</p><p><b>name</b>: My Transplant Center</p></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"TCExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;TCExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-transplantcenter.html\">TransplantCenter</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.nmdp.org/codesystem/transplant-center http://terminology.nmdp.org/codesystem/transplant-center}\">http://terminology.nmdp.org/codesystem/transplant-center</span></p></div><p><b>identifier</b>: <code>http://terminology.nmdp.org/identifier/transplantcenter</code>/000</p><p><b>name</b>: My Transplant Center</p></div>"
   },
-  "identifier": [
-    {
-      "system": "http://terminology.nmdp.org/identifier/transplantcenter",
-      "value": "000"
-    }
-  ],
-  "name": "My Transplant Center"
+  "identifier" : [{
+    "system" : "http://terminology.nmdp.org/identifier/transplantcenter",
+    "value" : "000"
+  }],
+  "name" : "My Transplant Center"
 }
