@@ -15,6 +15,7 @@ Description: "Collection Bundle for MatchSync"
     msOrgTransplantCenter 0..1 MS and
     msObsRh 0..1 MS and
     msObsABO 0..1 MS and
+    msObsABORH 0..1 MS and
     msObsTimeline 0..1 MS and
     msObsPreferredProduct 0..1 MS and
     msObsHeight 0..1 MS and
@@ -38,6 +39,9 @@ Description: "Collection Bundle for MatchSync"
 * entry[msObsABO].resource only MSABOGroupObservation
 * entry[msObsABO] ^short = "ABO blood group"
 * entry[msObsABO] ^definition = "The ABO blood group of the MatchSync patient"
+* entry[msObsABORH].resource only MSABORHObservation
+* entry[msObsABORH] ^short = "ABO blood group and RH"
+* entry[msObsABORH] ^definition = "The ABO and RH of the MatchSync patient"
 * entry[msObsTimeline].resource only MSTransplantTimeline
 * entry[msObsTimeline] ^short = "Transplant timeline"
 * entry[msObsTimeline] ^definition = "Where the patient is in the tranplant timeline."
