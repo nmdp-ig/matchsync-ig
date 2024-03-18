@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "MatchSyncIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-19T18:37:26-06:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-18T10:20:43-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NMDP"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NMDP" ] ;
@@ -1018,6 +1018,18 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-patient-gender-identity-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/ms-patient-gender-identity-observation" ]
+       ] ;
+       fhir:name [ fhir:v "MSPatientGenderIdentity" ] ;
+       fhir:description [ fhir:v "Patient Gender Identity" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation> ;
          fhir:reference [ fhir:v "StructureDefinition/ms-preferred-product-observation" ]
        ] ;
@@ -1258,6 +1270,18 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-gender-identity-codes> ;
+         fhir:reference [ fhir:v "ValueSet/nmdp-gender-identity-codes" ]
+       ] ;
+       fhir:name [ fhir:v "NMDP Gender Identity Value Set" ] ;
+       fhir:description [ fhir:v "NMDP gender identity codes" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes> ;
          fhir:reference [ fhir:v "ValueSet/nmdp-language-codes" ]
        ] ;
@@ -1419,6 +1443,18 @@
        ] ;
        fhir:name [ fhir:v "NMDP Ethnicity Code System" ] ;
        fhir:description [ fhir:v "Code System for NMDP ethnicity" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-gender-identity-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/nmdp-gender-identity-cs" ]
+       ] ;
+       fhir:name [ fhir:v "NMDP Gender Identity for Patient" ] ;
+       fhir:description [ fhir:v "NMDP Gender Identity for MatchSync patient" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1798,6 +1834,21 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/MSGenderIdentityExample> ;
+         fhir:reference [ fhir:v "Observation/MSGenderIdentityExample" ]
+       ] ;
+       fhir:name [ fhir:v "MSGenderIdentityExample" ] ;
+       fhir:description [ fhir:v "Example of gender identity" ] ;
+       fhir:example [
+         fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-patient-gender-identity-observation"^^xsd:anyURI ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-patient-gender-identity-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/MSHeightObsExample> ;
          fhir:reference [ fhir:v "Observation/MSHeightObsExample" ]
        ] ;
@@ -2139,14 +2190,6 @@
          ] ) ;
          fhir:name [ fhir:v "extra.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Extra" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "Guidance.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "Guidance.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Guidance" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

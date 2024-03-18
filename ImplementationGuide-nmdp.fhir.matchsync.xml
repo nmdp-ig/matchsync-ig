@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="MatchSyncIG"/>
   <status value="draft"/>
-  <date value="2024-02-19T18:37:26-06:00"/>
+  <date value="2024-03-18T10:20:43-05:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -894,6 +894,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ms-patient-gender-identity-observation"/>
+      </reference>
+      <name value="MSPatientGenderIdentity"/>
+      <description value="Patient Gender Identity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ms-preferred-product-observation"/>
       </reference>
       <name value="MSPreferredProduct"/>
@@ -1114,6 +1125,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/nmdp-gender-identity-codes"/>
+      </reference>
+      <name value="NMDP Gender Identity Value Set"/>
+      <description value="NMDP gender identity codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/nmdp-language-codes"/>
       </reference>
       <name value="NMDP Language Value Set"/>
@@ -1261,6 +1283,17 @@
       </reference>
       <name value="NMDP Ethnicity Code System"/>
       <description value="Code System for NMDP ethnicity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-gender-identity-cs"/>
+      </reference>
+      <name value="NMDP Gender Identity for Patient"/>
+      <description value="NMDP Gender Identity for MatchSync patient"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1554,6 +1587,17 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/MSGenderIdentityExample"/>
+      </reference>
+      <name value="MSGenderIdentityExample"/>
+      <description value="Example of gender identity"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-patient-gender-identity-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/MSHeightObsExample"/>
       </reference>
       <name value="MSHeightObsExample"/>
@@ -1809,14 +1853,6 @@
         </extension>
         <nameUrl value="extra.html"/>
         <title value="Extra"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Guidance.html"/>
-        </extension>
-        <nameUrl value="Guidance.html"/>
-        <title value="Guidance"/>
         <generation value="markdown"/>
       </page>
     </page>

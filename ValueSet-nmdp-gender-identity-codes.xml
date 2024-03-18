@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nmdp-gender-identity-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-nmdp-gender-identity-cs.html"><code>http://terminology.nmdp.org/codesystem/genderidentity</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-gender-identity-codes"/>
+  <version value="0.1.0"/>
+  <name value="NMDPGenderIdentityVS"/>
+  <title value="NMDP Gender Identity Value Set"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-03-18T10:20:43-05:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="NMDP gender identity codes"/>
+  <compose>
+    <include>
+      <system value="http://terminology.nmdp.org/codesystem/genderidentity"/>
+    </include>
+  </compose>
+</ValueSet>

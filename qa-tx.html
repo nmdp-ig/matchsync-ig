@@ -22,12 +22,12 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1519
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:37:02 GMT
+date:Mon, 18 Mar 2024 15:20:20 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836760
+x-request-id:124-41811
 
-{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/metadata","version" : "4.0.1-3.2.3","name" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2024-02-20T00:37:02.512Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.2.3","releaseDate" : "2024-02-08T05:52:57.808Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
+{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/metadata","version" : "4.0.1-3.4.2","name" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2024-03-18T15:20:20.168Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.4.2","releaseDate" : "2024-03-13T11:21:43.208Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
 
 </pre><hr/>
 <a name="l2"> </a><h3>2</h3>
@@ -40,7 +40,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://glstring.org","code":"hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://glstring.org","code":"hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -53,11 +53,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:860
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:37:47 GMT
-last-modified:Tue, 20 Feb 2024 00:37:47 GMT
+date:Mon, 18 Mar 2024 15:21:05 GMT
+last-modified:Mon, 18 Mar 2024 15:21:05 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836767
+x-request-id:124-41843
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://glstring.org"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://glstring.org"},{"name" : "code","valueCode" : "hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -72,7 +72,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4931","display":"HLA-A"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4931","display":"HLA-A"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -85,11 +85,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:07 GMT
-last-modified:Tue, 20 Feb 2024 00:38:07 GMT
+date:Mon, 18 Mar 2024 15:21:25 GMT
+last-modified:Mon, 18 Mar 2024 15:21:25 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836769
+x-request-id:124-41845
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4931"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -104,7 +104,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4932","display":"HLA-B"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4932","display":"HLA-B"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -117,11 +117,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:08 GMT
-last-modified:Tue, 20 Feb 2024 00:38:08 GMT
+date:Mon, 18 Mar 2024 15:21:26 GMT
+last-modified:Mon, 18 Mar 2024 15:21:26 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836770
+x-request-id:124-41846
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4932"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -136,7 +136,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4933","display":"HLA-C"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4933","display":"HLA-C"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -149,11 +149,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:08 GMT
-last-modified:Tue, 20 Feb 2024 00:38:08 GMT
+date:Mon, 18 Mar 2024 15:21:26 GMT
+last-modified:Mon, 18 Mar 2024 15:21:26 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836771
+x-request-id:124-41847
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4933"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -168,7 +168,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4938","display":"HLA-DPA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4938","display":"HLA-DPA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -181,11 +181,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:09 GMT
-last-modified:Tue, 20 Feb 2024 00:38:09 GMT
+date:Mon, 18 Mar 2024 15:21:27 GMT
+last-modified:Mon, 18 Mar 2024 15:21:27 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836772
+x-request-id:124-41848
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4938"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -200,7 +200,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4940","display":"HLA-DPB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4940","display":"HLA-DPB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -213,11 +213,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:10 GMT
-last-modified:Tue, 20 Feb 2024 00:38:10 GMT
+date:Mon, 18 Mar 2024 15:21:28 GMT
+last-modified:Mon, 18 Mar 2024 15:21:28 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836774
+x-request-id:124-41849
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4940"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -232,7 +232,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4942","display":"HLA-DQA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4942","display":"HLA-DQA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -245,11 +245,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:11 GMT
-last-modified:Tue, 20 Feb 2024 00:38:11 GMT
+date:Mon, 18 Mar 2024 15:21:28 GMT
+last-modified:Mon, 18 Mar 2024 15:21:28 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836775
+x-request-id:124-41851
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4942"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -264,7 +264,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4944","display":"HLA-DQB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4944","display":"HLA-DQB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -277,11 +277,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:11 GMT
-last-modified:Tue, 20 Feb 2024 00:38:11 GMT
+date:Mon, 18 Mar 2024 15:21:29 GMT
+last-modified:Mon, 18 Mar 2024 15:21:29 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836776
+x-request-id:124-41852
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4944"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -296,7 +296,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4948","display":"HLA-DRB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4948","display":"HLA-DRB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -309,11 +309,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:12 GMT
-last-modified:Tue, 20 Feb 2024 00:38:12 GMT
+date:Mon, 18 Mar 2024 15:21:30 GMT
+last-modified:Mon, 18 Mar 2024 15:21:30 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836777
+x-request-id:124-41853
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4948"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -328,7 +328,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4951","display":"HLA-DRB3"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4951","display":"HLA-DRB3"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -341,11 +341,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:13 GMT
-last-modified:Tue, 20 Feb 2024 00:38:13 GMT
+date:Mon, 18 Mar 2024 15:21:30 GMT
+last-modified:Mon, 18 Mar 2024 15:21:30 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836778
+x-request-id:124-41854
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4951"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -360,7 +360,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4952","display":"HLA-DRB4"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4952","display":"HLA-DRB4"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -373,11 +373,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:13 GMT
-last-modified:Tue, 20 Feb 2024 00:38:13 GMT
+date:Mon, 18 Mar 2024 15:21:31 GMT
+last-modified:Mon, 18 Mar 2024 15:21:31 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836779
+x-request-id:124-41855
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4952"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -392,7 +392,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4953","display":"HLA-DRB5"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4953","display":"HLA-DRB5"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -405,11 +405,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:14 GMT
-last-modified:Tue, 20 Feb 2024 00:38:14 GMT
+date:Mon, 18 Mar 2024 15:21:31 GMT
+last-modified:Mon, 18 Mar 2024 15:21:31 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836780
+x-request-id:124-41856
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4953"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -424,7 +424,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4931","display":"HLA-A"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4931","display":"HLA-A"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -437,11 +437,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:44 GMT
+last-modified:Mon, 18 Mar 2024 15:21:44 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836781
+x-request-id:124-41861
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4931"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -456,7 +456,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4932","display":"HLA-B"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4932","display":"HLA-B"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -469,11 +469,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:44 GMT
+last-modified:Mon, 18 Mar 2024 15:21:44 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836782
+x-request-id:124-41862
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4932"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -488,7 +488,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4933","display":"HLA-C"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4933","display":"HLA-C"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -501,11 +501,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836783
+x-request-id:124-41863
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4933"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -520,7 +520,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4938","display":"HLA-DPA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4938","display":"HLA-DPA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -533,11 +533,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836784
+x-request-id:124-41864
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4938"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -552,7 +552,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4940","display":"HLA-DPB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4940","display":"HLA-DPB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -565,11 +565,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836785
+x-request-id:124-41865
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4940"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -584,7 +584,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4942","display":"HLA-DQA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4942","display":"HLA-DQA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -597,11 +597,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836786
+x-request-id:124-41866
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4942"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -616,7 +616,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4944","display":"HLA-DQB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4944","display":"HLA-DQB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -629,11 +629,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836787
+x-request-id:124-41867
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4944"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -648,7 +648,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4948","display":"HLA-DRB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4948","display":"HLA-DRB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -661,11 +661,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836788
+x-request-id:124-41868
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4948"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -680,7 +680,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4951","display":"HLA-DRB3"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4951","display":"HLA-DRB3"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -693,11 +693,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:27 GMT
-last-modified:Tue, 20 Feb 2024 00:38:27 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836789
+x-request-id:124-41869
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4951"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -712,7 +712,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4952","display":"HLA-DRB4"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4952","display":"HLA-DRB4"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -725,11 +725,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:27 GMT
-last-modified:Tue, 20 Feb 2024 00:38:27 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836790
+x-request-id:124-41870
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4952"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -744,7 +744,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4953","display":"HLA-DRB5"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4953","display":"HLA-DRB5"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -757,11 +757,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:27 GMT
-last-modified:Tue, 20 Feb 2024 00:38:27 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836791
+x-request-id:124-41871
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4953"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -785,12 +785,12 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1519
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:37:02 GMT
+date:Mon, 18 Mar 2024 15:20:20 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836760
+x-request-id:124-41811
 
-{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/metadata","version" : "4.0.1-3.2.3","name" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2024-02-20T00:37:02.512Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.2.3","releaseDate" : "2024-02-08T05:52:57.808Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
+{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/metadata","version" : "4.0.1-3.4.2","name" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2024-03-18T15:20:20.168Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.4.2","releaseDate" : "2024-03-13T11:21:43.208Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
 
 --- 2 -----------------
 Request: 
@@ -801,7 +801,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://glstring.org","code":"hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://glstring.org","code":"hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -814,11 +814,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:860
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:37:47 GMT
-last-modified:Tue, 20 Feb 2024 00:37:47 GMT
+date:Mon, 18 Mar 2024 15:21:05 GMT
+last-modified:Mon, 18 Mar 2024 15:21:05 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836767
+x-request-id:124-41843
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://glstring.org"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://glstring.org"},{"name" : "code","valueCode" : "hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -831,7 +831,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4931","display":"HLA-A"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4931","display":"HLA-A"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -844,11 +844,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:07 GMT
-last-modified:Tue, 20 Feb 2024 00:38:07 GMT
+date:Mon, 18 Mar 2024 15:21:25 GMT
+last-modified:Mon, 18 Mar 2024 15:21:25 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836769
+x-request-id:124-41845
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4931"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -861,7 +861,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4932","display":"HLA-B"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4932","display":"HLA-B"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -874,11 +874,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:08 GMT
-last-modified:Tue, 20 Feb 2024 00:38:08 GMT
+date:Mon, 18 Mar 2024 15:21:26 GMT
+last-modified:Mon, 18 Mar 2024 15:21:26 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836770
+x-request-id:124-41846
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4932"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -891,7 +891,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4933","display":"HLA-C"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4933","display":"HLA-C"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -904,11 +904,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:08 GMT
-last-modified:Tue, 20 Feb 2024 00:38:08 GMT
+date:Mon, 18 Mar 2024 15:21:26 GMT
+last-modified:Mon, 18 Mar 2024 15:21:26 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836771
+x-request-id:124-41847
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4933"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -921,7 +921,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4938","display":"HLA-DPA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4938","display":"HLA-DPA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -934,11 +934,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:09 GMT
-last-modified:Tue, 20 Feb 2024 00:38:09 GMT
+date:Mon, 18 Mar 2024 15:21:27 GMT
+last-modified:Mon, 18 Mar 2024 15:21:27 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836772
+x-request-id:124-41848
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4938"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -951,7 +951,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4940","display":"HLA-DPB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4940","display":"HLA-DPB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -964,11 +964,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:10 GMT
-last-modified:Tue, 20 Feb 2024 00:38:10 GMT
+date:Mon, 18 Mar 2024 15:21:28 GMT
+last-modified:Mon, 18 Mar 2024 15:21:28 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836774
+x-request-id:124-41849
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4940"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -981,7 +981,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4942","display":"HLA-DQA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4942","display":"HLA-DQA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -994,11 +994,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:11 GMT
-last-modified:Tue, 20 Feb 2024 00:38:11 GMT
+date:Mon, 18 Mar 2024 15:21:28 GMT
+last-modified:Mon, 18 Mar 2024 15:21:28 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836775
+x-request-id:124-41851
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4942"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1011,7 +1011,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4944","display":"HLA-DQB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4944","display":"HLA-DQB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1024,11 +1024,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:11 GMT
-last-modified:Tue, 20 Feb 2024 00:38:11 GMT
+date:Mon, 18 Mar 2024 15:21:29 GMT
+last-modified:Mon, 18 Mar 2024 15:21:29 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836776
+x-request-id:124-41852
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4944"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1041,7 +1041,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4948","display":"HLA-DRB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4948","display":"HLA-DRB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1054,11 +1054,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:12 GMT
-last-modified:Tue, 20 Feb 2024 00:38:12 GMT
+date:Mon, 18 Mar 2024 15:21:30 GMT
+last-modified:Mon, 18 Mar 2024 15:21:30 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836777
+x-request-id:124-41853
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4948"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1071,7 +1071,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4951","display":"HLA-DRB3"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4951","display":"HLA-DRB3"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1084,11 +1084,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:13 GMT
-last-modified:Tue, 20 Feb 2024 00:38:13 GMT
+date:Mon, 18 Mar 2024 15:21:30 GMT
+last-modified:Mon, 18 Mar 2024 15:21:30 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836778
+x-request-id:124-41854
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4951"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1101,7 +1101,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4952","display":"HLA-DRB4"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4952","display":"HLA-DRB4"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1114,11 +1114,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:13 GMT
-last-modified:Tue, 20 Feb 2024 00:38:13 GMT
+date:Mon, 18 Mar 2024 15:21:31 GMT
+last-modified:Mon, 18 Mar 2024 15:21:31 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836779
+x-request-id:124-41855
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4952"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1131,7 +1131,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4953","display":"HLA-DRB5"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4953","display":"HLA-DRB5"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1144,11 +1144,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:14 GMT
-last-modified:Tue, 20 Feb 2024 00:38:14 GMT
+date:Mon, 18 Mar 2024 15:21:31 GMT
+last-modified:Mon, 18 Mar 2024 15:21:31 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836780
+x-request-id:124-41856
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4953"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1161,7 +1161,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4931","display":"HLA-A"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4931","display":"HLA-A"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1174,11 +1174,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:44 GMT
+last-modified:Mon, 18 Mar 2024 15:21:44 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836781
+x-request-id:124-41861
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4931"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1191,7 +1191,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4932","display":"HLA-B"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4932","display":"HLA-B"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1204,11 +1204,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:44 GMT
+last-modified:Mon, 18 Mar 2024 15:21:44 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836782
+x-request-id:124-41862
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4932"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1221,7 +1221,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4933","display":"HLA-C"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4933","display":"HLA-C"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1234,11 +1234,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836783
+x-request-id:124-41863
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4933"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1251,7 +1251,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4938","display":"HLA-DPA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4938","display":"HLA-DPA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1264,11 +1264,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836784
+x-request-id:124-41864
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4938"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1281,7 +1281,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4940","display":"HLA-DPB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4940","display":"HLA-DPB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1294,11 +1294,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836785
+x-request-id:124-41865
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4940"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1311,7 +1311,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4942","display":"HLA-DQA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4942","display":"HLA-DQA1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1324,11 +1324,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836786
+x-request-id:124-41866
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4942"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1341,7 +1341,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4944","display":"HLA-DQB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4944","display":"HLA-DQB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1354,11 +1354,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836787
+x-request-id:124-41867
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4944"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1371,7 +1371,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4948","display":"HLA-DRB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4948","display":"HLA-DRB1"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1384,11 +1384,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:26 GMT
-last-modified:Tue, 20 Feb 2024 00:38:26 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836788
+x-request-id:124-41868
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4948"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1401,7 +1401,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4951","display":"HLA-DRB3"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4951","display":"HLA-DRB3"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1414,11 +1414,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:27 GMT
-last-modified:Tue, 20 Feb 2024 00:38:27 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836789
+x-request-id:124-41869
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4951"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1431,7 +1431,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4952","display":"HLA-DRB4"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4952","display":"HLA-DRB4"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1444,11 +1444,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:27 GMT
-last-modified:Tue, 20 Feb 2024 00:38:27 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836790
+x-request-id:124-41870
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4952"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -1461,7 +1461,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4953","display":"HLA-DRB5"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"2c9b5358-7407-4df2-a67f-07e14a51ced1"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.genenames.org/geneId","code":"HGNC:4953","display":"HLA-DRB5"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60dad191-6df3-4903-bd98-9071dc5565f6"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -1474,11 +1474,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:877
 content-type:application/fhir+json
-date:Tue, 20 Feb 2024 00:38:27 GMT
-last-modified:Tue, 20 Feb 2024 00:38:27 GMT
+date:Mon, 18 Mar 2024 15:21:45 GMT
+last-modified:Mon, 18 Mar 2024 15:21:45 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-836791
+x-request-id:124-41871
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://www.genenames.org/geneId"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://www.genenames.org/geneId"},{"name" : "code","valueCode" : "HGNC:4953"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 </pre></head></html>

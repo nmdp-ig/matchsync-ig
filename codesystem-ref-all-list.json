@@ -202,10 +202,10 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+      "ValueSet-loinc-posneg-codes.html" : "LOINC Pos|Neg Value Set",
       "ValueSet-loinc-abo-codes.html" : "LOINC ABO group Value Set",
       "ValueSet-loinc-abo-rh-codes.html" : "LOINC ABO RH group Value Set",
-      "ValueSet-loinc-posneg-codes.html" : "LOINC Pos|Neg Value Set",
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
       "http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html" : "Vital Signs"
     },
     {
@@ -219,15 +219,15 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "ValueSet-sct-abo-group-codes.html" : "Snomed CT ABO group Value Set",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
       "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
       "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
-      "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
+      "ValueSet-sct-abo-group-codes.html" : "Snomed CT ABO group Value Set",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes"
     },
     {
@@ -501,6 +501,17 @@
       "uses" : {
       },
       "ValueSet-nmdp-ethnicity-codes.html" : "NMDP Ethnicity Value Set"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/genderidentity",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NMDPGenderIdentityCS",
+      "title" : "NMDP Gender Identity for Patient",
+      "description" : "NMDP Gender Identity for MatchSync patient",
+      "uses" : {
+      },
+      "ValueSet-nmdp-gender-identity-codes.html" : "NMDP Gender Identity Value Set"
     },
     {
       "url" : "http://terminology.nmdp.org/codesystem/language",

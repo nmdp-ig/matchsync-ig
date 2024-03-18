@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nmdp-gender-identity-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-gender-identity-cs.html\"><code>http://terminology.nmdp.org/codesystem/genderidentity</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-gender-identity-codes",
+  "version" : "0.1.0",
+  "name" : "NMDPGenderIdentityVS",
+  "title" : "NMDP Gender Identity Value Set",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-03-18T10:20:43-05:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "NMDP gender identity codes",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/genderidentity"
+    }]
+  }
+}

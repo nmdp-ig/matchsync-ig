@@ -80,6 +80,15 @@
       "systems" : ["http://terminology.nmdp.org/codesystem/ethnicity"]
     },
     {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-gender-identity-codes",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NMDPGenderIdentityVS",
+      "title" : "NMDP Gender Identity Value Set",
+      "description" : "NMDP gender identity codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/genderidentity"]
+    },
+    {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes",
       "version" : "0.1.0",
       "status" : "active",

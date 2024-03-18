@@ -92,6 +92,18 @@
       "systems" : ["http://terminology.nmdp.org/codesystem/ethnicity"]
     },
     {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-gender-identity-codes",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NMDPGenderIdentityVS",
+      "title" : "NMDP Gender Identity Value Set",
+      "description" : "NMDP gender identity codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/genderidentity"],
+      "uses" : {
+      },
+      "StructureDefinition-ms-patient-gender-identity-observation.html" : "MSPatientGenderIdentity"
+    },
+    {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes",
       "version" : "0.1.0",
       "status" : "active",
@@ -179,8 +191,8 @@
       "systems" : ["http://loinc.org"],
       "uses" : {
       },
-      "StructureDefinition-ms-abogroup-observation.html" : "MSABOGroupObservation",
-      "ValueSet-ms-abo-group-codes.html" : "MatchSync ABO Group Value Set"
+      "ValueSet-ms-abo-group-codes.html" : "MatchSync ABO Group Value Set",
+      "StructureDefinition-ms-abogroup-observation.html" : "MSABOGroupObservation"
     },
     {
       "url" : "http://loinc.org/vs/LL2972-9",
@@ -204,8 +216,8 @@
       "systems" : ["http://loinc.org"],
       "uses" : {
       },
-      "StructureDefinition-ms-rhstatus-observation.html" : "MSRhStatusObservation",
-      "ValueSet-ms-rh-codes.html" : "MatchSync Rh Value Sets"
+      "ValueSet-ms-rh-codes.html" : "MatchSync Rh Value Sets",
+      "StructureDefinition-ms-rhstatus-observation.html" : "MSRhStatusObservation"
     }
   ]
 }

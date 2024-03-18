@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "nmdp-gender-identity-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/genderidentity</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">F<a name=\"nmdp-gender-identity-cs-F\"> </a></td><td>Female</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"nmdp-gender-identity-cs-M\"> </a></td><td>Male</td></tr><tr><td style=\"white-space:nowrap\">NB<a name=\"nmdp-gender-identity-cs-NB\"> </a></td><td>Non-Binary</td></tr><tr><td style=\"white-space:nowrap\">SI<a name=\"nmdp-gender-identity-cs-SI\"> </a></td><td>Self identified</td></tr></table></div>"
+  },
+  "url" : "http://terminology.nmdp.org/codesystem/genderidentity",
+  "version" : "0.1.0",
+  "name" : "NMDPGenderIdentityCS",
+  "title" : "NMDP Gender Identity for Patient",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-03-18T10:20:43-05:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "NMDP Gender Identity for MatchSync patient",
+  "copyright" : "National Marrow Donor Program",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "F",
+    "display" : "Female"
+  },
+  {
+    "code" : "M",
+    "display" : "Male"
+  },
+  {
+    "code" : "NB",
+    "display" : "Non-Binary"
+  },
+  {
+    "code" : "SI",
+    "display" : "Self identified"
+  }]
+}

@@ -133,6 +133,13 @@
     "name" : "MSHeightObservation"
   },
   {
+    "id" : "ms-patient-gender-identity-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-patient-gender-identity-observation",
+    "version" : "0.1.0",
+    "name" : "MSPatientGenderIdentity"
+  },
+  {
     "id" : "ms-preferred-product-observation",
     "type" : "StructureDefinition",
     "url" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation",
@@ -266,6 +273,13 @@
     "name" : "NMDPEthnicityVS"
   },
   {
+    "id" : "nmdp-gender-identity-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-gender-identity-codes",
+    "version" : "0.1.0",
+    "name" : "NMDPGenderIdentityVS"
+  },
+  {
     "id" : "nmdp-language-codes",
     "type" : "ValueSet",
     "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes",
@@ -362,6 +376,13 @@
     "url" : "http://terminology.nmdp.org/codesystem/ethnicity",
     "version" : "0.1.0",
     "name" : "NMDPEthnicityCS"
+  },
+  {
+    "id" : "nmdp-gender-identity-cs",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.nmdp.org/codesystem/genderidentity",
+    "version" : "0.1.0",
+    "name" : "NMDPGenderIdentityCS"
   },
   {
     "id" : "nmdp-language-cs",

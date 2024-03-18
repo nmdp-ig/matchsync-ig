@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "MatchSyncIG",
   "status" : "draft",
-  "date" : "2024-02-19T18:37:26-06:00",
+  "date" : "2024-03-18T10:20:43-05:00",
   "publisher" : "NMDP",
   "contact" : [{
     "name" : "NMDP",
@@ -1156,6 +1156,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/ms-patient-gender-identity-observation"
+      },
+      "name" : "MSPatientGenderIdentity",
+      "description" : "Patient Gender Identity",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/ms-preferred-product-observation"
       },
       "name" : "MSPreferredProduct",
@@ -1396,6 +1408,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/nmdp-gender-identity-codes"
+      },
+      "name" : "NMDP Gender Identity Value Set",
+      "description" : "NMDP gender identity codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/nmdp-language-codes"
       },
       "name" : "NMDP Language Value Set",
@@ -1556,6 +1580,18 @@
       },
       "name" : "NMDP Ethnicity Code System",
       "description" : "Code System for NMDP ethnicity",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nmdp-gender-identity-cs"
+      },
+      "name" : "NMDP Gender Identity for Patient",
+      "description" : "NMDP Gender Identity for MatchSync patient",
       "exampleBoolean" : false
     },
     {
@@ -1876,6 +1912,18 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/MSGenderIdentityExample"
+      },
+      "name" : "MSGenderIdentityExample",
+      "description" : "Example of gender identity",
+      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-patient-gender-identity-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/MSHeightObsExample"
       },
       "name" : "MSHeightObsExample",
@@ -2155,15 +2203,6 @@
         }],
         "nameUrl" : "extra.html",
         "title" : "Extra",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Guidance.html"
-        }],
-        "nameUrl" : "Guidance.html",
-        "title" : "Guidance",
         "generation" : "markdown"
       }]
     },

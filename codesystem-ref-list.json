@@ -22,9 +22,9 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
+      "ValueSet-loinc-posneg-codes.html" : "LOINC Pos|Neg Value Set",
       "ValueSet-loinc-abo-codes.html" : "LOINC ABO group Value Set",
-      "ValueSet-loinc-abo-rh-codes.html" : "LOINC ABO RH group Value Set",
-      "ValueSet-loinc-posneg-codes.html" : "LOINC Pos|Neg Value Set"
+      "ValueSet-loinc-abo-rh-codes.html" : "LOINC ABO RH group Value Set"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -81,6 +81,17 @@
       "uses" : {
       },
       "ValueSet-nmdp-ethnicity-codes.html" : "NMDP Ethnicity Value Set"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/genderidentity",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NMDPGenderIdentityCS",
+      "title" : "NMDP Gender Identity for Patient",
+      "description" : "NMDP Gender Identity for MatchSync patient",
+      "uses" : {
+      },
+      "ValueSet-nmdp-gender-identity-codes.html" : "NMDP Gender Identity Value Set"
     },
     {
       "url" : "http://terminology.nmdp.org/codesystem/language",
