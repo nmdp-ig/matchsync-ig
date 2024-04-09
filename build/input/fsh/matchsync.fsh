@@ -51,6 +51,8 @@ Description: "Example of a patient needing a donor using us-core-race and us-cor
 * extension[race].extension[text].valueString = "White"
 * extension[ethnicity].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "Not Hispanic or Latino"
 * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
+* extension[birthsex].valueCode = #F
+* extension[genderIdentity].valueCodeableConcept = $SCT#446141000124107
 * identifier.system = "http://example.org/mrn"
 * identifier.value = "123"
 
