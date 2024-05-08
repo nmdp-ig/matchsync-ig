@@ -126,18 +126,18 @@
     "name" : "MSBundle_HLA_Separate"
   },
   {
+    "id" : "ms-cmvgroup-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-cmvgroup-observation",
+    "version" : "0.1.0",
+    "name" : "MSCmvObservation"
+  },
+  {
     "id" : "ms-height-observation",
     "type" : "StructureDefinition",
     "url" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation",
     "version" : "0.1.0",
     "name" : "MSHeightObservation"
-  },
-  {
-    "id" : "ms-patient-gender-identity-observation",
-    "type" : "StructureDefinition",
-    "url" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-patient-gender-identity-observation",
-    "version" : "0.1.0",
-    "name" : "MSPatientGenderIdentity"
   },
   {
     "id" : "ms-preferred-product-observation",
@@ -273,13 +273,6 @@
     "name" : "NMDPEthnicityVS"
   },
   {
-    "id" : "nmdp-gender-identity-codes",
-    "type" : "ValueSet",
-    "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-gender-identity-codes",
-    "version" : "0.1.0",
-    "name" : "NMDPGenderIdentityVS"
-  },
-  {
     "id" : "nmdp-language-codes",
     "type" : "ValueSet",
     "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes",
@@ -350,6 +343,13 @@
     "name" : "PosNegVS"
   },
   {
+    "id" : "loinc-cmv-codes",
+    "type" : "ValueSet",
+    "url" : "http://loinc.org/vs/LL3639-3",
+    "version" : "0.1.0",
+    "name" : "LNCCMVGroupVS"
+  },
+  {
     "id" : "nmdp-abo-group-cs",
     "type" : "CodeSystem",
     "url" : "http://terminology.nmdp.org/codesystem/abogroup",
@@ -376,13 +376,6 @@
     "url" : "http://terminology.nmdp.org/codesystem/ethnicity",
     "version" : "0.1.0",
     "name" : "NMDPEthnicityCS"
-  },
-  {
-    "id" : "nmdp-gender-identity-cs",
-    "type" : "CodeSystem",
-    "url" : "http://terminology.nmdp.org/codesystem/genderidentity",
-    "version" : "0.1.0",
-    "name" : "NMDPGenderIdentityCS"
   },
   {
     "id" : "nmdp-language-cs",

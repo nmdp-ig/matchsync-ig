@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "a53aa909-88bc-4292-8bc7-4a93f1b44ab0",
+  "id" : "bce68446-e453-4f80-bcfd-acf1308a1478",
   "meta" : {
-    "lastUpdated" : "2024-03-18T10:20:43.518-05:00"
+    "lastUpdated" : "2024-05-01T13:56:53.821-05:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -17,12 +17,12 @@
       "version" : "0.1.0",
       "name" : "HLAGeneIdVS",
       "title" : "HLA Gene Name Value Set",
-      "status" : "active",
+      "status" : "draft",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:37a848b8-a3b0-4c2a-bcef-675b88a7e473",
-        "timestamp" : "2024-03-18T10:25:55-05:00",
+        "identifier" : "urn:uuid:2ad40a26-559e-4d65-9a69-1fdcaf4c48ce",
+        "timestamp" : "2024-05-01T13:58:27-05:00",
         "total" : 44,
         "offset" : 0,
         "parameter" : [{
@@ -280,12 +280,12 @@
       "version" : "0.1.0",
       "name" : "ICD10GVHDVS",
       "title" : "GVHD ICD-10 Codes",
-      "status" : "active",
+      "status" : "draft",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:221607a4-1a6f-4c1c-9de3-859a49fe9301",
-        "timestamp" : "2024-03-18T10:25:56-05:00",
+        "identifier" : "urn:uuid:e97b2016-f821-4c9e-8550-5a82ae4af359",
+        "timestamp" : "2024-05-01T13:58:27-05:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -354,10 +354,10 @@
       "title" : "LOINC ABO group Value Set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:c5fbf604-1abf-4072-881b-c6fda48ea8ab",
-        "timestamp" : "2024-03-18T10:25:56-05:00",
+        "identifier" : "urn:uuid:23958a5c-85cc-40f3-aaf1-6f22c4b3772a",
+        "timestamp" : "2024-05-01T13:58:27-05:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -421,10 +421,10 @@
       "title" : "LOINC ABO RH group Value Set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:b8f922d6-3afb-4eea-90ff-b1ae18a1e1ad",
-        "timestamp" : "2024-03-18T10:25:56-05:00",
+        "identifier" : "urn:uuid:c7634168-2f59-4338-91df-2d9660494cd1",
+        "timestamp" : "2024-05-01T13:58:27-05:00",
         "total" : 8,
         "offset" : 0,
         "parameter" : [{
@@ -495,6 +495,73 @@
     }
   },
   {
+    "fullUrl" : "http://loinc.org/vs/LL3639-3",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.77</p><p>This value set contains 4 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6576-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA6576-8/\">LA6576-8</a></td><td>http://loinc.org</td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6577-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA6577-6/\">LA6577-6</a></td><td>http://loinc.org</td><td>Negative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA11885-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA11885-3/\">LA11885-3</a></td><td>http://loinc.org</td><td>Equivocal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA9663-1\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA9663-1/\">LA9663-1</a></td><td>http://loinc.org</td><td>Inconclusive</td></tr></table></div>"
+      },
+      "url" : "http://loinc.org/vs/LL3639-3",
+      "version" : "0.1.0",
+      "name" : "LNCCMVGroupVS",
+      "title" : "LOINC CMV group Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2024-05-01T13:56:53-05:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:60671db2-95f5-4a87-b32c-422aabff6b9d",
+        "timestamp" : "2024-05-01T13:58:28-05:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.77"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.77"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA6576-8",
+          "display" : "Positive"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA6577-6",
+          "display" : "Negative"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA11885-3",
+          "display" : "Equivocal"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA9663-1",
+          "display" : "Inconclusive"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://loinc.org/vs/LL360-9",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -508,10 +575,10 @@
       "title" : "LOINC Pos|Neg Value Set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:2d76e484-5d1d-4ded-af93-0bad0bbcc78d",
-        "timestamp" : "2024-03-18T10:25:57-05:00",
+        "identifier" : "urn:uuid:c22bd267-1ac7-4ff7-8826-507d970609a4",
+        "timestamp" : "2024-05-01T13:58:28-05:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -563,12 +630,12 @@
       "version" : "0.1.0",
       "name" : "MSABOGroupVS",
       "title" : "MatchSync ABO Group Value Set",
-      "status" : "active",
+      "status" : "draft",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:a85b17ff-71be-4143-a5d8-f550a3b1fd97",
-        "timestamp" : "2024-03-18T10:25:57-05:00",
+        "identifier" : "urn:uuid:d3cb6c46-820d-4b7b-ad78-653398625f9c",
+        "timestamp" : "2024-05-01T13:58:28-05:00",
         "total" : 13,
         "offset" : 0,
         "parameter" : [{
@@ -699,12 +766,12 @@
       "version" : "0.1.0",
       "name" : "MSRhVS",
       "title" : "MatchSync Rh Value Sets",
-      "status" : "active",
+      "status" : "draft",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:9960deb8-cf8d-4022-bb2e-4389c49b036e",
-        "timestamp" : "2024-03-18T10:25:57-05:00",
+        "identifier" : "urn:uuid:1cd1f1c9-6f6c-4af8-9393-fcf48a0255c9",
+        "timestamp" : "2024-05-01T13:58:28-05:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -793,12 +860,12 @@
       "version" : "0.1.0",
       "name" : "NMDPABOVS",
       "title" : "NMDP Blood Group Value Set",
-      "status" : "active",
+      "status" : "draft",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:4c9423be-27f5-49ef-af13-4159164d4b0b",
-        "timestamp" : "2024-03-18T10:25:58-05:00",
+        "identifier" : "urn:uuid:abb9cf4b-681b-4669-aeb1-03c30535a07c",
+        "timestamp" : "2024-05-01T13:58:28-05:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -857,12 +924,12 @@
       "version" : "0.1.0",
       "name" : "NMDPDiseaseVS",
       "title" : "NMDP Disease Value Set",
-      "status" : "active",
+      "status" : "draft",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:ec965008-3032-4cef-a886-79b83cf1afe7",
-        "timestamp" : "2024-03-18T10:25:58-05:00",
+        "identifier" : "urn:uuid:205c2b5d-b3a7-4c62-9853-56286955c19f",
+        "timestamp" : "2024-05-01T13:58:28-05:00",
         "total" : 100,
         "offset" : 0,
         "parameter" : [{
@@ -1396,12 +1463,12 @@
       "version" : "0.1.0",
       "name" : "NMDPDiseasStageVS",
       "title" : "NMDP Disease Stage Value Set",
-      "status" : "active",
+      "status" : "draft",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:d8f8d82d-ec31-4605-b088-d6d222a35b9f",
-        "timestamp" : "2024-03-18T10:25:58-05:00",
+        "identifier" : "urn:uuid:f21e092f-5bd4-4ac7-9c5a-c3f5edcffee8",
+        "timestamp" : "2024-05-01T13:58:28-05:00",
         "total" : 8,
         "offset" : 0,
         "parameter" : [{
@@ -1475,12 +1542,12 @@
       "version" : "0.1.0",
       "name" : "NMDPEthnicityVS",
       "title" : "NMDP Ethnicity Value Set",
-      "status" : "active",
+      "status" : "draft",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:b87ef8ca-d8cb-43be-a39c-a1100f1bb6c5",
-        "timestamp" : "2024-03-18T10:25:59-05:00",
+        "identifier" : "urn:uuid:09681586-be86-4a1b-a0b0-fc0c0954d87f",
+        "timestamp" : "2024-05-01T13:58:28-05:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -1518,65 +1585,6 @@
     }
   },
   {
-    "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-gender-identity-codes",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-gender-identity-cs.html\">codesystem NMDP Gender Identity for Patient v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-genderidentity-F\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-gender-identity-cs.html#nmdp-gender-identity-cs-F\">F</a></td><td>http://terminology.nmdp.org/codesystem/genderidentity</td><td>Female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-genderidentity-M\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-gender-identity-cs.html#nmdp-gender-identity-cs-M\">M</a></td><td>http://terminology.nmdp.org/codesystem/genderidentity</td><td>Male</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-genderidentity-NB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-gender-identity-cs.html#nmdp-gender-identity-cs-NB\">NB</a></td><td>http://terminology.nmdp.org/codesystem/genderidentity</td><td>Non-Binary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-genderidentity-SI\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-gender-identity-cs.html#nmdp-gender-identity-cs-SI\">SI</a></td><td>http://terminology.nmdp.org/codesystem/genderidentity</td><td>Self identified</td></tr></table></div>"
-      },
-      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-gender-identity-codes",
-      "version" : "0.1.0",
-      "name" : "NMDPGenderIdentityVS",
-      "title" : "NMDP Gender Identity Value Set",
-      "status" : "active",
-      "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
-      "expansion" : {
-        "identifier" : "urn:uuid:7c29bf7a-9c3e-4faf-b99d-ef8e8b229db5",
-        "timestamp" : "2024-03-18T10:25:59-05:00",
-        "total" : 4,
-        "offset" : 0,
-        "parameter" : [{
-          "name" : "count",
-          "valueInteger" : 1000
-        },
-        {
-          "name" : "offset",
-          "valueInteger" : 0
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "http://terminology.nmdp.org/codesystem/genderidentity|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "http://terminology.nmdp.org/codesystem/genderidentity",
-          "code" : "F",
-          "display" : "Female"
-        },
-        {
-          "system" : "http://terminology.nmdp.org/codesystem/genderidentity",
-          "code" : "M",
-          "display" : "Male"
-        },
-        {
-          "system" : "http://terminology.nmdp.org/codesystem/genderidentity",
-          "code" : "NB",
-          "display" : "Non-Binary"
-        },
-        {
-          "system" : "http://terminology.nmdp.org/codesystem/genderidentity",
-          "code" : "SI",
-          "display" : "Self identified"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1588,12 +1596,12 @@
       "version" : "0.1.0",
       "name" : "NMDPLanguageCodes",
       "title" : "NMDP Language Value Set",
-      "status" : "active",
+      "status" : "draft",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:1098bdf2-a2c2-4fe8-be3f-60aa4a0e0a05",
-        "timestamp" : "2024-03-18T10:25:59-05:00",
+        "identifier" : "urn:uuid:3a80e8e8-61e2-400a-bc32-e909d3c2dd09",
+        "timestamp" : "2024-05-01T13:58:28-05:00",
         "total" : 14,
         "offset" : 0,
         "parameter" : [{
@@ -1697,12 +1705,12 @@
       "version" : "0.1.0",
       "name" : "NMDPPractitionerRoleVS",
       "title" : "NMDP Practitioner Role Value Set",
-      "status" : "active",
+      "status" : "draft",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:68c6b27f-d559-4abc-936a-17a4346738cf",
-        "timestamp" : "2024-03-18T10:25:59-05:00",
+        "identifier" : "urn:uuid:fcdf5f9b-57a9-49a4-be1b-479bf0825126",
+        "timestamp" : "2024-05-01T13:58:28-05:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -1751,12 +1759,12 @@
       "version" : "0.1.0",
       "name" : "NMDPPreferredProductVS",
       "title" : "NMDP Preferred Product Value Set",
-      "status" : "active",
+      "status" : "draft",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:861de7b9-730e-4bd3-9524-d54017b4356c",
-        "timestamp" : "2024-03-18T10:26:00-05:00",
+        "identifier" : "urn:uuid:f8049e13-815d-4399-bb95-31b26fb2918c",
+        "timestamp" : "2024-05-01T13:58:28-05:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1815,12 +1823,12 @@
       "version" : "0.1.0",
       "name" : "NMDPRaceVS",
       "title" : "NMDP Race Value Set",
-      "status" : "active",
+      "status" : "draft",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:ce57938b-1633-46eb-99c2-144b7b481bcb",
-        "timestamp" : "2024-03-18T10:26:00-05:00",
+        "identifier" : "urn:uuid:016bff22-dcff-4c5c-af16-4d4bc55cfc9f",
+        "timestamp" : "2024-05-01T13:58:29-05:00",
         "total" : 50,
         "offset" : 0,
         "parameter" : [{
@@ -2104,12 +2112,12 @@
       "version" : "0.1.0",
       "name" : "NMDPRhStatusVS",
       "title" : "NMDP Codes for Rh status",
-      "status" : "active",
+      "status" : "draft",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:a307c5d7-2da2-44c3-9a17-59c3a5e5ab31",
-        "timestamp" : "2024-03-18T10:26:00-05:00",
+        "identifier" : "urn:uuid:913572ee-0826-4016-9e88-164a2761c461",
+        "timestamp" : "2024-05-01T13:58:29-05:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -2162,18 +2170,18 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-transplant-timeline-cs.html\">codesystem NMDP Transplant Timeline Code System v0.1.0 (CodeSystem)</a></p><p>This value set contains 7 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline--4w\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-.604w\">&lt;4w</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Less than 4 weeks</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-4-6w\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-4-6w\">4-6w</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Between 4-6 weeks</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-7-12w\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-7-12w\">7-12w</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Between 7-12 weeks</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-12w-6m\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-12w-6m\">12w-6m</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Over 12 weeks - up to 6 months</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline--6m\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-.626m\">&gt;6m</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Greater than 6 months</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-NA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-NA\">NA</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>N/A : MUD Transplant not preferred treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-P\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-P\">P</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Pending, Case manager to follow up</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-nmdp-transplant-timeline-cs.html\">codesystem NMDP Transplant Timeline Code System v0.1.0 (CodeSystem)</a></p><p>This value set contains 7 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-4W\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-4W\">4W</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Less than 4 weeks</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-4-6W\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-4-6W\">4-6W</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Between 4-6 weeks</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-7-12W\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-7-12W\">7-12W</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Between 7-12 weeks</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-12W-6M\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-12W-6M\">12W-6M</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Over 12 weeks - up to 6 months</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-6MG\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-6MG\">6MG</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Greater than 6 months</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-NA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-NA\">NA</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>N/A : MUD Transplant not preferred treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.nmdp.org-codesystem-transplanttimeline-PEND\"> </a>\u00a0\u00a0<a href=\"CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-PEND\">PEND</a></td><td>http://terminology.nmdp.org/codesystem/transplanttimeline</td><td>Pending, Case manager to follow up</td></tr></table></div>"
       },
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes",
       "version" : "0.1.0",
       "name" : "NMDPTransplantTimelineVS",
       "title" : "NMDP Transplant Timeline Value Set",
-      "status" : "active",
+      "status" : "draft",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:cd2f93b7-aba1-4484-b123-eb1e129bc418",
-        "timestamp" : "2024-03-18T10:26:01-05:00",
+        "identifier" : "urn:uuid:6880ea0d-620c-4d78-9f22-09d1fb4e2b84",
+        "timestamp" : "2024-05-01T13:58:29-05:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -2194,27 +2202,27 @@
         }],
         "contains" : [{
           "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
-          "code" : "<4w",
+          "code" : "4W",
           "display" : "Less than 4 weeks"
         },
         {
           "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
-          "code" : "4-6w",
+          "code" : "4-6W",
           "display" : "Between 4-6 weeks"
         },
         {
           "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
-          "code" : "7-12w",
+          "code" : "7-12W",
           "display" : "Between 7-12 weeks"
         },
         {
           "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
-          "code" : "12w-6m",
+          "code" : "12W-6M",
           "display" : "Over 12 weeks - up to 6 months"
         },
         {
           "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
-          "code" : ">6m",
+          "code" : "6MG",
           "display" : "Greater than 6 months"
         },
         {
@@ -2224,7 +2232,7 @@
         },
         {
           "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
-          "code" : "P",
+          "code" : "PEND",
           "display" : "Pending, Case manager to follow up"
         }]
       }
@@ -2242,12 +2250,12 @@
       "version" : "0.1.0",
       "name" : "SCTABOGroupVS",
       "title" : "Snomed CT ABO group Value Set",
-      "status" : "active",
+      "status" : "draft",
       "experimental" : true,
-      "date" : "2024-03-18T10:20:43-05:00",
+      "date" : "2024-05-01T13:56:53-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:7745cda4-54c4-4700-93a1-59d041b1746e",
-        "timestamp" : "2024-03-18T10:26:01-05:00",
+        "identifier" : "urn:uuid:e1f6a046-a940-4825-a208-4699205673ea",
+        "timestamp" : "2024-05-01T13:58:29-05:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{

@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.62"}
-    h3,h4,h5,h6{--heading-prefix:"4.62"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.61"}
+    h3,h4,h5,h6{--heading-prefix:"4.61"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -192,7 +192,7 @@
         
           Active
           
-            as of 2024-03-18
+            as of 2024-05-01
           
         
       </td>
@@ -232,7 +232,22 @@
 </ul>
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/transplanttimeline</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">&lt;4w<a name="nmdp-transplant-timeline-cs-.604w"> </a></td><td>Less than 4 weeks</td></tr><tr><td style="white-space:nowrap">4-6w<a name="nmdp-transplant-timeline-cs-4-6w"> </a></td><td>Between 4-6 weeks</td></tr><tr><td style="white-space:nowrap">7-12w<a name="nmdp-transplant-timeline-cs-7-12w"> </a></td><td>Between 7-12 weeks</td></tr><tr><td style="white-space:nowrap">12w-6m<a name="nmdp-transplant-timeline-cs-12w-6m"> </a></td><td>Over 12 weeks - up to 6 months</td></tr><tr><td style="white-space:nowrap">&gt;6m<a name="nmdp-transplant-timeline-cs-.626m"> </a></td><td>Greater than 6 months</td></tr><tr><td style="white-space:nowrap">NA<a name="nmdp-transplant-timeline-cs-NA"> </a></td><td>N/A : MUD Transplant not preferred treatment</td></tr><tr><td style="white-space:nowrap">P<a name="nmdp-transplant-timeline-cs-P"> </a></td><td>Pending, Case manager to follow up</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/transplanttimeline</code> defines the following codes:</p>
+<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+<tr><td style="white-space:nowrap">4W<a name="nmdp-transplant-timeline-cs-4W"> </a></td>
+<td>Less than 4 weeks</td></tr>
+<tr><td style="white-space:nowrap">4-6W<a name="nmdp-transplant-timeline-cs-4-6W"> </a></td>
+<td>Between 4-6 weeks</td></tr>
+<tr><td style="white-space:nowrap">7-12W<a name="nmdp-transplant-timeline-cs-7-12W"> </a></td>
+<td>Between 7-12 weeks</td></tr>
+<tr><td style="white-space:nowrap">12W-6M<a name="nmdp-transplant-timeline-cs-12W-6M"> </a></td>
+<td>Over 12 weeks - up to 6 months</td></tr>
+<tr><td style="white-space:nowrap">6MG<a name="nmdp-transplant-timeline-cs-6MG"> </a></td>
+<td>Greater than 6 months</td></tr>
+<tr><td style="white-space:nowrap">NA<a name="nmdp-transplant-timeline-cs-NA"> </a></td>
+<td>N/A : MUD Transplant not preferred treatment</td></tr>
+<tr><td style="white-space:nowrap">PEND<a name="nmdp-transplant-timeline-cs-PEND"> </a></td>
+<td>Pending, Case manager to follow up</td></tr></table></div>
 
   
 
@@ -252,20 +267,14 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 18, 2024 10:20-0500">2024-03-18</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 1, 2024 13:56-0500">2024-05-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -292,16 +301,8 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-
-<!-- / feedback form  -->
-
   <!-- Analytics Below
   ================================================== -->
   </body>

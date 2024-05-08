@@ -10,15 +10,15 @@
   fhir:id [ fhir:v "icd10-gvhd-codes"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a> where concept  is-a  D89.81 (Graft-versus-host disease)</li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a> where concept  is-a  D89.81 (Graft-versus-host disease)</li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ICD10GVHDVS"] ; # 
   fhir:title [ fhir:v "GVHD ICD-10 Codes"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-03-18T10:20:43-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-01T13:56:53-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NMDP"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NMDP" ] ;

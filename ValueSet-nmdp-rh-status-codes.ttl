@@ -16,9 +16,9 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NMDPRhStatusVS"] ; # 
   fhir:title [ fhir:v "NMDP Codes for Rh status"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-03-18T10:20:43-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-01T13:56:53-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NMDP"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NMDP" ] ;

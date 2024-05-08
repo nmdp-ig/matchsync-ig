@@ -3,15 +3,15 @@
   "id" : "icd10-gvhd-codes",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a> where concept  is-a  D89.81 (Graft-versus-host disease)</li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a> where concept  is-a  D89.81 (Graft-versus-host disease)</li></ul></div>"
   },
   "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes",
   "version" : "0.1.0",
   "name" : "ICD10GVHDVS",
   "title" : "GVHD ICD-10 Codes",
-  "status" : "active",
+  "status" : "draft",
   "experimental" : true,
-  "date" : "2024-03-18T10:20:43-05:00",
+  "date" : "2024-05-01T13:56:53-05:00",
   "publisher" : "NMDP",
   "contact" : [{
     "name" : "NMDP",

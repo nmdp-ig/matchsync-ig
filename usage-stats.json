@@ -14,12 +14,12 @@
   "profiles": {
     "Observation": [
       {
-        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation",
-        "title": "MSHeightObservation"
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-cmvgroup-observation",
+        "title": "MSCmvObservation"
       },
       {
-        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-patient-gender-identity-observation",
-        "title": "MSPatientGenderIdentity"
+        "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation",
+        "title": "MSHeightObservation"
       },
       {
         "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation",
@@ -114,6 +114,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding": [
       "Observation"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity": [
+      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"

@@ -1,167 +1,167 @@
 MatchSyncIG : Validation Results
 =========================================
 
-err = 4, warn = 42, info = 69
-IG Publisher Version: 1.5.16 Out of date - current version is 1.6.1
-Generated Mon Mar 18 10:30:18 CDT 2024. FHIR version 4.0.1 for nmdp.fhir.matchsync#0.1.0 (canonical = http://fhir.nmdp.org/ig/matchsync)
+err = 10, warn = 43, info = 69
+IG Publisher Version: 1.6.4 Out of date - current version is 1.6.6
+Generated Wed May 01 13:59:26 CDT 2024. FHIR version 4.0.1 for nmdp.fhir.matchsync#0.1.0 (canonical = http://fhir.nmdp.org/ig/matchsync)
  Build Errors : 44 / 0 / 0
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Bundle-BundleExample-Practitioner : 0 / 1 / 28
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-glstring-codesystem : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-hla-genename-codesystem : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-abo-group-cs : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-disease-cs : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-diseasestage-cs : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-ethnicity-cs : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-gender-identity-cs : 2 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-language-cs : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-practitioner-role-cs : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-preferred-product-cs : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-race-cs : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-rh-status-cs : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-transplant-timeline-cs : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Condition-MSDiagnosisExample-AML : 0 / 1 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Condition-MSDiagnosisExample-OND : 0 / 1 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Condition-a9e56f2a-0827-4efd-a773-ed48c6e2752c : 0 / 1 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ImplementationGuide-nmdp.fhir.matchsync : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-A-Example : 0 / 2 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-B-Example : 0 / 2 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-C-Example : 0 / 2 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DPA1-Example : 0 / 2 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DPB1-Example : 0 / 2 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DQA1-Example : 0 / 2 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DQB1-Example : 0 / 2 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DRB1-Example : 0 / 2 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DRB3-Example : 0 / 2 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DRB4-Example : 0 / 2 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DRB5-Example : 0 / 2 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-Multilocus-Genotype-Example : 0 / 5 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-MSABOObsExample : 0 / 1 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-MSABORHObsExample : 0 / 1 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-MSGenderIdentityExample : 0 / 1 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-MSHeightObsExample : 0 / 1 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-MSPreferredProductExample : 0 / 1 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-MSRhObsExample : 0 / 1 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-MSTransplantTimelineExample : 0 / 1 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-MSWeightObsExample : 0 / 1 / 2
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Organization-TCExample : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Patient-3f7d88b1-3e39-4f52-bb9c-5d680b7166b3 : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample2 : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample3 : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample4 : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample5 : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Practitioner-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Practitioner-PhysicianExample : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Practitioner-SearchCoordinatorExample : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Practitioner-fe6acf5d-ed53-4758-8d38-10d915c984af : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/PractitionerRole-8fd0ef20-d146-4fff-b2a8-1d607adf9802 : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/PractitionerRole-ReferringPhysicianRoleExample : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/PractitionerRole-SearchCoordinatorRoleExample : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/PractitionerRole-TCPhysicianRoleExample : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/PractitionerRole-ad78058a-c0fe-4ea0-bc86-d2f3770a1944 : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/PractitionerRole-f1942bac-b8b3-45a1-b1d0-6928326d03ce : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Specimen-MSSpecimenExample : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-a : 0 / 0 / 5
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-b : 0 / 0 / 5
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-c : 0 / 0 / 5
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-dpa1 : 0 / 0 / 5
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-dpb1 : 0 / 0 / 5
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-dqa1 : 0 / 0 / 5
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-dqb1 : 0 / 0 / 5
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-drb1 : 0 / 0 / 5
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-drb3 : 0 / 0 / 5
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-drb4 : 0 / 0 / 5
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-drb5 : 0 / 0 / 5
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-genotype : 0 / 0 / 3
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-abogroup-observation : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-aborhgroup-observation : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle-hla-multilocus : 0 / 1 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle-hla-separate : 0 / 1 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-height-observation : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-patient-gender-identity-observation : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-preferred-product-observation : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-rhstatus-observation : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-transplant-timeline-observation : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-weight-observation : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-msdiagnosis : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-mspatient : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-msspecimen : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-nmdp-practitioner : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-nmdp-practitioner-role : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-number-of-remissions : 0 / 1 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-transplantcenter : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-hla-geneid-valueset : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-icd10-gvhd-codes : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-loinc-abo-codes : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-loinc-abo-rh-codes : 2 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-loinc-posneg-codes : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-ms-abo-group-codes : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-ms-rh-codes : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-abo-codes : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-disease-codes : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-diseasestage-codes : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-ethnicity-codes : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-gender-identity-codes : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-language-codes : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-practitioner-role-vs : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-preferred-product-codes : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-race-codes : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-rh-status-codes : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-transplant-timeline-codes : 0 / 0 / 1
- /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-sct-abo-group-codes : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Bundle-BundleExample-Practitioner : 0 / 1 / 28
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-glstring-codesystem : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-hla-genename-codesystem : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-abo-group-cs : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-disease-cs : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-diseasestage-cs : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-ethnicity-cs : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-language-cs : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-practitioner-role-cs : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-preferred-product-cs : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-race-cs : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-rh-status-cs : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-transplant-timeline-cs : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Condition-MSDiagnosisExample-AML : 0 / 1 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Condition-MSDiagnosisExample-OND : 0 / 1 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Condition-a9e56f2a-0827-4efd-a773-ed48c6e2752c : 0 / 1 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ImplementationGuide-nmdp.fhir.matchsync : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-A-Example : 0 / 2 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-B-Example : 0 / 2 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-C-Example : 0 / 2 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DPA1-Example : 0 / 2 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DPB1-Example : 0 / 2 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DQA1-Example : 0 / 2 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DQB1-Example : 0 / 2 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DRB1-Example : 0 / 2 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DRB3-Example : 0 / 2 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DRB4-Example : 0 / 2 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-DRB5-Example : 0 / 2 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-HLA-Multilocus-Genotype-Example : 0 / 5 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-MSABOObsExample : 0 / 1 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-MSABORHObsExample : 0 / 1 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-MSHeightObsExample : 0 / 1 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-MSPreferredProductExample : 0 / 1 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-MSRhObsExample : 0 / 1 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-MSTransplantTimelineExample : 2 / 1 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Observation-MSWeightObsExample : 0 / 1 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Organization-TCExample : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Patient-3f7d88b1-3e39-4f52-bb9c-5d680b7166b3 : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientBirthSex : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample : 1 / 0 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample2 : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample3 : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample4 : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientExample5 : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Patient-MSPatientGenderIdentity : 1 / 0 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Practitioner-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Practitioner-PhysicianExample : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Practitioner-SearchCoordinatorExample : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Practitioner-fe6acf5d-ed53-4758-8d38-10d915c984af : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/PractitionerRole-8fd0ef20-d146-4fff-b2a8-1d607adf9802 : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/PractitionerRole-ReferringPhysicianRoleExample : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/PractitionerRole-SearchCoordinatorRoleExample : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/PractitionerRole-TCPhysicianRoleExample : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/PractitionerRole-ad78058a-c0fe-4ea0-bc86-d2f3770a1944 : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/PractitionerRole-f1942bac-b8b3-45a1-b1d0-6928326d03ce : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Specimen-MSSpecimenExample : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-a : 0 / 0 / 5
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-b : 0 / 0 / 5
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-c : 0 / 0 / 5
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-dpa1 : 0 / 0 / 5
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-dpb1 : 0 / 0 / 5
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-dqa1 : 0 / 0 / 5
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-dqb1 : 0 / 0 / 5
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-drb1 : 0 / 0 / 5
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-drb3 : 0 / 0 / 5
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-drb4 : 0 / 0 / 5
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-drb5 : 0 / 0 / 5
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-hla-genotype : 0 / 0 / 3
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-abogroup-observation : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-aborhgroup-observation : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle-hla-multilocus : 0 / 1 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-bundle-hla-separate : 0 / 1 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-cmvgroup-observation : 2 / 1 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-height-observation : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-preferred-product-observation : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-rhstatus-observation : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-transplant-timeline-observation : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-ms-weight-observation : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-msdiagnosis : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-mspatient : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-msspecimen : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-nmdp-practitioner : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-nmdp-practitioner-role : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-number-of-remissions : 0 / 1 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/StructureDefinition-transplantcenter : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-hla-geneid-valueset : 0 / 0 / 2
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-icd10-gvhd-codes : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-loinc-abo-codes : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-loinc-abo-rh-codes : 2 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-loinc-cmv-codes : 2 / 1 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-loinc-posneg-codes : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-ms-abo-group-codes : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-ms-rh-codes : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-abo-codes : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-disease-codes : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-diseasestage-codes : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-ethnicity-codes : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-language-codes : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-practitioner-role-vs : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-preferred-product-codes : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-race-codes : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-rh-status-codes : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-nmdp-transplant-timeline-codes : 0 / 0 / 1
+ /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-sct-abo-group-codes : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 436, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 742, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1107, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1413, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 436, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 742, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1107, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1413, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 436, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 742, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1107, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1413, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 436, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 742, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1107, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1413, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 436, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 742, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1107, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1413, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 436, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 742, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1107, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1413, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 436, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 742, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1107, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1413, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 436, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 742, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1107, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1413, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 436, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 742, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1107, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1413, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 436, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 742, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1107, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1413, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 436, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 742, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1107, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1413, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 806, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2159, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2892, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-a.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 4245, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4931' for "HGNC:4931" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 806, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2159, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2892, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-b.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 4245, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4932' for "HGNC:4932" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 806, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2159, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2892, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-c.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 4245, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4933' for "HGNC:4933" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 806, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2159, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2892, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 4245, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4938' for "HGNC:4938" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 806, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2159, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2892, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dpb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 4245, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4940' for "HGNC:4940" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 806, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2159, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2892, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqa1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 4245, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4942' for "HGNC:4942" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 806, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2159, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2892, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-dqb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 4245, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4944' for "HGNC:4944" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 806, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2159, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2892, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 4245, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4948' for "HGNC:4948" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 806, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2159, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2892, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb3.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 4245, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4951' for "HGNC:4951" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 806, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2159, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2892, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb4.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 4245, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4952' for "HGNC:4952" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 806, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2159, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2892, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/output/StructureDefinition-hla-drb5.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 4245, column 175: The link 'CodeSystem-hla-genename-codesystem.html#hla-genename-codesystem-HGNC:4953' for "HGNC:4953" cannot be resolved (valid targets: 57 targets)
 == fsh-generated/resources/Bundle-BundleExample-Practitioner.json ==
 INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[1].resource/*PractitionerRole/ad78058a-c0fe-4ea0-bc86-d2f3770a1944*/.code[0]: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/practitionerrole|0.1.0
 INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[2].resource/*PractitionerRole/8fd0ef20-d146-4fff-b2a8-1d607adf9802*/.code[0]: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/practitionerrole|0.1.0
 INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[3].resource/*PractitionerRole/f1942bac-b8b3-45a1-b1d0-6928326d03ce*/.code[0]: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/practitionerrole|0.1.0
-WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource.stage[0].summary: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/diseasestage|0.1.0
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource/*Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c*/.code: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/disease|0.1.0
 INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource/*Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c*/.stage[0].summary: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/diseasestage|0.1.0
 == fsh-generated/resources/CodeSystem-glstring-codesystem.json ==
@@ -170,9 +170,6 @@ INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource/*Condit
 == fsh-generated/resources/CodeSystem-nmdp-disease-cs.json ==
 == fsh-generated/resources/CodeSystem-nmdp-diseasestage-cs.json ==
 == fsh-generated/resources/CodeSystem-nmdp-ethnicity-cs.json ==
-== fsh-generated/resources/CodeSystem-nmdp-gender-identity-cs.json ==
-ERROR: CodeSystem.where(url = 'http://terminology.nmdp.org/codesystem/genderidentity'): Conformance resource /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-gender-identity-cs.json - the canonical URL (http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-gender-identity-cs) does not match the URL (http://terminology.nmdp.org/codesystem/genderidentity)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-nmdp-gender-identity-cs: URL Mismatch http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-gender-identity-cs vs http://terminology.nmdp.org/codesystem/genderidentity
 == fsh-generated/resources/CodeSystem-nmdp-language-cs.json ==
 == fsh-generated/resources/CodeSystem-nmdp-practitioner-role-cs.json ==
 == fsh-generated/resources/CodeSystem-nmdp-preferred-product-cs.json ==
@@ -243,28 +240,38 @@ WARNING: Observation/HLA-Multilocus-Genotype-Example: Observation: Best Practice
 WARNING: Observation/MSABOObsExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-MSABORHObsExample.json ==
 WARNING: Observation/MSABORHObsExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
-== fsh-generated/resources/Observation-MSGenderIdentityExample.json ==
-INFORMATION: Observation/MSGenderIdentityExample: Observation.value.ofType(CodeableConcept): Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/genderidentity|0.1.0
-WARNING: Observation/MSGenderIdentityExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-MSHeightObsExample.json ==
 WARNING: Observation/MSHeightObsExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-MSPreferredProductExample.json ==
-INFORMATION: Observation/MSPreferredProductExample: Observation.value.ofType(CodeableConcept): Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/preferredproduct|0.1.0
 WARNING: Observation/MSPreferredProductExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-MSRhObsExample.json ==
 WARNING: Observation/MSRhObsExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-MSTransplantTimelineExample.json ==
-INFORMATION: Observation/MSTransplantTimelineExample: Observation.value.ofType(CodeableConcept): Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/transplanttimeline|0.1.0
+ERROR: Observation/MSTransplantTimelineExample: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'P' in the CodeSystem 'http://terminology.nmdp.org/codesystem/transplanttimeline' version '0.1.0'
+ERROR: Observation/MSTransplantTimelineExample: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'NMDP Transplant Timeline Value Set' (http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes|0.1.0), and a coding from this value set is required) (codes = http://terminology.nmdp.org/codesystem/transplanttimeline#P)
 WARNING: Observation/MSTransplantTimelineExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-MSWeightObsExample.json ==
 WARNING: Observation/MSWeightObsExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Organization-TCExample.json ==
 == fsh-generated/resources/Patient-3f7d88b1-3e39-4f52-bb9c-5d680b7166b3.json ==
+== fsh-generated/resources/Patient-MSPatientBirthSex.json ==
 == fsh-generated/resources/Patient-MSPatientExample.json ==
+INFORMATION: Patient/MSPatientExample: Patient.extension[3]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Patient/MSPatientExample: Patient.extension[3].value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Only one entry for genderIdentity allowed' for http://snomed.info/sct#446141000124107. Valid display is one of 4 choices: 'Identifies as female gender (finding)', 'Identifies as female gender', 'Female identity' or 'Female gender identity' (for the language(s) '--')
 == fsh-generated/resources/Patient-MSPatientExample2.json ==
 == fsh-generated/resources/Patient-MSPatientExample3.json ==
 == fsh-generated/resources/Patient-MSPatientExample4.json ==
 == fsh-generated/resources/Patient-MSPatientExample5.json ==
+== fsh-generated/resources/Patient-MSPatientGenderIdentity.json ==
+INFORMATION: Patient/MSPatientGenderIdentity: Patient.extension[3]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Patient/MSPatientGenderIdentity: Patient.extension[3].value.ofType(CodeableConcept).coding[0].display: Wrong Display Name ''33791000087105':   'Identifies as nonbinary gender (finding)'        ->  'NB': 'Non-binary'
+    #407376001:     'Male-to-female transsexual (finding)'           ->  'SI': 'Self-identified'
+		'407377005':        'Female-to-male transsexual (finding)'            ->  'SI': 'Self-identified'
+		'446131000124102':  'Identifies as non-conforming gender (finding)'   ->  'SI': 'Self-identified'
+		'446141000124107':  'Identifies as female gender (finding)'           ->  'F': 'Female'
+		'446151000124109':  'Identifies as male gender (finding)'             ->  'M': 'Male'
+		'OTH':              'other'                                           ->  'SI': 'Self-identified'
+		'UNK':              'unknown'                                         ->  'SI': 'Self-identified'' for http://snomed.info/sct#446141000124107. Valid display is one of 4 choices: 'Identifies as female gender (finding)', 'Identifies as female gender', 'Female identity' or 'Female gender identity' (for the language(s) '--')
 == fsh-generated/resources/Practitioner-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa.json ==
 == fsh-generated/resources/Practitioner-PhysicianExample.json ==
 == fsh-generated/resources/Practitioner-SearchCoordinatorExample.json ==
@@ -277,62 +284,62 @@ WARNING: Observation/MSWeightObsExample: Observation: Best Practice Recommendati
 == fsh-generated/resources/PractitionerRole-f1942bac-b8b3-45a1-b1d0-6928326d03ce.json ==
 == fsh-generated/resources/Specimen-MSSpecimenExample.json ==
 == fsh-generated/resources/StructureDefinition-hla-a.json ==
-INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[103].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-a: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-b.json ==
-INFORMATION: StructureDefinition/hla-b: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-INFORMATION: StructureDefinition/hla-b: StructureDefinition.snapshot.element[103].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-b: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: StructureDefinition/hla-b: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-b: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-b: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-c.json ==
-INFORMATION: StructureDefinition/hla-c: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-INFORMATION: StructureDefinition/hla-c: StructureDefinition.snapshot.element[103].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-c: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: StructureDefinition/hla-c: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-c: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-c: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-dpa1.json ==
-INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[103].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-dpb1.json ==
-INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[103].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-dqa1.json ==
-INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[103].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-dqb1.json ==
-INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[103].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-drb1.json ==
-INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[103].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-drb3.json ==
-INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[103].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-drb4.json ==
-INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[103].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-drb5.json ==
-INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[103].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-hla-genotype.json ==
-INFORMATION: StructureDefinition/hla-genotype: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
+INFORMATION: StructureDefinition/hla-genotype: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
 INFORMATION: StructureDefinition/hla-genotype: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-ms-abogroup-observation.json ==
 == fsh-generated/resources/StructureDefinition-ms-aborhgroup-observation.json ==
@@ -341,8 +348,11 @@ INFORMATION: StructureDefinition/hla-genotype: StructureDefinition.snapshot.elem
 WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-multilocus'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ms-bundle-hla-separate.json ==
 WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-separate'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ms-cmvgroup-observation.json ==
+ERROR: StructureDefinition/ms-cmvgroup-observation: StructureDefinition.snapshot.element[30].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'CMV Positive, Negative, Inconclusive, Invonclusive, Untested' for http://loinc.org#LA6576-8. Valid display is 'Positive' (en-US) (for the language(s) '--')
+ERROR: StructureDefinition/ms-cmvgroup-observation: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'CMV Positive, Negative, Inconclusive, Invonclusive, Untested' for http://loinc.org#LA6576-8. Valid display is 'Positive' (en-US) (for the language(s) '--')
+WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-cmvgroup-observation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ms-height-observation.json ==
-== fsh-generated/resources/StructureDefinition-ms-patient-gender-identity-observation.json ==
 == fsh-generated/resources/StructureDefinition-ms-preferred-product-observation.json ==
 == fsh-generated/resources/StructureDefinition-ms-rhstatus-observation.json ==
 == fsh-generated/resources/StructureDefinition-ms-transplant-timeline-observation.json ==
@@ -356,11 +366,16 @@ WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/matchsync/Stru
 WARNING: StructureDefinition/number-of-remissions: StructureDefinition.context[0]: Review the extension type for number-of-remissions: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-transplantcenter.json ==
 == fsh-generated/resources/ValueSet-hla-geneid-valueset.json ==
+INFORMATION: ValueSet/hla-geneid-valueset: ValueSet.compose.include[0]: The value set references CodeSystem 'http://www.genenames.org/geneId' which has status 'fragment'
 == fsh-generated/resources/ValueSet-icd10-gvhd-codes.json ==
 == fsh-generated/resources/ValueSet-loinc-abo-codes.json ==
 == fsh-generated/resources/ValueSet-loinc-abo-rh-codes.json ==
-ERROR: ValueSet.where(url = 'http://loinc.org/vs/LL2972-9'): Conformance resource /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-loinc-abo-rh-codes.json - the canonical URL (http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-abo-rh-codes) does not match the URL (http://loinc.org/vs/LL2972-9)
-ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-loinc-abo-rh-codes: URL Mismatch http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-abo-rh-codes vs http://loinc.org/vs/LL2972-9
+ERROR: ValueSet.where(url = 'http://loinc.org/vs/LL2972-9'): Conformance resource /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-loinc-abo-rh-codes.json - the canonical URL (http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-abo-rh-codes) does not match the URL (http://loinc.org/vs/LL2972-9)
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-loinc-abo-rh-codes: URL Mismatch http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-abo-rh-codes vs http://loinc.org/vs/LL2972-9
+== fsh-generated/resources/ValueSet-loinc-cmv-codes.json ==
+ERROR: ValueSet.where(url = 'http://loinc.org/vs/LL3639-3'): Conformance resource /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-loinc-cmv-codes.json - the canonical URL (http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-cmv-codes) does not match the URL (http://loinc.org/vs/LL3639-3)
+WARNING: ValueSet/loinc-cmv-codes: ValueSet.compose.include[0].concept[4]: The code 'LA113538-6' is not valid in the system http://loinc.org (Unknown code 'LA113538-6' in the CodeSystem 'http://loinc.org' version '2.77')
+ERROR: /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/ValueSet-loinc-cmv-codes: URL Mismatch http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-cmv-codes vs http://loinc.org/vs/LL3639-3
 == fsh-generated/resources/ValueSet-loinc-posneg-codes.json ==
 == fsh-generated/resources/ValueSet-ms-abo-group-codes.json ==
 == fsh-generated/resources/ValueSet-ms-rh-codes.json ==
@@ -368,7 +383,6 @@ ERROR: /Users/jbrelsf2/Documents/sandbox/matchsync-ig/build/fsh-generated/resour
 == fsh-generated/resources/ValueSet-nmdp-disease-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-diseasestage-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-ethnicity-codes.json ==
-== fsh-generated/resources/ValueSet-nmdp-gender-identity-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-language-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-practitioner-role-vs.json ==
 == fsh-generated/resources/ValueSet-nmdp-preferred-product-codes.json ==
