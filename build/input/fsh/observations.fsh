@@ -39,6 +39,55 @@ Description: "Example of patient height"
   * code = #cm
 * effectiveDateTime = "2022-05-01"
 
+Profile: MSCmvObservation
+Parent: Observation
+Id: ms-cmvgroup-observation
+Description: "Cytomeglovirus found in patient"
+* insert MetaSecurityRules
+* subject 1..1 MS
+* subject only Reference(mspatient) 
+* code = $LNC#LA6576-8 "CMV Positive, Negative, Inconclusive, Invonclusive, Untested"
+* effectiveDateTime 1..1 MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from loinc-cmv-codes
+
+Instance: MSCmvObsExample
+InstanceOf: ms-cmv-observation
+Description: "Example of Cytomeglovirus found in patient"
+* meta.security[TransplantCenter].code = #tc_123
+* status = #final
+* subject = Reference(MSPatientExample)
+* valueCodeableConcept
+  * coding
+    * system = $LNC
+    * code = 	#LA6576-8
+    * display = "Positive"
+* valueCodeableConcept
+  * coding
+    * system = $LNC
+    * code = 	#LA6577-6
+    * display = "Negative"
+* effectiveDateTime = "2022-05-01"
+* valueCodeableConcept
+  * coding
+    * system = $LNC
+    * code = 	#LA11885-3"
+    * display = "Inconclusive"
+* effectiveDateTime = "2022-05-01"
+* valueCodeableConcept
+  * coding
+    * system = $LNC
+    * code = 	#LA9663-1"
+    * display = "Inconclusive"
+* effectiveDateTime = "2022-05-01"
+* valueCodeableConcept
+  * coding
+    * system = $LNC
+    * code = 	#LA13538-6"
+    * display = "Untested"
+* effectiveDateTime = "2022-05-01"
+
+
 Profile: MSABORHObservation
 Parent: Observation
 Id: ms-aborhgroup-observation
@@ -50,18 +99,6 @@ Description: "ABO and Rh group [Type] in Blood"
 * effectiveDateTime 1..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from loinc-abo-rh-codes 
-
-Profile: MSCmvObservation
-Parent: Observation
-Id: ms-cmvgroup-observation
-Description: "Cytomeglovirus found in patient"
-* insert MetaSecurityRules
-* subject 1..1 MS
-* subject only Reference(mspatient) 
-* code = $LNC#LA6576-8 "CMV Positive, Negative, Inconclusive, Invonclusive, Untested"
-* effectiveDateTime 1..1 MS
-* value[x] only CodeableConcept
-* valueCodeableConcept from loinc-cmv-codes 
 
 Instance: MSABORHObsExample
 InstanceOf: ms-aborhgroup-observation
