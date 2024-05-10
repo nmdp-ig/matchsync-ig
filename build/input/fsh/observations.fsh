@@ -51,6 +51,18 @@ Description: "ABO and Rh group [Type] in Blood"
 * value[x] only CodeableConcept
 * valueCodeableConcept from loinc-abo-rh-codes 
 
+Profile: MSCmvObservation
+Parent: Observation
+Id: ms-cmvgroup-observation
+Description: "Cytomeglovirus found in patient"
+* insert MetaSecurityRules
+* subject 1..1 MS
+* subject only Reference(mspatient) 
+* code = $LNC#LA6576-8 "CMV Positive, Negative, Inconclusive, Invonclusive, Untested"
+* effectiveDateTime 1..1 MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from loinc-cmv-codes 
+
 Instance: MSABORHObsExample
 InstanceOf: ms-aborhgroup-observation
 Description: "Example of patient ABO and RH"
