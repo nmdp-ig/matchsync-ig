@@ -57,35 +57,35 @@ Description: "Example of Cytomeglovirus found in patient"
 * meta.security[TransplantCenter].code = #tc_123
 * status = #final
 * subject = Reference(MSPatientExample)
-* valueCodeableConcept
-  * coding
-    * system = $LNC
-    * code = 	#LA6576-8
-    * display = "Positive"
-* valueCodeableConcept
-  * coding
-    * system = $LNC
-    * code = 	#LA6577-6
-    * display = "Negative"
-* effectiveDateTime = "2022-05-01"
-* valueCodeableConcept
-  * coding
-    * system = $LNC
-    * code = 	#LA11885-3"
-    * display = "Inconclusive"
-* effectiveDateTime = "2022-05-01"
-* valueCodeableConcept
-  * coding
-    * system = $LNC
-    * code = 	#LA9663-1"
-    * display = "Inconclusive"
-* effectiveDateTime = "2022-05-01"
-* valueCodeableConcept
-  * coding
-    * system = $LNC
-    * code = 	#LA13538-6"
-    * display = "Untested"
-* effectiveDateTime = "2022-05-01"
+// * valueCodeableConcept
+//   * coding
+//     * system = $LNC
+//     * code = 	#LA6576-8
+//     * display = "Positive"
+// * valueCodeableConcept
+//   * coding
+//     * system = $LNC
+//     * code = 	#LA6577-6
+//     * display = "Negative"
+// * effectiveDateTime = "2022-05-01"
+// * valueCodeableConcept
+//   * coding
+//     * system = $LNC
+//     * code = 	#LA11885-3"
+//     * display = "Inconclusive"
+// * effectiveDateTime = "2022-05-01"
+// * valueCodeableConcept
+//   * coding
+//     * system = $LNC
+//     * code = 	#LA9663-1"
+//     * display = "Inconclusive"
+// * effectiveDateTime = "2022-05-01"
+// * valueCodeableConcept
+//   * coding
+//     * system = $LNC
+//     * code = 	#LA13538-6"
+//     * display = "Untested"
+// * effectiveDateTime = "2022-05-01"
 
 
 Profile: MSABORHObservation
