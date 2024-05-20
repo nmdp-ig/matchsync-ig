@@ -13466,7 +13466,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <coding>
     <system value=""http://loinc.org""/>
     <code value=""LA6576-8""/>
-    <display value=""CMV Positive, Negative, Inconclusive, Invonclusive, Untested""/>
+    <display value=""CMV Positive(#LA6576-8), Negative(#LA6577-6), Inconclusive(#LA11885-3), Invonclusive(#LA9663-1), Untested(#LA13538-6)""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes","",,,,"Observation.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

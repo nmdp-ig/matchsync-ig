@@ -2,8 +2,8 @@ MatchSyncIG : Validation Results
 =========================================
 
 err = 10, warn = 43, info = 69
-IG Publisher Version: 1.6.4 Out of date - current version is 1.6.6
-Generated Wed May 01 13:59:26 CDT 2024. FHIR version 4.0.1 for nmdp.fhir.matchsync#0.1.0 (canonical = http://fhir.nmdp.org/ig/matchsync)
+IG Publisher Version: 1.6.4 Out of date - current version is 1.6.8
+Generated Mon May 20 10:26:16 CDT 2024. FHIR version 4.0.1 for nmdp.fhir.matchsync#0.1.0 (canonical = http://fhir.nmdp.org/ig/matchsync)
  Build Errors : 44 / 0 / 0
  /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/Bundle-BundleExample-Practitioner : 0 / 1 / 28
  /Users/jbrelsf2/Library/CloudStorage/OneDrive-NMDP/Documents/sandbox/matchsync-ig/build/fsh-generated/resources/CodeSystem-glstring-codesystem : 0 / 0 / 1
@@ -349,8 +349,8 @@ WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/matchsync/Stru
 == fsh-generated/resources/StructureDefinition-ms-bundle-hla-separate.json ==
 WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-separate'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ms-cmvgroup-observation.json ==
-ERROR: StructureDefinition/ms-cmvgroup-observation: StructureDefinition.snapshot.element[30].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'CMV Positive, Negative, Inconclusive, Invonclusive, Untested' for http://loinc.org#LA6576-8. Valid display is 'Positive' (en-US) (for the language(s) '--')
-ERROR: StructureDefinition/ms-cmvgroup-observation: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'CMV Positive, Negative, Inconclusive, Invonclusive, Untested' for http://loinc.org#LA6576-8. Valid display is 'Positive' (en-US) (for the language(s) '--')
+ERROR: StructureDefinition/ms-cmvgroup-observation: StructureDefinition.snapshot.element[30].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'CMV Positive(#LA6576-8), Negative(#LA6577-6), Inconclusive(#LA11885-3), Invonclusive(#LA9663-1), Untested(#LA13538-6)' for http://loinc.org#LA6576-8. Valid display is 'Positive' (en-US) (for the language(s) '--')
+ERROR: StructureDefinition/ms-cmvgroup-observation: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'CMV Positive(#LA6576-8), Negative(#LA6577-6), Inconclusive(#LA11885-3), Invonclusive(#LA9663-1), Untested(#LA13538-6)' for http://loinc.org#LA6576-8. Valid display is 'Positive' (en-US) (for the language(s) '--')
 WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-cmvgroup-observation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ms-height-observation.json ==
 == fsh-generated/resources/StructureDefinition-ms-preferred-product-observation.json ==
