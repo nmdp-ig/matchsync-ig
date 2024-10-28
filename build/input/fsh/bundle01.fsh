@@ -9,6 +9,7 @@ Description: "Collection Bundle for MatchSync"
 * entry contains
     // These resources are required per Conformance > Supported Profiles.
     msPatient 1..1 MS and
+    msCmv 0..1 MS and
     msDiagnosis 1..* MS and
     msPractitionerRole 0..* MS and
     msPractitioner 0..* MS and
@@ -24,6 +25,9 @@ Description: "Collection Bundle for MatchSync"
 * entry[msPatient].resource only MSPatient
 * entry[msPatient] ^short = "MatchSync Patient"
 * entry[msPatient] ^definition = "The MatchSync Patient whose data is included in the bundle (required element)."
+* entry[msCmv].resource only MSCmvObservation
+* entry[msCmv] ^short = "MatchSync Patient CMV Status"
+* entry[msCmv] ^definition = "The MatchSync Patient whose data is included in the bundle (required element)."
 * entry[msDiagnosis].resource only MSPrimaryDiagnosis
 * entry[msDiagnosis] ^short = "Diagnois for MatchSync Patient"
 * entry[msDiagnosis] ^definition = "The Diagnosis for the MatchSync patient (required element)."

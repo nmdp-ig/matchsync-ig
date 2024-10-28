@@ -244,6 +244,23 @@ Description: "LOINC codes for ABO RH blood group"
 * $LNC#LA21323-3  "AB Pos"
 * $LNC#LA21324-1  "AB Neg"
 
+ValueSet: LNCCMVGroupVS
+Id: loinc-cmv-codes
+Title: "LOINC CMV group Value Set"
+Description: "LOINC codes for CMV"
+* ^url = "http://loinc.org/vs/LL3639-3"
+* ^status = #active
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
+* ^version = "Loinc_2.72"
+* ^publisher = "Regenstrief Institute, Inc."
+* ^experimental = true
+//update these codes for the answer list
+* $LNC#LA6576-8  "P"
+* $LNC#LA6577-6  "N"
+* $LNC#LA11885-3  "I"
+* $LNC#LA9663-1  "I"
+* $LNC#LA113538-6  "U"
+
 ValueSet: SCTABOGroupVS
 Id: sct-abo-group-codes
 Title: "Snomed CT ABO group Value Set"
@@ -313,7 +330,7 @@ Description: "MatchSync codes for blood Rh. Combines NMDP and LOINC code"
 * ^experimental = true
 
 // Race ----------------
-
+// Possible replacment USCORE PATIENT PROFILE Race and Ethnicity Extenstions omb category
 CodeSystem: NMDPRaceCS
 Title: "NMDP Race Code System"
 Id: nmdp-race-cs
@@ -421,13 +438,13 @@ Description: "Code System for NMDP transplant timeline"
 * ^caseSensitive = true
 * ^publisher = "NMDP"
 * ^copyright = "National Marrow Donor Program"
-* #<4w      "Less than 4 weeks"
-* #4-6w     "Between 4-6 weeks"
-* #7-12w    "Between 7-12 weeks"
-* #12w-6m   "Over 12 weeks - up to 6 months"
-* #>6m      "Greater than 6 months"
+* #4W      "Less than 4 weeks"
+* #4-6W     "Between 4-6 weeks"
+* #7-12W    "Between 7-12 weeks"
+* #12W-6M   "Over 12 weeks - up to 6 months"
+* #6MG      "Greater than 6 months"
 * #NA       "N/A : MUD Transplant not preferred treatment"
-* #P        "Pending, Case manager to follow up"
+* #PEND        "Pending, Case manager to follow up"
 
 ValueSet: NMDPTransplantTimelineVS
 Id: nmdp-transplant-timeline-codes

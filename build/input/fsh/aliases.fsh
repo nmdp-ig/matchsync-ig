@@ -14,3 +14,4 @@ Alias: $HLAGeneIDCS = http://www.genenames.org/geneId
 Alias: $HLAGenegroupCS = http://www.genenames.org/genegroup
 Alias: $ICD10 = http://hl7.org/fhir/sid/icd-10-cm
 Alias: $NMDP-PR = http://terminology.nmdp.org/codesystem/practitionerrole
+Alias: $us-core-genderidentity =  http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity
