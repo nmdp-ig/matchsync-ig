@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MatchSyncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync</pre></div>"
   },
   "url" : "http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync",
-  "version" : "0.1.0",
+  "version" : "0.1.1",
   "name" : "MatchSyncIG",
   "status" : "draft",
-  "date" : "2023-05-09T13:39:12-05:00",
+  "date" : "2024-11-04T13:39:12-05:00",
   "publisher" : "NMDP",
   "contact" : [{
     "name" : "NMDP",
@@ -168,6 +168,17 @@
       {
         "url" : "value",
         "valueString" : "http://terminology.nmdp.org/codesystem/transplanttimeline"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://terminology.nmdp.org/codesystem/hla-genotype"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -600,6 +611,17 @@
       },
       {
         "url" : "value",
+        "valueString" : "http://terminology.nmdp.org/codesystem/hla-genotype"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
         "valueString" : "http://terminology.nmdp.org/codesystem/practitionerrole"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -890,7 +912,8 @@
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
-    "resource" : [{
+    "resource" : [
+      {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
