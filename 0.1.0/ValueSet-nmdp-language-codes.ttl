@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nmdp-language-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nmdp-language-codes</b></p><a name=\"nmdp-language-codes\"> </a><a name=\"hcnmdp-language-codes\"> </a><a name=\"nmdp-language-codes-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-language-cs.html\"><code>http://terminology.nmdp.org/codesystem/language</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "NMDPLanguageCodes"] ; # 
+  fhir:title [ fhir:v "NMDP Language Value Set"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-11-08T17:25:20-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NMDP"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NMDP" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://bethematch.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "NMDP language codes"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/language"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

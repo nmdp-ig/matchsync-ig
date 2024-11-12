@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "loinc-posneg-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet loinc-posneg-codes</b></p><a name=\"loinc-posneg-codes\"> </a><a name=\"hcloinc-posneg-codes\"> </a><a name=\"loinc-posneg-codes-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA6576-8/\">LA6576-8</a></td><td>Positive</td></tr><tr><td><a href=\"https://loinc.org/LA6577-6/\">LA6577-6</a></td><td>Negative</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://loinc.org/vs/LL360-9",
+  "version" : "0.1.1",
+  "name" : "PosNegVS",
+  "title" : "LOINC Pos|Neg Value Set",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-11-11T17:47:55-06:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "LOINC codes for Positive and Negative",
+  "copyright" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA6576-8",
+        "display" : "Positive"
+      },
+      {
+        "code" : "LA6577-6",
+        "display" : "Negative"
+      }]
+    }]
+  }
+}

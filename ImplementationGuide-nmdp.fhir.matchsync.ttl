@@ -9,14 +9,14 @@
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "nmdp.fhir.matchsync"] ; # 
   fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MatchSyncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync</pre></div>"
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide nmdp.fhir.matchsync</b></p><a name=\"nmdp.fhir.matchsync\"> </a><a name=\"hcnmdp.fhir.matchsync\"> </a><a name=\"nmdp.fhir.matchsync-en-US\"> </a><h2>MatchSyncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
   fhir:name [ fhir:v "MatchSyncIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-20T10:22:59-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-11T17:53:38-06:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NMDP"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NMDP" ] ;
@@ -39,7 +39,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "5.5.0" ]
+     fhir:version [ fhir:v "6.0.2" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -431,7 +431,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.2.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -1291,18 +1291,6 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-cmv-codes> ;
-         fhir:reference [ fhir:v "ValueSet/loinc-cmv-codes" ]
-       ] ;
-       fhir:name [ fhir:v "LOINC CMV group Value Set" ] ;
-       fhir:description [ fhir:v "LOINC codes for CMV" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-posneg-codes> ;
          fhir:reference [ fhir:v "ValueSet/loinc-posneg-codes" ]
        ] ;
@@ -1441,18 +1429,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-cmvgroup-observation> ;
-         fhir:reference [ fhir:v "StructureDefinition/ms-cmvgroup-observation" ]
-       ] ;
-       fhir:name [ fhir:v "MSCmvObservation" ] ;
-       fhir:description [ fhir:v "Cytomeglovirus found in patient" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
@@ -1525,21 +1501,6 @@
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientBirthSex> ;
-         fhir:reference [ fhir:v "Patient/MSPatientBirthSex" ]
-       ] ;
-       fhir:name [ fhir:v "MSPatientBirthSex" ] ;
-       fhir:description [ fhir:v "Example of a patient using BirthSex codes" ] ;
-       fhir:example [
-         fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"^^xsd:anyURI ;
-         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Patient" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample> ;
          fhir:reference [ fhir:v "Patient/MSPatientExample" ]
        ] ;
@@ -1605,21 +1566,6 @@
        ] ;
        fhir:name [ fhir:v "MSPatientExample5" ] ;
        fhir:description [ fhir:v "Example of a patient needing a donor using NMDP race code." ] ;
-       fhir:example [
-         fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"^^xsd:anyURI ;
-         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Patient" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientGenderIdentity> ;
-         fhir:reference [ fhir:v "Patient/MSPatientGenderIdentity" ]
-       ] ;
-       fhir:name [ fhir:v "MSPatientGenderIdentity" ] ;
-       fhir:description [ fhir:v "Example of a patient using Gender Identity codes" ] ;
        fhir:example [
          fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"^^xsd:anyURI ;
          fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient>
