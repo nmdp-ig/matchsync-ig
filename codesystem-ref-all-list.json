@@ -202,12 +202,11 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
+      "ValueSet-loinc-abo-rh-codes.html" : "LOINC ABO RH group Value Set",
       "http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html" : "Vital Signs",
       "ValueSet-loinc-abo-codes.html" : "LOINC ABO group Value Set",
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
       "ValueSet-loinc-posneg-codes.html" : "LOINC Pos|Neg Value Set",
-      "ValueSet-loinc-cmv-codes.html" : "LOINC CMV group Value Set",
-      "ValueSet-loinc-abo-rh-codes.html" : "LOINC ABO RH group Value Set"
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -219,22 +218,22 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "ValueSet-sct-abo-group-codes.html" : "Snomed CT ABO group Value Set",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
       "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "ValueSet-sct-abo-group-codes.html" : "Snomed CT ABO group Value Set",
       "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage"
+      "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "CommonTags",
       "title" : "Common Tags",
       "description" : "Common Tag Codes defined by FHIR project",
@@ -245,8 +244,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ConditionCategoryCodes",
       "title" : "Condition Category Codes",
       "description" : "Preferred value set for Condition Categories.",
@@ -269,8 +268,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-      "version" : "2.0.0",
-      "status" : "draft",
+      "version" : "2.0.1",
+      "status" : "active",
       "name" : "ConditionVerificationStatus",
       "title" : "ConditionVerificationStatus",
       "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
@@ -305,8 +304,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ObservationCategoryCodes",
       "title" : "Observation Category Codes",
       "description" : "Observation Category codes.",
@@ -317,8 +316,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
-      "version" : "2.0.0",
-      "status" : "draft",
+      "version" : "2.0.1",
+      "status" : "active",
       "name" : "OrganizationType",
       "title" : "Organization type",
       "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
@@ -329,8 +328,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ObservationReferenceRangeMeaningCodes",
       "title" : "Observation Reference Range Meaning Codes",
       "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
@@ -373,7 +372,7 @@
       "oids" : ["2.16.840.1.113883.18.229"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0373",
@@ -397,7 +396,7 @@
       "oids" : ["2.16.840.1.113883.18.311"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v2-0487.html" : "hl7VS-specimenType"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0487.html" : "hl7VS-specimenType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0493",
@@ -409,7 +408,7 @@
       "oids" : ["2.16.840.1.113883.18.317"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0916",
@@ -421,7 +420,7 @@
       "oids" : ["2.16.840.1.113883.18.422"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
@@ -461,7 +460,7 @@
     },
     {
       "url" : "http://terminology.nmdp.org/codesystem/abogroup",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "active",
       "name" : "NMDPABOCS",
       "title" : "NMDP Blood Group Code System",
@@ -472,7 +471,7 @@
     },
     {
       "url" : "http://terminology.nmdp.org/codesystem/disease",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "active",
       "name" : "NMDPDiseaseCS",
       "title" : "NMDP Disease Code System",
@@ -483,7 +482,7 @@
     },
     {
       "url" : "http://terminology.nmdp.org/codesystem/diseasestage",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "active",
       "name" : "NMDPDiseaseStageCS",
       "title" : "NMDP Disease Stage Code System",
@@ -494,7 +493,7 @@
     },
     {
       "url" : "http://terminology.nmdp.org/codesystem/ethnicity",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "active",
       "name" : "NMDPEthnicityCS",
       "title" : "NMDP Ethnicity Code System",
@@ -505,7 +504,7 @@
     },
     {
       "url" : "http://terminology.nmdp.org/codesystem/language",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "active",
       "name" : "NMDPLanguageCS",
       "title" : "NMDP Language Code System",
@@ -516,7 +515,7 @@
     },
     {
       "url" : "http://terminology.nmdp.org/codesystem/practitionerrole",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "active",
       "name" : "NMDPPractitionerRoleCS",
       "title" : "NMDP Practitioner Roles",
@@ -527,7 +526,7 @@
     },
     {
       "url" : "http://terminology.nmdp.org/codesystem/preferredproduct",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "active",
       "name" : "NMDPPreferredProductCS",
       "title" : "NMDP Preferred Product for Transplant",
@@ -538,7 +537,7 @@
     },
     {
       "url" : "http://terminology.nmdp.org/codesystem/race",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "active",
       "name" : "NMDPRaceCS",
       "title" : "NMDP Race Code System",
@@ -549,7 +548,7 @@
     },
     {
       "url" : "http://terminology.nmdp.org/codesystem/rhstatus",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "active",
       "name" : "NMDPRhStatusCS",
       "title" : "NMDP Rh Code System",
@@ -560,7 +559,7 @@
     },
     {
       "url" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "active",
       "name" : "NMDPTransplantTimelineCS",
       "title" : "NMDP Transplant Timeline Code System",
@@ -585,7 +584,7 @@
     },
     {
       "url" : "http://www.genenames.org/geneId",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "active",
       "name" : "HLAGeneIdCS",
       "title" : "HLA HGNC GeneID CodeSystem",
@@ -604,8 +603,8 @@
       "oids" : ["2.16.840.1.113883.6.121"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU4/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier",
-      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages",
+      "http://hl7.org/fhir/us/core/STU4/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier"
     }
   ]
 }

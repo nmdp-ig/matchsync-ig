@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "draft",
       "name" : "HLAGeneIdVS",
       "title" : "HLA Gene Name Value Set",
@@ -14,7 +14,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "draft",
       "name" : "ICD10GVHDVS",
       "title" : "GVHD ICD-10 Codes",
@@ -23,7 +23,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-group-codes",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "draft",
       "name" : "MSABOGroupVS",
       "title" : "MatchSync ABO Group Value Set",
@@ -36,7 +36,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-rh-codes",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "draft",
       "name" : "MSRhVS",
       "title" : "MatchSync Rh Value Sets",
@@ -48,7 +48,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "draft",
       "name" : "NMDPABOVS",
       "title" : "NMDP Blood Group Value Set",
@@ -60,7 +60,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "draft",
       "name" : "NMDPDiseaseVS",
       "title" : "NMDP Disease Value Set",
@@ -72,7 +72,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "draft",
       "name" : "NMDPDiseasStageVS",
       "title" : "NMDP Disease Stage Value Set",
@@ -84,7 +84,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-ethnicity-codes",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "draft",
       "name" : "NMDPEthnicityVS",
       "title" : "NMDP Ethnicity Value Set",
@@ -93,7 +93,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "draft",
       "name" : "NMDPLanguageCodes",
       "title" : "NMDP Language Value Set",
@@ -102,7 +102,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "draft",
       "name" : "NMDPPractitionerRoleVS",
       "title" : "NMDP Practitioner Role Value Set",
@@ -114,7 +114,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "draft",
       "name" : "NMDPPreferredProductVS",
       "title" : "NMDP Preferred Product Value Set",
@@ -126,7 +126,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-race-codes",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "draft",
       "name" : "NMDPRaceVS",
       "title" : "NMDP Race Value Set",
@@ -135,7 +135,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "draft",
       "name" : "NMDPRhStatusVS",
       "title" : "NMDP Codes for Rh status",
@@ -147,7 +147,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "draft",
       "name" : "NMDPTransplantTimelineVS",
       "title" : "NMDP Transplant Timeline Value Set",
@@ -159,7 +159,7 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "draft",
       "name" : "SCTABOGroupVS",
       "title" : "Snomed CT ABO group Value Set",
@@ -171,7 +171,7 @@
     },
     {
       "url" : "http://loinc.org/vs/LL2419-1",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "active",
       "name" : "LNCABOGroupVS",
       "title" : "LOINC ABO group Value Set",
@@ -184,7 +184,7 @@
     },
     {
       "url" : "http://loinc.org/vs/LL2972-9",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "active",
       "name" : "LNCABORHGroupVS",
       "title" : "LOINC ABO RH group Value Set",
@@ -196,7 +196,7 @@
     },
     {
       "url" : "http://loinc.org/vs/LL360-9",
-      "version" : "0.1.0",
+      "version" : "0.1.1",
       "status" : "active",
       "name" : "PosNegVS",
       "title" : "LOINC Pos|Neg Value Set",
@@ -206,18 +206,6 @@
       },
       "ValueSet-ms-rh-codes.html" : "MatchSync Rh Value Sets",
       "StructureDefinition-ms-rhstatus-observation.html" : "MSRhStatusObservation"
-    },
-    {
-      "url" : "http://loinc.org/vs/LL3639-3",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "LNCCMVGroupVS",
-      "title" : "LOINC CMV group Value Set",
-      "description" : "LOINC codes for CMV",
-      "systems" : ["http://loinc.org"],
-      "uses" : {
-      },
-      "StructureDefinition-ms-cmvgroup-observation.html" : "MSCmvObservation"
     }
   ]
 }

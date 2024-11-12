@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-rh-codes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ms-rh-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ms-rh-codes</b></p><a name=\"ms-rh-codes\"> </a><a name=\"hcms-rh-codes\"> </a><a name=\"ms-rh-codes-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-nmdp-rh-status-codes.html\">NMDP Codes for Rh status</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-loinc-posneg-codes.html\">LOINC Pos|Neg Value Set</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-rh-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "MSRhVS"] ; # 
+  fhir:title [ fhir:v "MatchSync Rh Value Sets"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-11-11T17:47:55-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NMDP"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NMDP" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://bethematch.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "MatchSync codes for blood Rh. Combines NMDP and LOINC code"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes"^^xsd:anyURI ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://loinc.org/vs/LL360-9"^^xsd:anyURI ;
+         fhir:link <http://loinc.org/vs/LL360-9>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
