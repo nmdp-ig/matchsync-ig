@@ -10,15 +10,15 @@
   fhir:id [ fhir:v "nmdp-language-codes"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-language-cs.html\"><code>http://terminology.nmdp.org/codesystem/language</code></a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nmdp-language-codes</b></p><a name=\"nmdp-language-codes\"> </a><a name=\"hcnmdp-language-codes\"> </a><a name=\"nmdp-language-codes-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-language-cs.html\"><code>http://terminology.nmdp.org/codesystem/language</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NMDPLanguageCodes"] ; # 
   fhir:title [ fhir:v "NMDP Language Value Set"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-05-09T13:30:22-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-08T17:25:20-06:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NMDP"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NMDP" ] ;

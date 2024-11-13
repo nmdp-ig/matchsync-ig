@@ -3,15 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="ms-rh-codes"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-nmdp-rh-status-codes.html">NMDP Codes for Rh status</a></li><li>Import all the codes that are contained in <a href="ValueSet-loinc-posneg-codes.html">LOINC Pos|Neg Value Set</a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ms-rh-codes</b></p><a name="ms-rh-codes"> </a><a name="hcms-rh-codes"> </a><a name="ms-rh-codes-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-nmdp-rh-status-codes.html">NMDP Codes for Rh status</a></li><li>Import all the codes that are contained in <a href="ValueSet-loinc-posneg-codes.html">LOINC Pos|Neg Value Set</a></li></ul></div>
   </text>
   <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-rh-codes"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="MSRhVS"/>
   <title value="MatchSync Rh Value Sets"/>
-  <status value="active"/>
+  <status value="draft"/>
   <experimental value="true"/>
-  <date value="2023-05-09T13:39:12-05:00"/>
+  <date value="2024-11-11T17:53:38-06:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>

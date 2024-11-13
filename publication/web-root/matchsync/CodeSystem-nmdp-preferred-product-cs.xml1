@@ -3,15 +3,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="nmdp-preferred-product-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://terminology.nmdp.org/codesystem/preferredproduct</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">PBSC<a name="nmdp-preferred-product-cs-PBSC"> </a></td><td>HPC, Apheresis</td></tr><tr><td style="white-space:nowrap">Marrow<a name="nmdp-preferred-product-cs-Marrow"> </a></td><td>HPC, Marrow</td></tr><tr><td style="white-space:nowrap">CBU<a name="nmdp-preferred-product-cs-CBU"> </a></td><td>HPC, Cord Blood</td></tr><tr><td style="white-space:nowrap">NP<a name="nmdp-preferred-product-cs-NP"> </a></td><td>No preference</td></tr><tr><td style="white-space:nowrap">U<a name="nmdp-preferred-product-cs-U"> </a></td><td>Unknown</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nmdp-preferred-product-cs</b></p><a name="nmdp-preferred-product-cs"> </a><a name="hcnmdp-preferred-product-cs"> </a><a name="nmdp-preferred-product-cs-en-US"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/preferredproduct</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">PBSC<a name="nmdp-preferred-product-cs-PBSC"> </a></td><td>HPC, Apheresis</td></tr><tr><td style="white-space:nowrap">Marrow<a name="nmdp-preferred-product-cs-Marrow"> </a></td><td>HPC, Marrow</td></tr><tr><td style="white-space:nowrap">CBU<a name="nmdp-preferred-product-cs-CBU"> </a></td><td>HPC, Cord Blood</td></tr><tr><td style="white-space:nowrap">NP<a name="nmdp-preferred-product-cs-NP"> </a></td><td>No preference</td></tr><tr><td style="white-space:nowrap">U<a name="nmdp-preferred-product-cs-U"> </a></td><td>Unknown</td></tr></table></div>
   </text>
   <url value="http://terminology.nmdp.org/codesystem/preferredproduct"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="NMDPPreferredProductCS"/>
   <title value="NMDP Preferred Product for Transplant"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2023-05-09T13:39:12-05:00"/>
+  <date value="2024-11-11T17:53:38-06:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>

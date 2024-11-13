@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nmdp-disease-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nmdp-disease-codes</b></p><a name=\"nmdp-disease-codes\"> </a><a name=\"hcnmdp-disease-codes\"> </a><a name=\"nmdp-disease-codes-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-disease-cs.html\"><code>http://terminology.nmdp.org/codesystem/disease</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes",
+  "version" : "0.1.1",
+  "name" : "NMDPDiseaseVS",
+  "title" : "NMDP Disease Value Set",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-11-11T17:47:55-06:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "NMDP disease codes",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/disease"
+    }]
+  }
+}

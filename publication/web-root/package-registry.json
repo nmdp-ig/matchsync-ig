@@ -18,6 +18,25 @@
         "date" : "2023-05-09",
         "path" : "http://fhir.nmdp.org/ig/matchsync/0.1.0"
       }
+    },
+    {
+      "path" : "matchsync/package-list.json",
+      "package-id" : "nmdp.fhir.matchsync",
+      "title" : "MatchSync Implementation Guide",
+      "canonical" : "http://fhir.nmdp.org/ig/matchsync",
+      "category" : "Research",
+      "ci-build" : "http://nmdp-ig.github.io/matchsync-ig",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "0.1.0",
+        "date" : "2024-11-11",
+        "path" : "http://fhir.nmdp.org/ig/matchsync/0.1.1"
+      },
+      "milestone" : {
+        "version" : "0.1.0",
+        "date" : "2024-11-11",
+        "path" : "http://fhir.nmdp.org/ig/matchsync/0.1.1"
+      }
     }
   ]
 }
