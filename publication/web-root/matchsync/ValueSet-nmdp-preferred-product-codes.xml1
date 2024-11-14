@@ -3,15 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="nmdp-preferred-product-codes"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-nmdp-preferred-product-cs.html"><code>http://terminology.nmdp.org/codesystem/preferredproduct</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nmdp-preferred-product-codes</b></p><a name="nmdp-preferred-product-codes"> </a><a name="hcnmdp-preferred-product-codes"> </a><a name="nmdp-preferred-product-codes-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nmdp-preferred-product-cs.html"><code>http://terminology.nmdp.org/codesystem/preferredproduct</code></a></li></ul></div>
   </text>
   <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="NMDPPreferredProductVS"/>
   <title value="NMDP Preferred Product Value Set"/>
-  <status value="active"/>
+  <status value="draft"/>
   <experimental value="true"/>
-  <date value="2023-05-09T13:39:12-05:00"/>
+  <date value="2024-11-11T17:53:38-06:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>

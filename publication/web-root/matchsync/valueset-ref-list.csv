@@ -1,0 +1,19 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset,0.1.1,draft,,HLAGeneIdVS,HLA Gene Name Value Set,"HLA HGNC GeneIds Valueset","StructureDefinition/hla-genotype","Internal"
+http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes,0.1.1,draft,,ICD10GVHDVS,GVHD ICD-10 Codes,"GVHD ICD-10 Codes",,"hl7.terminology.r4"
+http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-group-codes,0.1.1,draft,,MSABOGroupVS,MatchSync ABO Group Value Set,"MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes",,
+http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-rh-codes,0.1.1,draft,,MSRhVS,MatchSync Rh Value Sets,"MatchSync codes for blood Rh. Combines NMDP and LOINC code",,
+http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes,0.1.1,draft,,NMDPABOVS,NMDP Blood Group Value Set,"NMDP blood group codes","ValueSet/ms-abo-group-codes","Internal"
+http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes,0.1.1,draft,,NMDPDiseaseVS,NMDP Disease Value Set,"NMDP disease codes","StructureDefinition/msdiagnosis","Internal"
+http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes,0.1.1,draft,,NMDPDiseasStageVS,NMDP Disease Stage Value Set,"NMDP disease stage codes","StructureDefinition/msdiagnosis","Internal"
+http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-ethnicity-codes,0.1.1,draft,,NMDPEthnicityVS,NMDP Ethnicity Value Set,"NMDP ethnicity codes",,"Internal"
+http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes,0.1.1,draft,,NMDPLanguageCodes,NMDP Language Value Set,"NMDP language codes",,"Internal"
+http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs,0.1.1,draft,,NMDPPractitionerRoleVS,NMDP Practitioner Role Value Set,"NMDP Practitioner Role Value Set","StructureDefinition/nmdp-practitioner-role","Internal"
+http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes,0.1.1,draft,,NMDPPreferredProductVS,NMDP Preferred Product Value Set,"NMDP preferred product codes","StructureDefinition/ms-preferred-product-observation","Internal"
+http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-race-codes,0.1.1,draft,,NMDPRaceVS,NMDP Race Value Set,"NMDP race codes",,"Internal"
+http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes,0.1.1,draft,,NMDPRhStatusVS,NMDP Codes for Rh status,"NMDP codes for Rh staus","ValueSet/ms-rh-codes","Internal"
+http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes,0.1.1,draft,,NMDPTransplantTimelineVS,NMDP Transplant Timeline Value Set,"NMDP transplant timeline codes","StructureDefinition/ms-transplant-timeline-observation","Internal"
+http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes,0.1.1,draft,,SCTABOGroupVS,Snomed CT ABO group Value Set,"Snomed CT codes for ABO blood group","ValueSet/ms-abo-group-codes","SCT"
+http://loinc.org/vs/LL2419-1,0.1.1,active,,LNCABOGroupVS,LOINC ABO group Value Set,"LOINC codes for ABO blood group","StructureDefinition/ms-abogroup-observation,ValueSet/ms-abo-group-codes","LOINC"
+http://loinc.org/vs/LL2972-9,0.1.1,active,,LNCABORHGroupVS,LOINC ABO RH group Value Set,"LOINC codes for ABO RH blood group","StructureDefinition/ms-aborhgroup-observation","LOINC"
+http://loinc.org/vs/LL360-9,0.1.1,active,,PosNegVS,LOINC Pos|Neg Value Set,"LOINC codes for Positive and Negative","ValueSet/ms-rh-codes,StructureDefinition/ms-rhstatus-observation","LOINC"

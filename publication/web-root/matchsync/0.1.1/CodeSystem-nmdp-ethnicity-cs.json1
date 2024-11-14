@@ -1,0 +1,40 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "nmdp-ethnicity-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nmdp-ethnicity-cs</b></p><a name=\"nmdp-ethnicity-cs\"> </a><a name=\"hcnmdp-ethnicity-cs\"> </a><a name=\"nmdp-ethnicity-cs-en-US\"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/ethnicity</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">NHIS<a name=\"nmdp-ethnicity-cs-NHIS\"> </a></td><td>Not Hispanic or Latino</td></tr><tr><td style=\"white-space:nowrap\">HIS<a name=\"nmdp-ethnicity-cs-HIS\"> </a></td><td>Hispanic or Latino</td></tr><tr><td style=\"white-space:nowrap\">nil<a name=\"nmdp-ethnicity-cs-nil\"> </a></td><td>No data</td></tr></table></div>"
+  },
+  "url" : "http://terminology.nmdp.org/codesystem/ethnicity",
+  "version" : "0.1.1",
+  "name" : "NMDPEthnicityCS",
+  "title" : "NMDP Ethnicity Code System",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-11-11T17:47:55-06:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "Code System for NMDP ethnicity",
+  "copyright" : "National Marrow Donor Program",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "NHIS",
+    "display" : "Not Hispanic or Latino"
+  },
+  {
+    "code" : "HIS",
+    "display" : "Hispanic or Latino"
+  },
+  {
+    "code" : "nil",
+    "display" : "No data"
+  }]
+}

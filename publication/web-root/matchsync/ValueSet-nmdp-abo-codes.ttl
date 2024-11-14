@@ -10,15 +10,15 @@
   fhir:id [ fhir:v "nmdp-abo-codes"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-abo-group-cs.html\"><code>http://terminology.nmdp.org/codesystem/abogroup</code></a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nmdp-abo-codes</b></p><a name=\"nmdp-abo-codes\"> </a><a name=\"hcnmdp-abo-codes\"> </a><a name=\"nmdp-abo-codes-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-abo-group-cs.html\"><code>http://terminology.nmdp.org/codesystem/abogroup</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
   fhir:name [ fhir:v "NMDPABOVS"] ; # 
   fhir:title [ fhir:v "NMDP Blood Group Value Set"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-05-09T13:39:12-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-11T17:53:38-06:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NMDP"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NMDP" ] ;

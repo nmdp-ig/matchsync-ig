@@ -98,6 +98,13 @@
     "name" : "MSABOGroupObservation"
   },
   {
+    "id" : "ms-aborhgroup-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-aborhgroup-observation",
+    "version" : "0.1.0",
+    "name" : "MSABORHObservation"
+  },
+  {
     "id" : "ms-bundle",
     "type" : "StructureDefinition",
     "url" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle",
@@ -313,6 +320,13 @@
     "url" : "http://loinc.org/vs/LL2419-1",
     "version" : "0.1.0",
     "name" : "LNCABOGroupVS"
+  },
+  {
+    "id" : "loinc-abo-rh-codes",
+    "type" : "ValueSet",
+    "url" : "http://loinc.org/vs/LL2972-9",
+    "version" : "0.1.0",
+    "name" : "LNCABORHGroupVS"
   },
   {
     "id" : "loinc-posneg-codes",

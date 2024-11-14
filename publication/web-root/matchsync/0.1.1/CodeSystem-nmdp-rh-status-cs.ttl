@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-rh-status-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nmdp-rh-status-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nmdp-rh-status-cs</b></p><a name=\"nmdp-rh-status-cs\"> </a><a name=\"hcnmdp-rh-status-cs\"> </a><a name=\"nmdp-rh-status-cs-en-US\"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/rhstatus</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"nmdp-rh-status-cs-I\"> </a></td><td>Indeterminant</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"nmdp-rh-status-cs-P\"> </a></td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"nmdp-rh-status-cs-N\"> </a></td><td>Negative</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"nmdp-rh-status-cs-D\"> </a></td><td>Indeterminant</td></tr><tr><td style=\"white-space:nowrap\">nil<a name=\"nmdp-rh-status-cs-nil\"> </a></td><td>no data</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.nmdp.org/codesystem/rhstatus"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "NMDPRhStatusCS"] ; # 
+  fhir:title [ fhir:v "NMDP Rh Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-11-11T17:47:55-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NMDP"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NMDP" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://bethematch.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code System for NMDP Rh Status"] ; # 
+  fhir:copyright [ fhir:v "National Marrow Donor Program"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "I" ] ;
+     fhir:display [ fhir:v "Indeterminant" ]
+  ] [
+     fhir:code [ fhir:v "P" ] ;
+     fhir:display [ fhir:v "Positive" ]
+  ] [
+     fhir:code [ fhir:v "N" ] ;
+     fhir:display [ fhir:v "Negative" ]
+  ] [
+     fhir:code [ fhir:v "D" ] ;
+     fhir:display [ fhir:v "Indeterminant" ]
+  ] [
+     fhir:code [ fhir:v "nil" ] ;
+     fhir:display [ fhir:v "no data" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

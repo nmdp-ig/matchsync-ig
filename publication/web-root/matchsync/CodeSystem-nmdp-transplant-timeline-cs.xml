@@ -3,15 +3,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="nmdp-transplant-timeline-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://terminology.nmdp.org/codesystem/transplanttimeline</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">&lt;4w<a name="nmdp-transplant-timeline-cs-.604w"> </a></td><td>Less than 4 weeks</td></tr><tr><td style="white-space:nowrap">4-6w<a name="nmdp-transplant-timeline-cs-4-6w"> </a></td><td>Between 4-6 weeks</td></tr><tr><td style="white-space:nowrap">7-12w<a name="nmdp-transplant-timeline-cs-7-12w"> </a></td><td>Between 7-12 weeks</td></tr><tr><td style="white-space:nowrap">12w-6m<a name="nmdp-transplant-timeline-cs-12w-6m"> </a></td><td>Over 12 weeks - up to 6 months</td></tr><tr><td style="white-space:nowrap">&gt;6m<a name="nmdp-transplant-timeline-cs-.626m"> </a></td><td>Greater than 6 months</td></tr><tr><td style="white-space:nowrap">NA<a name="nmdp-transplant-timeline-cs-NA"> </a></td><td>N/A : MUD Transplant not preferred treatment</td></tr><tr><td style="white-space:nowrap">P<a name="nmdp-transplant-timeline-cs-P"> </a></td><td>Pending, Case manager to follow up</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nmdp-transplant-timeline-cs</b></p><a name="nmdp-transplant-timeline-cs"> </a><a name="hcnmdp-transplant-timeline-cs"> </a><a name="nmdp-transplant-timeline-cs-en-US"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/transplanttimeline</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">&lt;4w<a name="nmdp-transplant-timeline-cs-.604w"> </a></td><td>Less than 4 weeks</td></tr><tr><td style="white-space:nowrap">4-6w<a name="nmdp-transplant-timeline-cs-4-6w"> </a></td><td>Between 4-6 weeks</td></tr><tr><td style="white-space:nowrap">7-12w<a name="nmdp-transplant-timeline-cs-7-12w"> </a></td><td>Between 7-12 weeks</td></tr><tr><td style="white-space:nowrap">12w-6m<a name="nmdp-transplant-timeline-cs-12w-6m"> </a></td><td>Over 12 weeks - up to 6 months</td></tr><tr><td style="white-space:nowrap">&gt;6m<a name="nmdp-transplant-timeline-cs-.626m"> </a></td><td>Greater than 6 months</td></tr><tr><td style="white-space:nowrap">NA<a name="nmdp-transplant-timeline-cs-NA"> </a></td><td>N/A : MUD Transplant not preferred treatment</td></tr><tr><td style="white-space:nowrap">P<a name="nmdp-transplant-timeline-cs-P"> </a></td><td>Pending, Case manager to follow up</td></tr></table></div>
   </text>
   <url value="http://terminology.nmdp.org/codesystem/transplanttimeline"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="NMDPTransplantTimelineCS"/>
   <title value="NMDP Transplant Timeline Code System"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2023-05-09T13:39:12-05:00"/>
+  <date value="2024-11-11T17:53:38-06:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>

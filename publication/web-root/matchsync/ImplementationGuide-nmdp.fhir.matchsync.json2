@@ -2,14 +2,14 @@
   "resourceType" : "ImplementationGuide",
   "id" : "nmdp.fhir.matchsync",
   "text" : {
-    "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MatchSyncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync</pre></div>"
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide nmdp.fhir.matchsync</b></p><a name=\"nmdp.fhir.matchsync\"> </a><a name=\"hcnmdp.fhir.matchsync\"> </a><a name=\"nmdp.fhir.matchsync-en-US\"> </a><h2>MatchSyncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync</pre></div>"
   },
   "url" : "http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync",
-  "version" : "0.1.0",
+  "version" : "0.1.1",
   "name" : "MatchSyncIG",
   "status" : "draft",
-  "date" : "2023-05-09T13:39:12-05:00",
+  "date" : "2024-11-11T17:53:38-06:00",
   "publisher" : "NMDP",
   "contact" : [{
     "name" : "NMDP",
@@ -29,7 +29,17 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.0.0"
+    "version" : "6.0.2"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.1.0"
   },
   {
     "id" : "hl7_fhir_us_core",
@@ -416,6 +426,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "active-tables"
       },
       {
@@ -470,7 +491,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#current"
+      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
     },
     {
       "extension" : [{
@@ -838,6 +859,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueCode" : "active-tables"
       },
       {
@@ -893,690 +925,6 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hla-genotype"
-      },
-      "name" : "HLA Genotype Observation",
-      "description" : "HLA Genotype profile of genotype observation",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hla-a"
-      },
-      "name" : "HLA_A",
-      "description" : "Genotype for HLA-A",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hla-b"
-      },
-      "name" : "HLA_B",
-      "description" : "Genotype for HLA-B",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hla-c"
-      },
-      "name" : "HLA_C",
-      "description" : "Genotype for HLA-C",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hla-dpa1"
-      },
-      "name" : "HLA_DPA1",
-      "description" : "Genotype for HLA-DPA1",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hla-dpb1"
-      },
-      "name" : "HLA_DPB1",
-      "description" : "Genotype for HLA-DPB1",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hla-dqa1"
-      },
-      "name" : "HLA_DQA1",
-      "description" : "Genotype for HLA-DQA1",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hla-dqb1"
-      },
-      "name" : "HLA_DQB1",
-      "description" : "Genotype for HLA-DQB1",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hla-drb1"
-      },
-      "name" : "HLA_DRB1",
-      "description" : "Genotype for HLA-DRB1",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hla-drb3"
-      },
-      "name" : "HLA_DRB3",
-      "description" : "Genotype for HLA-DRB3",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hla-drb4"
-      },
-      "name" : "HLA_DRB4",
-      "description" : "Genotype for HLA-DRB4",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hla-drb5"
-      },
-      "name" : "HLA_DRB5",
-      "description" : "Genotype for HLA-DRB5",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ms-abogroup-observation"
-      },
-      "name" : "MSABOGroupObservation",
-      "description" : "ABO Blood Group of Patient",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ms-bundle"
-      },
-      "name" : "MatchSync Bundle",
-      "description" : "Collection Bundle for MatchSync",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ms-bundle-hla-multilocus"
-      },
-      "name" : "MatchSync Bundle with single multilocus HLA",
-      "description" : "Collection Bundle for MatchSync with single HLA multilocus Observation",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ms-bundle-hla-separate"
-      },
-      "name" : "MatchSync Bundle with Separate HLA",
-      "description" : "Collection Bundle for MatchSync with separate HLA Observations for each locus",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ms-height-observation"
-      },
-      "name" : "MSHeightObservation",
-      "description" : "Height of Patient",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mspatient"
-      },
-      "name" : "MSPatient",
-      "description" : "Patient needing a transplant",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ms-preferred-product-observation"
-      },
-      "name" : "MSPreferredProduct",
-      "description" : "Preferred product for transplant",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/msdiagnosis"
-      },
-      "name" : "MSPrimaryDiagnosis",
-      "description" : "Diagnosis",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ms-rhstatus-observation"
-      },
-      "name" : "MSRhStatusObservation",
-      "description" : "Rh status of Patient",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/msspecimen"
-      },
-      "name" : "MSSpecimen",
-      "description" : "Patient sample used for HLA typing",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ms-transplant-timeline-observation"
-      },
-      "name" : "MSTransplantTimeline",
-      "description" : "Transplant timeline for patient",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ms-weight-observation"
-      },
-      "name" : "MSWeightObservation",
-      "description" : "Weight of Patient",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/nmdp-practitioner"
-      },
-      "name" : "NMDPPractitioner",
-      "description" : "NMDP Practitioner",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/nmdp-practitioner-role"
-      },
-      "name" : "NMDPPractitionerRole",
-      "description" : "NMDP Practitioner Role",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/transplantcenter"
-      },
-      "name" : "TransplantCenter",
-      "description" : "Transplant Center",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/number-of-remissions"
-      },
-      "name" : "Number of Remissions of Primary Diagnosis",
-      "description" : "Number of Remissions of Primary Diagnosis",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/hla-geneid-valueset"
-      },
-      "name" : "HLA Gene Name Value Set",
-      "description" : "HLA HGNC GeneIds Valueset",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/icd10-gvhd-codes"
-      },
-      "name" : "GVHD ICD-10 Codes",
-      "description" : "GVHD ICD-10 Codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/loinc-abo-codes"
-      },
-      "name" : "LOINC ABO group Value Set",
-      "description" : "LOINC codes for ABO blood group",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ms-abo-group-codes"
-      },
-      "name" : "MatchSync ABO Group Value Set",
-      "description" : "MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ms-rh-codes"
-      },
-      "name" : "MatchSync Rh Value Sets",
-      "description" : "MatchSync codes for blood Rh. Combines NMDP and LOINC code",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nmdp-abo-codes"
-      },
-      "name" : "NMDP Blood Group Value Set",
-      "description" : "NMDP blood group codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nmdp-diseasestage-codes"
-      },
-      "name" : "NMDP Disease Stage Value Set",
-      "description" : "NMDP disease stage codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nmdp-disease-codes"
-      },
-      "name" : "NMDP Disease Value Set",
-      "description" : "NMDP disease codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nmdp-ethnicity-codes"
-      },
-      "name" : "NMDP Ethnicity Value Set",
-      "description" : "NMDP ethnicity codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nmdp-language-codes"
-      },
-      "name" : "NMDP Language Value Set",
-      "description" : "NMDP language codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nmdp-practitioner-role-vs"
-      },
-      "name" : "NMDP Practitioner Role Value Set",
-      "description" : "NMDP Practitioner Role Value Set",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nmdp-preferred-product-codes"
-      },
-      "name" : "NMDP Preferred Product Value Set",
-      "description" : "NMDP preferred product codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nmdp-race-codes"
-      },
-      "name" : "NMDP Race Value Set",
-      "description" : "NMDP race codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nmdp-rh-status-codes"
-      },
-      "name" : "NMDP Codes for Rh status",
-      "description" : "NMDP codes for Rh staus",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nmdp-transplant-timeline-codes"
-      },
-      "name" : "NMDP Transplant Timeline Value Set",
-      "description" : "NMDP transplant timeline codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/loinc-posneg-codes"
-      },
-      "name" : "LOINC Pos|Neg Value Set",
-      "description" : "LOINC codes for Positive and Negative",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/sct-abo-group-codes"
-      },
-      "name" : "Snomed CT ABO group Value Set",
-      "description" : "Snomed CT codes for ABO blood group",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/glstring-codesystem"
-      },
-      "name" : "Genotype List String Code CodeSystem",
-      "description" : "Genotype List String Codesystem used for HLA reporting",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/hla-genename-codesystem"
-      },
-      "name" : "HLA HGNC GeneID CodeSystem",
-      "description" : "CodeSystem of HLA gene group subset of HGNC GeneId Codesystem",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/nmdp-abo-group-cs"
-      },
-      "name" : "NMDP Blood Group Code System",
-      "description" : "Code System for NMDP ABO blood groups",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/nmdp-disease-cs"
-      },
-      "name" : "NMDP Disease Code System",
-      "description" : "Code System for NMDP diseases",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/nmdp-diseasestage-cs"
-      },
-      "name" : "NMDP Disease Stage Code System",
-      "description" : "Code System for NMDP disease stages",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/nmdp-ethnicity-cs"
-      },
-      "name" : "NMDP Ethnicity Code System",
-      "description" : "Code System for NMDP ethnicity",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/nmdp-language-cs"
-      },
-      "name" : "NMDP Language Code System",
-      "description" : "Code System for NMDP languages",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/nmdp-practitioner-role-cs"
-      },
-      "name" : "NMDP Practitioner Roles",
-      "description" : "NMDP Practitioner Roles",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/nmdp-preferred-product-cs"
-      },
-      "name" : "NMDP Preferred Product for Transplant",
-      "description" : "NMDP Preferred Product for MatchSync patient",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/nmdp-race-cs"
-      },
-      "name" : "NMDP Race Code System",
-      "description" : "Code System for NMDP diseases",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/nmdp-rh-status-cs"
-      },
-      "name" : "NMDP Rh Code System",
-      "description" : "Code System for NMDP Rh Status",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/nmdp-transplant-timeline-cs"
-      },
-      "name" : "NMDP Transplant Timeline Code System",
-      "description" : "Code System for NMDP transplant timeline",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Practitioner"
       }],
       "reference" : {
@@ -1613,14 +961,110 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
+        "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "Bundle/BundleExample-Practitioner"
+        "reference" : "Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c"
       },
-      "name" : "MatchSync Bundle Example - Practioners",
-      "description" : "MatchSync Bundle Example with Patient, Search Coordinator, Referring Physician, and TC Physician",
-      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle"
+      "name" : "a9e56f2a-0827-4efd-a773-ed48c6e2752c",
+      "description" : "Example of a Diagnois: AML",
+      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/ad78058a-c0fe-4ea0-bc86-d2f3770a1944"
+      },
+      "name" : "ad78058a-c0fe-4ea0-bc86-d2f3770a1944",
+      "description" : "Example of Transplant Center Search Coordinotor Role",
+      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/f1942bac-b8b3-45a1-b1d0-6928326d03ce"
+      },
+      "name" : "f1942bac-b8b3-45a1-b1d0-6928326d03ce",
+      "description" : "Example of Referring Physician Role",
+      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/fe6acf5d-ed53-4758-8d38-10d915c984af"
+      },
+      "name" : "fe6acf5d-ed53-4758-8d38-10d915c984af",
+      "description" : "Example of a search coordinator practitioner.",
+      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/glstring-codesystem"
+      },
+      "name" : "Genotype List String Code CodeSystem",
+      "description" : "Genotype List String Codesystem used for HLA reporting",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/icd10-gvhd-codes"
+      },
+      "name" : "GVHD ICD-10 Codes",
+      "description" : "GVHD ICD-10 Codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/hla-geneid-valueset"
+      },
+      "name" : "HLA Gene Name Value Set",
+      "description" : "HLA HGNC GeneIds Valueset",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hla-genotype"
+      },
+      "name" : "HLA Genotype Observation",
+      "description" : "HLA Genotype profile of genotype observation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/hla-genename-codesystem"
+      },
+      "name" : "HLA HGNC GeneID CodeSystem",
+      "description" : "CodeSystem of HLA gene group subset of HGNC GeneId Codesystem",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1769,6 +1213,258 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hla-a"
+      },
+      "name" : "HLA_A",
+      "description" : "Genotype for HLA-A",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hla-b"
+      },
+      "name" : "HLA_B",
+      "description" : "Genotype for HLA-B",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hla-c"
+      },
+      "name" : "HLA_C",
+      "description" : "Genotype for HLA-C",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hla-dpa1"
+      },
+      "name" : "HLA_DPA1",
+      "description" : "Genotype for HLA-DPA1",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hla-dpb1"
+      },
+      "name" : "HLA_DPB1",
+      "description" : "Genotype for HLA-DPB1",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hla-dqa1"
+      },
+      "name" : "HLA_DQA1",
+      "description" : "Genotype for HLA-DQA1",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hla-dqb1"
+      },
+      "name" : "HLA_DQB1",
+      "description" : "Genotype for HLA-DQB1",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hla-drb1"
+      },
+      "name" : "HLA_DRB1",
+      "description" : "Genotype for HLA-DRB1",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hla-drb3"
+      },
+      "name" : "HLA_DRB3",
+      "description" : "Genotype for HLA-DRB3",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hla-drb4"
+      },
+      "name" : "HLA_DRB4",
+      "description" : "Genotype for HLA-DRB4",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hla-drb5"
+      },
+      "name" : "HLA_DRB5",
+      "description" : "Genotype for HLA-DRB5",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/loinc-abo-codes"
+      },
+      "name" : "LOINC ABO group Value Set",
+      "description" : "LOINC codes for ABO blood group",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/loinc-abo-rh-codes"
+      },
+      "name" : "LOINC ABO RH group Value Set",
+      "description" : "LOINC codes for ABO RH blood group",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/loinc-posneg-codes"
+      },
+      "name" : "LOINC Pos|Neg Value Set",
+      "description" : "LOINC codes for Positive and Negative",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ms-abo-group-codes"
+      },
+      "name" : "MatchSync ABO Group Value Set",
+      "description" : "MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ms-bundle"
+      },
+      "name" : "MatchSync Bundle",
+      "description" : "Collection Bundle for MatchSync",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/BundleExample-Practitioner"
+      },
+      "name" : "MatchSync Bundle Example - Practioners",
+      "description" : "MatchSync Bundle Example with Patient, Search Coordinator, Referring Physician, and TC Physician",
+      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ms-bundle-hla-separate"
+      },
+      "name" : "MatchSync Bundle with Separate HLA",
+      "description" : "Collection Bundle for MatchSync with separate HLA Observations for each locus",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ms-bundle-hla-multilocus"
+      },
+      "name" : "MatchSync Bundle with single multilocus HLA",
+      "description" : "Collection Bundle for MatchSync with single HLA multilocus Observation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ms-rh-codes"
+      },
+      "name" : "MatchSync Rh Value Sets",
+      "description" : "MatchSync codes for blood Rh. Combines NMDP and LOINC code",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ms-abogroup-observation"
+      },
+      "name" : "MSABOGroupObservation",
+      "description" : "ABO Blood Group of Patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -1777,6 +1473,30 @@
       "name" : "MSABOObsExample",
       "description" : "Example of patient ABO",
       "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-abogroup-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ms-aborhgroup-observation"
+      },
+      "name" : "MSABORHObservation",
+      "description" : "ABO and Rh group [Type] in Blood",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MSABORHObsExample"
+      },
+      "name" : "MSABORHObsExample",
+      "description" : "Example of patient ABO and RH",
+      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-aborhgroup-observation"
     },
     {
       "extension" : [{
@@ -1805,6 +1525,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ms-height-observation"
+      },
+      "name" : "MSHeightObservation",
+      "description" : "Height of Patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -1813,6 +1545,18 @@
       "name" : "MSHeightObsExample",
       "description" : "Example of patient height",
       "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mspatient"
+      },
+      "name" : "MSPatient",
+      "description" : "Patient needing a transplant",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1877,6 +1621,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ms-preferred-product-observation"
+      },
+      "name" : "MSPreferredProduct",
+      "description" : "Preferred product for transplant",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -1885,6 +1641,18 @@
       "name" : "MSPreferredProductExample",
       "description" : "Example of preferred product",
       "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/msdiagnosis"
+      },
+      "name" : "MSPrimaryDiagnosis",
+      "description" : "Diagnosis",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1901,6 +1669,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ms-rhstatus-observation"
+      },
+      "name" : "MSRhStatusObservation",
+      "description" : "Rh status of Patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/msspecimen"
+      },
+      "name" : "MSSpecimen",
+      "description" : "Patient sample used for HLA typing",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Specimen"
       }],
       "reference" : {
@@ -1909,6 +1701,18 @@
       "name" : "MSSpecimenExample",
       "description" : "Example patient specimen.",
       "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msspecimen"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ms-transplant-timeline-observation"
+      },
+      "name" : "MSTransplantTimeline",
+      "description" : "Transplant timeline for patient",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1925,6 +1729,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ms-weight-observation"
+      },
+      "name" : "MSWeightObservation",
+      "description" : "Weight of Patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -1933,6 +1749,282 @@
       "name" : "MSWeightObsExample",
       "description" : "Example of patient weight",
       "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-weight-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nmdp-abo-group-cs"
+      },
+      "name" : "NMDP Blood Group Code System",
+      "description" : "Code System for NMDP ABO blood groups",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nmdp-abo-codes"
+      },
+      "name" : "NMDP Blood Group Value Set",
+      "description" : "NMDP blood group codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nmdp-rh-status-codes"
+      },
+      "name" : "NMDP Codes for Rh status",
+      "description" : "NMDP codes for Rh staus",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nmdp-disease-cs"
+      },
+      "name" : "NMDP Disease Code System",
+      "description" : "Code System for NMDP diseases",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nmdp-diseasestage-cs"
+      },
+      "name" : "NMDP Disease Stage Code System",
+      "description" : "Code System for NMDP disease stages",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nmdp-diseasestage-codes"
+      },
+      "name" : "NMDP Disease Stage Value Set",
+      "description" : "NMDP disease stage codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nmdp-disease-codes"
+      },
+      "name" : "NMDP Disease Value Set",
+      "description" : "NMDP disease codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nmdp-ethnicity-cs"
+      },
+      "name" : "NMDP Ethnicity Code System",
+      "description" : "Code System for NMDP ethnicity",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nmdp-ethnicity-codes"
+      },
+      "name" : "NMDP Ethnicity Value Set",
+      "description" : "NMDP ethnicity codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nmdp-language-cs"
+      },
+      "name" : "NMDP Language Code System",
+      "description" : "Code System for NMDP languages",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nmdp-language-codes"
+      },
+      "name" : "NMDP Language Value Set",
+      "description" : "NMDP language codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nmdp-practitioner-role-vs"
+      },
+      "name" : "NMDP Practitioner Role Value Set",
+      "description" : "NMDP Practitioner Role Value Set",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nmdp-practitioner-role-cs"
+      },
+      "name" : "NMDP Practitioner Roles",
+      "description" : "NMDP Practitioner Roles",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nmdp-preferred-product-cs"
+      },
+      "name" : "NMDP Preferred Product for Transplant",
+      "description" : "NMDP Preferred Product for MatchSync patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nmdp-preferred-product-codes"
+      },
+      "name" : "NMDP Preferred Product Value Set",
+      "description" : "NMDP preferred product codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nmdp-race-cs"
+      },
+      "name" : "NMDP Race Code System",
+      "description" : "Code System for NMDP diseases",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nmdp-race-codes"
+      },
+      "name" : "NMDP Race Value Set",
+      "description" : "NMDP race codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nmdp-rh-status-cs"
+      },
+      "name" : "NMDP Rh Code System",
+      "description" : "Code System for NMDP Rh Status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nmdp-transplant-timeline-cs"
+      },
+      "name" : "NMDP Transplant Timeline Code System",
+      "description" : "Code System for NMDP transplant timeline",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nmdp-transplant-timeline-codes"
+      },
+      "name" : "NMDP Transplant Timeline Value Set",
+      "description" : "NMDP transplant timeline codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nmdp-practitioner"
+      },
+      "name" : "NMDPPractitioner",
+      "description" : "NMDP Practitioner",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/nmdp-practitioner-role"
+      },
+      "name" : "NMDPPractitionerRole",
+      "description" : "NMDP Practitioner Role",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/number-of-remissions"
+      },
+      "name" : "Number of Remissions of Primary Diagnosis",
+      "description" : "Number of Remissions of Primary Diagnosis",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1985,6 +2077,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sct-abo-group-codes"
+      },
+      "name" : "Snomed CT ABO group Value Set",
+      "description" : "Snomed CT codes for ABO blood group",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
       }],
       "reference" : {
@@ -2009,50 +2113,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c"
+        "reference" : "StructureDefinition/transplantcenter"
       },
-      "name" : "a9e56f2a-0827-4efd-a773-ed48c6e2752c",
-      "description" : "Example of a Diagnois: AML",
-      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PractitionerRole"
-      }],
-      "reference" : {
-        "reference" : "PractitionerRole/ad78058a-c0fe-4ea0-bc86-d2f3770a1944"
-      },
-      "name" : "ad78058a-c0fe-4ea0-bc86-d2f3770a1944",
-      "description" : "Example of Transplant Center Search Coordinotor Role",
-      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PractitionerRole"
-      }],
-      "reference" : {
-        "reference" : "PractitionerRole/f1942bac-b8b3-45a1-b1d0-6928326d03ce"
-      },
-      "name" : "f1942bac-b8b3-45a1-b1d0-6928326d03ce",
-      "description" : "Example of Referring Physician Role",
-      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/fe6acf5d-ed53-4758-8d38-10d915c984af"
-      },
-      "name" : "fe6acf5d-ed53-4758-8d38-10d915c984af",
-      "description" : "Example of a search coordinator practitioner.",
-      "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"
+      "name" : "TransplantCenter",
+      "description" : "Transplant Center",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{
