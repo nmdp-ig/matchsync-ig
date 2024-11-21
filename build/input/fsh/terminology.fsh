@@ -511,3 +511,20 @@ Id: nmdp-practitioner-role-vs
 Description:  "NMDP Practitioner Role Value Set"
 * include codes from system nmdp-practitioner-role-cs
 * ^experimental = true
+
+ValueSet: LNCCMVGroupVS
+Id: loinc-cmv-codes
+Title: "LOINC CMV group Value Set"
+Description: "LOINC codes for CMV"
+* ^url = "http://loinc.org/vs/LL3639-3"
+* ^status = #active
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
+* ^version = "Loinc_2.72"
+* ^publisher = "Regenstrief Institute, Inc."
+* ^experimental = true
+//update these codes for the answer list
+* $LNC#LA6576-8  "P"
+* $LNC#LA6577-6  "N"
+* $LNC#LA11885-3  "I"
+* $LNC#LA9663-1  "I"
+* $LNC#LA113538-6  "U"

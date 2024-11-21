@@ -167,3 +167,28 @@ Description: "Example of transplant timeline"
     * code = 	#P
     * display = "Pending, Case manager to follow up"
 * effectiveDateTime = "2022-05-01"
+
+Profile: MSCmvObservation
+Parent: Observation
+Id: ms-cmvgroup-observation
+Description: "Cytomeglovirus found in patient"
+* insert MetaSecurityRules
+* subject 1..1 MS
+* subject only Reference(mspatient) 
+* code = $LNC#LA6576-8 "Positive(#LA6576-8), Negative(#LA6577-6), Inconclusive(#LA11885-3), Invonclusive(#LA9663-1), Untested(#LA13538-6)"
+* effectiveDateTime 1..1 MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from loinc-cmv-codes
+
+Instance: MSCmvExample
+InstanceOf: ms-cmvgroup-observation
+Description: "Example of Cytomeglovirus found in patient"
+* meta.security[TransplantCenter].code = #tc_123
+* status = #final
+* subject = Reference(MSPatientExample)
+* valueCodeableConcept
+  * coding
+    * system = $LNC
+    * code = 	#LA6576-8
+    * display = "Positive"
+* effectiveDateTime = "2022-05-01"

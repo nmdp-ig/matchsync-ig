@@ -51,6 +51,8 @@ Description: "Example of a patient needing a donor using us-core-race and us-cor
 * extension[race].extension[text].valueString = "White"
 * extension[ethnicity].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "Not Hispanic or Latino"
 * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
+* extension[birthsex].valueCode = #F "Allowed values only 'M', 'F' https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.24/expansion"
+* extension[genderIdentity].valueCodeableConcept = $SCT#446141000124107 "Identifies as female gender (finding)"
 * identifier.system = "http://example.org/mrn"
 * identifier.value = "123"
 
@@ -278,3 +280,58 @@ Invariant:  sec-rc
 Severity:   #error
 Description: "Use transplant center identifier for security tag"
 Expression: "matches('^tc_[0-9]{5}$')"
+
+Instance: MSPatientBirthSex
+InstanceOf: MSPatient
+Description: "Example of a patient using BirthSex codes"
+* meta.security[TransplantCenter].code = #tc_123
+* name
+  * given[0] = "Jane"
+  * family = "Everyperson"
+* gender = #female
+* birthDate = "1974-12-25"
+* address.line[0] = "123 Main St"
+* address.country = "USA"
+* address.city = "Minneapolis"
+* address.state = "MN"
+* address.postalCode = "55401"
+* telecom[0].value = "1-612-555-1234"
+* extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2106-3 "White"
+* extension[race].extension[text].valueString = "White"
+* extension[ethnicity].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "Not Hispanic or Latino"
+* extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
+* extension[birthsex].valueCode = #F "Allowed values only 'M', 'F' https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.24/expansion"
+* identifier.system = "http://example.org/mrn"
+* identifier.value = "123"
+
+
+Instance: MSPatientGenderIdentity
+InstanceOf: MSPatient
+Description: "Example of a patient using Gender Identity codes"
+* meta.security[TransplantCenter].code = #tc_123
+* name
+  * given[0] = "Jane"
+  * family = "Everyperson"
+* gender = #female
+* birthDate = "1974-12-25"
+* address.line[0] = "123 Main St"
+* address.country = "USA"
+* address.city = "Minneapolis"
+* address.state = "MN"
+* address.postalCode = "55401"
+* telecom[0].value = "1-612-555-1234"
+* extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2106-3 "White"
+* extension[race].extension[text].valueString = "White"
+* extension[ethnicity].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "Not Hispanic or Latino"
+* extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
+* extension[birthsex].valueCode = #F "Allowed values only 'M', 'F' https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.24/expansion"
+* identifier.system = "http://example.org/mrn"
+* identifier.value = "123"
+* extension[genderIdentity].valueCodeableConcept = $SCT#446141000124107 "'33791000087105':   'Identifies as nonbinary gender (finding)'        ->  'NB': 'Non-binary'
+    #407376001:     'Male-to-female transsexual (finding)'           ->  'SI': 'Self-identified'
+		'407377005':        'Female-to-male transsexual (finding)'            ->  'SI': 'Self-identified'
+		'446131000124102':  'Identifies as non-conforming gender (finding)'   ->  'SI': 'Self-identified'
+		'446141000124107':  'Identifies as female gender (finding)'           ->  'F': 'Female'
+		'446151000124109':  'Identifies as male gender (finding)'             ->  'M': 'Male'
+		'OTH':              'other'                                           ->  'SI': 'Self-identified'
+		'UNK':              'unknown'                                         ->  'SI': 'Self-identified'"
