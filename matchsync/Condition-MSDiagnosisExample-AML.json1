@@ -1,0 +1,39 @@
+{
+  "resourceType" : "Condition",
+  "id" : "MSDiagnosisExample-AML",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis"],
+    "security" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplant-center",
+      "code" : "tc_123"
+    }]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition MSDiagnosisExample-AML</b></p><a name=\"MSDiagnosisExample-AML\"> </a><a name=\"hcMSDiagnosisExample-AML\"> </a><a name=\"MSDiagnosisExample-AML-en-US\"> </a><p><b>Number of Remissions of Primary Diagnosis</b>: 0</p><p><b>code</b>: <span title=\"Codes:{http://terminology.nmdp.org/codesystem/disease AML}\">ACUTE MYELOGENOUS LEUKEMIA</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample5.html\">Joe Everyperson  Male, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>recordedDate</b>: 2021-11-01</p><h3>Stages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Summary</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.nmdp.org/codesystem/diseasestage AP}\">Accelerated Phase</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/number-of-remissions",
+    "valueInteger" : 0
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/disease",
+      "code" : "AML",
+      "display" : "ACUTE MYELOGENOUS LEUKEMIA"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/MSPatientExample5"
+  },
+  "recordedDate" : "2021-11-01",
+  "stage" : [{
+    "summary" : {
+      "coding" : [{
+        "system" : "http://terminology.nmdp.org/codesystem/diseasestage",
+        "code" : "AP",
+        "display" : "Accelerated Phase"
+      }]
+    }
+  }]
+}

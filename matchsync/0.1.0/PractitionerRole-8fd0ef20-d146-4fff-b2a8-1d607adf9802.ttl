@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/PractitionerRole/8fd0ef20-d146-4fff-b2a8-1d607adf9802> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "8fd0ef20-d146-4fff-b2a8-1d607adf9802"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole 8fd0ef20-d146-4fff-b2a8-1d607adf9802</b></p><a name=\"8fd0ef20-d146-4fff-b2a8-1d607adf9802\"> </a><a name=\"hc8fd0ef20-d146-4fff-b2a8-1d607adf9802\"> </a><a name=\"8fd0ef20-d146-4fff-b2a8-1d607adf9802-en-US\"> </a><p><b>practitioner</b>: <a href=\"Bundle-BundleExample-Practitioner.html#urn-uuid-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa\">Lisa Simpson</a></p><p><b>code</b>: <span title=\"Codes:{http://terminology.nmdp.org/codesystem/practitionerrole tcphysician}\">Transplant Center Physician</span></p></div>"
+  ] ; # 
+  fhir:practitioner [
+     fhir:reference [ fhir:v "urn:uuid:26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa" ] ;
+     fhir:display [ fhir:v "Lisa Simpson" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/practitionerrole"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tcphysician" ] ;
+       fhir:display [ fhir:v "Transplant Center Physician" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

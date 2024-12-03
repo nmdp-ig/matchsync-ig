@@ -1,0 +1,48 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "nmdp-abo-group-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nmdp-abo-group-cs</b></p><a name=\"nmdp-abo-group-cs\"> </a><a name=\"hcnmdp-abo-group-cs\"> </a><a name=\"nmdp-abo-group-cs-en-US\"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/abogroup</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"nmdp-abo-group-cs-A\"> </a></td><td>A</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"nmdp-abo-group-cs-B\"> </a></td><td>B</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"nmdp-abo-group-cs-O\"> </a></td><td>O</td></tr><tr><td style=\"white-space:nowrap\">AB<a name=\"nmdp-abo-group-cs-AB\"> </a></td><td>AB</td></tr><tr><td style=\"white-space:nowrap\">nil<a name=\"nmdp-abo-group-cs-nil\"> </a></td><td>no data</td></tr></table></div>"
+  },
+  "url" : "http://terminology.nmdp.org/codesystem/abogroup",
+  "version" : "0.1.0",
+  "name" : "NMDPABOCS",
+  "title" : "NMDP Blood Group Code System",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-11-08T17:25:20-06:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "Code System for NMDP ABO blood groups",
+  "copyright" : "National Marrow Donor Program",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "A",
+    "display" : "A"
+  },
+  {
+    "code" : "B",
+    "display" : "B"
+  },
+  {
+    "code" : "O",
+    "display" : "O"
+  },
+  {
+    "code" : "AB",
+    "display" : "AB"
+  },
+  {
+    "code" : "nil",
+    "display" : "no data"
+  }]
+}

@@ -1,0 +1,26 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "f1942bac-b8b3-45a1-b1d0-6928326d03ce",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"],
+    "security" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplant-center",
+      "code" : "tc_123"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole f1942bac-b8b3-45a1-b1d0-6928326d03ce</b></p><a name=\"f1942bac-b8b3-45a1-b1d0-6928326d03ce\"> </a><a name=\"hcf1942bac-b8b3-45a1-b1d0-6928326d03ce\"> </a><a name=\"f1942bac-b8b3-45a1-b1d0-6928326d03ce-en-US\"> </a><p><b>practitioner</b>: <a href=\"Bundle-BundleExample-Practitioner.html#urn-uuid-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa\">Lisa Simpson</a></p><p><b>code</b>: <span title=\"Codes:{http://terminology.nmdp.org/codesystem/practitionerrole referringphysician}\">Referring Physician</span></p></div>"
+  },
+  "practitioner" : {
+    "reference" : "urn:uuid:26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa",
+    "display" : "Lisa Simpson"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/practitionerrole",
+      "code" : "referringphysician",
+      "display" : "Referring Physician"
+    }]
+  }]
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nmdp-language-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nmdp-language-codes</b></p><a name="nmdp-language-codes"> </a><a name="hcnmdp-language-codes"> </a><a name="nmdp-language-codes-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nmdp-language-cs.html"><code>http://terminology.nmdp.org/codesystem/language</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes"/>
+  <version value="0.1.1"/>
+  <name value="NMDPLanguageCodes"/>
+  <title value="NMDP Language Value Set"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-02T18:26:03-06:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="NMDP language codes"/>
+  <compose>
+    <include>
+      <system value="http://terminology.nmdp.org/codesystem/language"/>
+    </include>
+  </compose>
+</ValueSet>

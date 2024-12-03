@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nmdp-rh-status-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nmdp-rh-status-codes</b></p><a name="nmdp-rh-status-codes"> </a><a name="hcnmdp-rh-status-codes"> </a><a name="nmdp-rh-status-codes-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nmdp-rh-status-cs.html"><code>http://terminology.nmdp.org/codesystem/rhstatus</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes"/>
+  <version value="0.1.1"/>
+  <name value="NMDPRhStatusVS"/>
+  <title value="NMDP Codes for Rh status"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-02T18:31:42-06:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="NMDP codes for Rh staus"/>
+  <compose>
+    <include>
+      <system value="http://terminology.nmdp.org/codesystem/rhstatus"/>
+    </include>
+  </compose>
+</ValueSet>

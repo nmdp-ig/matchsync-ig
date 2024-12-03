@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-diseasestage-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nmdp-diseasestage-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nmdp-diseasestage-cs</b></p><a name=\"nmdp-diseasestage-cs\"> </a><a name=\"hcnmdp-diseasestage-cs\"> </a><a name=\"nmdp-diseasestage-cs-en-US\"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/diseasestage</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AP<a name=\"nmdp-diseasestage-cs-AP\"> </a></td><td>Accelerated Phase</td></tr><tr><td style=\"white-space:nowrap\">BP<a name=\"nmdp-diseasestage-cs-BP\"> </a></td><td>Blastic Phase</td></tr><tr><td style=\"white-space:nowrap\">CP<a name=\"nmdp-diseasestage-cs-CP\"> </a></td><td>Chronic Phase</td></tr><tr><td style=\"white-space:nowrap\">CR<a name=\"nmdp-diseasestage-cs-CR\"> </a></td><td>Complete Remission</td></tr><tr><td style=\"white-space:nowrap\">IF<a name=\"nmdp-diseasestage-cs-IF\"> </a></td><td>Induction Failure</td></tr><tr><td style=\"white-space:nowrap\">IT<a name=\"nmdp-diseasestage-cs-IT\"> </a></td><td>Induction Therapy</td></tr><tr><td style=\"white-space:nowrap\">RE<a name=\"nmdp-diseasestage-cs-RE\"> </a></td><td>Relapse</td></tr><tr><td style=\"white-space:nowrap\">RM<a name=\"nmdp-diseasestage-cs-RM\"> </a></td><td>Remission</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.nmdp.org/codesystem/diseasestage"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "NMDPDiseaseStageCS"] ; # 
+  fhir:title [ fhir:v "NMDP Disease Stage Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-02T18:26:03-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NMDP"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NMDP" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://bethematch.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code System for NMDP disease stages"] ; # 
+  fhir:copyright [ fhir:v "National Marrow Donor Program"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "AP" ] ;
+     fhir:display [ fhir:v "Accelerated Phase" ]
+  ] [
+     fhir:code [ fhir:v "BP" ] ;
+     fhir:display [ fhir:v "Blastic Phase" ]
+  ] [
+     fhir:code [ fhir:v "CP" ] ;
+     fhir:display [ fhir:v "Chronic Phase" ]
+  ] [
+     fhir:code [ fhir:v "CR" ] ;
+     fhir:display [ fhir:v "Complete Remission" ]
+  ] [
+     fhir:code [ fhir:v "IF" ] ;
+     fhir:display [ fhir:v "Induction Failure" ]
+  ] [
+     fhir:code [ fhir:v "IT" ] ;
+     fhir:display [ fhir:v "Induction Therapy" ]
+  ] [
+     fhir:code [ fhir:v "RE" ] ;
+     fhir:display [ fhir:v "Relapse" ]
+  ] [
+     fhir:code [ fhir:v "RM" ] ;
+     fhir:display [ fhir:v "Remission" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

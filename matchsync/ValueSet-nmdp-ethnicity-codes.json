@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nmdp-ethnicity-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nmdp-ethnicity-codes</b></p><a name=\"nmdp-ethnicity-codes\"> </a><a name=\"hcnmdp-ethnicity-codes\"> </a><a name=\"nmdp-ethnicity-codes-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-ethnicity-cs.html\"><code>http://terminology.nmdp.org/codesystem/ethnicity</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-ethnicity-codes",
+  "version" : "0.1.1",
+  "name" : "NMDPEthnicityVS",
+  "title" : "NMDP Ethnicity Value Set",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-02T18:31:42-06:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "NMDP ethnicity codes",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/ethnicity"
+    }]
+  }
+}

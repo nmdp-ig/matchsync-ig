@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nmdp-diseasestage-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nmdp-diseasestage-codes</b></p><a name=\"nmdp-diseasestage-codes\"> </a><a name=\"hcnmdp-diseasestage-codes\"> </a><a name=\"nmdp-diseasestage-codes-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-diseasestage-cs.html\"><code>http://terminology.nmdp.org/codesystem/diseasestage</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes",
+  "version" : "0.1.1",
+  "name" : "NMDPDiseasStageVS",
+  "title" : "NMDP Disease Stage Value Set",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-02T18:26:03-06:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "NMDP disease stage codes",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/diseasestage"
+    }]
+  }
+}

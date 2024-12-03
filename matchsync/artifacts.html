@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary -  v0.1.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.1 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="NMDP-PatientImport-Guide-v3.9.pdf">Matchsync Setup Guide</a>
+  </li>
+  <li>
+    <a href="Appendices.html">Appendices</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MatchSync Implementation Guide (v0.1.1: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hla-genotype.html"
+                  title="StructureDefinition/hla-genotype">HLA Genotype Observation</a>
+            </td>
+            <td>
+<p>HLA Genotype profile of genotype observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hla-a.html" title="StructureDefinition/hla-a">HLA_A</a>
+            </td>
+            <td>
+<p>Genotype for HLA-A</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hla-b.html" title="StructureDefinition/hla-b">HLA_B</a>
+            </td>
+            <td>
+<p>Genotype for HLA-B</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hla-c.html" title="StructureDefinition/hla-c">HLA_C</a>
+            </td>
+            <td>
+<p>Genotype for HLA-C</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hla-dpa1.html"
+                  title="StructureDefinition/hla-dpa1">HLA_DPA1</a>
+            </td>
+            <td>
+<p>Genotype for HLA-DPA1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hla-dpb1.html"
+                  title="StructureDefinition/hla-dpb1">HLA_DPB1</a>
+            </td>
+            <td>
+<p>Genotype for HLA-DPB1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hla-dqa1.html"
+                  title="StructureDefinition/hla-dqa1">HLA_DQA1</a>
+            </td>
+            <td>
+<p>Genotype for HLA-DQA1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hla-dqb1.html"
+                  title="StructureDefinition/hla-dqb1">HLA_DQB1</a>
+            </td>
+            <td>
+<p>Genotype for HLA-DQB1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hla-drb1.html"
+                  title="StructureDefinition/hla-drb1">HLA_DRB1</a>
+            </td>
+            <td>
+<p>Genotype for HLA-DRB1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hla-drb3.html"
+                  title="StructureDefinition/hla-drb3">HLA_DRB3</a>
+            </td>
+            <td>
+<p>Genotype for HLA-DRB3</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hla-drb4.html"
+                  title="StructureDefinition/hla-drb4">HLA_DRB4</a>
+            </td>
+            <td>
+<p>Genotype for HLA-DRB4</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hla-drb5.html"
+                  title="StructureDefinition/hla-drb5">HLA_DRB5</a>
+            </td>
+            <td>
+<p>Genotype for HLA-DRB5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ms-abogroup-observation.html"
+                  title="StructureDefinition/ms-abogroup-observation">MSABOGroupObservation</a>
+            </td>
+            <td>
+<p>ABO Blood Group of Patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ms-aborhgroup-observation.html"
+                  title="StructureDefinition/ms-aborhgroup-observation">MSABORHObservation</a>
+            </td>
+            <td>
+<p>ABO and Rh group [Type] in Blood</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ms-cmvgroup-observation.html"
+                  title="StructureDefinition/ms-cmvgroup-observation">MSCmvObservation</a>
+            </td>
+            <td>
+<p>Cytomeglovirus found in patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ms-form117-observation.html"
+                  title="StructureDefinition/ms-form117-observation">MSForm117Observation</a>
+            </td>
+            <td>
+<p>Form 117 Compliance for patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ms-height-observation.html"
+                  title="StructureDefinition/ms-height-observation">MSHeightObservation</a>
+            </td>
+            <td>
+<p>Height of Patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mspatient.html"
+                  title="StructureDefinition/mspatient">MSPatient</a>
+            </td>
+            <td>
+<p>Patient needing a transplant</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ms-preferred-product-observation.html"
+                  title="StructureDefinition/ms-preferred-product-observation">MSPreferredProduct</a>
+            </td>
+            <td>
+<p>Preferred product for transplant</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-msdiagnosis.html"
+                  title="StructureDefinition/msdiagnosis">MSPrimaryDiagnosis</a>
+            </td>
+            <td>
+<p>Diagnosis</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ms-rhstatus-observation.html"
+                  title="StructureDefinition/ms-rhstatus-observation">MSRhStatusObservation</a>
+            </td>
+            <td>
+<p>Rh status of Patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-msspecimen.html"
+                  title="StructureDefinition/msspecimen">MSSpecimen</a>
+            </td>
+            <td>
+<p>Patient sample used for HLA typing</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ms-transplant-timeline-observation.html"
+                  title="StructureDefinition/ms-transplant-timeline-observation">MSTransplantTimeline</a>
+            </td>
+            <td>
+<p>Transplant timeline for patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ms-weight-observation.html"
+                  title="StructureDefinition/ms-weight-observation">MSWeightObservation</a>
+            </td>
+            <td>
+<p>Weight of Patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ms-bundle.html"
+                  title="StructureDefinition/ms-bundle">MatchSync Bundle</a>
+            </td>
+            <td>
+<p>Collection Bundle for MatchSync</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ms-bundle-hla-separate.html"
+                  title="StructureDefinition/ms-bundle-hla-separate">MatchSync Bundle with Separate HLA</a>
+            </td>
+            <td>
+<p>Collection Bundle for MatchSync with separate HLA Observations for each locus</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ms-bundle-hla-multilocus.html"
+                  title="StructureDefinition/ms-bundle-hla-multilocus">MatchSync Bundle with single multilocus HLA</a>
+            </td>
+            <td>
+<p>Collection Bundle for MatchSync with single HLA multilocus Observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-nmdp-practitioner.html"
+                  title="StructureDefinition/nmdp-practitioner">NMDPPractitioner</a>
+            </td>
+            <td>
+<p>NMDP Practitioner</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-nmdp-practitioner-role.html"
+                  title="StructureDefinition/nmdp-practitioner-role">NMDPPractitionerRole</a>
+            </td>
+            <td>
+<p>NMDP Practitioner Role</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-transplantcenter.html"
+                  title="StructureDefinition/transplantcenter">TransplantCenter</a>
+            </td>
+            <td>
+<p>Transplant Center</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-number-of-remissions.html"
+                  title="StructureDefinition/number-of-remissions">Number of Remissions of Primary Diagnosis</a>
+            </td>
+            <td>
+<p>Number of Remissions of Primary Diagnosis</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-icd10-gvhd-codes.html" title="ValueSet/icd10-gvhd-codes">GVHD ICD-10 Codes</a>
+            </td>
+            <td>
+<p>GVHD ICD-10 Codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-hla-geneid-valueset.html"
+                  title="ValueSet/hla-geneid-valueset">HLA Gene Name Value Set</a>
+            </td>
+            <td>
+<p>HLA HGNC GeneIds Valueset</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-loinc-abo-rh-codes.html"
+                  title="ValueSet/loinc-abo-rh-codes">LOINC ABO RH group Value Set</a>
+            </td>
+            <td>
+<p>LOINC codes for ABO RH blood group</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-loinc-abo-codes.html" title="ValueSet/loinc-abo-codes">LOINC ABO group Value Set</a>
+            </td>
+            <td>
+<p>LOINC codes for ABO blood group</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-loinc-cmv-codes.html" title="ValueSet/loinc-cmv-codes">LOINC CMV group Value Set</a>
+            </td>
+            <td>
+<p>LOINC codes for CMV</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-loinc-posneg-codes.html"
+                  title="ValueSet/loinc-posneg-codes">LOINC Pos|Neg Value Set</a>
+            </td>
+            <td>
+<p>LOINC codes for Positive and Negative</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ms-abo-group-codes.html"
+                  title="ValueSet/ms-abo-group-codes">MatchSync ABO Group Value Set</a>
+            </td>
+            <td>
+<p>MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ms-cmv-codes.html" title="ValueSet/ms-cmv-codes">MatchSync ABO Group Value Set</a>
+            </td>
+            <td>
+<p>MatchSync ABO group codes. Combines LOINC and NMDP codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ms-abo-rh-group-codes.html"
+                  title="ValueSet/ms-abo-rh-group-codes">MatchSync ABO RH Group Value Set</a>
+            </td>
+            <td>
+<p>MatchSync ABO RH group codes. Combines LOINC and NMDP codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ms-rh-codes.html" title="ValueSet/ms-rh-codes">MatchSync Rh Value Sets</a>
+            </td>
+            <td>
+<p>MatchSync codes for blood Rh. Combines NMDP and LOINC code</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nmdp-abo-codes.html" title="ValueSet/nmdp-abo-codes">NMDP Blood Group Value Set</a>
+            </td>
+            <td>
+<p>NMDP blood group codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nmdp-abo-rh-codes.html"
+                  title="ValueSet/nmdp-abo-rh-codes">NMDP Blood Group Value Set</a>
+            </td>
+            <td>
+<p>NMDP blood group codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nmdp-cmv-codes.html" title="ValueSet/nmdp-cmv-codes">NMDP CMV Value Set</a>
+            </td>
+            <td>
+<p>NMDP cmv codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nmdp-rh-status-codes.html"
+                  title="ValueSet/nmdp-rh-status-codes">NMDP Codes for Rh status</a>
+            </td>
+            <td>
+<p>NMDP codes for Rh staus</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nmdp-diseasestage-codes.html"
+                  title="ValueSet/nmdp-diseasestage-codes">NMDP Disease Stage Value Set</a>
+            </td>
+            <td>
+<p>NMDP disease stage codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nmdp-disease-codes.html"
+                  title="ValueSet/nmdp-disease-codes">NMDP Disease Value Set</a>
+            </td>
+            <td>
+<p>NMDP disease codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nmdp-ethnicity-codes.html"
+                  title="ValueSet/nmdp-ethnicity-codes">NMDP Ethnicity Value Set</a>
+            </td>
+            <td>
+<p>NMDP ethnicity codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ms-form117-codes.html" title="ValueSet/ms-form117-codes">NMDP Form 117 Value Set</a>
+            </td>
+            <td>
+<p>NMDP Form 117 codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nmdp-language-codes.html"
+                  title="ValueSet/nmdp-language-codes">NMDP Language Value Set</a>
+            </td>
+            <td>
+<p>NMDP language codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nmdp-practitioner-role-vs.html"
+                  title="ValueSet/nmdp-practitioner-role-vs">NMDP Practitioner Role Value Set</a>
+            </td>
+            <td>
+<p>NMDP Practitioner Role Value Set</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nmdp-preferred-product-codes.html"
+                  title="ValueSet/nmdp-preferred-product-codes">NMDP Preferred Product Value Set</a>
+            </td>
+            <td>
+<p>NMDP preferred product codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nmdp-race-codes.html" title="ValueSet/nmdp-race-codes">NMDP Race Value Set</a>
+            </td>
+            <td>
+<p>NMDP race codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nmdp-transplant-timeline-codes.html"
+                  title="ValueSet/nmdp-transplant-timeline-codes">NMDP Transplant Timeline Value Set</a>
+            </td>
+            <td>
+<p>NMDP transplant timeline codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-sct-abo-group-codes.html"
+                  title="ValueSet/sct-abo-group-codes">Snomed CT ABO group Value Set</a>
+            </td>
+            <td>
+<p>Snomed CT codes for ABO blood group</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-glstring-codesystem.html"
+                  title="CodeSystem/glstring-codesystem">Genotype List String Code CodeSystem</a>
+            </td>
+            <td>
+<p>Genotype List String Codesystem used for HLA reporting</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-hla-genename-codesystem.html"
+                  title="CodeSystem/hla-genename-codesystem">HLA HGNC GeneID CodeSystem</a>
+            </td>
+            <td>
+<p>CodeSystem of HLA gene group subset of HGNC GeneId Codesystem</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-abo-group-cs.html"
+                  title="CodeSystem/nmdp-abo-group-cs">NMDP Blood Group Code System</a>
+            </td>
+            <td>
+<p>Code System for NMDP ABO blood groups</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-abo-rh-group-cs.html"
+                  title="CodeSystem/nmdp-abo-rh-group-cs">NMDP Blood Group Code System</a>
+            </td>
+            <td>
+<p>Code System for NMDP ABO RH blood groups</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-cmv-cs.html" title="CodeSystem/nmdp-cmv-cs">NMDP CMV Code System</a>
+            </td>
+            <td>
+<p>Code System for NMDP CMV</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-disease-cs.html"
+                  title="CodeSystem/nmdp-disease-cs">NMDP Disease Code System</a>
+            </td>
+            <td>
+<p>Code System for NMDP diseases</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-diseasestage-cs.html"
+                  title="CodeSystem/nmdp-diseasestage-cs">NMDP Disease Stage Code System</a>
+            </td>
+            <td>
+<p>Code System for NMDP disease stages</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-ethnicity-cs.html"
+                  title="CodeSystem/nmdp-ethnicity-cs">NMDP Ethnicity Code System</a>
+            </td>
+            <td>
+<p>Code System for NMDP ethnicity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-language-cs.html"
+                  title="CodeSystem/nmdp-language-cs">NMDP Language Code System</a>
+            </td>
+            <td>
+<p>Code System for NMDP languages</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-practitioner-role-cs.html"
+                  title="CodeSystem/nmdp-practitioner-role-cs">NMDP Practitioner Roles</a>
+            </td>
+            <td>
+<p>NMDP Practitioner Roles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-form117-cs.html"
+                  title="CodeSystem/nmdp-form117-cs">NMDP Preferred Product for Transplant</a>
+            </td>
+            <td>
+<p>NMDP Form 117 for MatchSync patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-preferred-product-cs.html"
+                  title="CodeSystem/nmdp-preferred-product-cs">NMDP Preferred Product for Transplant</a>
+            </td>
+            <td>
+<p>NMDP Preferred Product for MatchSync patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-race-cs.html" title="CodeSystem/nmdp-race-cs">NMDP Race Code System</a>
+            </td>
+            <td>
+<p>Code System for NMDP diseases</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-rh-status-cs.html"
+                  title="CodeSystem/nmdp-rh-status-cs">NMDP Rh Code System</a>
+            </td>
+            <td>
+<p>Code System for NMDP Rh Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-transplant-timeline-cs.html"
+                  title="CodeSystem/nmdp-transplant-timeline-cs">NMDP Transplant Timeline Code System</a>
+            </td>
+            <td>
+<p>Code System for NMDP transplant timeline</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa.html"
+                  title="Practitioner/26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa">26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa</a>
+            </td>
+            <td>
+<p>Example of a physician practitioner.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-3f7d88b1-3e39-4f52-bb9c-5d680b7166b3.html"
+                  title="Patient/3f7d88b1-3e39-4f52-bb9c-5d680b7166b3">3f7d88b1-3e39-4f52-bb9c-5d680b7166b3</a>
+            </td>
+            <td>
+<p>Example of a patient needing a donor using us-core-race and us-core-ethnicity codes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-8fd0ef20-d146-4fff-b2a8-1d607adf9802.html"
+                  title="PractitionerRole/8fd0ef20-d146-4fff-b2a8-1d607adf9802">8fd0ef20-d146-4fff-b2a8-1d607adf9802</a>
+            </td>
+            <td>
+<p>Example of Transplant Center Physician Role</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HLA-A-Example.html" title="Observation/HLA-A-Example">HLA-A-Example</a>
+            </td>
+            <td>
+<p>Example of HLA-A</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HLA-B-Example.html" title="Observation/HLA-B-Example">HLA-B-Example</a>
+            </td>
+            <td>
+<p>Example of HLA-B</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HLA-C-Example.html" title="Observation/HLA-C-Example">HLA-C-Example</a>
+            </td>
+            <td>
+<p>Example of HLA-C</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HLA-DPA1-Example.html"
+                  title="Observation/HLA-DPA1-Example">HLA-DPA1-Example</a>
+            </td>
+            <td>
+<p>Example of HLA-DPA1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HLA-DPB1-Example.html"
+                  title="Observation/HLA-DPB1-Example">HLA-DPB1-Example</a>
+            </td>
+            <td>
+<p>Example of HLA-DPB1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HLA-DQA1-Example.html"
+                  title="Observation/HLA-DQA1-Example">HLA-DQA1-Example</a>
+            </td>
+            <td>
+<p>Example of HLA-DQA1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HLA-DQB1-Example.html"
+                  title="Observation/HLA-DQB1-Example">HLA-DQB1-Example</a>
+            </td>
+            <td>
+<p>Example of HLA-DQB1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HLA-DRB1-Example.html"
+                  title="Observation/HLA-DRB1-Example">HLA-DRB1-Example</a>
+            </td>
+            <td>
+<p>Example of HLA-DRB1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HLA-DRB3-Example.html"
+                  title="Observation/HLA-DRB3-Example">HLA-DRB3-Example</a>
+            </td>
+            <td>
+<p>Example of HLA-DRB3</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HLA-DRB4-Example.html"
+                  title="Observation/HLA-DRB4-Example">HLA-DRB4-Example</a>
+            </td>
+            <td>
+<p>Example of HLA-DRB4</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HLA-DRB5-Example.html"
+                  title="Observation/HLA-DRB5-Example">HLA-DRB5-Example</a>
+            </td>
+            <td>
+<p>Example of HLA-DRB5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HLA-Multilocus-Genotype-Example.html"
+                  title="Observation/HLA-Multilocus-Genotype-Example">HLA-Multilocus-Genotype-Example</a>
+            </td>
+            <td>
+<p>Multilocus Genotype of HLA-A, HLA-B, HLA-DRB1, and HLA-DRB3</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MSABOObsExample.html"
+                  title="Observation/MSABOObsExample">MSABOObsExample</a>
+            </td>
+            <td>
+<p>Example of patient ABO</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MSABORHObsExample.html"
+                  title="Observation/MSABORHObsExample">MSABORHObsExample</a>
+            </td>
+            <td>
+<p>Example of patient ABO and RH</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MSCmvExample.html" title="Observation/MSCmvExample">MSCmvExample</a>
+            </td>
+            <td>
+<p>Example of Cytomeglovirus found in patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-MSDiagnosisExample-AML.html"
+                  title="Condition/MSDiagnosisExample-AML">MSDiagnosisExample-AML</a>
+            </td>
+            <td>
+<p>Example of a Diagnois: AML</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-MSDiagnosisExample-OND.html"
+                  title="Condition/MSDiagnosisExample-OND">MSDiagnosisExample-OND</a>
+            </td>
+            <td>
+<p>Example of a Diagnois</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MSForm117Example.html"
+                  title="Observation/MSForm117Example">MSForm117Example</a>
+            </td>
+            <td>
+<p>Example of Form 117 Compliance for patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MSHeightObsExample.html"
+                  title="Observation/MSHeightObsExample">MSHeightObsExample</a>
+            </td>
+            <td>
+<p>Example of patient height</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-MSPatientBirthSex.html" title="Patient/MSPatientBirthSex">MSPatientBirthSex</a>
+            </td>
+            <td>
+<p>Example of a patient using BirthSex codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-MSPatientExample.html" title="Patient/MSPatientExample">MSPatientExample</a>
+            </td>
+            <td>
+<p>Example of a patient needing a donor using us-core-race and us-core-ethnicity codes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-MSPatientExample2.html" title="Patient/MSPatientExample2">MSPatientExample2</a>
+            </td>
+            <td>
+<p>Example of a patient needing a donor using NMDP race code.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-MSPatientExample3.html" title="Patient/MSPatientExample3">MSPatientExample3</a>
+            </td>
+            <td>
+<p>Example of a patient without a race code</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-MSPatientExample4.html" title="Patient/MSPatientExample4">MSPatientExample4</a>
+            </td>
+            <td>
+<p>Example of a patient needing a donor using us-core-race code but not us-core-ethnicity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-MSPatientExample5.html" title="Patient/MSPatientExample5">MSPatientExample5</a>
+            </td>
+            <td>
+<p>Example of a patient needing a donor using NMDP race code.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-MSPatientGenderIdentity.html"
+                  title="Patient/MSPatientGenderIdentity">MSPatientGenderIdentity</a>
+            </td>
+            <td>
+<p>Example of a patient using Gender Identity codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MSPreferredProductExample.html"
+                  title="Observation/MSPreferredProductExample">MSPreferredProductExample</a>
+            </td>
+            <td>
+<p>Example of preferred product</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MSRhObsExample.html"
+                  title="Observation/MSRhObsExample">MSRhObsExample</a>
+            </td>
+            <td>
+<p>Example of patient Rh status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-MSSpecimenExample.html"
+                  title="Specimen/MSSpecimenExample">MSSpecimenExample</a>
+            </td>
+            <td>
+<p>Example patient specimen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MSTransplantTimelineExample.html"
+                  title="Observation/MSTransplantTimelineExample">MSTransplantTimelineExample</a>
+            </td>
+            <td>
+<p>Example of transplant timeline</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MSWeightObsExample.html"
+                  title="Observation/MSWeightObsExample">MSWeightObsExample</a>
+            </td>
+            <td>
+<p>Example of patient weight</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-BundleExample-Practitioner.html"
+                  title="Bundle/BundleExample-Practitioner">MatchSync Bundle Example - Practioners</a>
+            </td>
+            <td>
+<p>MatchSync Bundle Example with Patient, Search Coordinator, Referring Physician, and TC Physician</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-PhysicianExample.html"
+                  title="Practitioner/PhysicianExample">PhysicianExample</a>
+            </td>
+            <td>
+<p>Example of a practitioner.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-ReferringPhysicianRoleExample.html"
+                  title="PractitionerRole/ReferringPhysicianRoleExample">ReferringPhysicianRoleExample</a>
+            </td>
+            <td>
+<p>Example of Referring Physician Role</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-SearchCoordinatorExample.html"
+                  title="Practitioner/SearchCoordinatorExample">SearchCoordinatorExample</a>
+            </td>
+            <td>
+<p>Example of a practitioner.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-SearchCoordinatorRoleExample.html"
+                  title="PractitionerRole/SearchCoordinatorRoleExample">SearchCoordinatorRoleExample</a>
+            </td>
+            <td>
+<p>Example of Transplant Center Coordinotor Role</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-TCExample.html" title="Organization/TCExample">TCExample</a>
+            </td>
+            <td>
+<p>Example of a Transplant Center.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-TCPhysicianRoleExample.html"
+                  title="PractitionerRole/TCPhysicianRoleExample">TCPhysicianRoleExample</a>
+            </td>
+            <td>
+<p>Example of Transplant Center Physician Role</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-a9e56f2a-0827-4efd-a773-ed48c6e2752c.html"
+                  title="Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c">a9e56f2a-0827-4efd-a773-ed48c6e2752c</a>
+            </td>
+            <td>
+<p>Example of a Diagnois: AML</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-ad78058a-c0fe-4ea0-bc86-d2f3770a1944.html"
+                  title="PractitionerRole/ad78058a-c0fe-4ea0-bc86-d2f3770a1944">ad78058a-c0fe-4ea0-bc86-d2f3770a1944</a>
+            </td>
+            <td>
+<p>Example of Transplant Center Search Coordinotor Role</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-f1942bac-b8b3-45a1-b1d0-6928326d03ce.html"
+                  title="PractitionerRole/f1942bac-b8b3-45a1-b1d0-6928326d03ce">f1942bac-b8b3-45a1-b1d0-6928326d03ce</a>
+            </td>
+            <td>
+<p>Example of Referring Physician Role</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-fe6acf5d-ed53-4758-8d38-10d915c984af.html"
+                  title="Practitioner/fe6acf5d-ed53-4758-8d38-10d915c984af">fe6acf5d-ed53-4758-8d38-10d915c984af</a>
+            </td>
+            <td>
+<p>Example of a search coordinator practitioner.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 2, 2024 18:31-0600">2024-12-02</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

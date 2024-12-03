@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Observation",
+  "id" : "MSHeightObsExample",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation"],
+    "security" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplant-center",
+      "code" : "tc_123"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation MSHeightObsExample</b></p><a name=\"MSHeightObsExample\"> </a><a name=\"hcMSHeightObsExample\"> </a><a name=\"MSHeightObsExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8302-2}\">Body height</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: 178 centimeters<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8302-2"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/MSPatientExample"
+  },
+  "effectiveDateTime" : "2022-05-01",
+  "valueQuantity" : {
+    "value" : 178,
+    "unit" : "centimeters",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "cm"
+  }
+}

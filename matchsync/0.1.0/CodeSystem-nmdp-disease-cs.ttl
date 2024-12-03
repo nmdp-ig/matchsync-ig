@@ -1,0 +1,338 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-disease-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nmdp-disease-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nmdp-disease-cs</b></p><a name=\"nmdp-disease-cs\"> </a><a name=\"hcnmdp-disease-cs\"> </a><a name=\"nmdp-disease-cs-en-US\"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/disease</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ABL<a name=\"nmdp-disease-cs-ABL\"> </a></td><td>ACUTE BILINEAGE LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\">AISA<a name=\"nmdp-disease-cs-AISA\"> </a></td><td>ACQ IDIOPATH SIDERBLASTIC ANEM</td></tr><tr><td style=\"white-space:nowrap\">ALD<a name=\"nmdp-disease-cs-ALD\"> </a></td><td>ADRENOLEUKODYSTROPHY</td></tr><tr><td style=\"white-space:nowrap\">ALL<a name=\"nmdp-disease-cs-ALL\"> </a></td><td>ACUTE LYMPHOBLASTIC LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\">AMCL<a name=\"nmdp-disease-cs-AMCL\"> </a></td><td>ACUTE MAST CELL LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\">AMEGCT<a name=\"nmdp-disease-cs-AMEGCT\"> </a></td><td>AMEGAKARYOCY/CONGENTIAL THROM</td></tr><tr><td style=\"white-space:nowrap\">AML<a name=\"nmdp-disease-cs-AML\"> </a></td><td>ACUTE MYELOGENOUS LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\">ASPGL<a name=\"nmdp-disease-cs-ASPGL\"> </a></td><td>ASPARTYL GLUCOSAMINIDASE</td></tr><tr><td style=\"white-space:nowrap\">AT<a name=\"nmdp-disease-cs-AT\"> </a></td><td>ATAXIA-TELANGIECTASIA</td></tr><tr><td style=\"white-space:nowrap\">AUL<a name=\"nmdp-disease-cs-AUL\"> </a></td><td>ACUTE UNDIFFERENTIATED LEUK-MO</td></tr><tr><td style=\"white-space:nowrap\">BGLUD<a name=\"nmdp-disease-cs-BGLUD\"> </a></td><td>BETA-GLUCURONIDASE DEFICIENCY</td></tr><tr><td style=\"white-space:nowrap\">BLSYND<a name=\"nmdp-disease-cs-BLSYND\"> </a></td><td>BARE LYMPHOCYTE SYNDROME</td></tr><tr><td style=\"white-space:nowrap\">BRCA<a name=\"nmdp-disease-cs-BRCA\"> </a></td><td>BREAST CANCER</td></tr><tr><td style=\"white-space:nowrap\">BTHAL<a name=\"nmdp-disease-cs-BTHAL\"> </a></td><td>BETA THALASSEMIA MAJOR</td></tr><tr><td style=\"white-space:nowrap\">C-HHYP<a name=\"nmdp-disease-cs-C-HHYP\"> </a></td><td>CARTILAGE-HAIR HYPOPLASIA</td></tr><tr><td style=\"white-space:nowrap\">CGD<a name=\"nmdp-disease-cs-CGD\"> </a></td><td>CHRONIC GRANULOMATOUS DISEASE</td></tr><tr><td style=\"white-space:nowrap\">CID<a name=\"nmdp-disease-cs-CID\"> </a></td><td>COMBINED IMMUNODEFICIENCY</td></tr><tr><td style=\"white-space:nowrap\">CLL<a name=\"nmdp-disease-cs-CLL\"> </a></td><td>CHRONIC LYMPHOCYTIC LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\">CML<a name=\"nmdp-disease-cs-CML\"> </a></td><td>CHRONIC MYELOGENOUS LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\">CMML<a name=\"nmdp-disease-cs-CMML\"> </a></td><td>CHRONIC MYELOMONOCYTIC LEUK</td></tr><tr><td style=\"white-space:nowrap\">CNSCA<a name=\"nmdp-disease-cs-CNSCA\"> </a></td><td>CENTRAL NERVOUS SYSTEM TUMORS</td></tr><tr><td style=\"white-space:nowrap\">DIGRGE<a name=\"nmdp-disease-cs-DIGRGE\"> </a></td><td>DI GEORGE SYNDROME</td></tr><tr><td style=\"white-space:nowrap\">ETC<a name=\"nmdp-disease-cs-ETC\"> </a></td><td>ESSENTIAL THROMOBOCYTHEMIA</td></tr><tr><td style=\"white-space:nowrap\">EWINGS<a name=\"nmdp-disease-cs-EWINGS\"> </a></td><td>EWINGS SARCOMA</td></tr><tr><td style=\"white-space:nowrap\">FA<a name=\"nmdp-disease-cs-FA\"> </a></td><td>FANCONI ANEMIA</td></tr><tr><td style=\"white-space:nowrap\">FEL<a name=\"nmdp-disease-cs-FEL\"> </a></td><td>FAMILIAL ERYTHROPHAGOCYTIC</td></tr><tr><td style=\"white-space:nowrap\">FUCOSI<a name=\"nmdp-disease-cs-FUCOSI\"> </a></td><td>FUCOSIDOSIS</td></tr><tr><td style=\"white-space:nowrap\">GAUCHR<a name=\"nmdp-disease-cs-GAUCHR\"> </a></td><td>GAUCHER'S DISEASE</td></tr><tr><td style=\"white-space:nowrap\">GLTROM<a name=\"nmdp-disease-cs-GLTROM\"> </a></td><td>GLANZMANNS THROMBASTHENIA</td></tr><tr><td style=\"white-space:nowrap\">GLUCST<a name=\"nmdp-disease-cs-GLUCST\"> </a></td><td>GLUCOSE STORAGE DISEASE</td></tr><tr><td style=\"white-space:nowrap\">HCL<a name=\"nmdp-disease-cs-HCL\"> </a></td><td>HAIRY CELL LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\">HISX<a name=\"nmdp-disease-cs-HISX\"> </a></td><td>HISTIOCYTOSIS-X</td></tr><tr><td style=\"white-space:nowrap\">HIV<a name=\"nmdp-disease-cs-HIV\"> </a></td><td>HIV INFECTION</td></tr><tr><td style=\"white-space:nowrap\">HL<a name=\"nmdp-disease-cs-HL\"> </a></td><td>HODGKINS LYMPHOMA</td></tr><tr><td style=\"white-space:nowrap\">HPGC<a name=\"nmdp-disease-cs-HPGC\"> </a></td><td>HEMOPHAGOCYTOSIS</td></tr><tr><td style=\"white-space:nowrap\">HUNTER<a name=\"nmdp-disease-cs-HUNTER\"> </a></td><td>HUNTER SYNDROME (MPS-II)</td></tr><tr><td style=\"white-space:nowrap\">HURLER<a name=\"nmdp-disease-cs-HURLER\"> </a></td><td>HURLER SYNDROME (MPS-IH)</td></tr><tr><td style=\"white-space:nowrap\">ICELL<a name=\"nmdp-disease-cs-ICELL\"> </a></td><td>I-CELL DISEASE</td></tr><tr><td style=\"white-space:nowrap\">IMDNP<a name=\"nmdp-disease-cs-IMDNP\"> </a></td><td>IMMUNE DEFICIENCY + NEUTROPEN</td></tr><tr><td style=\"white-space:nowrap\">JCML<a name=\"nmdp-disease-cs-JCML\"> </a></td><td>JUVENILE CHRONIC MYELOGENOUS</td></tr><tr><td style=\"white-space:nowrap\">KOSTMN<a name=\"nmdp-disease-cs-KOSTMN\"> </a></td><td>KOSTMANN'S AGRANULOCYTOSIS</td></tr><tr><td style=\"white-space:nowrap\">KRABBE<a name=\"nmdp-disease-cs-KRABBE\"> </a></td><td>KRABBE DISEASE</td></tr><tr><td style=\"white-space:nowrap\">LAD<a name=\"nmdp-disease-cs-LAD\"> </a></td><td>LEUKOCYTE ADHESION DEFICIENCY</td></tr><tr><td style=\"white-space:nowrap\">LN<a name=\"nmdp-disease-cs-LN\"> </a></td><td>LESCH-NYHAN</td></tr><tr><td style=\"white-space:nowrap\">LNS<a name=\"nmdp-disease-cs-LNS\"> </a></td><td>LESCH-NYHAN</td></tr><tr><td style=\"white-space:nowrap\">LYSOST<a name=\"nmdp-disease-cs-LYSOST\"> </a></td><td>LYSOSOMAL STORAGE DISEASE</td></tr><tr><td style=\"white-space:nowrap\">MANNO<a name=\"nmdp-disease-cs-MANNO\"> </a></td><td>MANNOSIDOSIS</td></tr><tr><td style=\"white-space:nowrap\">MARLAM<a name=\"nmdp-disease-cs-MARLAM\"> </a></td><td>MAROTEAUX-LAMY (MPS-VI)</td></tr><tr><td style=\"white-space:nowrap\">MDS<a name=\"nmdp-disease-cs-MDS\"> </a></td><td>MYELODYSPLASTIC DISORDER</td></tr><tr><td style=\"white-space:nowrap\">MFMM<a name=\"nmdp-disease-cs-MFMM\"> </a></td><td>MYELOFIBRO MYELOID METAPLASIA</td></tr><tr><td style=\"white-space:nowrap\">MLD<a name=\"nmdp-disease-cs-MLD\"> </a></td><td>METACHROMATIC LEUKODYSTROPHY</td></tr><tr><td style=\"white-space:nowrap\">MM<a name=\"nmdp-disease-cs-MM\"> </a></td><td>MULTIPLE MYELOMA</td></tr><tr><td style=\"white-space:nowrap\">MORQUA<a name=\"nmdp-disease-cs-MORQUA\"> </a></td><td>MORQUIO A - MPS IVA</td></tr><tr><td style=\"white-space:nowrap\">MORQUB<a name=\"nmdp-disease-cs-MORQUB\"> </a></td><td>MORQUIO B - MPS IVB</td></tr><tr><td style=\"white-space:nowrap\">MORQUO<a name=\"nmdp-disease-cs-MORQUO\"> </a></td><td>MORQUIO (MPS-IV)</td></tr><tr><td style=\"white-space:nowrap\">MPS<a name=\"nmdp-disease-cs-MPS\"> </a></td><td>MUCOPOLYSACCHARIDOSIS (MPS-V)</td></tr><tr><td style=\"white-space:nowrap\">N-P<a name=\"nmdp-disease-cs-N-P\"> </a></td><td>NEIMAN-PICK DISEASE</td></tr><tr><td style=\"white-space:nowrap\">NB<a name=\"nmdp-disease-cs-NB\"> </a></td><td>NEUROBLASTOMA</td></tr><tr><td style=\"white-space:nowrap\">NCL1<a name=\"nmdp-disease-cs-NCL1\"> </a></td><td>ENZYME NCL 1</td></tr><tr><td style=\"white-space:nowrap\">NCL2<a name=\"nmdp-disease-cs-NCL2\"> </a></td><td>ENZYME NCL 2</td></tr><tr><td style=\"white-space:nowrap\">NEUTAD<a name=\"nmdp-disease-cs-NEUTAD\"> </a></td><td>NEUTROPHIL ACTIN DEFICIENCY</td></tr><tr><td style=\"white-space:nowrap\">NEUTD<a name=\"nmdp-disease-cs-NEUTD\"> </a></td><td>CHEDIAK-HIGASHI SYNDROME</td></tr><tr><td style=\"white-space:nowrap\">NHL<a name=\"nmdp-disease-cs-NHL\"> </a></td><td>NON-HODGKINS LYMPHOMA</td></tr><tr><td style=\"white-space:nowrap\">OCID<a name=\"nmdp-disease-cs-OCID\"> </a></td><td>OTHR COMBINED IMMUNODEFICIENCY</td></tr><tr><td style=\"white-space:nowrap\">OHIS<a name=\"nmdp-disease-cs-OHIS\"> </a></td><td>OTHER HISTIOCYTIC DISORDERS</td></tr><tr><td style=\"white-space:nowrap\">OIEA<a name=\"nmdp-disease-cs-OIEA\"> </a></td><td>OTH ERYTHROCYT DIFFERENTIATION</td></tr><tr><td style=\"white-space:nowrap\">OIIS<a name=\"nmdp-disease-cs-OIIS\"> </a></td><td>OTHER IMMUNE SYSTEM</td></tr><tr><td style=\"white-space:nowrap\">OIMD<a name=\"nmdp-disease-cs-OIMD\"> </a></td><td>OTH INHER METABOLISM DISORD</td></tr><tr><td style=\"white-space:nowrap\">OIMDL<a name=\"nmdp-disease-cs-OIMDL\"> </a></td><td>OTH MUCOLIPIDOSES</td></tr><tr><td style=\"white-space:nowrap\">OIMDP<a name=\"nmdp-disease-cs-OIMDP\"> </a></td><td>OTH MUCOPOLYSACCHARIDOSIS</td></tr><tr><td style=\"white-space:nowrap\">OIPA<a name=\"nmdp-disease-cs-OIPA\"> </a></td><td>OTH ABNORMALITIES OR PLATELETS</td></tr><tr><td style=\"white-space:nowrap\">OMDS<a name=\"nmdp-disease-cs-OMDS\"> </a></td><td>OTHER MYELODYSPLASTIC DISORDER</td></tr><tr><td style=\"white-space:nowrap\">OMF<a name=\"nmdp-disease-cs-OMF\"> </a></td><td>OTHER MYLEOFIBROSIS/MYLEOSCLER</td></tr><tr><td style=\"white-space:nowrap\">OMMEN<a name=\"nmdp-disease-cs-OMMEN\"> </a></td><td>OMMEN'S SYNDROME</td></tr><tr><td style=\"white-space:nowrap\">OMS<a name=\"nmdp-disease-cs-OMS\"> </a></td><td>OTH MALIGNANCY, SPECIFY</td></tr><tr><td style=\"white-space:nowrap\">OND<a name=\"nmdp-disease-cs-OND\"> </a></td><td>OTHER NON-MALIGNANT DISEASE</td></tr><tr><td style=\"white-space:nowrap\">OOL<a name=\"nmdp-disease-cs-OOL\"> </a></td><td>OTHER LEUKEMIA SPECIFY</td></tr><tr><td style=\"white-space:nowrap\">OPCD<a name=\"nmdp-disease-cs-OPCD\"> </a></td><td>OTHER PLASMA CELL DISORDER</td></tr><tr><td style=\"white-space:nowrap\">OSCID<a name=\"nmdp-disease-cs-OSCID\"> </a></td><td>OTHER SCID</td></tr><tr><td style=\"white-space:nowrap\">OST<a name=\"nmdp-disease-cs-OST\"> </a></td><td>OSTEOPETROSIS</td></tr><tr><td style=\"white-space:nowrap\">OTHHGP<a name=\"nmdp-disease-cs-OTHHGP\"> </a></td><td>OTHER HEMOGLOBINOPATHY</td></tr><tr><td style=\"white-space:nowrap\">PCL<a name=\"nmdp-disease-cs-PCL\"> </a></td><td>PLASMA CELL LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\">PHILLY<a name=\"nmdp-disease-cs-PHILLY\"> </a></td><td>PROLYMPHOCYTIC LEUKEMIA</td></tr><tr><td style=\"white-space:nowrap\">PNH<a name=\"nmdp-disease-cs-PNH\"> </a></td><td>PAROXYSMAL NOCTURNAL HEMOGLOB</td></tr><tr><td style=\"white-space:nowrap\">PV<a name=\"nmdp-disease-cs-PV\"> </a></td><td>POLYCYTHEMIA VERA</td></tr><tr><td style=\"white-space:nowrap\">RA<a name=\"nmdp-disease-cs-RA\"> </a></td><td>REFRACTORY ANEMIA (RA)</td></tr><tr><td style=\"white-space:nowrap\">RAEB<a name=\"nmdp-disease-cs-RAEB\"> </a></td><td>REFRACT ANEMIA-EXCESS BLASTS</td></tr><tr><td style=\"white-space:nowrap\">RAEBIT<a name=\"nmdp-disease-cs-RAEBIT\"> </a></td><td>REFRACT ANEMIA-EX. BLAST TRAN</td></tr><tr><td style=\"white-space:nowrap\">RCA<a name=\"nmdp-disease-cs-RCA\"> </a></td><td>PURE RED CELL APLASIA</td></tr><tr><td style=\"white-space:nowrap\">RCC<a name=\"nmdp-disease-cs-RCC\"> </a></td><td>RENAL CELL CARCINOMA</td></tr><tr><td style=\"white-space:nowrap\">RETDG<a name=\"nmdp-disease-cs-RETDG\"> </a></td><td>RETICULAR DYSGENESIS</td></tr><tr><td style=\"white-space:nowrap\">SAA<a name=\"nmdp-disease-cs-SAA\"> </a></td><td>SEVERE APLASTIC ANEMIA</td></tr><tr><td style=\"white-space:nowrap\">SANFIA<a name=\"nmdp-disease-cs-SANFIA\"> </a></td><td>SANFILIPPO A - MPS IIIA</td></tr><tr><td style=\"white-space:nowrap\">SANFIB<a name=\"nmdp-disease-cs-SANFIB\"> </a></td><td>SANFILIPPO B - MPS IIIB</td></tr><tr><td style=\"white-space:nowrap\">SANFIC<a name=\"nmdp-disease-cs-SANFIC\"> </a></td><td>SANFILIPPO C - MPS IIIC</td></tr><tr><td style=\"white-space:nowrap\">SANFID<a name=\"nmdp-disease-cs-SANFID\"> </a></td><td>ANFILIPPO D - MPS IIID</td></tr><tr><td style=\"white-space:nowrap\">SANFIL<a name=\"nmdp-disease-cs-SANFIL\"> </a></td><td>SANFILLIPPO (MPS-III)</td></tr><tr><td style=\"white-space:nowrap\">SCA<a name=\"nmdp-disease-cs-SCA\"> </a></td><td>SICKLE CELL ANEMIA</td></tr><tr><td style=\"white-space:nowrap\">SCHEIE<a name=\"nmdp-disease-cs-SCHEIE\"> </a></td><td>SCHEIE SYNDROME (MPS-IS)</td></tr><tr><td style=\"white-space:nowrap\">SCID<a name=\"nmdp-disease-cs-SCID\"> </a></td><td>SEVERE COMBINED IMMUNODEF</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.nmdp.org/codesystem/disease"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "NMDPDiseaseCS"] ; # 
+  fhir:title [ fhir:v "NMDP Disease Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-11-08T17:25:20-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NMDP"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NMDP" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://bethematch.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code System for NMDP diseases"] ; # 
+  fhir:copyright [ fhir:v "National Marrow Donor Program"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "100"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ABL" ] ;
+     fhir:display [ fhir:v "ACUTE BILINEAGE LEUKEMIA" ]
+  ] [
+     fhir:code [ fhir:v "AISA" ] ;
+     fhir:display [ fhir:v "ACQ IDIOPATH SIDERBLASTIC ANEM" ]
+  ] [
+     fhir:code [ fhir:v "ALD" ] ;
+     fhir:display [ fhir:v "ADRENOLEUKODYSTROPHY" ]
+  ] [
+     fhir:code [ fhir:v "ALL" ] ;
+     fhir:display [ fhir:v "ACUTE LYMPHOBLASTIC LEUKEMIA" ]
+  ] [
+     fhir:code [ fhir:v "AMCL" ] ;
+     fhir:display [ fhir:v "ACUTE MAST CELL LEUKEMIA" ]
+  ] [
+     fhir:code [ fhir:v "AMEGCT" ] ;
+     fhir:display [ fhir:v "AMEGAKARYOCY/CONGENTIAL THROM" ]
+  ] [
+     fhir:code [ fhir:v "AML" ] ;
+     fhir:display [ fhir:v "ACUTE MYELOGENOUS LEUKEMIA" ]
+  ] [
+     fhir:code [ fhir:v "ASPGL" ] ;
+     fhir:display [ fhir:v "ASPARTYL GLUCOSAMINIDASE" ]
+  ] [
+     fhir:code [ fhir:v "AT" ] ;
+     fhir:display [ fhir:v "ATAXIA-TELANGIECTASIA" ]
+  ] [
+     fhir:code [ fhir:v "AUL" ] ;
+     fhir:display [ fhir:v "ACUTE UNDIFFERENTIATED LEUK-MO" ]
+  ] [
+     fhir:code [ fhir:v "BGLUD" ] ;
+     fhir:display [ fhir:v "BETA-GLUCURONIDASE DEFICIENCY" ]
+  ] [
+     fhir:code [ fhir:v "BLSYND" ] ;
+     fhir:display [ fhir:v "BARE LYMPHOCYTE SYNDROME" ]
+  ] [
+     fhir:code [ fhir:v "BRCA" ] ;
+     fhir:display [ fhir:v "BREAST CANCER" ]
+  ] [
+     fhir:code [ fhir:v "BTHAL" ] ;
+     fhir:display [ fhir:v "BETA THALASSEMIA MAJOR" ]
+  ] [
+     fhir:code [ fhir:v "C-HHYP" ] ;
+     fhir:display [ fhir:v "CARTILAGE-HAIR HYPOPLASIA" ]
+  ] [
+     fhir:code [ fhir:v "CGD" ] ;
+     fhir:display [ fhir:v "CHRONIC GRANULOMATOUS DISEASE" ]
+  ] [
+     fhir:code [ fhir:v "CID" ] ;
+     fhir:display [ fhir:v "COMBINED IMMUNODEFICIENCY" ]
+  ] [
+     fhir:code [ fhir:v "CLL" ] ;
+     fhir:display [ fhir:v "CHRONIC LYMPHOCYTIC LEUKEMIA" ]
+  ] [
+     fhir:code [ fhir:v "CML" ] ;
+     fhir:display [ fhir:v "CHRONIC MYELOGENOUS LEUKEMIA" ]
+  ] [
+     fhir:code [ fhir:v "CMML" ] ;
+     fhir:display [ fhir:v "CHRONIC MYELOMONOCYTIC LEUK" ]
+  ] [
+     fhir:code [ fhir:v "CNSCA" ] ;
+     fhir:display [ fhir:v "CENTRAL NERVOUS SYSTEM TUMORS" ]
+  ] [
+     fhir:code [ fhir:v "DIGRGE" ] ;
+     fhir:display [ fhir:v "DI GEORGE SYNDROME" ]
+  ] [
+     fhir:code [ fhir:v "ETC" ] ;
+     fhir:display [ fhir:v "ESSENTIAL THROMOBOCYTHEMIA" ]
+  ] [
+     fhir:code [ fhir:v "EWINGS" ] ;
+     fhir:display [ fhir:v "EWINGS SARCOMA" ]
+  ] [
+     fhir:code [ fhir:v "FA" ] ;
+     fhir:display [ fhir:v "FANCONI ANEMIA" ]
+  ] [
+     fhir:code [ fhir:v "FEL" ] ;
+     fhir:display [ fhir:v "FAMILIAL ERYTHROPHAGOCYTIC" ]
+  ] [
+     fhir:code [ fhir:v "FUCOSI" ] ;
+     fhir:display [ fhir:v "FUCOSIDOSIS" ]
+  ] [
+     fhir:code [ fhir:v "GAUCHR" ] ;
+     fhir:display [ fhir:v "GAUCHER'S DISEASE" ]
+  ] [
+     fhir:code [ fhir:v "GLTROM" ] ;
+     fhir:display [ fhir:v "GLANZMANNS THROMBASTHENIA" ]
+  ] [
+     fhir:code [ fhir:v "GLUCST" ] ;
+     fhir:display [ fhir:v "GLUCOSE STORAGE DISEASE" ]
+  ] [
+     fhir:code [ fhir:v "HCL" ] ;
+     fhir:display [ fhir:v "HAIRY CELL LEUKEMIA" ]
+  ] [
+     fhir:code [ fhir:v "HISX" ] ;
+     fhir:display [ fhir:v "HISTIOCYTOSIS-X" ]
+  ] [
+     fhir:code [ fhir:v "HIV" ] ;
+     fhir:display [ fhir:v "HIV INFECTION" ]
+  ] [
+     fhir:code [ fhir:v "HL" ] ;
+     fhir:display [ fhir:v "HODGKINS LYMPHOMA" ]
+  ] [
+     fhir:code [ fhir:v "HPGC" ] ;
+     fhir:display [ fhir:v "HEMOPHAGOCYTOSIS" ]
+  ] [
+     fhir:code [ fhir:v "HUNTER" ] ;
+     fhir:display [ fhir:v "HUNTER SYNDROME (MPS-II)" ]
+  ] [
+     fhir:code [ fhir:v "HURLER" ] ;
+     fhir:display [ fhir:v "HURLER SYNDROME (MPS-IH)" ]
+  ] [
+     fhir:code [ fhir:v "ICELL" ] ;
+     fhir:display [ fhir:v "I-CELL DISEASE" ]
+  ] [
+     fhir:code [ fhir:v "IMDNP" ] ;
+     fhir:display [ fhir:v "IMMUNE DEFICIENCY + NEUTROPEN" ]
+  ] [
+     fhir:code [ fhir:v "JCML" ] ;
+     fhir:display [ fhir:v "JUVENILE CHRONIC MYELOGENOUS" ]
+  ] [
+     fhir:code [ fhir:v "KOSTMN" ] ;
+     fhir:display [ fhir:v "KOSTMANN'S AGRANULOCYTOSIS" ]
+  ] [
+     fhir:code [ fhir:v "KRABBE" ] ;
+     fhir:display [ fhir:v "KRABBE DISEASE" ]
+  ] [
+     fhir:code [ fhir:v "LAD" ] ;
+     fhir:display [ fhir:v "LEUKOCYTE ADHESION DEFICIENCY" ]
+  ] [
+     fhir:code [ fhir:v "LN" ] ;
+     fhir:display [ fhir:v "LESCH-NYHAN" ]
+  ] [
+     fhir:code [ fhir:v "LNS" ] ;
+     fhir:display [ fhir:v "LESCH-NYHAN" ]
+  ] [
+     fhir:code [ fhir:v "LYSOST" ] ;
+     fhir:display [ fhir:v "LYSOSOMAL STORAGE DISEASE" ]
+  ] [
+     fhir:code [ fhir:v "MANNO" ] ;
+     fhir:display [ fhir:v "MANNOSIDOSIS" ]
+  ] [
+     fhir:code [ fhir:v "MARLAM" ] ;
+     fhir:display [ fhir:v "MAROTEAUX-LAMY (MPS-VI)" ]
+  ] [
+     fhir:code [ fhir:v "MDS" ] ;
+     fhir:display [ fhir:v "MYELODYSPLASTIC DISORDER" ]
+  ] [
+     fhir:code [ fhir:v "MFMM" ] ;
+     fhir:display [ fhir:v "MYELOFIBRO MYELOID METAPLASIA" ]
+  ] [
+     fhir:code [ fhir:v "MLD" ] ;
+     fhir:display [ fhir:v "METACHROMATIC LEUKODYSTROPHY" ]
+  ] [
+     fhir:code [ fhir:v "MM" ] ;
+     fhir:display [ fhir:v "MULTIPLE MYELOMA" ]
+  ] [
+     fhir:code [ fhir:v "MORQUA" ] ;
+     fhir:display [ fhir:v "MORQUIO A - MPS IVA" ]
+  ] [
+     fhir:code [ fhir:v "MORQUB" ] ;
+     fhir:display [ fhir:v "MORQUIO B - MPS IVB" ]
+  ] [
+     fhir:code [ fhir:v "MORQUO" ] ;
+     fhir:display [ fhir:v "MORQUIO (MPS-IV)" ]
+  ] [
+     fhir:code [ fhir:v "MPS" ] ;
+     fhir:display [ fhir:v "MUCOPOLYSACCHARIDOSIS (MPS-V)" ]
+  ] [
+     fhir:code [ fhir:v "N-P" ] ;
+     fhir:display [ fhir:v "NEIMAN-PICK DISEASE" ]
+  ] [
+     fhir:code [ fhir:v "NB" ] ;
+     fhir:display [ fhir:v "NEUROBLASTOMA" ]
+  ] [
+     fhir:code [ fhir:v "NCL1" ] ;
+     fhir:display [ fhir:v "ENZYME NCL 1" ]
+  ] [
+     fhir:code [ fhir:v "NCL2" ] ;
+     fhir:display [ fhir:v "ENZYME NCL 2" ]
+  ] [
+     fhir:code [ fhir:v "NEUTAD" ] ;
+     fhir:display [ fhir:v "NEUTROPHIL ACTIN DEFICIENCY" ]
+  ] [
+     fhir:code [ fhir:v "NEUTD" ] ;
+     fhir:display [ fhir:v "CHEDIAK-HIGASHI SYNDROME" ]
+  ] [
+     fhir:code [ fhir:v "NHL" ] ;
+     fhir:display [ fhir:v "NON-HODGKINS LYMPHOMA" ]
+  ] [
+     fhir:code [ fhir:v "OCID" ] ;
+     fhir:display [ fhir:v "OTHR COMBINED IMMUNODEFICIENCY" ]
+  ] [
+     fhir:code [ fhir:v "OHIS" ] ;
+     fhir:display [ fhir:v "OTHER HISTIOCYTIC DISORDERS" ]
+  ] [
+     fhir:code [ fhir:v "OIEA" ] ;
+     fhir:display [ fhir:v "OTH ERYTHROCYT DIFFERENTIATION" ]
+  ] [
+     fhir:code [ fhir:v "OIIS" ] ;
+     fhir:display [ fhir:v "OTHER IMMUNE SYSTEM" ]
+  ] [
+     fhir:code [ fhir:v "OIMD" ] ;
+     fhir:display [ fhir:v "OTH INHER METABOLISM DISORD" ]
+  ] [
+     fhir:code [ fhir:v "OIMDL" ] ;
+     fhir:display [ fhir:v "OTH MUCOLIPIDOSES" ]
+  ] [
+     fhir:code [ fhir:v "OIMDP" ] ;
+     fhir:display [ fhir:v "OTH MUCOPOLYSACCHARIDOSIS" ]
+  ] [
+     fhir:code [ fhir:v "OIPA" ] ;
+     fhir:display [ fhir:v "OTH ABNORMALITIES OR PLATELETS" ]
+  ] [
+     fhir:code [ fhir:v "OMDS" ] ;
+     fhir:display [ fhir:v "OTHER MYELODYSPLASTIC DISORDER" ]
+  ] [
+     fhir:code [ fhir:v "OMF" ] ;
+     fhir:display [ fhir:v "OTHER MYLEOFIBROSIS/MYLEOSCLER" ]
+  ] [
+     fhir:code [ fhir:v "OMMEN" ] ;
+     fhir:display [ fhir:v "OMMEN'S SYNDROME" ]
+  ] [
+     fhir:code [ fhir:v "OMS" ] ;
+     fhir:display [ fhir:v "OTH MALIGNANCY, SPECIFY" ]
+  ] [
+     fhir:code [ fhir:v "OND" ] ;
+     fhir:display [ fhir:v "OTHER NON-MALIGNANT DISEASE" ]
+  ] [
+     fhir:code [ fhir:v "OOL" ] ;
+     fhir:display [ fhir:v "OTHER LEUKEMIA SPECIFY" ]
+  ] [
+     fhir:code [ fhir:v "OPCD" ] ;
+     fhir:display [ fhir:v "OTHER PLASMA CELL DISORDER" ]
+  ] [
+     fhir:code [ fhir:v "OSCID" ] ;
+     fhir:display [ fhir:v "OTHER SCID" ]
+  ] [
+     fhir:code [ fhir:v "OST" ] ;
+     fhir:display [ fhir:v "OSTEOPETROSIS" ]
+  ] [
+     fhir:code [ fhir:v "OTHHGP" ] ;
+     fhir:display [ fhir:v "OTHER HEMOGLOBINOPATHY" ]
+  ] [
+     fhir:code [ fhir:v "PCL" ] ;
+     fhir:display [ fhir:v "PLASMA CELL LEUKEMIA" ]
+  ] [
+     fhir:code [ fhir:v "PHILLY" ] ;
+     fhir:display [ fhir:v "PROLYMPHOCYTIC LEUKEMIA" ]
+  ] [
+     fhir:code [ fhir:v "PNH" ] ;
+     fhir:display [ fhir:v "PAROXYSMAL NOCTURNAL HEMOGLOB" ]
+  ] [
+     fhir:code [ fhir:v "PV" ] ;
+     fhir:display [ fhir:v "POLYCYTHEMIA VERA" ]
+  ] [
+     fhir:code [ fhir:v "RA" ] ;
+     fhir:display [ fhir:v "REFRACTORY ANEMIA (RA)" ]
+  ] [
+     fhir:code [ fhir:v "RAEB" ] ;
+     fhir:display [ fhir:v "REFRACT ANEMIA-EXCESS BLASTS" ]
+  ] [
+     fhir:code [ fhir:v "RAEBIT" ] ;
+     fhir:display [ fhir:v "REFRACT ANEMIA-EX. BLAST TRAN" ]
+  ] [
+     fhir:code [ fhir:v "RCA" ] ;
+     fhir:display [ fhir:v "PURE RED CELL APLASIA" ]
+  ] [
+     fhir:code [ fhir:v "RCC" ] ;
+     fhir:display [ fhir:v "RENAL CELL CARCINOMA" ]
+  ] [
+     fhir:code [ fhir:v "RETDG" ] ;
+     fhir:display [ fhir:v "RETICULAR DYSGENESIS" ]
+  ] [
+     fhir:code [ fhir:v "SAA" ] ;
+     fhir:display [ fhir:v "SEVERE APLASTIC ANEMIA" ]
+  ] [
+     fhir:code [ fhir:v "SANFIA" ] ;
+     fhir:display [ fhir:v "SANFILIPPO A - MPS IIIA" ]
+  ] [
+     fhir:code [ fhir:v "SANFIB" ] ;
+     fhir:display [ fhir:v "SANFILIPPO B - MPS IIIB" ]
+  ] [
+     fhir:code [ fhir:v "SANFIC" ] ;
+     fhir:display [ fhir:v "SANFILIPPO C - MPS IIIC" ]
+  ] [
+     fhir:code [ fhir:v "SANFID" ] ;
+     fhir:display [ fhir:v "ANFILIPPO D - MPS IIID" ]
+  ] [
+     fhir:code [ fhir:v "SANFIL" ] ;
+     fhir:display [ fhir:v "SANFILLIPPO (MPS-III)" ]
+  ] [
+     fhir:code [ fhir:v "SCA" ] ;
+     fhir:display [ fhir:v "SICKLE CELL ANEMIA" ]
+  ] [
+     fhir:code [ fhir:v "SCHEIE" ] ;
+     fhir:display [ fhir:v "SCHEIE SYNDROME (MPS-IS)" ]
+  ] [
+     fhir:code [ fhir:v "SCID" ] ;
+     fhir:display [ fhir:v "SEVERE COMBINED IMMUNODEF" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

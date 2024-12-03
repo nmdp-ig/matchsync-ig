@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ms-abo-group-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ms-abo-group-codes</b></p><a name=\"ms-abo-group-codes\"> </a><a name=\"hcms-abo-group-codes\"> </a><a name=\"ms-abo-group-codes-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-nmdp-abo-codes.html\">NMDP Blood Group Value Set</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-loinc-abo-codes.html\">LOINC ABO group Value Set</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-sct-abo-group-codes.html\">Snomed CT ABO group Value Set</a></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-group-codes",
+  "version" : "0.1.1",
+  "name" : "MSABOGroupVS",
+  "title" : "MatchSync ABO Group Value Set",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-02T18:26:03-06:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes"]
+    },
+    {
+      "valueSet" : ["http://loinc.org/vs/LL2419-1"]
+    },
+    {
+      "valueSet" : ["http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes"]
+    }]
+  }
+}

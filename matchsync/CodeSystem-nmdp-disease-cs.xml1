@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nmdp-disease-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nmdp-disease-cs</b></p><a name="nmdp-disease-cs"> </a><a name="hcnmdp-disease-cs"> </a><a name="nmdp-disease-cs-en-US"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/disease</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ABL<a name="nmdp-disease-cs-ABL"> </a></td><td>ACUTE BILINEAGE LEUKEMIA</td></tr><tr><td style="white-space:nowrap">AISA<a name="nmdp-disease-cs-AISA"> </a></td><td>ACQ IDIOPATH SIDERBLASTIC ANEM</td></tr><tr><td style="white-space:nowrap">ALD<a name="nmdp-disease-cs-ALD"> </a></td><td>ADRENOLEUKODYSTROPHY</td></tr><tr><td style="white-space:nowrap">ALL<a name="nmdp-disease-cs-ALL"> </a></td><td>ACUTE LYMPHOBLASTIC LEUKEMIA</td></tr><tr><td style="white-space:nowrap">AMCL<a name="nmdp-disease-cs-AMCL"> </a></td><td>ACUTE MAST CELL LEUKEMIA</td></tr><tr><td style="white-space:nowrap">AMEGCT<a name="nmdp-disease-cs-AMEGCT"> </a></td><td>AMEGAKARYOCY/CONGENTIAL THROM</td></tr><tr><td style="white-space:nowrap">AML<a name="nmdp-disease-cs-AML"> </a></td><td>ACUTE MYELOGENOUS LEUKEMIA</td></tr><tr><td style="white-space:nowrap">ASPGL<a name="nmdp-disease-cs-ASPGL"> </a></td><td>ASPARTYL GLUCOSAMINIDASE</td></tr><tr><td style="white-space:nowrap">AT<a name="nmdp-disease-cs-AT"> </a></td><td>ATAXIA-TELANGIECTASIA</td></tr><tr><td style="white-space:nowrap">AUL<a name="nmdp-disease-cs-AUL"> </a></td><td>ACUTE UNDIFFERENTIATED LEUK-MO</td></tr><tr><td style="white-space:nowrap">BGLUD<a name="nmdp-disease-cs-BGLUD"> </a></td><td>BETA-GLUCURONIDASE DEFICIENCY</td></tr><tr><td style="white-space:nowrap">BLSYND<a name="nmdp-disease-cs-BLSYND"> </a></td><td>BARE LYMPHOCYTE SYNDROME</td></tr><tr><td style="white-space:nowrap">BRCA<a name="nmdp-disease-cs-BRCA"> </a></td><td>BREAST CANCER</td></tr><tr><td style="white-space:nowrap">BTHAL<a name="nmdp-disease-cs-BTHAL"> </a></td><td>BETA THALASSEMIA MAJOR</td></tr><tr><td style="white-space:nowrap">C-HHYP<a name="nmdp-disease-cs-C-HHYP"> </a></td><td>CARTILAGE-HAIR HYPOPLASIA</td></tr><tr><td style="white-space:nowrap">CGD<a name="nmdp-disease-cs-CGD"> </a></td><td>CHRONIC GRANULOMATOUS DISEASE</td></tr><tr><td style="white-space:nowrap">CID<a name="nmdp-disease-cs-CID"> </a></td><td>COMBINED IMMUNODEFICIENCY</td></tr><tr><td style="white-space:nowrap">CLL<a name="nmdp-disease-cs-CLL"> </a></td><td>CHRONIC LYMPHOCYTIC LEUKEMIA</td></tr><tr><td style="white-space:nowrap">CML<a name="nmdp-disease-cs-CML"> </a></td><td>CHRONIC MYELOGENOUS LEUKEMIA</td></tr><tr><td style="white-space:nowrap">CMML<a name="nmdp-disease-cs-CMML"> </a></td><td>CHRONIC MYELOMONOCYTIC LEUK</td></tr><tr><td style="white-space:nowrap">CNSCA<a name="nmdp-disease-cs-CNSCA"> </a></td><td>CENTRAL NERVOUS SYSTEM TUMORS</td></tr><tr><td style="white-space:nowrap">DIGRGE<a name="nmdp-disease-cs-DIGRGE"> </a></td><td>DI GEORGE SYNDROME</td></tr><tr><td style="white-space:nowrap">ETC<a name="nmdp-disease-cs-ETC"> </a></td><td>ESSENTIAL THROMOBOCYTHEMIA</td></tr><tr><td style="white-space:nowrap">EWINGS<a name="nmdp-disease-cs-EWINGS"> </a></td><td>EWINGS SARCOMA</td></tr><tr><td style="white-space:nowrap">FA<a name="nmdp-disease-cs-FA"> </a></td><td>FANCONI ANEMIA</td></tr><tr><td style="white-space:nowrap">FEL<a name="nmdp-disease-cs-FEL"> </a></td><td>FAMILIAL ERYTHROPHAGOCYTIC</td></tr><tr><td style="white-space:nowrap">FUCOSI<a name="nmdp-disease-cs-FUCOSI"> </a></td><td>FUCOSIDOSIS</td></tr><tr><td style="white-space:nowrap">GAUCHR<a name="nmdp-disease-cs-GAUCHR"> </a></td><td>GAUCHER'S DISEASE</td></tr><tr><td style="white-space:nowrap">GLTROM<a name="nmdp-disease-cs-GLTROM"> </a></td><td>GLANZMANNS THROMBASTHENIA</td></tr><tr><td style="white-space:nowrap">GLUCST<a name="nmdp-disease-cs-GLUCST"> </a></td><td>GLUCOSE STORAGE DISEASE</td></tr><tr><td style="white-space:nowrap">HCL<a name="nmdp-disease-cs-HCL"> </a></td><td>HAIRY CELL LEUKEMIA</td></tr><tr><td style="white-space:nowrap">HISX<a name="nmdp-disease-cs-HISX"> </a></td><td>HISTIOCYTOSIS-X</td></tr><tr><td style="white-space:nowrap">HIV<a name="nmdp-disease-cs-HIV"> </a></td><td>HIV INFECTION</td></tr><tr><td style="white-space:nowrap">HL<a name="nmdp-disease-cs-HL"> </a></td><td>HODGKINS LYMPHOMA</td></tr><tr><td style="white-space:nowrap">HPGC<a name="nmdp-disease-cs-HPGC"> </a></td><td>HEMOPHAGOCYTOSIS</td></tr><tr><td style="white-space:nowrap">HUNTER<a name="nmdp-disease-cs-HUNTER"> </a></td><td>HUNTER SYNDROME (MPS-II)</td></tr><tr><td style="white-space:nowrap">HURLER<a name="nmdp-disease-cs-HURLER"> </a></td><td>HURLER SYNDROME (MPS-IH)</td></tr><tr><td style="white-space:nowrap">ICELL<a name="nmdp-disease-cs-ICELL"> </a></td><td>I-CELL DISEASE</td></tr><tr><td style="white-space:nowrap">IMDNP<a name="nmdp-disease-cs-IMDNP"> </a></td><td>IMMUNE DEFICIENCY + NEUTROPEN</td></tr><tr><td style="white-space:nowrap">JCML<a name="nmdp-disease-cs-JCML"> </a></td><td>JUVENILE CHRONIC MYELOGENOUS</td></tr><tr><td style="white-space:nowrap">KOSTMN<a name="nmdp-disease-cs-KOSTMN"> </a></td><td>KOSTMANN'S AGRANULOCYTOSIS</td></tr><tr><td style="white-space:nowrap">KRABBE<a name="nmdp-disease-cs-KRABBE"> </a></td><td>KRABBE DISEASE</td></tr><tr><td style="white-space:nowrap">LAD<a name="nmdp-disease-cs-LAD"> </a></td><td>LEUKOCYTE ADHESION DEFICIENCY</td></tr><tr><td style="white-space:nowrap">LN<a name="nmdp-disease-cs-LN"> </a></td><td>LESCH-NYHAN</td></tr><tr><td style="white-space:nowrap">LNS<a name="nmdp-disease-cs-LNS"> </a></td><td>LESCH-NYHAN</td></tr><tr><td style="white-space:nowrap">LYSOST<a name="nmdp-disease-cs-LYSOST"> </a></td><td>LYSOSOMAL STORAGE DISEASE</td></tr><tr><td style="white-space:nowrap">MANNO<a name="nmdp-disease-cs-MANNO"> </a></td><td>MANNOSIDOSIS</td></tr><tr><td style="white-space:nowrap">MARLAM<a name="nmdp-disease-cs-MARLAM"> </a></td><td>MAROTEAUX-LAMY (MPS-VI)</td></tr><tr><td style="white-space:nowrap">MDS<a name="nmdp-disease-cs-MDS"> </a></td><td>MYELODYSPLASTIC DISORDER</td></tr><tr><td style="white-space:nowrap">MFMM<a name="nmdp-disease-cs-MFMM"> </a></td><td>MYELOFIBRO MYELOID METAPLASIA</td></tr><tr><td style="white-space:nowrap">MLD<a name="nmdp-disease-cs-MLD"> </a></td><td>METACHROMATIC LEUKODYSTROPHY</td></tr><tr><td style="white-space:nowrap">MM<a name="nmdp-disease-cs-MM"> </a></td><td>MULTIPLE MYELOMA</td></tr><tr><td style="white-space:nowrap">MORQUA<a name="nmdp-disease-cs-MORQUA"> </a></td><td>MORQUIO A - MPS IVA</td></tr><tr><td style="white-space:nowrap">MORQUB<a name="nmdp-disease-cs-MORQUB"> </a></td><td>MORQUIO B - MPS IVB</td></tr><tr><td style="white-space:nowrap">MORQUO<a name="nmdp-disease-cs-MORQUO"> </a></td><td>MORQUIO (MPS-IV)</td></tr><tr><td style="white-space:nowrap">MPS<a name="nmdp-disease-cs-MPS"> </a></td><td>MUCOPOLYSACCHARIDOSIS (MPS-V)</td></tr><tr><td style="white-space:nowrap">N-P<a name="nmdp-disease-cs-N-P"> </a></td><td>NEIMAN-PICK DISEASE</td></tr><tr><td style="white-space:nowrap">NB<a name="nmdp-disease-cs-NB"> </a></td><td>NEUROBLASTOMA</td></tr><tr><td style="white-space:nowrap">NCL1<a name="nmdp-disease-cs-NCL1"> </a></td><td>ENZYME NCL 1</td></tr><tr><td style="white-space:nowrap">NCL2<a name="nmdp-disease-cs-NCL2"> </a></td><td>ENZYME NCL 2</td></tr><tr><td style="white-space:nowrap">NEUTAD<a name="nmdp-disease-cs-NEUTAD"> </a></td><td>NEUTROPHIL ACTIN DEFICIENCY</td></tr><tr><td style="white-space:nowrap">NEUTD<a name="nmdp-disease-cs-NEUTD"> </a></td><td>CHEDIAK-HIGASHI SYNDROME</td></tr><tr><td style="white-space:nowrap">NHL<a name="nmdp-disease-cs-NHL"> </a></td><td>NON-HODGKINS LYMPHOMA</td></tr><tr><td style="white-space:nowrap">OCID<a name="nmdp-disease-cs-OCID"> </a></td><td>OTHR COMBINED IMMUNODEFICIENCY</td></tr><tr><td style="white-space:nowrap">OHIS<a name="nmdp-disease-cs-OHIS"> </a></td><td>OTHER HISTIOCYTIC DISORDERS</td></tr><tr><td style="white-space:nowrap">OIEA<a name="nmdp-disease-cs-OIEA"> </a></td><td>OTH ERYTHROCYT DIFFERENTIATION</td></tr><tr><td style="white-space:nowrap">OIIS<a name="nmdp-disease-cs-OIIS"> </a></td><td>OTHER IMMUNE SYSTEM</td></tr><tr><td style="white-space:nowrap">OIMD<a name="nmdp-disease-cs-OIMD"> </a></td><td>OTH INHER METABOLISM DISORD</td></tr><tr><td style="white-space:nowrap">OIMDL<a name="nmdp-disease-cs-OIMDL"> </a></td><td>OTH MUCOLIPIDOSES</td></tr><tr><td style="white-space:nowrap">OIMDP<a name="nmdp-disease-cs-OIMDP"> </a></td><td>OTH MUCOPOLYSACCHARIDOSIS</td></tr><tr><td style="white-space:nowrap">OIPA<a name="nmdp-disease-cs-OIPA"> </a></td><td>OTH ABNORMALITIES OR PLATELETS</td></tr><tr><td style="white-space:nowrap">OMDS<a name="nmdp-disease-cs-OMDS"> </a></td><td>OTHER MYELODYSPLASTIC DISORDER</td></tr><tr><td style="white-space:nowrap">OMF<a name="nmdp-disease-cs-OMF"> </a></td><td>OTHER MYLEOFIBROSIS/MYLEOSCLER</td></tr><tr><td style="white-space:nowrap">OMMEN<a name="nmdp-disease-cs-OMMEN"> </a></td><td>OMMEN'S SYNDROME</td></tr><tr><td style="white-space:nowrap">OMS<a name="nmdp-disease-cs-OMS"> </a></td><td>OTH MALIGNANCY, SPECIFY</td></tr><tr><td style="white-space:nowrap">OND<a name="nmdp-disease-cs-OND"> </a></td><td>OTHER NON-MALIGNANT DISEASE</td></tr><tr><td style="white-space:nowrap">OOL<a name="nmdp-disease-cs-OOL"> </a></td><td>OTHER LEUKEMIA SPECIFY</td></tr><tr><td style="white-space:nowrap">OPCD<a name="nmdp-disease-cs-OPCD"> </a></td><td>OTHER PLASMA CELL DISORDER</td></tr><tr><td style="white-space:nowrap">OSCID<a name="nmdp-disease-cs-OSCID"> </a></td><td>OTHER SCID</td></tr><tr><td style="white-space:nowrap">OST<a name="nmdp-disease-cs-OST"> </a></td><td>OSTEOPETROSIS</td></tr><tr><td style="white-space:nowrap">OTHHGP<a name="nmdp-disease-cs-OTHHGP"> </a></td><td>OTHER HEMOGLOBINOPATHY</td></tr><tr><td style="white-space:nowrap">PCL<a name="nmdp-disease-cs-PCL"> </a></td><td>PLASMA CELL LEUKEMIA</td></tr><tr><td style="white-space:nowrap">PHILLY<a name="nmdp-disease-cs-PHILLY"> </a></td><td>PROLYMPHOCYTIC LEUKEMIA</td></tr><tr><td style="white-space:nowrap">PNH<a name="nmdp-disease-cs-PNH"> </a></td><td>PAROXYSMAL NOCTURNAL HEMOGLOB</td></tr><tr><td style="white-space:nowrap">PV<a name="nmdp-disease-cs-PV"> </a></td><td>POLYCYTHEMIA VERA</td></tr><tr><td style="white-space:nowrap">RA<a name="nmdp-disease-cs-RA"> </a></td><td>REFRACTORY ANEMIA (RA)</td></tr><tr><td style="white-space:nowrap">RAEB<a name="nmdp-disease-cs-RAEB"> </a></td><td>REFRACT ANEMIA-EXCESS BLASTS</td></tr><tr><td style="white-space:nowrap">RAEBIT<a name="nmdp-disease-cs-RAEBIT"> </a></td><td>REFRACT ANEMIA-EX. BLAST TRAN</td></tr><tr><td style="white-space:nowrap">RCA<a name="nmdp-disease-cs-RCA"> </a></td><td>PURE RED CELL APLASIA</td></tr><tr><td style="white-space:nowrap">RCC<a name="nmdp-disease-cs-RCC"> </a></td><td>RENAL CELL CARCINOMA</td></tr><tr><td style="white-space:nowrap">RETDG<a name="nmdp-disease-cs-RETDG"> </a></td><td>RETICULAR DYSGENESIS</td></tr><tr><td style="white-space:nowrap">SAA<a name="nmdp-disease-cs-SAA"> </a></td><td>SEVERE APLASTIC ANEMIA</td></tr><tr><td style="white-space:nowrap">SANFIA<a name="nmdp-disease-cs-SANFIA"> </a></td><td>SANFILIPPO A - MPS IIIA</td></tr><tr><td style="white-space:nowrap">SANFIB<a name="nmdp-disease-cs-SANFIB"> </a></td><td>SANFILIPPO B - MPS IIIB</td></tr><tr><td style="white-space:nowrap">SANFIC<a name="nmdp-disease-cs-SANFIC"> </a></td><td>SANFILIPPO C - MPS IIIC</td></tr><tr><td style="white-space:nowrap">SANFID<a name="nmdp-disease-cs-SANFID"> </a></td><td>ANFILIPPO D - MPS IIID</td></tr><tr><td style="white-space:nowrap">SANFIL<a name="nmdp-disease-cs-SANFIL"> </a></td><td>SANFILLIPPO (MPS-III)</td></tr><tr><td style="white-space:nowrap">SCA<a name="nmdp-disease-cs-SCA"> </a></td><td>SICKLE CELL ANEMIA</td></tr><tr><td style="white-space:nowrap">SCHEIE<a name="nmdp-disease-cs-SCHEIE"> </a></td><td>SCHEIE SYNDROME (MPS-IS)</td></tr><tr><td style="white-space:nowrap">SCID<a name="nmdp-disease-cs-SCID"> </a></td><td>SEVERE COMBINED IMMUNODEF</td></tr></table></div>
+  </text>
+  <url value="http://terminology.nmdp.org/codesystem/disease"/>
+  <version value="0.1.1"/>
+  <name value="NMDPDiseaseCS"/>
+  <title value="NMDP Disease Code System"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-12-02T18:31:42-06:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="Code System for NMDP diseases"/>
+  <copyright value="National Marrow Donor Program"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="100"/>
+  <concept>
+    <code value="ABL"/>
+    <display value="ACUTE BILINEAGE LEUKEMIA"/>
+  </concept>
+  <concept>
+    <code value="AISA"/>
+    <display value="ACQ IDIOPATH SIDERBLASTIC ANEM"/>
+  </concept>
+  <concept>
+    <code value="ALD"/>
+    <display value="ADRENOLEUKODYSTROPHY"/>
+  </concept>
+  <concept>
+    <code value="ALL"/>
+    <display value="ACUTE LYMPHOBLASTIC LEUKEMIA"/>
+  </concept>
+  <concept>
+    <code value="AMCL"/>
+    <display value="ACUTE MAST CELL LEUKEMIA"/>
+  </concept>
+  <concept>
+    <code value="AMEGCT"/>
+    <display value="AMEGAKARYOCY/CONGENTIAL THROM"/>
+  </concept>
+  <concept>
+    <code value="AML"/>
+    <display value="ACUTE MYELOGENOUS LEUKEMIA"/>
+  </concept>
+  <concept>
+    <code value="ASPGL"/>
+    <display value="ASPARTYL GLUCOSAMINIDASE"/>
+  </concept>
+  <concept>
+    <code value="AT"/>
+    <display value="ATAXIA-TELANGIECTASIA"/>
+  </concept>
+  <concept>
+    <code value="AUL"/>
+    <display value="ACUTE UNDIFFERENTIATED LEUK-MO"/>
+  </concept>
+  <concept>
+    <code value="BGLUD"/>
+    <display value="BETA-GLUCURONIDASE DEFICIENCY"/>
+  </concept>
+  <concept>
+    <code value="BLSYND"/>
+    <display value="BARE LYMPHOCYTE SYNDROME"/>
+  </concept>
+  <concept>
+    <code value="BRCA"/>
+    <display value="BREAST CANCER"/>
+  </concept>
+  <concept>
+    <code value="BTHAL"/>
+    <display value="BETA THALASSEMIA MAJOR"/>
+  </concept>
+  <concept>
+    <code value="C-HHYP"/>
+    <display value="CARTILAGE-HAIR HYPOPLASIA"/>
+  </concept>
+  <concept>
+    <code value="CGD"/>
+    <display value="CHRONIC GRANULOMATOUS DISEASE"/>
+  </concept>
+  <concept>
+    <code value="CID"/>
+    <display value="COMBINED IMMUNODEFICIENCY"/>
+  </concept>
+  <concept>
+    <code value="CLL"/>
+    <display value="CHRONIC LYMPHOCYTIC LEUKEMIA"/>
+  </concept>
+  <concept>
+    <code value="CML"/>
+    <display value="CHRONIC MYELOGENOUS LEUKEMIA"/>
+  </concept>
+  <concept>
+    <code value="CMML"/>
+    <display value="CHRONIC MYELOMONOCYTIC LEUK"/>
+  </concept>
+  <concept>
+    <code value="CNSCA"/>
+    <display value="CENTRAL NERVOUS SYSTEM TUMORS"/>
+  </concept>
+  <concept>
+    <code value="DIGRGE"/>
+    <display value="DI GEORGE SYNDROME"/>
+  </concept>
+  <concept>
+    <code value="ETC"/>
+    <display value="ESSENTIAL THROMOBOCYTHEMIA"/>
+  </concept>
+  <concept>
+    <code value="EWINGS"/>
+    <display value="EWINGS SARCOMA"/>
+  </concept>
+  <concept>
+    <code value="FA"/>
+    <display value="FANCONI ANEMIA"/>
+  </concept>
+  <concept>
+    <code value="FEL"/>
+    <display value="FAMILIAL ERYTHROPHAGOCYTIC"/>
+  </concept>
+  <concept>
+    <code value="FUCOSI"/>
+    <display value="FUCOSIDOSIS"/>
+  </concept>
+  <concept>
+    <code value="GAUCHR"/>
+    <display value="GAUCHER'S DISEASE"/>
+  </concept>
+  <concept>
+    <code value="GLTROM"/>
+    <display value="GLANZMANNS THROMBASTHENIA"/>
+  </concept>
+  <concept>
+    <code value="GLUCST"/>
+    <display value="GLUCOSE STORAGE DISEASE"/>
+  </concept>
+  <concept>
+    <code value="HCL"/>
+    <display value="HAIRY CELL LEUKEMIA"/>
+  </concept>
+  <concept>
+    <code value="HISX"/>
+    <display value="HISTIOCYTOSIS-X"/>
+  </concept>
+  <concept>
+    <code value="HIV"/>
+    <display value="HIV INFECTION"/>
+  </concept>
+  <concept>
+    <code value="HL"/>
+    <display value="HODGKINS LYMPHOMA"/>
+  </concept>
+  <concept>
+    <code value="HPGC"/>
+    <display value="HEMOPHAGOCYTOSIS"/>
+  </concept>
+  <concept>
+    <code value="HUNTER"/>
+    <display value="HUNTER SYNDROME (MPS-II)"/>
+  </concept>
+  <concept>
+    <code value="HURLER"/>
+    <display value="HURLER SYNDROME (MPS-IH)"/>
+  </concept>
+  <concept>
+    <code value="ICELL"/>
+    <display value="I-CELL DISEASE"/>
+  </concept>
+  <concept>
+    <code value="IMDNP"/>
+    <display value="IMMUNE DEFICIENCY + NEUTROPEN"/>
+  </concept>
+  <concept>
+    <code value="JCML"/>
+    <display value="JUVENILE CHRONIC MYELOGENOUS"/>
+  </concept>
+  <concept>
+    <code value="KOSTMN"/>
+    <display value="KOSTMANN'S AGRANULOCYTOSIS"/>
+  </concept>
+  <concept>
+    <code value="KRABBE"/>
+    <display value="KRABBE DISEASE"/>
+  </concept>
+  <concept>
+    <code value="LAD"/>
+    <display value="LEUKOCYTE ADHESION DEFICIENCY"/>
+  </concept>
+  <concept>
+    <code value="LN"/>
+    <display value="LESCH-NYHAN"/>
+  </concept>
+  <concept>
+    <code value="LNS"/>
+    <display value="LESCH-NYHAN"/>
+  </concept>
+  <concept>
+    <code value="LYSOST"/>
+    <display value="LYSOSOMAL STORAGE DISEASE"/>
+  </concept>
+  <concept>
+    <code value="MANNO"/>
+    <display value="MANNOSIDOSIS"/>
+  </concept>
+  <concept>
+    <code value="MARLAM"/>
+    <display value="MAROTEAUX-LAMY (MPS-VI)"/>
+  </concept>
+  <concept>
+    <code value="MDS"/>
+    <display value="MYELODYSPLASTIC DISORDER"/>
+  </concept>
+  <concept>
+    <code value="MFMM"/>
+    <display value="MYELOFIBRO MYELOID METAPLASIA"/>
+  </concept>
+  <concept>
+    <code value="MLD"/>
+    <display value="METACHROMATIC LEUKODYSTROPHY"/>
+  </concept>
+  <concept>
+    <code value="MM"/>
+    <display value="MULTIPLE MYELOMA"/>
+  </concept>
+  <concept>
+    <code value="MORQUA"/>
+    <display value="MORQUIO A - MPS IVA"/>
+  </concept>
+  <concept>
+    <code value="MORQUB"/>
+    <display value="MORQUIO B - MPS IVB"/>
+  </concept>
+  <concept>
+    <code value="MORQUO"/>
+    <display value="MORQUIO (MPS-IV)"/>
+  </concept>
+  <concept>
+    <code value="MPS"/>
+    <display value="MUCOPOLYSACCHARIDOSIS (MPS-V)"/>
+  </concept>
+  <concept>
+    <code value="N-P"/>
+    <display value="NEIMAN-PICK DISEASE"/>
+  </concept>
+  <concept>
+    <code value="NB"/>
+    <display value="NEUROBLASTOMA"/>
+  </concept>
+  <concept>
+    <code value="NCL1"/>
+    <display value="ENZYME NCL 1"/>
+  </concept>
+  <concept>
+    <code value="NCL2"/>
+    <display value="ENZYME NCL 2"/>
+  </concept>
+  <concept>
+    <code value="NEUTAD"/>
+    <display value="NEUTROPHIL ACTIN DEFICIENCY"/>
+  </concept>
+  <concept>
+    <code value="NEUTD"/>
+    <display value="CHEDIAK-HIGASHI SYNDROME"/>
+  </concept>
+  <concept>
+    <code value="NHL"/>
+    <display value="NON-HODGKINS LYMPHOMA"/>
+  </concept>
+  <concept>
+    <code value="OCID"/>
+    <display value="OTHR COMBINED IMMUNODEFICIENCY"/>
+  </concept>
+  <concept>
+    <code value="OHIS"/>
+    <display value="OTHER HISTIOCYTIC DISORDERS"/>
+  </concept>
+  <concept>
+    <code value="OIEA"/>
+    <display value="OTH ERYTHROCYT DIFFERENTIATION"/>
+  </concept>
+  <concept>
+    <code value="OIIS"/>
+    <display value="OTHER IMMUNE SYSTEM"/>
+  </concept>
+  <concept>
+    <code value="OIMD"/>
+    <display value="OTH INHER METABOLISM DISORD"/>
+  </concept>
+  <concept>
+    <code value="OIMDL"/>
+    <display value="OTH MUCOLIPIDOSES"/>
+  </concept>
+  <concept>
+    <code value="OIMDP"/>
+    <display value="OTH MUCOPOLYSACCHARIDOSIS"/>
+  </concept>
+  <concept>
+    <code value="OIPA"/>
+    <display value="OTH ABNORMALITIES OR PLATELETS"/>
+  </concept>
+  <concept>
+    <code value="OMDS"/>
+    <display value="OTHER MYELODYSPLASTIC DISORDER"/>
+  </concept>
+  <concept>
+    <code value="OMF"/>
+    <display value="OTHER MYLEOFIBROSIS/MYLEOSCLER"/>
+  </concept>
+  <concept>
+    <code value="OMMEN"/>
+    <display value="OMMEN'S SYNDROME"/>
+  </concept>
+  <concept>
+    <code value="OMS"/>
+    <display value="OTH MALIGNANCY, SPECIFY"/>
+  </concept>
+  <concept>
+    <code value="OND"/>
+    <display value="OTHER NON-MALIGNANT DISEASE"/>
+  </concept>
+  <concept>
+    <code value="OOL"/>
+    <display value="OTHER LEUKEMIA SPECIFY"/>
+  </concept>
+  <concept>
+    <code value="OPCD"/>
+    <display value="OTHER PLASMA CELL DISORDER"/>
+  </concept>
+  <concept>
+    <code value="OSCID"/>
+    <display value="OTHER SCID"/>
+  </concept>
+  <concept>
+    <code value="OST"/>
+    <display value="OSTEOPETROSIS"/>
+  </concept>
+  <concept>
+    <code value="OTHHGP"/>
+    <display value="OTHER HEMOGLOBINOPATHY"/>
+  </concept>
+  <concept>
+    <code value="PCL"/>
+    <display value="PLASMA CELL LEUKEMIA"/>
+  </concept>
+  <concept>
+    <code value="PHILLY"/>
+    <display value="PROLYMPHOCYTIC LEUKEMIA"/>
+  </concept>
+  <concept>
+    <code value="PNH"/>
+    <display value="PAROXYSMAL NOCTURNAL HEMOGLOB"/>
+  </concept>
+  <concept>
+    <code value="PV"/>
+    <display value="POLYCYTHEMIA VERA"/>
+  </concept>
+  <concept>
+    <code value="RA"/>
+    <display value="REFRACTORY ANEMIA (RA)"/>
+  </concept>
+  <concept>
+    <code value="RAEB"/>
+    <display value="REFRACT ANEMIA-EXCESS BLASTS"/>
+  </concept>
+  <concept>
+    <code value="RAEBIT"/>
+    <display value="REFRACT ANEMIA-EX. BLAST TRAN"/>
+  </concept>
+  <concept>
+    <code value="RCA"/>
+    <display value="PURE RED CELL APLASIA"/>
+  </concept>
+  <concept>
+    <code value="RCC"/>
+    <display value="RENAL CELL CARCINOMA"/>
+  </concept>
+  <concept>
+    <code value="RETDG"/>
+    <display value="RETICULAR DYSGENESIS"/>
+  </concept>
+  <concept>
+    <code value="SAA"/>
+    <display value="SEVERE APLASTIC ANEMIA"/>
+  </concept>
+  <concept>
+    <code value="SANFIA"/>
+    <display value="SANFILIPPO A - MPS IIIA"/>
+  </concept>
+  <concept>
+    <code value="SANFIB"/>
+    <display value="SANFILIPPO B - MPS IIIB"/>
+  </concept>
+  <concept>
+    <code value="SANFIC"/>
+    <display value="SANFILIPPO C - MPS IIIC"/>
+  </concept>
+  <concept>
+    <code value="SANFID"/>
+    <display value="ANFILIPPO D - MPS IIID"/>
+  </concept>
+  <concept>
+    <code value="SANFIL"/>
+    <display value="SANFILLIPPO (MPS-III)"/>
+  </concept>
+  <concept>
+    <code value="SCA"/>
+    <display value="SICKLE CELL ANEMIA"/>
+  </concept>
+  <concept>
+    <code value="SCHEIE"/>
+    <display value="SCHEIE SYNDROME (MPS-IS)"/>
+  </concept>
+  <concept>
+    <code value="SCID"/>
+    <display value="SEVERE COMBINED IMMUNODEF"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,25 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "SearchCoordinatorRoleExample",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"],
+    "security" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplant-center",
+      "code" : "tc_123"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole SearchCoordinatorRoleExample</b></p><a name=\"SearchCoordinatorRoleExample\"> </a><a name=\"hcSearchCoordinatorRoleExample\"> </a><a name=\"SearchCoordinatorRoleExample-en-US\"> </a><p><b>practitioner</b>: <a href=\"Practitioner-SearchCoordinatorExample.html\">Practitioner Bart Simpson </a></p><p><b>code</b>: <span title=\"Codes:{http://terminology.nmdp.org/codesystem/practitionerrole searchcoordinator}\">Search Coordinator</span></p></div>"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/SearchCoordinatorExample"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/practitionerrole",
+      "code" : "searchcoordinator",
+      "display" : "Search Coordinator"
+    }]
+  }]
+}

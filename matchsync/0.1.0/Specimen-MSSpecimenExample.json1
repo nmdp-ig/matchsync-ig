@@ -1,0 +1,22 @@
+{
+  "resourceType" : "Specimen",
+  "id" : "MSSpecimenExample",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msspecimen"],
+    "security" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplant-center",
+      "code" : "tc_123"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen MSSpecimenExample</b></p><a name=\"MSSpecimenExample\"> </a><a name=\"hcMSSpecimenExample\"> </a><a name=\"MSSpecimenExample-en-US\"> </a><p><b>identifier</b>: <code>http://terminology.nmdp.org/identifier/transplantcenter</code>/000</p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://terminology.nmdp.org/identifier/transplantcenter",
+    "value" : "000"
+  }],
+  "subject" : {
+    "reference" : "Patient/MSPatientExample"
+  }
+}

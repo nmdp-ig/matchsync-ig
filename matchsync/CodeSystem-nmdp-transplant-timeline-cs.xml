@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nmdp-transplant-timeline-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nmdp-transplant-timeline-cs</b></p><a name="nmdp-transplant-timeline-cs"> </a><a name="hcnmdp-transplant-timeline-cs"> </a><a name="nmdp-transplant-timeline-cs-en-US"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/transplanttimeline</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">&lt;4w<a name="nmdp-transplant-timeline-cs-.604w"> </a></td><td>Less than 4 weeks</td></tr><tr><td style="white-space:nowrap">4-6w<a name="nmdp-transplant-timeline-cs-4-6w"> </a></td><td>Between 4-6 weeks</td></tr><tr><td style="white-space:nowrap">7-12w<a name="nmdp-transplant-timeline-cs-7-12w"> </a></td><td>Between 7-12 weeks</td></tr><tr><td style="white-space:nowrap">12w-6m<a name="nmdp-transplant-timeline-cs-12w-6m"> </a></td><td>Over 12 weeks - up to 6 months</td></tr><tr><td style="white-space:nowrap">&gt;6m<a name="nmdp-transplant-timeline-cs-.626m"> </a></td><td>Greater than 6 months</td></tr><tr><td style="white-space:nowrap">NA<a name="nmdp-transplant-timeline-cs-NA"> </a></td><td>N/A : MUD Transplant not preferred treatment</td></tr><tr><td style="white-space:nowrap">P<a name="nmdp-transplant-timeline-cs-P"> </a></td><td>Pending, Case manager to follow up</td></tr></table></div>
+  </text>
+  <url value="http://terminology.nmdp.org/codesystem/transplanttimeline"/>
+  <version value="0.1.1"/>
+  <name value="NMDPTransplantTimelineCS"/>
+  <title value="NMDP Transplant Timeline Code System"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-12-02T18:31:42-06:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="Code System for NMDP transplant timeline"/>
+  <copyright value="National Marrow Donor Program"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="&lt;4w"/>
+    <display value="Less than 4 weeks"/>
+  </concept>
+  <concept>
+    <code value="4-6w"/>
+    <display value="Between 4-6 weeks"/>
+  </concept>
+  <concept>
+    <code value="7-12w"/>
+    <display value="Between 7-12 weeks"/>
+  </concept>
+  <concept>
+    <code value="12w-6m"/>
+    <display value="Over 12 weeks - up to 6 months"/>
+  </concept>
+  <concept>
+    <code value="&gt;6m"/>
+    <display value="Greater than 6 months"/>
+  </concept>
+  <concept>
+    <code value="NA"/>
+    <display value="N/A : MUD Transplant not preferred treatment"/>
+  </concept>
+  <concept>
+    <code value="P"/>
+    <display value="Pending, Case manager to follow up"/>
+  </concept>
+</CodeSystem>

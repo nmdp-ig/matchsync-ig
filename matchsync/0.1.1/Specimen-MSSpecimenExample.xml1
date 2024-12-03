@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="MSSpecimenExample"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msspecimen"/>
+    <security>
+      <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+      <code value="tc_123"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Specimen MSSpecimenExample</b></p><a name="MSSpecimenExample"> </a><a name="hcMSSpecimenExample"> </a><a name="MSSpecimenExample-en-US"> </a><p><b>identifier</b>: <code>http://terminology.nmdp.org/identifier/transplantcenter</code>/000</p><p><b>subject</b>: <a href="Patient-MSPatientExample.html">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p></div>
+  </text>
+  <identifier>
+    <system value="http://terminology.nmdp.org/identifier/transplantcenter"/>
+    <value value="000"/>
+  </identifier>
+  <subject>
+    <reference value="Patient/MSPatientExample"/>
+  </subject>
+</Specimen>

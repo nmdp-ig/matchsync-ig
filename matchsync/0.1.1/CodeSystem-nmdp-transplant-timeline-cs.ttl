@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-transplant-timeline-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nmdp-transplant-timeline-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nmdp-transplant-timeline-cs</b></p><a name=\"nmdp-transplant-timeline-cs\"> </a><a name=\"hcnmdp-transplant-timeline-cs\"> </a><a name=\"nmdp-transplant-timeline-cs-en-US\"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/transplanttimeline</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">&lt;4w<a name=\"nmdp-transplant-timeline-cs-.604w\"> </a></td><td>Less than 4 weeks</td></tr><tr><td style=\"white-space:nowrap\">4-6w<a name=\"nmdp-transplant-timeline-cs-4-6w\"> </a></td><td>Between 4-6 weeks</td></tr><tr><td style=\"white-space:nowrap\">7-12w<a name=\"nmdp-transplant-timeline-cs-7-12w\"> </a></td><td>Between 7-12 weeks</td></tr><tr><td style=\"white-space:nowrap\">12w-6m<a name=\"nmdp-transplant-timeline-cs-12w-6m\"> </a></td><td>Over 12 weeks - up to 6 months</td></tr><tr><td style=\"white-space:nowrap\">&gt;6m<a name=\"nmdp-transplant-timeline-cs-.626m\"> </a></td><td>Greater than 6 months</td></tr><tr><td style=\"white-space:nowrap\">NA<a name=\"nmdp-transplant-timeline-cs-NA\"> </a></td><td>N/A : MUD Transplant not preferred treatment</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"nmdp-transplant-timeline-cs-P\"> </a></td><td>Pending, Case manager to follow up</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.nmdp.org/codesystem/transplanttimeline"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "NMDPTransplantTimelineCS"] ; # 
+  fhir:title [ fhir:v "NMDP Transplant Timeline Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-02T18:26:03-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NMDP"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NMDP" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://bethematch.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code System for NMDP transplant timeline"] ; # 
+  fhir:copyright [ fhir:v "National Marrow Donor Program"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "<4w" ] ;
+     fhir:display [ fhir:v "Less than 4 weeks" ]
+  ] [
+     fhir:code [ fhir:v "4-6w" ] ;
+     fhir:display [ fhir:v "Between 4-6 weeks" ]
+  ] [
+     fhir:code [ fhir:v "7-12w" ] ;
+     fhir:display [ fhir:v "Between 7-12 weeks" ]
+  ] [
+     fhir:code [ fhir:v "12w-6m" ] ;
+     fhir:display [ fhir:v "Over 12 weeks - up to 6 months" ]
+  ] [
+     fhir:code [ fhir:v ">6m" ] ;
+     fhir:display [ fhir:v "Greater than 6 months" ]
+  ] [
+     fhir:code [ fhir:v "NA" ] ;
+     fhir:display [ fhir:v "N/A : MUD Transplant not preferred treatment" ]
+  ] [
+     fhir:code [ fhir:v "P" ] ;
+     fhir:display [ fhir:v "Pending, Case manager to follow up" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

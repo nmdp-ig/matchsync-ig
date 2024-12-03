@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ms-abo-rh-group-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ms-abo-rh-group-codes</b></p><a name=\"ms-abo-rh-group-codes\"> </a><a name=\"hcms-abo-rh-group-codes\"> </a><a name=\"ms-abo-rh-group-codes-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-nmdp-abo-rh-codes.html\">NMDP Blood Group Value Set</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-loinc-abo-rh-codes.html\">LOINC ABO RH group Value Set</a></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-rh-group-codes",
+  "version" : "0.1.1",
+  "name" : "MSABORHGroupVS",
+  "title" : "MatchSync ABO RH Group Value Set",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-02T18:26:03-06:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "MatchSync ABO RH group codes. Combines LOINC and NMDP codes",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-rh-codes"]
+    },
+    {
+      "valueSet" : ["http://loinc.org/vs/LL2972-9"]
+    }]
+  }
+}

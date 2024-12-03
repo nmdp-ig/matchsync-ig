@@ -1,0 +1,32 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "nmdp-form117-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nmdp-form117-cs</b></p><a name=\"nmdp-form117-cs\"> </a><a name=\"hcnmdp-form117-cs\"> </a><a name=\"nmdp-form117-cs-en-US\"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/form117compliance</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">FORM117COMPLIANCE<a name=\"nmdp-form117-cs-FORM117COMPLIANCE\"> </a></td><td>Form 117 Compliance</td></tr></table></div>"
+  },
+  "url" : "http://terminology.nmdp.org/codesystem/form117compliance",
+  "version" : "0.1.1",
+  "name" : "NMDPForm117CS",
+  "title" : "NMDP Preferred Product for Transplant",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-12-02T18:31:42-06:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "NMDP Form 117 for MatchSync patient",
+  "copyright" : "National Marrow Donor Program",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "FORM117COMPLIANCE",
+    "display" : "Form 117 Compliance"
+  }]
+}
