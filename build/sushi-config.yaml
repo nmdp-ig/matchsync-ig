@@ -71,17 +71,22 @@ parameters:
     - http://terminology.nmdp.org/codesystem/disease
     - http://terminology.nmdp.org/codesystem/diseasestage
     - http://terminology.nmdp.org/codesystem/abogroup
+    - http://terminology.nmdp.org/codesystem/aborhgroup
     - http://terminology.nmdp.org/codesystem/rhstatus
+    - http://terminology.nmdp.org/codesystem/cmv
     - http://terminology.nmdp.org/codesystem/race
     - http://terminology.nmdp.org/codesystem/ethnicity
     - http://terminology.nmdp.org/codesystem/language
     - http://terminology.nmdp.org/codesystem/preferredproduct
     - http://terminology.nmdp.org/codesystem/transplanttimeline
     - http://terminology.nmdp.org/codesystem/practitionerrole
+    - http://terminology.nmdp.org/codesystem/form117compliance
     - http://www.glstring.org
     - http://www.genenames.org/geneId
     - http://loinc.org/vs/LL2419-1
     - http://loinc.org/vs/LL360-9
+    - http://loinc.org/vs/LL2972-9
+    - http://loinc.org/vs/LL3639-3
     
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]

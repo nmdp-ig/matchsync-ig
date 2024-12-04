@@ -175,7 +175,7 @@ Description: "Cytomeglovirus found in patient"
 * insert MetaSecurityRules
 * subject 1..1 MS
 * subject only Reference(mspatient) 
-* code = $LNC#LA6576-8 "Positive(#LA6576-8), Negative(#LA6577-6), Inconclusive(#LA11885-3), Invonclusive(#LA9663-1), Untested(#LA13538-6)"
+* code = $LNC#13949-3 "Cytomegalovirus IgG Ab [Presence] in Serum or Plasma by Immunoassay"
 * effectiveDateTime 1..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from loinc-cmv-codes
@@ -192,3 +192,28 @@ Description: "Example of Cytomeglovirus found in patient"
     * code = 	#LA6576-8
     * display = "Positive"
 * effectiveDateTime = "2022-05-01"
+
+Profile: MSForm117Observation
+Parent: Observation
+Id: ms-form117-observation
+Description: "Form 117 Compliance for patient"
+* insert MetaSecurityRules
+* subject 0..1 MS
+* subject only Reference(mspatient) 
+* code = #FORM117COMPLIANCE
+* effectiveDateTime 1..1 MS
+* valueBoolean.id = "true"
+
+Instance: MSForm117Example
+InstanceOf: ms-form117-observation
+Description: "Example of Form 117 Compliance for patient"
+* meta.security[TransplantCenter].code = #tc_123
+* status = #final
+* code
+  * coding
+    * system = "http://terminology.nmdp.org/codesystem/form117compliance"
+    * code = #FORM117COMPLIANCE
+    * display = "Form 117 Compliance"
+* subject = Reference(MSPatientExample)
+* effectiveDateTime = "2022-05-01"
+* valueBoolean = true

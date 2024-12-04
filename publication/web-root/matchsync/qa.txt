@@ -1,17 +1,20 @@
 MatchSyncIG : Validation Results
 =========================================
 
-err = 4, warn = 100, info = 21
-IG Publisher Version: 1.7.1
-Generated Mon Nov 11 17:55:33 CST 2024. FHIR version 4.0.1 for nmdp.fhir.matchsync#0.1.1 (canonical = http://fhir.nmdp.org/ig/matchsync)
+err = 3, warn = 107, info = 85
+IG Publisher Version: 1.7.5
+Generated Mon Dec 02 18:33:43 CST 2024. FHIR version 4.0.1 for nmdp.fhir.matchsync#0.1.1 (canonical = http://fhir.nmdp.org/ig/matchsync)
  Build Errors : 0 / 0 / 0
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Bundle-BundleExample-Practitioner : 0 / 0 / 28
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/CodeSystem-glstring-codesystem : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/CodeSystem-hla-genename-codesystem : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/CodeSystem-nmdp-abo-group-cs : 0 / 0 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/CodeSystem-nmdp-abo-rh-group-cs : 0 / 0 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/CodeSystem-nmdp-cmv-cs : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/CodeSystem-nmdp-disease-cs : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/CodeSystem-nmdp-diseasestage-cs : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/CodeSystem-nmdp-ethnicity-cs : 0 / 0 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/CodeSystem-nmdp-form117-cs : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/CodeSystem-nmdp-language-cs : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/CodeSystem-nmdp-practitioner-role-cs : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/CodeSystem-nmdp-preferred-product-cs : 0 / 0 / 1
@@ -36,6 +39,8 @@ Generated Mon Nov 11 17:55:33 CST 2024. FHIR version 4.0.1 for nmdp.fhir.matchsy
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Observation-HLA-Multilocus-Genotype-Example : 0 / 6 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Observation-MSABOObsExample : 0 / 1 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Observation-MSABORHObsExample : 0 / 1 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Observation-MSCmvExample : 0 / 1 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Observation-MSForm117Example : 0 / 1 / 2
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Observation-MSHeightObsExample : 0 / 1 / 2
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Observation-MSPreferredProductExample : 0 / 1 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Observation-MSRhObsExample : 0 / 1 / 1
@@ -43,11 +48,13 @@ Generated Mon Nov 11 17:55:33 CST 2024. FHIR version 4.0.1 for nmdp.fhir.matchsy
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Observation-MSWeightObsExample : 0 / 1 / 2
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Organization-TCExample : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Patient-3f7d88b1-3e39-4f52-bb9c-5d680b7166b3 : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Patient-MSPatientExample : 0 / 0 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Patient-MSPatientBirthSex : 0 / 0 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Patient-MSPatientExample : 0 / 0 / 2
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Patient-MSPatientExample2 : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Patient-MSPatientExample3 : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Patient-MSPatientExample4 : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Patient-MSPatientExample5 : 0 / 0 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Patient-MSPatientGenderIdentity : 1 / 0 / 2
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Practitioner-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Practitioner-PhysicianExample : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Practitioner-SearchCoordinatorExample : 0 / 0 / 1
@@ -59,43 +66,51 @@ Generated Mon Nov 11 17:55:33 CST 2024. FHIR version 4.0.1 for nmdp.fhir.matchsy
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/PractitionerRole-ad78058a-c0fe-4ea0-bc86-d2f3770a1944 : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/PractitionerRole-f1942bac-b8b3-45a1-b1d0-6928326d03ce : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/Specimen-MSSpecimenExample : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-a : 0 / 3 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-b : 0 / 3 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-c : 0 / 3 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-dpa1 : 0 / 3 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-dpb1 : 0 / 3 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-dqa1 : 0 / 3 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-dqb1 : 0 / 3 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-drb1 : 0 / 3 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-drb3 : 0 / 3 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-drb4 : 0 / 3 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-drb5 : 0 / 3 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-genotype : 0 / 2 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-abogroup-observation : 0 / 2 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-aborhgroup-observation : 0 / 2 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-bundle : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-bundle-hla-multilocus : 0 / 1 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-bundle-hla-separate : 0 / 1 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-height-observation : 1 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-preferred-product-observation : 0 / 2 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-rhstatus-observation : 0 / 2 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-transplant-timeline-observation : 0 / 2 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-weight-observation : 1 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-msdiagnosis : 0 / 4 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-mspatient : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-msspecimen : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-nmdp-practitioner : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-nmdp-practitioner-role : 0 / 2 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-a : 0 / 3 / 4
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-b : 0 / 3 / 4
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-c : 0 / 3 / 4
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-dpa1 : 0 / 3 / 4
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-dpb1 : 0 / 3 / 4
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-dqa1 : 0 / 3 / 4
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-dqb1 : 0 / 3 / 4
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-drb1 : 0 / 3 / 4
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-drb3 : 0 / 3 / 4
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-drb4 : 0 / 3 / 4
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-drb5 : 0 / 3 / 4
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-hla-genotype : 0 / 2 / 5
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-abogroup-observation : 0 / 2 / 3
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-aborhgroup-observation : 0 / 2 / 3
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-bundle : 0 / 0 / 3
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-bundle-hla-multilocus : 0 / 1 / 2
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-bundle-hla-separate : 0 / 1 / 2
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-cmvgroup-observation : 0 / 2 / 3
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-form117-observation : 0 / 2 / 3
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-height-observation : 1 / 0 / 3
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-preferred-product-observation : 0 / 2 / 3
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-rhstatus-observation : 0 / 2 / 3
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-transplant-timeline-observation : 0 / 2 / 3
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-ms-weight-observation : 1 / 0 / 3
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-msdiagnosis : 0 / 4 / 5
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-mspatient : 0 / 0 / 3
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-msspecimen : 0 / 0 / 3
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-nmdp-practitioner : 0 / 0 / 3
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-nmdp-practitioner-role : 0 / 2 / 3
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-number-of-remissions : 0 / 1 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-transplantcenter : 0 / 0 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/StructureDefinition-transplantcenter : 0 / 0 / 3
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-hla-geneid-valueset : 0 / 0 / 2
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-icd10-gvhd-codes : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-loinc-abo-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-loinc-abo-rh-codes : 2 / 0 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-loinc-abo-rh-codes : 0 / 0 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-loinc-cmv-codes : 0 / 1 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-loinc-posneg-codes : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-ms-abo-group-codes : 0 / 0 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-ms-abo-rh-group-codes : 0 / 0 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-ms-cmv-codes : 0 / 0 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-ms-form117-codes : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-ms-rh-codes : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-nmdp-abo-codes : 0 / 0 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-nmdp-abo-rh-codes : 0 / 0 / 1
+ /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-nmdp-cmv-codes : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-nmdp-disease-codes : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-nmdp-diseasestage-codes : 0 / 0 / 1
  /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-nmdp-ethnicity-codes : 0 / 0 / 1
@@ -118,9 +133,12 @@ INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource/*Condit
 == fsh-generated/resources/CodeSystem-glstring-codesystem.json ==
 == fsh-generated/resources/CodeSystem-hla-genename-codesystem.json ==
 == fsh-generated/resources/CodeSystem-nmdp-abo-group-cs.json ==
+== fsh-generated/resources/CodeSystem-nmdp-abo-rh-group-cs.json ==
+== fsh-generated/resources/CodeSystem-nmdp-cmv-cs.json ==
 == fsh-generated/resources/CodeSystem-nmdp-disease-cs.json ==
 == fsh-generated/resources/CodeSystem-nmdp-diseasestage-cs.json ==
 == fsh-generated/resources/CodeSystem-nmdp-ethnicity-cs.json ==
+== fsh-generated/resources/CodeSystem-nmdp-form117-cs.json ==
 == fsh-generated/resources/CodeSystem-nmdp-language-cs.json ==
 == fsh-generated/resources/CodeSystem-nmdp-practitioner-role-cs.json ==
 == fsh-generated/resources/CodeSystem-nmdp-preferred-product-cs.json ==
@@ -188,6 +206,11 @@ WARNING: Observation/HLA-Multilocus-Genotype-Example: Observation: Best Practice
 WARNING: Observation/MSABOObsExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-MSABORHObsExample.json ==
 WARNING: Observation/MSABORHObsExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MSCmvExample.json ==
+WARNING: Observation/MSCmvExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MSForm117Example.json ==
+INFORMATION: Observation/MSForm117Example: Observation.code: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/form117compliance|0.1.1
+WARNING: Observation/MSForm117Example: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-MSHeightObsExample.json ==
 WARNING: Observation/MSHeightObsExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-MSPreferredProductExample.json ==
@@ -200,11 +223,23 @@ WARNING: Observation/MSTransplantTimelineExample: Observation: Best Practice Rec
 WARNING: Observation/MSWeightObsExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Organization-TCExample.json ==
 == fsh-generated/resources/Patient-3f7d88b1-3e39-4f52-bb9c-5d680b7166b3.json ==
+== fsh-generated/resources/Patient-MSPatientBirthSex.json ==
 == fsh-generated/resources/Patient-MSPatientExample.json ==
+INFORMATION: Patient/MSPatientExample: Patient.extension[3]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient|0.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Patient-MSPatientExample2.json ==
 == fsh-generated/resources/Patient-MSPatientExample3.json ==
 == fsh-generated/resources/Patient-MSPatientExample4.json ==
 == fsh-generated/resources/Patient-MSPatientExample5.json ==
+== fsh-generated/resources/Patient-MSPatientGenderIdentity.json ==
+INFORMATION: Patient/MSPatientGenderIdentity: Patient.extension[3]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient|0.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Patient/MSPatientGenderIdentity: Patient.extension[3].value.ofType(CodeableConcept).coding[0].display: Wrong Display Name ''33791000087105':   'Identifies as nonbinary gender (finding)'        ->  'NB': 'Non-binary'
+    #407376001:     'Male-to-female transsexual (finding)'           ->  'SI': 'Self-identified'
+		'407377005':        'Female-to-male transsexual (finding)'            ->  'SI': 'Self-identified'
+		'446131000124102':  'Identifies as non-conforming gender (finding)'   ->  'SI': 'Self-identified'
+		'446141000124107':  'Identifies as female gender (finding)'           ->  'F': 'Female'
+		'446151000124109':  'Identifies as male gender (finding)'             ->  'M': 'Male'
+		'OTH':              'other'                                           ->  'SI': 'Self-identified'
+		'UNK':              'unknown'                                         ->  'SI': 'Self-identified'' for http://snomed.info/sct#446141000124107. Valid display is one of 4 choices: 'Identifies as female gender (finding)', 'Identifies as female gender', 'Female identity' or 'Female gender identity' (for the language(s) 'en')
 == fsh-generated/resources/Practitioner-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa.json ==
 == fsh-generated/resources/Practitioner-PhysicianExample.json ==
 == fsh-generated/resources/Practitioner-SearchCoordinatorExample.json ==
@@ -219,111 +254,183 @@ WARNING: Observation/MSWeightObsExample: Observation: Best Practice Recommendati
 == fsh-generated/resources/StructureDefinition-hla-a.json ==
 WARNING: StructureDefinition/hla-a: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/hla-a: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-a: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-b.json ==
 WARNING: StructureDefinition/hla-b: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/hla-b: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-b: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-b: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/hla-b: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-b: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-c.json ==
 WARNING: StructureDefinition/hla-c: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/hla-c: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-c: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-c: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/hla-c: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-c: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-dpa1.json ==
 WARNING: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/hla-dpa1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-dpb1.json ==
 WARNING: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/hla-dpb1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-dqa1.json ==
 WARNING: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/hla-dqa1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-dqb1.json ==
 WARNING: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/hla-dqb1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-drb1.json ==
 WARNING: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/hla-drb1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-drb3.json ==
 WARNING: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/hla-drb3: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-drb4.json ==
 WARNING: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/hla-drb4: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-drb5.json ==
 WARNING: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
 WARNING: StructureDefinition/hla-drb5: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-genotype.json ==
+INFORMATION: StructureDefinition/hla-genotype: StructureDefinition.differential.element[1].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-genotype: StructureDefinition.differential.element[15].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
+INFORMATION: StructureDefinition/hla-genotype: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-genotype: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/hla-genotype: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-genotype: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-ms-abogroup-observation.json ==
+INFORMATION: StructureDefinition/ms-abogroup-observation: StructureDefinition.differential.element[1].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/ms-abogroup-observation: StructureDefinition.differential.element[9].binding: The definition for the element 'Observation.value[x]' binds to the value set 'http://loinc.org/vs/LL2419-1' which is experimental, but this structure is not labeled as experimental
+INFORMATION: StructureDefinition/ms-abogroup-observation: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/ms-abogroup-observation: StructureDefinition.snapshot.element[38].binding: The definition for the element 'Observation.value[x]' binds to the value set 'http://loinc.org/vs/LL2419-1' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-ms-aborhgroup-observation.json ==
+INFORMATION: StructureDefinition/ms-aborhgroup-observation: StructureDefinition.differential.element[1].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/ms-aborhgroup-observation: StructureDefinition.differential.element[9].binding: The definition for the element 'Observation.value[x]' binds to the value set 'http://loinc.org/vs/LL2972-9' which is experimental, but this structure is not labeled as experimental
+INFORMATION: StructureDefinition/ms-aborhgroup-observation: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/ms-aborhgroup-observation: StructureDefinition.snapshot.element[38].binding: The definition for the element 'Observation.value[x]' binds to the value set 'http://loinc.org/vs/LL2972-9' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-ms-bundle.json ==
+INFORMATION: StructureDefinition/ms-bundle: StructureDefinition.differential.element[1].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/ms-bundle: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-ms-bundle-hla-multilocus.json ==
+INFORMATION: StructureDefinition/ms-bundle-hla-multilocus: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-multilocus'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ms-bundle-hla-separate.json ==
+INFORMATION: StructureDefinition/ms-bundle-hla-separate: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-separate'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ms-cmvgroup-observation.json ==
+INFORMATION: StructureDefinition/ms-cmvgroup-observation: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition/ms-cmvgroup-observation: StructureDefinition.differential.element[8].binding: The definition for the element 'Observation.value[x]' binds to the value set 'http://loinc.org/vs/LL3639-3' which is experimental, but this structure is not labeled as experimental
+INFORMATION: StructureDefinition/ms-cmvgroup-observation: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition/ms-cmvgroup-observation: StructureDefinition.snapshot.element[38].binding: The definition for the element 'Observation.value[x]' binds to the value set 'http://loinc.org/vs/LL3639-3' which is experimental, but this structure is not labeled as experimental
+== fsh-generated/resources/StructureDefinition-ms-form117-observation.json ==
+WARNING: StructureDefinition/ms-form117-observation: StructureDefinition.snapshot.element[30].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ms-form117-observation: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: StructureDefinition/ms-form117-observation: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/ms-form117-observation: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-ms-height-observation.json ==
 ERROR: StructureDefinition.snapshot.element[45]: The slice definition for Observation.code.coding has a minimum of 0 but the slices add up to a minimum of 1
+INFORMATION: StructureDefinition/ms-height-observation: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/ms-height-observation: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-ms-preferred-product-observation.json ==
+INFORMATION: StructureDefinition/ms-preferred-product-observation: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/ms-preferred-product-observation: StructureDefinition.differential.element[8].binding: The definition for the element 'Observation.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes' which is experimental, but this structure is not labeled as experimental
+INFORMATION: StructureDefinition/ms-preferred-product-observation: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/ms-preferred-product-observation: StructureDefinition.snapshot.element[42].binding: The definition for the element 'Observation.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-ms-rhstatus-observation.json ==
+INFORMATION: StructureDefinition/ms-rhstatus-observation: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/ms-rhstatus-observation: StructureDefinition.differential.element[8].binding: The definition for the element 'Observation.value[x]' binds to the value set 'http://loinc.org/vs/LL360-9' which is experimental, but this structure is not labeled as experimental
+INFORMATION: StructureDefinition/ms-rhstatus-observation: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/ms-rhstatus-observation: StructureDefinition.snapshot.element[38].binding: The definition for the element 'Observation.value[x]' binds to the value set 'http://loinc.org/vs/LL360-9' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-ms-transplant-timeline-observation.json ==
+INFORMATION: StructureDefinition/ms-transplant-timeline-observation: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/ms-transplant-timeline-observation: StructureDefinition.differential.element[8].binding: The definition for the element 'Observation.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes' which is experimental, but this structure is not labeled as experimental
+INFORMATION: StructureDefinition/ms-transplant-timeline-observation: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/ms-transplant-timeline-observation: StructureDefinition.snapshot.element[42].binding: The definition for the element 'Observation.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-ms-weight-observation.json ==
 ERROR: StructureDefinition.snapshot.element[45]: The slice definition for Observation.code.coding has a minimum of 0 but the slices add up to a minimum of 1
+INFORMATION: StructureDefinition/ms-weight-observation: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/ms-weight-observation: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-msdiagnosis.json ==
+INFORMATION: StructureDefinition/msdiagnosis: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/msdiagnosis: StructureDefinition.differential.element[6].binding: The definition for the element 'Condition.code' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes' which is experimental, but this structure is not labeled as experimental
+INFORMATION: StructureDefinition/msdiagnosis: StructureDefinition.differential.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/msdiagnosis: StructureDefinition.differential.element[12].binding: The definition for the element 'Condition.stage.summary.coding.code' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes' which is experimental, but this structure is not labeled as experimental
+INFORMATION: StructureDefinition/msdiagnosis: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/msdiagnosis: StructureDefinition.snapshot.element[31].binding: The definition for the element 'Condition.code' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes' which is experimental, but this structure is not labeled as experimental
+INFORMATION: StructureDefinition/msdiagnosis: StructureDefinition.snapshot.element[47].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/msdiagnosis: StructureDefinition.snapshot.element[53].binding: The definition for the element 'Condition.stage.summary.coding.code' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-mspatient.json ==
+INFORMATION: StructureDefinition/mspatient: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/mspatient: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-msspecimen.json ==
+INFORMATION: StructureDefinition/msspecimen: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/msspecimen: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-nmdp-practitioner.json ==
+INFORMATION: StructureDefinition/nmdp-practitioner: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/nmdp-practitioner: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-nmdp-practitioner-role.json ==
+INFORMATION: StructureDefinition/nmdp-practitioner-role: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/nmdp-practitioner-role: StructureDefinition.differential.element[5].binding: The definition for the element 'PractitionerRole.code' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs' which is experimental, but this structure is not labeled as experimental
+INFORMATION: StructureDefinition/nmdp-practitioner-role: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/nmdp-practitioner-role: StructureDefinition.snapshot.element[30].binding: The definition for the element 'PractitionerRole.code' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-number-of-remissions.json ==
 WARNING: StructureDefinition/number-of-remissions: StructureDefinition.context[0]: Review the extension type for number-of-remissions: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-transplantcenter.json ==
+INFORMATION: StructureDefinition/transplantcenter: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/transplantcenter: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/ValueSet-hla-geneid-valueset.json ==
 INFORMATION: ValueSet/hla-geneid-valueset: ValueSet.compose.include[0]: The value set references CodeSystem 'http://www.genenames.org/geneId' which has status 'fragment'
 == fsh-generated/resources/ValueSet-icd10-gvhd-codes.json ==
 == fsh-generated/resources/ValueSet-loinc-abo-codes.json ==
 == fsh-generated/resources/ValueSet-loinc-abo-rh-codes.json ==
-ERROR: ValueSet.where(url = 'http://loinc.org/vs/LL2972-9'): Conformance resource /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-loinc-abo-rh-codes.json - the canonical URL (http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-abo-rh-codes) does not match the URL (http://loinc.org/vs/LL2972-9)
-ERROR: /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/resources/ValueSet-loinc-abo-rh-codes: URL Mismatch http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-abo-rh-codes vs http://loinc.org/vs/LL2972-9
+== fsh-generated/resources/ValueSet-loinc-cmv-codes.json ==
+WARNING: ValueSet/loinc-cmv-codes: ValueSet.compose.include[0].concept[4]: The code 'LA113538-6' is not valid in the system http://loinc.org (Unknown code 'LA113538-6' in the CodeSystem 'http://loinc.org' version '2.78')
 == fsh-generated/resources/ValueSet-loinc-posneg-codes.json ==
 == fsh-generated/resources/ValueSet-ms-abo-group-codes.json ==
+== fsh-generated/resources/ValueSet-ms-abo-rh-group-codes.json ==
+== fsh-generated/resources/ValueSet-ms-cmv-codes.json ==
+== fsh-generated/resources/ValueSet-ms-form117-codes.json ==
 == fsh-generated/resources/ValueSet-ms-rh-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-abo-codes.json ==
+== fsh-generated/resources/ValueSet-nmdp-abo-rh-codes.json ==
+== fsh-generated/resources/ValueSet-nmdp-cmv-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-disease-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-diseasestage-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-ethnicity-codes.json ==

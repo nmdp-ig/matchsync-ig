@@ -224,6 +224,56 @@ Description: "LOINC codes for ABO blood group"
 * $LNC#LA19708-9  "Group O"
 * $LNC#LA28449-9  "Group AB"
 
+ValueSet: SCTABOGroupVS
+Id: sct-abo-group-codes
+Title: "Snomed CT ABO group Value Set"
+Description: "Snomed CT codes for ABO blood group"
+// * include codes from system http://snomed.info/sct where concept is-a #112143006
+* ^experimental = true
+* $SCT#112144000    "Blood group A (finding)"
+* $SCT#165743006    "Blood group AB (finding)"
+* $SCT#112149005    "Blood group B (finding)"
+* $SCT#58460004     "Blood group O (finding)"
+
+ValueSet: MSABOGroupVS
+Id: ms-abo-group-codes
+Title: "MatchSync ABO Group Value Set"
+Description: "MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes"
+* include codes from valueset nmdp-abo-codes
+* include codes from valueset loinc-abo-codes
+* include codes from valueset sct-abo-group-codes
+* ^experimental = true
+
+// ABO-RH ------------
+
+CodeSystem: NMDPABORHCS
+Title: "NMDP Blood Group Code System"
+Id: nmdp-abo-rh-group-cs
+Description: "Code System for NMDP ABO RH blood groups"
+* ^url = "http://terminology.nmdp.org/codesystem/aborhgroup"
+* ^version = "2022"
+* ^status = #active
+* ^experimental = true
+* ^caseSensitive = true
+* ^publisher = "NMDP"
+* ^copyright = "National Marrow Donor Program"
+* #A+ "A POS"
+* #A- "A NEG"
+* #B+ "B POS"
+* #B- "B NEG"
+* #O+ "O POS"
+* #O- "O NEG"
+* #AB+ "AB POS"
+* #AB- "AB NEG"
+* #nil "no data"
+
+ValueSet: NMDPABORHVS
+Title: "NMDP Blood Group Value Set"
+Id: nmdp-abo-rh-codes
+Description: "NMDP blood group codes"
+* include codes from system nmdp-abo-rh-group-cs
+* ^experimental = true
+
 ValueSet: LNCABORHGroupVS
 Id: loinc-abo-rh-codes
 Title: "LOINC ABO RH group Value Set"
@@ -244,24 +294,12 @@ Description: "LOINC codes for ABO RH blood group"
 * $LNC#LA21323-3  "AB Pos"
 * $LNC#LA21324-1  "AB Neg"
 
-ValueSet: SCTABOGroupVS
-Id: sct-abo-group-codes
-Title: "Snomed CT ABO group Value Set"
-Description: "Snomed CT codes for ABO blood group"
-// * include codes from system http://snomed.info/sct where concept is-a #112143006
-* ^experimental = true
-* $SCT#112144000    "Blood group A (finding)"
-* $SCT#165743006    "Blood group AB (finding)"
-* $SCT#112149005    "Blood group B (finding)"
-* $SCT#58460004     "Blood group O (finding)"
-
-ValueSet: MSABOGroupVS
-Id: ms-abo-group-codes
-Title: "MatchSync ABO Group Value Set"
-Description: "MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes"
-* include codes from valueset nmdp-abo-codes
-* include codes from valueset loinc-abo-codes
-* include codes from valueset sct-abo-group-codes
+ValueSet: MSABORHGroupVS
+Id: ms-abo-rh-group-codes
+Title: "MatchSync ABO RH Group Value Set"
+Description: "MatchSync ABO RH group codes. Combines LOINC and NMDP codes"
+* include codes from valueset nmdp-abo-rh-codes
+* include codes from valueset loinc-abo-rh-codes
 * ^experimental = true
 
 // Rh ----------------
@@ -512,6 +550,32 @@ Description:  "NMDP Practitioner Role Value Set"
 * include codes from system nmdp-practitioner-role-cs
 * ^experimental = true
 
+// CMV ------------
+
+CodeSystem: NMDPCMVCS
+Title: "NMDP CMV Code System"
+Id: nmdp-cmv-cs
+Description: "Code System for NMDP CMV"
+* ^url = "http://terminology.nmdp.org/codesystem/cmv"
+* ^version = "2022"
+* ^status = #active
+* ^experimental = true
+* ^caseSensitive = true
+* ^publisher = "NMDP"
+* ^copyright = "National Marrow Donor Program"
+* #P "Positive"
+* #N "Negative"
+* #I "Inconclusive"
+* #U "Untested"
+* #nil "no data"
+
+ValueSet: NMDPCMVVS
+Title: "NMDP CMV Value Set"
+Id: nmdp-cmv-codes
+Description: "NMDP cmv codes"
+* include codes from system nmdp-cmv-cs
+* ^experimental = true
+
 ValueSet: LNCCMVGroupVS
 Id: loinc-cmv-codes
 Title: "LOINC CMV group Value Set"
@@ -528,3 +592,34 @@ Description: "LOINC codes for CMV"
 * $LNC#LA11885-3  "I"
 * $LNC#LA9663-1  "I"
 * $LNC#LA113538-6  "U"
+
+ValueSet: MSCMVVS
+Id: ms-cmv-codes
+Title: "MatchSync ABO Group Value Set"
+Description: "MatchSync ABO group codes. Combines LOINC and NMDP codes"
+* include codes from valueset nmdp-cmv-codes
+* include codes from valueset loinc-cmv-codes
+* ^experimental = true
+
+// Form 117 ------------
+
+CodeSystem: NMDPForm117CS
+Title: "NMDP Preferred Product for Transplant"
+Id: nmdp-form117-cs
+Description: "NMDP Form 117 for MatchSync patient"
+* ^url = "http://terminology.nmdp.org/codesystem/form117compliance"
+* ^version = "2022"
+* ^status = #active
+* ^experimental = true
+* ^caseSensitive = true
+* ^publisher = "NMDP"
+* ^copyright = "National Marrow Donor Program"
+* #FORM117COMPLIANCE "Form 117 Compliance"
+
+
+ValueSet: NMDPForm117VS
+Id: ms-form117-codes
+Title: "NMDP Form 117 Value Set"
+Description: "NMDP Form 117 codes"
+* include codes from system nmdp-form117-cs
+* ^experimental = true

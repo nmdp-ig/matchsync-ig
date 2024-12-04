@@ -21,6 +21,7 @@ Description: "Collection Bundle for MatchSync"
     msObsPreferredProduct 0..1 MS and
     msObsHeight 0..1 MS and
     msObsWeight 0..1 MS and
+    msObsForm117 0..1 MS and
     msSpecimen 0..1 MS
 * entry[msPatient].resource only MSPatient
 * entry[msPatient] ^short = "MatchSync Patient"
@@ -61,6 +62,9 @@ Description: "Collection Bundle for MatchSync"
 * entry[msOrgTransplantCenter].resource only TransplantCenter
 * entry[msOrgTransplantCenter] ^short = "Transplant Center"
 * entry[msOrgTransplantCenter] ^definition = "Transplant Center"
+* entry[msObsForm117].resource only MSForm117Observation
+* entry[msObsForm117] ^short = "Form 117 Compliance"
+* entry[msObsForm117] ^definition = "Form 117 Compliance of the MatchSync patient"
 * entry[msSpecimen].resource only MSSpecimen
 * entry[msSpecimen] ^short = "Specimen used for HLA genotyping"
 * entry[msSpecimen] ^definition = "Specimen used for HLA genotyping. The identifier found here can be used to link to an HML file if submitted."

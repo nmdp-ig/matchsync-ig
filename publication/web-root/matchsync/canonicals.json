@@ -126,6 +126,20 @@
     "name" : "MSBundle_HLA_Separate"
   },
   {
+    "id" : "ms-cmvgroup-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-cmvgroup-observation",
+    "version" : "0.1.1",
+    "name" : "MSCmvObservation"
+  },
+  {
+    "id" : "ms-form117-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-form117-observation",
+    "version" : "0.1.1",
+    "name" : "MSForm117Observation"
+  },
+  {
     "id" : "ms-height-observation",
     "type" : "StructureDefinition",
     "url" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation",
@@ -231,6 +245,27 @@
     "name" : "MSABOGroupVS"
   },
   {
+    "id" : "ms-abo-rh-group-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-rh-group-codes",
+    "version" : "0.1.1",
+    "name" : "MSABORHGroupVS"
+  },
+  {
+    "id" : "ms-cmv-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-cmv-codes",
+    "version" : "0.1.1",
+    "name" : "MSCMVVS"
+  },
+  {
+    "id" : "ms-form117-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-form117-codes",
+    "version" : "0.1.1",
+    "name" : "NMDPForm117VS"
+  },
+  {
     "id" : "ms-rh-codes",
     "type" : "ValueSet",
     "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-rh-codes",
@@ -243,6 +278,20 @@
     "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes",
     "version" : "0.1.1",
     "name" : "NMDPABOVS"
+  },
+  {
+    "id" : "nmdp-abo-rh-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-rh-codes",
+    "version" : "0.1.1",
+    "name" : "NMDPABORHVS"
+  },
+  {
+    "id" : "nmdp-cmv-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-cmv-codes",
+    "version" : "0.1.1",
+    "name" : "NMDPCMVVS"
   },
   {
     "id" : "nmdp-disease-codes",
@@ -336,11 +385,32 @@
     "name" : "PosNegVS"
   },
   {
+    "id" : "loinc-cmv-codes",
+    "type" : "ValueSet",
+    "url" : "http://loinc.org/vs/LL3639-3",
+    "version" : "0.1.1",
+    "name" : "LNCCMVGroupVS"
+  },
+  {
     "id" : "nmdp-abo-group-cs",
     "type" : "CodeSystem",
     "url" : "http://terminology.nmdp.org/codesystem/abogroup",
     "version" : "0.1.1",
     "name" : "NMDPABOCS"
+  },
+  {
+    "id" : "nmdp-abo-rh-group-cs",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.nmdp.org/codesystem/aborhgroup",
+    "version" : "0.1.1",
+    "name" : "NMDPABORHCS"
+  },
+  {
+    "id" : "nmdp-cmv-cs",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.nmdp.org/codesystem/cmv",
+    "version" : "0.1.1",
+    "name" : "NMDPCMVCS"
   },
   {
     "id" : "nmdp-disease-cs",
@@ -362,6 +432,13 @@
     "url" : "http://terminology.nmdp.org/codesystem/ethnicity",
     "version" : "0.1.1",
     "name" : "NMDPEthnicityCS"
+  },
+  {
+    "id" : "nmdp-form117-cs",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.nmdp.org/codesystem/form117compliance",
+    "version" : "0.1.1",
+    "name" : "NMDPForm117CS"
   },
   {
     "id" : "nmdp-language-cs",

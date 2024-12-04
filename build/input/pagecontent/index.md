@@ -2,7 +2,7 @@
 
 This is a prelimary draft of the MatchSync FHIR Implementation Guide (IG).
 This IG describes how a bundle of FHIR resources may be used to 
-to POST to an NMDP endpoint for the registering a Patient with MatchSync. TEST TEST
+to POST to an NMDP endpoint for the registering a Patient with MatchSync.
 
 As of now, it mostly contains Structure Definitions, Code Systems, ValueSets and examples. It does not yet contain info on how to submit this data to an endpoint. It also needs more narrative to explain how to use the profiles and other artifacts.
 

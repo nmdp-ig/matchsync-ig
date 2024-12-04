@@ -32,6 +32,39 @@
       ]
     },
     {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-rh-group-codes",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "MSABORHGroupVS",
+      "title" : "MatchSync ABO RH Group Value Set",
+      "description" : "MatchSync ABO RH group codes. Combines LOINC and NMDP codes",
+      "systems" : [
+        "http://terminology.nmdp.org/codesystem/aborhgroup",
+        "http://loinc.org"
+      ]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-cmv-codes",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "MSCMVVS",
+      "title" : "MatchSync ABO Group Value Set",
+      "description" : "MatchSync ABO group codes. Combines LOINC and NMDP codes",
+      "systems" : [
+        "http://terminology.nmdp.org/codesystem/cmv",
+        "http://loinc.org"
+      ]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-form117-codes",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "NMDPForm117VS",
+      "title" : "NMDP Form 117 Value Set",
+      "description" : "NMDP Form 117 codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/form117compliance"]
+    },
+    {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-rh-codes",
       "version" : "0.1.1",
       "status" : "draft",
@@ -51,6 +84,24 @@
       "title" : "NMDP Blood Group Value Set",
       "description" : "NMDP blood group codes",
       "systems" : ["http://terminology.nmdp.org/codesystem/abogroup"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-rh-codes",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "NMDPABORHVS",
+      "title" : "NMDP Blood Group Value Set",
+      "description" : "NMDP blood group codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/aborhgroup"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-cmv-codes",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "NMDPCMVVS",
+      "title" : "NMDP CMV Value Set",
+      "description" : "NMDP cmv codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/cmv"]
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes",
@@ -167,6 +218,15 @@
       "name" : "PosNegVS",
       "title" : "LOINC Pos|Neg Value Set",
       "description" : "LOINC codes for Positive and Negative",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://loinc.org/vs/LL3639-3",
+      "version" : "0.1.1",
+      "status" : "active",
+      "name" : "LNCCMVGroupVS",
+      "title" : "LOINC CMV group Value Set",
+      "description" : "LOINC codes for CMV",
       "systems" : ["http://loinc.org"]
     }
   ]

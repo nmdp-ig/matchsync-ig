@@ -134,7 +134,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the MatchSync Implementation Guide (v0.1.0: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MatchSync Implementation Guide (v0.1.1: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -293,6 +293,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>ABO and Rh group [Type] in Blood</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ms-cmvgroup-observation.html"
+                  title="StructureDefinition/ms-cmvgroup-observation">MSCmvObservation</a>
+            </td>
+            <td>
+<p>Cytomeglovirus found in patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ms-form117-observation.html"
+                  title="StructureDefinition/ms-form117-observation">MSForm117Observation</a>
+            </td>
+            <td>
+<p>Form 117 Compliance for patient</p>
 </td>
          </tr>
          <tr>
@@ -482,6 +500,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-loinc-cmv-codes.html" title="ValueSet/loinc-cmv-codes">LOINC CMV group Value Set</a>
+            </td>
+            <td>
+<p>LOINC codes for CMV</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-loinc-posneg-codes.html"
                   title="ValueSet/loinc-posneg-codes">LOINC Pos|Neg Value Set</a>
             </td>
@@ -500,6 +526,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-ms-cmv-codes.html" title="ValueSet/ms-cmv-codes">MatchSync ABO Group Value Set</a>
+            </td>
+            <td>
+<p>MatchSync ABO group codes. Combines LOINC and NMDP codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ms-abo-rh-group-codes.html"
+                  title="ValueSet/ms-abo-rh-group-codes">MatchSync ABO RH Group Value Set</a>
+            </td>
+            <td>
+<p>MatchSync ABO RH group codes. Combines LOINC and NMDP codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-ms-rh-codes.html" title="ValueSet/ms-rh-codes">MatchSync Rh Value Sets</a>
             </td>
             <td>
@@ -512,6 +555,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>NMDP blood group codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nmdp-abo-rh-codes.html"
+                  title="ValueSet/nmdp-abo-rh-codes">NMDP Blood Group Value Set</a>
+            </td>
+            <td>
+<p>NMDP blood group codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nmdp-cmv-codes.html" title="ValueSet/nmdp-cmv-codes">NMDP CMV Value Set</a>
+            </td>
+            <td>
+<p>NMDP cmv codes</p>
 </td>
          </tr>
          <tr>
@@ -548,6 +608,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>NMDP ethnicity codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ms-form117-codes.html" title="ValueSet/ms-form117-codes">NMDP Form 117 Value Set</a>
+            </td>
+            <td>
+<p>NMDP Form 117 codes</p>
 </td>
          </tr>
          <tr>
@@ -640,6 +708,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-abo-rh-group-cs.html"
+                  title="CodeSystem/nmdp-abo-rh-group-cs">NMDP Blood Group Code System</a>
+            </td>
+            <td>
+<p>Code System for NMDP ABO RH blood groups</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-cmv-cs.html" title="CodeSystem/nmdp-cmv-cs">NMDP CMV Code System</a>
+            </td>
+            <td>
+<p>Code System for NMDP CMV</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-nmdp-disease-cs.html"
                   title="CodeSystem/nmdp-disease-cs">NMDP Disease Code System</a>
             </td>
@@ -681,6 +766,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>NMDP Practitioner Roles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nmdp-form117-cs.html"
+                  title="CodeSystem/nmdp-form117-cs">NMDP Preferred Product for Transplant</a>
+            </td>
+            <td>
+<p>NMDP Form 117 for MatchSync patient</p>
 </td>
          </tr>
          <tr>
@@ -878,6 +972,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Observation-MSCmvExample.html" title="Observation/MSCmvExample">MSCmvExample</a>
+            </td>
+            <td>
+<p>Example of Cytomeglovirus found in patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Condition-MSDiagnosisExample-AML.html"
                   title="Condition/MSDiagnosisExample-AML">MSDiagnosisExample-AML</a>
             </td>
@@ -896,11 +998,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Observation-MSForm117Example.html"
+                  title="Observation/MSForm117Example">MSForm117Example</a>
+            </td>
+            <td>
+<p>Example of Form 117 Compliance for patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Observation-MSHeightObsExample.html"
                   title="Observation/MSHeightObsExample">MSHeightObsExample</a>
             </td>
             <td>
 <p>Example of patient height</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-MSPatientBirthSex.html" title="Patient/MSPatientBirthSex">MSPatientBirthSex</a>
+            </td>
+            <td>
+<p>Example of a patient using BirthSex codes</p>
 </td>
          </tr>
          <tr>
@@ -941,6 +1060,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Example of a patient needing a donor using NMDP race code.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-MSPatientGenderIdentity.html"
+                  title="Patient/MSPatientGenderIdentity">MSPatientGenderIdentity</a>
+            </td>
+            <td>
+<p>Example of a patient using Gender Identity codes</p>
 </td>
          </tr>
          <tr>
@@ -1106,7 +1234,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 11, 2024 17:53-0600">2024-11-11</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 2, 2024 18:31-0600">2024-12-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
