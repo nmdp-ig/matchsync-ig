@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for MatchSyncIG</h1>
- <p>Generated Mon Nov 11 17:50:24 CST 2024, FHIR version 4.0.1 for nmdp.fhir.matchsync#0.1.1 (canonical = <a href="http://fhir.nmdp.org/ig/matchsync">http://fhir.nmdp.org/ig/matchsync</a> (<a href="http://fhir.nmdp.org/ig/matchsync/history.html">history</a>))</p>
+ <p>Generated Mon Dec 02 18:28:47 CST 2024, FHIR version 4.0.1 for nmdp.fhir.matchsync#0.1.1 (canonical = <a href="http://fhir.nmdp.org/ig/matchsync">http://fhir.nmdp.org/ig/matchsync</a> (<a href="http://fhir.nmdp.org/ig/matchsync/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -38,6 +38,20 @@
     <td>
       <b>Choices</b>
     </td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://hl7.org/fhir/fhir-types</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://hl7.org/fhir/fhir-types</td>
+    <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
@@ -113,6 +127,20 @@
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td></td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
     <td>http://loinc.org</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
   </tr>
@@ -404,6 +432,13 @@
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
   </tr>
   <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
     <td>Systems handled by multiple servers. Using primary server</td>
     <td>http://tx.fhir.org/r4</td>
     <td>http://hl7.org/fhir/ValueSet/security-labels|4.0.1</td>
@@ -413,7 +448,7 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:0d6c7377-dfcc-403f-b3b9-3917afd336f9</td>
+    <td>urn:uuid:ab721205-88ab-4540-9a2b-fd23d91ff3e2</td>
     <td>https://www.usps.com/</td>
     <td>auth = , candidates=http://tx.fhir.org/r4</td>
   </tr>
@@ -616,6 +651,20 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
+    <td>http://loinc.org/vs/LL3639-3--0|0.1.1</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
     <td>http://hl7.org/fhir/ValueSet/observation-vitalsignresult--0|4.0.1</td>
     <td>http://loinc.org</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
@@ -632,13 +681,6 @@
     <td>http://tx.fhir.org/r4</td>
     <td>http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1</td>
     <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://loinc.org</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
   </tr>
   <tr>
@@ -677,6 +719,20 @@
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
   </tr>
   <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td></td>
@@ -708,7 +764,21 @@
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td></td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
     <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
   </tr>
   <tr>
@@ -749,7 +819,7 @@
 </table>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
 <a href="http://tx.fhir.org/r4"></a>
-<p>Use Count: 78. Code Systems used: </p>
+<p>Use Count: 87. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -772,25 +842,31 @@
     <td></td>
   </tr>
   <tr>
+    <td>http://hl7.org/fhir/fhir-types</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>http://hl7.org/fhir/sid/icd-10-cm</td>
     <td>1</td>
     <td>2</td>
     <td>
-      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-icd10CM.html">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>
+      <a href="http://terminology.hl7.org/6.1.0/CodeSystem-icd10CM.html">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>
     </td>
   </tr>
   <tr>
     <td>http://loinc.org</td>
-    <td>6</td>
-    <td>33</td>
+    <td>8</td>
+    <td>37</td>
     <td>
-      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
+      <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
     </td>
   </tr>
   <tr>
     <td>http://snomed.info/sct</td>
     <td>2</td>
-    <td>2</td>
+    <td>4</td>
     <td>
       <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a>
     </td>
@@ -800,7 +876,7 @@
     <td>0</td>
     <td>1</td>
     <td>
-      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html">ActCode</a>
+      <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-ActCode.html">ActCode</a>
     </td>
   </tr>
   <tr>
@@ -808,7 +884,7 @@
     <td>0</td>
     <td>1</td>
     <td>
-      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActReason.html">ActReason</a>
+      <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-ActReason.html">ActReason</a>
     </td>
   </tr>
   <tr>
@@ -816,7 +892,7 @@
     <td>0</td>
     <td>1</td>
     <td>
-      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActUSPrivacyLaw.html">ActUSPrivacyLaw</a>
+      <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-ActUSPrivacyLaw.html">ActUSPrivacyLaw</a>
     </td>
   </tr>
   <tr>
@@ -824,7 +900,7 @@
     <td>0</td>
     <td>1</td>
     <td>
-      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-Confidentiality.html">Confidentiality</a>
+      <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-Confidentiality.html">Confidentiality</a>
     </td>
   </tr>
   <tr>
@@ -832,7 +908,7 @@
     <td>0</td>
     <td>1</td>
     <td>
-      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationValue.html">ObservationValue</a>
+      <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-ObservationValue.html">ObservationValue</a>
     </td>
   </tr>
   <tr>
@@ -846,7 +922,7 @@
     <td>0</td>
     <td>6</td>
     <td>
-      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
+      <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
     </td>
   </tr>
   <tr>

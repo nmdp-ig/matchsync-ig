@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ms-form117-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ms-form117-codes</b></p><a name="ms-form117-codes"> </a><a name="hcms-form117-codes"> </a><a name="ms-form117-codes-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nmdp-form117-cs.html"><code>http://terminology.nmdp.org/codesystem/form117compliance</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-form117-codes"/>
+  <version value="0.1.1"/>
+  <name value="NMDPForm117VS"/>
+  <title value="NMDP Form 117 Value Set"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-02T18:26:03-06:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="NMDP Form 117 codes"/>
+  <compose>
+    <include>
+      <system value="http://terminology.nmdp.org/codesystem/form117compliance"/>
+    </include>
+  </compose>
+</ValueSet>

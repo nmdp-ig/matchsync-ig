@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1f043d57-d081-4f1b-8ef3-5417a161e461"/>
+  <id value="67dfbdab-a3e7-40c3-a489-001e2002f131"/>
   <meta>
-    <lastUpdated value="2024-11-11T17:47:55.669-06:00"/>
+    <lastUpdated value="2024-12-02T18:26:03.160-06:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -663,10 +663,10 @@
         <title value="HLA Gene Name Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:e5fed788-93e2-422b-8cd2-39438718a18c"/>
-          <timestamp value="2024-11-11T17:49:13-06:00"/>
+          <identifier value="urn:uuid:337ea41a-dc45-44ca-83de-d837d1d028de"/>
+          <timestamp value="2024-12-02T18:27:37-06:00"/>
           <total value="44"/>
           <offset value="0"/>
           <parameter>
@@ -989,10 +989,10 @@
         <title value="GVHD ICD-10 Codes"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:515676fa-a3c6-4518-a8ee-527863a223da"/>
-          <timestamp value="2024-11-11T17:49:13-06:00"/>
+          <identifier value="urn:uuid:5cfc5092-481d-47c1-b09d-980330a5e3b8"/>
+          <timestamp value="2024-12-02T18:27:37-06:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -1113,10 +1113,10 @@
         <title value="LOINC ABO group Value Set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:a207b78b-c8de-4cf2-b2f8-2a331705b01f"/>
-          <timestamp value="2024-11-11T17:49:16-06:00"/>
+          <identifier value="urn:uuid:3f19dafd-a0ff-4c7c-9a94-7d31a2c1c5ea"/>
+          <timestamp value="2024-12-02T18:27:39-06:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1264,10 +1264,10 @@
         <title value="LOINC ABO RH group Value Set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:8e6e0b8b-ad52-4d87-b431-39262e2f205a"/>
-          <timestamp value="2024-11-11T17:49:16-06:00"/>
+          <identifier value="urn:uuid:8aedfb14-41fa-42e4-90f5-fbc16aab228d"/>
+          <timestamp value="2024-12-02T18:27:39-06:00"/>
           <total value="8"/>
           <offset value="0"/>
           <parameter>
@@ -1339,6 +1339,125 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://loinc.org/vs/LL3639-3"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.78</p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA6576-8"> </a>  
+                  <a href="https://loinc.org/LA6576-8/">LA6576-8</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Positive</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA6577-6"> </a>  
+                  <a href="https://loinc.org/LA6577-6/">LA6577-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Negative</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA11885-3"> </a>  
+                  <a href="https://loinc.org/LA11885-3/">LA11885-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Equivocal</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA9663-1"> </a>  
+                  <a href="https://loinc.org/LA9663-1/">LA9663-1</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Inconclusive</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://loinc.org/vs/LL3639-3"/>
+        <version value="0.1.1"/>
+        <name value="LNCCMVGroupVS"/>
+        <title value="LOINC CMV group Value Set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
+        <expansion>
+          <identifier value="urn:uuid:b3e56f7a-6ba9-4f6b-82ec-f467f19e9605"/>
+          <timestamp value="2024-12-02T18:27:39-06:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.78"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.78"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA6576-8"/>
+            <display value="Positive"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA6577-6"/>
+            <display value="Negative"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA11885-3"/>
+            <display value="Equivocal"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA9663-1"/>
+            <display value="Inconclusive"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://loinc.org/vs/LL360-9"/>
     <resource>
       <ValueSet>
@@ -1387,10 +1506,10 @@
         <title value="LOINC Pos|Neg Value Set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:4a0ab469-c88e-4464-876d-8e7a56c45b3c"/>
-          <timestamp value="2024-11-11T17:49:16-06:00"/>
+          <identifier value="urn:uuid:1ae81921-7f45-4753-a78b-fc360e834c82"/>
+          <timestamp value="2024-12-02T18:27:40-06:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1586,10 +1705,10 @@
         <title value="MatchSync ABO Group Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:74f1848f-6c8a-437e-b5b4-696c8ff3af4c"/>
-          <timestamp value="2024-11-11T17:49:17-06:00"/>
+          <identifier value="urn:uuid:f5911829-f093-404c-b34f-0598aad6854a"/>
+          <timestamp value="2024-12-02T18:27:40-06:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
@@ -1710,6 +1829,604 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-rh-group-codes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on:</p>
+              <ul>
+                <li>Loinc v2.78</li>
+                <li>
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html">codesystem NMDP Blood Group Code System v0.1.1 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="ValueSet-nmdp-abo-rh-codes.html">valueset NMDP Blood Group Value Set v0.1.1 (ValueSet)</a>
+                </li>
+                <li>
+                  <a href="ValueSet-loinc-abo-rh-codes.html">valueset LOINC ABO RH group Value Set v0.1.1 (ValueSet)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 17 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-A+"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-A.43">A+</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>A POS</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-A-"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-A-">A-</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>A NEG</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-B+"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-B.43">B+</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>B POS</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-B-"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-B-">B-</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>B NEG</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-O+"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-O.43">O+</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>O POS</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-O-"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-O-">O-</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>O NEG</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-AB+"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-AB.43">AB+</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>AB POS</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-AB-"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-AB-">AB-</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>AB NEG</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-nil"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-nil">nil</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>no data</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA21321-7"> </a>  
+                  <a href="https://loinc.org/LA21321-7/">LA21321-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>O Pos</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA21322-5"> </a>  
+                  <a href="https://loinc.org/LA21322-5/">LA21322-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>O Neg</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA21325-8"> </a>  
+                  <a href="https://loinc.org/LA21325-8/">LA21325-8</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>A Pos</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA21326-6"> </a>  
+                  <a href="https://loinc.org/LA21326-6/">LA21326-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>A Neg</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA21327-4"> </a>  
+                  <a href="https://loinc.org/LA21327-4/">LA21327-4</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>B Pos</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA21328-2"> </a>  
+                  <a href="https://loinc.org/LA21328-2/">LA21328-2</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>B Neg</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA21323-3"> </a>  
+                  <a href="https://loinc.org/LA21323-3/">LA21323-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>AB Pos</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA21324-1"> </a>  
+                  <a href="https://loinc.org/LA21324-1/">LA21324-1</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>AB Neg</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-rh-group-codes"/>
+        <version value="0.1.1"/>
+        <name value="MSABORHGroupVS"/>
+        <title value="MatchSync ABO RH Group Value Set"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
+        <expansion>
+          <identifier value="urn:uuid:20efe48e-82d2-4f6f-a6fe-85250bfa17cf"/>
+          <timestamp value="2024-12-02T18:27:40-06:00"/>
+          <total value="17"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-rh-codes|0.1.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/aborhgroup|0.1.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="http://loinc.org/vs/LL2972-9|0.1.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.78"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.78"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="A+"/>
+            <display value="A POS"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="A-"/>
+            <display value="A NEG"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="B+"/>
+            <display value="B POS"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="B-"/>
+            <display value="B NEG"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="O+"/>
+            <display value="O POS"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="O-"/>
+            <display value="O NEG"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="AB+"/>
+            <display value="AB POS"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="AB-"/>
+            <display value="AB NEG"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="nil"/>
+            <display value="no data"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA21321-7"/>
+            <display value="O Pos"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA21322-5"/>
+            <display value="O Neg"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA21325-8"/>
+            <display value="A Pos"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA21326-6"/>
+            <display value="A Neg"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA21327-4"/>
+            <display value="B Pos"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA21328-2"/>
+            <display value="B Neg"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA21323-3"/>
+            <display value="AB Pos"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA21324-1"/>
+            <display value="AB Neg"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-cmv-codes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on:</p>
+              <ul>
+                <li>Loinc v2.78</li>
+                <li>
+                  <a href="CodeSystem-nmdp-cmv-cs.html">codesystem NMDP CMV Code System v0.1.1 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="ValueSet-nmdp-cmv-codes.html">valueset NMDP CMV Value Set v0.1.1 (ValueSet)</a>
+                </li>
+                <li>
+                  <a href="ValueSet-loinc-cmv-codes.html">valueset LOINC CMV group Value Set v0.1.1 (ValueSet)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 9 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/cmv-P"> </a>  
+                  <a href="CodeSystem-nmdp-cmv-cs.html#nmdp-cmv-cs-P">P</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/cmv</td>
+                <td>Positive</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/cmv-N"> </a>  
+                  <a href="CodeSystem-nmdp-cmv-cs.html#nmdp-cmv-cs-N">N</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/cmv</td>
+                <td>Negative</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/cmv-I"> </a>  
+                  <a href="CodeSystem-nmdp-cmv-cs.html#nmdp-cmv-cs-I">I</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/cmv</td>
+                <td>Inconclusive</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/cmv-U"> </a>  
+                  <a href="CodeSystem-nmdp-cmv-cs.html#nmdp-cmv-cs-U">U</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/cmv</td>
+                <td>Untested</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/cmv-nil"> </a>  
+                  <a href="CodeSystem-nmdp-cmv-cs.html#nmdp-cmv-cs-nil">nil</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/cmv</td>
+                <td>no data</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA6576-8"> </a>  
+                  <a href="https://loinc.org/LA6576-8/">LA6576-8</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Positive</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA6577-6"> </a>  
+                  <a href="https://loinc.org/LA6577-6/">LA6577-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Negative</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA11885-3"> </a>  
+                  <a href="https://loinc.org/LA11885-3/">LA11885-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Equivocal</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA9663-1"> </a>  
+                  <a href="https://loinc.org/LA9663-1/">LA9663-1</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Inconclusive</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-cmv-codes"/>
+        <version value="0.1.1"/>
+        <name value="MSCMVVS"/>
+        <title value="MatchSync ABO Group Value Set"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
+        <expansion>
+          <identifier value="urn:uuid:2642c84c-0ff1-4eea-bb73-68e6b9c5fa93"/>
+          <timestamp value="2024-12-02T18:27:41-06:00"/>
+          <total value="9"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-cmv-codes|0.1.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/cmv|0.1.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="http://loinc.org/vs/LL3639-3|0.1.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.78"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.78"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/cmv"/>
+            <code value="P"/>
+            <display value="Positive"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/cmv"/>
+            <code value="N"/>
+            <display value="Negative"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/cmv"/>
+            <code value="I"/>
+            <display value="Inconclusive"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/cmv"/>
+            <code value="U"/>
+            <display value="Untested"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/cmv"/>
+            <code value="nil"/>
+            <display value="no data"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA6576-8"/>
+            <display value="Positive"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA6577-6"/>
+            <display value="Negative"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA11885-3"/>
+            <display value="Equivocal"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA9663-1"/>
+            <display value="Inconclusive"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-form117-codes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-nmdp-form117-cs.html">codesystem NMDP Preferred Product for Transplant v0.1.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/form117compliance-FORM117COMPLIANCE"> </a>  
+                  <a href="CodeSystem-nmdp-form117-cs.html#nmdp-form117-cs-FORM117COMPLIANCE">FORM117COMPLIANCE</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/form117compliance</td>
+                <td>Form 117 Compliance</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-form117-codes"/>
+        <version value="0.1.1"/>
+        <name value="NMDPForm117VS"/>
+        <title value="NMDP Form 117 Value Set"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
+        <expansion>
+          <identifier value="urn:uuid:1bf5285c-89f9-41cf-ad19-948f78aa1767"/>
+          <timestamp value="2024-12-02T18:27:41-06:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/form117compliance|0.1.1"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/form117compliance"/>
+            <code value="FORM117COMPLIANCE"/>
+            <display value="Form 117 Compliance"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-rh-codes"/>
     <resource>
       <ValueSet>
@@ -1812,10 +2529,10 @@
         <title value="MatchSync Rh Value Sets"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:6f73df4f-37e3-4887-b1e0-538bf7448c82"/>
-          <timestamp value="2024-11-11T17:49:17-06:00"/>
+          <identifier value="urn:uuid:8981f1e3-4d7f-411c-a382-bd093539c1be"/>
+          <timestamp value="2024-12-02T18:27:41-06:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -1968,10 +2685,10 @@
         <title value="NMDP Blood Group Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:81de0eca-2c6f-416f-b8f4-c3173c33c9c5"/>
-          <timestamp value="2024-11-11T17:49:17-06:00"/>
+          <identifier value="urn:uuid:66be7d0d-3dfa-450f-a247-44747e43fbb5"/>
+          <timestamp value="2024-12-02T18:27:41-06:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2012,6 +2729,310 @@
           </contains>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/abogroup"/>
+            <code value="nil"/>
+            <display value="no data"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-rh-codes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-nmdp-abo-rh-group-cs.html">codesystem NMDP Blood Group Code System v0.1.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 9 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-A+"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-A.43">A+</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>A POS</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-A-"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-A-">A-</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>A NEG</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-B+"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-B.43">B+</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>B POS</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-B-"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-B-">B-</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>B NEG</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-O+"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-O.43">O+</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>O POS</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-O-"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-O-">O-</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>O NEG</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-AB+"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-AB.43">AB+</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>AB POS</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-AB-"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-AB-">AB-</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>AB NEG</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-nil"> </a>  
+                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-nil">nil</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
+                <td>no data</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-rh-codes"/>
+        <version value="0.1.1"/>
+        <name value="NMDPABORHVS"/>
+        <title value="NMDP Blood Group Value Set"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
+        <expansion>
+          <identifier value="urn:uuid:8e2d55e2-0364-400e-9c05-aa8abc161bc6"/>
+          <timestamp value="2024-12-02T18:27:41-06:00"/>
+          <total value="9"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/aborhgroup|0.1.1"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="A+"/>
+            <display value="A POS"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="A-"/>
+            <display value="A NEG"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="B+"/>
+            <display value="B POS"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="B-"/>
+            <display value="B NEG"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="O+"/>
+            <display value="O POS"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="O-"/>
+            <display value="O NEG"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="AB+"/>
+            <display value="AB POS"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="AB-"/>
+            <display value="AB NEG"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+            <code value="nil"/>
+            <display value="no data"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-cmv-codes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-nmdp-cmv-cs.html">codesystem NMDP CMV Code System v0.1.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/cmv-P"> </a>  
+                  <a href="CodeSystem-nmdp-cmv-cs.html#nmdp-cmv-cs-P">P</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/cmv</td>
+                <td>Positive</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/cmv-N"> </a>  
+                  <a href="CodeSystem-nmdp-cmv-cs.html#nmdp-cmv-cs-N">N</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/cmv</td>
+                <td>Negative</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/cmv-I"> </a>  
+                  <a href="CodeSystem-nmdp-cmv-cs.html#nmdp-cmv-cs-I">I</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/cmv</td>
+                <td>Inconclusive</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/cmv-U"> </a>  
+                  <a href="CodeSystem-nmdp-cmv-cs.html#nmdp-cmv-cs-U">U</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/cmv</td>
+                <td>Untested</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/cmv-nil"> </a>  
+                  <a href="CodeSystem-nmdp-cmv-cs.html#nmdp-cmv-cs-nil">nil</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/cmv</td>
+                <td>no data</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-cmv-codes"/>
+        <version value="0.1.1"/>
+        <name value="NMDPCMVVS"/>
+        <title value="NMDP CMV Value Set"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
+        <expansion>
+          <identifier value="urn:uuid:eb9a87cd-3e1f-4452-91fa-cab9d6ddca84"/>
+          <timestamp value="2024-12-02T18:27:41-06:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/cmv|0.1.1"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/cmv"/>
+            <code value="P"/>
+            <display value="Positive"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/cmv"/>
+            <code value="N"/>
+            <display value="Negative"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/cmv"/>
+            <code value="I"/>
+            <display value="Inconclusive"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/cmv"/>
+            <code value="U"/>
+            <display value="Untested"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/cmv"/>
             <code value="nil"/>
             <display value="no data"/>
           </contains>
@@ -2854,10 +3875,10 @@
         <title value="NMDP Disease Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:6055b197-f2fa-4753-b87b-449b49c69ca4"/>
-          <timestamp value="2024-11-11T17:49:17-06:00"/>
+          <identifier value="urn:uuid:bd8a55c7-2427-471e-aa6c-b0af0d6bb0d9"/>
+          <timestamp value="2024-12-02T18:27:41-06:00"/>
           <total value="100"/>
           <offset value="0"/>
           <parameter>
@@ -3479,10 +4500,10 @@
         <title value="NMDP Disease Stage Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:00addd94-e609-4228-956f-cdd552368ead"/>
-          <timestamp value="2024-11-11T17:49:17-06:00"/>
+          <identifier value="urn:uuid:29a3aa44-ef0e-46c8-b442-9f9e3e8880f3"/>
+          <timestamp value="2024-12-02T18:27:41-06:00"/>
           <total value="8"/>
           <offset value="0"/>
           <parameter>
@@ -3604,10 +4625,10 @@
         <title value="NMDP Ethnicity Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:3e50f893-f097-48c7-97ac-5f61b7048d07"/>
-          <timestamp value="2024-11-11T17:49:17-06:00"/>
+          <identifier value="urn:uuid:35976899-fdeb-4e85-adb0-6af61f2cd80b"/>
+          <timestamp value="2024-12-02T18:27:41-06:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -3792,10 +4813,10 @@
         <title value="NMDP Language Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:3bab5693-c366-4e5e-8ed0-1628f12b986a"/>
-          <timestamp value="2024-11-11T17:49:17-06:00"/>
+          <identifier value="urn:uuid:8b9a2170-a54a-45f0-b30e-2e46f959cda0"/>
+          <timestamp value="2024-12-02T18:27:42-06:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -3947,10 +4968,10 @@
         <title value="NMDP Practitioner Role Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:e96f1c2d-ef35-4ea8-b6d2-cea5cce0f02a"/>
-          <timestamp value="2024-11-11T17:49:18-06:00"/>
+          <identifier value="urn:uuid:3df96446-a0cb-459f-bc79-b9939ce4f93c"/>
+          <timestamp value="2024-12-02T18:27:42-06:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -4063,10 +5084,10 @@
         <title value="NMDP Preferred Product Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:c977e62f-6bd2-432c-a553-e36eb23f7557"/>
-          <timestamp value="2024-11-11T17:49:18-06:00"/>
+          <identifier value="urn:uuid:d501e8b2-1c0b-46e5-a404-9a1bedde8174"/>
+          <timestamp value="2024-12-02T18:27:42-06:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -4549,10 +5570,10 @@
         <title value="NMDP Race Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:91ca2b10-dd7f-474f-921c-ccfdb0004470"/>
-          <timestamp value="2024-11-11T17:49:18-06:00"/>
+          <identifier value="urn:uuid:832df525-1cae-45b7-92af-520f5c78e4cb"/>
+          <timestamp value="2024-12-02T18:27:42-06:00"/>
           <total value="50"/>
           <offset value="0"/>
           <parameter>
@@ -4900,10 +5921,10 @@
         <title value="NMDP Codes for Rh status"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:1cdebd70-8572-4319-913c-72887f7d0dde"/>
-          <timestamp value="2024-11-11T17:49:18-06:00"/>
+          <identifier value="urn:uuid:30b8a9a1-329c-4e07-8ff6-89ce8cec021d"/>
+          <timestamp value="2024-12-02T18:27:42-06:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -5042,10 +6063,10 @@
         <title value="NMDP Transplant Timeline Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:3fb5e8ac-2bf8-4058-bae4-5cd10829a5ca"/>
-          <timestamp value="2024-11-11T17:49:18-06:00"/>
+          <identifier value="urn:uuid:2957c410-b5e9-4e2b-a519-e0f93f679261"/>
+          <timestamp value="2024-12-02T18:27:42-06:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -5168,10 +6189,10 @@
         <title value="Snomed CT ABO group Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-11-11T17:47:55-06:00"/>
+        <date value="2024-12-02T18:26:03-06:00"/>
         <expansion>
-          <identifier value="urn:uuid:22a7726c-2781-40a0-8c69-2a2734085cb9"/>
-          <timestamp value="2024-11-11T17:49:18-06:00"/>
+          <identifier value="urn:uuid:98186248-aaa8-4e01-9e4f-bd4bd1220309"/>
+          <timestamp value="2024-12-02T18:27:42-06:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>

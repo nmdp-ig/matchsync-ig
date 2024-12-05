@@ -9,7 +9,7 @@
   <version value="0.1.1"/>
   <name value="MatchSyncIG"/>
   <status value="draft"/>
-  <date value="2024-11-11T17:47:55-06:00"/>
+  <date value="2024-12-02T18:26:03-06:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -27,7 +27,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.0.2"/>
+    <version value="6.1.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -98,7 +98,23 @@
         <valueString value="special-url"/>
       </extension>
       <extension url="value">
+        <valueString value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
         <valueString value="http://terminology.nmdp.org/codesystem/rhstatus"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://terminology.nmdp.org/codesystem/cmv"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -154,6 +170,14 @@
         <valueString value="special-url"/>
       </extension>
       <extension url="value">
+        <valueString value="http://terminology.nmdp.org/codesystem/form117compliance"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
         <valueString value="http://www.glstring.org"/>
       </extension>
     </extension>
@@ -179,6 +203,22 @@
       </extension>
       <extension url="value">
         <valueString value="http://loinc.org/vs/LL360-9"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://loinc.org/vs/LL2972-9"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://loinc.org/vs/LL3639-3"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -366,7 +406,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -413,7 +453,23 @@
         <valueCode value="special-url"/>
       </extension>
       <extension url="value">
+        <valueString value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
         <valueString value="http://terminology.nmdp.org/codesystem/rhstatus"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://terminology.nmdp.org/codesystem/cmv"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -469,6 +525,14 @@
         <valueCode value="special-url"/>
       </extension>
       <extension url="value">
+        <valueString value="http://terminology.nmdp.org/codesystem/form117compliance"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
         <valueString value="http://www.glstring.org"/>
       </extension>
     </extension>
@@ -494,6 +558,22 @@
       </extension>
       <extension url="value">
         <valueString value="http://loinc.org/vs/LL360-9"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://loinc.org/vs/LL2972-9"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://loinc.org/vs/LL3639-3"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -1092,6 +1172,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/loinc-cmv-codes"/>
+      </reference>
+      <name value="LOINC CMV group Value Set"/>
+      <description value="LOINC codes for CMV"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/loinc-posneg-codes"/>
       </reference>
       <name value="LOINC Pos|Neg Value Set"/>
@@ -1107,6 +1198,28 @@
       </reference>
       <name value="MatchSync ABO Group Value Set"/>
       <description value="MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ms-cmv-codes"/>
+      </reference>
+      <name value="MatchSync ABO Group Value Set"/>
+      <description value="MatchSync ABO group codes. Combines LOINC and NMDP codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ms-abo-rh-group-codes"/>
+      </reference>
+      <name value="MatchSync ABO RH Group Value Set"/>
+      <description value="MatchSync ABO RH group codes. Combines LOINC and NMDP codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1210,6 +1323,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MSCmvExample"/>
+      </reference>
+      <name value="MSCmvExample"/>
+      <description value="Example of Cytomeglovirus found in patient"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-cmvgroup-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ms-cmvgroup-observation"/>
+      </reference>
+      <name value="MSCmvObservation"/>
+      <description value="Cytomeglovirus found in patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
@@ -1229,6 +1364,28 @@
       <name value="MSDiagnosisExample-OND"/>
       <description value="Example of a Diagnois"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MSForm117Example"/>
+      </reference>
+      <name value="MSForm117Example"/>
+      <description value="Example of Form 117 Compliance for patient"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-form117-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ms-form117-observation"/>
+      </reference>
+      <name value="MSForm117Observation"/>
+      <description value="Form 117 Compliance for patient"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1262,6 +1419,17 @@
       <name value="MSPatient"/>
       <description value="Patient needing a transplant"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/MSPatientBirthSex"/>
+      </reference>
+      <name value="MSPatientBirthSex"/>
+      <description value="Example of a patient using BirthSex codes"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1316,6 +1484,17 @@
       </reference>
       <name value="MSPatientExample5"/>
       <description value="Example of a patient needing a donor using NMDP race code."/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/MSPatientGenderIdentity"/>
+      </reference>
+      <name value="MSPatientGenderIdentity"/>
+      <description value="Example of a patient using Gender Identity codes"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"/>
     </resource>
     <resource>
@@ -1452,6 +1631,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-abo-rh-group-cs"/>
+      </reference>
+      <name value="NMDP Blood Group Code System"/>
+      <description value="Code System for NMDP ABO RH blood groups"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1459,6 +1649,39 @@
       </reference>
       <name value="NMDP Blood Group Value Set"/>
       <description value="NMDP blood group codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nmdp-abo-rh-codes"/>
+      </reference>
+      <name value="NMDP Blood Group Value Set"/>
+      <description value="NMDP blood group codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-cmv-cs"/>
+      </reference>
+      <name value="NMDP CMV Code System"/>
+      <description value="Code System for NMDP CMV"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nmdp-cmv-codes"/>
+      </reference>
+      <name value="NMDP CMV Value Set"/>
+      <description value="NMDP cmv codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1540,6 +1763,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ms-form117-codes"/>
+      </reference>
+      <name value="NMDP Form 117 Value Set"/>
+      <description value="NMDP Form 117 codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -1591,6 +1825,17 @@
       </reference>
       <name value="NMDP Preferred Product for Transplant"/>
       <description value="NMDP Preferred Product for MatchSync patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-form117-cs"/>
+      </reference>
+      <name value="NMDP Preferred Product for Transplant"/>
+      <description value="NMDP Form 117 for MatchSync patient"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
