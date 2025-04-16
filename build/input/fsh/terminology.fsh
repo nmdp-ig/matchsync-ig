@@ -1,7 +1,7 @@
 // Disease/Stage
 
 CodeSystem: NMDPDiseaseCS
-Title: "NMDP Disease Code System"
+Title: "CodeSystem - Disease - NMDP"
 Id: nmdp-disease-cs
 Description: "Code System for NMDP diseases"
 * ^url = "http://terminology.nmdp.org/codesystem/disease"
@@ -114,14 +114,14 @@ Description: "Code System for NMDP diseases"
 
 ValueSet: NMDPDiseaseVS
 Id: nmdp-disease-codes
-Title: "NMDP Disease Value Set"
+Title: "ValueSet - Disease - NMDP"
 Description: "NMDP disease codes"
 * include codes from system nmdp-disease-cs
 * ^experimental = true
 
 
 CodeSystem: NMDPDiseaseStageCS
-Title: "NMDP Disease Stage Code System"
+Title: "CodeSystem - Disease Stage - NMDP"
 Id: nmdp-diseasestage-cs
 Description: "Code System for NMDP disease stages"
 * ^url = "http://terminology.nmdp.org/codesystem/diseasestage"
@@ -142,7 +142,7 @@ Description: "Code System for NMDP disease stages"
 
 ValueSet: NMDPDiseasStageVS
 Id: nmdp-diseasestage-codes
-Title: "NMDP Disease Stage Value Set"
+Title: "ValueSet - Disease Stage - NMDP"
 Description: "NMDP disease stage codes"
 * include codes from system nmdp-diseasestage-cs
 * ^experimental = true
@@ -150,7 +150,7 @@ Description: "NMDP disease stage codes"
 // Language ----------------
 
 CodeSystem: NMDPLanguageCS
-Title: "NMDP Language Code System"
+Title: "CodeSystem - Language - NMDP"
 Id: nmdp-language-cs
 Description: "Code System for NMDP languages"
 * ^url = "http://terminology.nmdp.org/codesystem/language"
@@ -177,7 +177,7 @@ Description: "Code System for NMDP languages"
 
 ValueSet: NMDPLanguageCodes
 Id: nmdp-language-codes
-Title: "NMDP Language Value Set"
+Title: "ValueSet - Language - NMDP"
 Description: "NMDP language codes"
 * include codes from system nmdp-language-cs
 * ^experimental = true
@@ -186,7 +186,7 @@ Description: "NMDP language codes"
 // ABO ----------------
 
 CodeSystem: NMDPABOCS
-Title: "NMDP Blood Group Code System"
+Title: "CodeSystem - Blood Group (ABO) - NMDP"
 Id: nmdp-abo-group-cs
 Description: "Code System for NMDP ABO blood groups"
 * ^url = "http://terminology.nmdp.org/codesystem/abogroup"
@@ -203,7 +203,7 @@ Description: "Code System for NMDP ABO blood groups"
 * #nil "no data"
 
 ValueSet: NMDPABOVS
-Title: "NMDP Blood Group Value Set"
+Title: "ValueSet - Blood Group (ABO) - NMDP"
 Id: nmdp-abo-codes
 Description: "NMDP blood group codes"
 * include codes from system nmdp-abo-group-cs
@@ -211,7 +211,7 @@ Description: "NMDP blood group codes"
 
 ValueSet: LNCABOGroupVS
 Id: loinc-abo-codes
-Title: "LOINC ABO group Value Set"
+Title: "ValueSet - Blood Group (ABO) - LOINC"
 Description: "LOINC codes for ABO blood group"
 * ^url = "http://loinc.org/vs/LL2419-1"
 * ^status = #active
@@ -224,30 +224,30 @@ Description: "LOINC codes for ABO blood group"
 * $LNC#LA19708-9  "Group O"
 * $LNC#LA28449-9  "Group AB"
 
-ValueSet: SCTABOGroupVS
-Id: sct-abo-group-codes
-Title: "Snomed CT ABO group Value Set"
-Description: "Snomed CT codes for ABO blood group"
-// * include codes from system http://snomed.info/sct where concept is-a #112143006
-* ^experimental = true
-* $SCT#112144000    "Blood group A (finding)"
-* $SCT#165743006    "Blood group AB (finding)"
-* $SCT#112149005    "Blood group B (finding)"
-* $SCT#58460004     "Blood group O (finding)"
+// ValueSet: SCTABOGroupVS
+// Id: sct-abo-group-codes
+// Title: "Snomed CT ABO group Value Set"
+// Description: "Snomed CT codes for ABO blood group"
+// // * include codes from system http://snomed.info/sct where concept is-a #112143006
+// * ^experimental = true
+// * $SCT#112144000    "Blood group A (finding)"
+// * $SCT#165743006    "Blood group AB (finding)"
+// * $SCT#112149005    "Blood group B (finding)"
+// * $SCT#58460004     "Blood group O (finding)"
 
-ValueSet: MSABOGroupVS
-Id: ms-abo-group-codes
-Title: "MatchSync ABO Group Value Set"
-Description: "MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes"
-* include codes from valueset nmdp-abo-codes
-* include codes from valueset loinc-abo-codes
-* include codes from valueset sct-abo-group-codes
-* ^experimental = true
+// ValueSet: MSABOGroupVS
+// Id: ms-abo-group-codes
+// Title: "MatchSync ABO Group Value Set"
+// Description: "MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes"
+// * include codes from valueset nmdp-abo-codes
+// * include codes from valueset loinc-abo-codes
+// * include codes from valueset sct-abo-group-codes
+// * ^experimental = true
 
 // ABO-RH ------------
 
 CodeSystem: NMDPABORHCS
-Title: "NMDP Blood Group Code System"
+Title: "CodeSystem - Blood Group (ABO+RH) - NMDP"
 Id: nmdp-abo-rh-group-cs
 Description: "Code System for NMDP ABO RH blood groups"
 * ^url = "http://terminology.nmdp.org/codesystem/aborhgroup"
@@ -268,7 +268,7 @@ Description: "Code System for NMDP ABO RH blood groups"
 * #nil "no data"
 
 ValueSet: NMDPABORHVS
-Title: "NMDP Blood Group Value Set"
+Title: "ValueSet - Blood Group (ABO+RH) - NMDP"
 Id: nmdp-abo-rh-codes
 Description: "NMDP blood group codes"
 * include codes from system nmdp-abo-rh-group-cs
@@ -276,7 +276,7 @@ Description: "NMDP blood group codes"
 
 ValueSet: LNCABORHGroupVS
 Id: loinc-abo-rh-codes
-Title: "LOINC ABO RH group Value Set"
+Title: "ValueSet - Blood Group (ABO+RH) - LOINC"
 Description: "LOINC codes for ABO RH blood group"
 * ^url = "http://loinc.org/vs/LL2972-9"
 * ^status = #active
@@ -294,18 +294,18 @@ Description: "LOINC codes for ABO RH blood group"
 * $LNC#LA21323-3  "AB Pos"
 * $LNC#LA21324-1  "AB Neg"
 
-ValueSet: MSABORHGroupVS
-Id: ms-abo-rh-group-codes
-Title: "MatchSync ABO RH Group Value Set"
-Description: "MatchSync ABO RH group codes. Combines LOINC and NMDP codes"
-* include codes from valueset nmdp-abo-rh-codes
-* include codes from valueset loinc-abo-rh-codes
-* ^experimental = true
+// ValueSet: MSABORHGroupVS
+// Id: ms-abo-rh-group-codes
+// Title: "MatchSync ABO RH Group Value Set"
+// Description: "MatchSync ABO RH group codes. Combines LOINC and NMDP codes"
+// * include codes from valueset nmdp-abo-rh-codes
+// * include codes from valueset loinc-abo-rh-codes
+// * ^experimental = true
 
 // Rh ----------------
 
 CodeSystem: NMDPRhStatusCS
-Title: "NMDP Rh Code System"
+Title: "CodeSystem - Blood Group (Rh) - NMDP"
 Id: nmdp-rh-status-cs
 Description: "Code System for NMDP Rh Status"
 * ^url = "http://terminology.nmdp.org/codesystem/rhstatus"
@@ -315,14 +315,11 @@ Description: "Code System for NMDP Rh Status"
 * ^caseSensitive = true
 * ^publisher = "NMDP"
 * ^copyright = "National Marrow Donor Program"
-* #I "Indeterminant"
-* #P "Positive"
-* #N "Negative"
-* #D "Indeterminant"
-* #nil "no data"
+* #Rh+ "Positive"
+* #Rh- "Negative"
 
 ValueSet: NMDPRhStatusVS
-Title: "NMDP Codes for Rh status"
+Title: "ValueSet - Blood Group (Rh) - NMDP"
 Id: nmdp-rh-status-codes
 Description: "NMDP codes for Rh staus"
 * include codes from system nmdp-rh-status-cs
@@ -330,7 +327,7 @@ Description: "NMDP codes for Rh staus"
 
 ValueSet: PosNegVS
 Id: loinc-posneg-codes
-Title: "LOINC Pos|Neg Value Set"
+Title: "ValueSet - Blood Group (Rh) - LOINC"
 Description: "LOINC codes for Positive and Negative"
 * ^url = "http://loinc.org/vs/LL360-9"
 * ^status = #active
@@ -342,18 +339,18 @@ Description: "LOINC codes for Positive and Negative"
 * $LNC#LA6576-8  "Positive"
 * $LNC#LA6577-6  "Negative" 
 
-ValueSet: MSRhVS
-Id: ms-rh-codes
-Title: "MatchSync Rh Value Sets"
-Description: "MatchSync codes for blood Rh. Combines NMDP and LOINC code"
-* include codes from valueset nmdp-rh-status-codes
-* include codes from valueset loinc-posneg-codes
-* ^experimental = true
+// ValueSet: MSRhVS
+// Id: ms-rh-codes
+// Title: "MatchSync Rh Value Sets"
+// Description: "MatchSync codes for blood Rh. Combines NMDP and LOINC code"
+// * include codes from valueset nmdp-rh-status-codes
+// * include codes from valueset loinc-posneg-codes
+// * ^experimental = true
 
 // Race ----------------
 
 CodeSystem: NMDPRaceCS
-Title: "NMDP Race Code System"
+Title: "CodeSystem - Patient Race - NMDP"
 Id: nmdp-race-cs
 Description: "Code System for NMDP diseases"
 * ^url = "http://terminology.nmdp.org/codesystem/race"
@@ -416,7 +413,7 @@ Description: "Code System for NMDP diseases"
 
 ValueSet: NMDPRaceVS
 Id: nmdp-race-codes
-Title: "NMDP Race Value Set"
+Title: "ValueSet - Patient Race - NMDP"
 Description: "NMDP race codes"
 * include codes from system nmdp-race-cs
 * ^experimental = true
@@ -424,7 +421,7 @@ Description: "NMDP race codes"
 // Ethnicity ---------------
 
 CodeSystem: NMDPEthnicityCS
-Title: "NMDP Ethnicity Code System"
+Title: "CodeSystem - Patient Ethnicity - NMDP"
 Id: nmdp-ethnicity-cs
 Description: "Code System for NMDP ethnicity"
 * ^url = "http://terminology.nmdp.org/codesystem/ethnicity"
@@ -440,16 +437,42 @@ Description: "Code System for NMDP ethnicity"
 
 ValueSet:  NMDPEthnicityVS
 Id: nmdp-ethnicity-codes
-Title: "NMDP Ethnicity Value Set"
+Title: "ValueSet - Patient Ethnicity - NMDP"
 Description: "NMDP ethnicity codes"
+* ^url = "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-ethnicity-codes"
 * include codes from system nmdp-ethnicity-cs
+* ^experimental = true
+
+// Gender Identity ----------------------
+
+CodeSystem: NMDPGenderIdentityCS
+Title: "CodeSystem - Patient Gender Identity - NMDP"
+Id: nmdp-GenderIdentity-cs
+Description: "Code System for NMDP diseases"
+* ^url = "http://terminology.nmdp.org/codesystem/genderidentity"
+* ^version = "2022"
+* ^status = #active
+* ^experimental = true
+* ^caseSensitive = true
+* ^publisher = "NMDP"
+* ^copyright = "National Marrow Donor Program"
+* #F    "Female"
+* #M    "Male"
+* #NB   "Non-binary"
+* #SI   "Self-identified"
+
+ValueSet: NMDPGenderIdentityVS
+Id: nmdp-GenderIdentity-codes
+Title: "ValueSet - Patient Gender Identity - NMDP"
+Description: "NMDP GenderIdentity codes"
+* include codes from system nmdp-GenderIdentity-cs
 * ^experimental = true
 
 
 // Transplant timeline ------------------
 
 CodeSystem: NMDPTransplantTimelineCS
-Title: "NMDP Transplant Timeline Code System"
+Title: "CodeSystem - Transplant Timeline - NMDP"
 Id: nmdp-transplant-timeline-cs
 Description: "Code System for NMDP transplant timeline"
 * ^url = "http://terminology.nmdp.org/codesystem/transplanttimeline"
@@ -459,17 +482,17 @@ Description: "Code System for NMDP transplant timeline"
 * ^caseSensitive = true
 * ^publisher = "NMDP"
 * ^copyright = "National Marrow Donor Program"
-* #<4w      "Less than 4 weeks"
-* #4-6w     "Between 4-6 weeks"
+* #12W-6M   "Over 12 weeks - up to 6 months"
+* #4-6W     "Between 4-6 weeks"
+* #4W       "Less than 4 weeks"
+* #6MG      "Greater than 6 months"
 * #7-12w    "Between 7-12 weeks"
-* #12w-6m   "Over 12 weeks - up to 6 months"
-* #>6m      "Greater than 6 months"
 * #NA       "N/A : MUD Transplant not preferred treatment"
-* #P        "Pending, Case manager to follow up"
+* #PEND     "Pending, Case manager to follow up"
 
 ValueSet: NMDPTransplantTimelineVS
 Id: nmdp-transplant-timeline-codes
-Title: "NMDP Transplant Timeline Value Set"
+Title: "ValueSet - Transplant Timeline - NMDP"
 Description: "NMDP transplant timeline codes"
 * include codes from system nmdp-transplant-timeline-cs
 * ^experimental = true
@@ -477,7 +500,7 @@ Description: "NMDP transplant timeline codes"
 // Preferred Product ------------------
 
 CodeSystem: NMDPPreferredProductCS
-Title: "NMDP Preferred Product for Transplant"
+Title: "CodeSystem - Preferred Product - NMDP"
 Id: nmdp-preferred-product-cs
 Description: "NMDP Preferred Product for MatchSync patient"
 * ^url = "http://terminology.nmdp.org/codesystem/preferredproduct"
@@ -496,7 +519,7 @@ Description: "NMDP Preferred Product for MatchSync patient"
 
 ValueSet: NMDPPreferredProductVS
 Id: nmdp-preferred-product-codes
-Title: "NMDP Preferred Product Value Set"
+Title: "ValueSet - Preferred Product - NMDP"
 Description: "NMDP preferred product codes"
 * include codes from system nmdp-preferred-product-cs
 * ^experimental = true
@@ -506,7 +529,7 @@ Description: "NMDP preferred product codes"
 
 ValueSet: ICD10GVHDVS
 Id: icd10-gvhd-codes
-Title: "GVHD ICD-10 Codes"
+Title: "ICD-10 (GVHD) Codes"
 Description: "GVHD ICD-10 Codes"
 * include codes from system $ICD10 where concept is-a #D89.81 "Graft-versus-host disease"
 * ^experimental = true
@@ -553,7 +576,7 @@ Description:  "NMDP Practitioner Role Value Set"
 // CMV ------------
 
 CodeSystem: NMDPCMVCS
-Title: "NMDP CMV Code System"
+Title: "CodeSystem - CMV Group - NMDP"
 Id: nmdp-cmv-cs
 Description: "Code System for NMDP CMV"
 * ^url = "http://terminology.nmdp.org/codesystem/cmv"
@@ -570,7 +593,7 @@ Description: "Code System for NMDP CMV"
 * #nil "no data"
 
 ValueSet: NMDPCMVVS
-Title: "NMDP CMV Value Set"
+Title: "ValueSet - CMV Group - NMDP"
 Id: nmdp-cmv-codes
 Description: "NMDP cmv codes"
 * include codes from system nmdp-cmv-cs
@@ -578,7 +601,7 @@ Description: "NMDP cmv codes"
 
 ValueSet: LNCCMVGroupVS
 Id: loinc-cmv-codes
-Title: "LOINC CMV group Value Set"
+Title: "ValueSet - CMV Group - LOINC"
 Description: "LOINC codes for CMV"
 * ^url = "http://loinc.org/vs/LL3639-3"
 * ^status = #active
@@ -593,18 +616,18 @@ Description: "LOINC codes for CMV"
 * $LNC#LA9663-1  "I"
 * $LNC#LA113538-6  "U"
 
-ValueSet: MSCMVVS
-Id: ms-cmv-codes
-Title: "MatchSync ABO Group Value Set"
-Description: "MatchSync ABO group codes. Combines LOINC and NMDP codes"
-* include codes from valueset nmdp-cmv-codes
-* include codes from valueset loinc-cmv-codes
-* ^experimental = true
+// ValueSet: MSCMVVS
+// Id: ms-cmv-codes
+// Title: "MatchSync ABO Group Value Set"
+// Description: "MatchSync ABO group codes. Combines LOINC and NMDP codes"
+// * include codes from valueset nmdp-cmv-codes
+// * include codes from valueset loinc-cmv-codes
+// * ^experimental = true
 
 // Form 117 ------------
 
 CodeSystem: NMDPForm117CS
-Title: "NMDP Preferred Product for Transplant"
+Title: "CodeSystem - Form117 Compliance- NMDP"
 Id: nmdp-form117-cs
 Description: "NMDP Form 117 for MatchSync patient"
 * ^url = "http://terminology.nmdp.org/codesystem/form117compliance"
@@ -619,7 +642,7 @@ Description: "NMDP Form 117 for MatchSync patient"
 
 ValueSet: NMDPForm117VS
 Id: ms-form117-codes
-Title: "NMDP Form 117 Value Set"
+Title: "ValueSet - Form117 Compliance - NMDP"
 Description: "NMDP Form 117 codes"
 * include codes from system nmdp-form117-cs
 * ^experimental = true

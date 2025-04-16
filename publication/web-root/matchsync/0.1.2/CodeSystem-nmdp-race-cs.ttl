@@ -1,0 +1,189 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-race-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nmdp-race-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nmdp-race-cs</b></p><a name=\"nmdp-race-cs\"> </a><a name=\"hcnmdp-race-cs\"> </a><a name=\"nmdp-race-cs-en-US\"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/race</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AAFA<a name=\"nmdp-race-cs-AAFA\"> </a></td><td>African American</td></tr><tr><td style=\"white-space:nowrap\">AFA<a name=\"nmdp-race-cs-AFA\"> </a></td><td>Unspecified</td></tr><tr><td style=\"white-space:nowrap\">AFB<a name=\"nmdp-race-cs-AFB\"> </a></td><td>African</td></tr><tr><td style=\"white-space:nowrap\">AINDI<a name=\"nmdp-race-cs-AINDI\"> </a></td><td>South Asian</td></tr><tr><td style=\"white-space:nowrap\">AISC<a name=\"nmdp-race-cs-AISC\"> </a></td><td>American Indian South or Centr</td></tr><tr><td style=\"white-space:nowrap\">ALANAM<a name=\"nmdp-race-cs-ALANAM\"> </a></td><td>Alaska Native or Aleut</td></tr><tr><td style=\"white-space:nowrap\">AMIND<a name=\"nmdp-race-cs-AMIND\"> </a></td><td>North American Indian</td></tr><tr><td style=\"white-space:nowrap\">API<a name=\"nmdp-race-cs-API\"> </a></td><td>Unspecified</td></tr><tr><td style=\"white-space:nowrap\">CARB<a name=\"nmdp-race-cs-CARB\"> </a></td><td>Black Caribbean</td></tr><tr><td style=\"white-space:nowrap\">CARHIS<a name=\"nmdp-race-cs-CARHIS\"> </a></td><td>Caribbean Hispanic</td></tr><tr><td style=\"white-space:nowrap\">CARIBI<a name=\"nmdp-race-cs-CARIBI\"> </a></td><td>Caribbean Indian</td></tr><tr><td style=\"white-space:nowrap\">CAU<a name=\"nmdp-race-cs-CAU\"> </a></td><td>Unspecified</td></tr><tr><td style=\"white-space:nowrap\">DEC<a name=\"nmdp-race-cs-DEC\"> </a></td><td>Declines or No Race Selected</td></tr><tr><td style=\"white-space:nowrap\">EEURO<a name=\"nmdp-race-cs-EEURO\"> </a></td><td>Eastern European</td></tr><tr><td style=\"white-space:nowrap\">EURWRC<a name=\"nmdp-race-cs-EURWRC\"> </a></td><td>North American or European</td></tr><tr><td style=\"white-space:nowrap\">FILII<a name=\"nmdp-race-cs-FILII\"> </a></td><td>Filipino</td></tr><tr><td style=\"white-space:nowrap\">GUAMAN<a name=\"nmdp-race-cs-GUAMAN\"> </a></td><td>Guamanian</td></tr><tr><td style=\"white-space:nowrap\">HAWAII<a name=\"nmdp-race-cs-HAWAII\"> </a></td><td>Hawaiian</td></tr><tr><td style=\"white-space:nowrap\">HAWI<a name=\"nmdp-race-cs-HAWI\"> </a></td><td>Unspecified</td></tr><tr><td style=\"white-space:nowrap\">HIS<a name=\"nmdp-race-cs-HIS\"> </a></td><td>Unspecified Hispanic</td></tr><tr><td style=\"white-space:nowrap\">JAPI<a name=\"nmdp-race-cs-JAPI\"> </a></td><td>Japanese</td></tr><tr><td style=\"white-space:nowrap\">KORI<a name=\"nmdp-race-cs-KORI\"> </a></td><td>Korean</td></tr><tr><td style=\"white-space:nowrap\">MAFA<a name=\"nmdp-race-cs-MAFA\"> </a></td><td>Multiple Black</td></tr><tr><td style=\"white-space:nowrap\">MAPI<a name=\"nmdp-race-cs-MAPI\"> </a></td><td>Multiple Asian/Pacific Islndr</td></tr><tr><td style=\"white-space:nowrap\">MCAU<a name=\"nmdp-race-cs-MCAU\"> </a></td><td>Multiple Caucasian</td></tr><tr><td style=\"white-space:nowrap\">MEDIT<a name=\"nmdp-race-cs-MEDIT\"> </a></td><td>Mediterranean</td></tr><tr><td style=\"white-space:nowrap\">MENAFC<a name=\"nmdp-race-cs-MENAFC\"> </a></td><td>MidEast/No. Coast of Africa</td></tr><tr><td style=\"white-space:nowrap\">MHAW<a name=\"nmdp-race-cs-MHAW\"> </a></td><td>Multiple Nat. Hw/Oth Pa. Isln</td></tr><tr><td style=\"white-space:nowrap\">MHIS<a name=\"nmdp-race-cs-MHIS\"> </a></td><td>Multiple Hispanic</td></tr><tr><td style=\"white-space:nowrap\">MIDEAS<a name=\"nmdp-race-cs-MIDEAS\"> </a></td><td>Middle Eastern</td></tr><tr><td style=\"white-space:nowrap\">MNAM<a name=\"nmdp-race-cs-MNAM\"> </a></td><td>Multiple Native American</td></tr><tr><td style=\"white-space:nowrap\">MSWHIS<a name=\"nmdp-race-cs-MSWHIS\"> </a></td><td>Mexican or Chicano</td></tr><tr><td style=\"white-space:nowrap\">MULTI<a name=\"nmdp-race-cs-MULTI\"> </a></td><td>Multiple Race</td></tr><tr><td style=\"white-space:nowrap\">NAM<a name=\"nmdp-race-cs-NAM\"> </a></td><td>Unspecified</td></tr><tr><td style=\"white-space:nowrap\">NAMB<a name=\"nmdp-race-cs-NAMB\"> </a></td><td>North American Black</td></tr><tr><td style=\"white-space:nowrap\">NAMER<a name=\"nmdp-race-cs-NAMER\"> </a></td><td>North American</td></tr><tr><td style=\"white-space:nowrap\">NCAFRI<a name=\"nmdp-race-cs-NCAFRI\"> </a></td><td>North Coast of Africa</td></tr><tr><td style=\"white-space:nowrap\">NCHI<a name=\"nmdp-race-cs-NCHI\"> </a></td><td>Chinese</td></tr><tr><td style=\"white-space:nowrap\">NEURO<a name=\"nmdp-race-cs-NEURO\"> </a></td><td>Northern European</td></tr><tr><td style=\"white-space:nowrap\">OPI<a name=\"nmdp-race-cs-OPI\"> </a></td><td>Other Pacific Islander</td></tr><tr><td style=\"white-space:nowrap\">OTH<a name=\"nmdp-race-cs-OTH\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">SAMOAN<a name=\"nmdp-race-cs-SAMOAN\"> </a></td><td>Samoan</td></tr><tr><td style=\"white-space:nowrap\">SCAHIS<a name=\"nmdp-race-cs-SCAHIS\"> </a></td><td>South/Cntrl Amer. Hisp.</td></tr><tr><td style=\"white-space:nowrap\">SCAMB<a name=\"nmdp-race-cs-SCAMB\"> </a></td><td>Black South or Central America</td></tr><tr><td style=\"white-space:nowrap\">SCSEAI<a name=\"nmdp-race-cs-SCSEAI\"> </a></td><td>Other Southeast Asian</td></tr><tr><td style=\"white-space:nowrap\">UNK<a name=\"nmdp-race-cs-UNK\"> </a></td><td>Unknown/Question Not Asked</td></tr><tr><td style=\"white-space:nowrap\">VIET<a name=\"nmdp-race-cs-VIET\"> </a></td><td>Vietnamese</td></tr><tr><td style=\"white-space:nowrap\">WCARIB<a name=\"nmdp-race-cs-WCARIB\"> </a></td><td>White Caribbean</td></tr><tr><td style=\"white-space:nowrap\">WEURO<a name=\"nmdp-race-cs-WEURO\"> </a></td><td>Western European</td></tr><tr><td style=\"white-space:nowrap\">WSCA<a name=\"nmdp-race-cs-WSCA\"> </a></td><td>White South or Central America</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.nmdp.org/codesystem/race"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.2"] ; # 
+  fhir:name [ fhir:v "NMDPRaceCS"] ; # 
+  fhir:title [ fhir:v "CodeSystem - Patient Race - NMDP"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-04-16T10:30:36-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NMDP"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NMDP" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://bethematch.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code System for NMDP diseases"] ; # 
+  fhir:copyright [ fhir:v "National Marrow Donor Program"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "50"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "AAFA" ] ;
+     fhir:display [ fhir:v "African American" ]
+  ] [
+     fhir:code [ fhir:v "AFA" ] ;
+     fhir:display [ fhir:v "Unspecified" ]
+  ] [
+     fhir:code [ fhir:v "AFB" ] ;
+     fhir:display [ fhir:v "African" ]
+  ] [
+     fhir:code [ fhir:v "AINDI" ] ;
+     fhir:display [ fhir:v "South Asian" ]
+  ] [
+     fhir:code [ fhir:v "AISC" ] ;
+     fhir:display [ fhir:v "American Indian South or Centr" ]
+  ] [
+     fhir:code [ fhir:v "ALANAM" ] ;
+     fhir:display [ fhir:v "Alaska Native or Aleut" ]
+  ] [
+     fhir:code [ fhir:v "AMIND" ] ;
+     fhir:display [ fhir:v "North American Indian" ]
+  ] [
+     fhir:code [ fhir:v "API" ] ;
+     fhir:display [ fhir:v "Unspecified" ]
+  ] [
+     fhir:code [ fhir:v "CARB" ] ;
+     fhir:display [ fhir:v "Black Caribbean" ]
+  ] [
+     fhir:code [ fhir:v "CARHIS" ] ;
+     fhir:display [ fhir:v "Caribbean Hispanic" ]
+  ] [
+     fhir:code [ fhir:v "CARIBI" ] ;
+     fhir:display [ fhir:v "Caribbean Indian" ]
+  ] [
+     fhir:code [ fhir:v "CAU" ] ;
+     fhir:display [ fhir:v "Unspecified" ]
+  ] [
+     fhir:code [ fhir:v "DEC" ] ;
+     fhir:display [ fhir:v "Declines or No Race Selected" ]
+  ] [
+     fhir:code [ fhir:v "EEURO" ] ;
+     fhir:display [ fhir:v "Eastern European" ]
+  ] [
+     fhir:code [ fhir:v "EURWRC" ] ;
+     fhir:display [ fhir:v "North American or European" ]
+  ] [
+     fhir:code [ fhir:v "FILII" ] ;
+     fhir:display [ fhir:v "Filipino" ]
+  ] [
+     fhir:code [ fhir:v "GUAMAN" ] ;
+     fhir:display [ fhir:v "Guamanian" ]
+  ] [
+     fhir:code [ fhir:v "HAWAII" ] ;
+     fhir:display [ fhir:v "Hawaiian" ]
+  ] [
+     fhir:code [ fhir:v "HAWI" ] ;
+     fhir:display [ fhir:v "Unspecified" ]
+  ] [
+     fhir:code [ fhir:v "HIS" ] ;
+     fhir:display [ fhir:v "Unspecified Hispanic" ]
+  ] [
+     fhir:code [ fhir:v "JAPI" ] ;
+     fhir:display [ fhir:v "Japanese" ]
+  ] [
+     fhir:code [ fhir:v "KORI" ] ;
+     fhir:display [ fhir:v "Korean" ]
+  ] [
+     fhir:code [ fhir:v "MAFA" ] ;
+     fhir:display [ fhir:v "Multiple Black" ]
+  ] [
+     fhir:code [ fhir:v "MAPI" ] ;
+     fhir:display [ fhir:v "Multiple Asian/Pacific Islndr" ]
+  ] [
+     fhir:code [ fhir:v "MCAU" ] ;
+     fhir:display [ fhir:v "Multiple Caucasian" ]
+  ] [
+     fhir:code [ fhir:v "MEDIT" ] ;
+     fhir:display [ fhir:v "Mediterranean" ]
+  ] [
+     fhir:code [ fhir:v "MENAFC" ] ;
+     fhir:display [ fhir:v "MidEast/No. Coast of Africa" ]
+  ] [
+     fhir:code [ fhir:v "MHAW" ] ;
+     fhir:display [ fhir:v "Multiple Nat. Hw/Oth Pa. Isln" ]
+  ] [
+     fhir:code [ fhir:v "MHIS" ] ;
+     fhir:display [ fhir:v "Multiple Hispanic" ]
+  ] [
+     fhir:code [ fhir:v "MIDEAS" ] ;
+     fhir:display [ fhir:v "Middle Eastern" ]
+  ] [
+     fhir:code [ fhir:v "MNAM" ] ;
+     fhir:display [ fhir:v "Multiple Native American" ]
+  ] [
+     fhir:code [ fhir:v "MSWHIS" ] ;
+     fhir:display [ fhir:v "Mexican or Chicano" ]
+  ] [
+     fhir:code [ fhir:v "MULTI" ] ;
+     fhir:display [ fhir:v "Multiple Race" ]
+  ] [
+     fhir:code [ fhir:v "NAM" ] ;
+     fhir:display [ fhir:v "Unspecified" ]
+  ] [
+     fhir:code [ fhir:v "NAMB" ] ;
+     fhir:display [ fhir:v "North American Black" ]
+  ] [
+     fhir:code [ fhir:v "NAMER" ] ;
+     fhir:display [ fhir:v "North American" ]
+  ] [
+     fhir:code [ fhir:v "NCAFRI" ] ;
+     fhir:display [ fhir:v "North Coast of Africa" ]
+  ] [
+     fhir:code [ fhir:v "NCHI" ] ;
+     fhir:display [ fhir:v "Chinese" ]
+  ] [
+     fhir:code [ fhir:v "NEURO" ] ;
+     fhir:display [ fhir:v "Northern European" ]
+  ] [
+     fhir:code [ fhir:v "OPI" ] ;
+     fhir:display [ fhir:v "Other Pacific Islander" ]
+  ] [
+     fhir:code [ fhir:v "OTH" ] ;
+     fhir:display [ fhir:v "Other" ]
+  ] [
+     fhir:code [ fhir:v "SAMOAN" ] ;
+     fhir:display [ fhir:v "Samoan" ]
+  ] [
+     fhir:code [ fhir:v "SCAHIS" ] ;
+     fhir:display [ fhir:v "South/Cntrl Amer. Hisp." ]
+  ] [
+     fhir:code [ fhir:v "SCAMB" ] ;
+     fhir:display [ fhir:v "Black South or Central America" ]
+  ] [
+     fhir:code [ fhir:v "SCSEAI" ] ;
+     fhir:display [ fhir:v "Other Southeast Asian" ]
+  ] [
+     fhir:code [ fhir:v "UNK" ] ;
+     fhir:display [ fhir:v "Unknown/Question Not Asked" ]
+  ] [
+     fhir:code [ fhir:v "VIET" ] ;
+     fhir:display [ fhir:v "Vietnamese" ]
+  ] [
+     fhir:code [ fhir:v "WCARIB" ] ;
+     fhir:display [ fhir:v "White Caribbean" ]
+  ] [
+     fhir:code [ fhir:v "WEURO" ] ;
+     fhir:display [ fhir:v "Western European" ]
+  ] [
+     fhir:code [ fhir:v "WSCA" ] ;
+     fhir:display [ fhir:v "White South or Central America" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

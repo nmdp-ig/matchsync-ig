@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="67dfbdab-a3e7-40c3-a489-001e2002f131"/>
+  <id value="8416730d-371f-4bd6-9967-a8ff501937cc"/>
   <meta>
-    <lastUpdated value="2024-12-02T18:26:03.160-06:00"/>
+    <lastUpdated value="2025-04-15T15:39:03.319-05:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,13 +14,13 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment 
-              <a href="CodeSystem-hla-genename-codesystem.html">http://www.genenames.org/geneId HLA HGNC GeneID CodeSystem v0.1.1 (CodeSystem)</a>
+              <a href="CodeSystem-hla-genename-codesystem.html">http://www.genenames.org/geneId HLA HGNC GeneID CodeSystem v0.1.2 (CodeSystem)</a>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-hla-genename-codesystem.html">codesystem HLA HGNC GeneID CodeSystem v0.1.1 (CodeSystem)</a>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-hla-genename-codesystem.html">codesystem HLA HGNC GeneID CodeSystem v0.1.2 (CodeSystem)</a>
             </p>
             <p>This value set contains at least 44 concepts</p>
             <table class="codes">
@@ -32,7 +32,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
                 <td>
                   <b>Definition</b>
@@ -658,17 +658,21 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="HLAGeneIdVS"/>
         <title value="HLA Gene Name Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:337ea41a-dc45-44ca-83de-d837d1d028de"/>
-          <timestamp value="2024-12-02T18:27:37-06:00"/>
+          <identifier value="urn:uuid:375f7d0d-8f91-4a70-a67f-cb2056431304"/>
+          <timestamp value="2025-04-15T15:40:41-05:00"/>
           <total value="44"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -683,11 +687,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://www.genenames.org/geneId|0.1.1"/>
+            <valueUri value="http://www.genenames.org/geneId|0.1.2"/>
           </parameter>
           <parameter>
             <name value="fragment"/>
-            <valueCanonical value="http://www.genenames.org/geneId|0.1.1"/>
+            <valueCanonical value="http://www.genenames.org/geneId|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://www.genenames.org/geneId"/>
@@ -921,9 +925,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version2024</p>
             <p>This value set contains 5 concepts</p>
             <table class="codes">
               <tr>
@@ -937,7 +941,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -984,17 +988,21 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="ICD10GVHDVS"/>
-        <title value="GVHD ICD-10 Codes"/>
+        <title value="ICD-10 (GVHD) Codes"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:5cfc5092-481d-47c1-b09d-980330a5e3b8"/>
-          <timestamp value="2024-12-02T18:27:37-06:00"/>
+          <identifier value="urn:uuid:29deb12d-d27e-4f6a-82f6-aaf1b1386c41"/>
+          <timestamp value="2025-04-15T15:40:41-05:00"/>
           <total value="5"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1056,9 +1064,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.78</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.80</p>
             <p>This value set contains 4 concepts</p>
             <table class="codes">
               <tr>
@@ -1069,7 +1077,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -1108,17 +1116,21 @@
           </div>
         </text>
         <url value="http://loinc.org/vs/LL2419-1"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="LNCABOGroupVS"/>
-        <title value="LOINC ABO group Value Set"/>
+        <title value="ValueSet - Blood Group (ABO) - LOINC"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:3f19dafd-a0ff-4c7c-9a94-7d31a2c1c5ea"/>
-          <timestamp value="2024-12-02T18:27:39-06:00"/>
+          <identifier value="urn:uuid:d134a409-1141-40f5-872f-79087de8b154"/>
+          <timestamp value="2025-04-15T15:40:44-05:00"/>
           <total value="4"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1137,11 +1149,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.78"/>
+            <valueUri value="http://loinc.org|2.80"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.78"/>
+            <valueUri value="http://loinc.org|2.80"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -1175,9 +1187,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.78</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.80</p>
             <p>This value set contains 8 concepts</p>
             <table class="codes">
               <tr>
@@ -1188,7 +1200,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -1259,17 +1271,21 @@
           </div>
         </text>
         <url value="http://loinc.org/vs/LL2972-9"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="LNCABORHGroupVS"/>
-        <title value="LOINC ABO RH group Value Set"/>
+        <title value="ValueSet - Blood Group (ABO+RH) - LOINC"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:8aedfb14-41fa-42e4-90f5-fbc16aab228d"/>
-          <timestamp value="2024-12-02T18:27:39-06:00"/>
+          <identifier value="urn:uuid:514701c8-0c2e-44f1-92c1-2185bb40704c"/>
+          <timestamp value="2025-04-15T15:40:45-05:00"/>
           <total value="8"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1288,11 +1304,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.78"/>
+            <valueUri value="http://loinc.org|2.80"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.78"/>
+            <valueUri value="http://loinc.org|2.80"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -1346,9 +1362,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.78</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.80</p>
             <p>This value set contains 4 concepts</p>
             <table class="codes">
               <tr>
@@ -1359,7 +1375,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -1398,17 +1414,21 @@
           </div>
         </text>
         <url value="http://loinc.org/vs/LL3639-3"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="LNCCMVGroupVS"/>
-        <title value="LOINC CMV group Value Set"/>
+        <title value="ValueSet - CMV Group - LOINC"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:b3e56f7a-6ba9-4f6b-82ec-f467f19e9605"/>
-          <timestamp value="2024-12-02T18:27:39-06:00"/>
+          <identifier value="urn:uuid:f326d7ee-7000-45a0-9c2a-798e5543528a"/>
+          <timestamp value="2025-04-15T15:40:45-05:00"/>
           <total value="4"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1427,11 +1447,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.78"/>
+            <valueUri value="http://loinc.org|2.80"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.78"/>
+            <valueUri value="http://loinc.org|2.80"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -1465,9 +1485,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.78</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.80</p>
             <p>This value set contains 2 concepts</p>
             <table class="codes">
               <tr>
@@ -1478,7 +1498,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -1501,18 +1521,22 @@
           </div>
         </text>
         <url value="http://loinc.org/vs/LL360-9"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="PosNegVS"/>
-        <title value="LOINC Pos|Neg Value Set"/>
+        <title value="ValueSet - Blood Group (Rh) - LOINC"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:1ae81921-7f45-4753-a78b-fc360e834c82"/>
-          <timestamp value="2024-12-02T18:27:40-06:00"/>
+          <identifier value="urn:uuid:ce44b5e9-6a3a-41b9-bed5-68ae7ca16a9f"/>
+          <timestamp value="2025-04-15T15:40:46-05:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
           </parameter>
@@ -1530,11 +1554,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.78"/>
+            <valueUri value="http://loinc.org|2.80"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.78"/>
+            <valueUri value="http://loinc.org|2.80"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -1545,808 +1569,6 @@
             <system value="http://loinc.org"/>
             <code value="LA6577-6"/>
             <display value="Negative"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-group-codes"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
-            </p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on:</p>
-              <ul>
-                <li>Loinc v2.78</li>
-                <li>SNOMED CT International edition 01-Aug 2024</li>
-                <li>
-                  <a href="CodeSystem-nmdp-abo-group-cs.html">codesystem NMDP Blood Group Code System v0.1.1 (CodeSystem)</a>
-                </li>
-                <li>
-                  <a href="ValueSet-nmdp-abo-codes.html">valueset NMDP Blood Group Value Set v0.1.1 (ValueSet)</a>
-                </li>
-                <li>
-                  <a href="ValueSet-sct-abo-group-codes.html">valueset Snomed CT ABO group Value Set v0.1.1 (ValueSet)</a>
-                </li>
-                <li>
-                  <a href="ValueSet-loinc-abo-codes.html">valueset LOINC ABO group Value Set v0.1.1 (ValueSet)</a>
-                </li>
-              </ul>
-            </div>
-            <p>This value set contains 13 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/abogroup-A"> </a>  
-                  <a href="CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-A">A</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/abogroup</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/abogroup-B"> </a>  
-                  <a href="CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-B">B</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/abogroup</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/abogroup-O"> </a>  
-                  <a href="CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-O">O</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/abogroup</td>
-                <td>O</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/abogroup-AB"> </a>  
-                  <a href="CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-AB">AB</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/abogroup</td>
-                <td>AB</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/abogroup-nil"> </a>  
-                  <a href="CodeSystem-nmdp-abo-group-cs.html#nmdp-abo-group-cs-nil">nil</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/abogroup</td>
-                <td>no data</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA19710-5"> </a>  
-                  <a href="https://loinc.org/LA19710-5/">LA19710-5</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Group A</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA19709-7"> </a>  
-                  <a href="https://loinc.org/LA19709-7/">LA19709-7</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Group B</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA19708-9"> </a>  
-                  <a href="https://loinc.org/LA19708-9/">LA19708-9</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Group O</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA28449-9"> </a>  
-                  <a href="https://loinc.org/LA28449-9/">LA28449-9</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Group AB</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-112144000"> </a>  
-                  <a href="http://snomed.info/id/112144000">112144000</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Blood group A (finding)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-165743006"> </a>  
-                  <a href="http://snomed.info/id/165743006">165743006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Group AB</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-112149005"> </a>  
-                  <a href="http://snomed.info/id/112149005">112149005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Blood group B (finding)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-58460004"> </a>  
-                  <a href="http://snomed.info/id/58460004">58460004</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Blood group O (finding)</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-group-codes"/>
-        <version value="0.1.1"/>
-        <name value="MSABOGroupVS"/>
-        <title value="MatchSync ABO Group Value Set"/>
-        <status value="draft"/>
-        <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
-        <expansion>
-          <identifier value="urn:uuid:f5911829-f093-404c-b34f-0598aad6854a"/>
-          <timestamp value="2024-12-02T18:27:40-06:00"/>
-          <total value="13"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes|0.1.1"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/abogroup|0.1.1"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="http://loinc.org/vs/LL2419-1|0.1.1"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.78"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://loinc.org|2.78"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes|0.1.1"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
-          </parameter>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/abogroup"/>
-            <code value="A"/>
-            <display value="A"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/abogroup"/>
-            <code value="B"/>
-            <display value="B"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/abogroup"/>
-            <code value="O"/>
-            <display value="O"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/abogroup"/>
-            <code value="AB"/>
-            <display value="AB"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/abogroup"/>
-            <code value="nil"/>
-            <display value="no data"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA19710-5"/>
-            <display value="Group A"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA19709-7"/>
-            <display value="Group B"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA19708-9"/>
-            <display value="Group O"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA28449-9"/>
-            <display value="Group AB"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="112144000"/>
-            <display value="Blood group A (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="165743006"/>
-            <display value="Group AB"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="112149005"/>
-            <display value="Blood group B (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="58460004"/>
-            <display value="Blood group O (finding)"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-rh-group-codes"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
-            </p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on:</p>
-              <ul>
-                <li>Loinc v2.78</li>
-                <li>
-                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html">codesystem NMDP Blood Group Code System v0.1.1 (CodeSystem)</a>
-                </li>
-                <li>
-                  <a href="ValueSet-nmdp-abo-rh-codes.html">valueset NMDP Blood Group Value Set v0.1.1 (ValueSet)</a>
-                </li>
-                <li>
-                  <a href="ValueSet-loinc-abo-rh-codes.html">valueset LOINC ABO RH group Value Set v0.1.1 (ValueSet)</a>
-                </li>
-              </ul>
-            </div>
-            <p>This value set contains 17 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-A+"> </a>  
-                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-A.43">A+</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
-                <td>A POS</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-A-"> </a>  
-                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-A-">A-</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
-                <td>A NEG</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-B+"> </a>  
-                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-B.43">B+</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
-                <td>B POS</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-B-"> </a>  
-                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-B-">B-</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
-                <td>B NEG</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-O+"> </a>  
-                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-O.43">O+</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
-                <td>O POS</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-O-"> </a>  
-                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-O-">O-</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
-                <td>O NEG</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-AB+"> </a>  
-                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-AB.43">AB+</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
-                <td>AB POS</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-AB-"> </a>  
-                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-AB-">AB-</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
-                <td>AB NEG</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/aborhgroup-nil"> </a>  
-                  <a href="CodeSystem-nmdp-abo-rh-group-cs.html#nmdp-abo-rh-group-cs-nil">nil</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/aborhgroup</td>
-                <td>no data</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA21321-7"> </a>  
-                  <a href="https://loinc.org/LA21321-7/">LA21321-7</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>O Pos</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA21322-5"> </a>  
-                  <a href="https://loinc.org/LA21322-5/">LA21322-5</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>O Neg</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA21325-8"> </a>  
-                  <a href="https://loinc.org/LA21325-8/">LA21325-8</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>A Pos</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA21326-6"> </a>  
-                  <a href="https://loinc.org/LA21326-6/">LA21326-6</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>A Neg</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA21327-4"> </a>  
-                  <a href="https://loinc.org/LA21327-4/">LA21327-4</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>B Pos</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA21328-2"> </a>  
-                  <a href="https://loinc.org/LA21328-2/">LA21328-2</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>B Neg</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA21323-3"> </a>  
-                  <a href="https://loinc.org/LA21323-3/">LA21323-3</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>AB Pos</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA21324-1"> </a>  
-                  <a href="https://loinc.org/LA21324-1/">LA21324-1</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>AB Neg</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-rh-group-codes"/>
-        <version value="0.1.1"/>
-        <name value="MSABORHGroupVS"/>
-        <title value="MatchSync ABO RH Group Value Set"/>
-        <status value="draft"/>
-        <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
-        <expansion>
-          <identifier value="urn:uuid:20efe48e-82d2-4f6f-a6fe-85250bfa17cf"/>
-          <timestamp value="2024-12-02T18:27:40-06:00"/>
-          <total value="17"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-rh-codes|0.1.1"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/aborhgroup|0.1.1"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="http://loinc.org/vs/LL2972-9|0.1.1"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.78"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://loinc.org|2.78"/>
-          </parameter>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
-            <code value="A+"/>
-            <display value="A POS"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
-            <code value="A-"/>
-            <display value="A NEG"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
-            <code value="B+"/>
-            <display value="B POS"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
-            <code value="B-"/>
-            <display value="B NEG"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
-            <code value="O+"/>
-            <display value="O POS"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
-            <code value="O-"/>
-            <display value="O NEG"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
-            <code value="AB+"/>
-            <display value="AB POS"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
-            <code value="AB-"/>
-            <display value="AB NEG"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
-            <code value="nil"/>
-            <display value="no data"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA21321-7"/>
-            <display value="O Pos"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA21322-5"/>
-            <display value="O Neg"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA21325-8"/>
-            <display value="A Pos"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA21326-6"/>
-            <display value="A Neg"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA21327-4"/>
-            <display value="B Pos"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA21328-2"/>
-            <display value="B Neg"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA21323-3"/>
-            <display value="AB Pos"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA21324-1"/>
-            <display value="AB Neg"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-cmv-codes"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
-            </p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on:</p>
-              <ul>
-                <li>Loinc v2.78</li>
-                <li>
-                  <a href="CodeSystem-nmdp-cmv-cs.html">codesystem NMDP CMV Code System v0.1.1 (CodeSystem)</a>
-                </li>
-                <li>
-                  <a href="ValueSet-nmdp-cmv-codes.html">valueset NMDP CMV Value Set v0.1.1 (ValueSet)</a>
-                </li>
-                <li>
-                  <a href="ValueSet-loinc-cmv-codes.html">valueset LOINC CMV group Value Set v0.1.1 (ValueSet)</a>
-                </li>
-              </ul>
-            </div>
-            <p>This value set contains 9 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/cmv-P"> </a>  
-                  <a href="CodeSystem-nmdp-cmv-cs.html#nmdp-cmv-cs-P">P</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/cmv</td>
-                <td>Positive</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/cmv-N"> </a>  
-                  <a href="CodeSystem-nmdp-cmv-cs.html#nmdp-cmv-cs-N">N</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/cmv</td>
-                <td>Negative</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/cmv-I"> </a>  
-                  <a href="CodeSystem-nmdp-cmv-cs.html#nmdp-cmv-cs-I">I</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/cmv</td>
-                <td>Inconclusive</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/cmv-U"> </a>  
-                  <a href="CodeSystem-nmdp-cmv-cs.html#nmdp-cmv-cs-U">U</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/cmv</td>
-                <td>Untested</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/cmv-nil"> </a>  
-                  <a href="CodeSystem-nmdp-cmv-cs.html#nmdp-cmv-cs-nil">nil</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/cmv</td>
-                <td>no data</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA6576-8"> </a>  
-                  <a href="https://loinc.org/LA6576-8/">LA6576-8</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Positive</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA6577-6"> </a>  
-                  <a href="https://loinc.org/LA6577-6/">LA6577-6</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Negative</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA11885-3"> </a>  
-                  <a href="https://loinc.org/LA11885-3/">LA11885-3</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Equivocal</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA9663-1"> </a>  
-                  <a href="https://loinc.org/LA9663-1/">LA9663-1</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Inconclusive</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-cmv-codes"/>
-        <version value="0.1.1"/>
-        <name value="MSCMVVS"/>
-        <title value="MatchSync ABO Group Value Set"/>
-        <status value="draft"/>
-        <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
-        <expansion>
-          <identifier value="urn:uuid:2642c84c-0ff1-4eea-bb73-68e6b9c5fa93"/>
-          <timestamp value="2024-12-02T18:27:41-06:00"/>
-          <total value="9"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-cmv-codes|0.1.1"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/cmv|0.1.1"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="http://loinc.org/vs/LL3639-3|0.1.1"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.78"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://loinc.org|2.78"/>
-          </parameter>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/cmv"/>
-            <code value="P"/>
-            <display value="Positive"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/cmv"/>
-            <code value="N"/>
-            <display value="Negative"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/cmv"/>
-            <code value="I"/>
-            <display value="Inconclusive"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/cmv"/>
-            <code value="U"/>
-            <display value="Untested"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/cmv"/>
-            <code value="nil"/>
-            <display value="no data"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA6576-8"/>
-            <display value="Positive"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA6577-6"/>
-            <display value="Negative"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA11885-3"/>
-            <display value="Equivocal"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA9663-1"/>
-            <display value="Inconclusive"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -2360,10 +1582,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-nmdp-form117-cs.html">codesystem NMDP Preferred Product for Transplant v0.1.1 (CodeSystem)</a>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nmdp-form117-cs.html">codesystem CodeSystem - Form117 Compliance- NMDP v0.1.2 (CodeSystem)</a>
             </p>
             <p>This value set contains 1 concepts</p>
             <table class="codes">
@@ -2375,7 +1597,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -2390,17 +1612,21 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-form117-codes"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="NMDPForm117VS"/>
-        <title value="NMDP Form 117 Value Set"/>
+        <title value="ValueSet - Form117 Compliance - NMDP"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:1bf5285c-89f9-41cf-ad19-948f78aa1767"/>
-          <timestamp value="2024-12-02T18:27:41-06:00"/>
+          <identifier value="urn:uuid:8cb7afe9-e685-47b7-b40e-19c1f24448fe"/>
+          <timestamp value="2025-04-15T15:40:46-05:00"/>
           <total value="1"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -2415,7 +1641,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/form117compliance|0.1.1"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/form117compliance|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/form117compliance"/>
@@ -2427,31 +1653,19 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-rh-codes"/>
+    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-GenderIdentity-codes"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on:</p>
-              <ul>
-                <li>Loinc v2.78</li>
-                <li>
-                  <a href="CodeSystem-nmdp-rh-status-cs.html">codesystem NMDP Rh Code System v0.1.1 (CodeSystem)</a>
-                </li>
-                <li>
-                  <a href="ValueSet-nmdp-rh-status-codes.html">valueset NMDP Codes for Rh status v0.1.1 (ValueSet)</a>
-                </li>
-                <li>
-                  <a href="ValueSet-loinc-posneg-codes.html">valueset LOINC Pos|Neg Value Set v0.1.1 (ValueSet)</a>
-                </li>
-              </ul>
-            </div>
-            <p>This value set contains 7 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nmdp-GenderIdentity-cs.html">codesystem CodeSystem - Patient Gender Identity - NMDP v0.1.2 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -2461,80 +1675,60 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/rhstatus-I"> </a>  
-                  <a href="CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-I">I</a>
+                  <a name="x-http://terminology.nmdp.org/codesystem/genderidentity-F"> </a>  
+                  <a href="CodeSystem-nmdp-GenderIdentity-cs.html#nmdp-GenderIdentity-cs-F">F</a>
                 </td>
-                <td>http://terminology.nmdp.org/codesystem/rhstatus</td>
-                <td>Indeterminant</td>
+                <td>http://terminology.nmdp.org/codesystem/genderidentity</td>
+                <td>Female</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/rhstatus-P"> </a>  
-                  <a href="CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-P">P</a>
+                  <a name="x-http://terminology.nmdp.org/codesystem/genderidentity-M"> </a>  
+                  <a href="CodeSystem-nmdp-GenderIdentity-cs.html#nmdp-GenderIdentity-cs-M">M</a>
                 </td>
-                <td>http://terminology.nmdp.org/codesystem/rhstatus</td>
-                <td>Positive</td>
+                <td>http://terminology.nmdp.org/codesystem/genderidentity</td>
+                <td>Male</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/rhstatus-N"> </a>  
-                  <a href="CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-N">N</a>
+                  <a name="x-http://terminology.nmdp.org/codesystem/genderidentity-NB"> </a>  
+                  <a href="CodeSystem-nmdp-GenderIdentity-cs.html#nmdp-GenderIdentity-cs-NB">NB</a>
                 </td>
-                <td>http://terminology.nmdp.org/codesystem/rhstatus</td>
-                <td>Negative</td>
+                <td>http://terminology.nmdp.org/codesystem/genderidentity</td>
+                <td>Non-binary</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/rhstatus-D"> </a>  
-                  <a href="CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-D">D</a>
+                  <a name="x-http://terminology.nmdp.org/codesystem/genderidentity-SI"> </a>  
+                  <a href="CodeSystem-nmdp-GenderIdentity-cs.html#nmdp-GenderIdentity-cs-SI">SI</a>
                 </td>
-                <td>http://terminology.nmdp.org/codesystem/rhstatus</td>
-                <td>Indeterminant</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/rhstatus-nil"> </a>  
-                  <a href="CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-nil">nil</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/rhstatus</td>
-                <td>no data</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA6576-8"> </a>  
-                  <a href="https://loinc.org/LA6576-8/">LA6576-8</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Positive</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-LA6577-6"> </a>  
-                  <a href="https://loinc.org/LA6577-6/">LA6577-6</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Negative</td>
+                <td>http://terminology.nmdp.org/codesystem/genderidentity</td>
+                <td>Self-identified</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-rh-codes"/>
-        <version value="0.1.1"/>
-        <name value="MSRhVS"/>
-        <title value="MatchSync Rh Value Sets"/>
+        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-GenderIdentity-codes"/>
+        <version value="0.1.2"/>
+        <name value="NMDPGenderIdentityVS"/>
+        <title value="ValueSet - Patient Gender Identity - NMDP"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:8981f1e3-4d7f-411c-a382-bd093539c1be"/>
-          <timestamp value="2024-12-02T18:27:41-06:00"/>
-          <total value="7"/>
+          <identifier value="urn:uuid:5e6b7c27-d1fb-4147-b88b-35b6b0eaaf88"/>
+          <timestamp value="2025-04-15T15:40:46-05:00"/>
+          <total value="4"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -2548,63 +1742,28 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes|0.1.1"/>
-          </parameter>
-          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/rhstatus|0.1.1"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="http://loinc.org/vs/LL360-9|0.1.1"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.78"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://loinc.org|2.78"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/genderidentity|0.1.2"/>
           </parameter>
           <contains>
-            <system value="http://terminology.nmdp.org/codesystem/rhstatus"/>
-            <code value="I"/>
-            <display value="Indeterminant"/>
+            <system value="http://terminology.nmdp.org/codesystem/genderidentity"/>
+            <code value="F"/>
+            <display value="Female"/>
           </contains>
           <contains>
-            <system value="http://terminology.nmdp.org/codesystem/rhstatus"/>
-            <code value="P"/>
-            <display value="Positive"/>
+            <system value="http://terminology.nmdp.org/codesystem/genderidentity"/>
+            <code value="M"/>
+            <display value="Male"/>
           </contains>
           <contains>
-            <system value="http://terminology.nmdp.org/codesystem/rhstatus"/>
-            <code value="N"/>
-            <display value="Negative"/>
+            <system value="http://terminology.nmdp.org/codesystem/genderidentity"/>
+            <code value="NB"/>
+            <display value="Non-binary"/>
           </contains>
           <contains>
-            <system value="http://terminology.nmdp.org/codesystem/rhstatus"/>
-            <code value="D"/>
-            <display value="Indeterminant"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/rhstatus"/>
-            <code value="nil"/>
-            <display value="no data"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA6576-8"/>
-            <display value="Positive"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="LA6577-6"/>
-            <display value="Negative"/>
+            <system value="http://terminology.nmdp.org/codesystem/genderidentity"/>
+            <code value="SI"/>
+            <display value="Self-identified"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -2618,10 +1777,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-nmdp-abo-group-cs.html">codesystem NMDP Blood Group Code System v0.1.1 (CodeSystem)</a>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nmdp-abo-group-cs.html">codesystem CodeSystem - Blood Group (ABO) - NMDP v0.1.2 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
             <table class="codes">
@@ -2633,7 +1792,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -2680,17 +1839,21 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="NMDPABOVS"/>
-        <title value="NMDP Blood Group Value Set"/>
+        <title value="ValueSet - Blood Group (ABO) - NMDP"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:66be7d0d-3dfa-450f-a247-44747e43fbb5"/>
-          <timestamp value="2024-12-02T18:27:41-06:00"/>
+          <identifier value="urn:uuid:98efb6a7-ac22-42db-8402-37788333cf4b"/>
+          <timestamp value="2025-04-15T15:40:46-05:00"/>
           <total value="5"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -2705,7 +1868,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/abogroup|0.1.1"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/abogroup|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/abogroup"/>
@@ -2744,10 +1907,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-nmdp-abo-rh-group-cs.html">codesystem NMDP Blood Group Code System v0.1.1 (CodeSystem)</a>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nmdp-abo-rh-group-cs.html">codesystem CodeSystem - Blood Group (ABO+RH) - NMDP v0.1.2 (CodeSystem)</a>
             </p>
             <p>This value set contains 9 concepts</p>
             <table class="codes">
@@ -2759,7 +1922,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -2838,17 +2001,21 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-rh-codes"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="NMDPABORHVS"/>
-        <title value="NMDP Blood Group Value Set"/>
+        <title value="ValueSet - Blood Group (ABO+RH) - NMDP"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:8e2d55e2-0364-400e-9c05-aa8abc161bc6"/>
-          <timestamp value="2024-12-02T18:27:41-06:00"/>
+          <identifier value="urn:uuid:c052e98e-8135-4f5d-b40e-8afc18fea851"/>
+          <timestamp value="2025-04-15T15:40:46-05:00"/>
           <total value="9"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -2863,7 +2030,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/aborhgroup|0.1.1"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/aborhgroup|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
@@ -2922,10 +2089,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-nmdp-cmv-cs.html">codesystem NMDP CMV Code System v0.1.1 (CodeSystem)</a>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nmdp-cmv-cs.html">codesystem CodeSystem - CMV Group - NMDP v0.1.2 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
             <table class="codes">
@@ -2937,7 +2104,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -2984,17 +2151,21 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-cmv-codes"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="NMDPCMVVS"/>
-        <title value="NMDP CMV Value Set"/>
+        <title value="ValueSet - CMV Group - NMDP"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:eb9a87cd-3e1f-4452-91fa-cab9d6ddca84"/>
-          <timestamp value="2024-12-02T18:27:41-06:00"/>
+          <identifier value="urn:uuid:1b3504dc-befd-4517-ab9a-3e53bc3ac8b7"/>
+          <timestamp value="2025-04-15T15:40:46-05:00"/>
           <total value="5"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -3009,7 +2180,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/cmv|0.1.1"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/cmv|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/cmv"/>
@@ -3048,10 +2219,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-nmdp-disease-cs.html">codesystem NMDP Disease Code System v0.1.1 (CodeSystem)</a>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nmdp-disease-cs.html">codesystem CodeSystem - Disease - NMDP v0.1.2 (CodeSystem)</a>
             </p>
             <p>This value set contains 100 concepts</p>
             <table class="codes">
@@ -3063,7 +2234,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -3870,17 +3041,21 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="NMDPDiseaseVS"/>
-        <title value="NMDP Disease Value Set"/>
+        <title value="ValueSet - Disease - NMDP"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:bd8a55c7-2427-471e-aa6c-b0af0d6bb0d9"/>
-          <timestamp value="2024-12-02T18:27:41-06:00"/>
+          <identifier value="urn:uuid:873fd60b-ddf5-4858-a934-ad9c30e507c2"/>
+          <timestamp value="2025-04-15T15:40:46-05:00"/>
           <total value="100"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -3895,7 +3070,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/disease|0.1.1"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/disease|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/disease"/>
@@ -4409,10 +3584,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-nmdp-diseasestage-cs.html">codesystem NMDP Disease Stage Code System v0.1.1 (CodeSystem)</a>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nmdp-diseasestage-cs.html">codesystem CodeSystem - Disease Stage - NMDP v0.1.2 (CodeSystem)</a>
             </p>
             <p>This value set contains 8 concepts</p>
             <table class="codes">
@@ -4424,7 +3599,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -4495,17 +3670,21 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="NMDPDiseasStageVS"/>
-        <title value="NMDP Disease Stage Value Set"/>
+        <title value="ValueSet - Disease Stage - NMDP"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:29a3aa44-ef0e-46c8-b442-9f9e3e8880f3"/>
-          <timestamp value="2024-12-02T18:27:41-06:00"/>
+          <identifier value="urn:uuid:6a0591be-eed8-41b3-9c78-cfa29a5c21af"/>
+          <timestamp value="2025-04-15T15:40:47-05:00"/>
           <total value="8"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -4520,7 +3699,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/diseasestage|0.1.1"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/diseasestage|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/diseasestage"/>
@@ -4574,10 +3753,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-nmdp-ethnicity-cs.html">codesystem NMDP Ethnicity Code System v0.1.1 (CodeSystem)</a>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nmdp-ethnicity-cs.html">codesystem CodeSystem - Patient Ethnicity - NMDP v0.1.2 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
             <table class="codes">
@@ -4589,7 +3768,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -4620,17 +3799,21 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-ethnicity-codes"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="NMDPEthnicityVS"/>
-        <title value="NMDP Ethnicity Value Set"/>
+        <title value="ValueSet - Patient Ethnicity - NMDP"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:35976899-fdeb-4e85-adb0-6af61f2cd80b"/>
-          <timestamp value="2024-12-02T18:27:41-06:00"/>
+          <identifier value="urn:uuid:83181865-2d52-4c59-b56d-97b017a36b8b"/>
+          <timestamp value="2025-04-15T15:40:47-05:00"/>
           <total value="3"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -4645,7 +3828,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/ethnicity|0.1.1"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/ethnicity|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/ethnicity"/>
@@ -4674,10 +3857,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-nmdp-language-cs.html">codesystem NMDP Language Code System v0.1.1 (CodeSystem)</a>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nmdp-language-cs.html">codesystem CodeSystem - Language - NMDP v0.1.2 (CodeSystem)</a>
             </p>
             <p>This value set contains 14 concepts</p>
             <table class="codes">
@@ -4689,7 +3872,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -4808,17 +3991,21 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="NMDPLanguageCodes"/>
-        <title value="NMDP Language Value Set"/>
+        <title value="ValueSet - Language - NMDP"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:8b9a2170-a54a-45f0-b30e-2e46f959cda0"/>
-          <timestamp value="2024-12-02T18:27:42-06:00"/>
+          <identifier value="urn:uuid:fb78a1cd-a5cc-4926-8ee3-6f62d9de8669"/>
+          <timestamp value="2025-04-15T15:40:47-05:00"/>
           <total value="14"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -4833,7 +4020,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/language|0.1.1"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/language|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/language"/>
@@ -4917,10 +4104,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-nmdp-practitioner-role-cs.html">codesystem NMDP Practitioner Roles v0.1.1 (CodeSystem)</a>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nmdp-practitioner-role-cs.html">codesystem NMDP Practitioner Roles v0.1.2 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
             <table class="codes">
@@ -4932,7 +4119,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -4963,17 +4150,21 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="NMDPPractitionerRoleVS"/>
         <title value="NMDP Practitioner Role Value Set"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:3df96446-a0cb-459f-bc79-b9939ce4f93c"/>
-          <timestamp value="2024-12-02T18:27:42-06:00"/>
+          <identifier value="urn:uuid:a5dc46f2-5cae-4dfc-a62b-bd3f09ab07ca"/>
+          <timestamp value="2025-04-15T15:40:47-05:00"/>
           <total value="3"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -4988,7 +4179,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/practitionerrole|0.1.1"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/practitionerrole|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/practitionerrole"/>
@@ -5017,10 +4208,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-nmdp-preferred-product-cs.html">codesystem NMDP Preferred Product for Transplant v0.1.1 (CodeSystem)</a>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nmdp-preferred-product-cs.html">codesystem CodeSystem - Preferred Product - NMDP v0.1.2 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
             <table class="codes">
@@ -5032,7 +4223,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -5079,17 +4270,21 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="NMDPPreferredProductVS"/>
-        <title value="NMDP Preferred Product Value Set"/>
+        <title value="ValueSet - Preferred Product - NMDP"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:d501e8b2-1c0b-46e5-a404-9a1bedde8174"/>
-          <timestamp value="2024-12-02T18:27:42-06:00"/>
+          <identifier value="urn:uuid:bc9bb027-5285-4fc6-83db-d76487420b2c"/>
+          <timestamp value="2025-04-15T15:40:47-05:00"/>
           <total value="5"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -5104,7 +4299,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/preferredproduct|0.1.1"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/preferredproduct|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/preferredproduct"/>
@@ -5143,10 +4338,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-nmdp-race-cs.html">codesystem NMDP Race Code System v0.1.1 (CodeSystem)</a>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nmdp-race-cs.html">codesystem CodeSystem - Patient Race - NMDP v0.1.2 (CodeSystem)</a>
             </p>
             <p>This value set contains 50 concepts</p>
             <table class="codes">
@@ -5158,7 +4353,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -5565,17 +4760,21 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-race-codes"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="NMDPRaceVS"/>
-        <title value="NMDP Race Value Set"/>
+        <title value="ValueSet - Patient Race - NMDP"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:832df525-1cae-45b7-92af-520f5c78e4cb"/>
-          <timestamp value="2024-12-02T18:27:42-06:00"/>
+          <identifier value="urn:uuid:7e7d3541-2c39-4481-9681-9a21c3cf4f85"/>
+          <timestamp value="2025-04-15T15:40:47-05:00"/>
           <total value="50"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -5590,7 +4789,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/race|0.1.1"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/race|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/race"/>
@@ -5854,12 +5053,12 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-nmdp-rh-status-cs.html">codesystem NMDP Rh Code System v0.1.1 (CodeSystem)</a>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nmdp-rh-status-cs.html">codesystem CodeSystem - Blood Group (Rh) - NMDP v0.1.2 (CodeSystem)</a>
             </p>
-            <p>This value set contains 5 concepts</p>
+            <p>This value set contains 2 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -5869,64 +5068,44 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/rhstatus-I"> </a>  
-                  <a href="CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-I">I</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/rhstatus</td>
-                <td>Indeterminant</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/rhstatus-P"> </a>  
-                  <a href="CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-P">P</a>
+                  <a name="x-http://terminology.nmdp.org/codesystem/rhstatus-Rh+"> </a>  
+                  <a href="CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-Rh.43">Rh+</a>
                 </td>
                 <td>http://terminology.nmdp.org/codesystem/rhstatus</td>
                 <td>Positive</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/rhstatus-N"> </a>  
-                  <a href="CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-N">N</a>
+                  <a name="x-http://terminology.nmdp.org/codesystem/rhstatus-Rh-"> </a>  
+                  <a href="CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-Rh-">Rh-</a>
                 </td>
                 <td>http://terminology.nmdp.org/codesystem/rhstatus</td>
                 <td>Negative</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/rhstatus-D"> </a>  
-                  <a href="CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-D">D</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/rhstatus</td>
-                <td>Indeterminant</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/rhstatus-nil"> </a>  
-                  <a href="CodeSystem-nmdp-rh-status-cs.html#nmdp-rh-status-cs-nil">nil</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/rhstatus</td>
-                <td>no data</td>
               </tr>
             </table>
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="NMDPRhStatusVS"/>
-        <title value="NMDP Codes for Rh status"/>
+        <title value="ValueSet - Blood Group (Rh) - NMDP"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:30b8a9a1-329c-4e07-8ff6-89ce8cec021d"/>
-          <timestamp value="2024-12-02T18:27:42-06:00"/>
-          <total value="5"/>
+          <identifier value="urn:uuid:91dfa931-4d7b-4de9-a352-d55f52c5ba12"/>
+          <timestamp value="2025-04-15T15:40:47-05:00"/>
+          <total value="2"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -5941,32 +5120,17 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/rhstatus|0.1.1"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/rhstatus|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/rhstatus"/>
-            <code value="I"/>
-            <display value="Indeterminant"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/rhstatus"/>
-            <code value="P"/>
+            <code value="Rh+"/>
             <display value="Positive"/>
           </contains>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/rhstatus"/>
-            <code value="N"/>
+            <code value="Rh-"/>
             <display value="Negative"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/rhstatus"/>
-            <code value="D"/>
-            <display value="Indeterminant"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/rhstatus"/>
-            <code value="nil"/>
-            <display value="no data"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -5980,10 +5144,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-nmdp-transplant-timeline-cs.html">codesystem NMDP Transplant Timeline Code System v0.1.1 (CodeSystem)</a>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-nmdp-transplant-timeline-cs.html">codesystem CodeSystem - Transplant Timeline - NMDP v0.1.2 (CodeSystem)</a>
             </p>
             <p>This value set contains 7 concepts</p>
             <table class="codes">
@@ -5995,24 +5159,40 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/transplanttimeline-|3c4w"> </a>  
-                  <a href="CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-.604w">&lt;4w</a>
+                  <a name="x-http://terminology.nmdp.org/codesystem/transplanttimeline-12W-6M"> </a>  
+                  <a href="CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-12W-6M">12W-6M</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/transplanttimeline</td>
+                <td>Over 12 weeks - up to 6 months</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/transplanttimeline-4-6W"> </a>  
+                  <a href="CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-4-6W">4-6W</a>
+                </td>
+                <td>http://terminology.nmdp.org/codesystem/transplanttimeline</td>
+                <td>Between 4-6 weeks</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.nmdp.org/codesystem/transplanttimeline-4W"> </a>  
+                  <a href="CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-4W">4W</a>
                 </td>
                 <td>http://terminology.nmdp.org/codesystem/transplanttimeline</td>
                 <td>Less than 4 weeks</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/transplanttimeline-4-6w"> </a>  
-                  <a href="CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-4-6w">4-6w</a>
+                  <a name="x-http://terminology.nmdp.org/codesystem/transplanttimeline-6MG"> </a>  
+                  <a href="CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-6MG">6MG</a>
                 </td>
                 <td>http://terminology.nmdp.org/codesystem/transplanttimeline</td>
-                <td>Between 4-6 weeks</td>
+                <td>Greater than 6 months</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -6024,22 +5204,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/transplanttimeline-12w-6m"> </a>  
-                  <a href="CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-12w-6m">12w-6m</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/transplanttimeline</td>
-                <td>Over 12 weeks - up to 6 months</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/transplanttimeline-|3e6m"> </a>  
-                  <a href="CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-.626m">&gt;6m</a>
-                </td>
-                <td>http://terminology.nmdp.org/codesystem/transplanttimeline</td>
-                <td>Greater than 6 months</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="x-http://terminology.nmdp.org/codesystem/transplanttimeline-NA"> </a>  
                   <a href="CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-NA">NA</a>
                 </td>
@@ -6048,8 +5212,8 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://terminology.nmdp.org/codesystem/transplanttimeline-P"> </a>  
-                  <a href="CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-P">P</a>
+                  <a name="x-http://terminology.nmdp.org/codesystem/transplanttimeline-PEND"> </a>  
+                  <a href="CodeSystem-nmdp-transplant-timeline-cs.html#nmdp-transplant-timeline-cs-PEND">PEND</a>
                 </td>
                 <td>http://terminology.nmdp.org/codesystem/transplanttimeline</td>
                 <td>Pending, Case manager to follow up</td>
@@ -6058,17 +5222,21 @@
           </div>
         </text>
         <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes"/>
-        <version value="0.1.1"/>
+        <version value="0.1.2"/>
         <name value="NMDPTransplantTimelineVS"/>
-        <title value="NMDP Transplant Timeline Value Set"/>
+        <title value="ValueSet - Transplant Timeline - NMDP"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
+        <date value="2025-04-15T15:35:56-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:2957c410-b5e9-4e2b-a519-e0f93f679261"/>
-          <timestamp value="2024-12-02T18:27:42-06:00"/>
+          <identifier value="urn:uuid:3e8243f0-b7d5-43e4-87f8-258147ad58f9"/>
+          <timestamp value="2025-04-15T15:40:47-05:00"/>
           <total value="7"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -6083,17 +5251,27 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.nmdp.org/codesystem/transplanttimeline|0.1.1"/>
+            <valueUri value="http://terminology.nmdp.org/codesystem/transplanttimeline|0.1.2"/>
           </parameter>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/transplanttimeline"/>
-            <code value="&lt;4w"/>
+            <code value="12W-6M"/>
+            <display value="Over 12 weeks - up to 6 months"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/transplanttimeline"/>
+            <code value="4-6W"/>
+            <display value="Between 4-6 weeks"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.nmdp.org/codesystem/transplanttimeline"/>
+            <code value="4W"/>
             <display value="Less than 4 weeks"/>
           </contains>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/transplanttimeline"/>
-            <code value="4-6w"/>
-            <display value="Between 4-6 weeks"/>
+            <code value="6MG"/>
+            <display value="Greater than 6 months"/>
           </contains>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/transplanttimeline"/>
@@ -6102,142 +5280,13 @@
           </contains>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/transplanttimeline"/>
-            <code value="12w-6m"/>
-            <display value="Over 12 weeks - up to 6 months"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/transplanttimeline"/>
-            <code value="&gt;6m"/>
-            <display value="Greater than 6 months"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.nmdp.org/codesystem/transplanttimeline"/>
             <code value="NA"/>
             <display value="N/A : MUD Transplant not preferred treatment"/>
           </contains>
           <contains>
             <system value="http://terminology.nmdp.org/codesystem/transplanttimeline"/>
-            <code value="P"/>
+            <code value="PEND"/>
             <display value="Pending, Case manager to follow up"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
-            </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Aug 2024</p>
-            <p>This value set contains 4 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-112144000"> </a>  
-                  <a href="http://snomed.info/id/112144000">112144000</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Blood group A (finding)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-165743006"> </a>  
-                  <a href="http://snomed.info/id/165743006">165743006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Group AB</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-112149005"> </a>  
-                  <a href="http://snomed.info/id/112149005">112149005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Blood group B (finding)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-58460004"> </a>  
-                  <a href="http://snomed.info/id/58460004">58460004</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Blood group O (finding)</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes"/>
-        <version value="0.1.1"/>
-        <name value="SCTABOGroupVS"/>
-        <title value="Snomed CT ABO group Value Set"/>
-        <status value="draft"/>
-        <experimental value="true"/>
-        <date value="2024-12-02T18:26:03-06:00"/>
-        <expansion>
-          <identifier value="urn:uuid:98186248-aaa8-4e01-9e4f-bd4bd1220309"/>
-          <timestamp value="2024-12-02T18:27:42-06:00"/>
-          <total value="4"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="112144000"/>
-            <display value="Blood group A (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="165743006"/>
-            <display value="Group AB"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="112149005"/>
-            <display value="Blood group B (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="58460004"/>
-            <display value="Blood group O (finding)"/>
           </contains>
         </expansion>
       </ValueSet>

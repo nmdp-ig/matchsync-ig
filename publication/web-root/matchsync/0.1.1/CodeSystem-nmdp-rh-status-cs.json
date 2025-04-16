@@ -3,15 +3,15 @@
   "id" : "nmdp-rh-status-cs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nmdp-rh-status-cs</b></p><a name=\"nmdp-rh-status-cs\"> </a><a name=\"hcnmdp-rh-status-cs\"> </a><a name=\"nmdp-rh-status-cs-en-US\"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/rhstatus</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"nmdp-rh-status-cs-I\"> </a></td><td>Indeterminant</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"nmdp-rh-status-cs-P\"> </a></td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"nmdp-rh-status-cs-N\"> </a></td><td>Negative</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"nmdp-rh-status-cs-D\"> </a></td><td>Indeterminant</td></tr><tr><td style=\"white-space:nowrap\">nil<a name=\"nmdp-rh-status-cs-nil\"> </a></td><td>no data</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nmdp-rh-status-cs</b></p><a name=\"nmdp-rh-status-cs\"> </a><a name=\"hcnmdp-rh-status-cs\"> </a><a name=\"nmdp-rh-status-cs-en-US\"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/rhstatus</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Rh+<a name=\"nmdp-rh-status-cs-Rh.43\"> </a></td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\">Rh-<a name=\"nmdp-rh-status-cs-Rh-\"> </a></td><td>Negative</td></tr></table></div>"
   },
   "url" : "http://terminology.nmdp.org/codesystem/rhstatus",
-  "version" : "0.1.1",
+  "version" : "0.1.2",
   "name" : "NMDPRhStatusCS",
-  "title" : "NMDP Rh Code System",
+  "title" : "CodeSystem - Blood Group (Rh) - NMDP",
   "status" : "active",
   "experimental" : true,
-  "date" : "2024-12-02T18:26:03-06:00",
+  "date" : "2025-04-15T15:35:56-05:00",
   "publisher" : "NMDP",
   "contact" : [{
     "name" : "NMDP",
@@ -24,25 +24,13 @@
   "copyright" : "National Marrow Donor Program",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 5,
+  "count" : 2,
   "concept" : [{
-    "code" : "I",
-    "display" : "Indeterminant"
-  },
-  {
-    "code" : "P",
+    "code" : "Rh+",
     "display" : "Positive"
   },
   {
-    "code" : "N",
+    "code" : "Rh-",
     "display" : "Negative"
-  },
-  {
-    "code" : "D",
-    "display" : "Indeterminant"
-  },
-  {
-    "code" : "nil",
-    "display" : "no data"
   }]
 }

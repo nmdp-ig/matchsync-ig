@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -20,7 +21,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient MSPatientBirthSex</b></p><a name=\"MSPatientBirthSex\"> </a><a name=\"hcMSPatientBirthSex\"> </a><a name=\"MSPatientBirthSex-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 1-612-555-1234</li><li>123 Main St Minneapolis MN 55401 USA </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2186-5\">Race &amp; Ethnicity - CDC 2186-5</a>: Not Hispanic or Latino</li><li>text: Not Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9).\"><a href=\"http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-birthsex.html\">US Core Birth Sex Extension</a></td><td colspan=\"3\">F</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2106-3\">Race &amp; Ethnicity - CDC 2106-3</a>: White</li><li>text: White</li></ul></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient MSPatientBirthSex</b></p><a name=\"MSPatientBirthSex\"> </a><a name=\"hcMSPatientBirthSex\"> </a><a name=\"MSPatientBirthSex-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mspatient.html\">MSPatient</a></p><p style=\"margin-bottom: 0px\">Security Label: tc_123 (Details: transplant-center code tc_123)</p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 1-612-555-1234</li><li>123 Main St Minneapolis MN 55401 USA </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2186-5\">Race &amp; Ethnicity - CDC 2186-5</a>: Not Hispanic or Latino</li><li>text: Not Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9).\"><a href=\"http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-birthsex.html\">US Core Birth Sex Extension</a></td><td colspan=\"3\">F</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2106-3\">Race &amp; Ethnicity - CDC 2106-3</a>: White</li><li>text: White</li></ul></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
@@ -33,7 +34,10 @@
        ]
      ] [
        fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "White" ]
+       fhir:value [
+         a fhir:string ;
+         fhir:v "White"
+       ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
   ] [
@@ -47,12 +51,18 @@
        ]
      ] [
        fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Not Hispanic or Latino" ]
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Not Hispanic or Latino"
+       ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "F" ]
+     fhir:value [
+       a fhir:code ;
+       fhir:v "F"
+     ]
   ] ) ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://example.org/mrn"^^xsd:anyURI ] ;

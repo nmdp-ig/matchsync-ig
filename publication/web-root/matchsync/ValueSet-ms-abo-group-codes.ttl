@@ -13,12 +13,12 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ms-abo-group-codes</b></p><a name=\"ms-abo-group-codes\"> </a><a name=\"hcms-abo-group-codes\"> </a><a name=\"ms-abo-group-codes-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-nmdp-abo-codes.html\">NMDP Blood Group Value Set</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-loinc-abo-codes.html\">LOINC ABO group Value Set</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-sct-abo-group-codes.html\">Snomed CT ABO group Value Set</a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-group-codes"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:version [ fhir:v "0.1.2"] ; # 
   fhir:name [ fhir:v "MSABOGroupVS"] ; # 
   fhir:title [ fhir:v "MatchSync ABO Group Value Set"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-12-02T18:31:42-06:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-16T21:22:08-06:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NMDP"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NMDP" ] ;

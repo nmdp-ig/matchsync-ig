@@ -1,4 +1,4 @@
-Profile: MSWeightObservation
+Profile: Observation_MS_PatientWeight
 Parent: observation-bodyweight
 Id: ms-weight-observation
 Description: "Weight of Patient"
@@ -6,7 +6,7 @@ Description: "Weight of Patient"
 * subject 1..1 MS
 * subject only Reference(mspatient) 
 
-Instance: MSWeightObsExample
+Instance: Example-MS-PatientWeight
 InstanceOf: ms-weight-observation
 Description: "Example of patient weight"
 * meta.security[TransplantCenter].code = #tc_123
@@ -19,7 +19,7 @@ Description: "Example of patient weight"
 * effectiveDateTime = "2022-05-01"
 
 
-Profile: MSHeightObservation
+Profile: Observation_MS_PatientHeight
 Parent: observation-bodyheight
 Id: ms-height-observation
 Description: "Height of Patient"
@@ -27,7 +27,7 @@ Description: "Height of Patient"
 * subject 1..1 MS
 * subject only Reference(mspatient) 
 
-Instance: MSHeightObsExample
+Instance: Example-MS-PatientHeight
 InstanceOf: ms-height-observation
 Description: "Example of patient height"
 * meta.security[TransplantCenter].code = #tc_123
@@ -39,7 +39,7 @@ Description: "Example of patient height"
   * code = #cm
 * effectiveDateTime = "2022-05-01"
 
-Profile: MSABORHObservation
+Profile: Observation_MS_ABORH
 Parent: Observation
 Id: ms-aborhgroup-observation
 Description: "ABO and Rh group [Type] in Blood"
@@ -51,7 +51,7 @@ Description: "ABO and Rh group [Type] in Blood"
 * value[x] only CodeableConcept
 * valueCodeableConcept from loinc-abo-rh-codes 
 
-Instance: MSABORHObsExample
+Instance: Example-MS-ABORH
 InstanceOf: ms-aborhgroup-observation
 Description: "Example of patient ABO and RH"
 * meta.security[TransplantCenter].code = #tc_123
@@ -65,7 +65,7 @@ Description: "Example of patient ABO and RH"
     * display = "O Pos"
 * effectiveDateTime = "2022-05-01"
 
-Profile: MSABOGroupObservation
+Profile: Observation_MS_ABOGroup
 Parent: Observation
 Id: ms-abogroup-observation
 Description: "ABO Blood Group of Patient"
@@ -77,7 +77,7 @@ Description: "ABO Blood Group of Patient"
 * value[x] only CodeableConcept
 * valueCodeableConcept from loinc-abo-codes
 
-Instance: MSABOObsExample
+Instance: Example-MS-ABOGroup
 InstanceOf: ms-abogroup-observation
 Description: "Example of patient ABO"
 * meta.security[TransplantCenter].code = #tc_123
@@ -91,7 +91,7 @@ Description: "Example of patient ABO"
     * display = "Group A"
 * effectiveDateTime = "2022-05-01"
 
-Profile: MSRhStatusObservation
+Profile: Observation_MS_RhStatus
 Parent: Observation
 Id: ms-rhstatus-observation
 Description: "Rh status of Patient"
@@ -103,7 +103,7 @@ Description: "Rh status of Patient"
 * value[x] only CodeableConcept
 * valueCodeableConcept from loinc-posneg-codes
 
-Instance: MSRhObsExample
+Instance: Example-MS-RhStatus
 InstanceOf: ms-rhstatus-observation
 Description: "Example of patient Rh status"
 * meta.security[TransplantCenter].code = #tc_123
@@ -116,7 +116,7 @@ Description: "Example of patient Rh status"
     * display = "Positive"
 * effectiveDateTime = "2022-05-01"
 
-Profile: MSPreferredProduct
+Profile: Observation_MS_PreferredProduct
 Parent: Observation
 Id: ms-preferred-product-observation
 Description: "Preferred product for transplant"
@@ -128,7 +128,7 @@ Description: "Preferred product for transplant"
 * value[x] only CodeableConcept
 * valueCodeableConcept from nmdp-preferred-product-codes
 
-Instance: MSPreferredProductExample
+Instance: Example-MS-PreferredProduct
 InstanceOf: ms-preferred-product-observation
 Description: "Example of preferred product"
 * meta.security[TransplantCenter].code = #tc_123
@@ -142,7 +142,7 @@ Description: "Example of preferred product"
     * display = "HPC, Apheresis"
 * effectiveDateTime = "2022-05-01"
 
-Profile: MSTransplantTimeline
+Profile: Observation_MS_TransplantTimeline
 Parent: Observation
 Id: ms-transplant-timeline-observation
 Description: "Transplant timeline for patient"
@@ -154,7 +154,7 @@ Description: "Transplant timeline for patient"
 * value[x] only CodeableConcept
 * valueCodeableConcept from nmdp-transplant-timeline-codes
 
-Instance: MSTransplantTimelineExample
+Instance: Example-MS-TransplantTimeline
 InstanceOf: ms-transplant-timeline-observation
 Description: "Example of transplant timeline"
 * meta.security[TransplantCenter].code = #tc_123
@@ -168,7 +168,7 @@ Description: "Example of transplant timeline"
     * display = "Pending, Case manager to follow up"
 * effectiveDateTime = "2022-05-01"
 
-Profile: MSCmvObservation
+Profile: Observation_MS_CMV
 Parent: Observation
 Id: ms-cmvgroup-observation
 Description: "Cytomeglovirus found in patient"
@@ -180,7 +180,7 @@ Description: "Cytomeglovirus found in patient"
 * value[x] only CodeableConcept
 * valueCodeableConcept from loinc-cmv-codes
 
-Instance: MSCmvExample
+Instance: Example-MS-CMV
 InstanceOf: ms-cmvgroup-observation
 Description: "Example of Cytomeglovirus found in patient"
 * meta.security[TransplantCenter].code = #tc_123
@@ -193,7 +193,7 @@ Description: "Example of Cytomeglovirus found in patient"
     * display = "Positive"
 * effectiveDateTime = "2022-05-01"
 
-Profile: MSForm117Observation
+Profile: Observation_MS_Form117Compliance
 Parent: Observation
 Id: ms-form117-observation
 Description: "Form 117 Compliance for patient"
@@ -204,7 +204,7 @@ Description: "Form 117 Compliance for patient"
 * effectiveDateTime 1..1 MS
 * valueBoolean.id = "true"
 
-Instance: MSForm117Example
+Instance: Example-MS-Form117Compliance
 InstanceOf: ms-form117-observation
 Description: "Example of Form 117 Compliance for patient"
 * meta.security[TransplantCenter].code = #tc_123

@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -21,7 +22,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation HLA-DQA1-Example</b></p><a name=\"HLA-DQA1-Example\"> </a><a name=\"hcHLA-DQA1-Example\"> </a><a name=\"HLA-DQA1-Example-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 84413-4}\">Genotype display name</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: <span title=\"Codes:{http://glstring.org hla#3.25.0#HLA-DQA1*01:01:01:01+HLA-DQA1*01:02:01:01}\">hla#3.25.0#HLA-DQA1*01:01:01:01+HLA-DQA1*01:02:01:01</span></p><p><b>specimen</b>: <a href=\"Specimen-MSSpecimenExample.html\">Specimen: identifier = http://terminology.nmdp.org/identifier/transplantcenter#000</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></td><td><span title=\"Codes:{http://www.genenames.org/geneId HGNC:4942}\">HLA-DQA1</span></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation HLA-DQA1-Example</b></p><a name=\"HLA-DQA1-Example\"> </a><a name=\"hcHLA-DQA1-Example\"> </a><a name=\"HLA-DQA1-Example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hla-dqa1.html\">HLA_DQA1</a></p><p style=\"margin-bottom: 0px\">Security Label: tc_123 (Details: transplant-center code tc_123)</p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 84413-4}\">Genotype display name</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: <span title=\"Codes:{http://glstring.org hla#3.25.0#HLA-DQA1*01:01:01:01+HLA-DQA1*01:02:01:01}\">hla#3.25.0#HLA-DQA1*01:01:01:01+HLA-DQA1*01:02:01:01</span></p><p><b>specimen</b>: <a href=\"Specimen-MSSpecimenExample.html\">Specimen: identifier = http://terminology.nmdp.org/identifier/transplantcenter#000</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></td><td><span title=\"Codes:{http://www.genenames.org/geneId HGNC:4942}\">HLA-DQA1</span></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
@@ -41,7 +42,10 @@
      fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample> ;
      fhir:reference [ fhir:v "Patient/MSPatientExample" ]
   ] ; # 
-  fhir:effective [ fhir:v "2022-05-01"^^xsd:date] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-05-01"^^xsd:date
+  ] ; # 
   fhir:value [
      a fhir:CodeableConcept ;
      fhir:coding ( [

@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "HLAGeneIdVS",
       "title" : "HLA Gene Name Value Set",
@@ -14,113 +14,64 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "ICD10GVHDVS",
-      "title" : "GVHD ICD-10 Codes",
+      "title" : "ICD-10 (GVHD) Codes",
       "description" : "GVHD ICD-10 Codes",
       "systems" : ["http://hl7.org/fhir/sid/icd-10-cm"]
     },
     {
-      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-group-codes",
-      "version" : "0.1.1",
-      "status" : "draft",
-      "name" : "MSABOGroupVS",
-      "title" : "MatchSync ABO Group Value Set",
-      "description" : "MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes",
-      "systems" : [
-        "http://terminology.nmdp.org/codesystem/abogroup",
-        "http://loinc.org",
-        "http://snomed.info/sct"
-      ]
-    },
-    {
-      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-rh-group-codes",
-      "version" : "0.1.1",
-      "status" : "draft",
-      "name" : "MSABORHGroupVS",
-      "title" : "MatchSync ABO RH Group Value Set",
-      "description" : "MatchSync ABO RH group codes. Combines LOINC and NMDP codes",
-      "systems" : [
-        "http://terminology.nmdp.org/codesystem/aborhgroup",
-        "http://loinc.org"
-      ]
-    },
-    {
-      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-cmv-codes",
-      "version" : "0.1.1",
-      "status" : "draft",
-      "name" : "MSCMVVS",
-      "title" : "MatchSync ABO Group Value Set",
-      "description" : "MatchSync ABO group codes. Combines LOINC and NMDP codes",
-      "systems" : [
-        "http://terminology.nmdp.org/codesystem/cmv",
-        "http://loinc.org"
-      ]
-    },
-    {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-form117-codes",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "NMDPForm117VS",
-      "title" : "NMDP Form 117 Value Set",
+      "title" : "ValueSet - Form117 Compliance - NMDP",
       "description" : "NMDP Form 117 codes",
       "systems" : ["http://terminology.nmdp.org/codesystem/form117compliance"]
     },
     {
-      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-rh-codes",
-      "version" : "0.1.1",
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-GenderIdentity-codes",
+      "version" : "0.1.2",
       "status" : "draft",
-      "name" : "MSRhVS",
-      "title" : "MatchSync Rh Value Sets",
-      "description" : "MatchSync codes for blood Rh. Combines NMDP and LOINC code",
-      "systems" : [
-        "http://loinc.org",
-        "http://terminology.nmdp.org/codesystem/rhstatus"
-      ]
+      "name" : "NMDPGenderIdentityVS",
+      "title" : "ValueSet - Patient Gender Identity - NMDP",
+      "description" : "NMDP GenderIdentity codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/genderidentity"]
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "NMDPABOVS",
-      "title" : "NMDP Blood Group Value Set",
+      "title" : "ValueSet - Blood Group (ABO) - NMDP",
       "description" : "NMDP blood group codes",
-      "systems" : ["http://terminology.nmdp.org/codesystem/abogroup"],
-      "uses" : {
-      },
-      "ValueSet-ms-abo-group-codes.html" : "MatchSync ABO Group Value Set"
+      "systems" : ["http://terminology.nmdp.org/codesystem/abogroup"]
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-rh-codes",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "NMDPABORHVS",
-      "title" : "NMDP Blood Group Value Set",
+      "title" : "ValueSet - Blood Group (ABO+RH) - NMDP",
       "description" : "NMDP blood group codes",
-      "systems" : ["http://terminology.nmdp.org/codesystem/aborhgroup"],
-      "uses" : {
-      },
-      "ValueSet-ms-abo-rh-group-codes.html" : "MatchSync ABO RH Group Value Set"
+      "systems" : ["http://terminology.nmdp.org/codesystem/aborhgroup"]
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-cmv-codes",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "NMDPCMVVS",
-      "title" : "NMDP CMV Value Set",
+      "title" : "ValueSet - CMV Group - NMDP",
       "description" : "NMDP cmv codes",
-      "systems" : ["http://terminology.nmdp.org/codesystem/cmv"],
-      "uses" : {
-      },
-      "ValueSet-ms-cmv-codes.html" : "MatchSync ABO Group Value Set"
+      "systems" : ["http://terminology.nmdp.org/codesystem/cmv"]
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "NMDPDiseaseVS",
-      "title" : "NMDP Disease Value Set",
+      "title" : "ValueSet - Disease - NMDP",
       "description" : "NMDP disease codes",
       "systems" : ["http://terminology.nmdp.org/codesystem/disease"],
       "uses" : {
@@ -129,10 +80,10 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "NMDPDiseasStageVS",
-      "title" : "NMDP Disease Stage Value Set",
+      "title" : "ValueSet - Disease Stage - NMDP",
       "description" : "NMDP disease stage codes",
       "systems" : ["http://terminology.nmdp.org/codesystem/diseasestage"],
       "uses" : {
@@ -141,25 +92,25 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-ethnicity-codes",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "NMDPEthnicityVS",
-      "title" : "NMDP Ethnicity Value Set",
+      "title" : "ValueSet - Patient Ethnicity - NMDP",
       "description" : "NMDP ethnicity codes",
       "systems" : ["http://terminology.nmdp.org/codesystem/ethnicity"]
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "NMDPLanguageCodes",
-      "title" : "NMDP Language Value Set",
+      "title" : "ValueSet - Language - NMDP",
       "description" : "NMDP language codes",
       "systems" : ["http://terminology.nmdp.org/codesystem/language"]
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "NMDPPractitionerRoleVS",
       "title" : "NMDP Practitioner Role Value Set",
@@ -171,112 +122,93 @@
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "NMDPPreferredProductVS",
-      "title" : "NMDP Preferred Product Value Set",
+      "title" : "ValueSet - Preferred Product - NMDP",
       "description" : "NMDP preferred product codes",
       "systems" : ["http://terminology.nmdp.org/codesystem/preferredproduct"],
       "uses" : {
       },
-      "StructureDefinition-ms-preferred-product-observation.html" : "MSPreferredProduct"
+      "StructureDefinition-ms-preferred-product-observation.html" : "Observation_MS_PreferredProduct"
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-race-codes",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "NMDPRaceVS",
-      "title" : "NMDP Race Value Set",
+      "title" : "ValueSet - Patient Race - NMDP",
       "description" : "NMDP race codes",
       "systems" : ["http://terminology.nmdp.org/codesystem/race"]
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "NMDPRhStatusVS",
-      "title" : "NMDP Codes for Rh status",
+      "title" : "ValueSet - Blood Group (Rh) - NMDP",
       "description" : "NMDP codes for Rh staus",
-      "systems" : ["http://terminology.nmdp.org/codesystem/rhstatus"],
-      "uses" : {
-      },
-      "ValueSet-ms-rh-codes.html" : "MatchSync Rh Value Sets"
+      "systems" : ["http://terminology.nmdp.org/codesystem/rhstatus"]
     },
     {
       "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "NMDPTransplantTimelineVS",
-      "title" : "NMDP Transplant Timeline Value Set",
+      "title" : "ValueSet - Transplant Timeline - NMDP",
       "description" : "NMDP transplant timeline codes",
       "systems" : ["http://terminology.nmdp.org/codesystem/transplanttimeline"],
       "uses" : {
       },
-      "StructureDefinition-ms-transplant-timeline-observation.html" : "MSTransplantTimeline"
-    },
-    {
-      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/sct-abo-group-codes",
-      "version" : "0.1.1",
-      "status" : "draft",
-      "name" : "SCTABOGroupVS",
-      "title" : "Snomed CT ABO group Value Set",
-      "description" : "Snomed CT codes for ABO blood group",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "ValueSet-ms-abo-group-codes.html" : "MatchSync ABO Group Value Set"
+      "StructureDefinition-ms-transplant-timeline-observation.html" : "Observation_MS_TransplantTimeline"
     },
     {
       "url" : "http://loinc.org/vs/LL2419-1",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "active",
       "name" : "LNCABOGroupVS",
-      "title" : "LOINC ABO group Value Set",
+      "title" : "ValueSet - Blood Group (ABO) - LOINC",
       "description" : "LOINC codes for ABO blood group",
       "systems" : ["http://loinc.org"],
       "uses" : {
       },
-      "ValueSet-ms-abo-group-codes.html" : "MatchSync ABO Group Value Set",
-      "StructureDefinition-ms-abogroup-observation.html" : "MSABOGroupObservation"
+      "StructureDefinition-ms-abogroup-observation.html" : "Observation_MS_ABOGroup"
     },
     {
       "url" : "http://loinc.org/vs/LL2972-9",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "active",
       "name" : "LNCABORHGroupVS",
-      "title" : "LOINC ABO RH group Value Set",
+      "title" : "ValueSet - Blood Group (ABO+RH) - LOINC",
       "description" : "LOINC codes for ABO RH blood group",
       "systems" : ["http://loinc.org"],
       "uses" : {
       },
-      "ValueSet-ms-abo-rh-group-codes.html" : "MatchSync ABO RH Group Value Set",
-      "StructureDefinition-ms-aborhgroup-observation.html" : "MSABORHObservation"
+      "StructureDefinition-ms-aborhgroup-observation.html" : "Observation_MS_ABORH"
     },
     {
       "url" : "http://loinc.org/vs/LL360-9",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "active",
       "name" : "PosNegVS",
-      "title" : "LOINC Pos|Neg Value Set",
+      "title" : "ValueSet - Blood Group (Rh) - LOINC",
       "description" : "LOINC codes for Positive and Negative",
       "systems" : ["http://loinc.org"],
       "uses" : {
       },
-      "StructureDefinition-ms-rhstatus-observation.html" : "MSRhStatusObservation",
-      "ValueSet-ms-rh-codes.html" : "MatchSync Rh Value Sets"
+      "StructureDefinition-ms-rhstatus-observation.html" : "Observation_MS_RhStatus"
     },
     {
       "url" : "http://loinc.org/vs/LL3639-3",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "active",
       "name" : "LNCCMVGroupVS",
-      "title" : "LOINC CMV group Value Set",
+      "title" : "ValueSet - CMV Group - LOINC",
       "description" : "LOINC codes for CMV",
       "systems" : ["http://loinc.org"],
       "uses" : {
       },
-      "StructureDefinition-ms-cmvgroup-observation.html" : "MSCmvObservation",
-      "ValueSet-ms-cmv-codes.html" : "MatchSync ABO Group Value Set"
+      "StructureDefinition-ms-cmvgroup-observation.html" : "Observation_MS_CMV"
     }
   ]
 }

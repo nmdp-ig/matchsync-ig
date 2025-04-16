@@ -1,6 +1,6 @@
 {
   "package": "nmdp.fhir.matchsync",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -15,31 +15,31 @@
     "Observation": [
       {
         "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-cmvgroup-observation",
-        "title": "MSCmvObservation"
+        "title": "Observation_MS_CMV"
       },
       {
         "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-form117-observation",
-        "title": "MSForm117Observation"
+        "title": "Observation_MS_Form117Compliance"
       },
       {
         "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation",
-        "title": "MSHeightObservation"
+        "title": "Observation_MS_PatientHeight"
       },
       {
         "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation",
-        "title": "MSPreferredProduct"
+        "title": "Observation_MS_PreferredProduct"
       },
       {
         "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-rhstatus-observation",
-        "title": "MSRhStatusObservation"
+        "title": "Observation_MS_RhStatus"
       },
       {
         "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-transplant-timeline-observation",
-        "title": "MSTransplantTimeline"
+        "title": "Observation_MS_TransplantTimeline"
       },
       {
         "url": "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-weight-observation",
-        "title": "MSWeightObservation"
+        "title": "Observation_MS_PatientWeight"
       }
     ],
     "Bundle": [
@@ -119,9 +119,6 @@
     "http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding": [
       "Observation"
     ],
-    "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity": [
-      "Patient"
-    ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
     ],
@@ -149,6 +146,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
       "Patient"

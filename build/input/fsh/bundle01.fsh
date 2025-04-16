@@ -26,7 +26,7 @@ Description: "Collection Bundle for MatchSync"
 * entry[msPatient].resource only MSPatient
 * entry[msPatient] ^short = "MatchSync Patient"
 * entry[msPatient] ^definition = "The MatchSync Patient whose data is included in the bundle (required element)."
-* entry[msCmv].resource only MSCmvObservation
+* entry[msCmv].resource only Observation_MS_CMV
 * entry[msCmv] ^short = "MatchSync Patient CMV Status"
 * entry[msCmv] ^definition = "The MatchSync Patient whose data is included in the bundle (required element)."
 * entry[msDiagnosis].resource only MSPrimaryDiagnosis
@@ -38,31 +38,31 @@ Description: "Collection Bundle for MatchSync"
 * entry[msPractitioner].resource only NMDPPractitioner
 * entry[msPractitioner] ^short = "Practitioner  for the MacthSync patient needing transplant"
 * entry[msPractitioner] ^definition = "Practitioner for the MatchSync patient."
-* entry[msObsRh].resource only MSRhStatusObservation
+* entry[msObsRh].resource only Observation_MS_RhStatus
 * entry[msObsRh] ^short = "Rh status of the patient"
 * entry[msObsRh] ^definition = "The Rh status of the MatchSync patient"
-* entry[msObsABO].resource only MSABOGroupObservation
+* entry[msObsABO].resource only Observation_MS_ABOGroup
 * entry[msObsABO] ^short = "ABO blood group"
 * entry[msObsABO] ^definition = "The ABO blood group of the MatchSync patient"
-* entry[msObsABORH].resource only MSABORHObservation
+* entry[msObsABORH].resource only Observation_MS_ABORH
 * entry[msObsABORH] ^short = "ABO blood group and RH"
 * entry[msObsABORH] ^definition = "The ABO and RH of the MatchSync patient"
-* entry[msObsTimeline].resource only MSTransplantTimeline
+* entry[msObsTimeline].resource only Observation_MS_TransplantTimeline
 * entry[msObsTimeline] ^short = "Transplant timeline"
 * entry[msObsTimeline] ^definition = "Where the patient is in the tranplant timeline."
-* entry[msObsPreferredProduct].resource only MSPreferredProduct
+* entry[msObsPreferredProduct].resource only Observation_MS_PreferredProduct
 * entry[msObsPreferredProduct] ^short = "Preferred prodcut for transplant"
 * entry[msObsPreferredProduct] ^definition = "Preferred prodcut for transplant"
-* entry[msObsHeight].resource only MSHeightObservation
+* entry[msObsHeight].resource only Observation_MS_PatientHeight
 * entry[msObsHeight] ^short = "Patient Height"
 * entry[msObsHeight] ^definition = "Height of patient"
-* entry[msObsWeight].resource only MSWeightObservation
+* entry[msObsWeight].resource only Observation_MS_PatientWeight
 * entry[msObsWeight] ^short = "Patient Weight"
 * entry[msObsWeight] ^definition = "Weight of Patient"
 * entry[msOrgTransplantCenter].resource only TransplantCenter
 * entry[msOrgTransplantCenter] ^short = "Transplant Center"
 * entry[msOrgTransplantCenter] ^definition = "Transplant Center"
-* entry[msObsForm117].resource only MSForm117Observation
+* entry[msObsForm117].resource only Observation_MS_Form117Compliance
 * entry[msObsForm117] ^short = "Form 117 Compliance"
 * entry[msObsForm117] ^definition = "Form 117 Compliance of the MatchSync patient"
 * entry[msSpecimen].resource only MSSpecimen

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ValueSet - Disease - NMDP -  v0.1.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.43"}
+    h3,h4,h5,h6{--heading-prefix:"4.43"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.2 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="NMDP-PatientImport-Guide-v3.9.pdf">Matchsync Setup Guide</a>
+  </li>
+  <li>
+    <a href="Appendices.html">Appendices</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ValueSet - Disease - NMDP</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MatchSync Implementation Guide (v0.1.2: Release Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-nmdp-disease-codes.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-nmdp-disease-codes.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-nmdp-disease-codes.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: ValueSet - Disease - NMDP
+(Experimental)
+  </h2>
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes|0.1.2"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2025-04-16
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">NMDPDiseaseVS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>NMDP disease codes</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-msdiagnosis.html">MSPrimaryDiagnosis</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nmdp-disease-codes</b></p><a name="nmdp-disease-codes"> </a><a name="hcnmdp-disease-codes"> </a><a name="nmdp-disease-codes-en-US"> </a>
+<ul><li>Include all codes defined in <a href="CodeSystem-nmdp-disease-cs.html"><code>http://terminology.nmdp.org/codesystem/disease</code></a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>ValueSet </b></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on <a href="CodeSystem-nmdp-disease-cs.html">codesystem CodeSystem - Disease - NMDP v0.1.2 (CodeSystem)</a></p><p>This value set contains 100 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-ABL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-ABL">ABL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ACUTE BILINEAGE LEUKEMIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-AISA"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-AISA">AISA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ACQ IDIOPATH SIDERBLASTIC ANEM</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-ALD"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-ALD">ALD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ADRENOLEUKODYSTROPHY</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-ALL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-ALL">ALL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ACUTE LYMPHOBLASTIC LEUKEMIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-AMCL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-AMCL">AMCL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ACUTE MAST CELL LEUKEMIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-AMEGCT"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-AMEGCT">AMEGCT</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>AMEGAKARYOCY/CONGENTIAL THROM</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-AML"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-AML">AML</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ACUTE MYELOGENOUS LEUKEMIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-ASPGL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-ASPGL">ASPGL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ASPARTYL GLUCOSAMINIDASE</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-AT"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-AT">AT</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ATAXIA-TELANGIECTASIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-AUL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-AUL">AUL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ACUTE UNDIFFERENTIATED LEUK-MO</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-BGLUD"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-BGLUD">BGLUD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>BETA-GLUCURONIDASE DEFICIENCY</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-BLSYND"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-BLSYND">BLSYND</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>BARE LYMPHOCYTE SYNDROME</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-BRCA"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-BRCA">BRCA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>BREAST CANCER</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-BTHAL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-BTHAL">BTHAL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>BETA THALASSEMIA MAJOR</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-C-HHYP"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-C-HHYP">C-HHYP</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>CARTILAGE-HAIR HYPOPLASIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-CGD"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-CGD">CGD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>CHRONIC GRANULOMATOUS DISEASE</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-CID"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-CID">CID</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>COMBINED IMMUNODEFICIENCY</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-CLL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-CLL">CLL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>CHRONIC LYMPHOCYTIC LEUKEMIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-CML"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-CML">CML</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>CHRONIC MYELOGENOUS LEUKEMIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-CMML"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-CMML">CMML</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>CHRONIC MYELOMONOCYTIC LEUK</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-CNSCA"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-CNSCA">CNSCA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>CENTRAL NERVOUS SYSTEM TUMORS</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-DIGRGE"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-DIGRGE">DIGRGE</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>DI GEORGE SYNDROME</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-ETC"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-ETC">ETC</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ESSENTIAL THROMOBOCYTHEMIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-EWINGS"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-EWINGS">EWINGS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>EWINGS SARCOMA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-FA"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-FA">FA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>FANCONI ANEMIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-FEL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-FEL">FEL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>FAMILIAL ERYTHROPHAGOCYTIC</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-FUCOSI"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-FUCOSI">FUCOSI</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>FUCOSIDOSIS</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-GAUCHR"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-GAUCHR">GAUCHR</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>GAUCHER'S DISEASE</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-GLTROM"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-GLTROM">GLTROM</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>GLANZMANNS THROMBASTHENIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-GLUCST"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-GLUCST">GLUCST</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>GLUCOSE STORAGE DISEASE</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-HCL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-HCL">HCL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>HAIRY CELL LEUKEMIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-HISX"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-HISX">HISX</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>HISTIOCYTOSIS-X</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-HIV"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-HIV">HIV</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>HIV INFECTION</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-HL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-HL">HL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>HODGKINS LYMPHOMA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-HPGC"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-HPGC">HPGC</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>HEMOPHAGOCYTOSIS</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-HUNTER"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-HUNTER">HUNTER</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>HUNTER SYNDROME (MPS-II)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-HURLER"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-HURLER">HURLER</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>HURLER SYNDROME (MPS-IH)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-ICELL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-ICELL">ICELL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>I-CELL DISEASE</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-IMDNP"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-IMDNP">IMDNP</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>IMMUNE DEFICIENCY + NEUTROPEN</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-JCML"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-JCML">JCML</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>JUVENILE CHRONIC MYELOGENOUS</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-KOSTMN"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-KOSTMN">KOSTMN</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>KOSTMANN'S AGRANULOCYTOSIS</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-KRABBE"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-KRABBE">KRABBE</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>KRABBE DISEASE</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-LAD"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-LAD">LAD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>LEUKOCYTE ADHESION DEFICIENCY</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-LN"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-LN">LN</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>LESCH-NYHAN</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-LNS"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-LNS">LNS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>LESCH-NYHAN</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-LYSOST"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-LYSOST">LYSOST</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>LYSOSOMAL STORAGE DISEASE</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-MANNO"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MANNO">MANNO</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MANNOSIDOSIS</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-MARLAM"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MARLAM">MARLAM</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MAROTEAUX-LAMY (MPS-VI)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-MDS"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MDS">MDS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MYELODYSPLASTIC DISORDER</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-MFMM"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MFMM">MFMM</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MYELOFIBRO MYELOID METAPLASIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-MLD"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MLD">MLD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>METACHROMATIC LEUKODYSTROPHY</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-MM"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MM">MM</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MULTIPLE MYELOMA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-MORQUA"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MORQUA">MORQUA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MORQUIO A - MPS IVA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-MORQUB"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MORQUB">MORQUB</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MORQUIO B - MPS IVB</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-MORQUO"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MORQUO">MORQUO</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MORQUIO (MPS-IV)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-MPS"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-MPS">MPS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>MUCOPOLYSACCHARIDOSIS (MPS-V)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-N-P"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-N-P">N-P</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>NEIMAN-PICK DISEASE</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-NB"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-NB">NB</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>NEUROBLASTOMA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-NCL1"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-NCL1">NCL1</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ENZYME NCL 1</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-NCL2"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-NCL2">NCL2</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ENZYME NCL 2</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-NEUTAD"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-NEUTAD">NEUTAD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>NEUTROPHIL ACTIN DEFICIENCY</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-NEUTD"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-NEUTD">NEUTD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>CHEDIAK-HIGASHI SYNDROME</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-NHL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-NHL">NHL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>NON-HODGKINS LYMPHOMA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OCID"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OCID">OCID</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHR COMBINED IMMUNODEFICIENCY</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OHIS"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OHIS">OHIS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER HISTIOCYTIC DISORDERS</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OIEA"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OIEA">OIEA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTH ERYTHROCYT DIFFERENTIATION</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OIIS"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OIIS">OIIS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER IMMUNE SYSTEM</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OIMD"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OIMD">OIMD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTH INHER METABOLISM DISORD</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OIMDL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OIMDL">OIMDL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTH MUCOLIPIDOSES</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OIMDP"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OIMDP">OIMDP</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTH MUCOPOLYSACCHARIDOSIS</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OIPA"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OIPA">OIPA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTH ABNORMALITIES OR PLATELETS</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OMDS"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OMDS">OMDS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER MYELODYSPLASTIC DISORDER</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OMF"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OMF">OMF</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER MYLEOFIBROSIS/MYLEOSCLER</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OMMEN"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OMMEN">OMMEN</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OMMEN'S SYNDROME</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OMS"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OMS">OMS</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTH MALIGNANCY, SPECIFY</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OND"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OND">OND</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER NON-MALIGNANT DISEASE</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OOL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OOL">OOL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER LEUKEMIA SPECIFY</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OPCD"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OPCD">OPCD</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER PLASMA CELL DISORDER</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OSCID"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OSCID">OSCID</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER SCID</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OST"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OST">OST</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OSTEOPETROSIS</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-OTHHGP"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-OTHHGP">OTHHGP</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>OTHER HEMOGLOBINOPATHY</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-PCL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-PCL">PCL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>PLASMA CELL LEUKEMIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-PHILLY"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-PHILLY">PHILLY</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>PROLYMPHOCYTIC LEUKEMIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-PNH"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-PNH">PNH</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>PAROXYSMAL NOCTURNAL HEMOGLOB</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-PV"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-PV">PV</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>POLYCYTHEMIA VERA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-RA"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-RA">RA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>REFRACTORY ANEMIA (RA)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-RAEB"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-RAEB">RAEB</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>REFRACT ANEMIA-EXCESS BLASTS</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-RAEBIT"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-RAEBIT">RAEBIT</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>REFRACT ANEMIA-EX. BLAST TRAN</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-RCA"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-RCA">RCA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>PURE RED CELL APLASIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-RCC"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-RCC">RCC</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>RENAL CELL CARCINOMA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-RETDG"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-RETDG">RETDG</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>RETICULAR DYSGENESIS</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-SAA"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SAA">SAA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SEVERE APLASTIC ANEMIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-SANFIA"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SANFIA">SANFIA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SANFILIPPO A - MPS IIIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-SANFIB"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SANFIB">SANFIB</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SANFILIPPO B - MPS IIIB</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-SANFIC"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SANFIC">SANFIC</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SANFILIPPO C - MPS IIIC</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-SANFID"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SANFID">SANFID</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>ANFILIPPO D - MPS IIID</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-SANFIL"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SANFIL">SANFIL</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SANFILLIPPO (MPS-III)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-SCA"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SCA">SCA</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SICKLE CELL ANEMIA</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-SCHEIE"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SCHEIE">SCHEIE</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SCHEIE SYNDROME (MPS-IS)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/disease-SCID"> </a>  <a href="CodeSystem-nmdp-disease-cs.html#nmdp-disease-cs-SCID">SCID</a></td><td>http://terminology.nmdp.org/codesystem/disease</td><td>SEVERE COMBINED IMMUNODEF</td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 16, 2025 10:34-0500">2025-04-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>NMDP Race Code System - JSON Representation -  v0.1.1</title>
+    <title>CodeSystem - Patient Race - NMDP - JSON Representation -  v0.1.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -20,6 +20,7 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -42,17 +43,18 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"4.68"}
-    h3,h4,h5,h6{--heading-prefix:"4.68"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.62"}
+    h3,h4,h5,h6{--heading-prefix:"4.62"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.1.1 - ci-build
+            <span style="display:inline-block;">0.1.2 - ci-build
 
 
             </span>
@@ -116,7 +118,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NMDP Race Code System</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CodeSystem - Patient Race - NMDP</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -129,7 +131,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the MatchSync Implementation Guide (v0.1.1: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the MatchSync Implementation Guide (v0.1.1: Release Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -175,7 +177,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: NMDP Race Code System - JSON Representation</h2>
+<h2 id="root">: CodeSystem - Patient Race - NMDP - JSON Representation</h2>
 
   <table class="colsi">
     <tr>
@@ -184,7 +186,7 @@
         
           Active
           
-            as of 2024-12-02
+            as of 2025-04-15
           
         
       </td>
@@ -208,12 +210,12 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem nmdp-race-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;nmdp-race-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcnmdp-race-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;nmdp-race-cs-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;http://terminology.nmdp.org/codesystem/race&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AAFA&lt;a name=\&quot;nmdp-race-cs-AAFA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;African American&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AFA&lt;a name=\&quot;nmdp-race-cs-AFA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AFB&lt;a name=\&quot;nmdp-race-cs-AFB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;African&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AINDI&lt;a name=\&quot;nmdp-race-cs-AINDI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;South Asian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AISC&lt;a name=\&quot;nmdp-race-cs-AISC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;American Indian South or Centr&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ALANAM&lt;a name=\&quot;nmdp-race-cs-ALANAM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alaska Native or Aleut&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AMIND&lt;a name=\&quot;nmdp-race-cs-AMIND\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;North American Indian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;API&lt;a name=\&quot;nmdp-race-cs-API\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CARB&lt;a name=\&quot;nmdp-race-cs-CARB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Black Caribbean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CARHIS&lt;a name=\&quot;nmdp-race-cs-CARHIS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Caribbean Hispanic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CARIBI&lt;a name=\&quot;nmdp-race-cs-CARIBI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Caribbean Indian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CAU&lt;a name=\&quot;nmdp-race-cs-CAU\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DEC&lt;a name=\&quot;nmdp-race-cs-DEC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Declines or No Race Selected&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EEURO&lt;a name=\&quot;nmdp-race-cs-EEURO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eastern European&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EURWRC&lt;a name=\&quot;nmdp-race-cs-EURWRC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;North American or European&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;FILII&lt;a name=\&quot;nmdp-race-cs-FILII\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filipino&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;GUAMAN&lt;a name=\&quot;nmdp-race-cs-GUAMAN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Guamanian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HAWAII&lt;a name=\&quot;nmdp-race-cs-HAWAII\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hawaiian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HAWI&lt;a name=\&quot;nmdp-race-cs-HAWI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HIS&lt;a name=\&quot;nmdp-race-cs-HIS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unspecified Hispanic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;JAPI&lt;a name=\&quot;nmdp-race-cs-JAPI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Japanese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;KORI&lt;a name=\&quot;nmdp-race-cs-KORI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Korean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MAFA&lt;a name=\&quot;nmdp-race-cs-MAFA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multiple Black&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MAPI&lt;a name=\&quot;nmdp-race-cs-MAPI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multiple Asian/Pacific Islndr&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MCAU&lt;a name=\&quot;nmdp-race-cs-MCAU\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multiple Caucasian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MEDIT&lt;a name=\&quot;nmdp-race-cs-MEDIT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mediterranean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MENAFC&lt;a name=\&quot;nmdp-race-cs-MENAFC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MidEast/No. Coast of Africa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MHAW&lt;a name=\&quot;nmdp-race-cs-MHAW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multiple Nat. Hw/Oth Pa. Isln&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MHIS&lt;a name=\&quot;nmdp-race-cs-MHIS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multiple Hispanic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MIDEAS&lt;a name=\&quot;nmdp-race-cs-MIDEAS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Middle Eastern&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MNAM&lt;a name=\&quot;nmdp-race-cs-MNAM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multiple Native American&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MSWHIS&lt;a name=\&quot;nmdp-race-cs-MSWHIS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mexican or Chicano&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MULTI&lt;a name=\&quot;nmdp-race-cs-MULTI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Multiple Race&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NAM&lt;a name=\&quot;nmdp-race-cs-NAM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NAMB&lt;a name=\&quot;nmdp-race-cs-NAMB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;North American Black&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NAMER&lt;a name=\&quot;nmdp-race-cs-NAMER\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;North American&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NCAFRI&lt;a name=\&quot;nmdp-race-cs-NCAFRI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;North Coast of Africa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NCHI&lt;a name=\&quot;nmdp-race-cs-NCHI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chinese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NEURO&lt;a name=\&quot;nmdp-race-cs-NEURO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Northern European&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OPI&lt;a name=\&quot;nmdp-race-cs-OPI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other Pacific Islander&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OTH&lt;a name=\&quot;nmdp-race-cs-OTH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SAMOAN&lt;a name=\&quot;nmdp-race-cs-SAMOAN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Samoan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SCAHIS&lt;a name=\&quot;nmdp-race-cs-SCAHIS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;South/Cntrl Amer. Hisp.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SCAMB&lt;a name=\&quot;nmdp-race-cs-SCAMB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Black South or Central America&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SCSEAI&lt;a name=\&quot;nmdp-race-cs-SCSEAI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other Southeast Asian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;UNK&lt;a name=\&quot;nmdp-race-cs-UNK\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unknown/Question Not Asked&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;VIET&lt;a name=\&quot;nmdp-race-cs-VIET\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vietnamese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;WCARIB&lt;a name=\&quot;nmdp-race-cs-WCARIB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;White Caribbean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;WEURO&lt;a name=\&quot;nmdp-race-cs-WEURO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Western European&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;WSCA&lt;a name=\&quot;nmdp-race-cs-WSCA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;White South or Central America&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://terminology.nmdp.org/codesystem/race",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.1.1",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.1.2",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "NMDPRaceCS",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "NMDP Race Code System",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "CodeSystem - Patient Race - NMDP",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : true,
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2024-12-02T18:26:03-06:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2025-04-15T15:35:56-05:00",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "NMDP",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
     {
@@ -457,7 +459,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 2, 2024 18:26-0600">2024-12-02</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 15, 2025 15:39-0500">2025-04-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

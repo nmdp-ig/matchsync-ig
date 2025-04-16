@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for MatchSyncIG</h1>
- <p>Generated Mon Dec 02 18:33:43 CST 2024, FHIR version 4.0.1 for nmdp.fhir.matchsync#0.1.1 (canonical = <a href="http://fhir.nmdp.org/ig/matchsync">http://fhir.nmdp.org/ig/matchsync</a> (<a href="http://fhir.nmdp.org/ig/matchsync/history.html">history</a>))</p>
+ <p>Generated Wed Apr 16 10:43:21 CDT 2025, FHIR version 4.0.1 for nmdp.fhir.matchsync#0.1.2 (canonical = <a href="http://fhir.nmdp.org/ig/matchsync">http://fhir.nmdp.org/ig/matchsync</a> (<a href="http://fhir.nmdp.org/ig/matchsync/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -19,8 +19,15 @@
     <b>x-system-cache-id</b>
 :     <code>dc8fd4bc-091a-424a-8a3b-6198ef146891</code>
   </li>
+  <li>
+    <b>displayLanguage</b>
+:     <code>en-US</code>
+  </li>
 </ul>
 <h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
+<p>
+  <b>Decisions</b>
+</p>
 <table class="grid">
   <tr>
     <td>
@@ -57,6 +64,20 @@
     <td>System not handled by any servers. Using primary server</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
+    <td>http://terminology.nmdp.org/codesystem/transplant-center</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://terminology.nmdp.org/codesystem/transplant-center</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
     <td>http://glstring.org</td>
     <td>auth = , candidates=</td>
   </tr>
@@ -65,160 +86,6 @@
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://glstring.org</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://www.genenames.org/geneId</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
@@ -378,7 +245,7 @@
 </table>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
 <a href="http://tx.fhir.org/r4"></a>
-<p>Use Count: 24. Code Systems used: </p>
+<p>Use Count: 14. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -407,9 +274,15 @@
     <td></td>
   </tr>
   <tr>
+    <td>http://terminology.nmdp.org/codesystem/transplant-center</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>http://www.genenames.org/geneId</td>
     <td>0</td>
-    <td>22</td>
+    <td>11</td>
     <td>
       <a href="CodeSystem-hla-genename-codesystem.html">HLA HGNC GeneID CodeSystem</a>
     </td>

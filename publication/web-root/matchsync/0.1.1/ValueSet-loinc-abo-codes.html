@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>LOINC ABO group Value Set -  v0.1.1</title>
+    <title>ValueSet - Blood Group (ABO) - LOINC -  v0.1.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -18,6 +18,7 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -40,17 +41,18 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"4.34"}
-    h3,h4,h5,h6{--heading-prefix:"4.34"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.35"}
+    h3,h4,h5,h6{--heading-prefix:"4.35"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.1.1 - ci-build
+            <span style="display:inline-block;">0.1.2 - ci-build
 
 
             </span>
@@ -114,7 +116,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>LOINC ABO group Value Set</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ValueSet - Blood Group (ABO) - LOINC</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -127,7 +129,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the MatchSync Implementation Guide (v0.1.1: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MatchSync Implementation Guide (v0.1.1: Release Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -170,7 +172,7 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">ValueSet: LOINC ABO group Value Set
+  <h2 id="root">ValueSet: ValueSet - Blood Group (ABO) - LOINC
 (Experimental)
   </h2>
   <table class="colsi">
@@ -179,7 +181,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://loinc.org/vs/LL2419-1<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://loinc.org/vs/LL2419-1"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://loinc.org/vs/LL2419-1|0.1.1"/></span>
+      <span class="copy-text">0.1.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://loinc.org/vs/LL2419-1|0.1.2"/></span>
       </td>
     </tr>
 
@@ -195,7 +197,7 @@
         
           Active
           
-            as of 2024-12-02
+            as of 2025-04-15
           
         
       </td>
@@ -226,8 +228,7 @@
   </p>
   
 <ul>
- <li>Included into <a href="ValueSet-ms-abo-group-codes.html">MSABOGroupVS</a></li>
- <li><a href="StructureDefinition-ms-abogroup-observation.html">MSABOGroupObservation</a></li>
+ <li><a href="StructureDefinition-ms-abogroup-observation.html">Observation_MS_ABOGroup</a></li>
 </ul>
 
 
@@ -247,7 +248,7 @@
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet </b></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.78</p><p>This value set contains 4 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://loinc.org-LA19710-5"> </a>  <a href="https://loinc.org/LA19710-5/">LA19710-5</a></td><td>http://loinc.org</td><td>Group A</td></tr><tr><td style="white-space:nowrap"><a name="x-http://loinc.org-LA19709-7"> </a>  <a href="https://loinc.org/LA19709-7/">LA19709-7</a></td><td>http://loinc.org</td><td>Group B</td></tr><tr><td style="white-space:nowrap"><a name="x-http://loinc.org-LA19708-9"> </a>  <a href="https://loinc.org/LA19708-9/">LA19708-9</a></td><td>http://loinc.org</td><td>Group O</td></tr><tr><td style="white-space:nowrap"><a name="x-http://loinc.org-LA28449-9"> </a>  <a href="https://loinc.org/LA28449-9/">LA28449-9</a></td><td>http://loinc.org</td><td>Group AB</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>ValueSet </b></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.80</p><p>This value set contains 4 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://loinc.org-LA19710-5"> </a>  <a href="https://loinc.org/LA19710-5/">LA19710-5</a></td><td>http://loinc.org</td><td>Group A</td></tr><tr><td style="white-space:nowrap"><a name="x-http://loinc.org-LA19709-7"> </a>  <a href="https://loinc.org/LA19709-7/">LA19709-7</a></td><td>http://loinc.org</td><td>Group B</td></tr><tr><td style="white-space:nowrap"><a name="x-http://loinc.org-LA19708-9"> </a>  <a href="https://loinc.org/LA19708-9/">LA19708-9</a></td><td>http://loinc.org</td><td>Group O</td></tr><tr><td style="white-space:nowrap"><a name="x-http://loinc.org-LA28449-9"> </a>  <a href="https://loinc.org/LA28449-9/">LA28449-9</a></td><td>http://loinc.org</td><td>Group AB</td></tr></table></div>
 
   <hr/>
   <p>
@@ -306,7 +307,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 2, 2024 18:26-0600">2024-12-02</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 15, 2025 15:39-0500">2025-04-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

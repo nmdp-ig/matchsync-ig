@@ -258,7 +258,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:msPatient.resource","Bundle.entry.resource","","SubjectOfCare Client Resident
-","",0,1,"","","","Patient {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient]]} {[]}
+","",0,1,"Y","","","Patient {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient]]} {[]}
 ","Information about an individual or animal receiving health care services","The US Core Patient Profile is based upon the core FHIR Patient Resource and designed to meet the applicable patient demographic data elements from the 2015 Edition Common Clinical Data Set.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act","Patient[classCode=PAT]","ClinicalDocument.recordTarget.patientRole"
 "Bundle.entry:msPatient.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -376,7 +376,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:msCmv.resource","Bundle.entry.resource","","Vital Signs
-MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-cmvgroup-observation]]} {[]}
+MeasurementResultsTests","",0,1,"Y","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-cmvgroup-observation]]} {[]}
 ","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","OBX","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN]"
 "Bundle.entry:msCmv.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -493,7 +493,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:msDiagnosis.resource","Bundle.entry.resource","","","",0,1,"","","","Condition {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis]]} {[]}
+"Bundle.entry:msDiagnosis.resource","Bundle.entry.resource","","","",0,1,"Y","","","Condition {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis]]} {[]}
 ","Detailed information about conditions, problems or diagnoses","A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","PPR message","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN, code=ASSERTION, value<Diagnosis]"
 "Bundle.entry:msDiagnosis.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -610,7 +610,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:msPractitionerRole.resource","Bundle.entry.resource","","","",0,1,"","","","PractitionerRole {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role]]} {[]}
+"Bundle.entry:msPractitionerRole.resource","Bundle.entry.resource","","","",0,1,"Y","","","PractitionerRole {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role]]} {[]}
 ","Roles/organizations the practitioner is associated with","A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","PRD (as one example)","Entity. Role, or Act","Role"
 "Bundle.entry:msPractitionerRole.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -727,7 +727,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:msPractitioner.resource","Bundle.entry.resource","","","",0,1,"","","","Practitioner {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner]]} {[]}
+"Bundle.entry:msPractitioner.resource","Bundle.entry.resource","","","",0,1,"Y","","","Practitioner {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner]]} {[]}
 ","A person with a  formal responsibility in the provisioning of healthcare or related services","A person who is directly or indirectly involved in the provisioning of healthcare.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","PRD (as one example)","Entity. Role, or Act","Role"
 "Bundle.entry:msPractitioner.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -844,7 +844,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:msOrgTransplantCenter.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcenter]]} {[]}
+"Bundle.entry:msOrgTransplantCenter.resource","Bundle.entry.resource","","","",0,1,"Y","","","Organization {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcenter]]} {[]}
 ","A grouping of people or organizations with a common purpose","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","(also see master files messages)","Entity. Role, or Act","Organization(classCode=ORG, determinerCode=INST)"
 "Bundle.entry:msOrgTransplantCenter.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -962,7 +962,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:msObsRh.resource","Bundle.entry.resource","","Vital Signs
-MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-rhstatus-observation]]} {[]}
+MeasurementResultsTests","",0,1,"Y","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-rhstatus-observation]]} {[]}
 ","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","OBX","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN]"
 "Bundle.entry:msObsRh.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1080,7 +1080,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:msObsABO.resource","Bundle.entry.resource","","Vital Signs
-MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-abogroup-observation]]} {[]}
+MeasurementResultsTests","",0,1,"Y","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-abogroup-observation]]} {[]}
 ","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","OBX","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN]"
 "Bundle.entry:msObsABO.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1197,7 +1197,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:msObsABORH.resource","Bundle.entry.resource","","Vital Signs
-MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-aborhgroup-observation]]} {[]}
+MeasurementResultsTests","",0,1,"Y","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-aborhgroup-observation]]} {[]}
 ","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","OBX","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN]"
 "Bundle.entry:msObsABORH.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1314,7 +1314,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:msObsTimeline.resource","Bundle.entry.resource","","Vital Signs
-MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-transplant-timeline-observation]]} {[]}
+MeasurementResultsTests","",0,1,"Y","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-transplant-timeline-observation]]} {[]}
 ","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","OBX","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN]"
 "Bundle.entry:msObsTimeline.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1431,7 +1431,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:msObsPreferredProduct.resource","Bundle.entry.resource","","Vital Signs
-MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation]]} {[]}
+MeasurementResultsTests","",0,1,"Y","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation]]} {[]}
 ","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","OBX","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN]"
 "Bundle.entry:msObsPreferredProduct.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1548,7 +1548,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:msObsHeight.resource","Bundle.entry.resource","","Vital Signs
-MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation]]} {[]}
+MeasurementResultsTests","",0,1,"Y","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation]]} {[]}
 ","FHIR Body Height Profile","This profile defines  how to represent Body Height observations in FHIR using a standard LOINC code and UCUM units of measure.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","OBX","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN]"
 "Bundle.entry:msObsHeight.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1665,7 +1665,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:msObsWeight.resource","Bundle.entry.resource","","Vital Signs
-MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-weight-observation]]} {[]}
+MeasurementResultsTests","",0,1,"Y","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-weight-observation]]} {[]}
 ","FHIR Body Weight Profile","This profile defines  how to represent body weight observations in FHIR using a standard LOINC code and UCUM units of measure.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","OBX","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN]"
 "Bundle.entry:msObsWeight.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1782,7 +1782,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:msObsForm117.resource","Bundle.entry.resource","","Vital Signs
-MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-form117-observation]]} {[]}
+MeasurementResultsTests","",0,1,"Y","","","Observation {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-form117-observation]]} {[]}
 ","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","OBX","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN]"
 "Bundle.entry:msObsForm117.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1898,7 +1898,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:msSpecimen.resource","Bundle.entry.resource","","","",0,1,"","","","Specimen {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msspecimen]]} {[]}
+"Bundle.entry:msSpecimen.resource","Bundle.entry.resource","","","",0,1,"Y","","","Specimen {[CanonicalType[http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msspecimen]]} {[]}
 ","Sample for analysis","A sample to be used for analysis.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act","Role[classCode=SPEC]"
 "Bundle.entry:msSpecimen.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2

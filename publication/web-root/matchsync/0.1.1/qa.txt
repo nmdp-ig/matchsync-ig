@@ -1,137 +1,145 @@
 MatchSyncIG : Validation Results
 =========================================
 
-err = 3, warn = 107, info = 85
-IG Publisher Version: 1.7.5
-Generated Mon Dec 02 18:28:47 CST 2024. FHIR version 4.0.1 for nmdp.fhir.matchsync#0.1.1 (canonical = http://fhir.nmdp.org/ig/matchsync)
- Build Errors : 0 / 0 / 0
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Bundle-BundleExample-Practitioner : 0 / 0 / 28
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/CodeSystem-glstring-codesystem : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/CodeSystem-hla-genename-codesystem : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/CodeSystem-nmdp-abo-group-cs : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/CodeSystem-nmdp-abo-rh-group-cs : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/CodeSystem-nmdp-cmv-cs : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/CodeSystem-nmdp-disease-cs : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/CodeSystem-nmdp-diseasestage-cs : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/CodeSystem-nmdp-ethnicity-cs : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/CodeSystem-nmdp-form117-cs : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/CodeSystem-nmdp-language-cs : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/CodeSystem-nmdp-practitioner-role-cs : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/CodeSystem-nmdp-preferred-product-cs : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/CodeSystem-nmdp-race-cs : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/CodeSystem-nmdp-rh-status-cs : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/CodeSystem-nmdp-transplant-timeline-cs : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Condition-MSDiagnosisExample-AML : 0 / 0 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Condition-MSDiagnosisExample-OND : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Condition-a9e56f2a-0827-4efd-a773-ed48c6e2752c : 0 / 0 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ImplementationGuide-nmdp.fhir.matchsync : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-HLA-A-Example : 0 / 3 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-HLA-B-Example : 0 / 3 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-HLA-C-Example : 0 / 3 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-HLA-DPA1-Example : 0 / 3 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-HLA-DPB1-Example : 0 / 3 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-HLA-DQA1-Example : 0 / 3 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-HLA-DQB1-Example : 0 / 3 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-HLA-DRB1-Example : 0 / 3 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-HLA-DRB3-Example : 0 / 3 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-HLA-DRB4-Example : 0 / 3 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-HLA-DRB5-Example : 0 / 3 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-HLA-Multilocus-Genotype-Example : 0 / 6 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-MSABOObsExample : 0 / 1 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-MSABORHObsExample : 0 / 1 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-MSCmvExample : 0 / 1 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-MSForm117Example : 0 / 1 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-MSHeightObsExample : 0 / 1 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-MSPreferredProductExample : 0 / 1 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-MSRhObsExample : 0 / 1 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-MSTransplantTimelineExample : 0 / 1 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Observation-MSWeightObsExample : 0 / 1 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Organization-TCExample : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Patient-3f7d88b1-3e39-4f52-bb9c-5d680b7166b3 : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Patient-MSPatientBirthSex : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Patient-MSPatientExample : 0 / 0 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Patient-MSPatientExample2 : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Patient-MSPatientExample3 : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Patient-MSPatientExample4 : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Patient-MSPatientExample5 : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Patient-MSPatientGenderIdentity : 1 / 0 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Practitioner-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Practitioner-PhysicianExample : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Practitioner-SearchCoordinatorExample : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Practitioner-fe6acf5d-ed53-4758-8d38-10d915c984af : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/PractitionerRole-8fd0ef20-d146-4fff-b2a8-1d607adf9802 : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/PractitionerRole-ReferringPhysicianRoleExample : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/PractitionerRole-SearchCoordinatorRoleExample : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/PractitionerRole-TCPhysicianRoleExample : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/PractitionerRole-ad78058a-c0fe-4ea0-bc86-d2f3770a1944 : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/PractitionerRole-f1942bac-b8b3-45a1-b1d0-6928326d03ce : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/Specimen-MSSpecimenExample : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-hla-a : 0 / 3 / 4
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-hla-b : 0 / 3 / 4
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-hla-c : 0 / 3 / 4
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-hla-dpa1 : 0 / 3 / 4
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-hla-dpb1 : 0 / 3 / 4
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-hla-dqa1 : 0 / 3 / 4
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-hla-dqb1 : 0 / 3 / 4
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-hla-drb1 : 0 / 3 / 4
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-hla-drb3 : 0 / 3 / 4
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-hla-drb4 : 0 / 3 / 4
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-hla-drb5 : 0 / 3 / 4
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-hla-genotype : 0 / 2 / 5
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-ms-abogroup-observation : 0 / 2 / 3
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-ms-aborhgroup-observation : 0 / 2 / 3
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-ms-bundle : 0 / 0 / 3
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-ms-bundle-hla-multilocus : 0 / 1 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-ms-bundle-hla-separate : 0 / 1 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-ms-cmvgroup-observation : 0 / 2 / 3
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-ms-form117-observation : 0 / 2 / 3
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-ms-height-observation : 1 / 0 / 3
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-ms-preferred-product-observation : 0 / 2 / 3
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-ms-rhstatus-observation : 0 / 2 / 3
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-ms-transplant-timeline-observation : 0 / 2 / 3
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-ms-weight-observation : 1 / 0 / 3
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-msdiagnosis : 0 / 4 / 5
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-mspatient : 0 / 0 / 3
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-msspecimen : 0 / 0 / 3
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-nmdp-practitioner : 0 / 0 / 3
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-nmdp-practitioner-role : 0 / 2 / 3
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-number-of-remissions : 0 / 1 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/StructureDefinition-transplantcenter : 0 / 0 / 3
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-hla-geneid-valueset : 0 / 0 / 2
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-icd10-gvhd-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-loinc-abo-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-loinc-abo-rh-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-loinc-cmv-codes : 0 / 1 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-loinc-posneg-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-ms-abo-group-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-ms-abo-rh-group-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-ms-cmv-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-ms-form117-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-ms-rh-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-nmdp-abo-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-nmdp-abo-rh-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-nmdp-cmv-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-nmdp-disease-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-nmdp-diseasestage-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-nmdp-ethnicity-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-nmdp-language-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-nmdp-practitioner-role-vs : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-nmdp-preferred-product-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-nmdp-race-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-nmdp-rh-status-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-nmdp-transplant-timeline-codes : 0 / 0 / 1
- /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/resources/ValueSet-sct-abo-group-codes : 0 / 0 / 1
+err = 5, warn = 164, info = 122
+IG Publisher Version: 1.8.23
+Generated Tue Apr 15 15:42:04 CDT 2025. FHIR version 4.0.1 for nmdp.fhir.matchsync#0.1.2 (canonical = http://fhir.nmdp.org/ig/matchsync)
+ Build Errors : 0 / 1 / 0
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Bundle-BundleExample-Practitioner : 0 / 10 / 28
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-glstring-codesystem : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-hla-genename-codesystem : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-nmdp-GenderIdentity-cs : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-nmdp-abo-group-cs : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-nmdp-abo-rh-group-cs : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-nmdp-cmv-cs : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-nmdp-disease-cs : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-nmdp-diseasestage-cs : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-nmdp-ethnicity-cs : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-nmdp-form117-cs : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-nmdp-language-cs : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-nmdp-practitioner-role-cs : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-nmdp-preferred-product-cs : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-nmdp-race-cs : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-nmdp-rh-status-cs : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/CodeSystem-nmdp-transplant-timeline-cs : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Condition-MSDiagnosisExample-AML : 0 / 1 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Condition-MSDiagnosisExample-OND : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Condition-a9e56f2a-0827-4efd-a773-ed48c6e2752c : 0 / 1 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ImplementationGuide-nmdp.fhir.matchsync : 0 / 3 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-Example-MS-ABOGroup : 0 / 2 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-Example-MS-ABORH : 0 / 2 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-Example-MS-CMV : 0 / 2 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-Example-MS-Form117Compliance : 0 / 2 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-Example-MS-PatientHeight : 0 / 2 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-Example-MS-PatientWeight : 0 / 2 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-Example-MS-PreferredProduct : 0 / 2 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-Example-MS-RhStatus : 0 / 2 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-Example-MS-TransplantTimeline : 2 / 2 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-HLA-A-Example : 0 / 4 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-HLA-B-Example : 0 / 4 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-HLA-C-Example : 0 / 4 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-HLA-DPA1-Example : 0 / 4 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-HLA-DPB1-Example : 0 / 4 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-HLA-DQA1-Example : 0 / 4 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-HLA-DQB1-Example : 0 / 4 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-HLA-DRB1-Example : 0 / 4 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-HLA-DRB3-Example : 0 / 4 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-HLA-DRB4-Example : 0 / 4 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-HLA-DRB5-Example : 0 / 4 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Observation-HLA-Multilocus-Genotype-Example : 0 / 4 / 5
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Organization-TCExample : 0 / 2 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Patient-3f7d88b1-3e39-4f52-bb9c-5d680b7166b3 : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Patient-MSPatientBirthSex : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Patient-MSPatientExample : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Patient-MSPatientExample2 : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Patient-MSPatientExample3 : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Patient-MSPatientExample4 : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Patient-MSPatientExample5 : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Practitioner-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Practitioner-PhysicianExample : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Practitioner-SearchCoordinatorExample : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Practitioner-fe6acf5d-ed53-4758-8d38-10d915c984af : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/PractitionerRole-8fd0ef20-d146-4fff-b2a8-1d607adf9802 : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/PractitionerRole-ReferringPhysicianRoleExample : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/PractitionerRole-SearchCoordinatorRoleExample : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/PractitionerRole-TCPhysicianRoleExample : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/PractitionerRole-ad78058a-c0fe-4ea0-bc86-d2f3770a1944 : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/PractitionerRole-f1942bac-b8b3-45a1-b1d0-6928326d03ce : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/Specimen-MSSpecimenExample : 0 / 2 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-hla-a : 0 / 3 / 7
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-hla-b : 0 / 3 / 6
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-hla-c : 0 / 3 / 6
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-hla-dpa1 : 0 / 3 / 6
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-hla-dpb1 : 0 / 3 / 6
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-hla-dqa1 : 0 / 3 / 6
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-hla-dqb1 : 0 / 3 / 6
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-hla-drb1 : 0 / 3 / 6
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-hla-drb3 : 0 / 3 / 6
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-hla-drb4 : 0 / 3 / 6
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-hla-drb5 : 0 / 3 / 6
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-hla-genotype : 0 / 4 / 5
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-ms-abogroup-observation : 0 / 2 / 3
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-ms-aborhgroup-observation : 0 / 2 / 3
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-ms-bundle : 0 / 0 / 3
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-ms-bundle-hla-multilocus : 0 / 1 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-ms-bundle-hla-separate : 0 / 1 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-ms-cmvgroup-observation : 0 / 2 / 3
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-ms-form117-observation : 0 / 2 / 4
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-ms-height-observation : 1 / 0 / 3
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-ms-preferred-product-observation : 0 / 2 / 3
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-ms-rhstatus-observation : 0 / 2 / 3
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-ms-transplant-timeline-observation : 0 / 2 / 3
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-ms-weight-observation : 1 / 0 / 3
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-msdiagnosis : 0 / 4 / 5
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-mspatient : 0 / 0 / 3
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-msspecimen : 0 / 0 / 3
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-nmdp-practitioner : 0 / 0 / 3
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-nmdp-practitioner-role : 0 / 2 / 3
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-number-of-remissions : 0 / 1 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/StructureDefinition-transplantcenter : 0 / 0 / 3
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-hla-geneid-valueset : 0 / 0 / 2
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-icd10-gvhd-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-loinc-abo-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-loinc-abo-rh-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-loinc-cmv-codes : 1 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-loinc-posneg-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-ms-form117-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-nmdp-GenderIdentity-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-nmdp-abo-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-nmdp-abo-rh-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-nmdp-cmv-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-nmdp-disease-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-nmdp-diseasestage-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-nmdp-ethnicity-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-nmdp-language-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-nmdp-practitioner-role-vs : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-nmdp-preferred-product-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-nmdp-race-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-nmdp-rh-status-codes : 0 / 0 / 1
+ /tmp/ig-builds/nmdp.fhir.matchsync#0.1.3/fsh-generated/resources/ValueSet-nmdp-transplant-timeline-codes : 0 / 0 / 1
 </table>
 == n/a ==
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
 == fsh-generated/resources/Bundle-BundleExample-Practitioner.json ==
-INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[1].resource/*PractitionerRole/ad78058a-c0fe-4ea0-bc86-d2f3770a1944*/.code[0]: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/practitionerrole|0.1.1
-INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[2].resource/*PractitionerRole/8fd0ef20-d146-4fff-b2a8-1d607adf9802*/.code[0]: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/practitionerrole|0.1.1
-INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[3].resource/*PractitionerRole/f1942bac-b8b3-45a1-b1d0-6928326d03ce*/.code[0]: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/practitionerrole|0.1.1
-INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource.stage[0].summary: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/diseasestage|0.1.1
-INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource/*Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c*/.code: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/disease|0.1.1
-INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource/*Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c*/.stage[0].summary: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/diseasestage|0.1.1
+WARNING: Bundle/BundleExample-Practitioner: Bundle.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[0].resource.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[0].resource/*Patient/3f7d88b1-3e39-4f52-bb9c-5d680b7166b3*/.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[1].resource/*PractitionerRole/ad78058a-c0fe-4ea0-bc86-d2f3770a1944*/.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[1].resource/*PractitionerRole/ad78058a-c0fe-4ea0-bc86-d2f3770a1944*/.code[0]: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/practitionerrole|0.1.2
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[2].resource/*PractitionerRole/8fd0ef20-d146-4fff-b2a8-1d607adf9802*/.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[2].resource/*PractitionerRole/8fd0ef20-d146-4fff-b2a8-1d607adf9802*/.code[0]: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/practitionerrole|0.1.2
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[3].resource/*PractitionerRole/f1942bac-b8b3-45a1-b1d0-6928326d03ce*/.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[3].resource/*PractitionerRole/f1942bac-b8b3-45a1-b1d0-6928326d03ce*/.code[0]: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/practitionerrole|0.1.2
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[4].resource/*Practitioner/26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa*/.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[5].resource/*Practitioner/fe6acf5d-ed53-4758-8d38-10d915c984af*/.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource.stage[0].summary: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/diseasestage|0.1.2
+WARNING: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource/*Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c*/.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource/*Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c*/.code: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/disease|0.1.2
+INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource/*Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c*/.stage[0].summary: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/diseasestage|0.1.2
 == fsh-generated/resources/CodeSystem-glstring-codesystem.json ==
 == fsh-generated/resources/CodeSystem-hla-genename-codesystem.json ==
+== fsh-generated/resources/CodeSystem-nmdp-GenderIdentity-cs.json ==
 == fsh-generated/resources/CodeSystem-nmdp-abo-group-cs.json ==
 == fsh-generated/resources/CodeSystem-nmdp-abo-rh-group-cs.json ==
 == fsh-generated/resources/CodeSystem-nmdp-cmv-cs.json ==
@@ -146,189 +154,265 @@ INFORMATION: Bundle/BundleExample-Practitioner: Bundle.entry[6].resource/*Condit
 == fsh-generated/resources/CodeSystem-nmdp-rh-status-cs.json ==
 == fsh-generated/resources/CodeSystem-nmdp-transplant-timeline-cs.json ==
 == fsh-generated/resources/Condition-MSDiagnosisExample-AML.json ==
-INFORMATION: Condition/MSDiagnosisExample-AML: Condition.stage[0].summary: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/diseasestage|0.1.1
+WARNING: Condition/MSDiagnosisExample-AML: Condition.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+INFORMATION: Condition/MSDiagnosisExample-AML: Condition.stage[0].summary: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/diseasestage|0.1.2
 == fsh-generated/resources/Condition-MSDiagnosisExample-OND.json ==
+WARNING: Condition/MSDiagnosisExample-OND: Condition.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/Condition-a9e56f2a-0827-4efd-a773-ed48c6e2752c.json ==
-INFORMATION: Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c: Condition.stage[0].summary: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/diseasestage|0.1.1
+WARNING: Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c: Condition.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+INFORMATION: Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c: Condition.stage[0].summary: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/diseasestage|0.1.2
 == fsh-generated/resources/ImplementationGuide-nmdp.fhir.matchsync.json ==
+WARNING: ImplementationGuide/nmdp.fhir.matchsync: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#4.0.0 released on 2021-06-28, but the most recent appropriate version is 7.0.0. This reference is getting old and the more recent version should be considered
+WARNING: ImplementationGuide/nmdp.fhir.matchsync: ImplementationGuide.dependsOn[3]: The ImplementationGuide uses package hl7.fhir.us.mcode#2.0.0 released on 2022-01-18, but the most recent appropriate version is 3.0.0. This reference is getting old and the more recent version should be considered
+WARNING: ImplementationGuide/nmdp.fhir.matchsync: ImplementationGuide.dependsOn[4]: The ImplementationGuide uses package hl7.fhir.uv.genomics-reporting#2.0.0 released on 2022-05-09, but the most recent appropriate version is 3.0.0. This reference is getting old and the more recent version should be considered
+== fsh-generated/resources/Observation-Example-MS-ABOGroup.json ==
+WARNING: Observation/Example-MS-ABOGroup: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+WARNING: Observation/Example-MS-ABOGroup: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-Example-MS-ABORH.json ==
+WARNING: Observation/Example-MS-ABORH: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+WARNING: Observation/Example-MS-ABORH: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-Example-MS-CMV.json ==
+WARNING: Observation/Example-MS-CMV: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+WARNING: Observation/Example-MS-CMV: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-Example-MS-Form117Compliance.json ==
+WARNING: Observation/Example-MS-Form117Compliance: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+INFORMATION: Observation/Example-MS-Form117Compliance: Observation.code: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/form117compliance|0.1.2
+WARNING: Observation/Example-MS-Form117Compliance: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-Example-MS-PatientHeight.json ==
+WARNING: Observation/Example-MS-PatientHeight: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+WARNING: Observation/Example-MS-PatientHeight: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-Example-MS-PatientWeight.json ==
+WARNING: Observation/Example-MS-PatientWeight: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+WARNING: Observation/Example-MS-PatientWeight: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-Example-MS-PreferredProduct.json ==
+WARNING: Observation/Example-MS-PreferredProduct: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+WARNING: Observation/Example-MS-PreferredProduct: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-Example-MS-RhStatus.json ==
+WARNING: Observation/Example-MS-RhStatus: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+WARNING: Observation/Example-MS-RhStatus: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-Example-MS-TransplantTimeline.json ==
+WARNING: Observation/Example-MS-TransplantTimeline: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+ERROR: Observation/Example-MS-TransplantTimeline: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'P' in the CodeSystem 'http://terminology.nmdp.org/codesystem/transplanttimeline' version '0.1.2'
+ERROR: Observation/Example-MS-TransplantTimeline: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'ValueSet - Transplant Timeline - NMDP' (http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes|0.1.2), and a coding from this value set is required) (codes = http://terminology.nmdp.org/codesystem/transplanttimeline#P)
+WARNING: Observation/Example-MS-TransplantTimeline: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-HLA-A-Example.json ==
+WARNING: Observation/HLA-A-Example: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 WARNING: Observation/HLA-A-Example: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated
-WARNING: Observation/HLA-A-Example: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: Observation/HLA-A-Example: Observation.value.ofType(CodeableConcept).coding[0].system: URL value 'http://glstring.org' does not resolve
+INFORMATION: Observation/HLA-A-Example: Observation.component[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 WARNING: Observation/HLA-A-Example: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-HLA-B-Example.json ==
+WARNING: Observation/HLA-B-Example: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 WARNING: Observation/HLA-B-Example: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated
-WARNING: Observation/HLA-B-Example: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: Observation/HLA-B-Example: Observation.value.ofType(CodeableConcept).coding[0].system: URL value 'http://glstring.org' does not resolve
+INFORMATION: Observation/HLA-B-Example: Observation.component[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 WARNING: Observation/HLA-B-Example: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-HLA-C-Example.json ==
+WARNING: Observation/HLA-C-Example: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 WARNING: Observation/HLA-C-Example: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated
-WARNING: Observation/HLA-C-Example: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: Observation/HLA-C-Example: Observation.value.ofType(CodeableConcept).coding[0].system: URL value 'http://glstring.org' does not resolve
+INFORMATION: Observation/HLA-C-Example: Observation.component[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 WARNING: Observation/HLA-C-Example: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-HLA-DPA1-Example.json ==
+WARNING: Observation/HLA-DPA1-Example: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 WARNING: Observation/HLA-DPA1-Example: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated
-WARNING: Observation/HLA-DPA1-Example: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: Observation/HLA-DPA1-Example: Observation.value.ofType(CodeableConcept).coding[0].system: URL value 'http://glstring.org' does not resolve
+INFORMATION: Observation/HLA-DPA1-Example: Observation.component[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 WARNING: Observation/HLA-DPA1-Example: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-HLA-DPB1-Example.json ==
+WARNING: Observation/HLA-DPB1-Example: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 WARNING: Observation/HLA-DPB1-Example: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated
-WARNING: Observation/HLA-DPB1-Example: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: Observation/HLA-DPB1-Example: Observation.value.ofType(CodeableConcept).coding[0].system: URL value 'http://glstring.org' does not resolve
+INFORMATION: Observation/HLA-DPB1-Example: Observation.component[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 WARNING: Observation/HLA-DPB1-Example: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-HLA-DQA1-Example.json ==
+WARNING: Observation/HLA-DQA1-Example: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 WARNING: Observation/HLA-DQA1-Example: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated
-WARNING: Observation/HLA-DQA1-Example: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: Observation/HLA-DQA1-Example: Observation.value.ofType(CodeableConcept).coding[0].system: URL value 'http://glstring.org' does not resolve
+INFORMATION: Observation/HLA-DQA1-Example: Observation.component[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 WARNING: Observation/HLA-DQA1-Example: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-HLA-DQB1-Example.json ==
+WARNING: Observation/HLA-DQB1-Example: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 WARNING: Observation/HLA-DQB1-Example: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated
-WARNING: Observation/HLA-DQB1-Example: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: Observation/HLA-DQB1-Example: Observation.value.ofType(CodeableConcept).coding[0].system: URL value 'http://glstring.org' does not resolve
+INFORMATION: Observation/HLA-DQB1-Example: Observation.component[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 WARNING: Observation/HLA-DQB1-Example: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-HLA-DRB1-Example.json ==
+WARNING: Observation/HLA-DRB1-Example: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 WARNING: Observation/HLA-DRB1-Example: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated
-WARNING: Observation/HLA-DRB1-Example: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: Observation/HLA-DRB1-Example: Observation.value.ofType(CodeableConcept).coding[0].system: URL value 'http://glstring.org' does not resolve
+INFORMATION: Observation/HLA-DRB1-Example: Observation.component[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 WARNING: Observation/HLA-DRB1-Example: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-HLA-DRB3-Example.json ==
+WARNING: Observation/HLA-DRB3-Example: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 WARNING: Observation/HLA-DRB3-Example: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated
-WARNING: Observation/HLA-DRB3-Example: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: Observation/HLA-DRB3-Example: Observation.value.ofType(CodeableConcept).coding[0].system: URL value 'http://glstring.org' does not resolve
+INFORMATION: Observation/HLA-DRB3-Example: Observation.component[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 WARNING: Observation/HLA-DRB3-Example: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-HLA-DRB4-Example.json ==
+WARNING: Observation/HLA-DRB4-Example: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 WARNING: Observation/HLA-DRB4-Example: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated
-WARNING: Observation/HLA-DRB4-Example: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: Observation/HLA-DRB4-Example: Observation.value.ofType(CodeableConcept).coding[0].system: URL value 'http://glstring.org' does not resolve
+INFORMATION: Observation/HLA-DRB4-Example: Observation.component[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 WARNING: Observation/HLA-DRB4-Example: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-HLA-DRB5-Example.json ==
+WARNING: Observation/HLA-DRB5-Example: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 WARNING: Observation/HLA-DRB5-Example: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated
-WARNING: Observation/HLA-DRB5-Example: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: Observation/HLA-DRB5-Example: Observation.value.ofType(CodeableConcept).coding[0].system: URL value 'http://glstring.org' does not resolve
+INFORMATION: Observation/HLA-DRB5-Example: Observation.component[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 WARNING: Observation/HLA-DRB5-Example: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-HLA-Multilocus-Genotype-Example.json ==
+WARNING: Observation/HLA-Multilocus-Genotype-Example: Observation.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 WARNING: Observation/HLA-Multilocus-Genotype-Example: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://glstring.org' could not be found, so the code cannot be validated
-WARNING: Observation/HLA-Multilocus-Genotype-Example: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
-WARNING: Observation/HLA-Multilocus-Genotype-Example: Observation.component[1].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
-WARNING: Observation/HLA-Multilocus-Genotype-Example: Observation.component[2].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
-WARNING: Observation/HLA-Multilocus-Genotype-Example: Observation.component[3].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: Observation/HLA-Multilocus-Genotype-Example: Observation.value.ofType(CodeableConcept).coding[0].system: URL value 'http://glstring.org' does not resolve
+INFORMATION: Observation/HLA-Multilocus-Genotype-Example: Observation.component[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
+INFORMATION: Observation/HLA-Multilocus-Genotype-Example: Observation.component[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
+INFORMATION: Observation/HLA-Multilocus-Genotype-Example: Observation.component[2].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
+INFORMATION: Observation/HLA-Multilocus-Genotype-Example: Observation.component[3].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 WARNING: Observation/HLA-Multilocus-Genotype-Example: Observation: Best Practice Recommendation: In general, all observations should have a performer
-== fsh-generated/resources/Observation-MSABOObsExample.json ==
-WARNING: Observation/MSABOObsExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
-== fsh-generated/resources/Observation-MSABORHObsExample.json ==
-WARNING: Observation/MSABORHObsExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
-== fsh-generated/resources/Observation-MSCmvExample.json ==
-WARNING: Observation/MSCmvExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
-== fsh-generated/resources/Observation-MSForm117Example.json ==
-INFORMATION: Observation/MSForm117Example: Observation.code: Reference to experimental CodeSystem http://terminology.nmdp.org/codesystem/form117compliance|0.1.1
-WARNING: Observation/MSForm117Example: Observation: Best Practice Recommendation: In general, all observations should have a performer
-== fsh-generated/resources/Observation-MSHeightObsExample.json ==
-WARNING: Observation/MSHeightObsExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
-== fsh-generated/resources/Observation-MSPreferredProductExample.json ==
-WARNING: Observation/MSPreferredProductExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
-== fsh-generated/resources/Observation-MSRhObsExample.json ==
-WARNING: Observation/MSRhObsExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
-== fsh-generated/resources/Observation-MSTransplantTimelineExample.json ==
-WARNING: Observation/MSTransplantTimelineExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
-== fsh-generated/resources/Observation-MSWeightObsExample.json ==
-WARNING: Observation/MSWeightObsExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Organization-TCExample.json ==
+WARNING: Organization/TCExample: Organization.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+WARNING: Organization/TCExample: Organization.identifier[0].system: URL value 'http://terminology.nmdp.org/identifier/transplantcenter' does not resolve
 == fsh-generated/resources/Patient-3f7d88b1-3e39-4f52-bb9c-5d680b7166b3.json ==
+WARNING: Patient/3f7d88b1-3e39-4f52-bb9c-5d680b7166b3: Patient.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/Patient-MSPatientBirthSex.json ==
+WARNING: Patient/MSPatientBirthSex: Patient.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/Patient-MSPatientExample.json ==
-INFORMATION: Patient/MSPatientExample: Patient.extension[3]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient|0.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Patient/MSPatientExample: Patient.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/Patient-MSPatientExample2.json ==
+WARNING: Patient/MSPatientExample2: Patient.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/Patient-MSPatientExample3.json ==
+WARNING: Patient/MSPatientExample3: Patient.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/Patient-MSPatientExample4.json ==
+WARNING: Patient/MSPatientExample4: Patient.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/Patient-MSPatientExample5.json ==
-== fsh-generated/resources/Patient-MSPatientGenderIdentity.json ==
-INFORMATION: Patient/MSPatientGenderIdentity: Patient.extension[3]: This element does not match any known slice defined in the profile http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient|0.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Patient/MSPatientGenderIdentity: Patient.extension[3].value.ofType(CodeableConcept).coding[0].display: Wrong Display Name ''33791000087105':   'Identifies as nonbinary gender (finding)'        ->  'NB': 'Non-binary'
-    #407376001:     'Male-to-female transsexual (finding)'           ->  'SI': 'Self-identified'
-		'407377005':        'Female-to-male transsexual (finding)'            ->  'SI': 'Self-identified'
-		'446131000124102':  'Identifies as non-conforming gender (finding)'   ->  'SI': 'Self-identified'
-		'446141000124107':  'Identifies as female gender (finding)'           ->  'F': 'Female'
-		'446151000124109':  'Identifies as male gender (finding)'             ->  'M': 'Male'
-		'OTH':              'other'                                           ->  'SI': 'Self-identified'
-		'UNK':              'unknown'                                         ->  'SI': 'Self-identified'' for http://snomed.info/sct#446141000124107. Valid display is one of 4 choices: 'Identifies as female gender (finding)', 'Identifies as female gender', 'Female identity' or 'Female gender identity' (for the language(s) 'en')
+WARNING: Patient/MSPatientExample5: Patient.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/Practitioner-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa.json ==
+WARNING: Practitioner/26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa: Practitioner.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/Practitioner-PhysicianExample.json ==
+WARNING: Practitioner/PhysicianExample: Practitioner.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/Practitioner-SearchCoordinatorExample.json ==
+WARNING: Practitioner/SearchCoordinatorExample: Practitioner.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/Practitioner-fe6acf5d-ed53-4758-8d38-10d915c984af.json ==
+WARNING: Practitioner/fe6acf5d-ed53-4758-8d38-10d915c984af: Practitioner.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/PractitionerRole-8fd0ef20-d146-4fff-b2a8-1d607adf9802.json ==
+WARNING: PractitionerRole/8fd0ef20-d146-4fff-b2a8-1d607adf9802: PractitionerRole.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/PractitionerRole-ReferringPhysicianRoleExample.json ==
+WARNING: PractitionerRole/ReferringPhysicianRoleExample: PractitionerRole.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/PractitionerRole-SearchCoordinatorRoleExample.json ==
+WARNING: PractitionerRole/SearchCoordinatorRoleExample: PractitionerRole.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/PractitionerRole-TCPhysicianRoleExample.json ==
+WARNING: PractitionerRole/TCPhysicianRoleExample: PractitionerRole.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/PractitionerRole-ad78058a-c0fe-4ea0-bc86-d2f3770a1944.json ==
+WARNING: PractitionerRole/ad78058a-c0fe-4ea0-bc86-d2f3770a1944: PractitionerRole.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/PractitionerRole-f1942bac-b8b3-45a1-b1d0-6928326d03ce.json ==
+WARNING: PractitionerRole/f1942bac-b8b3-45a1-b1d0-6928326d03ce: PractitionerRole.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
 == fsh-generated/resources/Specimen-MSSpecimenExample.json ==
+WARNING: Specimen/MSSpecimenExample: Specimen.meta.security[0].system: URL value 'http://terminology.nmdp.org/codesystem/transplant-center' does not resolve
+WARNING: Specimen/MSSpecimenExample: Specimen.identifier[0].system: URL value 'http://terminology.nmdp.org/identifier/transplantcenter' does not resolve
 == fsh-generated/resources/StructureDefinition-hla-a.json ==
-WARNING: StructureDefinition/hla-a: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/hla-a: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[20].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+WARNING: StructureDefinition/hla-a: StructureDefinition.snapshot.element[24].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding' to 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.2.0'
+WARNING: StructureDefinition/hla-a: StructureDefinition.snapshot.element[25].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/bodySite'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/bodySite' to 'http://hl7.org/fhir/StructureDefinition/bodySite|5.2.0'
+INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
+INFORMATION: StructureDefinition/hla-a: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hla-a: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-a: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-b.json ==
-WARNING: StructureDefinition/hla-b: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/hla-b: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/hla-b: StructureDefinition.snapshot.element[24].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding' to 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.2.0'
+WARNING: StructureDefinition/hla-b: StructureDefinition.snapshot.element[25].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/bodySite'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/bodySite' to 'http://hl7.org/fhir/StructureDefinition/bodySite|5.2.0'
+INFORMATION: StructureDefinition/hla-b: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
+INFORMATION: StructureDefinition/hla-b: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 INFORMATION: StructureDefinition/hla-b: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-b: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hla-b: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-b: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-c.json ==
-WARNING: StructureDefinition/hla-c: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/hla-c: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/hla-c: StructureDefinition.snapshot.element[24].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding' to 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.2.0'
+WARNING: StructureDefinition/hla-c: StructureDefinition.snapshot.element[25].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/bodySite'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/bodySite' to 'http://hl7.org/fhir/StructureDefinition/bodySite|5.2.0'
+INFORMATION: StructureDefinition/hla-c: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
+INFORMATION: StructureDefinition/hla-c: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 INFORMATION: StructureDefinition/hla-c: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-c: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hla-c: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-c: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-dpa1.json ==
-WARNING: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/hla-dpa1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[24].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding' to 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.2.0'
+WARNING: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[25].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/bodySite'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/bodySite' to 'http://hl7.org/fhir/StructureDefinition/bodySite|5.2.0'
+INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
+INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-dpa1: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-dpb1.json ==
-WARNING: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/hla-dpb1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[24].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding' to 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.2.0'
+WARNING: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[25].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/bodySite'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/bodySite' to 'http://hl7.org/fhir/StructureDefinition/bodySite|5.2.0'
+INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
+INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-dpb1: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-dqa1.json ==
-WARNING: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/hla-dqa1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[24].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding' to 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.2.0'
+WARNING: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[25].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/bodySite'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/bodySite' to 'http://hl7.org/fhir/StructureDefinition/bodySite|5.2.0'
+INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
+INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-dqa1: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-dqb1.json ==
-WARNING: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/hla-dqb1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[24].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding' to 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.2.0'
+WARNING: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[25].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/bodySite'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/bodySite' to 'http://hl7.org/fhir/StructureDefinition/bodySite|5.2.0'
+INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
+INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-dqb1: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-drb1.json ==
-WARNING: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/hla-drb1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[24].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding' to 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.2.0'
+WARNING: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[25].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/bodySite'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/bodySite' to 'http://hl7.org/fhir/StructureDefinition/bodySite|5.2.0'
+INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
+INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-drb1: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-drb3.json ==
-WARNING: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/hla-drb3: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[24].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding' to 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.2.0'
+WARNING: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[25].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/bodySite'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/bodySite' to 'http://hl7.org/fhir/StructureDefinition/bodySite|5.2.0'
+INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
+INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-drb3: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-drb4.json ==
-WARNING: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/hla-drb4: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[24].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding' to 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.2.0'
+WARNING: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[25].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/bodySite'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/bodySite' to 'http://hl7.org/fhir/StructureDefinition/bodySite|5.2.0'
+INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
+INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-drb4: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-drb5.json ==
-WARNING: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/hla-drb5: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://www.genenames.org/geneId' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[24].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding' to 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.2.0'
+WARNING: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[25].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/bodySite'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/bodySite' to 'http://hl7.org/fhir/StructureDefinition/bodySite|5.2.0'
+INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
+INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to experimental CodeSystem http://www.genenames.org/geneId|0.1.2
 INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[79].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-drb5: StructureDefinition.snapshot.element[102].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-hla-genotype.json ==
+WARNING: StructureDefinition/hla-genotype: StructureDefinition.snapshot.element[24].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding' to 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.2.0'
+WARNING: StructureDefinition/hla-genotype: StructureDefinition.snapshot.element[25].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/bodySite'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/bodySite' to 'http://hl7.org/fhir/StructureDefinition/bodySite|5.2.0'
 INFORMATION: StructureDefinition/hla-genotype: StructureDefinition.differential.element[1].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/hla-genotype: StructureDefinition.differential.element[15].binding: The definition for the element 'Observation.component.value[x]' binds to the value set 'http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset' which is experimental, but this structure is not labeled as experimental
 INFORMATION: StructureDefinition/hla-genotype: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
@@ -361,6 +445,7 @@ INFORMATION: StructureDefinition/ms-cmvgroup-observation: StructureDefinition.sn
 WARNING: StructureDefinition/ms-cmvgroup-observation: StructureDefinition.snapshot.element[38].binding: The definition for the element 'Observation.value[x]' binds to the value set 'http://loinc.org/vs/LL3639-3' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-ms-form117-observation.json ==
 WARNING: StructureDefinition/ms-form117-observation: StructureDefinition.snapshot.element[30].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: StructureDefinition/ms-form117-observation: StructureDefinition.snapshot.element[42].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
 WARNING: StructureDefinition/ms-form117-observation: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 INFORMATION: StructureDefinition/ms-form117-observation: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/ms-form117-observation: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
@@ -421,13 +506,10 @@ INFORMATION: ValueSet/hla-geneid-valueset: ValueSet.compose.include[0]: The valu
 == fsh-generated/resources/ValueSet-loinc-abo-codes.json ==
 == fsh-generated/resources/ValueSet-loinc-abo-rh-codes.json ==
 == fsh-generated/resources/ValueSet-loinc-cmv-codes.json ==
-WARNING: ValueSet/loinc-cmv-codes: ValueSet.compose.include[0].concept[4]: The code 'LA113538-6' is not valid in the system http://loinc.org (Unknown code 'LA113538-6' in the CodeSystem 'http://loinc.org' version '2.78')
+ERROR: ValueSet/loinc-cmv-codes: ValueSet.compose.include[0].concept[4]: The code 'LA113538-6' is not valid in the system http://loinc.org (Unknown code 'LA113538-6' in the CodeSystem 'http://loinc.org' version '2.80')
 == fsh-generated/resources/ValueSet-loinc-posneg-codes.json ==
-== fsh-generated/resources/ValueSet-ms-abo-group-codes.json ==
-== fsh-generated/resources/ValueSet-ms-abo-rh-group-codes.json ==
-== fsh-generated/resources/ValueSet-ms-cmv-codes.json ==
 == fsh-generated/resources/ValueSet-ms-form117-codes.json ==
-== fsh-generated/resources/ValueSet-ms-rh-codes.json ==
+== fsh-generated/resources/ValueSet-nmdp-GenderIdentity-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-abo-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-abo-rh-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-cmv-codes.json ==
@@ -440,4 +522,3 @@ WARNING: ValueSet/loinc-cmv-codes: ValueSet.compose.include[0].concept[4]: The c
 == fsh-generated/resources/ValueSet-nmdp-race-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-rh-status-codes.json ==
 == fsh-generated/resources/ValueSet-nmdp-transplant-timeline-codes.json ==
-== fsh-generated/resources/ValueSet-sct-abo-group-codes.json ==
