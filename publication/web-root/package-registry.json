@@ -1,0 +1,42 @@
+{
+  "packages" : [
+    {
+      "path" : "publication/web-root/matchsync/package-list.json",
+      "package-id" : "nmdp.fhir.matchsync",
+      "title" : "MatchSync Implementation Guide",
+      "canonical" : "http://fhir.nmdp.org/ig/matchsync",
+      "category" : "Research",
+      "ci-build" : "http://nmdp-ig.github.io/matchsync-ig",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "0.1.2",
+        "date" : "2024-04-11",
+        "path" : "http://fhir.nmdp.org/ig/matchsync/0.1.2"
+      },
+      "milestone" : {
+        "version" : "0.1.0",
+        "date" : "2023-05-09",
+        "path" : "http://fhir.nmdp.org/ig/matchsync/0.1.0"
+      }
+    },
+    {
+      "path" : "matchsync/package-list.json",
+      "package-id" : "nmdp.fhir.matchsync",
+      "title" : "MatchSync Implementation Guide",
+      "canonical" : "http://fhir.nmdp.org/ig/matchsync",
+      "category" : "Research",
+      "ci-build" : "http://nmdp-ig.github.io/matchsync-ig",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "0.1.2",
+        "date" : "2025-04-16",
+        "path" : "http://fhir.nmdp.org/ig/matchsync/0.1.2"
+      },
+      "milestone" : {
+        "version" : "0.1.2",
+        "date" : "2025-04-16",
+        "path" : "http://fhir.nmdp.org/ig/matchsync/0.1.2"
+      }
+    }
+  ]
+}

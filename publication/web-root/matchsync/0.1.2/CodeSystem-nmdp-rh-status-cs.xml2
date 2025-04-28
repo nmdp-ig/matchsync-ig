@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nmdp-rh-status-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nmdp-rh-status-cs</b></p><a name="nmdp-rh-status-cs"> </a><a name="hcnmdp-rh-status-cs"> </a><a name="nmdp-rh-status-cs-en-US"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/rhstatus</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Rh+<a name="nmdp-rh-status-cs-Rh.43"> </a></td><td>Positive</td></tr><tr><td style="white-space:nowrap">Rh-<a name="nmdp-rh-status-cs-Rh-"> </a></td><td>Negative</td></tr></table></div>
+  </text>
+  <url value="http://terminology.nmdp.org/codesystem/rhstatus"/>
+  <version value="0.1.2"/>
+  <name value="NMDPRhStatusCS"/>
+  <title value="CodeSystem - Blood Group (Rh) - NMDP"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-04-16T10:30:36-05:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="Code System for NMDP Rh Status"/>
+  <copyright value="National Marrow Donor Program"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="Rh+"/>
+    <display value="Positive"/>
+  </concept>
+  <concept>
+    <code value="Rh-"/>
+    <display value="Negative"/>
+  </concept>
+</CodeSystem>

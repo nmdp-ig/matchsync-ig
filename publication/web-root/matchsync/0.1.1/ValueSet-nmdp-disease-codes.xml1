@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nmdp-disease-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nmdp-disease-codes</b></p><a name="nmdp-disease-codes"> </a><a name="hcnmdp-disease-codes"> </a><a name="nmdp-disease-codes-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nmdp-disease-cs.html"><code>http://terminology.nmdp.org/codesystem/disease</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes"/>
+  <version value="0.1.2"/>
+  <name value="NMDPDiseaseVS"/>
+  <title value="ValueSet - Disease - NMDP"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-15T15:35:56-05:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="NMDP disease codes"/>
+  <compose>
+    <include>
+      <system value="http://terminology.nmdp.org/codesystem/disease"/>
+    </include>
+  </compose>
+</ValueSet>

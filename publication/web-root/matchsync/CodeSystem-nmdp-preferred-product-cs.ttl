@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,15 +11,15 @@
   fhir:id [ fhir:v "nmdp-preferred-product-cs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://terminology.nmdp.org/codesystem/preferredproduct</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PBSC<a name=\"nmdp-preferred-product-cs-PBSC\"> </a></td><td>HPC, Apheresis</td></tr><tr><td style=\"white-space:nowrap\">Marrow<a name=\"nmdp-preferred-product-cs-Marrow\"> </a></td><td>HPC, Marrow</td></tr><tr><td style=\"white-space:nowrap\">CBU<a name=\"nmdp-preferred-product-cs-CBU\"> </a></td><td>HPC, Cord Blood</td></tr><tr><td style=\"white-space:nowrap\">NP<a name=\"nmdp-preferred-product-cs-NP\"> </a></td><td>No preference</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"nmdp-preferred-product-cs-U\"> </a></td><td>Unknown</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nmdp-preferred-product-cs</b></p><a name=\"nmdp-preferred-product-cs\"> </a><a name=\"hcnmdp-preferred-product-cs\"> </a><a name=\"nmdp-preferred-product-cs-en-US\"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/preferredproduct</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PBSC<a name=\"nmdp-preferred-product-cs-PBSC\"> </a></td><td>HPC, Apheresis</td></tr><tr><td style=\"white-space:nowrap\">Marrow<a name=\"nmdp-preferred-product-cs-Marrow\"> </a></td><td>HPC, Marrow</td></tr><tr><td style=\"white-space:nowrap\">CBU<a name=\"nmdp-preferred-product-cs-CBU\"> </a></td><td>HPC, Cord Blood</td></tr><tr><td style=\"white-space:nowrap\">NP<a name=\"nmdp-preferred-product-cs-NP\"> </a></td><td>No preference</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"nmdp-preferred-product-cs-U\"> </a></td><td>Unknown</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://terminology.nmdp.org/codesystem/preferredproduct"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "0.1.2"] ; # 
   fhir:name [ fhir:v "NMDPPreferredProductCS"] ; # 
-  fhir:title [ fhir:v "NMDP Preferred Product for Transplant"] ; # 
+  fhir:title [ fhir:v "CodeSystem - Preferred Product - NMDP"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-05-09T13:39:12-05:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-04-16T10:37:17-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NMDP"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NMDP" ] ;
@@ -29,7 +30,7 @@
   ] ) ; # 
   fhir:description [ fhir:v "NMDP Preferred Product for MatchSync patient"] ; # 
   fhir:copyright [ fhir:v "National Marrow Donor Program"] ; # 
-  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [

@@ -1,8 +1,13 @@
+// Alias: NmdpRaceExtension = http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-race
+// Alias: NmdpRaceExtension = http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-ethnicity
+
 Profile:  MSPatient
 Parent:   us-core-patient
 Id:       mspatient
 Description: "Patient needing a transplant"
 * insert MetaSecurityRules
+// * extension contains NmdpRaceExtension named NmdpRaceExt 0..1 MS
+// * extension contains NmdpEthnicityExtension named NmdpEthnicityExt 0..1 MS
 * name 1..* MS
 * name.given 1..* MS
 * name.family 1..1 MS
@@ -48,11 +53,39 @@ Description: "Example of a patient needing a donor using us-core-race and us-cor
 * address.postalCode = "55401"
 * telecom[0].value = "1-612-555-1234"
 * extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2106-3 "White"
-* extension[race].extension[text].valueString = "White"
+// * extension[NmdpRaceExt].extension[nmdp-race].valueCoding = $NMDPRace#AFB "African"
+* extension[race].extension[text].valueString = "African"
 * extension[ethnicity].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "Not Hispanic or Latino"
+// * extension[ethnicity].extension[http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-ethnicity-codes].valueCoding = http://terminology.nmdp.org/codesystem/ethnicity#NHIS     "Not Hispanic or Latino"
 * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
+// * extension[birthsex].valueCode = #F "Allowed values only 'M', 'F' https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.24/expansion"
 * identifier.system = "http://example.org/mrn"
 * identifier.value = "123"
+
+// Extension: NMDPRace
+// Id: nmdp-race
+// Title: "NMDP Race Code Extension"
+// Description: "Extension to use NMDP Race Codes"
+// // * url: "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-race"
+// * value[x] only CodeableConcept
+// * valueCodeableConcept.coding.code from nmdp-race-codes (required)
+
+// Extension: NMDPRace
+// Id: nmdp-race
+// Title: "NMDP Race Code Extension"
+// Description: "Extension to use NMDP Race Codes"
+// // * url: "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-race"
+// * element: NmdpRace
+//   path: "nmdprace"
+//   type: valueCodeableConcept
+//   description: "test"
+
+// Extension: NMDPEthnicity
+// Id: nmdp-ethnicity
+// Title: "NMDP Ethnicity Code Extension"
+// Description: "Extension to use NMDP Ethnicity Codes"
+// * value[x] only CodeableConcept
+// * valueCodeableConcept.coding.code from nmdp-ethnicity-codes (required)
 
 Instance: MSPatientExample2
 InstanceOf: MSPatient
@@ -248,22 +281,6 @@ Description: "Example of a Diagnois: AML"
 * stage.summary.coding[NMDPDiseaseStage].code = #AP
 * stage.summary.coding[NMDPDiseaseStage].display = "Accelerated Phase"
 
-
-// Extension: NMDPRace
-// Id: nmdp-race
-// Title: "NMDP Race Code Extension"
-// Description: "Extension to use NMDP Race Codes"
-// * value[x] only CodeableConcept
-// * valueCodeableConcept.coding.code from nmdp-race-codes (required)
-
-// Extension: NMDPEthnicity
-// Id: nmdp-ethnicity
-// Title: "NMDP Ethnicity Code Extension"
-// Description: "Extension to use NMDP Ethnicity Codes"
-// * value[x] only CodeableConcept
-// * valueCodeableConcept.coding.code from nmdp-ethnicity-codes (required)
-
-
 // Invariant: rac-1
 // Severity: #error
 // Description: "Shall use either NMDP Race extension or us-core-race"
@@ -278,3 +295,26 @@ Invariant:  sec-rc
 Severity:   #error
 Description: "Use transplant center identifier for security tag"
 Expression: "matches('^tc_[0-9]{5}$')"
+
+Instance: MSPatientBirthSex
+InstanceOf: MSPatient
+Description: "Example of a patient using BirthSex codes"
+* meta.security[TransplantCenter].code = #tc_123
+* name
+  * given[0] = "Jane"
+  * family = "Everyperson"
+* gender = #female
+* birthDate = "1974-12-25"
+* address.line[0] = "123 Main St"
+* address.country = "USA"
+* address.city = "Minneapolis"
+* address.state = "MN"
+* address.postalCode = "55401"
+* telecom[0].value = "1-612-555-1234"
+* extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2106-3 "White"
+* extension[race].extension[text].valueString = "White"
+* extension[ethnicity].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "Not Hispanic or Latino"
+* extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
+* extension[birthsex].valueCode = #F "Allowed values only 'M', 'F' https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.24/expansion"
+* identifier.system = "http://example.org/mrn"
+* identifier.value = "123"

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>NMDP.FHIR.MATCHSYNC\NMDP Disease Stage Value Set - FHIR v4.0.1</title>
+    <title>ValueSet - Disease Stage - NMDP -  v0.1.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -18,6 +18,7 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -29,27 +30,29 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"4.35"}
-    h3,h4,h5,h6{--heading-prefix:"4.35"}</style>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.44"}
+    h3,h4,h5,h6{--heading-prefix:"4.44"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.1.2 - ci-build
 
 
             </span>
@@ -86,7 +89,7 @@
     <a href="toc.html">Table of Contents</a>
   </li>
   <li>
-    Guidance
+    <a href="NMDP-PatientImport-Guide-v3.9.pdf">Matchsync Setup Guide</a>
   </li>
   <li>
     <a href="Appendices.html">Appendices</a>
@@ -113,7 +116,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NMDP Disease Stage Value Set</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ValueSet - Disease Stage - NMDP</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -126,7 +129,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the MatchSync Implementation Guide (v0.1.0: Release Draft) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MatchSync Implementation Guide (v0.1.2: Release Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -169,16 +172,16 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">ValueSet: NMDP Disease Stage Value Set
+  <h2 id="root">ValueSet: ValueSet - Disease Stage - NMDP
 (Experimental)
   </h2>
-  <table class="colsi">
+  <table class="colsd">
 
     <tr>
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes|0.1.0"/></span>
+      <span class="copy-text">0.1.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes|0.1.2"/></span>
       </td>
     </tr>
 
@@ -192,9 +195,9 @@
 
       <td colspan="4">
         
-          Active
+          Draft
           
-            as of 2023-05-09
+            as of 2025-04-16
           
         
       </td>
@@ -233,13 +236,14 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-nmdp-diseasestage-cs.html"><code>http://terminology.nmdp.org/codesystem/diseasestage</code></a></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nmdp-diseasestage-codes</b></p><a name="nmdp-diseasestage-codes"> </a><a name="hcnmdp-diseasestage-codes"> </a><a name="nmdp-diseasestage-codes-en-US"> </a>
+<ul><li>Include all codes defined in <a href="CodeSystem-nmdp-diseasestage-cs.html"><code>http://terminology.nmdp.org/codesystem/diseasestage</code></a></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 8 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-nmdp-diseasestage-cs.html">NMDP Disease Stage Code System v0.1.0 (CodeSystem)</a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-diseasestage-AP"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-AP">AP</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Accelerated Phase</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-diseasestage-BP"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-BP">BP</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Blastic Phase</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-diseasestage-CP"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-CP">CP</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Chronic Phase</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-diseasestage-CR"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-CR">CR</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Complete Remission</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-diseasestage-IF"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-IF">IF</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Induction Failure</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-diseasestage-IT"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-IT">IT</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Induction Therapy</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-diseasestage-RE"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-RE">RE</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Relapse</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.nmdp.org-codesystem-diseasestage-RM"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-RM">RM</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Remission</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>ValueSet </b></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on <a href="CodeSystem-nmdp-diseasestage-cs.html">codesystem CodeSystem - Disease Stage - NMDP v0.1.2 (CodeSystem)</a></p><p>This value set contains 8 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/diseasestage-AP"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-AP">AP</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Accelerated Phase</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/diseasestage-BP"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-BP">BP</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Blastic Phase</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/diseasestage-CP"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-CP">CP</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Chronic Phase</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/diseasestage-CR"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-CR">CR</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Complete Remission</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/diseasestage-IF"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-IF">IF</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Induction Failure</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/diseasestage-IT"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-IT">IT</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Induction Therapy</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/diseasestage-RE"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-RE">RE</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Relapse</td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.nmdp.org/codesystem/diseasestage-RM"> </a>  <a href="CodeSystem-nmdp-diseasestage-cs.html#nmdp-diseasestage-cs-RM">RM</a></td><td>http://terminology.nmdp.org/codesystem/diseasestage</td><td>Remission</td></tr></table></div>
 
   <hr/>
   <p>
@@ -291,20 +295,14 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 9, 2023 13:39-0500">2023-05-09</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 16, 2025 10:41-0500">2025-04-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -321,7 +319,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -331,16 +329,7 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
-  
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-
-<!-- / feedback form  -->
-
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->
   </body>

@@ -1,0 +1,523 @@
+FHIR IG Publisher Version 1.7.5 (Git# 2ec44e6c46a5). Built 2024-11-22T15:37:50.312Z (10 days old)
+Detected Java version: 17.0.13 from /usr/lib/jvm/java-17-openjdk-amd64 on amd64 (64bit). 3942MB available
+dir = /mnt/c/Users/mbrisson/.vscode/matchsync-ig, path = /home/mbrisson/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files/PolicyPak/:/mnt/c/DEVAPPS/Oracle-SQLDeveloper-18.4.0-376.1900-x64:/mnt/c/Program Files/nodejs/:/mnt/c/Users/mbrisson/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Ruby33-x64/bin:/mnt/c/Users/mbrisson/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/mbrisson/AppData/Local/Programs/Git/cmd:/mnt/c/Users/mbrisson/OneDrive - NMDP/Desktop/Maven/apache-maven-3.8.3/bin:/mnt/c/Users/mbrisson/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/mbrisson/AppData/Roaming/npm:/mnt/c/Users/mbrisson/.jdks/corretto-17.0.12/bin:/mnt/c/Users/mbrisson/AppData/Roaming/nvm:/snap/bin
+Parameters: -go-publish -source /mnt/c/Users/mbrisson/.vscode/matchsync-ig/build -web /mnt/c/Users/mbrisson/.vscode/matchsync-ig/publication/web-root -registry /mnt/c/Users/mbrisson/.vscode/matchsync-ig/publication/web-root/ig-registry/fhir-ig-list.json -history /mnt/c/Users/mbrisson/.vscode/matchsync-ig/publication/web-root/ig-history -templates /mnt/c/Users/mbrisson/.vscode/matchsync-ig/publication/web-root/history-templates -resetTxErrors
+---------------
+Publication Run: publish /mnt/c/Users/mbrisson/.vscode/matchsync-ig/build to /mnt/c/Users/mbrisson/.vscode/matchsync-ig/publication/web-root
+Run Number: 8
+Relative directory for IG is '/matchsync'
+===== Web Publication Run Details ===============================
+ Source IG: nmdp.fhir.matchsync#0.1.1 : http://fhir.nmdp.org/ig/matchsync (R4) from /mnt/c/Users/mbrisson/.vscode/matchsync-ig/build
+All checks passed. Do the publication build from /mnt/c/Users/mbrisson/.vscode/matchsync-ig/build and publish to /tmp/web-root/run-20241202/matchsync
+Prepare Build space in /tmp/nmdp.fhir.matchsync#0.1.1
+Build IG at /mnt/c/Users/mbrisson/.vscode/matchsync-ig/build: final copy suitable for publication (in /tmp/nmdp.fhir.matchsync#0.1.1)
+FHIR IG Publisher Version 1.7.5 (Git# 2ec44e6c46a5). Built 2024-11-22T15:37:50.312Z (10 days old)   
+Detected Java version: 17.0.13 from /usr/lib/jvm/java-17-openjdk-amd64 on Linux/amd64 (64bit). 3942MB available
+dir = /mnt/c/Users/mbrisson/.vscode/matchsync-ig, path = /home/mbrisson/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files/PolicyPak/:/mnt/c/DEVAPPS/Oracle-SQLDeveloper-18.4.0-376.1900-x64:/mnt/c/Program Files/nodejs/:/mnt/c/Users/mbrisson/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Ruby33-x64/bin:/mnt/c/Users/mbrisson/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/mbrisson/AppData/Local/Programs/Git/cmd:/mnt/c/Users/mbrisson/OneDrive - NMDP/Desktop/Maven/apache-maven-3.8.3/bin:/mnt/c/Users/mbrisson/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/mbrisson/AppData/Roaming/npm:/mnt/c/Users/mbrisson/.jdks/corretto-17.0.12/bin:/mnt/c/Users/mbrisson/AppData/Roaming/nvm:/snap/bin
+Parameters: -ig /tmp/nmdp.fhir.matchsync#0.1.1 -resetTx -publish http://fhir.nmdp.org/ig/matchsync/0.1.1 -no-exit
+Start Clock @ Monday, December 2, 2024 at 6:23:24 PM Central Standard Time (2024-12-02T18:23:24-06:00)
+                                                                                                    
+Build FHIR IG from /tmp/nmdp.fhir.matchsync#0.1.1                                                    (00:00.112 / 00:00.114, 43Mb)
+Build Formal Publication package, intended for http://fhir.nmdp.org/ig/matchsync/0.1.1               (00:00.006 / 00:00.119, 43Mb)
+API keys loaded from /home/mbrisson/.fhir/fhir-settings.json                                         (00:00.000 / 00:00.120, 43Mb)
+Package Cache: /home/mbrisson/.fhir/packages                                                         (00:00.018 / 00:00.138, 43Mb)
+Run Sushi on /tmp/nmdp.fhir.matchsync#0.1.1                                                          (00:00.003 / 00:00.141, 43Mb)
+Sushi: info  Running SUSHI v3.12.1 (implements FHIR Shorthand specification v3.0.0)                  (00:01.110 / 00:01.252, 45Mb)
+Sushi: info  Arguments:                                                                              (00:00.000 / 00:01.252, 45Mb)
+Sushi: info    --require-latest                                                                      (00:00.000 / 00:01.253, 45Mb)
+Sushi: info    --out /tmp/nmdp.fhir.matchsync#0.1.1                                                  (00:00.000 / 00:01.253, 45Mb)
+Sushi: info    /tmp/nmdp.fhir.matchsync#0.1.1                                                        (00:00.000 / 00:01.253, 45Mb)
+Sushi: info  Using configuration file: /tmp/nmdp.fhir.matchsync#0.1.1/sushi-config.yaml              (00:01.532 / 00:02.786, 45Mb)
+Sushi: info  Importing FSH text...                                                                   (00:00.065 / 00:02.851, 45Mb)
+Sushi: info  Preprocessed 10 documents with 17 aliases.                                              (00:00.137 / 00:02.989, 45Mb)
+Sushi: info  Imported 70 definitions and 45 instances.                                               (00:00.022 / 00:03.011, 45Mb)
+Sushi: info  Checking /home/mbrisson/.fhir/packages for hl7.fhir.uv.tools#current...                 (00:00.000 / 00:03.012, 45Mb)
+Sushi: info  Found hl7.fhir.uv.tools#current in /home/mbrisson/.fhir/packages.                       (00:00.047 / 00:03.060, 45Mb)
+Sushi: info  Loaded package hl7.fhir.uv.tools#current                                                (00:00.920 / 00:03.981, 45Mb)
+Sushi: info  Checking /home/mbrisson/.fhir/packages for hl7.terminology.r4#6.1.0...                  (00:00.744 / 00:04.725, 45Mb)
+Sushi: info  Found hl7.terminology.r4#6.1.0 in /home/mbrisson/.fhir/packages.                        (00:01.486 / 00:06.212, 45Mb)
+Sushi: info  Loaded package hl7.terminology.r4#6.1.0                                                 (00:00.000 / 00:06.212, 45Mb)
+Sushi: info  Checking /home/mbrisson/.fhir/packages for hl7.fhir.uv.extensions.r4#5.1.0...           (00:00.815 / 00:07.027, 45Mb)
+Sushi: info  Found hl7.fhir.uv.extensions.r4#5.1.0 in /home/mbrisson/.fhir/packages.                 (00:00.956 / 00:07.984, 45Mb)
+Sushi: info  Loaded package hl7.fhir.uv.extensions.r4#5.1.0                                          (00:00.000 / 00:07.984, 45Mb)
+Sushi: info  Checking /home/mbrisson/.fhir/packages for hl7.fhir.us.core#4.0.0...                    (00:00.000 / 00:07.984, 45Mb)
+Sushi: info  Found hl7.fhir.us.core#4.0.0 in /home/mbrisson/.fhir/packages.                          (00:00.344 / 00:08.329, 45Mb)
+Sushi: info  Loaded package hl7.fhir.us.core#4.0.0                                                   (00:00.000 / 00:08.329, 45Mb)
+Sushi: info  Checking /home/mbrisson/.fhir/packages for hl7.fhir.us.mcode#2.0.0...                   (00:00.000 / 00:08.330, 45Mb)
+Sushi: info  Found hl7.fhir.us.mcode#2.0.0 in /home/mbrisson/.fhir/packages.                         (00:00.436 / 00:08.766, 45Mb)
+Sushi: info  Loaded package hl7.fhir.us.mcode#2.0.0                                                  (00:00.000 / 00:08.766, 45Mb)
+Sushi: info  Checking /home/mbrisson/.fhir/packages for hl7.fhir.uv.genomics-reporting#2.0.0...      (00:00.000 / 00:08.767, 45Mb)
+Sushi: info  Found hl7.fhir.uv.genomics-reporting#2.0.0 in /home/mbrisson/.fhir/packages.            (00:00.428 / 00:09.195, 45Mb)
+Sushi: info  Loaded package hl7.fhir.uv.genomics-reporting#2.0.0                                     (00:00.000 / 00:09.195, 45Mb)
+Sushi: info  Checking /home/mbrisson/.fhir/packages for hl7.fhir.r4.core#4.0.1...                    (00:00.000 / 00:09.195, 45Mb)
+Sushi: info  Found hl7.fhir.r4.core#4.0.1 in /home/mbrisson/.fhir/packages.                          (00:01.381 / 00:10.577, 45Mb)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                                                   (00:00.000 / 00:10.578, 45Mb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.027 / 00:10.605, 45Mb)
+Sushi: info  Converted 31 FHIR StructureDefinitions.                                                 (00:01.367 / 00:11.973, 45Mb)
+Sushi: info  Converted 15 FHIR CodeSystems.                                                          (00:00.300 / 00:12.273, 45Mb)
+Sushi: info  Converted 24 FHIR ValueSets.                                                            (00:00.305 / 00:12.579, 45Mb)
+Sushi: info  Converted 45 FHIR instances.                                                            (00:01.228 / 00:13.808, 45Mb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.000 / 00:13.808, 45Mb)
+Sushi: info  Exported 115 FHIR resources as JSON.                                                    (00:00.194 / 00:14.003, 45Mb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.002 / 00:14.005, 45Mb)
+Sushi: info  Generated ImplementationGuide-nmdp.fhir.matchsync.json                                  (00:00.032 / 00:14.038, 45Mb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.000 / 00:14.039, 45Mb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.000 / 00:14.039, 45Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:14.039, 45Mb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.000 / 00:14.039, 45Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:14.040, 45Mb)
+Sushi: | |      30       |      1       |      0       |       0       | |                           (00:00.000 / 00:14.040, 45Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:14.040, 45Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:14.040, 45Mb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.000 / 00:14.041, 45Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:14.041, 45Mb)
+Sushi: | |         24         |        15         |         45         | |                           (00:00.000 / 00:14.041, 45Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:14.041, 45Mb)
+Sushi: |                                                                 |                           (00:00.000 / 00:14.042, 45Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:14.042, 45Mb)
+Sushi: | You've turned the tide.                0 Errors      0 Warnings |                           (00:00.000 / 00:14.042, 45Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:14.042, 45Mb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.845 / 00:14.888, 62Mb)
+Load Template from fhir.base.template#current                                                        (00:01.672 / 00:16.561, 77Mb)
+
+onLoad.findSpreadsheets:
+
+onLoad.updateIg:
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1/template/onLoad-ig-working.xml to /tmp/nmdp.fhir.matchsync#0.1.1/template/onLoad-ig-updated.xml
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1/template/scripts/onLoad.xslt
+
+onLoad.extend:
+
+onLoad:
+Root directory: /tmp/nmdp.fhir.matchsync#0.1.1                                                       (02:17.405 / 02:33.966, 90Mb)
+Terminology Cache is at /tmp/nmdp.fhir.matchsync#0.1.1/input-cache/txcache. Clearing now             (00:00.313 / 02:34.280, 98Mb)
+Core Package hl7.fhir.r4.core#4.0.1
+Running Terminology Log: /tmp/ohfu-fhir-ig-14467149324324983460.log
+Connect to Terminology Server at http://tx.fhir.org                                                  (00:02.309 / 02:36.590, 362Mb)
+Load Package hl7.fhir.pubpack#0.1.9
+Load Package hl7.fhir.xver-extensions#0.1.0
+Load Package hl7.terminology.r4#6.1.0
+Load Package hl7.fhir.uv.extensions.r4#5.1.0
+Load Package hl7.fhir.uv.bulkdata#1.0.1
+Load Package us.nlm.vsac#0.3.0
+Load Package hl7.fhir.us.core#4.0.0
+Load Package hl7.fhir.us.mcode#2.0.0
+Load Package hl7.fhir.uv.genomics-reporting#2.0.0
+Load Package hl7.fhir.uv.tools.r4#0.3.0
+Load R5 Specials
+Initialization complete                                                                              (00:06.434 / 02:43.024, 549Mb)
+Load Content                                                                                         (00:00.000 / 02:43.024, 549Mb)
+Using en-US as the default narrative language. (no language information in Implementation Guide or command line) (00:00.069 / 02:43.094, 560Mb)
+loadPrePages from FetchedFile[/tmp/nmdp.fhir.matchsync#0.1.1/input/includes] as /tmp/nmdp.fhir.matchsync#0.1.1/input/includes
+loadPrePages from FetchedFile[/tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/includes] as /tmp/nmdp.fhir.matchsync#0.1.1/fsh-generated/includes
+loadPrePages from FetchedFile[/tmp/nmdp.fhir.matchsync#0.1.1/input/pagecontent] as /tmp/nmdp.fhir.matchsync#0.1.1/input/pagecontent
+Fetch http://fhir.nmdp.org/ig/matchsync/package-list.json for version check                          (00:01.313 / 02:44.407, 656Mb)
+Processing Conformance Resources                                                                     (00:15.404 / 02:59.812, 662Mb)
+Load Dependency Info                                                                                 (00:00.001 / 02:59.813, 663Mb)
+Load Info                                                                                            (00:00.003 / 02:59.817, 663Mb)
+Load Resources                                                                                       (00:00.010 / 02:59.828, 664Mb)
+Load Paths                                                                                           (00:00.453 / 03:00.281, 732Mb)
+Generating Snapshots                                                                                 (00:00.000 / 03:00.282, 732Mb)
+The slice definition for Observation.code.coding has a minimum of 0 but the slices add up to a minimum of 1
+The slice definition for Observation.code.coding has a minimum of 0 but the slices add up to a minimum of 1
+Check R4 / R4B                                                                                       (00:01.022 / 03:01.305, 1Gb)
+Assign Comparison Ids                                                                                (00:00.009 / 03:01.314, 1Gb)
+Propagating status                                                                                   (00:00.000 / 03:01.315, 1Gb)
+Generating Narratives                                                                                (00:00.000 / 03:01.315, 1Gb)
+Validating Conformance Resources                                                                     (00:08.780 / 03:10.096, 693Mb)
+Check profiles & code systems                                                                        (00:17.822 / 03:27.919, 780Mb)
+Check realm rules                                                                                    (00:00.004 / 03:27.923, 780Mb)
+Previous Version Comparison                                                                          (00:00.000 / 03:27.923, 780Mb)
+Validating Resources                                                                                 (00:00.041 / 03:27.965, 801Mb)
+Processing Provenance Records                                                                        (00:11.411 / 03:39.377, 1Gb)
+Generating Outputs in /tmp/nmdp.fhir.matchsync#0.1.1/output                                          (00:00.000 / 03:39.377, 1Gb)
+Warning @ Unable to read the git branch: not a git repository (or any of the parent directories): .git
+Generate Native Outputs                                                                              (00:00.216 / 03:39.594, 1Gb)
+Run Template                                                                                         (00:07.781 / 03:47.375, 1Gb)
+
+onGenerate.checkVersions:
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1/template/onGenerate-ig-working.xml to /tmp/nmdp.fhir.matchsync#0.1.1/template/versions.txt
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1/template/scripts/onGenerate.getVersions.xslt
+
+onGenerate.r5-schemas:
+      [get] Getting: http://build.fhir.org/fhir-single.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1/input-cache/schemas/R5/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/fhir-xhtml.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1/input-cache/schemas/R5/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xml.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1/input-cache/schemas/R5/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xmldsig-core-schema.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1/input-cache/schemas/R5/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r4-schemas:
+      [get] Getting: http://hl7.org/fhir/R4/fhir-single.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1/input-cache/schemas/R4/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/fhir-xhtml.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1/input-cache/schemas/R4/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xml.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1/input-cache/schemas/R4/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xmldsig-core-schema.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1/input-cache/schemas/R4/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r3-schemas:
+
+onGenerate.r2b-schemas:
+
+onGenerate.r2-schemas:
+
+onGenerate.schemas:
+
+onGenerate.data:
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1/template/onGenerate-ig-working.xml to /tmp/nmdp.fhir.matchsync#0.1.1/temp/pages/_data/artifacts.json
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1/template/scripts/onGenerate.data.xslt
+
+onGenerate.setup:
+
+onGenerate.infoFile:
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1/template/onGenerate-ig-working.xml to /tmp/nmdp.fhir.matchsync#0.1.1/temp/pages/_data/info.json
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1/template/scripts/onGenerate.genJson.xslt
+
+onGenerate.processIncludes:
+     [copy] Copying 16 files to /tmp/nmdp.fhir.matchsync#0.1.1/temp/pages/_includes
+
+onGenerate.processIg:
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1/template/onGenerate-ig-working.xml to /tmp/nmdp.fhir.matchsync#0.1.1/template/onGenerate-ig-working.1.xml
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1/template/scripts/onGenerate.group.xslt
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1/template/onGenerate-ig-working.1.xml to /tmp/nmdp.fhir.matchsync#0.1.1/template/onGenerate-ig-working.2.xml
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1/template/scripts/onGenerate.groupSort.xslt
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1/template/onGenerate-ig-working.2.xml to /tmp/nmdp.fhir.matchsync#0.1.1/template/onGenerate-ig-updated.xml
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1/template/scripts/onGenerate.final.xslt
+
+onGenerate.igQa:
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1/template/onGenerate-ig-updated.xml to /tmp/nmdp.fhir.matchsync#0.1.1/template/ongenerate-validation-igqa.json
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1/template/scripts/onGenerate.qa.xslt
+
+onGenerate.artifactList:
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1/template/onGenerate-ig-updated.xml to /tmp/nmdp.fhir.matchsync#0.1.1/temp/pages/_includes/artifacts.xml
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1/template/scripts/createArtifactSummary.xslt
+
+check-plantumlfiles:
+
+onGenerate.plantUml.ig:
+
+onGenerate.plantUml.template:
+
+onGenerate.plantUml:
+
+onGenerate.copyDataFiles:
+
+onGenerate.extend:
+
+onGenerate:
+Template Done                                                                                        (00:01.589 / 03:48.965, 1Gb)
+Generate HTML Outputs                                                                                (00:00.000 / 03:48.965, 1Gb)
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Generate Summaries                                                                                   (00:40.182 / 04:29.147, 2Gb)
+Generating Summary Outputs                                                                           (00:00.000 / 04:29.148, 2Gb)
+DB Cumulative Time invested: 00:00:03.15
+Sending Usage Stats to Server                                                                        (00:08.981 / 04:38.129, 3Gb)
+## Memory (MB): Use = 3117, Free = 824, Total = 3942, Max = 3942                                     (00:00.005 / 04:38.135, 3Gb)
+Reclaiming memory...                                                                                 (00:00.000 / 04:38.135, 3Gb)
+## Memory (MB): Use = 2614, Free = 1327, Total = 3942, Max = 3942                                    (00:00.259 / 04:38.395, 2Gb)
+Run jekyll: jekyll build --destination "/tmp/nmdp.fhir.matchsync#0.1.1/output" (in folder /tmp/nmdp.fhir.matchsync#0.1.1/temp/pages) (00:00.000 / 04:38.395, 2Gb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.000 / 04:38.396, 2Gb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.000 / 04:38.396, 2Gb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.000 / 04:38.396, 2Gb)
+Jekyll: Source: /tmp/nmdp.fhir.matchsync#0.1.1/temp/pages                                            (00:00.355 / 04:38.752, 2Gb)
+Jekyll: Generating...                                                                                (00:00.000 / 04:38.752, 2Gb)
+Jekyll: done in 2.132 seconds.                                                                       (00:02.132 / 04:40.884, 2Gb)
+
+onCheck.extend:
+
+onCheck:
+
+Installing nmdp.fhir.matchsync#0.1.1
+Checking Output HTML                                                                                 (00:04.463 / 04:45.348, 2Gb)
+found 1798 files                                                                                     (00:00.003 / 04:45.351, 2Gb)
+........................................
+........................................
+  ... 1798 html files, 0 pages invalid xhtml (0%)                                                    (00:27.424 / 05:12.776, 2Gb)
+  ... 842210 links, 0 broken links (0%)                                                              (00:00.000 / 05:12.776, 2Gb)
+Generate fragment-usage-analysis.csv                                                                 (00:00.000 / 05:12.776, 2Gb)
+Build final .zip                                                                                     (00:00.004 / 05:12.781, 2Gb)
+Final .zip built                                                                                     (00:02.605 / 05:15.386, 2Gb)
+Built. Times: loading: 00:16.783, generate: 02:36.371, narrative generation: 00:08.780, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:02.503, validation: 00:29.211 (#116), template: 00:01.593 (#3) (00:20.828 / 05:36.215, 2Gb)
+Generating QA                                                                                        (00:00.000 / 05:36.215, 2Gb)
+Validation output in /tmp/nmdp.fhir.matchsync#0.1.1/output/qa.html
+Errors: 3, Warnings: 107, Info: 85, Broken Links: 0 (00:00.758 / 05:36.973, 2Gb)
+Finished. Max Memory Used = 3Gb. Log file saved in /tmp/fhir-ig-publisher-tmp.log                    (00:00.007 / 05:36.981, 2Gb)
+Prepare Build space in /tmp/nmdp.fhir.matchsync#0.1.1-milestone
+Build IG at /mnt/c/Users/mbrisson/.vscode/matchsync-ig/build: final copy suitable for publication (in /tmp/nmdp.fhir.matchsync#0.1.1-milestone) (milestone build)
+FHIR IG Publisher Version 1.7.5 (Git# 2ec44e6c46a5). Built 2024-11-22T15:37:50.312Z (10 days old)   
+Detected Java version: 17.0.13 from /usr/lib/jvm/java-17-openjdk-amd64 on Linux/amd64 (64bit). 3942MB available
+dir = /mnt/c/Users/mbrisson/.vscode/matchsync-ig, path = /home/mbrisson/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files/PolicyPak/:/mnt/c/DEVAPPS/Oracle-SQLDeveloper-18.4.0-376.1900-x64:/mnt/c/Program Files/nodejs/:/mnt/c/Users/mbrisson/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Ruby33-x64/bin:/mnt/c/Users/mbrisson/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/mbrisson/AppData/Local/Programs/Git/cmd:/mnt/c/Users/mbrisson/OneDrive - NMDP/Desktop/Maven/apache-maven-3.8.3/bin:/mnt/c/Users/mbrisson/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/mbrisson/AppData/Roaming/npm:/mnt/c/Users/mbrisson/.jdks/corretto-17.0.12/bin:/mnt/c/Users/mbrisson/AppData/Roaming/nvm:/snap/bin
+Parameters: -ig /tmp/nmdp.fhir.matchsync#0.1.1-milestone -publish http://fhir.nmdp.org/ig/matchsync/0.1.1 -milestone -no-exit
+Start Clock @ Monday, December 2, 2024 at 6:28:51 PM Central Standard Time (2024-12-02T18:28:51-06:00)
+                                                                                                    
+Build FHIR IG from /tmp/nmdp.fhir.matchsync#0.1.1-milestone                                          (00:00.001 / 00:00.001, 3Gb)
+Build Formal Publication package, intended for http://fhir.nmdp.org/ig/matchsync/0.1.1               (00:00.000 / 00:00.001, 3Gb)
+API keys loaded from /home/mbrisson/.fhir/fhir-settings.json                                         (00:00.000 / 00:00.001, 3Gb)
+Package Cache: /home/mbrisson/.fhir/packages                                                         (00:00.000 / 00:00.001, 3Gb)
+Run Sushi on /tmp/nmdp.fhir.matchsync#0.1.1-milestone                                                (00:00.000 / 00:00.001, 3Gb)
+Sushi: info  Running SUSHI v3.12.1 (implements FHIR Shorthand specification v3.0.0)                  (00:00.671 / 00:00.673, 3Gb)
+Sushi: info  Arguments:                                                                              (00:00.000 / 00:00.673, 3Gb)
+Sushi: info    --require-latest                                                                      (00:00.000 / 00:00.674, 3Gb)
+Sushi: info    --out /tmp/nmdp.fhir.matchsync#0.1.1-milestone                                        (00:00.000 / 00:00.674, 3Gb)
+Sushi: info    /tmp/nmdp.fhir.matchsync#0.1.1-milestone                                              (00:00.000 / 00:00.674, 3Gb)
+Sushi: info  Using configuration file: /tmp/nmdp.fhir.matchsync#0.1.1-milestone/sushi-config.yaml    (00:01.175 / 00:01.850, 3Gb)
+Sushi: info  Importing FSH text...                                                                   (00:00.064 / 00:01.914, 3Gb)
+Sushi: info  Preprocessed 10 documents with 17 aliases.                                              (00:00.134 / 00:02.048, 3Gb)
+Sushi: info  Imported 70 definitions and 45 instances.                                               (00:00.029 / 00:02.078, 3Gb)
+Sushi: info  Checking /home/mbrisson/.fhir/packages for hl7.fhir.uv.tools#current...                 (00:00.001 / 00:02.078, 3Gb)
+Sushi: info  Found hl7.fhir.uv.tools#current in /home/mbrisson/.fhir/packages.                       (00:00.045 / 00:02.124, 3Gb)
+Sushi: info  Loaded package hl7.fhir.uv.tools#current                                                (00:00.752 / 00:02.877, 3Gb)
+Sushi: info  Checking /home/mbrisson/.fhir/packages for hl7.terminology.r4#6.1.0...                  (00:00.718 / 00:03.595, 3Gb)
+Sushi: info  Found hl7.terminology.r4#6.1.0 in /home/mbrisson/.fhir/packages.                        (00:00.400 / 00:03.996, 3Gb)
+Sushi: info  Loaded package hl7.terminology.r4#6.1.0                                                 (00:00.000 / 00:03.996, 3Gb)
+Sushi: info  Checking /home/mbrisson/.fhir/packages for hl7.fhir.uv.extensions.r4#5.1.0...           (00:00.788 / 00:04.784, 3Gb)
+Sushi: info  Found hl7.fhir.uv.extensions.r4#5.1.0 in /home/mbrisson/.fhir/packages.                 (00:00.367 / 00:05.152, 3Gb)
+Sushi: info  Loaded package hl7.fhir.uv.extensions.r4#5.1.0                                          (00:00.000 / 00:05.152, 3Gb)
+Sushi: info  Checking /home/mbrisson/.fhir/packages for hl7.fhir.us.core#4.0.0...                    (00:00.000 / 00:05.152, 3Gb)
+Sushi: info  Found hl7.fhir.us.core#4.0.0 in /home/mbrisson/.fhir/packages.                          (00:00.319 / 00:05.472, 3Gb)
+Sushi: info  Loaded package hl7.fhir.us.core#4.0.0                                                   (00:00.000 / 00:05.472, 3Gb)
+Sushi: info  Checking /home/mbrisson/.fhir/packages for hl7.fhir.us.mcode#2.0.0...                   (00:00.000 / 00:05.472, 3Gb)
+Sushi: info  Found hl7.fhir.us.mcode#2.0.0 in /home/mbrisson/.fhir/packages.                         (00:00.356 / 00:05.829, 3Gb)
+Sushi: info  Loaded package hl7.fhir.us.mcode#2.0.0                                                  (00:00.000 / 00:05.829, 3Gb)
+Sushi: info  Checking /home/mbrisson/.fhir/packages for hl7.fhir.uv.genomics-reporting#2.0.0...      (00:00.000 / 00:05.829, 3Gb)
+Sushi: info  Found hl7.fhir.uv.genomics-reporting#2.0.0 in /home/mbrisson/.fhir/packages.            (00:00.382 / 00:06.212, 3Gb)
+Sushi: info  Loaded package hl7.fhir.uv.genomics-reporting#2.0.0                                     (00:00.000 / 00:06.212, 3Gb)
+Sushi: info  Checking /home/mbrisson/.fhir/packages for hl7.fhir.r4.core#4.0.1...                    (00:00.000 / 00:06.212, 3Gb)
+Sushi: info  Found hl7.fhir.r4.core#4.0.1 in /home/mbrisson/.fhir/packages.                          (00:00.911 / 00:07.124, 3Gb)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                                                   (00:00.000 / 00:07.124, 3Gb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.043 / 00:07.168, 3Gb)
+Sushi: info  Converted 31 FHIR StructureDefinitions.                                                 (00:01.330 / 00:08.498, 3Gb)
+Sushi: info  Converted 15 FHIR CodeSystems.                                                          (00:00.302 / 00:08.801, 3Gb)
+Sushi: info  Converted 24 FHIR ValueSets.                                                            (00:00.300 / 00:09.102, 3Gb)
+Sushi: info  Converted 45 FHIR instances.                                                            (00:01.220 / 00:10.322, 3Gb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.002 / 00:10.324, 3Gb)
+Sushi: info  Exported 115 FHIR resources as JSON.                                                    (00:00.196 / 00:10.521, 3Gb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.002 / 00:10.524, 3Gb)
+Sushi: info  Generated ImplementationGuide-nmdp.fhir.matchsync.json                                  (00:00.022 / 00:10.546, 3Gb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.000 / 00:10.546, 3Gb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.000 / 00:10.547, 3Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:10.547, 3Gb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.000 / 00:10.547, 3Gb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:10.547, 3Gb)
+Sushi: | |      30       |      1       |      0       |       0       | |                           (00:00.000 / 00:10.548, 3Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:10.548, 3Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:10.548, 3Gb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.000 / 00:10.548, 3Gb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:10.548, 3Gb)
+Sushi: | |         24         |        15         |         45         | |                           (00:00.000 / 00:10.548, 3Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:10.548, 3Gb)
+Sushi: |                                                                 |                           (00:00.000 / 00:10.549, 3Gb)
+Sushi: ===================================================================                           (00:00.000 / 00:10.549, 3Gb)
+Sushi: | That was a big fish to fry!            0 Errors      0 Warnings |                           (00:00.000 / 00:10.549, 3Gb)
+Sushi: ===================================================================                           (00:00.000 / 00:10.549, 3Gb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.009 / 00:10.558, 3Gb)
+Load Template from fhir.base.template#current                                                        (00:00.004 / 00:10.562, 3Gb)
+
+onLoad.findSpreadsheets:
+
+onLoad.updateIg:
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/onLoad-ig-working.xml to /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/onLoad-ig-updated.xml
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/scripts/onLoad.xslt
+
+onLoad.extend:
+
+onLoad:
+Root directory: /tmp/nmdp.fhir.matchsync#0.1.1-milestone                                             (02:41.493 / 02:52.056, 2Gb)
+Terminology Cache is at /tmp/nmdp.fhir.matchsync#0.1.1-milestone/input-cache/txcache. 11 files in cache (00:00.241 / 02:52.297, 2Gb)
+Core Package hl7.fhir.r4.core#4.0.1
+Running Terminology Log: /tmp/ohfu-fhir-ig-2964232950789163068.log
+Connect to Terminology Server at http://tx.fhir.org                                                  (00:00.863 / 02:53.161, 768Mb)
+Load Package hl7.fhir.pubpack#0.1.9
+Load Package hl7.fhir.xver-extensions#0.1.0
+Load Package hl7.terminology.r4#6.1.0
+Load Package hl7.fhir.uv.extensions.r4#5.1.0
+Load Package hl7.fhir.uv.bulkdata#1.0.1
+Load Package us.nlm.vsac#0.3.0
+Load Package hl7.fhir.us.core#4.0.0
+Load Package hl7.fhir.us.mcode#2.0.0
+Load Package hl7.fhir.uv.genomics-reporting#2.0.0
+Load Package hl7.fhir.uv.tools.r4#0.3.0
+Load R5 Specials
+Initialization complete                                                                              (00:03.787 / 02:56.949, 700Mb)
+Load Content                                                                                         (00:00.000 / 02:56.949, 700Mb)
+Using en-US as the default narrative language. (no language information in Implementation Guide or command line) (00:00.004 / 02:56.954, 710Mb)
+loadPrePages from FetchedFile[/tmp/nmdp.fhir.matchsync#0.1.1-milestone/input/includes] as /tmp/nmdp.fhir.matchsync#0.1.1-milestone/input/includes
+loadPrePages from FetchedFile[/tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/includes] as /tmp/nmdp.fhir.matchsync#0.1.1-milestone/fsh-generated/includes
+loadPrePages from FetchedFile[/tmp/nmdp.fhir.matchsync#0.1.1-milestone/input/pagecontent] as /tmp/nmdp.fhir.matchsync#0.1.1-milestone/input/pagecontent
+Fetch http://fhir.nmdp.org/ig/matchsync/package-list.json for version check                          (00:00.355 / 02:57.309, 802Mb)
+Processing Conformance Resources                                                                     (00:15.410 / 03:12.720, 808Mb)
+Load Dependency Info                                                                                 (00:00.000 / 03:12.721, 809Mb)
+Load Info                                                                                            (00:00.000 / 03:12.722, 809Mb)
+Load Resources                                                                                       (00:00.000 / 03:12.722, 809Mb)
+Load Paths                                                                                           (00:00.124 / 03:12.846, 874Mb)
+Generating Snapshots                                                                                 (00:00.000 / 03:12.847, 874Mb)
+The slice definition for Observation.code.coding has a minimum of 0 but the slices add up to a minimum of 1
+The slice definition for Observation.code.coding has a minimum of 0 but the slices add up to a minimum of 1
+Check R4 / R4B                                                                                       (00:00.601 / 03:13.448, 1Gb)
+Assign Comparison Ids                                                                                (00:00.005 / 03:13.453, 1Gb)
+Propagating status                                                                                   (00:00.000 / 03:13.453, 1Gb)
+Generating Narratives                                                                                (00:00.000 / 03:13.453, 1Gb)
+Validating Conformance Resources                                                                     (00:01.287 / 03:14.741, 1Gb)
+Check profiles & code systems                                                                        (00:08.922 / 03:23.664, 1Gb)
+Check realm rules                                                                                    (00:00.003 / 03:23.667, 1Gb)
+Previous Version Comparison                                                                          (00:00.000 / 03:23.667, 1Gb)
+Validating Resources                                                                                 (00:00.014 / 03:23.681, 1Gb)
+Processing Provenance Records                                                                        (00:03.319 / 03:27.001, 1Gb)
+Generating Outputs in /tmp/nmdp.fhir.matchsync#0.1.1-milestone/output                                (00:00.000 / 03:27.001, 1Gb)
+Warning @ Unable to read the git branch: not a git repository (or any of the parent directories): .git
+Generate Native Outputs                                                                              (00:00.276 / 03:27.278, 1Gb)
+Run Template                                                                                         (00:06.629 / 03:33.908, 1Gb)
+
+onGenerate.checkVersions:
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/onGenerate-ig-working.xml to /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/versions.txt
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/scripts/onGenerate.getVersions.xslt
+
+onGenerate.r5-schemas:
+      [get] Getting: http://build.fhir.org/fhir-single.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1-milestone/input-cache/schemas/R5/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/fhir-xhtml.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1-milestone/input-cache/schemas/R5/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xml.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1-milestone/input-cache/schemas/R5/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xmldsig-core-schema.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1-milestone/input-cache/schemas/R5/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r4-schemas:
+      [get] Getting: http://hl7.org/fhir/R4/fhir-single.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1-milestone/input-cache/schemas/R4/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/fhir-xhtml.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1-milestone/input-cache/schemas/R4/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xml.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1-milestone/input-cache/schemas/R4/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xmldsig-core-schema.xsd
+      [get] To: /tmp/nmdp.fhir.matchsync#0.1.1-milestone/input-cache/schemas/R4/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r3-schemas:
+
+onGenerate.r2b-schemas:
+
+onGenerate.r2-schemas:
+
+onGenerate.schemas:
+
+onGenerate.data:
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/onGenerate-ig-working.xml to /tmp/nmdp.fhir.matchsync#0.1.1-milestone/temp/pages/_data/artifacts.json
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/scripts/onGenerate.data.xslt
+
+onGenerate.setup:
+
+onGenerate.infoFile:
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/onGenerate-ig-working.xml to /tmp/nmdp.fhir.matchsync#0.1.1-milestone/temp/pages/_data/info.json
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/scripts/onGenerate.genJson.xslt
+
+onGenerate.processIncludes:
+     [copy] Copying 16 files to /tmp/nmdp.fhir.matchsync#0.1.1-milestone/temp/pages/_includes
+
+onGenerate.processIg:
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/onGenerate-ig-working.xml to /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/onGenerate-ig-working.1.xml
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/scripts/onGenerate.group.xslt
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/onGenerate-ig-working.1.xml to /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/onGenerate-ig-working.2.xml
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/scripts/onGenerate.groupSort.xslt
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/onGenerate-ig-working.2.xml to /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/onGenerate-ig-updated.xml
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/scripts/onGenerate.final.xslt
+
+onGenerate.igQa:
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/onGenerate-ig-updated.xml to /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/ongenerate-validation-igqa.json
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/scripts/onGenerate.qa.xslt
+
+onGenerate.artifactList:
+     [xslt] Processing /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/onGenerate-ig-updated.xml to /tmp/nmdp.fhir.matchsync#0.1.1-milestone/temp/pages/_includes/artifacts.xml
+     [xslt] Loading stylesheet /tmp/nmdp.fhir.matchsync#0.1.1-milestone/template/scripts/createArtifactSummary.xslt
+
+check-plantumlfiles:
+
+onGenerate.plantUml.ig:
+
+onGenerate.plantUml.template:
+
+onGenerate.plantUml:
+
+onGenerate.copyDataFiles:
+
+onGenerate.extend:
+
+onGenerate:
+Template Done                                                                                        (00:01.127 / 03:35.035, 1Gb)
+Generate HTML Outputs                                                                                (00:00.000 / 03:35.036, 1Gb)
+Generate Summaries                                                                                   (00:26.435 / 04:01.471, 2Gb)
+Generating Summary Outputs                                                                           (00:00.000 / 04:01.472, 2Gb)
+DB Cumulative Time invested: 00:00:02.475
+Sending Usage Stats to Server                                                                        (00:05.680 / 04:07.152, 3Gb)
+## Memory (MB): Use = 3232, Free = 709, Total = 3942, Max = 3942                                     (00:00.000 / 04:07.153, 3Gb)
+Reclaiming memory...                                                                                 (00:00.000 / 04:07.154, 3Gb)
+## Memory (MB): Use = 2614, Free = 1327, Total = 3942, Max = 3942                                    (00:00.300 / 04:07.454, 2Gb)
+Run jekyll: jekyll build --destination "/tmp/nmdp.fhir.matchsync#0.1.1-milestone/output" (in folder /tmp/nmdp.fhir.matchsync#0.1.1-milestone/temp/pages) (00:00.000 / 04:07.455, 2Gb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.000 / 04:07.455, 2Gb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.000 / 04:07.455, 2Gb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.000 / 04:07.455, 2Gb)
+Jekyll: Source: /tmp/nmdp.fhir.matchsync#0.1.1-milestone/temp/pages                                  (00:00.191 / 04:07.647, 2Gb)
+Jekyll: Generating...                                                                                (00:00.000 / 04:07.647, 2Gb)
+Jekyll: done in 2.132 seconds.                                                                       (00:02.131 / 04:09.778, 2Gb)
+
+onCheck.extend:
+
+onCheck:
+
+Installing nmdp.fhir.matchsync#0.1.1
+Checking Output HTML                                                                                 (00:03.165 / 04:12.944, 2Gb)
+found 1798 files                                                                                     (00:00.002 / 04:12.946, 2Gb)
+........................................
+........................................
+  ... 1798 html files, 0 pages invalid xhtml (0%)                                                    (00:26.327 / 04:39.274, 2Gb)
+  ... 842210 links, 0 broken links (0%)                                                              (00:00.000 / 04:39.274, 2Gb)
+Generate fragment-usage-analysis.csv                                                                 (00:00.000 / 04:39.274, 2Gb)
+Build final .zip                                                                                     (00:00.003 / 04:39.278, 2Gb)
+Final .zip built                                                                                     (00:02.728 / 04:42.006, 2Gb)
+Built. Times: loading: 00:15.771, generate: 01:50.237, narrative generation: 00:01.286, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:02.336, validation: 00:12.227 (#116), template: 00:01.130 (#3) (00:20.952 / 05:02.959, 2Gb)
+Generating QA                                                                                        (00:00.000 / 05:02.959, 2Gb)
+Validation output in /tmp/nmdp.fhir.matchsync#0.1.1-milestone/output/qa.html
+Errors: 3, Warnings: 107, Info: 85, Broken Links: 0 (00:00.498 / 05:03.458, 3Gb)
+Finished. Max Memory Used = 3Gb. Log file saved in /tmp/fhir-ig-publisher-tmp.log                    (00:00.004 / 05:03.462, 3Gb)
+Keep a copy of the build directory at /tmp/web-root/run-20241202/ig-build-zips/nmdp.fhir.matchsync#0.1.1.zip
+
+ok. All checks passed. Publish v0.1.1 to /tmp/web-root/run-20241202/matchsync/0.1.1
+Copy the IG to /tmp/web-root/run-20241202/matchsync/0.1.1
+Update /tmp/web-root/run-20241202/matchsync/package-list.json
+Publish Box Statement: This page is part of the MatchSync Implementation Guide (v0.1.1: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions</a>
+no html insert in /tmp/web-root/run-20241202/matchsync/0.1.1/qa-txservers.html
+  .. 742 files checked, 742 updated
+  .. 235 clones checked, 470 updated
+  .. 116 redirections (116 created/updated)
+This is a milestone release - publish v0.1.1 to /tmp/web-root/run-20241202/matchsync
+Publish Box Statement: This page is part of the MatchSync Implementation Guide (v0.1.1: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions</a>
+no html insert in /tmp/nmdp.fhir.matchsync#0.1.1-milestone/output/qa-txservers.html
+  .. 742 files checked, 742 updated
+  .. 235 clones checked, 470 updated
+  .. 116 redirections (116 created/updated)
+Check for Files to delete
+  ... 0 files
+Copy to new IG to /tmp/web-root/run-20241202/matchsync
+Update history page at /tmp/web-root/run-20241202/matchsync from /mnt/c/Users/mbrisson/.vscode/matchsync-ig/publication/web-root/ig-history and /mnt/c/Users/mbrisson/.vscode/matchsync-ig/publication/web-root/history-templates
+Build is complete. Copy from /tmp/web-root/run-20241202
+nmdp.fhir.matchsync (http://fhir.nmdp.org/ig/matchsync): MatchSync Implementation Guide @ http://nmdp-ig.github.io/matchsync-ig
+  candidate: Release Draft 0.1.1/4.0.1 @ http://fhir.nmdp.org/ig/matchsync/0.1.1

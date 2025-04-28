@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="MSForm117Example"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-form117-observation"/>
+    <security>
+      <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+      <code value="tc_123"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation MSForm117Example</b></p><a name="MSForm117Example"> </a><a name="hcMSForm117Example"> </a><a name="MSForm117Example-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://terminology.nmdp.org/codesystem/form117compliance FORM117COMPLIANCE}">Form 117 Compliance</span></p><p><b>subject</b>: <a href="Patient-MSPatientExample.html">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: true</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://terminology.nmdp.org/codesystem/form117compliance"/>
+      <code value="FORM117COMPLIANCE"/>
+      <display value="Form 117 Compliance"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/MSPatientExample"/>
+  </subject>
+  <effectiveDateTime value="2022-05-01"/>
+  <valueBoolean value="true"/>
+</Observation>

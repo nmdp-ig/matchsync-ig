@@ -1,0 +1,48 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "nmdp-preferred-product-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nmdp-preferred-product-cs</b></p><a name=\"nmdp-preferred-product-cs\"> </a><a name=\"hcnmdp-preferred-product-cs\"> </a><a name=\"nmdp-preferred-product-cs-en-US\"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/preferredproduct</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PBSC<a name=\"nmdp-preferred-product-cs-PBSC\"> </a></td><td>HPC, Apheresis</td></tr><tr><td style=\"white-space:nowrap\">Marrow<a name=\"nmdp-preferred-product-cs-Marrow\"> </a></td><td>HPC, Marrow</td></tr><tr><td style=\"white-space:nowrap\">CBU<a name=\"nmdp-preferred-product-cs-CBU\"> </a></td><td>HPC, Cord Blood</td></tr><tr><td style=\"white-space:nowrap\">NP<a name=\"nmdp-preferred-product-cs-NP\"> </a></td><td>No preference</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"nmdp-preferred-product-cs-U\"> </a></td><td>Unknown</td></tr></table></div>"
+  },
+  "url" : "http://terminology.nmdp.org/codesystem/preferredproduct",
+  "version" : "0.1.2",
+  "name" : "NMDPPreferredProductCS",
+  "title" : "CodeSystem - Preferred Product - NMDP",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-04-15T15:35:56-05:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "NMDP Preferred Product for MatchSync patient",
+  "copyright" : "National Marrow Donor Program",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "PBSC",
+    "display" : "HPC, Apheresis"
+  },
+  {
+    "code" : "Marrow",
+    "display" : "HPC, Marrow"
+  },
+  {
+    "code" : "CBU",
+    "display" : "HPC, Cord Blood"
+  },
+  {
+    "code" : "NP",
+    "display" : "No preference"
+  },
+  {
+    "code" : "U",
+    "display" : "Unknown"
+  }]
+}

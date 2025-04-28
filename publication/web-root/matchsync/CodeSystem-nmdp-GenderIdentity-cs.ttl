@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-GenderIdentity-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nmdp-GenderIdentity-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nmdp-GenderIdentity-cs</b></p><a name=\"nmdp-GenderIdentity-cs\"> </a><a name=\"hcnmdp-GenderIdentity-cs\"> </a><a name=\"nmdp-GenderIdentity-cs-en-US\"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/genderidentity</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">F<a name=\"nmdp-GenderIdentity-cs-F\"> </a></td><td>Female</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"nmdp-GenderIdentity-cs-M\"> </a></td><td>Male</td></tr><tr><td style=\"white-space:nowrap\">NB<a name=\"nmdp-GenderIdentity-cs-NB\"> </a></td><td>Non-binary</td></tr><tr><td style=\"white-space:nowrap\">SI<a name=\"nmdp-GenderIdentity-cs-SI\"> </a></td><td>Self-identified</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.nmdp.org/codesystem/genderidentity"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.2"] ; # 
+  fhir:name [ fhir:v "NMDPGenderIdentityCS"] ; # 
+  fhir:title [ fhir:v "CodeSystem - Patient Gender Identity - NMDP"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-04-16T10:37:17-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NMDP"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NMDP" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://bethematch.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code System for NMDP diseases"] ; # 
+  fhir:copyright [ fhir:v "National Marrow Donor Program"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "F" ] ;
+     fhir:display [ fhir:v "Female" ]
+  ] [
+     fhir:code [ fhir:v "M" ] ;
+     fhir:display [ fhir:v "Male" ]
+  ] [
+     fhir:code [ fhir:v "NB" ] ;
+     fhir:display [ fhir:v "Non-binary" ]
+  ] [
+     fhir:code [ fhir:v "SI" ] ;
+     fhir:display [ fhir:v "Self-identified" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

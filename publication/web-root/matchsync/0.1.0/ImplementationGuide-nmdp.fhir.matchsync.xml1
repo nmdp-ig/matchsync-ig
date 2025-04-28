@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="nmdp.fhir.matchsync"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MatchSyncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide nmdp.fhir.matchsync</b></p><a name="nmdp.fhir.matchsync"> </a><a name="hcnmdp.fhir.matchsync"> </a><a name="nmdp.fhir.matchsync-en-US"> </a><h2>MatchSyncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync</pre></div>
   </text>
   <url value="http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync"/>
   <version value="0.1.0"/>
   <name value="MatchSyncIG"/>
   <status value="draft"/>
-  <date value="2023-05-09T13:30:22-05:00"/>
+  <date value="2024-11-08T17:25:20-06:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -27,7 +27,15 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="5.0.0"/>
+    <version value="6.0.2"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.1.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_us_core">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
@@ -311,6 +319,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="active-tables"/>
       </extension>
       <extension url="value">
@@ -350,7 +366,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#current"/>
+      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -618,6 +634,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueCode value="active-tables"/>
       </extension>
       <extension url="value">
@@ -658,633 +682,6 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hla-genotype"/>
-      </reference>
-      <name value="HLA Genotype Observation"/>
-      <description value="HLA Genotype profile of genotype observation"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hla-a"/>
-      </reference>
-      <name value="HLA_A"/>
-      <description value="Genotype for HLA-A"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hla-b"/>
-      </reference>
-      <name value="HLA_B"/>
-      <description value="Genotype for HLA-B"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hla-c"/>
-      </reference>
-      <name value="HLA_C"/>
-      <description value="Genotype for HLA-C"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hla-dpa1"/>
-      </reference>
-      <name value="HLA_DPA1"/>
-      <description value="Genotype for HLA-DPA1"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hla-dpb1"/>
-      </reference>
-      <name value="HLA_DPB1"/>
-      <description value="Genotype for HLA-DPB1"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hla-dqa1"/>
-      </reference>
-      <name value="HLA_DQA1"/>
-      <description value="Genotype for HLA-DQA1"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hla-dqb1"/>
-      </reference>
-      <name value="HLA_DQB1"/>
-      <description value="Genotype for HLA-DQB1"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hla-drb1"/>
-      </reference>
-      <name value="HLA_DRB1"/>
-      <description value="Genotype for HLA-DRB1"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hla-drb3"/>
-      </reference>
-      <name value="HLA_DRB3"/>
-      <description value="Genotype for HLA-DRB3"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hla-drb4"/>
-      </reference>
-      <name value="HLA_DRB4"/>
-      <description value="Genotype for HLA-DRB4"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hla-drb5"/>
-      </reference>
-      <name value="HLA_DRB5"/>
-      <description value="Genotype for HLA-DRB5"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ms-abogroup-observation"/>
-      </reference>
-      <name value="MSABOGroupObservation"/>
-      <description value="ABO Blood Group of Patient"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ms-bundle"/>
-      </reference>
-      <name value="MatchSync Bundle"/>
-      <description value="Collection Bundle for MatchSync"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ms-bundle-hla-multilocus"/>
-      </reference>
-      <name value="MatchSync Bundle with single multilocus HLA"/>
-      <description value="Collection Bundle for MatchSync with single HLA multilocus Observation"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ms-bundle-hla-separate"/>
-      </reference>
-      <name value="MatchSync Bundle with Separate HLA"/>
-      <description value="Collection Bundle for MatchSync with separate HLA Observations for each locus"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ms-height-observation"/>
-      </reference>
-      <name value="MSHeightObservation"/>
-      <description value="Height of Patient"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mspatient"/>
-      </reference>
-      <name value="MSPatient"/>
-      <description value="Patient needing a transplant"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ms-preferred-product-observation"/>
-      </reference>
-      <name value="MSPreferredProduct"/>
-      <description value="Preferred product for transplant"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/msdiagnosis"/>
-      </reference>
-      <name value="MSPrimaryDiagnosis"/>
-      <description value="Diagnosis"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ms-rhstatus-observation"/>
-      </reference>
-      <name value="MSRhStatusObservation"/>
-      <description value="Rh status of Patient"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/msspecimen"/>
-      </reference>
-      <name value="MSSpecimen"/>
-      <description value="Patient sample used for HLA typing"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ms-transplant-timeline-observation"/>
-      </reference>
-      <name value="MSTransplantTimeline"/>
-      <description value="Transplant timeline for patient"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ms-weight-observation"/>
-      </reference>
-      <name value="MSWeightObservation"/>
-      <description value="Weight of Patient"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/nmdp-practitioner"/>
-      </reference>
-      <name value="NMDPPractitioner"/>
-      <description value="NMDP Practitioner"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/nmdp-practitioner-role"/>
-      </reference>
-      <name value="NMDPPractitionerRole"/>
-      <description value="NMDP Practitioner Role"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/transplantcenter"/>
-      </reference>
-      <name value="TransplantCenter"/>
-      <description value="Transplant Center"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/number-of-remissions"/>
-      </reference>
-      <name value="Number of Remissions of Primary Diagnosis"/>
-      <description value="Number of Remissions of Primary Diagnosis"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/hla-geneid-valueset"/>
-      </reference>
-      <name value="HLA Gene Name Value Set"/>
-      <description value="HLA HGNC GeneIds Valueset"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/icd10-gvhd-codes"/>
-      </reference>
-      <name value="GVHD ICD-10 Codes"/>
-      <description value="GVHD ICD-10 Codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/loinc-abo-codes"/>
-      </reference>
-      <name value="LOINC ABO group Value Set"/>
-      <description value="LOINC codes for ABO blood group"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ms-abo-group-codes"/>
-      </reference>
-      <name value="MatchSync ABO Group Value Set"/>
-      <description value="MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ms-rh-codes"/>
-      </reference>
-      <name value="MatchSync Rh Value Sets"/>
-      <description value="MatchSync codes for blood Rh. Combines NMDP and LOINC code"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nmdp-abo-codes"/>
-      </reference>
-      <name value="NMDP Blood Group Value Set"/>
-      <description value="NMDP blood group codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nmdp-diseasestage-codes"/>
-      </reference>
-      <name value="NMDP Disease Stage Value Set"/>
-      <description value="NMDP disease stage codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nmdp-disease-codes"/>
-      </reference>
-      <name value="NMDP Disease Value Set"/>
-      <description value="NMDP disease codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nmdp-ethnicity-codes"/>
-      </reference>
-      <name value="NMDP Ethnicity Value Set"/>
-      <description value="NMDP ethnicity codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nmdp-language-codes"/>
-      </reference>
-      <name value="NMDP Language Value Set"/>
-      <description value="NMDP language codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nmdp-practitioner-role-vs"/>
-      </reference>
-      <name value="NMDP Practitioner Role Value Set"/>
-      <description value="NMDP Practitioner Role Value Set"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nmdp-preferred-product-codes"/>
-      </reference>
-      <name value="NMDP Preferred Product Value Set"/>
-      <description value="NMDP preferred product codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nmdp-race-codes"/>
-      </reference>
-      <name value="NMDP Race Value Set"/>
-      <description value="NMDP race codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nmdp-rh-status-codes"/>
-      </reference>
-      <name value="NMDP Codes for Rh status"/>
-      <description value="NMDP codes for Rh staus"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nmdp-transplant-timeline-codes"/>
-      </reference>
-      <name value="NMDP Transplant Timeline Value Set"/>
-      <description value="NMDP transplant timeline codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/loinc-posneg-codes"/>
-      </reference>
-      <name value="LOINC Pos|Neg Value Set"/>
-      <description value="LOINC codes for Positive and Negative"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/sct-abo-group-codes"/>
-      </reference>
-      <name value="Snomed CT ABO group Value Set"/>
-      <description value="Snomed CT codes for ABO blood group"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/glstring-codesystem"/>
-      </reference>
-      <name value="Genotype List String Code CodeSystem"/>
-      <description value="Genotype List String Codesystem used for HLA reporting"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/hla-genename-codesystem"/>
-      </reference>
-      <name value="HLA HGNC GeneID CodeSystem"/>
-      <description value="CodeSystem of HLA gene group subset of HGNC GeneId Codesystem"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nmdp-abo-group-cs"/>
-      </reference>
-      <name value="NMDP Blood Group Code System"/>
-      <description value="Code System for NMDP ABO blood groups"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nmdp-disease-cs"/>
-      </reference>
-      <name value="NMDP Disease Code System"/>
-      <description value="Code System for NMDP diseases"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nmdp-diseasestage-cs"/>
-      </reference>
-      <name value="NMDP Disease Stage Code System"/>
-      <description value="Code System for NMDP disease stages"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nmdp-ethnicity-cs"/>
-      </reference>
-      <name value="NMDP Ethnicity Code System"/>
-      <description value="Code System for NMDP ethnicity"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nmdp-language-cs"/>
-      </reference>
-      <name value="NMDP Language Code System"/>
-      <description value="Code System for NMDP languages"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nmdp-practitioner-role-cs"/>
-      </reference>
-      <name value="NMDP Practitioner Roles"/>
-      <description value="NMDP Practitioner Roles"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nmdp-preferred-product-cs"/>
-      </reference>
-      <name value="NMDP Preferred Product for Transplant"/>
-      <description value="NMDP Preferred Product for MatchSync patient"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nmdp-race-cs"/>
-      </reference>
-      <name value="NMDP Race Code System"/>
-      <description value="Code System for NMDP diseases"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nmdp-rh-status-cs"/>
-      </reference>
-      <name value="NMDP Rh Code System"/>
-      <description value="Code System for NMDP Rh Status"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nmdp-transplant-timeline-cs"/>
-      </reference>
-      <name value="NMDP Transplant Timeline Code System"/>
-      <description value="Code System for NMDP transplant timeline"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Practitioner"/>
       </extension>
       <reference>
@@ -1318,14 +715,102 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
+        <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Bundle/BundleExample-Practitioner"/>
+        <reference value="Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c"/>
       </reference>
-      <name value="MatchSync Bundle Example - Practioners"/>
-      <description value="MatchSync Bundle Example with Patient, Search Coordinator, Referring Physician, and TC Physician"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle"/>
+      <name value="a9e56f2a-0827-4efd-a773-ed48c6e2752c"/>
+      <description value="Example of a Diagnois: AML"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/ad78058a-c0fe-4ea0-bc86-d2f3770a1944"/>
+      </reference>
+      <name value="ad78058a-c0fe-4ea0-bc86-d2f3770a1944"/>
+      <description value="Example of Transplant Center Search Coordinotor Role"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/f1942bac-b8b3-45a1-b1d0-6928326d03ce"/>
+      </reference>
+      <name value="f1942bac-b8b3-45a1-b1d0-6928326d03ce"/>
+      <description value="Example of Referring Physician Role"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/fe6acf5d-ed53-4758-8d38-10d915c984af"/>
+      </reference>
+      <name value="fe6acf5d-ed53-4758-8d38-10d915c984af"/>
+      <description value="Example of a search coordinator practitioner."/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/glstring-codesystem"/>
+      </reference>
+      <name value="Genotype List String Code CodeSystem"/>
+      <description value="Genotype List String Codesystem used for HLA reporting"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/icd10-gvhd-codes"/>
+      </reference>
+      <name value="GVHD ICD-10 Codes"/>
+      <description value="GVHD ICD-10 Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/hla-geneid-valueset"/>
+      </reference>
+      <name value="HLA Gene Name Value Set"/>
+      <description value="HLA HGNC GeneIds Valueset"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-genotype"/>
+      </reference>
+      <name value="HLA Genotype Observation"/>
+      <description value="HLA Genotype profile of genotype observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/hla-genename-codesystem"/>
+      </reference>
+      <name value="HLA HGNC GeneID CodeSystem"/>
+      <description value="CodeSystem of HLA gene group subset of HGNC GeneId Codesystem"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1461,6 +946,237 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-a"/>
+      </reference>
+      <name value="HLA_A"/>
+      <description value="Genotype for HLA-A"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-b"/>
+      </reference>
+      <name value="HLA_B"/>
+      <description value="Genotype for HLA-B"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-c"/>
+      </reference>
+      <name value="HLA_C"/>
+      <description value="Genotype for HLA-C"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-dpa1"/>
+      </reference>
+      <name value="HLA_DPA1"/>
+      <description value="Genotype for HLA-DPA1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-dpb1"/>
+      </reference>
+      <name value="HLA_DPB1"/>
+      <description value="Genotype for HLA-DPB1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-dqa1"/>
+      </reference>
+      <name value="HLA_DQA1"/>
+      <description value="Genotype for HLA-DQA1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-dqb1"/>
+      </reference>
+      <name value="HLA_DQB1"/>
+      <description value="Genotype for HLA-DQB1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-drb1"/>
+      </reference>
+      <name value="HLA_DRB1"/>
+      <description value="Genotype for HLA-DRB1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-drb3"/>
+      </reference>
+      <name value="HLA_DRB3"/>
+      <description value="Genotype for HLA-DRB3"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-drb4"/>
+      </reference>
+      <name value="HLA_DRB4"/>
+      <description value="Genotype for HLA-DRB4"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hla-drb5"/>
+      </reference>
+      <name value="HLA_DRB5"/>
+      <description value="Genotype for HLA-DRB5"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/loinc-abo-codes"/>
+      </reference>
+      <name value="LOINC ABO group Value Set"/>
+      <description value="LOINC codes for ABO blood group"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/loinc-abo-rh-codes"/>
+      </reference>
+      <name value="LOINC ABO RH group Value Set"/>
+      <description value="LOINC codes for ABO RH blood group"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/loinc-posneg-codes"/>
+      </reference>
+      <name value="LOINC Pos|Neg Value Set"/>
+      <description value="LOINC codes for Positive and Negative"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ms-abo-group-codes"/>
+      </reference>
+      <name value="MatchSync ABO Group Value Set"/>
+      <description value="MatchSync ABO group codes. Combines LOINC, Snomed, and NMDP codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ms-bundle"/>
+      </reference>
+      <name value="MatchSync Bundle"/>
+      <description value="Collection Bundle for MatchSync"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/BundleExample-Practitioner"/>
+      </reference>
+      <name value="MatchSync Bundle Example - Practioners"/>
+      <description value="MatchSync Bundle Example with Patient, Search Coordinator, Referring Physician, and TC Physician"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ms-bundle-hla-separate"/>
+      </reference>
+      <name value="MatchSync Bundle with Separate HLA"/>
+      <description value="Collection Bundle for MatchSync with separate HLA Observations for each locus"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ms-bundle-hla-multilocus"/>
+      </reference>
+      <name value="MatchSync Bundle with single multilocus HLA"/>
+      <description value="Collection Bundle for MatchSync with single HLA multilocus Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ms-rh-codes"/>
+      </reference>
+      <name value="MatchSync Rh Value Sets"/>
+      <description value="MatchSync codes for blood Rh. Combines NMDP and LOINC code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ms-abogroup-observation"/>
+      </reference>
+      <name value="MSABOGroupObservation"/>
+      <description value="ABO Blood Group of Patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -1469,6 +1185,28 @@
       <name value="MSABOObsExample"/>
       <description value="Example of patient ABO"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-abogroup-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ms-aborhgroup-observation"/>
+      </reference>
+      <name value="MSABORHObservation"/>
+      <description value="ABO and Rh group [Type] in Blood"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MSABORHObsExample"/>
+      </reference>
+      <name value="MSABORHObsExample"/>
+      <description value="Example of patient ABO and RH"/>
+      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-aborhgroup-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1494,6 +1232,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ms-height-observation"/>
+      </reference>
+      <name value="MSHeightObservation"/>
+      <description value="Height of Patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -1502,6 +1251,17 @@
       <name value="MSHeightObsExample"/>
       <description value="Example of patient height"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mspatient"/>
+      </reference>
+      <name value="MSPatient"/>
+      <description value="Patient needing a transplant"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1560,6 +1320,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ms-preferred-product-observation"/>
+      </reference>
+      <name value="MSPreferredProduct"/>
+      <description value="Preferred product for transplant"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -1568,6 +1339,17 @@
       <name value="MSPreferredProductExample"/>
       <description value="Example of preferred product"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/msdiagnosis"/>
+      </reference>
+      <name value="MSPrimaryDiagnosis"/>
+      <description value="Diagnosis"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1582,6 +1364,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ms-rhstatus-observation"/>
+      </reference>
+      <name value="MSRhStatusObservation"/>
+      <description value="Rh status of Patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/msspecimen"/>
+      </reference>
+      <name value="MSSpecimen"/>
+      <description value="Patient sample used for HLA typing"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Specimen"/>
       </extension>
       <reference>
@@ -1590,6 +1394,17 @@
       <name value="MSSpecimenExample"/>
       <description value="Example patient specimen."/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msspecimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ms-transplant-timeline-observation"/>
+      </reference>
+      <name value="MSTransplantTimeline"/>
+      <description value="Transplant timeline for patient"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1604,6 +1419,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ms-weight-observation"/>
+      </reference>
+      <name value="MSWeightObservation"/>
+      <description value="Weight of Patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -1612,6 +1438,259 @@
       <name value="MSWeightObsExample"/>
       <description value="Example of patient weight"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-weight-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-abo-group-cs"/>
+      </reference>
+      <name value="NMDP Blood Group Code System"/>
+      <description value="Code System for NMDP ABO blood groups"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nmdp-abo-codes"/>
+      </reference>
+      <name value="NMDP Blood Group Value Set"/>
+      <description value="NMDP blood group codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nmdp-rh-status-codes"/>
+      </reference>
+      <name value="NMDP Codes for Rh status"/>
+      <description value="NMDP codes for Rh staus"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-disease-cs"/>
+      </reference>
+      <name value="NMDP Disease Code System"/>
+      <description value="Code System for NMDP diseases"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-diseasestage-cs"/>
+      </reference>
+      <name value="NMDP Disease Stage Code System"/>
+      <description value="Code System for NMDP disease stages"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nmdp-diseasestage-codes"/>
+      </reference>
+      <name value="NMDP Disease Stage Value Set"/>
+      <description value="NMDP disease stage codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nmdp-disease-codes"/>
+      </reference>
+      <name value="NMDP Disease Value Set"/>
+      <description value="NMDP disease codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-ethnicity-cs"/>
+      </reference>
+      <name value="NMDP Ethnicity Code System"/>
+      <description value="Code System for NMDP ethnicity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nmdp-ethnicity-codes"/>
+      </reference>
+      <name value="NMDP Ethnicity Value Set"/>
+      <description value="NMDP ethnicity codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-language-cs"/>
+      </reference>
+      <name value="NMDP Language Code System"/>
+      <description value="Code System for NMDP languages"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nmdp-language-codes"/>
+      </reference>
+      <name value="NMDP Language Value Set"/>
+      <description value="NMDP language codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nmdp-practitioner-role-vs"/>
+      </reference>
+      <name value="NMDP Practitioner Role Value Set"/>
+      <description value="NMDP Practitioner Role Value Set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-practitioner-role-cs"/>
+      </reference>
+      <name value="NMDP Practitioner Roles"/>
+      <description value="NMDP Practitioner Roles"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-preferred-product-cs"/>
+      </reference>
+      <name value="NMDP Preferred Product for Transplant"/>
+      <description value="NMDP Preferred Product for MatchSync patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nmdp-preferred-product-codes"/>
+      </reference>
+      <name value="NMDP Preferred Product Value Set"/>
+      <description value="NMDP preferred product codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-race-cs"/>
+      </reference>
+      <name value="NMDP Race Code System"/>
+      <description value="Code System for NMDP diseases"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nmdp-race-codes"/>
+      </reference>
+      <name value="NMDP Race Value Set"/>
+      <description value="NMDP race codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-rh-status-cs"/>
+      </reference>
+      <name value="NMDP Rh Code System"/>
+      <description value="Code System for NMDP Rh Status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-transplant-timeline-cs"/>
+      </reference>
+      <name value="NMDP Transplant Timeline Code System"/>
+      <description value="Code System for NMDP transplant timeline"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/nmdp-transplant-timeline-codes"/>
+      </reference>
+      <name value="NMDP Transplant Timeline Value Set"/>
+      <description value="NMDP transplant timeline codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nmdp-practitioner"/>
+      </reference>
+      <name value="NMDPPractitioner"/>
+      <description value="NMDP Practitioner"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nmdp-practitioner-role"/>
+      </reference>
+      <name value="NMDPPractitionerRole"/>
+      <description value="NMDP Practitioner Role"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/number-of-remissions"/>
+      </reference>
+      <name value="Number of Remissions of Primary Diagnosis"/>
+      <description value="Number of Remissions of Primary Diagnosis"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1659,6 +1738,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/sct-abo-group-codes"/>
+      </reference>
+      <name value="Snomed CT ABO group Value Set"/>
+      <description value="Snomed CT codes for ABO blood group"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <reference>
@@ -1681,47 +1771,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c"/>
+        <reference value="StructureDefinition/transplantcenter"/>
       </reference>
-      <name value="a9e56f2a-0827-4efd-a773-ed48c6e2752c"/>
-      <description value="Example of a Diagnois: AML"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="PractitionerRole"/>
-      </extension>
-      <reference>
-        <reference value="PractitionerRole/ad78058a-c0fe-4ea0-bc86-d2f3770a1944"/>
-      </reference>
-      <name value="ad78058a-c0fe-4ea0-bc86-d2f3770a1944"/>
-      <description value="Example of Transplant Center Search Coordinotor Role"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="PractitionerRole"/>
-      </extension>
-      <reference>
-        <reference value="PractitionerRole/f1942bac-b8b3-45a1-b1d0-6928326d03ce"/>
-      </reference>
-      <name value="f1942bac-b8b3-45a1-b1d0-6928326d03ce"/>
-      <description value="Example of Referring Physician Role"/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/fe6acf5d-ed53-4758-8d38-10d915c984af"/>
-      </reference>
-      <name value="fe6acf5d-ed53-4758-8d38-10d915c984af"/>
-      <description value="Example of a search coordinator practitioner."/>
-      <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"/>
+      <name value="TransplantCenter"/>
+      <description value="Transplant Center"/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

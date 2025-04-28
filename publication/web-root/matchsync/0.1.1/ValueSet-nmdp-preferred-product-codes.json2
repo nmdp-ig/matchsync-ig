@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nmdp-preferred-product-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nmdp-preferred-product-codes</b></p><a name=\"nmdp-preferred-product-codes\"> </a><a name=\"hcnmdp-preferred-product-codes\"> </a><a name=\"nmdp-preferred-product-codes-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-preferred-product-cs.html\"><code>http://terminology.nmdp.org/codesystem/preferredproduct</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes",
+  "version" : "0.1.2",
+  "name" : "NMDPPreferredProductVS",
+  "title" : "ValueSet - Preferred Product - NMDP",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-04-15T15:35:56-05:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "NMDP preferred product codes",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/preferredproduct"
+    }]
+  }
+}

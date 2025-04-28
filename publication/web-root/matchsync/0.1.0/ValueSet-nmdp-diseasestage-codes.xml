@@ -3,15 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="nmdp-diseasestage-codes"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-nmdp-diseasestage-cs.html"><code>http://terminology.nmdp.org/codesystem/diseasestage</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nmdp-diseasestage-codes</b></p><a name="nmdp-diseasestage-codes"> </a><a name="hcnmdp-diseasestage-codes"> </a><a name="nmdp-diseasestage-codes-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nmdp-diseasestage-cs.html"><code>http://terminology.nmdp.org/codesystem/diseasestage</code></a></li></ul></div>
   </text>
   <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes"/>
   <version value="0.1.0"/>
   <name value="NMDPDiseasStageVS"/>
   <title value="NMDP Disease Stage Value Set"/>
-  <status value="active"/>
+  <status value="draft"/>
   <experimental value="true"/>
-  <date value="2023-05-09T13:30:22-05:00"/>
+  <date value="2024-11-08T17:25:20-06:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>

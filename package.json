@@ -1,0 +1,25 @@
+{
+  "name": "matchsync-ig",
+  "version": "1.0.0",
+  "description": "Package for Matchsync IG",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmdp-ig/matchsync-ig.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmdp-ig/matchsync-ig/issues"
+  },
+  "homepage": "https://github.com/nmdp-ig/matchsync-ig#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

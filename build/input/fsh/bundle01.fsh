@@ -9,6 +9,7 @@ Description: "Collection Bundle for MatchSync"
 * entry contains
     // These resources are required per Conformance > Supported Profiles.
     msPatient 1..1 MS and
+    msCmv 0..1 MS and
     msDiagnosis 1..* MS and
     msPractitionerRole 0..* MS and
     msPractitioner 0..* MS and
@@ -20,10 +21,14 @@ Description: "Collection Bundle for MatchSync"
     msObsPreferredProduct 0..1 MS and
     msObsHeight 0..1 MS and
     msObsWeight 0..1 MS and
+    msObsForm117 0..1 MS and
     msSpecimen 0..1 MS
 * entry[msPatient].resource only MSPatient
 * entry[msPatient] ^short = "MatchSync Patient"
 * entry[msPatient] ^definition = "The MatchSync Patient whose data is included in the bundle (required element)."
+* entry[msCmv].resource only Observation_MS_CMV
+* entry[msCmv] ^short = "MatchSync Patient CMV Status"
+* entry[msCmv] ^definition = "The MatchSync Patient whose data is included in the bundle (required element)."
 * entry[msDiagnosis].resource only MSPrimaryDiagnosis
 * entry[msDiagnosis] ^short = "Diagnois for MatchSync Patient"
 * entry[msDiagnosis] ^definition = "The Diagnosis for the MatchSync patient (required element)."
@@ -33,30 +38,33 @@ Description: "Collection Bundle for MatchSync"
 * entry[msPractitioner].resource only NMDPPractitioner
 * entry[msPractitioner] ^short = "Practitioner  for the MacthSync patient needing transplant"
 * entry[msPractitioner] ^definition = "Practitioner for the MatchSync patient."
-* entry[msObsRh].resource only MSRhStatusObservation
+* entry[msObsRh].resource only Observation_MS_RhStatus
 * entry[msObsRh] ^short = "Rh status of the patient"
 * entry[msObsRh] ^definition = "The Rh status of the MatchSync patient"
-* entry[msObsABO].resource only MSABOGroupObservation
+* entry[msObsABO].resource only Observation_MS_ABOGroup
 * entry[msObsABO] ^short = "ABO blood group"
 * entry[msObsABO] ^definition = "The ABO blood group of the MatchSync patient"
-* entry[msObsABORH].resource only MSABORHObservation
+* entry[msObsABORH].resource only Observation_MS_ABORH
 * entry[msObsABORH] ^short = "ABO blood group and RH"
 * entry[msObsABORH] ^definition = "The ABO and RH of the MatchSync patient"
-* entry[msObsTimeline].resource only MSTransplantTimeline
+* entry[msObsTimeline].resource only Observation_MS_TransplantTimeline
 * entry[msObsTimeline] ^short = "Transplant timeline"
 * entry[msObsTimeline] ^definition = "Where the patient is in the tranplant timeline."
-* entry[msObsPreferredProduct].resource only MSPreferredProduct
+* entry[msObsPreferredProduct].resource only Observation_MS_PreferredProduct
 * entry[msObsPreferredProduct] ^short = "Preferred prodcut for transplant"
 * entry[msObsPreferredProduct] ^definition = "Preferred prodcut for transplant"
-* entry[msObsHeight].resource only MSHeightObservation
+* entry[msObsHeight].resource only Observation_MS_PatientHeight
 * entry[msObsHeight] ^short = "Patient Height"
 * entry[msObsHeight] ^definition = "Height of patient"
-* entry[msObsWeight].resource only MSWeightObservation
+* entry[msObsWeight].resource only Observation_MS_PatientWeight
 * entry[msObsWeight] ^short = "Patient Weight"
 * entry[msObsWeight] ^definition = "Weight of Patient"
 * entry[msOrgTransplantCenter].resource only TransplantCenter
 * entry[msOrgTransplantCenter] ^short = "Transplant Center"
 * entry[msOrgTransplantCenter] ^definition = "Transplant Center"
+* entry[msObsForm117].resource only Observation_MS_Form117Compliance
+* entry[msObsForm117] ^short = "Form 117 Compliance"
+* entry[msObsForm117] ^definition = "Form 117 Compliance of the MatchSync patient"
 * entry[msSpecimen].resource only MSSpecimen
 * entry[msSpecimen] ^short = "Specimen used for HLA genotyping"
 * entry[msSpecimen] ^definition = "Specimen used for HLA genotyping. The identifier found here can be used to link to an HML file if submitted."

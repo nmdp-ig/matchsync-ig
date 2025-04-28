@@ -3,15 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="icd10-gvhd-codes"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://terminology.hl7.org/5.0.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a> where concept  is-a  D89.81 (Graft-versus-host disease)</li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet icd10-gvhd-codes</b></p><a name="icd10-gvhd-codes"> </a><a name="hcicd10-gvhd-codes"> </a><a name="icd10-gvhd-codes-en-US"> </a><ul><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a> where concept  is-a D89.81 (Graft-versus-host disease)</li></ul></div>
   </text>
   <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes"/>
-  <version value="0.1.0"/>
+  <version value="0.1.2"/>
   <name value="ICD10GVHDVS"/>
-  <title value="GVHD ICD-10 Codes"/>
-  <status value="active"/>
+  <title value="ICD-10 (GVHD) Codes"/>
+  <status value="draft"/>
   <experimental value="true"/>
-  <date value="2023-05-09T13:39:12-05:00"/>
+  <date value="2025-04-16T10:37:17-05:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>

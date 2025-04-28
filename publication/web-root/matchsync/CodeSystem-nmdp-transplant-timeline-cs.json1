@@ -3,15 +3,15 @@
   "id" : "nmdp-transplant-timeline-cs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://terminology.nmdp.org/codesystem/transplanttimeline</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">&lt;4w<a name=\"nmdp-transplant-timeline-cs-.604w\"> </a></td><td>Less than 4 weeks</td></tr><tr><td style=\"white-space:nowrap\">4-6w<a name=\"nmdp-transplant-timeline-cs-4-6w\"> </a></td><td>Between 4-6 weeks</td></tr><tr><td style=\"white-space:nowrap\">7-12w<a name=\"nmdp-transplant-timeline-cs-7-12w\"> </a></td><td>Between 7-12 weeks</td></tr><tr><td style=\"white-space:nowrap\">12w-6m<a name=\"nmdp-transplant-timeline-cs-12w-6m\"> </a></td><td>Over 12 weeks - up to 6 months</td></tr><tr><td style=\"white-space:nowrap\">&gt;6m<a name=\"nmdp-transplant-timeline-cs-.626m\"> </a></td><td>Greater than 6 months</td></tr><tr><td style=\"white-space:nowrap\">NA<a name=\"nmdp-transplant-timeline-cs-NA\"> </a></td><td>N/A : MUD Transplant not preferred treatment</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"nmdp-transplant-timeline-cs-P\"> </a></td><td>Pending, Case manager to follow up</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nmdp-transplant-timeline-cs</b></p><a name=\"nmdp-transplant-timeline-cs\"> </a><a name=\"hcnmdp-transplant-timeline-cs\"> </a><a name=\"nmdp-transplant-timeline-cs-en-US\"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/transplanttimeline</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">12W-6M<a name=\"nmdp-transplant-timeline-cs-12W-6M\"> </a></td><td>Over 12 weeks - up to 6 months</td></tr><tr><td style=\"white-space:nowrap\">4-6W<a name=\"nmdp-transplant-timeline-cs-4-6W\"> </a></td><td>Between 4-6 weeks</td></tr><tr><td style=\"white-space:nowrap\">4W<a name=\"nmdp-transplant-timeline-cs-4W\"> </a></td><td>Less than 4 weeks</td></tr><tr><td style=\"white-space:nowrap\">6MG<a name=\"nmdp-transplant-timeline-cs-6MG\"> </a></td><td>Greater than 6 months</td></tr><tr><td style=\"white-space:nowrap\">7-12w<a name=\"nmdp-transplant-timeline-cs-7-12w\"> </a></td><td>Between 7-12 weeks</td></tr><tr><td style=\"white-space:nowrap\">NA<a name=\"nmdp-transplant-timeline-cs-NA\"> </a></td><td>N/A : MUD Transplant not preferred treatment</td></tr><tr><td style=\"white-space:nowrap\">PEND<a name=\"nmdp-transplant-timeline-cs-PEND\"> </a></td><td>Pending, Case manager to follow up</td></tr></table></div>"
   },
   "url" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
-  "version" : "0.1.0",
+  "version" : "0.1.2",
   "name" : "NMDPTransplantTimelineCS",
-  "title" : "NMDP Transplant Timeline Code System",
+  "title" : "CodeSystem - Transplant Timeline - NMDP",
   "status" : "active",
   "experimental" : true,
-  "date" : "2023-05-09T13:39:12-05:00",
+  "date" : "2025-04-16T10:37:17-05:00",
   "publisher" : "NMDP",
   "contact" : [{
     "name" : "NMDP",
@@ -26,31 +26,31 @@
   "content" : "complete",
   "count" : 7,
   "concept" : [{
-    "code" : "<4w",
+    "code" : "12W-6M",
+    "display" : "Over 12 weeks - up to 6 months"
+  },
+  {
+    "code" : "4-6W",
+    "display" : "Between 4-6 weeks"
+  },
+  {
+    "code" : "4W",
     "display" : "Less than 4 weeks"
   },
   {
-    "code" : "4-6w",
-    "display" : "Between 4-6 weeks"
+    "code" : "6MG",
+    "display" : "Greater than 6 months"
   },
   {
     "code" : "7-12w",
     "display" : "Between 7-12 weeks"
   },
   {
-    "code" : "12w-6m",
-    "display" : "Over 12 weeks - up to 6 months"
-  },
-  {
-    "code" : ">6m",
-    "display" : "Greater than 6 months"
-  },
-  {
     "code" : "NA",
     "display" : "N/A : MUD Transplant not preferred treatment"
   },
   {
-    "code" : "P",
+    "code" : "PEND",
     "display" : "Pending, Case manager to follow up"
   }]
 }
