@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>NMDP Disease Code System - TTL Representation -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"4.51"}
+    h3,h4,h5,h6{--heading-prefix:"4.51"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li><a name="l152">​</a>
+    <a href="CIBMTR_Direct_FHIR_API_Connection_Guide_STU3.pdf">Matchsync Setup Guide</a>
+  </li>
+  <li>
+    <a href="Appendices.html">Appendices</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>NMDP Disease Code System</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">This page is part of the MatchSync Implementation Guide (v0.1.0: Release Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-nmdp-disease-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-nmdp-disease-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-nmdp-disease-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: NMDP Disease Code System - TTL Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2024-11-08
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-nmdp-disease-cs.ttl" no-download="true">Raw ttl</a> | <a download="null" href="CodeSystem-nmdp-disease-cs.ttl">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; overflow: hidden" class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:CodeSystem ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "nmdp-disease-cs"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "generated" ] ;
+fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: CodeSystem nmdp-disease-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\"nmdp-disease-cs\"&gt; &lt;/a&gt;&lt;a name=\"hcnmdp-disease-cs\"&gt; &lt;/a&gt;&lt;a name=\"nmdp-disease-cs-en-US\"&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;http://terminology.nmdp.org/codesystem/disease&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\"codes\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;ABL&lt;a name=\"nmdp-disease-cs-ABL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ACUTE BILINEAGE LEUKEMIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;AISA&lt;a name=\"nmdp-disease-cs-AISA\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ACQ IDIOPATH SIDERBLASTIC ANEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;ALD&lt;a name=\"nmdp-disease-cs-ALD\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ADRENOLEUKODYSTROPHY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;ALL&lt;a name=\"nmdp-disease-cs-ALL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ACUTE LYMPHOBLASTIC LEUKEMIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;AMCL&lt;a name=\"nmdp-disease-cs-AMCL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ACUTE MAST CELL LEUKEMIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;AMEGCT&lt;a name=\"nmdp-disease-cs-AMEGCT\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AMEGAKARYOCY/CONGENTIAL THROM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;AML&lt;a name=\"nmdp-disease-cs-AML\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ACUTE MYELOGENOUS LEUKEMIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;ASPGL&lt;a name=\"nmdp-disease-cs-ASPGL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ASPARTYL GLUCOSAMINIDASE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;AT&lt;a name=\"nmdp-disease-cs-AT\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ATAXIA-TELANGIECTASIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;AUL&lt;a name=\"nmdp-disease-cs-AUL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ACUTE UNDIFFERENTIATED LEUK-MO&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;BGLUD&lt;a name=\"nmdp-disease-cs-BGLUD\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BETA-GLUCURONIDASE DEFICIENCY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;BLSYND&lt;a name=\"nmdp-disease-cs-BLSYND\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BARE LYMPHOCYTE SYNDROME&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;BRCA&lt;a name=\"nmdp-disease-cs-BRCA\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BREAST CANCER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;BTHAL&lt;a name=\"nmdp-disease-cs-BTHAL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BETA THALASSEMIA MAJOR&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;C-HHYP&lt;a name=\"nmdp-disease-cs-C-HHYP\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CARTILAGE-HAIR HYPOPLASIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;CGD&lt;a name=\"nmdp-disease-cs-CGD\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHRONIC GRANULOMATOUS DISEASE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;CID&lt;a name=\"nmdp-disease-cs-CID\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;COMBINED IMMUNODEFICIENCY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;CLL&lt;a name=\"nmdp-disease-cs-CLL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHRONIC LYMPHOCYTIC LEUKEMIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;CML&lt;a name=\"nmdp-disease-cs-CML\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHRONIC MYELOGENOUS LEUKEMIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;CMML&lt;a name=\"nmdp-disease-cs-CMML\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHRONIC MYELOMONOCYTIC LEUK&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;CNSCA&lt;a name=\"nmdp-disease-cs-CNSCA\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CENTRAL NERVOUS SYSTEM TUMORS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;DIGRGE&lt;a name=\"nmdp-disease-cs-DIGRGE\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;DI GEORGE SYNDROME&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;ETC&lt;a name=\"nmdp-disease-cs-ETC\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ESSENTIAL THROMOBOCYTHEMIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;EWINGS&lt;a name=\"nmdp-disease-cs-EWINGS\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EWINGS SARCOMA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;FA&lt;a name=\"nmdp-disease-cs-FA\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FANCONI ANEMIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;FEL&lt;a name=\"nmdp-disease-cs-FEL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FAMILIAL ERYTHROPHAGOCYTIC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;FUCOSI&lt;a name=\"nmdp-disease-cs-FUCOSI\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FUCOSIDOSIS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;GAUCHR&lt;a name=\"nmdp-disease-cs-GAUCHR\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GAUCHER'S DISEASE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;GLTROM&lt;a name=\"nmdp-disease-cs-GLTROM\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GLANZMANNS THROMBASTHENIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;GLUCST&lt;a name=\"nmdp-disease-cs-GLUCST\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GLUCOSE STORAGE DISEASE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;HCL&lt;a name=\"nmdp-disease-cs-HCL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HAIRY CELL LEUKEMIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;HISX&lt;a name=\"nmdp-disease-cs-HISX\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HISTIOCYTOSIS-X&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;HIV&lt;a name=\"nmdp-disease-cs-HIV\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV INFECTION&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;HL&lt;a name=\"nmdp-disease-cs-HL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HODGKINS LYMPHOMA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;HPGC&lt;a name=\"nmdp-disease-cs-HPGC\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HEMOPHAGOCYTOSIS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;HUNTER&lt;a name=\"nmdp-disease-cs-HUNTER\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HUNTER SYNDROME (MPS-II)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;HURLER&lt;a name=\"nmdp-disease-cs-HURLER\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HURLER SYNDROME (MPS-IH)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;ICELL&lt;a name=\"nmdp-disease-cs-ICELL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;I-CELL DISEASE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;IMDNP&lt;a name=\"nmdp-disease-cs-IMDNP\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IMMUNE DEFICIENCY + NEUTROPEN&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;JCML&lt;a name=\"nmdp-disease-cs-JCML\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;JUVENILE CHRONIC MYELOGENOUS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;KOSTMN&lt;a name=\"nmdp-disease-cs-KOSTMN\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;KOSTMANN'S AGRANULOCYTOSIS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;KRABBE&lt;a name=\"nmdp-disease-cs-KRABBE\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;KRABBE DISEASE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;LAD&lt;a name=\"nmdp-disease-cs-LAD\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LEUKOCYTE ADHESION DEFICIENCY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;LN&lt;a name=\"nmdp-disease-cs-LN\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LESCH-NYHAN&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;LNS&lt;a name=\"nmdp-disease-cs-LNS\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LESCH-NYHAN&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;LYSOST&lt;a name=\"nmdp-disease-cs-LYSOST\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LYSOSOMAL STORAGE DISEASE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;MANNO&lt;a name=\"nmdp-disease-cs-MANNO\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MANNOSIDOSIS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;MARLAM&lt;a name=\"nmdp-disease-cs-MARLAM\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MAROTEAUX-LAMY (MPS-VI)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;MDS&lt;a name=\"nmdp-disease-cs-MDS\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MYELODYSPLASTIC DISORDER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;MFMM&lt;a name=\"nmdp-disease-cs-MFMM\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MYELOFIBRO MYELOID METAPLASIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;MLD&lt;a name=\"nmdp-disease-cs-MLD\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;METACHROMATIC LEUKODYSTROPHY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;MM&lt;a name=\"nmdp-disease-cs-MM\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MULTIPLE MYELOMA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;MORQUA&lt;a name=\"nmdp-disease-cs-MORQUA\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MORQUIO A - MPS IVA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;MORQUB&lt;a name=\"nmdp-disease-cs-MORQUB\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MORQUIO B - MPS IVB&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;MORQUO&lt;a name=\"nmdp-disease-cs-MORQUO\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MORQUIO (MPS-IV)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;MPS&lt;a name=\"nmdp-disease-cs-MPS\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MUCOPOLYSACCHARIDOSIS (MPS-V)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;N-P&lt;a name=\"nmdp-disease-cs-N-P\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NEIMAN-PICK DISEASE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;NB&lt;a name=\"nmdp-disease-cs-NB\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NEUROBLASTOMA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;NCL1&lt;a name=\"nmdp-disease-cs-NCL1\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ENZYME NCL 1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;NCL2&lt;a name=\"nmdp-disease-cs-NCL2\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ENZYME NCL 2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;NEUTAD&lt;a name=\"nmdp-disease-cs-NEUTAD\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NEUTROPHIL ACTIN DEFICIENCY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;NEUTD&lt;a name=\"nmdp-disease-cs-NEUTD\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHEDIAK-HIGASHI SYNDROME&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;NHL&lt;a name=\"nmdp-disease-cs-NHL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NON-HODGKINS LYMPHOMA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OCID&lt;a name=\"nmdp-disease-cs-OCID\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTHR COMBINED IMMUNODEFICIENCY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OHIS&lt;a name=\"nmdp-disease-cs-OHIS\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTHER HISTIOCYTIC DISORDERS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OIEA&lt;a name=\"nmdp-disease-cs-OIEA\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTH ERYTHROCYT DIFFERENTIATION&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OIIS&lt;a name=\"nmdp-disease-cs-OIIS\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTHER IMMUNE SYSTEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OIMD&lt;a name=\"nmdp-disease-cs-OIMD\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTH INHER METABOLISM DISORD&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OIMDL&lt;a name=\"nmdp-disease-cs-OIMDL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTH MUCOLIPIDOSES&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OIMDP&lt;a name=\"nmdp-disease-cs-OIMDP\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTH MUCOPOLYSACCHARIDOSIS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OIPA&lt;a name=\"nmdp-disease-cs-OIPA\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTH ABNORMALITIES OR PLATELETS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OMDS&lt;a name=\"nmdp-disease-cs-OMDS\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTHER MYELODYSPLASTIC DISORDER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OMF&lt;a name=\"nmdp-disease-cs-OMF\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTHER MYLEOFIBROSIS/MYLEOSCLER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OMMEN&lt;a name=\"nmdp-disease-cs-OMMEN\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OMMEN'S SYNDROME&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OMS&lt;a name=\"nmdp-disease-cs-OMS\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTH MALIGNANCY, SPECIFY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OND&lt;a name=\"nmdp-disease-cs-OND\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTHER NON-MALIGNANT DISEASE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OOL&lt;a name=\"nmdp-disease-cs-OOL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTHER LEUKEMIA SPECIFY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OPCD&lt;a name=\"nmdp-disease-cs-OPCD\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTHER PLASMA CELL DISORDER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OSCID&lt;a name=\"nmdp-disease-cs-OSCID\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTHER SCID&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OST&lt;a name=\"nmdp-disease-cs-OST\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OSTEOPETROSIS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;OTHHGP&lt;a name=\"nmdp-disease-cs-OTHHGP\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OTHER HEMOGLOBINOPATHY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;PCL&lt;a name=\"nmdp-disease-cs-PCL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PLASMA CELL LEUKEMIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;PHILLY&lt;a name=\"nmdp-disease-cs-PHILLY\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PROLYMPHOCYTIC LEUKEMIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;PNH&lt;a name=\"nmdp-disease-cs-PNH\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PAROXYSMAL NOCTURNAL HEMOGLOB&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;PV&lt;a name=\"nmdp-disease-cs-PV\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;POLYCYTHEMIA VERA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;RA&lt;a name=\"nmdp-disease-cs-RA\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;REFRACTORY ANEMIA (RA)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;RAEB&lt;a name=\"nmdp-disease-cs-RAEB\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;REFRACT ANEMIA-EXCESS BLASTS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;RAEBIT&lt;a name=\"nmdp-disease-cs-RAEBIT\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;REFRACT ANEMIA-EX. BLAST TRAN&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;RCA&lt;a name=\"nmdp-disease-cs-RCA\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PURE RED CELL APLASIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;RCC&lt;a name=\"nmdp-disease-cs-RCC\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RENAL CELL CARCINOMA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;RETDG&lt;a name=\"nmdp-disease-cs-RETDG\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RETICULAR DYSGENESIS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;SAA&lt;a name=\"nmdp-disease-cs-SAA\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SEVERE APLASTIC ANEMIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;SANFIA&lt;a name=\"nmdp-disease-cs-SANFIA\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SANFILIPPO A - MPS IIIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;SANFIB&lt;a name=\"nmdp-disease-cs-SANFIB\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SANFILIPPO B - MPS IIIB&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;SANFIC&lt;a name=\"nmdp-disease-cs-SANFIC\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SANFILIPPO C - MPS IIIC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;SANFID&lt;a name=\"nmdp-disease-cs-SANFID\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ANFILIPPO D - MPS IIID&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;SANFIL&lt;a name=\"nmdp-disease-cs-SANFIL\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SANFILLIPPO (MPS-III)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;SCA&lt;a name=\"nmdp-disease-cs-SCA\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SICKLE CELL ANEMIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;SCHEIE&lt;a name=\"nmdp-disease-cs-SCHEIE\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SCHEIE SYNDROME (MPS-IS)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;SCID&lt;a name=\"nmdp-disease-cs-SCID\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SEVERE COMBINED IMMUNODEF&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://terminology.nmdp.org/codesystem/disease"^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "0.1.0"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "NMDPDiseaseCS"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "NMDP Disease Code System"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "active"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> "true"^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> "2024-11-08T17:25:20-06:00"^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "NMDP"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "NMDP" ] ;
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "url" ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "http://bethematch.org" ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> "Code System for NMDP diseases"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.copyright">fhir:copyright</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> "National Marrow Donor Program"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> "true"^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "complete"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:v</a> "100"^^xsd:nonNegativeInteger] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "ABL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ACUTE BILINEAGE LEUKEMIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "AISA" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ACQ IDIOPATH SIDERBLASTIC ANEM" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "ALD" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ADRENOLEUKODYSTROPHY" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "ALL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ACUTE LYMPHOBLASTIC LEUKEMIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "AMCL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ACUTE MAST CELL LEUKEMIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "AMEGCT" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "AMEGAKARYOCY/CONGENTIAL THROM" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "AML" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ACUTE MYELOGENOUS LEUKEMIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "ASPGL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ASPARTYL GLUCOSAMINIDASE" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "AT" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ATAXIA-TELANGIECTASIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "AUL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ACUTE UNDIFFERENTIATED LEUK-MO" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "BGLUD" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "BETA-GLUCURONIDASE DEFICIENCY" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "BLSYND" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "BARE LYMPHOCYTE SYNDROME" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "BRCA" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "BREAST CANCER" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "BTHAL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "BETA THALASSEMIA MAJOR" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "C-HHYP" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "CARTILAGE-HAIR HYPOPLASIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "CGD" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "CHRONIC GRANULOMATOUS DISEASE" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "CID" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "COMBINED IMMUNODEFICIENCY" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "CLL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "CHRONIC LYMPHOCYTIC LEUKEMIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "CML" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "CHRONIC MYELOGENOUS LEUKEMIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "CMML" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "CHRONIC MYELOMONOCYTIC LEUK" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "CNSCA" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "CENTRAL NERVOUS SYSTEM TUMORS" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "DIGRGE" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "DI GEORGE SYNDROME" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "ETC" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ESSENTIAL THROMOBOCYTHEMIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "EWINGS" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "EWINGS SARCOMA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "FA" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "FANCONI ANEMIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "FEL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "FAMILIAL ERYTHROPHAGOCYTIC" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "FUCOSI" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "FUCOSIDOSIS" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "GAUCHR" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "GAUCHER'S DISEASE" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "GLTROM" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "GLANZMANNS THROMBASTHENIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "GLUCST" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "GLUCOSE STORAGE DISEASE" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HCL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "HAIRY CELL LEUKEMIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HISX" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "HISTIOCYTOSIS-X" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "HIV INFECTION" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "HODGKINS LYMPHOMA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HPGC" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "HEMOPHAGOCYTOSIS" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HUNTER" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "HUNTER SYNDROME (MPS-II)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HURLER" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "HURLER SYNDROME (MPS-IH)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "ICELL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "I-CELL DISEASE" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "IMDNP" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "IMMUNE DEFICIENCY + NEUTROPEN" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "JCML" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "JUVENILE CHRONIC MYELOGENOUS" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "KOSTMN" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "KOSTMANN'S AGRANULOCYTOSIS" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "KRABBE" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "KRABBE DISEASE" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "LAD" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "LEUKOCYTE ADHESION DEFICIENCY" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "LN" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "LESCH-NYHAN" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "LNS" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "LESCH-NYHAN" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "LYSOST" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "LYSOSOMAL STORAGE DISEASE" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "MANNO" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "MANNOSIDOSIS" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "MARLAM" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "MAROTEAUX-LAMY (MPS-VI)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "MDS" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "MYELODYSPLASTIC DISORDER" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "MFMM" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "MYELOFIBRO MYELOID METAPLASIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "MLD" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "METACHROMATIC LEUKODYSTROPHY" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "MM" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "MULTIPLE MYELOMA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "MORQUA" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "MORQUIO A - MPS IVA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "MORQUB" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "MORQUIO B - MPS IVB" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "MORQUO" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "MORQUIO (MPS-IV)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "MPS" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "MUCOPOLYSACCHARIDOSIS (MPS-V)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "N-P" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "NEIMAN-PICK DISEASE" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "NB" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "NEUROBLASTOMA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "NCL1" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ENZYME NCL 1" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "NCL2" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ENZYME NCL 2" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "NEUTAD" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "NEUTROPHIL ACTIN DEFICIENCY" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "NEUTD" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "CHEDIAK-HIGASHI SYNDROME" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "NHL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "NON-HODGKINS LYMPHOMA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OCID" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTHR COMBINED IMMUNODEFICIENCY" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OHIS" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTHER HISTIOCYTIC DISORDERS" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OIEA" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTH ERYTHROCYT DIFFERENTIATION" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OIIS" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTHER IMMUNE SYSTEM" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OIMD" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTH INHER METABOLISM DISORD" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OIMDL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTH MUCOLIPIDOSES" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OIMDP" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTH MUCOPOLYSACCHARIDOSIS" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OIPA" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTH ABNORMALITIES OR PLATELETS" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OMDS" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTHER MYELODYSPLASTIC DISORDER" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OMF" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTHER MYLEOFIBROSIS/MYLEOSCLER" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OMMEN" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OMMEN'S SYNDROME" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OMS" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTH MALIGNANCY, SPECIFY" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OND" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTHER NON-MALIGNANT DISEASE" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OOL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTHER LEUKEMIA SPECIFY" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OPCD" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTHER PLASMA CELL DISORDER" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OSCID" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTHER SCID" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OST" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OSTEOPETROSIS" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "OTHHGP" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OTHER HEMOGLOBINOPATHY" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PCL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "PLASMA CELL LEUKEMIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PHILLY" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "PROLYMPHOCYTIC LEUKEMIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PNH" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "PAROXYSMAL NOCTURNAL HEMOGLOB" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PV" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "POLYCYTHEMIA VERA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "RA" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "REFRACTORY ANEMIA (RA)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "RAEB" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "REFRACT ANEMIA-EXCESS BLASTS" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "RAEBIT" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "REFRACT ANEMIA-EX. BLAST TRAN" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "RCA" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "PURE RED CELL APLASIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "RCC" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "RENAL CELL CARCINOMA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "RETDG" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "RETICULAR DYSGENESIS" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "SAA" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "SEVERE APLASTIC ANEMIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "SANFIA" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "SANFILIPPO A - MPS IIIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "SANFIB" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "SANFILIPPO B - MPS IIIB" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "SANFIC" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "SANFILIPPO C - MPS IIIC" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "SANFID" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ANFILIPPO D - MPS IIID" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "SANFIL" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "SANFILLIPPO (MPS-III)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "SCA" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "SICKLE CELL ANEMIA" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "SCHEIE" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "SCHEIE SYNDROME (MPS-IS)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "SCID" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "SEVERE COMBINED IMMUNODEF" ]
+  ] ) . # 
+
+</pre>
+
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 8, 2024 17:25-0600">2024-11-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

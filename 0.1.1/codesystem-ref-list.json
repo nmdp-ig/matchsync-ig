@@ -1,0 +1,196 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Icd10CM",
+      "title" : "International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)",
+      "description" : "The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM), describes the classification of morbidity and mortality information for statistical purposes and for the indexing of healthcare records by diseases. The ICD-10-CM codes can be used as the value of the Act.cd attribute.",
+      "oids" : ["2.16.840.1.113883.6.90"],
+      "uses" : {
+      },
+      "ValueSet-icd10-gvhd-codes.html" : "ICD-10 (GVHD) Codes"
+    },
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "ValueSet-loinc-abo-codes.html" : "ValueSet - Blood Group (ABO) - LOINC",
+      "ValueSet-loinc-posneg-codes.html" : "ValueSet - Blood Group (Rh) - LOINC",
+      "ValueSet-loinc-abo-rh-codes.html" : "ValueSet - Blood Group (ABO+RH) - LOINC",
+      "ValueSet-loinc-cmv-codes.html" : "ValueSet - CMV Group - LOINC"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/abogroup",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "NMDPABOCS",
+      "title" : "CodeSystem - Blood Group (ABO) - NMDP",
+      "description" : "Code System for NMDP ABO blood groups",
+      "uses" : {
+      },
+      "ValueSet-nmdp-abo-codes.html" : "ValueSet - Blood Group (ABO) - NMDP"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/aborhgroup",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "NMDPABORHCS",
+      "title" : "CodeSystem - Blood Group (ABO+RH) - NMDP",
+      "description" : "Code System for NMDP ABO RH blood groups",
+      "uses" : {
+      },
+      "ValueSet-nmdp-abo-rh-codes.html" : "ValueSet - Blood Group (ABO+RH) - NMDP"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/cmv",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "NMDPCMVCS",
+      "title" : "CodeSystem - CMV Group - NMDP",
+      "description" : "Code System for NMDP CMV",
+      "uses" : {
+      },
+      "ValueSet-nmdp-cmv-codes.html" : "ValueSet - CMV Group - NMDP"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/disease",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "NMDPDiseaseCS",
+      "title" : "CodeSystem - Disease - NMDP",
+      "description" : "Code System for NMDP diseases",
+      "uses" : {
+      },
+      "ValueSet-nmdp-disease-codes.html" : "ValueSet - Disease - NMDP"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/diseasestage",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "NMDPDiseaseStageCS",
+      "title" : "CodeSystem - Disease Stage - NMDP",
+      "description" : "Code System for NMDP disease stages",
+      "uses" : {
+      },
+      "ValueSet-nmdp-diseasestage-codes.html" : "ValueSet - Disease Stage - NMDP"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/ethnicity",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "NMDPEthnicityCS",
+      "title" : "CodeSystem - Patient Ethnicity - NMDP",
+      "description" : "Code System for NMDP ethnicity",
+      "uses" : {
+      },
+      "ValueSet-nmdp-ethnicity-codes.html" : "ValueSet - Patient Ethnicity - NMDP"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/form117compliance",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "NMDPForm117CS",
+      "title" : "CodeSystem - Form117 Compliance- NMDP",
+      "description" : "NMDP Form 117 for MatchSync patient",
+      "uses" : {
+      },
+      "ValueSet-ms-form117-codes.html" : "ValueSet - Form117 Compliance - NMDP"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/genderidentity",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "NMDPGenderIdentityCS",
+      "title" : "CodeSystem - Patient Gender Identity - NMDP",
+      "description" : "Code System for NMDP diseases",
+      "uses" : {
+      },
+      "ValueSet-nmdp-GenderIdentity-codes.html" : "ValueSet - Patient Gender Identity - NMDP"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/language",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "NMDPLanguageCS",
+      "title" : "CodeSystem - Language - NMDP",
+      "description" : "Code System for NMDP languages",
+      "uses" : {
+      },
+      "ValueSet-nmdp-language-codes.html" : "ValueSet - Language - NMDP"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/practitionerrole",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "NMDPPractitionerRoleCS",
+      "title" : "NMDP Practitioner Roles",
+      "description" : "NMDP Practitioner Roles",
+      "uses" : {
+      },
+      "ValueSet-nmdp-practitioner-role-vs.html" : "NMDP Practitioner Role Value Set"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/preferredproduct",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "NMDPPreferredProductCS",
+      "title" : "CodeSystem - Preferred Product - NMDP",
+      "description" : "NMDP Preferred Product for MatchSync patient",
+      "uses" : {
+      },
+      "ValueSet-nmdp-preferred-product-codes.html" : "ValueSet - Preferred Product - NMDP"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/race",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "NMDPRaceCS",
+      "title" : "CodeSystem - Patient Race - NMDP",
+      "description" : "Code System for NMDP diseases",
+      "uses" : {
+      },
+      "ValueSet-nmdp-race-codes.html" : "ValueSet - Patient Race - NMDP"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/rhstatus",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "NMDPRhStatusCS",
+      "title" : "CodeSystem - Blood Group (Rh) - NMDP",
+      "description" : "Code System for NMDP Rh Status",
+      "uses" : {
+      },
+      "ValueSet-nmdp-rh-status-codes.html" : "ValueSet - Blood Group (Rh) - NMDP"
+    },
+    {
+      "url" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "NMDPTransplantTimelineCS",
+      "title" : "CodeSystem - Transplant Timeline - NMDP",
+      "description" : "Code System for NMDP transplant timeline",
+      "uses" : {
+      },
+      "ValueSet-nmdp-transplant-timeline-codes.html" : "ValueSet - Transplant Timeline - NMDP"
+    },
+    {
+      "url" : "http://www.genenames.org/geneId",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "HLAGeneIdCS",
+      "title" : "HLA HGNC GeneID CodeSystem",
+      "description" : "CodeSystem of HLA gene group subset of HGNC GeneId Codesystem",
+      "uses" : {
+      },
+      "ValueSet-hla-geneid-valueset.html" : "HLA Gene Name Value Set"
+    }
+  ]
+}

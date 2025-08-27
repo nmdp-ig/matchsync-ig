@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nmdp-practitioner-role-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nmdp-practitioner-role-vs</b></p><a name=\"nmdp-practitioner-role-vs\"> </a><a name=\"hcnmdp-practitioner-role-vs\"> </a><a name=\"nmdp-practitioner-role-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-practitioner-role-cs.html\"><code>http://terminology.nmdp.org/codesystem/practitionerrole</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs",
+  "version" : "0.1.0",
+  "name" : "NMDPPractitionerRoleVS",
+  "title" : "NMDP Practitioner Role Value Set",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-11-08T17:25:20-06:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "NMDP Practitioner Role Value Set",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/practitionerrole"
+    }]
+  }
+}

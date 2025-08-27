@@ -38,7 +38,7 @@ Description: "Example of a patient needing a donor using us-core-race and us-cor
 * address.state = "MN"
 * address.postalCode = "55401"
 * telecom[0].value = "1-612-555-1234"
-* extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2106-3 "White"
+* extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "White"
 * extension[race].extension[text].valueString = "White"
 * extension[ethnicity].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "Not Hispanic or Latino"
 * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
@@ -72,7 +72,7 @@ Instance: ad78058a-c0fe-4ea0-bc86-d2f3770a1944
 InstanceOf: NMDPPractitionerRole
 Description: "Example of Transplant Center Search Coordinotor Role"
 * meta.security[TransplantCenter].code = #tc_123
-* code = $NMDP-PR#searchcoordinator "Search Coordinator"
+* code = $NMDP-PR#tccoordinator "Transplant Center Coordinator"
 * practitioner = Reference(urn:uuid:fe6acf5d-ed53-4758-8d38-10d915c984af)
 * practitioner.display = "Bart Simpson"
 

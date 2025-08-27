@@ -11,13 +11,13 @@
   fhir:id [ fhir:v "nmdp.fhir.matchsync"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide nmdp.fhir.matchsync</b></p><a name=\"nmdp.fhir.matchsync\"> </a><a name=\"hcnmdp.fhir.matchsync\"> </a><a name=\"nmdp.fhir.matchsync-en-US\"> </a><h2>MatchSyncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync</pre></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide nmdp.fhir.matchsync</b></p><a name=\"nmdp.fhir.matchsync\"> </a><a name=\"hcnmdp.fhir.matchsync\"> </a><h2>MatchSyncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync</pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.2"] ; # 
+  fhir:version [ fhir:v "0.1.3"] ; # 
   fhir:name [ fhir:v "MatchSyncIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-04-16T10:37:17-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-27T10:39:15-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NMDP"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NMDP" ] ;
@@ -43,7 +43,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.2.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -764,7 +764,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.4.1"
+         fhir:v "hl7.fhir.uv.tools.r4#0.7.1"
        ]
      ] [
        fhir:extension ( [
@@ -1690,6 +1690,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/cdc-race-ethnicity-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/cdc-race-ethnicity-cs" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem - Patient Ethnicity - CDC" ] ;
+       fhir:description [ fhir:v "Code System for CDC race and ethnicity" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-ethnicity-cs> ;
          fhir:reference [ fhir:v "CodeSystem/nmdp-ethnicity-cs" ]
        ] ;
@@ -1731,6 +1749,24 @@
        ] ;
        fhir:name [ fhir:v "CodeSystem - Patient Race - NMDP" ] ;
        fhir:description [ fhir:v "Code System for NMDP diseases" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-practitioner-role-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/nmdp-practitioner-role-cs" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem - PractitionerRole - NMDP" ] ;
+       fhir:description [ fhir:v "NMDP Practitioner Roles" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2799,42 +2835,6 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs> ;
-         fhir:reference [ fhir:v "ValueSet/nmdp-practitioner-role-vs" ]
-       ] ;
-       fhir:name [ fhir:v "NMDP Practitioner Role Value Set" ] ;
-       fhir:description [ fhir:v "NMDP Practitioner Role Value Set" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "CodeSystem"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-practitioner-role-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/nmdp-practitioner-role-cs" ]
-       ] ;
-       fhir:name [ fhir:v "NMDP Practitioner Roles" ] ;
-       fhir:description [ fhir:v "NMDP Practitioner Roles" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -3089,14 +3089,32 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/ietf-language-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/ietf-language-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Tags for the Identification of Languages" ] ;
+       fhir:description [ fhir:v "Code System for IETF languages" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Practitioner"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsync/Practitioner/SearchCoordinatorExample> ;
-         fhir:reference [ fhir:v "Practitioner/SearchCoordinatorExample" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Practitioner/TCCoordinatorExample> ;
+         fhir:reference [ fhir:v "Practitioner/TCCoordinatorExample" ]
        ] ;
-       fhir:name [ fhir:v "SearchCoordinatorExample" ] ;
+       fhir:name [ fhir:v "TCCoordinatorExample" ] ;
        fhir:description [ fhir:v "Example of a practitioner." ] ;
        fhir:example [
          a fhir:canonical ;
@@ -3112,10 +3130,10 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.nmdp.org/ig/matchsync/PractitionerRole/SearchCoordinatorRoleExample> ;
-         fhir:reference [ fhir:v "PractitionerRole/SearchCoordinatorRoleExample" ]
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/PractitionerRole/TCCoordinatorRoleExample> ;
+         fhir:reference [ fhir:v "PractitionerRole/TCCoordinatorRoleExample" ]
        ] ;
-       fhir:name [ fhir:v "SearchCoordinatorRoleExample" ] ;
+       fhir:name [ fhir:v "TCCoordinatorRoleExample" ] ;
        fhir:description [ fhir:v "Example of Transplant Center Coordinotor Role" ] ;
        fhir:example [
          a fhir:canonical ;
@@ -3457,6 +3475,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs> ;
+         fhir:reference [ fhir:v "ValueSet/nmdp-practitioner-role-vs" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet - PractitionerRole - NMDP" ] ;
+       fhir:description [ fhir:v "NMDP Practitioner Role Value Set" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes> ;
          fhir:reference [ fhir:v "ValueSet/nmdp-preferred-product-codes" ]
        ] ;
@@ -3526,6 +3562,20 @@
            fhir:v "Appendices.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Appendices" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "Downloads.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "Downloads.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

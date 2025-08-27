@@ -9,7 +9,7 @@ name: MatchSyncIG
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
-version: 0.1.2
+version: 0.1.3
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -106,6 +106,7 @@ menu:
   Table of Contents: toc.html
   Matchsync Setup Guide: NMDP-PatientImport-Guide-v3.9.pdf
   Appendices: Appendices.html
+  Downloads: Downloads.html
   Support:
     "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
 

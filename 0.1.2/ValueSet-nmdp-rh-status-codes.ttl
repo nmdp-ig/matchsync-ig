@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nmdp-rh-status-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nmdp-rh-status-codes</b></p><a name=\"nmdp-rh-status-codes\"> </a><a name=\"hcnmdp-rh-status-codes\"> </a><a name=\"nmdp-rh-status-codes-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-rh-status-cs.html\"><code>http://terminology.nmdp.org/codesystem/rhstatus</code></a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.2"] ; # 
+  fhir:name [ fhir:v "NMDPRhStatusVS"] ; # 
+  fhir:title [ fhir:v "ValueSet - Blood Group (Rh) - NMDP"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-04-16T10:30:36-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NMDP"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NMDP" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://bethematch.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "NMDP codes for Rh staus"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/rhstatus"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

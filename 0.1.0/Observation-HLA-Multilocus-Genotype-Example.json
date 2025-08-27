@@ -1,0 +1,101 @@
+{
+  "resourceType" : "Observation",
+  "id" : "HLA-Multilocus-Genotype-Example",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-genotype"],
+    "security" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplant-center",
+      "code" : "tc_123"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation HLA-Multilocus-Genotype-Example</b></p><a name=\"HLA-Multilocus-Genotype-Example\"> </a><a name=\"hcHLA-Multilocus-Genotype-Example\"> </a><a name=\"HLA-Multilocus-Genotype-Example-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 84413-4}\">Genotype display name</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: <span title=\"Codes:{http://glstring.org hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02^HLA-B*57:01:01:01+HLA-B*15:01:01:01^HLA-DRB1*01:01:01:01+HLA-DRB1*01:02:01:01+HLA-DRB3*01:01:02:01}\">hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02^HLA-B*57:01:01:01+HLA-B*15:01:01:01^HLA-DRB1*01:01:01:01+HLA-DRB1*01:02:01:01+HLA-DRB3*01:01:02:01</span></p><p><b>specimen</b>: <a href=\"Specimen-MSSpecimenExample.html\">Specimen: identifier = http://terminology.nmdp.org/identifier/transplantcenter#000</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:4931}\">HLA-A</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:4932}\">HLA-B</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:4948}\">HLA-DRB1</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:4951}\">HLA-DRB3</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "84413-4"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/MSPatientExample"
+  },
+  "effectiveDateTime" : "2022-05-01",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://glstring.org",
+      "code" : "hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02^HLA-B*57:01:01:01+HLA-B*15:01:01:01^HLA-DRB1*01:01:01:01+HLA-DRB1*01:02:01:01+HLA-DRB3*01:01:02:01"
+    }]
+  },
+  "specimen" : {
+    "reference" : "Specimen/MSSpecimenExample"
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "48018-6"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://www.genenames.org/geneId",
+        "code" : "HGNC:4931",
+        "display" : "HLA-A"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "48018-6"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://www.genenames.org/geneId",
+        "code" : "HGNC:4932",
+        "display" : "HLA-B"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "48018-6"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://www.genenames.org/geneId",
+        "code" : "HGNC:4948",
+        "display" : "HLA-DRB1"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "48018-6"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://www.genenames.org/geneId",
+        "code" : "HGNC:4951",
+        "display" : "HLA-DRB3"
+      }]
+    }
+  }]
+}

@@ -1,0 +1,301 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/Bundle/BundleExample-Practitioner> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BundleExample-Practitioner"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2020-11-24T23:50:50-05:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:3f7d88b1-3e39-4f52-bb9c-5d680b7166b3"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:3f7d88b1-3e39-4f52-bb9c-5d680b7166b3> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:ad78058a-c0fe-4ea0-bc86-d2f3770a1944"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:ad78058a-c0fe-4ea0-bc86-d2f3770a1944> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:8fd0ef20-d146-4fff-b2a8-1d607adf9802"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:8fd0ef20-d146-4fff-b2a8-1d607adf9802> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:f1942bac-b8b3-45a1-b1d0-6928326d03ce"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:f1942bac-b8b3-45a1-b1d0-6928326d03ce> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:fe6acf5d-ed53-4758-8d38-10d915c984af"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:fe6acf5d-ed53-4758-8d38-10d915c984af> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:a9e56f2a-0827-4efd-a773-ed48c6e2752c"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:a9e56f2a-0827-4efd-a773-ed48c6e2752c> )
+  ] ) . # 
+
+<urn:uuid:3f7d88b1-3e39-4f52-bb9c-5d680b7166b3> a fhir:Patient ;
+  fhir:id [ fhir:v "3f7d88b1-3e39-4f52-bb9c-5d680b7166b3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_3f7d88b1-3e39-4f52-bb9c-5d680b7166b3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient 3f7d88b1-3e39-4f52-bb9c-5d680b7166b3</b></p><a name=\"3f7d88b1-3e39-4f52-bb9c-5d680b7166b3\"> </a><a name=\"hc3f7d88b1-3e39-4f52-bb9c-5d680b7166b3\"> </a><a name=\"3f7d88b1-3e39-4f52-bb9c-5d680b7166b3-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mspatient.html\">MSPatient</a></p><p style=\"margin-bottom: 0px\">Security Label: tc_123 (Details: transplant-center code tc_123)</p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 1-612-555-1234</li><li>123 Main St Minneapolis MN 55401 USA </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <a href=\"Bundle-BundleExample-Practitioner.html#urn-uuid-f1942bac-b8b3-45a1-b1d0-6928326d03ce\">Referring Physician</a></li><li>General Practitioner: <a href=\"Bundle-BundleExample-Practitioner.html#urn-uuid-8fd0ef20-d146-4fff-b2a8-1d607adf9802\">TC Physician</a></li><li>General Practitioner: <a href=\"Bundle-BundleExample-Practitioner.html#urn-uuid-ad78058a-c0fe-4ea0-bc86-d2f3770a1944\">Search Coordinator</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2186-5\">Race &amp; Ethnicity - CDC 2186-5</a>: Not Hispanic or Latino</li><li>text: Not Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2106-3\">Race &amp; Ethnicity - CDC 2106-3</a>: White</li><li>text: White</li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2106-3" ] ;
+         fhir:display [ fhir:v "White" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "White"
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2186-5" ] ;
+         fhir:display [ fhir:v "Not Hispanic or Latino" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Not Hispanic or Latino"
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://example.org/mrn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Everyperson" ] ;
+     fhir:given ( [ fhir:v "Jane" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "1-612-555-1234" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1974-12-25"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "123 Main St" ] ) ;
+     fhir:city [ fhir:v "Minneapolis" ] ;
+     fhir:state [ fhir:v "MN" ] ;
+     fhir:postalCode [ fhir:v "55401" ] ;
+     fhir:country [ fhir:v "USA" ]
+  ] ) ; # 
+  fhir:generalPractitioner ( [
+     fhir:reference [ fhir:v "urn:uuid:f1942bac-b8b3-45a1-b1d0-6928326d03ce" ] ;
+     fhir:display [ fhir:v "Referring Physician" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:8fd0ef20-d146-4fff-b2a8-1d607adf9802" ] ;
+     fhir:display [ fhir:v "TC Physician" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:ad78058a-c0fe-4ea0-bc86-d2f3770a1944" ] ;
+     fhir:display [ fhir:v "Search Coordinator" ]
+  ] ) . # 
+
+<urn:uuid:ad78058a-c0fe-4ea0-bc86-d2f3770a1944> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "ad78058a-c0fe-4ea0-bc86-d2f3770a1944"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_ad78058a-c0fe-4ea0-bc86-d2f3770a1944\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole ad78058a-c0fe-4ea0-bc86-d2f3770a1944</b></p><a name=\"ad78058a-c0fe-4ea0-bc86-d2f3770a1944\"> </a><a name=\"hcad78058a-c0fe-4ea0-bc86-d2f3770a1944\"> </a><a name=\"ad78058a-c0fe-4ea0-bc86-d2f3770a1944-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nmdp-practitioner-role.html\">NMDPPractitionerRole</a></p><p style=\"margin-bottom: 0px\">Security Label: tc_123 (Details: transplant-center code tc_123)</p></div><p><b>practitioner</b>: <a href=\"Bundle-BundleExample-Practitioner.html#urn-uuid-fe6acf5d-ed53-4758-8d38-10d915c984af\">Bart Simpson</a></p><p><b>code</b>: <span title=\"Codes:{http://terminology.nmdp.org/codesystem/practitionerrole searchcoordinator}\">Search Coordinator</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:practitioner [
+     fhir:reference [ fhir:v "urn:uuid:fe6acf5d-ed53-4758-8d38-10d915c984af" ] ;
+     fhir:display [ fhir:v "Bart Simpson" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/practitionerrole"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "searchcoordinator" ] ;
+       fhir:display [ fhir:v "Search Coordinator" ]
+     ] )
+  ] ) . # 
+
+<urn:uuid:8fd0ef20-d146-4fff-b2a8-1d607adf9802> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "8fd0ef20-d146-4fff-b2a8-1d607adf9802"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_8fd0ef20-d146-4fff-b2a8-1d607adf9802\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole 8fd0ef20-d146-4fff-b2a8-1d607adf9802</b></p><a name=\"8fd0ef20-d146-4fff-b2a8-1d607adf9802\"> </a><a name=\"hc8fd0ef20-d146-4fff-b2a8-1d607adf9802\"> </a><a name=\"8fd0ef20-d146-4fff-b2a8-1d607adf9802-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nmdp-practitioner-role.html\">NMDPPractitionerRole</a></p><p style=\"margin-bottom: 0px\">Security Label: tc_123 (Details: transplant-center code tc_123)</p></div><p><b>practitioner</b>: <a href=\"Bundle-BundleExample-Practitioner.html#urn-uuid-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa\">Lisa Simpson</a></p><p><b>code</b>: <span title=\"Codes:{http://terminology.nmdp.org/codesystem/practitionerrole tcphysician}\">Transplant Center Physician</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:practitioner [
+     fhir:reference [ fhir:v "urn:uuid:26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa" ] ;
+     fhir:display [ fhir:v "Lisa Simpson" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/practitionerrole"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tcphysician" ] ;
+       fhir:display [ fhir:v "Transplant Center Physician" ]
+     ] )
+  ] ) . # 
+
+<urn:uuid:f1942bac-b8b3-45a1-b1d0-6928326d03ce> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "f1942bac-b8b3-45a1-b1d0-6928326d03ce"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_f1942bac-b8b3-45a1-b1d0-6928326d03ce\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole f1942bac-b8b3-45a1-b1d0-6928326d03ce</b></p><a name=\"f1942bac-b8b3-45a1-b1d0-6928326d03ce\"> </a><a name=\"hcf1942bac-b8b3-45a1-b1d0-6928326d03ce\"> </a><a name=\"f1942bac-b8b3-45a1-b1d0-6928326d03ce-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nmdp-practitioner-role.html\">NMDPPractitionerRole</a></p><p style=\"margin-bottom: 0px\">Security Label: tc_123 (Details: transplant-center code tc_123)</p></div><p><b>practitioner</b>: <a href=\"Bundle-BundleExample-Practitioner.html#urn-uuid-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa\">Lisa Simpson</a></p><p><b>code</b>: <span title=\"Codes:{http://terminology.nmdp.org/codesystem/practitionerrole referringphysician}\">Referring Physician</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:practitioner [
+     fhir:reference [ fhir:v "urn:uuid:26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa" ] ;
+     fhir:display [ fhir:v "Lisa Simpson" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/practitionerrole"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "referringphysician" ] ;
+       fhir:display [ fhir:v "Referring Physician" ]
+     ] )
+  ] ) . # 
+
+<urn:uuid:26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa> a fhir:Practitioner ;
+  fhir:id [ fhir:v "26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner 26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa</b></p><a name=\"26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa\"> </a><a name=\"hc26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa\"> </a><a name=\"26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nmdp-practitioner.html\">NMDPPractitioner</a></p><p style=\"margin-bottom: 0px\">Security Label: tc_123 (Details: transplant-center code tc_123)</p></div><p><b>name</b>: Lisa Simpson </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Simpson" ] ;
+     fhir:given ( [ fhir:v "Lisa" ] )
+  ] ) . # 
+
+<urn:uuid:fe6acf5d-ed53-4758-8d38-10d915c984af> a fhir:Practitioner ;
+  fhir:id [ fhir:v "fe6acf5d-ed53-4758-8d38-10d915c984af"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_fe6acf5d-ed53-4758-8d38-10d915c984af\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner fe6acf5d-ed53-4758-8d38-10d915c984af</b></p><a name=\"fe6acf5d-ed53-4758-8d38-10d915c984af\"> </a><a name=\"hcfe6acf5d-ed53-4758-8d38-10d915c984af\"> </a><a name=\"fe6acf5d-ed53-4758-8d38-10d915c984af-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nmdp-practitioner.html\">NMDPPractitioner</a></p><p style=\"margin-bottom: 0px\">Security Label: tc_123 (Details: transplant-center code tc_123)</p></div><p><b>name</b>: Bart Simpson </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Simpson" ] ;
+     fhir:given ( [ fhir:v "Bart" ] )
+  ] ) . # 
+
+<urn:uuid:a9e56f2a-0827-4efd-a773-ed48c6e2752c> a fhir:Condition ;
+  fhir:id [ fhir:v "a9e56f2a-0827-4efd-a773-ed48c6e2752c"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_a9e56f2a-0827-4efd-a773-ed48c6e2752c\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition a9e56f2a-0827-4efd-a773-ed48c6e2752c</b></p><a name=\"a9e56f2a-0827-4efd-a773-ed48c6e2752c\"> </a><a name=\"hca9e56f2a-0827-4efd-a773-ed48c6e2752c\"> </a><a name=\"a9e56f2a-0827-4efd-a773-ed48c6e2752c-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-msdiagnosis.html\">MSPrimaryDiagnosis</a></p><p style=\"margin-bottom: 0px\">Security Label: tc_123 (Details: transplant-center code tc_123)</p></div><p><b>Number of Remissions of Primary Diagnosis</b>: 0</p><p><b>code</b>: <span title=\"Codes:{http://terminology.nmdp.org/codesystem/disease AML}\">ACUTE MYELOGENOUS LEUKEMIA</span></p><p><b>subject</b>: <a href=\"Bundle-BundleExample-Practitioner.html#urn-uuid-3f7d88b1-3e39-4f52-bb9c-5d680b7166b3\">Bundle: type = collection; timestamp = 2020-11-24 23:50:50-0500</a></p><p><b>recordedDate</b>: 2021-11-01</p><h3>Stages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Summary</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.nmdp.org/codesystem/diseasestage AP}\">Accelerated Phase</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/number-of-remissions"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 0
+     ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/disease"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "AML" ] ;
+       fhir:display [ fhir:v "ACUTE MYELOGENOUS LEUKEMIA" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "urn:uuid:3f7d88b1-3e39-4f52-bb9c-5d680b7166b3" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-11-01"^^xsd:date] ; # 
+  fhir:stage ( [
+     fhir:summary [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/diseasestage"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AP" ] ;
+         fhir:display [ fhir:v "Accelerated Phase" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nmdp-language-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nmdp-language-codes</b></p><a name=\"nmdp-language-codes\"> </a><a name=\"hcnmdp-language-codes\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-language-cs.html\"><code>http://terminology.nmdp.org/codesystem/language</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-ietf-language-cs.html\"><code>urn:ietf:bcp:47</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes",
+  "version" : "0.1.3",
+  "name" : "NMDPLanguageCodes",
+  "title" : "ValueSet - Language - NMDP",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-27T10:39:15-05:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "NMDP language codes",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/language"
+    },
+    {
+      "system" : "urn:ietf:bcp:47"
+    }]
+  }
+}

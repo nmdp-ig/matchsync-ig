@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nmdp-ethnicity-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nmdp-ethnicity-cs</b></p><a name="nmdp-ethnicity-cs"> </a><a name="hcnmdp-ethnicity-cs"> </a><a name="nmdp-ethnicity-cs-en-US"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/ethnicity</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">NHIS<a name="nmdp-ethnicity-cs-NHIS"> </a></td><td>Not Hispanic or Latino</td></tr><tr><td style="white-space:nowrap">HIS<a name="nmdp-ethnicity-cs-HIS"> </a></td><td>Hispanic or Latino</td></tr><tr><td style="white-space:nowrap">nil<a name="nmdp-ethnicity-cs-nil"> </a></td><td>No data</td></tr></table></div>
+  </text>
+  <url value="http://terminology.nmdp.org/codesystem/ethnicity"/>
+  <version value="0.1.2"/>
+  <name value="NMDPEthnicityCS"/>
+  <title value="CodeSystem - Patient Ethnicity - NMDP"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-04-16T10:30:36-05:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="Code System for NMDP ethnicity"/>
+  <copyright value="National Marrow Donor Program"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="NHIS"/>
+    <display value="Not Hispanic or Latino"/>
+  </concept>
+  <concept>
+    <code value="HIS"/>
+    <display value="Hispanic or Latino"/>
+  </concept>
+  <concept>
+    <code value="nil"/>
+    <display value="No data"/>
+  </concept>
+</CodeSystem>

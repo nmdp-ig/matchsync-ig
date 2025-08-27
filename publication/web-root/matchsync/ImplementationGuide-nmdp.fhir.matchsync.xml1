@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="nmdp.fhir.matchsync"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide nmdp.fhir.matchsync</b></p><a name="nmdp.fhir.matchsync"> </a><a name="hcnmdp.fhir.matchsync"> </a><a name="nmdp.fhir.matchsync-en-US"> </a><h2>MatchSyncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide nmdp.fhir.matchsync</b></p><a name="nmdp.fhir.matchsync"> </a><a name="hcnmdp.fhir.matchsync"> </a><h2>MatchSyncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync</pre></div>
   </text>
   <url value="http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync"/>
-  <version value="0.1.2"/>
+  <version value="0.1.3"/>
   <name value="MatchSyncIG"/>
   <status value="draft"/>
-  <date value="2025-04-16T10:37:17-05:00"/>
+  <date value="2025-08-27T10:39:15-05:00"/>
   <publisher value="NMDP"/>
   <contact>
     <name value="NMDP"/>
@@ -27,7 +27,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.2.0"/>
+    <version value="6.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -414,7 +414,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.4.1"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.7.1"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -924,6 +924,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/cdc-race-ethnicity-cs"/>
+      </reference>
+      <name value="CodeSystem - Patient Ethnicity - CDC"/>
+      <description value="Code System for CDC race and ethnicity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/nmdp-ethnicity-cs"/>
       </reference>
       <name value="CodeSystem - Patient Ethnicity - NMDP"/>
@@ -950,6 +961,17 @@
       </reference>
       <name value="CodeSystem - Patient Race - NMDP"/>
       <description value="Code System for NMDP diseases"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/nmdp-practitioner-role-cs"/>
+      </reference>
+      <name value="CodeSystem - PractitionerRole - NMDP"/>
+      <description value="NMDP Practitioner Roles"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1581,28 +1603,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/nmdp-practitioner-role-vs"/>
-      </reference>
-      <name value="NMDP Practitioner Role Value Set"/>
-      <description value="NMDP Practitioner Role Value Set"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/nmdp-practitioner-role-cs"/>
-      </reference>
-      <name value="NMDP Practitioner Roles"/>
-      <description value="NMDP Practitioner Roles"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1757,12 +1757,23 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ietf-language-cs"/>
+      </reference>
+      <name value="Tags for the Identification of Languages"/>
+      <description value="Code System for IETF languages"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Practitioner"/>
       </extension>
       <reference>
-        <reference value="Practitioner/SearchCoordinatorExample"/>
+        <reference value="Practitioner/TCCoordinatorExample"/>
       </reference>
-      <name value="SearchCoordinatorExample"/>
+      <name value="TCCoordinatorExample"/>
       <description value="Example of a practitioner."/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"/>
     </resource>
@@ -1771,9 +1782,9 @@
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
-        <reference value="PractitionerRole/SearchCoordinatorRoleExample"/>
+        <reference value="PractitionerRole/TCCoordinatorRoleExample"/>
       </reference>
-      <name value="SearchCoordinatorRoleExample"/>
+      <name value="TCCoordinatorRoleExample"/>
       <description value="Example of Transplant Center Coordinotor Role"/>
       <exampleCanonical value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"/>
     </resource>
@@ -1980,6 +1991,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/nmdp-practitioner-role-vs"/>
+      </reference>
+      <name value="ValueSet - PractitionerRole - NMDP"/>
+      <description value="NMDP Practitioner Role Value Set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/nmdp-preferred-product-codes"/>
       </reference>
       <name value="ValueSet - Preferred Product - NMDP"/>
@@ -2018,6 +2040,14 @@
         </extension>
         <nameUrl value="Appendices.html"/>
         <title value="Appendices"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Downloads.html"/>
+        </extension>
+        <nameUrl value="Downloads.html"/>
+        <title value="Downloads"/>
         <generation value="markdown"/>
       </page>
       <page>

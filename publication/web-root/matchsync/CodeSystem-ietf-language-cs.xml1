@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ietf-language-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ietf-language-cs</b></p><a name="ietf-language-cs"> </a><a name="hcietf-language-cs"> </a><p>This case-sensitive code system <code>urn:ietf:bcp:47</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ar<a name="ietf-language-cs-ar"> </a></td><td>Arabic</td></tr><tr><td style="white-space:nowrap">ara<a name="ietf-language-cs-ara"> </a></td><td>Arabic</td></tr><tr><td style="white-space:nowrap">jrb<a name="ietf-language-cs-jrb"> </a></td><td>Judeo-Arabic</td></tr><tr><td style="white-space:nowrap">ar-AE<a name="ietf-language-cs-ar-AE"> </a></td><td>Arabic (United Arab Emirates)</td></tr><tr><td style="white-space:nowrap">ar-BH<a name="ietf-language-cs-ar-BH"> </a></td><td>Arabic (Bahrain)</td></tr><tr><td style="white-space:nowrap">ar-DZ,<a name="ietf-language-cs-ar-DZ.44"> </a></td><td>Arabic (Algeria)</td></tr><tr><td style="white-space:nowrap">ar-EG<a name="ietf-language-cs-ar-EG"> </a></td><td>Arabic (EgyptIraq)</td></tr><tr><td style="white-space:nowrap">ar-IQ<a name="ietf-language-cs-ar-IQ"> </a></td><td>Arabic (Iraq)</td></tr><tr><td style="white-space:nowrap">ar-JO<a name="ietf-language-cs-ar-JO"> </a></td><td>Arabic (Jordan)</td></tr><tr><td style="white-space:nowrap">ar-KW<a name="ietf-language-cs-ar-KW"> </a></td><td>Arabic (Kuwait)</td></tr><tr><td style="white-space:nowrap">ar-LB<a name="ietf-language-cs-ar-LB"> </a></td><td>Arabic (Lebanon)</td></tr><tr><td style="white-space:nowrap">ar-LY<a name="ietf-language-cs-ar-LY"> </a></td><td>Arabic (Libya)</td></tr><tr><td style="white-space:nowrap">ar-MA<a name="ietf-language-cs-ar-MA"> </a></td><td>Arabic (Morocco)</td></tr><tr><td style="white-space:nowrap">ar-OM<a name="ietf-language-cs-ar-OM"> </a></td><td>Arabic (Oman)</td></tr><tr><td style="white-space:nowrap">ar-QA<a name="ietf-language-cs-ar-QA"> </a></td><td>Arabic (Qatar)</td></tr><tr><td style="white-space:nowrap">ar-SA<a name="ietf-language-cs-ar-SA"> </a></td><td>Arabic (Saudi Arabia)</td></tr><tr><td style="white-space:nowrap">ar-SY<a name="ietf-language-cs-ar-SY"> </a></td><td>Arabic (Syrian Arab Republic)</td></tr><tr><td style="white-space:nowrap">ar-TN<a name="ietf-language-cs-ar-TN"> </a></td><td>Arabic (Tunisia)</td></tr><tr><td style="white-space:nowrap">ar-YE<a name="ietf-language-cs-ar-YE"> </a></td><td>Arabic (Yemen)</td></tr><tr><td style="white-space:nowrap">zh<a name="ietf-language-cs-zh"> </a></td><td>Chinese</td></tr><tr><td style="white-space:nowrap">zho<a name="ietf-language-cs-zho"> </a></td><td>Chinese</td></tr><tr><td style="white-space:nowrap">chi<a name="ietf-language-cs-chi"> </a></td><td>Chinese</td></tr><tr><td style="white-space:nowrap">cmn<a name="ietf-language-cs-cmn"> </a></td><td>Mandarin Chinese</td></tr><tr><td style="white-space:nowrap">zh-CN<a name="ietf-language-cs-zh-CN"> </a></td><td>Chinese (China)</td></tr><tr><td style="white-space:nowrap">zh-HK<a name="ietf-language-cs-zh-HK"> </a></td><td>Chinese (Hong Kong)</td></tr><tr><td style="white-space:nowrap">zh-MO<a name="ietf-language-cs-zh-MO"> </a></td><td>Chinese (Macao)</td></tr><tr><td style="white-space:nowrap">zh-SG<a name="ietf-language-cs-zh-SG"> </a></td><td>Chinese (Singapore)</td></tr><tr><td style="white-space:nowrap">zh-TW<a name="ietf-language-cs-zh-TW"> </a></td><td>Chinese (Taiwan)</td></tr><tr><td style="white-space:nowrap">en<a name="ietf-language-cs-en"> </a></td><td>English</td></tr><tr><td style="white-space:nowrap">eng<a name="ietf-language-cs-eng"> </a></td><td>English</td></tr><tr><td style="white-space:nowrap">enm<a name="ietf-language-cs-enm"> </a></td><td>English</td></tr><tr><td style="white-space:nowrap">ang<a name="ietf-language-cs-ang"> </a></td><td>Old English</td></tr><tr><td style="white-space:nowrap">cpe<a name="ietf-language-cs-cpe"> </a></td><td>English based creoles and pidgins</td></tr><tr><td style="white-space:nowrap">en-AU<a name="ietf-language-cs-en-AU"> </a></td><td>English (Australia)</td></tr><tr><td style="white-space:nowrap">en-BZ<a name="ietf-language-cs-en-BZ"> </a></td><td>English (Belize)</td></tr><tr><td style="white-space:nowrap">en-CA<a name="ietf-language-cs-en-CA"> </a></td><td>English (Canada)</td></tr><tr><td style="white-space:nowrap">en-CB<a name="ietf-language-cs-en-CB"> </a></td><td>English (Caribbean)</td></tr><tr><td style="white-space:nowrap">en-GB<a name="ietf-language-cs-en-GB"> </a></td><td>English (Greate Britain)</td></tr><tr><td style="white-space:nowrap">en-IE<a name="ietf-language-cs-en-IE"> </a></td><td>English (Ireland)</td></tr><tr><td style="white-space:nowrap">en-JM<a name="ietf-language-cs-en-JM"> </a></td><td>English (Jamaica)</td></tr><tr><td style="white-space:nowrap">en-NZ<a name="ietf-language-cs-en-NZ"> </a></td><td>English (New Zeland)</td></tr><tr><td style="white-space:nowrap">en-PH<a name="ietf-language-cs-en-PH"> </a></td><td>English (Philippines)</td></tr><tr><td style="white-space:nowrap">en-TT<a name="ietf-language-cs-en-TT"> </a></td><td>English (Trinidad and Tobago)</td></tr><tr><td style="white-space:nowrap">en-US<a name="ietf-language-cs-en-US"> </a></td><td>English (United States)</td></tr><tr><td style="white-space:nowrap">en-ZA<a name="ietf-language-cs-en-ZA"> </a></td><td>English (South Africa)</td></tr><tr><td style="white-space:nowrap">en-ZW<a name="ietf-language-cs-en-ZW"> </a></td><td>English (Zimbabwe)</td></tr><tr><td style="white-space:nowrap">fr<a name="ietf-language-cs-fr"> </a></td><td>French</td></tr><tr><td style="white-space:nowrap">fra<a name="ietf-language-cs-fra"> </a></td><td>French</td></tr><tr><td style="white-space:nowrap">cpf<a name="ietf-language-cs-cpf"> </a></td><td>French-based creoles and pidgins</td></tr><tr><td style="white-space:nowrap">fre<a name="ietf-language-cs-fre"> </a></td><td>French</td></tr><tr><td style="white-space:nowrap">frm<a name="ietf-language-cs-frm"> </a></td><td>Middle French</td></tr><tr><td style="white-space:nowrap">fro<a name="ietf-language-cs-fro"> </a></td><td>Old French</td></tr><tr><td style="white-space:nowrap">fr-BE<a name="ietf-language-cs-fr-BE"> </a></td><td>French (Blegium)</td></tr><tr><td style="white-space:nowrap">fr-CA<a name="ietf-language-cs-fr-CA"> </a></td><td>French (Canada)</td></tr><tr><td style="white-space:nowrap">fr-CH<a name="ietf-language-cs-fr-CH"> </a></td><td>French (Switzerland)</td></tr><tr><td style="white-space:nowrap">fr-FR<a name="ietf-language-cs-fr-FR"> </a></td><td>French (France)</td></tr><tr><td style="white-space:nowrap">fr-LU<a name="ietf-language-cs-fr-LU"> </a></td><td>French (Luxembourg)</td></tr><tr><td style="white-space:nowrap">fr-MC<a name="ietf-language-cs-fr-MC"> </a></td><td>French (Monaco)</td></tr><tr><td style="white-space:nowrap">de<a name="ietf-language-cs-de"> </a></td><td>German</td></tr><tr><td style="white-space:nowrap">deu<a name="ietf-language-cs-deu"> </a></td><td>German</td></tr><tr><td style="white-space:nowrap">ger<a name="ietf-language-cs-ger"> </a></td><td>German</td></tr><tr><td style="white-space:nowrap">gmh<a name="ietf-language-cs-gmh"> </a></td><td>Middle High German</td></tr><tr><td style="white-space:nowrap">goh<a name="ietf-language-cs-goh"> </a></td><td>Old High German</td></tr><tr><td style="white-space:nowrap">gem<a name="ietf-language-cs-gem"> </a></td><td>Germanic languages</td></tr><tr><td style="white-space:nowrap">gsw<a name="ietf-language-cs-gsw"> </a></td><td>Swiss German, Alemannic, Alsatian</td></tr><tr><td style="white-space:nowrap">nds<a name="ietf-language-cs-nds"> </a></td><td>Low German, Low Saxon</td></tr><tr><td style="white-space:nowrap">de-AT<a name="ietf-language-cs-de-AT"> </a></td><td>German (Austria)</td></tr><tr><td style="white-space:nowrap">de-CH<a name="ietf-language-cs-de-CH"> </a></td><td>German (Switzerland)</td></tr><tr><td style="white-space:nowrap">de-DE<a name="ietf-language-cs-de-DE"> </a></td><td>German (Germany)</td></tr><tr><td style="white-space:nowrap">de-LI<a name="ietf-language-cs-de-LI"> </a></td><td>German (Liechtenstein)</td></tr><tr><td style="white-space:nowrap">de-LU<a name="ietf-language-cs-de-LU"> </a></td><td>German (Luxembourg)</td></tr><tr><td style="white-space:nowrap">it<a name="ietf-language-cs-it"> </a></td><td>Italian</td></tr><tr><td style="white-space:nowrap">ita<a name="ietf-language-cs-ita"> </a></td><td>Italian</td></tr><tr><td style="white-space:nowrap">it-CH<a name="ietf-language-cs-it-CH"> </a></td><td>Italian (Switzerland)</td></tr><tr><td style="white-space:nowrap">it-IT<a name="ietf-language-cs-it-IT"> </a></td><td>Italian (Italy)</td></tr><tr><td style="white-space:nowrap">ja<a name="ietf-language-cs-ja"> </a></td><td>Japanese</td></tr><tr><td style="white-space:nowrap">jpn<a name="ietf-language-cs-jpn"> </a></td><td>Japanese</td></tr><tr><td style="white-space:nowrap">ja-JP<a name="ietf-language-cs-ja-JP"> </a></td><td>Japanese (Japan)</td></tr><tr><td style="white-space:nowrap">ko<a name="ietf-language-cs-ko"> </a></td><td>Korean</td></tr><tr><td style="white-space:nowrap">kor<a name="ietf-language-cs-kor"> </a></td><td>Korean</td></tr><tr><td style="white-space:nowrap">ko-KR<a name="ietf-language-cs-ko-KR"> </a></td><td>Korean (Korea)</td></tr><tr><td style="white-space:nowrap">pt<a name="ietf-language-cs-pt"> </a></td><td>Portuguese</td></tr><tr><td style="white-space:nowrap">por<a name="ietf-language-cs-por"> </a></td><td>Portuguese</td></tr><tr><td style="white-space:nowrap">pt-BR<a name="ietf-language-cs-pt-BR"> </a></td><td>Portuguese (Brazil)</td></tr><tr><td style="white-space:nowrap">pt-PT<a name="ietf-language-cs-pt-PT"> </a></td><td>Portuguese (Portugal)</td></tr><tr><td style="white-space:nowrap">ru<a name="ietf-language-cs-ru"> </a></td><td>Russian</td></tr><tr><td style="white-space:nowrap">rus<a name="ietf-language-cs-rus"> </a></td><td>Russian</td></tr><tr><td style="white-space:nowrap">ru-RU<a name="ietf-language-cs-ru-RU"> </a></td><td>Russian (Russia)</td></tr><tr><td style="white-space:nowrap">es<a name="ietf-language-cs-es"> </a></td><td>Spanish</td></tr><tr><td style="white-space:nowrap">spa<a name="ietf-language-cs-spa"> </a></td><td>Spanish</td></tr><tr><td style="white-space:nowrap">es-AR<a name="ietf-language-cs-es-AR"> </a></td><td>Spanish (Argentina)</td></tr><tr><td style="white-space:nowrap">es-BO<a name="ietf-language-cs-es-BO"> </a></td><td>Spanish (Bolivia, Plurinational State of)</td></tr><tr><td style="white-space:nowrap">es-CL<a name="ietf-language-cs-es-CL"> </a></td><td>Spanish (Chile)</td></tr><tr><td style="white-space:nowrap">es-CO<a name="ietf-language-cs-es-CO"> </a></td><td>Spanish (Colombia)</td></tr><tr><td style="white-space:nowrap">es-CR<a name="ietf-language-cs-es-CR"> </a></td><td>Spanish (Costa Rica)</td></tr><tr><td style="white-space:nowrap">es-DO<a name="ietf-language-cs-es-DO"> </a></td><td>Spanish (Dominican Republic)</td></tr><tr><td style="white-space:nowrap">es-EC<a name="ietf-language-cs-es-EC"> </a></td><td>Spanish (Ecuador)</td></tr><tr><td style="white-space:nowrap">es-ES<a name="ietf-language-cs-es-ES"> </a></td><td>Spanish (Spain)</td></tr><tr><td style="white-space:nowrap">es-GT<a name="ietf-language-cs-es-GT"> </a></td><td>Spanish (Guatemala)</td></tr><tr><td style="white-space:nowrap">es-HN<a name="ietf-language-cs-es-HN"> </a></td><td>Spanish (Honduras)</td></tr><tr><td style="white-space:nowrap">es-MX<a name="ietf-language-cs-es-MX"> </a></td><td>Spanish (Mexico)</td></tr><tr><td style="white-space:nowrap">es-NI<a name="ietf-language-cs-es-NI"> </a></td><td>Spanish (Nicaragua)</td></tr><tr><td style="white-space:nowrap">es-PA<a name="ietf-language-cs-es-PA"> </a></td><td>Spanish (Panama)</td></tr><tr><td style="white-space:nowrap">es-PE<a name="ietf-language-cs-es-PE"> </a></td><td>Spanish (Peru)</td></tr><tr><td style="white-space:nowrap">es-PR<a name="ietf-language-cs-es-PR"> </a></td><td>Spanish (Puerto Rico)</td></tr><tr><td style="white-space:nowrap">es-PY<a name="ietf-language-cs-es-PY"> </a></td><td>Spanish (Paraguay)</td></tr><tr><td style="white-space:nowrap">es-SV<a name="ietf-language-cs-es-SV"> </a></td><td>Spanish (El Salvador)</td></tr><tr><td style="white-space:nowrap">es-UY<a name="ietf-language-cs-es-UY"> </a></td><td>Spainsh (Uruguay)</td></tr><tr><td style="white-space:nowrap">es-VE<a name="ietf-language-cs-es-VE"> </a></td><td>Spanish (Venezuela, Bolivarian Republic of)</td></tr><tr><td style="white-space:nowrap">vi<a name="ietf-language-cs-vi"> </a></td><td>Vietnamese</td></tr><tr><td style="white-space:nowrap">vie<a name="ietf-language-cs-vie"> </a></td><td>Vietnamese</td></tr><tr><td style="white-space:nowrap">vi-VN<a name="ietf-language-cs-vi-VN"> </a></td><td>Vietnamese (Vietnam)</td></tr></table></div>
+  </text>
+  <url value="urn:ietf:bcp:47"/>
+  <version value="0.1.3"/>
+  <name value="IETFLanguageCS"/>
+  <title value="Tags for the Identification of Languages"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-08-27T10:39:15-05:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="Code System for IETF languages"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="112"/>
+  <concept>
+    <code value="ar"/>
+    <display value="Arabic"/>
+  </concept>
+  <concept>
+    <code value="ara"/>
+    <display value="Arabic"/>
+  </concept>
+  <concept>
+    <code value="jrb"/>
+    <display value="Judeo-Arabic"/>
+  </concept>
+  <concept>
+    <code value="ar-AE"/>
+    <display value="Arabic (United Arab Emirates)"/>
+  </concept>
+  <concept>
+    <code value="ar-BH"/>
+    <display value="Arabic (Bahrain)"/>
+  </concept>
+  <concept>
+    <code value="ar-DZ,"/>
+    <display value="Arabic (Algeria)"/>
+  </concept>
+  <concept>
+    <code value="ar-EG"/>
+    <display value="Arabic (EgyptIraq)"/>
+  </concept>
+  <concept>
+    <code value="ar-IQ"/>
+    <display value="Arabic (Iraq)"/>
+  </concept>
+  <concept>
+    <code value="ar-JO"/>
+    <display value="Arabic (Jordan)"/>
+  </concept>
+  <concept>
+    <code value="ar-KW"/>
+    <display value="Arabic (Kuwait)"/>
+  </concept>
+  <concept>
+    <code value="ar-LB"/>
+    <display value="Arabic (Lebanon)"/>
+  </concept>
+  <concept>
+    <code value="ar-LY"/>
+    <display value="Arabic (Libya)"/>
+  </concept>
+  <concept>
+    <code value="ar-MA"/>
+    <display value="Arabic (Morocco)"/>
+  </concept>
+  <concept>
+    <code value="ar-OM"/>
+    <display value="Arabic (Oman)"/>
+  </concept>
+  <concept>
+    <code value="ar-QA"/>
+    <display value="Arabic (Qatar)"/>
+  </concept>
+  <concept>
+    <code value="ar-SA"/>
+    <display value="Arabic (Saudi Arabia)"/>
+  </concept>
+  <concept>
+    <code value="ar-SY"/>
+    <display value="Arabic (Syrian Arab Republic)"/>
+  </concept>
+  <concept>
+    <code value="ar-TN"/>
+    <display value="Arabic (Tunisia)"/>
+  </concept>
+  <concept>
+    <code value="ar-YE"/>
+    <display value="Arabic (Yemen)"/>
+  </concept>
+  <concept>
+    <code value="zh"/>
+    <display value="Chinese"/>
+  </concept>
+  <concept>
+    <code value="zho"/>
+    <display value="Chinese"/>
+  </concept>
+  <concept>
+    <code value="chi"/>
+    <display value="Chinese"/>
+  </concept>
+  <concept>
+    <code value="cmn"/>
+    <display value="Mandarin Chinese"/>
+  </concept>
+  <concept>
+    <code value="zh-CN"/>
+    <display value="Chinese (China)"/>
+  </concept>
+  <concept>
+    <code value="zh-HK"/>
+    <display value="Chinese (Hong Kong)"/>
+  </concept>
+  <concept>
+    <code value="zh-MO"/>
+    <display value="Chinese (Macao)"/>
+  </concept>
+  <concept>
+    <code value="zh-SG"/>
+    <display value="Chinese (Singapore)"/>
+  </concept>
+  <concept>
+    <code value="zh-TW"/>
+    <display value="Chinese (Taiwan)"/>
+  </concept>
+  <concept>
+    <code value="en"/>
+    <display value="English"/>
+  </concept>
+  <concept>
+    <code value="eng"/>
+    <display value="English"/>
+  </concept>
+  <concept>
+    <code value="enm"/>
+    <display value="English"/>
+  </concept>
+  <concept>
+    <code value="ang"/>
+    <display value="Old English"/>
+  </concept>
+  <concept>
+    <code value="cpe"/>
+    <display value="English based creoles and pidgins"/>
+  </concept>
+  <concept>
+    <code value="en-AU"/>
+    <display value="English (Australia)"/>
+  </concept>
+  <concept>
+    <code value="en-BZ"/>
+    <display value="English (Belize)"/>
+  </concept>
+  <concept>
+    <code value="en-CA"/>
+    <display value="English (Canada)"/>
+  </concept>
+  <concept>
+    <code value="en-CB"/>
+    <display value="English (Caribbean)"/>
+  </concept>
+  <concept>
+    <code value="en-GB"/>
+    <display value="English (Greate Britain)"/>
+  </concept>
+  <concept>
+    <code value="en-IE"/>
+    <display value="English (Ireland)"/>
+  </concept>
+  <concept>
+    <code value="en-JM"/>
+    <display value="English (Jamaica)"/>
+  </concept>
+  <concept>
+    <code value="en-NZ"/>
+    <display value="English (New Zeland)"/>
+  </concept>
+  <concept>
+    <code value="en-PH"/>
+    <display value="English (Philippines)"/>
+  </concept>
+  <concept>
+    <code value="en-TT"/>
+    <display value="English (Trinidad and Tobago)"/>
+  </concept>
+  <concept>
+    <code value="en-US"/>
+    <display value="English (United States)"/>
+  </concept>
+  <concept>
+    <code value="en-ZA"/>
+    <display value="English (South Africa)"/>
+  </concept>
+  <concept>
+    <code value="en-ZW"/>
+    <display value="English (Zimbabwe)"/>
+  </concept>
+  <concept>
+    <code value="fr"/>
+    <display value="French"/>
+  </concept>
+  <concept>
+    <code value="fra"/>
+    <display value="French"/>
+  </concept>
+  <concept>
+    <code value="cpf"/>
+    <display value="French-based creoles and pidgins"/>
+  </concept>
+  <concept>
+    <code value="fre"/>
+    <display value="French"/>
+  </concept>
+  <concept>
+    <code value="frm"/>
+    <display value="Middle French"/>
+  </concept>
+  <concept>
+    <code value="fro"/>
+    <display value="Old French"/>
+  </concept>
+  <concept>
+    <code value="fr-BE"/>
+    <display value="French (Blegium)"/>
+  </concept>
+  <concept>
+    <code value="fr-CA"/>
+    <display value="French (Canada)"/>
+  </concept>
+  <concept>
+    <code value="fr-CH"/>
+    <display value="French (Switzerland)"/>
+  </concept>
+  <concept>
+    <code value="fr-FR"/>
+    <display value="French (France)"/>
+  </concept>
+  <concept>
+    <code value="fr-LU"/>
+    <display value="French (Luxembourg)"/>
+  </concept>
+  <concept>
+    <code value="fr-MC"/>
+    <display value="French (Monaco)"/>
+  </concept>
+  <concept>
+    <code value="de"/>
+    <display value="German"/>
+  </concept>
+  <concept>
+    <code value="deu"/>
+    <display value="German"/>
+  </concept>
+  <concept>
+    <code value="ger"/>
+    <display value="German"/>
+  </concept>
+  <concept>
+    <code value="gmh"/>
+    <display value="Middle High German"/>
+  </concept>
+  <concept>
+    <code value="goh"/>
+    <display value="Old High German"/>
+  </concept>
+  <concept>
+    <code value="gem"/>
+    <display value="Germanic languages"/>
+  </concept>
+  <concept>
+    <code value="gsw"/>
+    <display value="Swiss German, Alemannic, Alsatian"/>
+  </concept>
+  <concept>
+    <code value="nds"/>
+    <display value="Low German, Low Saxon"/>
+  </concept>
+  <concept>
+    <code value="de-AT"/>
+    <display value="German (Austria)"/>
+  </concept>
+  <concept>
+    <code value="de-CH"/>
+    <display value="German (Switzerland)"/>
+  </concept>
+  <concept>
+    <code value="de-DE"/>
+    <display value="German (Germany)"/>
+  </concept>
+  <concept>
+    <code value="de-LI"/>
+    <display value="German (Liechtenstein)"/>
+  </concept>
+  <concept>
+    <code value="de-LU"/>
+    <display value="German (Luxembourg)"/>
+  </concept>
+  <concept>
+    <code value="it"/>
+    <display value="Italian"/>
+  </concept>
+  <concept>
+    <code value="ita"/>
+    <display value="Italian"/>
+  </concept>
+  <concept>
+    <code value="it-CH"/>
+    <display value="Italian (Switzerland)"/>
+  </concept>
+  <concept>
+    <code value="it-IT"/>
+    <display value="Italian (Italy)"/>
+  </concept>
+  <concept>
+    <code value="ja"/>
+    <display value="Japanese"/>
+  </concept>
+  <concept>
+    <code value="jpn"/>
+    <display value="Japanese"/>
+  </concept>
+  <concept>
+    <code value="ja-JP"/>
+    <display value="Japanese (Japan)"/>
+  </concept>
+  <concept>
+    <code value="ko"/>
+    <display value="Korean"/>
+  </concept>
+  <concept>
+    <code value="kor"/>
+    <display value="Korean"/>
+  </concept>
+  <concept>
+    <code value="ko-KR"/>
+    <display value="Korean (Korea)"/>
+  </concept>
+  <concept>
+    <code value="pt"/>
+    <display value="Portuguese"/>
+  </concept>
+  <concept>
+    <code value="por"/>
+    <display value="Portuguese"/>
+  </concept>
+  <concept>
+    <code value="pt-BR"/>
+    <display value="Portuguese (Brazil)"/>
+  </concept>
+  <concept>
+    <code value="pt-PT"/>
+    <display value="Portuguese (Portugal)"/>
+  </concept>
+  <concept>
+    <code value="ru"/>
+    <display value="Russian"/>
+  </concept>
+  <concept>
+    <code value="rus"/>
+    <display value="Russian"/>
+  </concept>
+  <concept>
+    <code value="ru-RU"/>
+    <display value="Russian (Russia)"/>
+  </concept>
+  <concept>
+    <code value="es"/>
+    <display value="Spanish"/>
+  </concept>
+  <concept>
+    <code value="spa"/>
+    <display value="Spanish"/>
+  </concept>
+  <concept>
+    <code value="es-AR"/>
+    <display value="Spanish (Argentina)"/>
+  </concept>
+  <concept>
+    <code value="es-BO"/>
+    <display value="Spanish (Bolivia, Plurinational State of)"/>
+  </concept>
+  <concept>
+    <code value="es-CL"/>
+    <display value="Spanish (Chile)"/>
+  </concept>
+  <concept>
+    <code value="es-CO"/>
+    <display value="Spanish (Colombia)"/>
+  </concept>
+  <concept>
+    <code value="es-CR"/>
+    <display value="Spanish (Costa Rica)"/>
+  </concept>
+  <concept>
+    <code value="es-DO"/>
+    <display value="Spanish (Dominican Republic)"/>
+  </concept>
+  <concept>
+    <code value="es-EC"/>
+    <display value="Spanish (Ecuador)"/>
+  </concept>
+  <concept>
+    <code value="es-ES"/>
+    <display value="Spanish (Spain)"/>
+  </concept>
+  <concept>
+    <code value="es-GT"/>
+    <display value="Spanish (Guatemala)"/>
+  </concept>
+  <concept>
+    <code value="es-HN"/>
+    <display value="Spanish (Honduras)"/>
+  </concept>
+  <concept>
+    <code value="es-MX"/>
+    <display value="Spanish (Mexico)"/>
+  </concept>
+  <concept>
+    <code value="es-NI"/>
+    <display value="Spanish (Nicaragua)"/>
+  </concept>
+  <concept>
+    <code value="es-PA"/>
+    <display value="Spanish (Panama)"/>
+  </concept>
+  <concept>
+    <code value="es-PE"/>
+    <display value="Spanish (Peru)"/>
+  </concept>
+  <concept>
+    <code value="es-PR"/>
+    <display value="Spanish (Puerto Rico)"/>
+  </concept>
+  <concept>
+    <code value="es-PY"/>
+    <display value="Spanish (Paraguay)"/>
+  </concept>
+  <concept>
+    <code value="es-SV"/>
+    <display value="Spanish (El Salvador)"/>
+  </concept>
+  <concept>
+    <code value="es-UY"/>
+    <display value="Spainsh (Uruguay)"/>
+  </concept>
+  <concept>
+    <code value="es-VE"/>
+    <display value="Spanish (Venezuela, Bolivarian Republic of)"/>
+  </concept>
+  <concept>
+    <code value="vi"/>
+    <display value="Vietnamese"/>
+  </concept>
+  <concept>
+    <code value="vie"/>
+    <display value="Vietnamese"/>
+  </concept>
+  <concept>
+    <code value="vi-VN"/>
+    <display value="Vietnamese (Vietnam)"/>
+  </concept>
+</CodeSystem>

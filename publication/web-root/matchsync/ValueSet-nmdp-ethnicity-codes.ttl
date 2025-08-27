@@ -10,16 +10,16 @@
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "nmdp-ethnicity-codes"] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nmdp-ethnicity-codes</b></p><a name=\"nmdp-ethnicity-codes\"> </a><a name=\"hcnmdp-ethnicity-codes\"> </a><a name=\"nmdp-ethnicity-codes-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-ethnicity-cs.html\"><code>http://terminology.nmdp.org/codesystem/ethnicity</code></a></li></ul></div>"^^rdf:XMLLiteral
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nmdp-ethnicity-codes</b></p><a name=\"nmdp-ethnicity-codes\"> </a><a name=\"hcnmdp-ethnicity-codes\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-ethnicity-cs.html\"><code>http://terminology.nmdp.org/codesystem/ethnicity</code></a></li><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html\"><code>urn:oid:2.16.840.1.113883.6.238</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2135-2\">2135-2</a></td><td>Hispanic or latino</td><td>Hispanic or Latino</td></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2186-5\">2186-5</a></td><td>Not Hispanic or latino</td><td>Note that this term remains in the table for completeness, even though within HL7, the notion of \"not otherwise coded\" term is deprecated.</td></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4601\">E1.01</a></td><td>Spaniard</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4601.46001\">E1.01.001</a></td><td>Andalusian</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4601.46002\">E1.01.002</a></td><td>Asturian</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4601.46003\">E1.01.003</a></td><td>Castillian</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4601.46004\">E1.01.004</a></td><td>Catalonian</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4601.46005\">E1.01.005</a></td><td>Belearic Islander</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4601.46006\">E1.01.006</a></td><td>Gallego</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4601.46007\">E1.01.007</a></td><td>Valencian</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4601.46008\">E1.01.008</a></td><td>Canarian</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4601.46009\">E1.01.009</a></td><td>Spanish Basque</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4602\">E1.02</a></td><td>Mexican</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4602.46001\">E1.02.001</a></td><td>Mexican American</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4602.46002\">E1.02.002</a></td><td>Mexicano</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4602.46003\">E1.02.003</a></td><td>Chicano</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4602.46004\">E1.02.004</a></td><td>La Raza</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4602.46005\">E1.02.005</a></td><td>Mexican American Indian</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4603\">E1.03</a></td><td>Central American</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4603.46001\">E1.03.001</a></td><td>Costa Rican</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4603.46002\">E1.03.002</a></td><td>Guatemalan</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4603.46003\">E1.03.003</a></td><td>Honduran</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4603.46004\">E1.03.004</a></td><td>Nicaraguan</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4603.46005\">E1.03.005</a></td><td>Panamanian</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4603.46006\">E1.03.006</a></td><td>Salvadoran</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4603.46007\">E1.03.007</a></td><td>Central American Indian</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4603.46008\">E1.03.008</a></td><td>Canal Zone</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4604\">E1.04</a></td><td>South American</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4604.46001\">E1.04.001</a></td><td>Argentinean</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4604.46002\">E1.04.002</a></td><td>Bolivian</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4604.46003\">E1.04.003</a></td><td>Chilean</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4604.46004\">E1.04.004</a></td><td>Colombian</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4604.46005\">E1.04.005</a></td><td>Ecuadorian</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4604.46006\">E1.04.006</a></td><td>Paraguayan</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4604.46007\">E1.04.007</a></td><td>Peruvian</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4604.46008\">E1.04.008</a></td><td>Uruguayan</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4604.46009\">E1.04.009</a></td><td>Venezuelan</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4604.46010\">E1.04.010</a></td><td>South American Indian</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4604.46011\">E1.04.011</a></td><td>Criollo</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4605\">E1.05</a></td><td>Latin American</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4606\">E1.06</a></td><td>Puerto Rican</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4607\">E1.07</a></td><td>Cuban</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-E1.4608\">E1.08</a></td><td>Dominican</td><td/></tr></table></li><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.5.1008</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>ASKU</td><td/></tr><tr><td>UNK</td><td/></tr></table></li><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.4.642.4.1048</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>asked-declined</td><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-ethnicity-codes"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.2"] ; # 
+  fhir:version [ fhir:v "0.1.3"] ; # 
   fhir:name [ fhir:v "NMDPEthnicityVS"] ; # 
   fhir:title [ fhir:v "ValueSet - Patient Ethnicity - NMDP"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-04-16T10:37:17-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-27T10:39:15-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NMDP"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NMDP" ] ;
@@ -32,6 +32,150 @@
   fhir:compose [
      fhir:include ( [
        fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/ethnicity"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "2135-2" ] ;
+         fhir:display [ fhir:v "Hispanic or latino" ]
+       ] [
+         fhir:code [ fhir:v "2186-5" ] ;
+         fhir:display [ fhir:v "Not Hispanic or latino" ]
+       ] [
+         fhir:code [ fhir:v "E1.01" ] ;
+         fhir:display [ fhir:v "Spaniard" ]
+       ] [
+         fhir:code [ fhir:v "E1.01.001" ] ;
+         fhir:display [ fhir:v "Andalusian" ]
+       ] [
+         fhir:code [ fhir:v "E1.01.002" ] ;
+         fhir:display [ fhir:v "Asturian" ]
+       ] [
+         fhir:code [ fhir:v "E1.01.003" ] ;
+         fhir:display [ fhir:v "Castillian" ]
+       ] [
+         fhir:code [ fhir:v "E1.01.004" ] ;
+         fhir:display [ fhir:v "Catalonian" ]
+       ] [
+         fhir:code [ fhir:v "E1.01.005" ] ;
+         fhir:display [ fhir:v "Belearic Islander" ]
+       ] [
+         fhir:code [ fhir:v "E1.01.006" ] ;
+         fhir:display [ fhir:v "Gallego" ]
+       ] [
+         fhir:code [ fhir:v "E1.01.007" ] ;
+         fhir:display [ fhir:v "Valencian" ]
+       ] [
+         fhir:code [ fhir:v "E1.01.008" ] ;
+         fhir:display [ fhir:v "Canarian" ]
+       ] [
+         fhir:code [ fhir:v "E1.01.009" ] ;
+         fhir:display [ fhir:v "Spanish Basque" ]
+       ] [
+         fhir:code [ fhir:v "E1.02" ] ;
+         fhir:display [ fhir:v "Mexican" ]
+       ] [
+         fhir:code [ fhir:v "E1.02.001" ] ;
+         fhir:display [ fhir:v "Mexican American" ]
+       ] [
+         fhir:code [ fhir:v "E1.02.002" ] ;
+         fhir:display [ fhir:v "Mexicano" ]
+       ] [
+         fhir:code [ fhir:v "E1.02.003" ] ;
+         fhir:display [ fhir:v "Chicano" ]
+       ] [
+         fhir:code [ fhir:v "E1.02.004" ] ;
+         fhir:display [ fhir:v "La Raza" ]
+       ] [
+         fhir:code [ fhir:v "E1.02.005" ] ;
+         fhir:display [ fhir:v "Mexican American Indian" ]
+       ] [
+         fhir:code [ fhir:v "E1.03" ] ;
+         fhir:display [ fhir:v "Central American" ]
+       ] [
+         fhir:code [ fhir:v "E1.03.001" ] ;
+         fhir:display [ fhir:v "Costa Rican" ]
+       ] [
+         fhir:code [ fhir:v "E1.03.002" ] ;
+         fhir:display [ fhir:v "Guatemalan" ]
+       ] [
+         fhir:code [ fhir:v "E1.03.003" ] ;
+         fhir:display [ fhir:v "Honduran" ]
+       ] [
+         fhir:code [ fhir:v "E1.03.004" ] ;
+         fhir:display [ fhir:v "Nicaraguan" ]
+       ] [
+         fhir:code [ fhir:v "E1.03.005" ] ;
+         fhir:display [ fhir:v "Panamanian" ]
+       ] [
+         fhir:code [ fhir:v "E1.03.006" ] ;
+         fhir:display [ fhir:v "Salvadoran" ]
+       ] [
+         fhir:code [ fhir:v "E1.03.007" ] ;
+         fhir:display [ fhir:v "Central American Indian" ]
+       ] [
+         fhir:code [ fhir:v "E1.03.008" ] ;
+         fhir:display [ fhir:v "Canal Zone" ]
+       ] [
+         fhir:code [ fhir:v "E1.04" ] ;
+         fhir:display [ fhir:v "South American" ]
+       ] [
+         fhir:code [ fhir:v "E1.04.001" ] ;
+         fhir:display [ fhir:v "Argentinean" ]
+       ] [
+         fhir:code [ fhir:v "E1.04.002" ] ;
+         fhir:display [ fhir:v "Bolivian" ]
+       ] [
+         fhir:code [ fhir:v "E1.04.003" ] ;
+         fhir:display [ fhir:v "Chilean" ]
+       ] [
+         fhir:code [ fhir:v "E1.04.004" ] ;
+         fhir:display [ fhir:v "Colombian" ]
+       ] [
+         fhir:code [ fhir:v "E1.04.005" ] ;
+         fhir:display [ fhir:v "Ecuadorian" ]
+       ] [
+         fhir:code [ fhir:v "E1.04.006" ] ;
+         fhir:display [ fhir:v "Paraguayan" ]
+       ] [
+         fhir:code [ fhir:v "E1.04.007" ] ;
+         fhir:display [ fhir:v "Peruvian" ]
+       ] [
+         fhir:code [ fhir:v "E1.04.008" ] ;
+         fhir:display [ fhir:v "Uruguayan" ]
+       ] [
+         fhir:code [ fhir:v "E1.04.009" ] ;
+         fhir:display [ fhir:v "Venezuelan" ]
+       ] [
+         fhir:code [ fhir:v "E1.04.010" ] ;
+         fhir:display [ fhir:v "South American Indian" ]
+       ] [
+         fhir:code [ fhir:v "E1.04.011" ] ;
+         fhir:display [ fhir:v "Criollo" ]
+       ] [
+         fhir:code [ fhir:v "E1.05" ] ;
+         fhir:display [ fhir:v "Latin American" ]
+       ] [
+         fhir:code [ fhir:v "E1.06" ] ;
+         fhir:display [ fhir:v "Puerto Rican" ]
+       ] [
+         fhir:code [ fhir:v "E1.07" ] ;
+         fhir:display [ fhir:v "Cuban" ]
+       ] [
+         fhir:code [ fhir:v "E1.08" ] ;
+         fhir:display [ fhir:v "Dominican" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.5.1008"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "ASKU" ]
+       ] [
+         fhir:code [ fhir:v "UNK" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.4.642.4.1048"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "asked-declined" ]
+       ] )
      ] )
   ] . # 
 

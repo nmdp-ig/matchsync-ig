@@ -3,13 +3,13 @@
   "id" : "nmdp.fhir.matchsync",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide nmdp.fhir.matchsync</b></p><a name=\"nmdp.fhir.matchsync\"> </a><a name=\"hcnmdp.fhir.matchsync\"> </a><a name=\"nmdp.fhir.matchsync-en-US\"> </a><h2>MatchSyncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide nmdp.fhir.matchsync</b></p><a name=\"nmdp.fhir.matchsync\"> </a><a name=\"hcnmdp.fhir.matchsync\"> </a><h2>MatchSyncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync</pre></div>"
   },
   "url" : "http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "MatchSyncIG",
   "status" : "draft",
-  "date" : "2025-04-16T10:37:17-05:00",
+  "date" : "2025-08-27T10:39:15-05:00",
   "publisher" : "NMDP",
   "contact" : [{
     "name" : "NMDP",
@@ -29,7 +29,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.2.0"
+    "version" : "6.5.0"
   },
   {
     "id" : "hl7ext",
@@ -557,7 +557,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.4.1"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.7.1"
     },
     {
       "extension" : [{
@@ -1216,6 +1216,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/cdc-race-ethnicity-cs"
+      },
+      "name" : "CodeSystem - Patient Ethnicity - CDC",
+      "description" : "Code System for CDC race and ethnicity",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/nmdp-ethnicity-cs"
       },
       "name" : "CodeSystem - Patient Ethnicity - NMDP",
@@ -1244,6 +1256,18 @@
       },
       "name" : "CodeSystem - Patient Race - NMDP",
       "description" : "Code System for NMDP diseases",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nmdp-practitioner-role-cs"
+      },
+      "name" : "CodeSystem - PractitionerRole - NMDP",
+      "description" : "NMDP Practitioner Roles",
       "exampleBoolean" : false
     },
     {
@@ -1933,30 +1957,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/nmdp-practitioner-role-vs"
-      },
-      "name" : "NMDP Practitioner Role Value Set",
-      "description" : "NMDP Practitioner Role Value Set",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/nmdp-practitioner-role-cs"
-      },
-      "name" : "NMDP Practitioner Roles",
-      "description" : "NMDP Practitioner Roles",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -2125,12 +2125,24 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ietf-language-cs"
+      },
+      "name" : "Tags for the Identification of Languages",
+      "description" : "Code System for IETF languages",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Practitioner"
       }],
       "reference" : {
-        "reference" : "Practitioner/SearchCoordinatorExample"
+        "reference" : "Practitioner/TCCoordinatorExample"
       },
-      "name" : "SearchCoordinatorExample",
+      "name" : "TCCoordinatorExample",
       "description" : "Example of a practitioner.",
       "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"
     },
@@ -2140,9 +2152,9 @@
         "valueString" : "PractitionerRole"
       }],
       "reference" : {
-        "reference" : "PractitionerRole/SearchCoordinatorRoleExample"
+        "reference" : "PractitionerRole/TCCoordinatorRoleExample"
       },
-      "name" : "SearchCoordinatorRoleExample",
+      "name" : "TCCoordinatorRoleExample",
       "description" : "Example of Transplant Center Coordinotor Role",
       "exampleCanonical" : "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"
     },
@@ -2368,6 +2380,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/nmdp-practitioner-role-vs"
+      },
+      "name" : "ValueSet - PractitionerRole - NMDP",
+      "description" : "NMDP Practitioner Role Value Set",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/nmdp-preferred-product-codes"
       },
       "name" : "ValueSet - Preferred Product - NMDP",
@@ -2410,6 +2434,15 @@
         }],
         "nameUrl" : "Appendices.html",
         "title" : "Appendices",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Downloads.html"
+        }],
+        "nameUrl" : "Downloads.html",
+        "title" : "Downloads",
         "generation" : "markdown"
       },
       {
