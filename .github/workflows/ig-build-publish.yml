@@ -108,6 +108,7 @@ jobs:
       - name: Run publish-update
         working-directory: .
         run: |
+          cp build/publish-setup.json publication/web-root/matchsync/publish-setup.json
           java -Xmx4g -jar build/input-cache/publisher.jar \
             -publish-update \
             -folder publication/web-root/matchsync \
