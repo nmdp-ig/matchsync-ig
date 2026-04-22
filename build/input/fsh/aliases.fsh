@@ -15,3 +15,6 @@ Alias: $HLAGenegroupCS = http://www.genenames.org/genegroup
 Alias: $ICD10 = http://hl7.org/fhir/sid/icd-10-cm
 Alias: $NMDP-PR = http://terminology.nmdp.org/codesystem/practitionerrole
 Alias: $uscore-genderidentity =  http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity
+// Alias: $CDCRaceEthnicityUpdated = https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238
+Alias: $HL7nullFlavor = urn:oid:2.16.840.1.113883.5.1008
+Alias: $HL7dataAbsentReason = urn:oid:2.16.840.1.113883.4.642.4.1048

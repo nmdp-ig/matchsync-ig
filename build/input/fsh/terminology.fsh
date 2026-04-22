@@ -175,11 +175,136 @@ Description: "Code System for NMDP languages"
 * #VTM     "Vietnamese"
 * #nil     "no data"
 
+CodeSystem: IETFLanguageCS
+Title: "Tags for the Identification of Languages"
+Id: ietf-language-cs
+Description: "Code System for IETF languages"
+* ^url = "urn:ietf:bcp:47"
+* ^version = "2.0.0"
+* ^status = #active
+* ^experimental = true
+* ^caseSensitive = true
+* ^publisher = "TBD - External Body"
+* #ar       "Arabic"
+* #ara      "Arabic"
+* #jrb      "Judeo-Arabic"
+* #ar-AE    "Arabic (United Arab Emirates)"
+* #ar-BH	"Arabic (Bahrain)"
+* #ar-DZ,	"Arabic (Algeria)"
+* #ar-EG	"Arabic (EgyptIraq)"
+* #ar-IQ	"Arabic (Iraq)"
+* #ar-JO	"Arabic (Jordan)"
+* #ar-KW	"Arabic (Kuwait)"
+* #ar-LB	"Arabic (Lebanon)"
+* #ar-LY	"Arabic (Libya)"
+* #ar-MA	"Arabic (Morocco)"
+* #ar-OM	"Arabic (Oman)"
+* #ar-QA	"Arabic (Qatar)"
+* #ar-SA	"Arabic (Saudi Arabia)"
+* #ar-SY	"Arabic (Syrian Arab Republic)"
+* #ar-TN	"Arabic (Tunisia)"
+* #ar-YE    "Arabic (Yemen)"
+* #zh		"Chinese"
+* #zho		"Chinese"
+* #chi		"Chinese"
+* #cmn		"Mandarin Chinese"
+* #zh-CN	"Chinese (China)"
+* #zh-HK	"Chinese (Hong Kong)"
+* #zh-MO	"Chinese (Macao)"
+* #zh-SG	"Chinese (Singapore)"
+* #zh-TW	"Chinese (Taiwan)"
+* #en		"English"
+* #eng		"English"
+* #enm		"English"
+* #ang		"Old English"
+* #cpe		"English based creoles and pidgins"
+* #en-AU	"English (Australia)"
+* #en-BZ	"English (Belize)"
+* #en-CA	"English (Canada)"
+* #en-CB    "English (Caribbean)"
+* #en-GB	"English (Greate Britain)"
+* #en-IE	"English (Ireland)"
+* #en-JM	"English (Jamaica)"
+* #en-NZ	"English (New Zeland)"
+* #en-PH	"English (Philippines)"
+* #en-TT	"English (Trinidad and Tobago)"
+* #en-US	"English (United States)"
+* #en-ZA	"English (South Africa)"
+* #en-ZW	"English (Zimbabwe)"
+* #fr		"French"
+* #fra		"French"
+* #cpf		"French-based creoles and pidgins"
+* #fre		"French"
+* #frm		"Middle French"
+* #fro		"Old French"
+* #fr-BE	"French (Blegium)"
+* #fr-CA	"French (Canada)"
+* #fr-CH	"French (Switzerland)"
+* #fr-FR	"French (France)"
+* #fr-LU	"French (Luxembourg)"
+* #fr-MC	"French (Monaco)"
+* #de		"German"
+* #deu		"German"
+* #ger		"German"
+* #gmh		"Middle High German"
+* #goh		"Old High German"
+* #gem		"Germanic languages"
+* #gsw		"Swiss German, Alemannic, Alsatian"
+* #nds		"Low German, Low Saxon"
+* #de-AT	"German (Austria)"
+* #de-CH	"German (Switzerland)"
+* #de-DE	"German (Germany)"
+* #de-LI	"German (Liechtenstein)"
+* #de-LU	"German (Luxembourg)"
+* #it		"Italian"
+* #ita		"Italian"
+* #it-CH	"Italian (Switzerland)"
+* #it-IT	"Italian (Italy)"
+* #ja		"Japanese"
+* #jpn		"Japanese"
+* #ja-JP	"Japanese (Japan)"
+* #ko		"Korean"
+* #kor		"Korean"
+* #ko-KR	"Korean (Korea)"
+* #pt		"Portuguese"
+* #por		"Portuguese"
+* #pt-BR	"Portuguese (Brazil)"
+* #pt-PT	"Portuguese (Portugal)"
+* #ru		"Russian"
+* #rus		"Russian"
+* #ru-RU	"Russian (Russia)"
+* #es		"Spanish"
+* #spa		"Spanish"
+* #es-AR	"Spanish (Argentina)"
+* #es-BO	"Spanish (Bolivia, Plurinational State of)"
+* #es-CL	"Spanish (Chile)"
+* #es-CO	"Spanish (Colombia)"
+* #es-CR	"Spanish (Costa Rica)"
+* #es-DO	"Spanish (Dominican Republic)"
+* #es-EC	"Spanish (Ecuador)"
+* #es-ES	"Spanish (Spain)"
+* #es-GT	"Spanish (Guatemala)"
+* #es-HN	"Spanish (Honduras)"
+* #es-MX	"Spanish (Mexico)"
+* #es-NI	"Spanish (Nicaragua)"
+* #es-PA	"Spanish (Panama)"
+* #es-PE	"Spanish (Peru)"
+* #es-PR	"Spanish (Puerto Rico)"
+* #es-PY	"Spanish (Paraguay)"
+* #es-SV	"Spanish (El Salvador)"
+* #es-UY	"Spainsh (Uruguay)"
+* #es-VE	"Spanish (Venezuela, Bolivarian Republic of)"
+* #vi		"Vietnamese"
+* #vie		"Vietnamese"
+* #vi-VN	"Vietnamese (Vietnam)"
+
+
 ValueSet: NMDPLanguageCodes
 Id: nmdp-language-codes
 Title: "ValueSet - Language - NMDP"
 Description: "NMDP language codes"
 * include codes from system nmdp-language-cs
+* include codes from system ietf-language-cs
 * ^experimental = true
 
 
@@ -347,102 +472,6 @@ Description: "LOINC codes for Positive and Negative"
 // * include codes from valueset loinc-posneg-codes
 // * ^experimental = true
 
-// Race ----------------
-
-CodeSystem: NMDPRaceCS
-Title: "CodeSystem - Patient Race - NMDP"
-Id: nmdp-race-cs
-Description: "Code System for NMDP diseases"
-* ^url = "http://terminology.nmdp.org/codesystem/race"
-* ^version = "2022"
-* ^status = #active
-* ^experimental = true
-* ^caseSensitive = true
-* ^publisher = "NMDP"
-* ^copyright = "National Marrow Donor Program"
-* #AAFA    "African American"
-* #AFA     "Unspecified"
-* #AFB     "African"
-* #AINDI   "South Asian"
-* #AISC    "American Indian South or Centr"
-* #ALANAM  "Alaska Native or Aleut"
-* #AMIND   "North American Indian"
-* #API     "Unspecified"
-* #CARB    "Black Caribbean"
-* #CARHIS  "Caribbean Hispanic"
-* #CARIBI  "Caribbean Indian"
-* #CAU     "Unspecified"
-* #DEC     "Declines or No Race Selected"
-* #EEURO   "Eastern European"
-* #EURWRC  "North American or European"
-* #FILII   "Filipino"
-* #GUAMAN  "Guamanian"
-* #HAWAII  "Hawaiian"
-* #HAWI    "Unspecified"
-* #HIS     "Unspecified Hispanic"
-* #JAPI    "Japanese"
-* #KORI    "Korean"
-* #MAFA    "Multiple Black"
-* #MAPI    "Multiple Asian/Pacific Islndr"
-* #MCAU    "Multiple Caucasian"
-* #MEDIT   "Mediterranean"
-* #MENAFC  "MidEast/No. Coast of Africa"
-* #MHAW    "Multiple Nat. Hw/Oth Pa. Isln"
-* #MHIS    "Multiple Hispanic"
-* #MIDEAS  "Middle Eastern"
-* #MNAM    "Multiple Native American"
-* #MSWHIS  "Mexican or Chicano"
-* #MULTI   "Multiple Race"
-* #NAM     "Unspecified"
-* #NAMB    "North American Black"
-* #NAMER   "North American"
-* #NCAFRI  "North Coast of Africa"
-* #NCHI    "Chinese"
-* #NEURO   "Northern European"
-* #OPI     "Other Pacific Islander"
-* #OTH     "Other"
-* #SAMOAN  "Samoan"
-* #SCAHIS  "South/Cntrl Amer. Hisp."
-* #SCAMB   "Black South or Central America"
-* #SCSEAI  "Other Southeast Asian"
-* #UNK     "Unknown/Question Not Asked"
-* #VIET    "Vietnamese"
-* #WCARIB  "White Caribbean"
-* #WEURO   "Western European"
-* #WSCA    "White South or Central America"
-
-ValueSet: NMDPRaceVS
-Id: nmdp-race-codes
-Title: "ValueSet - Patient Race - NMDP"
-Description: "NMDP race codes"
-* include codes from system nmdp-race-cs
-* ^experimental = true
-
-// Ethnicity ---------------
-
-CodeSystem: NMDPEthnicityCS
-Title: "CodeSystem - Patient Ethnicity - NMDP"
-Id: nmdp-ethnicity-cs
-Description: "Code System for NMDP ethnicity"
-* ^url = "http://terminology.nmdp.org/codesystem/ethnicity"
-* ^version = "2022"
-* ^status = #active
-* ^experimental = true
-* ^caseSensitive = true
-* ^publisher = "NMDP"
-* ^copyright = "National Marrow Donor Program"
-* #NHIS     "Not Hispanic or Latino"
-* #HIS      "Hispanic or Latino"
-* #nil      "No data"
-
-ValueSet:  NMDPEthnicityVS
-Id: nmdp-ethnicity-codes
-Title: "ValueSet - Patient Ethnicity - NMDP"
-Description: "NMDP ethnicity codes"
-* ^url = "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-ethnicity-codes"
-* include codes from system nmdp-ethnicity-cs
-* ^experimental = true
-
 // Gender Identity ----------------------
 
 CodeSystem: NMDPGenderIdentityCS
@@ -550,7 +579,7 @@ Description: "GVHD ICD-10 Codes"
 // * #ABL     "ACUTE BILINEAGE LEUKEMIA"
 
 CodeSystem: NMDPPractitionerRoleCS
-Title: "NMDP Practitioner Roles"
+Title: "CodeSystem - PractitionerRole - NMDP"
 Id: nmdp-practitioner-role-cs
 Description: "NMDP Practitioner Roles"
 * ^url = "http://terminology.nmdp.org/codesystem/practitionerrole"
@@ -564,10 +593,10 @@ Description: "NMDP Practitioner Roles"
 * ^publisher = "NMDP"
 * #referringphysician "Referring Physician"
 * #tcphysician "Transplant Center Physician"
-* #searchcoordinator "Search Coordinator"
+* #tccoordinator "Transplant Center Coordinator"
 
 ValueSet:  NMDPPractitionerRoleVS
-Title: "NMDP Practitioner Role Value Set"
+Title: "ValueSet - PractitionerRole - NMDP"
 Id: nmdp-practitioner-role-vs
 Description:  "NMDP Practitioner Role Value Set"
 * include codes from system nmdp-practitioner-role-cs

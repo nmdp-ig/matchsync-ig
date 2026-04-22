@@ -52,7 +52,7 @@ Description: "Example of a patient needing a donor using us-core-race and us-cor
 * address.state = "MN"
 * address.postalCode = "55401"
 * telecom[0].value = "1-612-555-1234"
-* extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2106-3 "White"
+* extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "White"
 // * extension[NmdpRaceExt].extension[nmdp-race].valueCoding = $NMDPRace#AFB "African"
 * extension[race].extension[text].valueString = "African"
 * extension[ethnicity].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "Not Hispanic or Latino"
@@ -142,7 +142,7 @@ Description: "Example of a patient needing a donor using us-core-race code but n
 * address.state = "MN"
 * address.postalCode = "55401"
 * telecom[0].value = "1-612-555-1234"
-* extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2106-3 "White"
+* extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "White"
 * extension[race].extension[text].valueString = "White"
 * identifier.system = "http://example.org/mrn"
 * identifier.value = "123"
@@ -170,8 +170,8 @@ Description: "Example of a patient needing a donor using NMDP race code."
   * display = "Referring Physician"
 * generalPractitioner[+] = Reference(TCPhysicianRoleExample)
   * display = "TC Physician"
-* generalPractitioner[+] = Reference(SearchCoordinatorRoleExample)
-  * display = "Search Coordinator"
+* generalPractitioner[+] = Reference(TCCoordinatorRoleExample)
+  * display = "Transplant Center Coordinator"
 
 Profile: TransplantCenter
 Parent: Organization
@@ -311,7 +311,7 @@ Description: "Example of a patient using BirthSex codes"
 * address.state = "MN"
 * address.postalCode = "55401"
 * telecom[0].value = "1-612-555-1234"
-* extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2106-3 "White"
+* extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "White"
 * extension[race].extension[text].valueString = "White"
 * extension[ethnicity].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "Not Hispanic or Latino"
 * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"

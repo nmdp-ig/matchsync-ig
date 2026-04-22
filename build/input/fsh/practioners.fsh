@@ -30,14 +30,14 @@ Description: "Example of Transplant Center Physician Role"
 * code = $NMDP-PR#tcphysician "Transplant Center Physician"
 * practitioner = Reference(PhysicianExample)
 
-Instance: SearchCoordinatorRoleExample
+Instance: TCCoordinatorRoleExample
 InstanceOf: NMDPPractitionerRole
 Description: "Example of Transplant Center Coordinotor Role"
 * meta.security[TransplantCenter].code = #tc_123
-* code = $NMDP-PR#searchcoordinator "Search Coordinator"
-* practitioner = Reference(SearchCoordinatorExample)
+* code = $NMDP-PR#tccoordinator "Transplant Center Coordinator"
+* practitioner = Reference(TCCoordinatorExample)
 
-Instance: SearchCoordinatorExample
+Instance: TCCoordinatorExample
 InstanceOf: NMDPPractitioner
 Description: "Example of a practitioner."
 * meta.security[TransplantCenter].code = #tc_123
