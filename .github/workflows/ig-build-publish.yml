@@ -136,7 +136,7 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
-          path: publication/web-root/matchsync/
+          path: build/output/
 
       # Commit publication artifacts to deploy-ready branch
       - name: Commit to deploy-ready
