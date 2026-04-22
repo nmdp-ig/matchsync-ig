@@ -108,6 +108,7 @@ jobs:
       - name: Run publish-update
         working-directory: .
         run: |
+          cp build/publish-setup.json publication/web-root/matchsync/publish-setup.json
           java -Xmx4g -jar build/input-cache/publisher.jar \
             -publish-update \
             -folder publication/web-root/matchsync \
@@ -140,21 +141,27 @@ jobs:
       # Commit publication artifacts to deploy-ready branch
       - name: Commit to deploy-ready
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        working-directory: .
         run: |
+          # Use a fresh clone to avoid any large files from the build
+          cd /tmp
+          git clone --depth 1 https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git deploy-repo || \
+            git init deploy-repo
+          cd deploy-repo
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git fetch origin deploy-ready || true
-          git checkout deploy-ready 2>/dev/null || git checkout --orphan deploy-ready
-
+          # Create orphan branch with only publication output
+          git checkout --orphan deploy-ready
           git rm -rf . 2>/dev/null || true
+          find . -not -path './.git/*' -not -name '.git' -delete 2>/dev/null || true
+
           mkdir -p publication/web-root
           cp -r /tmp/pub-output publication/web-root/matchsync
 
           git add -A
-          git commit -m "Publication build from ${{ github.sha }} (v${{ steps.meta.outputs.version }})" || echo "No changes to commit"
-          git push origin deploy-ready --force
+          git commit -m "Publication build from ${{ github.sha }} (v${{ steps.meta.outputs.version }})"
+          git push https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git deploy-ready --force
 
   deploy:
     needs: build
