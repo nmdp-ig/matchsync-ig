@@ -1,0 +1,36 @@
+/* NMDP IG Template - Blue header theme */
+:root {
+  --navbar-bg-color: #00355E;
+  --footer-bg-color: #EAEAEB;
+  --footer-container-bg-color: #00355E;
+  --btn-hover-color: #41B8FF;
+  --stripe-bg-color: #EAEAEB;
+  --btn-active-color: #0078a6;
+  --btn-text-color: #e6e6e6;
+  --stu-note-background-color: #ffe3c8;
+  --stu-note-border-left-color: #ea7200;
+  --ig-header-color: #ffffff;
+  --ig-header-container-color: #ffffff;
+  --link-color: #428bca;
+  --link-hover-color: #2a6496;
+  --ig-status-text-color: #003C60;
+  --toc-box-bg-color: #F3F6D3;
+  --toc-box-border: 1px solid #5F6615;
+  --publish-box-bg-color: #fdf0d6;
+  --publish-box-border: 1px solid #0A0008;
+}
+
+#nmdp-nav {
+  line-height: 50px;
+  float: left;
+  margin-top: 4px;
+}
+
+#nmdp-nav a {
+  color: inherit;
+}
+
+#nmdp-logo {
+  float: left;
+  margin-left: 6px;
+}
