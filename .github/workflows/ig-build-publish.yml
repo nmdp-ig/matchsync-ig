@@ -117,20 +117,32 @@ jobs:
           # Copy output to versioned directory
           mkdir -p publication/web-root/matchsync/${{ steps.meta.outputs.version }}
           cp -r build/output/* publication/web-root/matchsync/${{ steps.meta.outputs.version }}/
-          # Copy package-list.json with all published versions (for history page)
-          cp build/package-list.json publication/web-root/matchsync/package-list.json
 
       # Run publish-update to generate history and package registry
       - name: Run publish-update
         working-directory: .
         run: |
           cp build/publish-setup.json publication/web-root/matchsync/publish-setup.json
+          # Must copy AFTER the output overlay since build/output/ has its own single-version package-list.json
+          cp build/package-list.json publication/web-root/matchsync/package-list.json
           java -Xmx4g -jar build/input-cache/publisher.jar \
             -publish-update \
             -folder publication/web-root/matchsync \
             -registry ig-registry/fhir-ig-list.json \
             -history fhir-ig-history-template
         continue-on-error: true
+
+      # Apply NMDP blue theme to history page (which uses its own CSS from the history template)
+      - name: Apply NMDP theme to history page
+        working-directory: .
+        run: |
+          # Copy NMDP CSS to assets-hist so history.html can reference it
+          mkdir -p publication/web-root/matchsync/assets-hist/css
+          cp build/nmdp-template/content/assets/css/nmdp.css publication/web-root/matchsync/assets-hist/css/nmdp.css
+          # Inject NMDP CSS link into history.html
+          if [ -f publication/web-root/matchsync/history.html ]; then
+            sed -i 's|</head>|<link href="assets-hist/css/nmdp.css" rel="stylesheet"/>\n</head>|' publication/web-root/matchsync/history.html
+          fi
 
       # Stash publication output before switching branches
       - name: Stash publication output
