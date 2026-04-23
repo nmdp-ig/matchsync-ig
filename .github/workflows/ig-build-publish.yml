@@ -96,9 +96,23 @@ jobs:
         working-directory: .
         run: |
           mkdir -p publication/web-root/matchsync
-          # Copy history template first (provides history.html, history.js, etc.)
+
+          # Pull existing versioned directories from deploy-ready (preserves old versions)
+          git clone --single-branch --branch deploy-ready --depth 1 \
+            https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git \
+            /tmp/existing-deploy 2>/dev/null || true
+          if [ -d /tmp/existing-deploy/publication/web-root/matchsync ]; then
+            # Copy only versioned directories (0.x.x) from existing deploy
+            for dir in /tmp/existing-deploy/publication/web-root/matchsync/0.*/; do
+              if [ -d "$dir" ]; then
+                cp -r "$dir" publication/web-root/matchsync/
+              fi
+            done
+          fi
+
+          # Copy history template (provides history.html, history.js, etc.)
           cp -r fhir-ig-history-template/* publication/web-root/matchsync/ 2>/dev/null || true
-          # Then overlay IG output on top (rendered files take precedence over template placeholders)
+          # Overlay IG output on top (rendered files take precedence over template placeholders)
           cp -r build/output/* publication/web-root/matchsync/
           # Copy output to versioned directory
           mkdir -p publication/web-root/matchsync/${{ steps.meta.outputs.version }}
