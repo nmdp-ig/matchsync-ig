@@ -26,7 +26,7 @@
 [Center for International Blood &amp; Marrow Transplant Research® (CIBMTR®)]: https://www.cibmtr.org
 [National Marrow Donor Program® (NMDP)/Be The Match®]: https://bethematch.org
 [NMDP/Be The Match]: https://bethematch.org
-[Matchsyn Setup Guide]: NMDP-PatientImport-Guide-v3.9.pdf
+[Matchsyn Setup Guide]: NMDP-PatientImport-Guide-v3.56.pdf
 [Matchsync Postman Collection]: Matchsync-Postman-Collection.zip
 
 [US Core FHIR IG]: https://www.hl7.org/fhir/us/core/
