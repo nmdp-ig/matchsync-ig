@@ -1,0 +1,13 @@
+{
+  "name": "nmdp-template",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "NMDP IG Base Template",
+  "author": "http://bethematch.org",
+  "canonical": "http://fhir.nmdp.org/templates/nmdp-template",
+  "version": "0.1.0",
+  "base": "fhir.base.template",
+  "dependencies": {
+    "fhir.base.template": "current"
+  }
+}

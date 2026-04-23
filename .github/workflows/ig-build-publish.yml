@@ -96,13 +96,15 @@ jobs:
         working-directory: .
         run: |
           mkdir -p publication/web-root/matchsync
-          # Copy current output to web-root
+          # Copy history template first (provides history.html, history.js, etc.)
+          cp -r fhir-ig-history-template/* publication/web-root/matchsync/ 2>/dev/null || true
+          # Then overlay IG output on top (rendered files take precedence over template placeholders)
           cp -r build/output/* publication/web-root/matchsync/
           # Copy output to versioned directory
           mkdir -p publication/web-root/matchsync/${{ steps.meta.outputs.version }}
           cp -r build/output/* publication/web-root/matchsync/${{ steps.meta.outputs.version }}/
-          # Copy history template assets to web-root
-          cp -r fhir-ig-history-template/* publication/web-root/matchsync/ 2>/dev/null || true
+          # Copy package-list.json with all published versions (for history page)
+          cp build/package-list.json publication/web-root/matchsync/package-list.json
 
       # Run publish-update to generate history and package registry
       - name: Run publish-update
@@ -136,7 +138,7 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build/output/
+          path: publication/web-root/matchsync/
 
       # Commit publication artifacts to deploy-ready branch
       - name: Commit to deploy-ready

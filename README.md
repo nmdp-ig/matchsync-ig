@@ -107,9 +107,10 @@ sushi .
 
 ### Version Bumps
 
-Update the version in both files when releasing:
+Update these three files when releasing a new version:
 - `build/sushi-config.yaml` → `version:`
 - `build/publication-request.json` → `version:` and `path:`
+- `build/package-list.json` → add a new entry to the `list` array (this drives the history page)
 
 ## Pipeline Details
 
