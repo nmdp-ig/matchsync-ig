@@ -142,6 +142,9 @@ jobs:
           # Inject NMDP CSS link into history.html
           if [ -f publication/web-root/matchsync/history.html ]; then
             sed -i 's|</head>|<link href="assets-hist/css/nmdp.css" rel="stylesheet"/>\n</head>|' publication/web-root/matchsync/history.html
+            # Fix pageJSON: replace the embedded package-list data with our full version list
+            PAGEJSON=$(cat build/package-list.json | tr -d '\n' | sed "s/'/\\\\'/g")
+            sed -i "s|var pageJSON = '.*';|var pageJSON = '${PAGEJSON}';|" publication/web-root/matchsync/history.html
           fi
 
       # Stash publication output before switching branches
