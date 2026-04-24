@@ -1,0 +1,25 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "TCPhysicianRoleExample",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"],
+    "security" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplant-center",
+      "code" : "tc_123"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole TCPhysicianRoleExample</b></p><a name=\"TCPhysicianRoleExample\"> </a><a name=\"hcTCPhysicianRoleExample\"> </a><a name=\"TCPhysicianRoleExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nmdp-practitioner-role.html\">NMDPPractitionerRole</a></p><p style=\"margin-bottom: 0px\">Security Label: tc_123 (Details: transplant-center code tc_123)</p></div><p><b>practitioner</b>: <a href=\"Practitioner-PhysicianExample.html\">Practitioner Lisa Simpson </a></p><p><b>code</b>: <span title=\"Codes:{http://terminology.nmdp.org/codesystem/practitionerrole tcphysician}\">Transplant Center Physician</span></p></div>"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/PhysicianExample"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/practitionerrole",
+      "code" : "tcphysician",
+      "display" : "Transplant Center Physician"
+    }]
+  }]
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Example-MS-PreferredProduct"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation"/>
+    <security>
+      <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+      <code value="tc_123"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation Example-MS-PreferredProduct</b></p><a name="Example-MS-PreferredProduct"> </a><a name="hcExample-MS-PreferredProduct"> </a><a name="Example-MS-PreferredProduct-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ms-preferred-product-observation.html">Observation_MS_PreferredProduct</a></p><p style="margin-bottom: 0px">Security Label: tc_123 (Details: transplant-center code tc_123)</p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:">Preferred Product</span></p><p><b>subject</b>: <a href="Patient-MSPatientExample.html">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: <span title="Codes:{http://terminology.nmdp.org/codesystem/preferredproduct PBSC}">HPC, Apheresis</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <text value="Preferred Product"/>
+  </code>
+  <subject>
+    <reference value="Patient/MSPatientExample"/>
+  </subject>
+  <effectiveDateTime value="2022-05-01"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://terminology.nmdp.org/codesystem/preferredproduct"/>
+      <code value="PBSC"/>
+      <display value="HPC, Apheresis"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nmdp-abo-rh-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nmdp-abo-rh-codes</b></p><a name="nmdp-abo-rh-codes"> </a><a name="hcnmdp-abo-rh-codes"> </a><a name="nmdp-abo-rh-codes-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nmdp-abo-rh-group-cs.html"><code>http://terminology.nmdp.org/codesystem/aborhgroup</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-rh-codes"/>
+  <version value="0.1.2"/>
+  <name value="NMDPABORHVS"/>
+  <title value="ValueSet - Blood Group (ABO+RH) - NMDP"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-16T10:37:17-05:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="NMDP blood group codes"/>
+  <compose>
+    <include>
+      <system value="http://terminology.nmdp.org/codesystem/aborhgroup"/>
+    </include>
+  </compose>
+</ValueSet>

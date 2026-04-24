@@ -1,0 +1,640 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Tags for the Identification of Languages - TTL Representation -  v0.1.4</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5.69"}
+    h3,h4,h5,h6{--heading-prefix:"5.69"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.4 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="NMDP-PatientImport-Guide-v3.56.pdf">Matchsync Setup Guide</a>
+  </li>
+  <li>
+    <a href="Appendices.html">Appendices</a>
+  </li>
+  <li>
+    <a href="Downloads.html">Downloads</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Tags for the Identification of Languages</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This page is part of the MatchSync Implementation Guide (v0.1.4: Release Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://fhir.nmdp.org/ig/matchsync/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-ietf-language-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-ietf-language-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ietf-language-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Tags for the Identification of Languages - TTL Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-04-24
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-ietf-language-cs.ttl" no-download="true">Raw ttl</a> | <a href="CodeSystem-ietf-language-cs.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:CodeSystem ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ietf-language-cs&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem ietf-language-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ietf-language-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcietf-language-cs\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;urn:ietf:bcp:47&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar&lt;a name=\&quot;ietf-language-cs-ar\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ara&lt;a name=\&quot;ietf-language-cs-ara\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;jrb&lt;a name=\&quot;ietf-language-cs-jrb\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Judeo-Arabic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-AE&lt;a name=\&quot;ietf-language-cs-ar-AE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (United Arab Emirates)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-BH&lt;a name=\&quot;ietf-language-cs-ar-BH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (Bahrain)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-DZ,&lt;a name=\&quot;ietf-language-cs-ar-DZ.44\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (Algeria)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-EG&lt;a name=\&quot;ietf-language-cs-ar-EG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (EgyptIraq)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-IQ&lt;a name=\&quot;ietf-language-cs-ar-IQ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (Iraq)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-JO&lt;a name=\&quot;ietf-language-cs-ar-JO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (Jordan)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-KW&lt;a name=\&quot;ietf-language-cs-ar-KW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (Kuwait)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-LB&lt;a name=\&quot;ietf-language-cs-ar-LB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (Lebanon)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-LY&lt;a name=\&quot;ietf-language-cs-ar-LY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (Libya)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-MA&lt;a name=\&quot;ietf-language-cs-ar-MA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (Morocco)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-OM&lt;a name=\&quot;ietf-language-cs-ar-OM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (Oman)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-QA&lt;a name=\&quot;ietf-language-cs-ar-QA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (Qatar)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-SA&lt;a name=\&quot;ietf-language-cs-ar-SA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (Saudi Arabia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-SY&lt;a name=\&quot;ietf-language-cs-ar-SY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (Syrian Arab Republic)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-TN&lt;a name=\&quot;ietf-language-cs-ar-TN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (Tunisia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ar-YE&lt;a name=\&quot;ietf-language-cs-ar-YE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic (Yemen)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;zh&lt;a name=\&quot;ietf-language-cs-zh\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chinese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;zho&lt;a name=\&quot;ietf-language-cs-zho\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chinese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;chi&lt;a name=\&quot;ietf-language-cs-chi\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chinese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cmn&lt;a name=\&quot;ietf-language-cs-cmn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mandarin Chinese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;zh-CN&lt;a name=\&quot;ietf-language-cs-zh-CN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chinese (China)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;zh-HK&lt;a name=\&quot;ietf-language-cs-zh-HK\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chinese (Hong Kong)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;zh-MO&lt;a name=\&quot;ietf-language-cs-zh-MO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chinese (Macao)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;zh-SG&lt;a name=\&quot;ietf-language-cs-zh-SG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chinese (Singapore)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;zh-TW&lt;a name=\&quot;ietf-language-cs-zh-TW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chinese (Taiwan)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;en&lt;a name=\&quot;ietf-language-cs-en\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;eng&lt;a name=\&quot;ietf-language-cs-eng\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;enm&lt;a name=\&quot;ietf-language-cs-enm\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ang&lt;a name=\&quot;ietf-language-cs-ang\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Old English&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cpe&lt;a name=\&quot;ietf-language-cs-cpe\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English based creoles and pidgins&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;en-AU&lt;a name=\&quot;ietf-language-cs-en-AU\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English (Australia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;en-BZ&lt;a name=\&quot;ietf-language-cs-en-BZ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English (Belize)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;en-CA&lt;a name=\&quot;ietf-language-cs-en-CA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English (Canada)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;en-CB&lt;a name=\&quot;ietf-language-cs-en-CB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English (Caribbean)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;en-GB&lt;a name=\&quot;ietf-language-cs-en-GB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English (Greate Britain)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;en-IE&lt;a name=\&quot;ietf-language-cs-en-IE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English (Ireland)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;en-JM&lt;a name=\&quot;ietf-language-cs-en-JM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English (Jamaica)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;en-NZ&lt;a name=\&quot;ietf-language-cs-en-NZ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English (New Zeland)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;en-PH&lt;a name=\&quot;ietf-language-cs-en-PH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English (Philippines)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;en-TT&lt;a name=\&quot;ietf-language-cs-en-TT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English (Trinidad and Tobago)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;en-US&lt;a name=\&quot;ietf-language-cs-en-US\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English (United States)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;en-ZA&lt;a name=\&quot;ietf-language-cs-en-ZA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English (South Africa)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;en-ZW&lt;a name=\&quot;ietf-language-cs-en-ZW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English (Zimbabwe)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fr&lt;a name=\&quot;ietf-language-cs-fr\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;French&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fra&lt;a name=\&quot;ietf-language-cs-fra\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;French&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cpf&lt;a name=\&quot;ietf-language-cs-cpf\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;French-based creoles and pidgins&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fre&lt;a name=\&quot;ietf-language-cs-fre\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;French&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;frm&lt;a name=\&quot;ietf-language-cs-frm\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Middle French&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fro&lt;a name=\&quot;ietf-language-cs-fro\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Old French&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fr-BE&lt;a name=\&quot;ietf-language-cs-fr-BE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;French (Blegium)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fr-CA&lt;a name=\&quot;ietf-language-cs-fr-CA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;French (Canada)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fr-CH&lt;a name=\&quot;ietf-language-cs-fr-CH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;French (Switzerland)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fr-FR&lt;a name=\&quot;ietf-language-cs-fr-FR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;French (France)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fr-LU&lt;a name=\&quot;ietf-language-cs-fr-LU\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;French (Luxembourg)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fr-MC&lt;a name=\&quot;ietf-language-cs-fr-MC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;French (Monaco)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;de&lt;a name=\&quot;ietf-language-cs-de\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;German&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;deu&lt;a name=\&quot;ietf-language-cs-deu\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;German&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ger&lt;a name=\&quot;ietf-language-cs-ger\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;German&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;gmh&lt;a name=\&quot;ietf-language-cs-gmh\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Middle High German&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;goh&lt;a name=\&quot;ietf-language-cs-goh\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Old High German&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;gem&lt;a name=\&quot;ietf-language-cs-gem\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Germanic languages&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;gsw&lt;a name=\&quot;ietf-language-cs-gsw\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Swiss German, Alemannic, Alsatian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;nds&lt;a name=\&quot;ietf-language-cs-nds\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Low German, Low Saxon&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;de-AT&lt;a name=\&quot;ietf-language-cs-de-AT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;German (Austria)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;de-CH&lt;a name=\&quot;ietf-language-cs-de-CH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;German (Switzerland)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;de-DE&lt;a name=\&quot;ietf-language-cs-de-DE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;German (Germany)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;de-LI&lt;a name=\&quot;ietf-language-cs-de-LI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;German (Liechtenstein)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;de-LU&lt;a name=\&quot;ietf-language-cs-de-LU\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;German (Luxembourg)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;it&lt;a name=\&quot;ietf-language-cs-it\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Italian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ita&lt;a name=\&quot;ietf-language-cs-ita\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Italian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;it-CH&lt;a name=\&quot;ietf-language-cs-it-CH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Italian (Switzerland)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;it-IT&lt;a name=\&quot;ietf-language-cs-it-IT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Italian (Italy)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ja&lt;a name=\&quot;ietf-language-cs-ja\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Japanese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;jpn&lt;a name=\&quot;ietf-language-cs-jpn\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Japanese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ja-JP&lt;a name=\&quot;ietf-language-cs-ja-JP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Japanese (Japan)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ko&lt;a name=\&quot;ietf-language-cs-ko\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Korean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;kor&lt;a name=\&quot;ietf-language-cs-kor\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Korean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ko-KR&lt;a name=\&quot;ietf-language-cs-ko-KR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Korean (Korea)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pt&lt;a name=\&quot;ietf-language-cs-pt\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Portuguese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;por&lt;a name=\&quot;ietf-language-cs-por\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Portuguese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pt-BR&lt;a name=\&quot;ietf-language-cs-pt-BR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Portuguese (Brazil)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pt-PT&lt;a name=\&quot;ietf-language-cs-pt-PT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Portuguese (Portugal)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ru&lt;a name=\&quot;ietf-language-cs-ru\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Russian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rus&lt;a name=\&quot;ietf-language-cs-rus\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Russian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ru-RU&lt;a name=\&quot;ietf-language-cs-ru-RU\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Russian (Russia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es&lt;a name=\&quot;ietf-language-cs-es\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;spa&lt;a name=\&quot;ietf-language-cs-spa\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-AR&lt;a name=\&quot;ietf-language-cs-es-AR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Argentina)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-BO&lt;a name=\&quot;ietf-language-cs-es-BO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Bolivia, Plurinational State of)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-CL&lt;a name=\&quot;ietf-language-cs-es-CL\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Chile)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-CO&lt;a name=\&quot;ietf-language-cs-es-CO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Colombia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-CR&lt;a name=\&quot;ietf-language-cs-es-CR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Costa Rica)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-DO&lt;a name=\&quot;ietf-language-cs-es-DO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Dominican Republic)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-EC&lt;a name=\&quot;ietf-language-cs-es-EC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Ecuador)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-ES&lt;a name=\&quot;ietf-language-cs-es-ES\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Spain)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-GT&lt;a name=\&quot;ietf-language-cs-es-GT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Guatemala)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-HN&lt;a name=\&quot;ietf-language-cs-es-HN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Honduras)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-MX&lt;a name=\&quot;ietf-language-cs-es-MX\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Mexico)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-NI&lt;a name=\&quot;ietf-language-cs-es-NI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Nicaragua)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-PA&lt;a name=\&quot;ietf-language-cs-es-PA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Panama)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-PE&lt;a name=\&quot;ietf-language-cs-es-PE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Peru)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-PR&lt;a name=\&quot;ietf-language-cs-es-PR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Puerto Rico)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-PY&lt;a name=\&quot;ietf-language-cs-es-PY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Paraguay)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-SV&lt;a name=\&quot;ietf-language-cs-es-SV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (El Salvador)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-UY&lt;a name=\&quot;ietf-language-cs-es-UY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spainsh (Uruguay)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;es-VE&lt;a name=\&quot;ietf-language-cs-es-VE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish (Venezuela, Bolivarian Republic of)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;vi&lt;a name=\&quot;ietf-language-cs-vi\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vietnamese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;vie&lt;a name=\&quot;ietf-language-cs-vie\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vietnamese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;vi-VN&lt;a name=\&quot;ietf-language-cs-vi-VN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vietnamese (Vietnam)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:ietf:bcp:47&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;urn:ietf:bcp:47&gt;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.1.4&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;IETFLanguageCS&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Tags for the Identification of Languages&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2026-04-24T15:44:03+00:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;NMDP&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;NMDP&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://bethematch.org&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Code System for IETF languages&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;complete&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:v</a> &quot;112&quot;^^xsd:nonNegativeInteger] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ara&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;jrb&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Judeo-Arabic&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-AE&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (United Arab Emirates)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-BH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (Bahrain)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-DZ,&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (Algeria)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-EG&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (EgyptIraq)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-IQ&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (Iraq)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-JO&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (Jordan)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-KW&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (Kuwait)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-LB&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (Lebanon)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-LY&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (Libya)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-MA&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (Morocco)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-OM&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (Oman)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-QA&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (Qatar)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-SA&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (Saudi Arabia)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-SY&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (Syrian Arab Republic)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-TN&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (Tunisia)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ar-YE&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arabic (Yemen)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;zh&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Chinese&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;zho&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Chinese&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;chi&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Chinese&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;cmn&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Mandarin Chinese&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;zh-CN&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Chinese (China)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;zh-HK&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Chinese (Hong Kong)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;zh-MO&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Chinese (Macao)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;zh-SG&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Chinese (Singapore)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;zh-TW&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Chinese (Taiwan)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;eng&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;enm&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ang&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Old English&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;cpe&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English based creoles and pidgins&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-AU&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English (Australia)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-BZ&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English (Belize)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-CA&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English (Canada)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-CB&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English (Caribbean)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-GB&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English (Greate Britain)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-IE&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English (Ireland)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-JM&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English (Jamaica)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-NZ&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English (New Zeland)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-PH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English (Philippines)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-TT&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English (Trinidad and Tobago)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-US&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English (United States)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-ZA&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English (South Africa)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-ZW&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;English (Zimbabwe)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;fr&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;French&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;fra&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;French&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;cpf&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;French-based creoles and pidgins&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;fre&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;French&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;frm&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Middle French&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;fro&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Old French&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;fr-BE&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;French (Blegium)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;fr-CA&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;French (Canada)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;fr-CH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;French (Switzerland)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;fr-FR&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;French (France)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;fr-LU&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;French (Luxembourg)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;fr-MC&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;French (Monaco)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;German&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;deu&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;German&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ger&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;German&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;gmh&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Middle High German&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;goh&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Old High German&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;gem&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Germanic languages&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;gsw&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Swiss German, Alemannic, Alsatian&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;nds&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Low German, Low Saxon&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-AT&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;German (Austria)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-CH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;German (Switzerland)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;German (Germany)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-LI&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;German (Liechtenstein)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-LU&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;German (Luxembourg)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;it&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Italian&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ita&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Italian&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;it-CH&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Italian (Switzerland)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;it-IT&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Italian (Italy)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ja&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Japanese&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;jpn&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Japanese&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ja-JP&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Japanese (Japan)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ko&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Korean&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;kor&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Korean&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ko-KR&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Korean (Korea)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Portuguese&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;por&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Portuguese&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;pt-BR&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Portuguese (Brazil)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;pt-PT&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Portuguese (Portugal)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ru&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Russian&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;rus&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Russian&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ru-RU&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Russian (Russia)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;spa&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-AR&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Argentina)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-BO&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Bolivia, Plurinational State of)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-CL&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Chile)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-CO&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Colombia)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-CR&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Costa Rica)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-DO&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Dominican Republic)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-EC&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Ecuador)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-ES&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Spain)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-GT&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Guatemala)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-HN&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Honduras)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-MX&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Mexico)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-NI&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Nicaragua)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-PA&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Panama)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-PE&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Peru)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-PR&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Puerto Rico)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-PY&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Paraguay)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-SV&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (El Salvador)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-UY&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spainsh (Uruguay)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;es-VE&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Spanish (Venezuela, Bolivarian Republic of)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;vi&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vietnamese&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;vie&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vietnamese&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;vi-VN&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vietnamese (Vietnam)&quot; ]
+  ] ) . # 
+
+</pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://bethematch.org">NMDP</a>.  Package nmdp.fhir.matchsync#0.1.4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 24, 2026 15:44+0000">2026-04-24</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

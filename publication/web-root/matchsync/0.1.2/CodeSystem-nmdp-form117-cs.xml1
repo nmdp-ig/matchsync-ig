@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nmdp-form117-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nmdp-form117-cs</b></p><a name="nmdp-form117-cs"> </a><a name="hcnmdp-form117-cs"> </a><a name="nmdp-form117-cs-en-US"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/form117compliance</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">FORM117COMPLIANCE<a name="nmdp-form117-cs-FORM117COMPLIANCE"> </a></td><td>Form 117 Compliance</td></tr></table></div>
+  </text>
+  <url value="http://terminology.nmdp.org/codesystem/form117compliance"/>
+  <version value="0.1.2"/>
+  <name value="NMDPForm117CS"/>
+  <title value="CodeSystem - Form117 Compliance- NMDP"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-04-16T10:30:36-05:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="NMDP Form 117 for MatchSync patient"/>
+  <copyright value="National Marrow Donor Program"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="FORM117COMPLIANCE"/>
+    <display value="Form 117 Compliance"/>
+  </concept>
+</CodeSystem>

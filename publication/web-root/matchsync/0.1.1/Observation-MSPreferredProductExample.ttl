@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/Observation/MSPreferredProductExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MSPreferredProductExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation MSPreferredProductExample</b></p><a name=\"MSPreferredProductExample\"> </a><a name=\"hcMSPreferredProductExample\"> </a><a name=\"MSPreferredProductExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:\">Preferred Product</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: <span title=\"Codes:{http://terminology.nmdp.org/codesystem/preferredproduct PBSC}\">HPC, Apheresis</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Preferred Product" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample> ;
+     fhir:reference [ fhir:v "Patient/MSPatientExample" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-05-01"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/preferredproduct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PBSC" ] ;
+       fhir:display [ fhir:v "HPC, Apheresis" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

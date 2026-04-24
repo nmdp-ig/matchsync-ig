@@ -1,0 +1,184 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "HLAGeneIdVS",
+      "title" : "HLA Gene Name Value Set",
+      "description" : "HLA HGNC GeneIds Valueset",
+      "systems" : ["http://www.genenames.org/geneId"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "ICD10GVHDVS",
+      "title" : "ICD-10 (GVHD) Codes",
+      "description" : "GVHD ICD-10 Codes",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-form117-codes",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NMDPForm117VS",
+      "title" : "ValueSet - Form117 Compliance - NMDP",
+      "description" : "NMDP Form 117 codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/form117compliance"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-GenderIdentity-codes",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NMDPGenderIdentityVS",
+      "title" : "ValueSet - Patient Gender Identity - NMDP",
+      "description" : "NMDP GenderIdentity codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/genderidentity"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NMDPABOVS",
+      "title" : "ValueSet - Blood Group (ABO) - NMDP",
+      "description" : "NMDP blood group codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/abogroup"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-rh-codes",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NMDPABORHVS",
+      "title" : "ValueSet - Blood Group (ABO+RH) - NMDP",
+      "description" : "NMDP blood group codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/aborhgroup"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-cmv-codes",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NMDPCMVVS",
+      "title" : "ValueSet - CMV Group - NMDP",
+      "description" : "NMDP cmv codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/cmv"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NMDPDiseaseVS",
+      "title" : "ValueSet - Disease - NMDP",
+      "description" : "NMDP disease codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/disease"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NMDPDiseasStageVS",
+      "title" : "ValueSet - Disease Stage - NMDP",
+      "description" : "NMDP disease stage codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/diseasestage"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-ethnicity-codes",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NMDPEthnicityVS",
+      "title" : "ValueSet - Patient Ethnicity - NMDP",
+      "description" : "NMDP ethnicity codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/ethnicity"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NMDPLanguageCodes",
+      "title" : "ValueSet - Language - NMDP",
+      "description" : "NMDP language codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/language"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NMDPPractitionerRoleVS",
+      "title" : "NMDP Practitioner Role Value Set",
+      "description" : "NMDP Practitioner Role Value Set",
+      "systems" : ["http://terminology.nmdp.org/codesystem/practitionerrole"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NMDPPreferredProductVS",
+      "title" : "ValueSet - Preferred Product - NMDP",
+      "description" : "NMDP preferred product codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/preferredproduct"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-race-codes",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NMDPRaceVS",
+      "title" : "ValueSet - Patient Race - NMDP",
+      "description" : "NMDP race codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/race"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NMDPRhStatusVS",
+      "title" : "ValueSet - Blood Group (Rh) - NMDP",
+      "description" : "NMDP codes for Rh staus",
+      "systems" : ["http://terminology.nmdp.org/codesystem/rhstatus"]
+    },
+    {
+      "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NMDPTransplantTimelineVS",
+      "title" : "ValueSet - Transplant Timeline - NMDP",
+      "description" : "NMDP transplant timeline codes",
+      "systems" : ["http://terminology.nmdp.org/codesystem/transplanttimeline"]
+    },
+    {
+      "url" : "http://loinc.org/vs/LL2419-1",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "LNCABOGroupVS",
+      "title" : "ValueSet - Blood Group (ABO) - LOINC",
+      "description" : "LOINC codes for ABO blood group",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://loinc.org/vs/LL2972-9",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "LNCABORHGroupVS",
+      "title" : "ValueSet - Blood Group (ABO+RH) - LOINC",
+      "description" : "LOINC codes for ABO RH blood group",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://loinc.org/vs/LL360-9",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "PosNegVS",
+      "title" : "ValueSet - Blood Group (Rh) - LOINC",
+      "description" : "LOINC codes for Positive and Negative",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://loinc.org/vs/LL3639-3",
+      "version" : "0.1.2",
+      "status" : "active",
+      "name" : "LNCCMVGroupVS",
+      "title" : "ValueSet - CMV Group - LOINC",
+      "description" : "LOINC codes for CMV",
+      "systems" : ["http://loinc.org"]
+    }
+  ]
+}
