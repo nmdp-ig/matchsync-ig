@@ -132,19 +132,30 @@ jobs:
             -history fhir-ig-history-template
         continue-on-error: true
 
-      # Apply NMDP blue theme to history page (which uses its own CSS from the history template)
+      # Apply NMDP theme and fix history page JS/CSS
       - name: Apply NMDP theme to history page
         working-directory: .
         run: |
+          WEBROOT=publication/web-root/matchsync
+
           # Copy NMDP CSS to assets-hist so history.html can reference it
-          mkdir -p publication/web-root/matchsync/assets-hist/css
-          cp build/nmdp-template/content/assets/css/nmdp.css publication/web-root/matchsync/assets-hist/css/nmdp.css
-          # Inject NMDP CSS link into history.html
-          if [ -f publication/web-root/matchsync/history.html ]; then
-            sed -i 's|</head>|<link href="assets-hist/css/nmdp.css" rel="stylesheet"/>\n</head>|' publication/web-root/matchsync/history.html
+          mkdir -p $WEBROOT/assets-hist/css
+          cp build/nmdp-template/content/assets/css/nmdp.css $WEBROOT/assets-hist/css/nmdp.css
+
+          if [ -f $WEBROOT/history.html ]; then
+            # Inject NMDP CSS link
+            sed -i 's|</head>|<link href="assets-hist/css/nmdp.css" rel="stylesheet"/>\n</head>|' $WEBROOT/history.html
+
+            # Download HL7 history JS locally (GitHub Pages blocks external scripts)
+            curl -sL -o $WEBROOT/history-cm.js https://hl7.org/fhir/history-cm.js
+            curl -sL -o $WEBROOT/history.js https://hl7.org/fhir/history.js
+            # Rewrite history.html to use local JS instead of remote HL7 URLs
+            sed -i 's|https://hl7.org/fhir/history-cm.js|history-cm.js|g' $WEBROOT/history.html
+            sed -i 's|https://hl7.org/fhir/history.js|history.js|g' $WEBROOT/history.html
+
             # Fix pageJSON: replace the embedded package-list data with our full version list
             PAGEJSON=$(cat build/package-list.json | tr -d '\n' | sed "s/'/\\\\'/g")
-            sed -i "s|var pageJSON = '.*';|var pageJSON = '${PAGEJSON}';|" publication/web-root/matchsync/history.html
+            sed -i "s|var pageJSON = '.*';|var pageJSON = '${PAGEJSON}';|" $WEBROOT/history.html
           fi
 
       # Stash publication output before switching branches
