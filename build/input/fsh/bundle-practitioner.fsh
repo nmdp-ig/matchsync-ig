@@ -38,7 +38,7 @@ Description: "Example of a patient needing a donor using us-core-race and us-cor
 * address.state = "MN"
 * address.postalCode = "55401"
 * telecom[0].value = "1-612-555-1234"
-* extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "White"
+* extension[race].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2106-3 "White"
 * extension[race].extension[text].valueString = "White"
 * extension[ethnicity].extension[ombCategory].valueCoding = $RaceAndEthnicityCDC#2186-5 "Not Hispanic or Latino"
 * extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
