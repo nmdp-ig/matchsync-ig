@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="BundleExample-Practitioner"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle"/>
+    <security>
+      <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+      <code value="tc_123"/>
+    </security>
+  </meta>
+  <type value="collection"/>
+  <timestamp value="2020-11-24T23:50:50-05:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:3f7d88b1-3e39-4f52-bb9c-5d680b7166b3"/>
+    <resource>
+      <Patient>
+        <id value="3f7d88b1-3e39-4f52-bb9c-5d680b7166b3"/>
+        <meta>
+          <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"/>
+          <security>
+            <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+            <code value="tc_123"/>
+          </security>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_3f7d88b1-3e39-4f52-bb9c-5d680b7166b3"> </a><p class="res-header-id"><b>Generated Narrative: Patient 3f7d88b1-3e39-4f52-bb9c-5d680b7166b3</b></p><a name="3f7d88b1-3e39-4f52-bb9c-5d680b7166b3"> </a><a name="hc3f7d88b1-3e39-4f52-bb9c-5d680b7166b3"> </a><a name="3f7d88b1-3e39-4f52-bb9c-5d680b7166b3-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li>ph: 1-612-555-1234</li><li>123 Main St Minneapolis MN 55401 USA </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>General Practitioner: <a href="Bundle-BundleExample-Practitioner.html#urn-uuid-f1942bac-b8b3-45a1-b1d0-6928326d03ce">Referring Physician</a></li><li>General Practitioner: <a href="Bundle-BundleExample-Practitioner.html#urn-uuid-8fd0ef20-d146-4fff-b2a8-1d607adf9802">TC Physician</a></li><li>General Practitioner: <a href="Bundle-BundleExample-Practitioner.html#urn-uuid-ad78058a-c0fe-4ea0-bc86-d2f3770a1944">Search Coordinator</a></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.">US Core Ethnicity Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2186-5">Race &amp; Ethnicity - CDC 2186-5</a>: Not Hispanic or Latino</li><li>text: Not Hispanic or Latino</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:
+
+ - American Indian or Alaska Native
+ - Asian
+ - Black or African American
+ - Native Hawaiian or Other Pacific Islander
+ - White.">US Core Race Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2106-3">Race &amp; Ethnicity - CDC 2106-3</a>: White</li><li>text: White</li></ul></td></tr></table></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2106-3"/>
+              <display value="White"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="White"/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2186-5"/>
+              <display value="Not Hispanic or Latino"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="Not Hispanic or Latino"/>
+          </extension>
+        </extension>
+        <identifier>
+          <system value="http://example.org/mrn"/>
+          <value value="123"/>
+        </identifier>
+        <name>
+          <family value="Everyperson"/>
+          <given value="Jane"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="1-612-555-1234"/>
+        </telecom>
+        <gender value="female"/>
+        <birthDate value="1974-12-25"/>
+        <address>
+          <line value="123 Main St"/>
+          <city value="Minneapolis"/>
+          <state value="MN"/>
+          <postalCode value="55401"/>
+          <country value="USA"/>
+        </address>
+        <generalPractitioner>
+          <reference value="urn:uuid:f1942bac-b8b3-45a1-b1d0-6928326d03ce"/>
+          <display value="Referring Physician"/>
+        </generalPractitioner>
+        <generalPractitioner>
+          <reference value="urn:uuid:8fd0ef20-d146-4fff-b2a8-1d607adf9802"/>
+          <display value="TC Physician"/>
+        </generalPractitioner>
+        <generalPractitioner>
+          <reference value="urn:uuid:ad78058a-c0fe-4ea0-bc86-d2f3770a1944"/>
+          <display value="Search Coordinator"/>
+        </generalPractitioner>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:ad78058a-c0fe-4ea0-bc86-d2f3770a1944"/>
+    <resource>
+      <PractitionerRole>
+        <id value="ad78058a-c0fe-4ea0-bc86-d2f3770a1944"/>
+        <meta>
+          <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"/>
+          <security>
+            <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+            <code value="tc_123"/>
+          </security>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="PractitionerRole_ad78058a-c0fe-4ea0-bc86-d2f3770a1944"> </a><p class="res-header-id"><b>Generated Narrative: PractitionerRole ad78058a-c0fe-4ea0-bc86-d2f3770a1944</b></p><a name="ad78058a-c0fe-4ea0-bc86-d2f3770a1944"> </a><a name="hcad78058a-c0fe-4ea0-bc86-d2f3770a1944"> </a><a name="ad78058a-c0fe-4ea0-bc86-d2f3770a1944-en-US"> </a><p><b>practitioner</b>: <a href="Bundle-BundleExample-Practitioner.html#urn-uuid-fe6acf5d-ed53-4758-8d38-10d915c984af">Bart Simpson</a></p><p><b>code</b>: <span title="Codes:{http://terminology.nmdp.org/codesystem/practitionerrole searchcoordinator}">Search Coordinator</span></p></div>
+        </text>
+        <practitioner>
+          <reference value="urn:uuid:fe6acf5d-ed53-4758-8d38-10d915c984af"/>
+          <display value="Bart Simpson"/>
+        </practitioner>
+        <code>
+          <coding>
+            <system value="http://terminology.nmdp.org/codesystem/practitionerrole"/>
+            <code value="searchcoordinator"/>
+            <display value="Search Coordinator"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:8fd0ef20-d146-4fff-b2a8-1d607adf9802"/>
+    <resource>
+      <PractitionerRole>
+        <id value="8fd0ef20-d146-4fff-b2a8-1d607adf9802"/>
+        <meta>
+          <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"/>
+          <security>
+            <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+            <code value="tc_123"/>
+          </security>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="PractitionerRole_8fd0ef20-d146-4fff-b2a8-1d607adf9802"> </a><p class="res-header-id"><b>Generated Narrative: PractitionerRole 8fd0ef20-d146-4fff-b2a8-1d607adf9802</b></p><a name="8fd0ef20-d146-4fff-b2a8-1d607adf9802"> </a><a name="hc8fd0ef20-d146-4fff-b2a8-1d607adf9802"> </a><a name="8fd0ef20-d146-4fff-b2a8-1d607adf9802-en-US"> </a><p><b>practitioner</b>: <a href="Bundle-BundleExample-Practitioner.html#urn-uuid-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa">Lisa Simpson</a></p><p><b>code</b>: <span title="Codes:{http://terminology.nmdp.org/codesystem/practitionerrole tcphysician}">Transplant Center Physician</span></p></div>
+        </text>
+        <practitioner>
+          <reference value="urn:uuid:26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa"/>
+          <display value="Lisa Simpson"/>
+        </practitioner>
+        <code>
+          <coding>
+            <system value="http://terminology.nmdp.org/codesystem/practitionerrole"/>
+            <code value="tcphysician"/>
+            <display value="Transplant Center Physician"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f1942bac-b8b3-45a1-b1d0-6928326d03ce"/>
+    <resource>
+      <PractitionerRole>
+        <id value="f1942bac-b8b3-45a1-b1d0-6928326d03ce"/>
+        <meta>
+          <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"/>
+          <security>
+            <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+            <code value="tc_123"/>
+          </security>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="PractitionerRole_f1942bac-b8b3-45a1-b1d0-6928326d03ce"> </a><p class="res-header-id"><b>Generated Narrative: PractitionerRole f1942bac-b8b3-45a1-b1d0-6928326d03ce</b></p><a name="f1942bac-b8b3-45a1-b1d0-6928326d03ce"> </a><a name="hcf1942bac-b8b3-45a1-b1d0-6928326d03ce"> </a><a name="f1942bac-b8b3-45a1-b1d0-6928326d03ce-en-US"> </a><p><b>practitioner</b>: <a href="Bundle-BundleExample-Practitioner.html#urn-uuid-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa">Lisa Simpson</a></p><p><b>code</b>: <span title="Codes:{http://terminology.nmdp.org/codesystem/practitionerrole referringphysician}">Referring Physician</span></p></div>
+        </text>
+        <practitioner>
+          <reference value="urn:uuid:26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa"/>
+          <display value="Lisa Simpson"/>
+        </practitioner>
+        <code>
+          <coding>
+            <system value="http://terminology.nmdp.org/codesystem/practitionerrole"/>
+            <code value="referringphysician"/>
+            <display value="Referring Physician"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa"/>
+    <resource>
+      <Practitioner>
+        <id value="26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa"/>
+        <meta>
+          <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"/>
+          <security>
+            <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+            <code value="tc_123"/>
+          </security>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Practitioner_26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa"> </a><p class="res-header-id"><b>Generated Narrative: Practitioner 26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa</b></p><a name="26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa"> </a><a name="hc26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa"> </a><a name="26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa-en-US"> </a><p><b>name</b>: Lisa Simpson </p></div>
+        </text>
+        <name>
+          <family value="Simpson"/>
+          <given value="Lisa"/>
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:fe6acf5d-ed53-4758-8d38-10d915c984af"/>
+    <resource>
+      <Practitioner>
+        <id value="fe6acf5d-ed53-4758-8d38-10d915c984af"/>
+        <meta>
+          <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"/>
+          <security>
+            <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+            <code value="tc_123"/>
+          </security>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Practitioner_fe6acf5d-ed53-4758-8d38-10d915c984af"> </a><p class="res-header-id"><b>Generated Narrative: Practitioner fe6acf5d-ed53-4758-8d38-10d915c984af</b></p><a name="fe6acf5d-ed53-4758-8d38-10d915c984af"> </a><a name="hcfe6acf5d-ed53-4758-8d38-10d915c984af"> </a><a name="fe6acf5d-ed53-4758-8d38-10d915c984af-en-US"> </a><p><b>name</b>: Bart Simpson </p></div>
+        </text>
+        <name>
+          <family value="Simpson"/>
+          <given value="Bart"/>
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a9e56f2a-0827-4efd-a773-ed48c6e2752c"/>
+    <resource>
+      <Condition>
+        <id value="a9e56f2a-0827-4efd-a773-ed48c6e2752c"/>
+        <meta>
+          <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis"/>
+          <security>
+            <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+            <code value="tc_123"/>
+          </security>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_a9e56f2a-0827-4efd-a773-ed48c6e2752c"> </a><p class="res-header-id"><b>Generated Narrative: Condition a9e56f2a-0827-4efd-a773-ed48c6e2752c</b></p><a name="a9e56f2a-0827-4efd-a773-ed48c6e2752c"> </a><a name="hca9e56f2a-0827-4efd-a773-ed48c6e2752c"> </a><a name="a9e56f2a-0827-4efd-a773-ed48c6e2752c-en-US"> </a><p><b>Number of Remissions of Primary Diagnosis</b>: 0</p><p><b>code</b>: <span title="Codes:{http://terminology.nmdp.org/codesystem/disease AML}">ACUTE MYELOGENOUS LEUKEMIA</span></p><p><b>subject</b>: <a href="Bundle-BundleExample-Practitioner.html#urn-uuid-3f7d88b1-3e39-4f52-bb9c-5d680b7166b3">Bundle: type = collection; timestamp = 2020-11-24 23:50:50-0500</a></p><p><b>recordedDate</b>: 2021-11-01</p><h3>Stages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Summary</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.nmdp.org/codesystem/diseasestage AP}">Accelerated Phase</span></td></tr></table></div>
+        </text>
+        <extension url="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/number-of-remissions">
+          <valueInteger value="0"/>
+        </extension>
+        <code>
+          <coding>
+            <system value="http://terminology.nmdp.org/codesystem/disease"/>
+            <code value="AML"/>
+            <display value="ACUTE MYELOGENOUS LEUKEMIA"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:3f7d88b1-3e39-4f52-bb9c-5d680b7166b3"/>
+        </subject>
+        <recordedDate value="2021-11-01"/>
+        <stage>
+          <summary>
+            <coding>
+              <system value="http://terminology.nmdp.org/codesystem/diseasestage"/>
+              <code value="AP"/>
+              <display value="Accelerated Phase"/>
+            </coding>
+          </summary>
+        </stage>
+      </Condition>
+    </resource>
+  </entry>
+</Bundle>

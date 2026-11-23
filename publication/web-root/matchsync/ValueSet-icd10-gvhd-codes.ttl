@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "icd10-gvhd-codes"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet icd10-gvhd-codes</b></p><a name=\"icd10-gvhd-codes\"> </a><a name=\"hcicd10-gvhd-codes\"> </a><ul><li>Include codes from<a href=\"http://tx.fhir.org/r4\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. When building this specification, the most recent version 2026-04-01 has been used\" class=\"xhtPieceDeEmphasized\"> version ⏿2026-04-01</span> where concept  is-a <a href=\"http://tx.fhir.org/r4/CodeSystem/tx-icd-10-cm#tx-icd-10-cm-D89.4681\">D89.81</a></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes"] ;
+  fhir:ValueSet.version [ fhir:value "0.1.4"] ;
+  fhir:ValueSet.name [ fhir:value "ICD10GVHDVS"] ;
+  fhir:ValueSet.title [ fhir:value "ICD-10 (GVHD) Codes"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-23T18:39:33+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "NMDP"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NMDP" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "GVHD ICD-10 Codes"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/sid/icd-10-cm" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "is-a" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "D89.81" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

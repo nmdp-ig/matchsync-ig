@@ -1,0 +1,19 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "fe6acf5d-ed53-4758-8d38-10d915c984af",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner"],
+    "security" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplant-center",
+      "code" : "tc_123"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner fe6acf5d-ed53-4758-8d38-10d915c984af</b></p><a name=\"fe6acf5d-ed53-4758-8d38-10d915c984af\"> </a><a name=\"hcfe6acf5d-ed53-4758-8d38-10d915c984af\"> </a><a name=\"fe6acf5d-ed53-4758-8d38-10d915c984af-en-US\"> </a><p><b>name</b>: Bart Simpson </p></div>"
+  },
+  "name" : [{
+    "family" : "Simpson",
+    "given" : ["Bart"]
+  }]
+}

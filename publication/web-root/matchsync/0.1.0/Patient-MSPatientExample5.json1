@@ -1,0 +1,48 @@
+{
+  "resourceType" : "Patient",
+  "id" : "MSPatientExample5",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient"],
+    "security" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplant-center",
+      "code" : "tc_123"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient MSPatientExample5</b></p><a name=\"MSPatientExample5\"> </a><a name=\"hcMSPatientExample5\"> </a><a name=\"MSPatientExample5-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Joe Everyperson  Male, DoB: 1974-12-25 ( http://example.org/mrn#123)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 1-612-555-1234</li><li>123 Main St Minneapolis MN 55401 USA </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <a href=\"PractitionerRole-ReferringPhysicianRoleExample.html\">Referring Physician</a></li><li>General Practitioner: <a href=\"PractitionerRole-TCPhysicianRoleExample.html\">TC Physician</a></li><li>General Practitioner: <a href=\"PractitionerRole-SearchCoordinatorRoleExample.html\">Search Coordinator</a></li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "http://example.org/mrn",
+    "value" : "123"
+  }],
+  "name" : [{
+    "family" : "Everyperson",
+    "given" : ["Joe"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "1-612-555-1234"
+  }],
+  "gender" : "male",
+  "birthDate" : "1974-12-25",
+  "address" : [{
+    "line" : ["123 Main St"],
+    "city" : "Minneapolis",
+    "state" : "MN",
+    "postalCode" : "55401",
+    "country" : "USA"
+  }],
+  "generalPractitioner" : [{
+    "reference" : "PractitionerRole/ReferringPhysicianRoleExample",
+    "display" : "Referring Physician"
+  },
+  {
+    "reference" : "PractitionerRole/TCPhysicianRoleExample",
+    "display" : "TC Physician"
+  },
+  {
+    "reference" : "PractitionerRole/SearchCoordinatorRoleExample",
+    "display" : "Search Coordinator"
+  }]
+}

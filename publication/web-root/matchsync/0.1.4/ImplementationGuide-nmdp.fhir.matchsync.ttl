@@ -1,0 +1,2473 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "nmdp.fhir.matchsync"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide nmdp.fhir.matchsync</b></p><a name=\"nmdp.fhir.matchsync\"> </a><a name=\"hcnmdp.fhir.matchsync\"> </a><h2>MatchSyncIG</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync</pre></div>"
+  ] ;
+  fhir:ImplementationGuide.url [ fhir:value "http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync"] ;
+  fhir:ImplementationGuide.version [ fhir:value "0.1.4"] ;
+  fhir:ImplementationGuide.name [ fhir:value "MatchSyncIG"] ;
+  fhir:ImplementationGuide.status [ fhir:value "draft"] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-11-23T18:39:33+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.publisher [ fhir:value "NMDP"] ;
+  fhir:ImplementationGuide.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NMDP" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
+     ]
+  ] ;
+  fhir:ImplementationGuide.packageId [ fhir:value "nmdp.fhir.matchsync"] ;
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"] ;
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1" ;
+     fhir:index 0
+  ] ;
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0 ;
+     fhir:Element.id [ fhir:value "hl7tx" ] ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology" ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.5.0" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Element.id [ fhir:value "hl7ext" ] ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions" ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.4.0" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_us_core" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core" ;
+       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.core" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "4.0.0" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Element.id [ fhir:value "mcode" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode" ;
+       fhir:link <http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.mcode" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.0.0" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_genomics_reporting" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting" ;
+       fhir:link <http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.genomics-reporting" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.0.0" ]
+  ] ;
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency" ] ;
+       fhir:Extension.valueCode [ fhir:value "hl7.fhir.uv.tools.r4#1.3.0" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "2022+" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://terminology.nmdp.org/codesystem/disease" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://terminology.nmdp.org/codesystem/diseasestage" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://terminology.nmdp.org/codesystem/abogroup" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://terminology.nmdp.org/codesystem/aborhgroup" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://terminology.nmdp.org/codesystem/rhstatus" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://terminology.nmdp.org/codesystem/cmv" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://terminology.nmdp.org/codesystem/race" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://terminology.nmdp.org/codesystem/ethnicity" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://terminology.nmdp.org/codesystem/language" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://terminology.nmdp.org/codesystem/preferredproduct" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://terminology.nmdp.org/codesystem/transplanttimeline" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://terminology.nmdp.org/codesystem/practitionerrole" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://terminology.nmdp.org/codesystem/form117compliance" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://terminology.nmdp.org/codesystem/genderidentity" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://www.glstring.org" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://www.genenames.org/geneId" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://loinc.org/vs/LL2419-1" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://loinc.org/vs/LL360-9" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 21 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://loinc.org/vs/LL2972-9" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 22 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://loinc.org/vs/LL3639-3" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 23 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 24 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 25 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 26 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 27 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 28 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 29 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 30 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://fhir.nmdp.org/ig/matchsync/history.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 31 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 32 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 33 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 34 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 35 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 36 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 37 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 38 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 39 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 40 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-wg" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 41 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 42 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 43 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 44 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 45 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "tabbed-snapshots" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ] ;
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Practitioner/26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a physician practitioner." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner>
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/3f7d88b1-3e39-4f52-bb9c-5d680b7166b3> ;
+         fhir:Reference.reference [ fhir:value "Patient/3f7d88b1-3e39-4f52-bb9c-5d680b7166b3" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "3f7d88b1-3e39-4f52-bb9c-5d680b7166b3" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient needing a donor using us-core-race and us-core-ethnicity codes." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient>
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/PractitionerRole/8fd0ef20-d146-4fff-b2a8-1d607adf9802> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/8fd0ef20-d146-4fff-b2a8-1d607adf9802" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "8fd0ef20-d146-4fff-b2a8-1d607adf9802" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Transplant Center Physician Role" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role>
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c> ;
+         fhir:Reference.reference [ fhir:value "Condition/a9e56f2a-0827-4efd-a773-ed48c6e2752c" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "a9e56f2a-0827-4efd-a773-ed48c6e2752c" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a Diagnois: AML" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis>
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/PractitionerRole/ad78058a-c0fe-4ea0-bc86-d2f3770a1944> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/ad78058a-c0fe-4ea0-bc86-d2f3770a1944" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ad78058a-c0fe-4ea0-bc86-d2f3770a1944" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Transplant Center Search Coordinotor Role" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role>
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-abo-group-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-abo-group-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Blood Group (ABO) - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP ABO blood groups" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-abo-rh-group-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-abo-rh-group-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Blood Group (ABO+RH) - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP ABO RH blood groups" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-rh-status-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-rh-status-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Blood Group (Rh) - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP Rh Status" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-cmv-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-cmv-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - CMV Group - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP CMV" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-disease-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-disease-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Disease - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP diseases" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-diseasestage-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-diseasestage-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Disease Stage - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP disease stages" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-form117-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-form117-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Form117 Compliance- NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP Form 117 for MatchSync patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-language-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-language-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Language - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP languages" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/cdc-race-ethnicity-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/cdc-race-ethnicity-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Patient Ethnicity - CDC" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for CDC race and ethnicity" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-ethnicity-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-ethnicity-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Patient Ethnicity - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP ethnicity" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-GenderIdentity-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-GenderIdentity-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Patient Gender Identity - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP diseases" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-race-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-race-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Patient Race - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP diseases" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-practitioner-role-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-practitioner-role-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - PractitionerRole - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP Practitioner Roles" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-preferred-product-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-preferred-product-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Preferred Product - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP Preferred Product for MatchSync patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/nmdp-transplant-timeline-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nmdp-transplant-timeline-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Transplant Timeline - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for NMDP transplant timeline" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/Example-MS-ABOGroup> ;
+         fhir:Reference.reference [ fhir:value "Observation/Example-MS-ABOGroup" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-MS-ABOGroup" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of patient ABO" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-abogroup-observation" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-abogroup-observation>
+       ]
+     ], [
+       fhir:index 21 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/Example-MS-ABORH> ;
+         fhir:Reference.reference [ fhir:value "Observation/Example-MS-ABORH" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-MS-ABORH" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of patient ABO and RH" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-aborhgroup-observation" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-aborhgroup-observation>
+       ]
+     ], [
+       fhir:index 22 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/Example-MS-CMV> ;
+         fhir:Reference.reference [ fhir:value "Observation/Example-MS-CMV" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-MS-CMV" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Cytomeglovirus found in patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-cmvgroup-observation" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-cmvgroup-observation>
+       ]
+     ], [
+       fhir:index 23 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/Example-MS-Form117Compliance> ;
+         fhir:Reference.reference [ fhir:value "Observation/Example-MS-Form117Compliance" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-MS-Form117Compliance" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Form 117 Compliance for patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-form117-observation" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-form117-observation>
+       ]
+     ], [
+       fhir:index 24 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/Example-MS-PatientHeight> ;
+         fhir:Reference.reference [ fhir:value "Observation/Example-MS-PatientHeight" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-MS-PatientHeight" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of patient height" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation>
+       ]
+     ], [
+       fhir:index 25 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/Example-MS-PatientWeight> ;
+         fhir:Reference.reference [ fhir:value "Observation/Example-MS-PatientWeight" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-MS-PatientWeight" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of patient weight" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-weight-observation" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-weight-observation>
+       ]
+     ], [
+       fhir:index 26 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/Example-MS-PreferredProduct> ;
+         fhir:Reference.reference [ fhir:value "Observation/Example-MS-PreferredProduct" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-MS-PreferredProduct" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of preferred product" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation>
+       ]
+     ], [
+       fhir:index 27 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/Example-MS-RhStatus> ;
+         fhir:Reference.reference [ fhir:value "Observation/Example-MS-RhStatus" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-MS-RhStatus" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of patient Rh status" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-rhstatus-observation" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-rhstatus-observation>
+       ]
+     ], [
+       fhir:index 28 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/Example-MS-TransplantTimeline> ;
+         fhir:Reference.reference [ fhir:value "Observation/Example-MS-TransplantTimeline" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example-MS-TransplantTimeline" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of transplant timeline" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-transplant-timeline-observation" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-transplant-timeline-observation>
+       ]
+     ], [
+       fhir:index 29 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/PractitionerRole/f1942bac-b8b3-45a1-b1d0-6928326d03ce> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/f1942bac-b8b3-45a1-b1d0-6928326d03ce" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "f1942bac-b8b3-45a1-b1d0-6928326d03ce" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Referring Physician Role" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role>
+       ]
+     ], [
+       fhir:index 30 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Practitioner/fe6acf5d-ed53-4758-8d38-10d915c984af> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/fe6acf5d-ed53-4758-8d38-10d915c984af" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fe6acf5d-ed53-4758-8d38-10d915c984af" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a search coordinator practitioner." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner>
+       ]
+     ], [
+       fhir:index 31 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/glstring-codesystem> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/glstring-codesystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Genotype List String Code CodeSystem" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Genotype List String Codesystem used for HLA reporting" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/hla-geneid-valueset> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/hla-geneid-valueset" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA Gene Name Value Set" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HLA HGNC GeneIds Valueset" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-genotype> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hla-genotype" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA Genotype Observation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HLA Genotype profile of genotype observation" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/hla-genename-codesystem> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/hla-genename-codesystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA HGNC GeneID CodeSystem" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem of HLA gene group subset of HGNC GeneId Codesystem" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/HLA-A-Example> ;
+         fhir:Reference.reference [ fhir:value "Observation/HLA-A-Example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA-A-Example" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of HLA-A" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-a" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-a>
+       ]
+     ], [
+       fhir:index 36 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/HLA-B-Example> ;
+         fhir:Reference.reference [ fhir:value "Observation/HLA-B-Example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA-B-Example" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of HLA-B" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-b" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-b>
+       ]
+     ], [
+       fhir:index 37 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/HLA-C-Example> ;
+         fhir:Reference.reference [ fhir:value "Observation/HLA-C-Example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA-C-Example" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of HLA-C" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-c" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-c>
+       ]
+     ], [
+       fhir:index 38 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/HLA-DPA1-Example> ;
+         fhir:Reference.reference [ fhir:value "Observation/HLA-DPA1-Example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA-DPA1-Example" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of HLA-DPA1" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dpa1" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dpa1>
+       ]
+     ], [
+       fhir:index 39 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/HLA-DPB1-Example> ;
+         fhir:Reference.reference [ fhir:value "Observation/HLA-DPB1-Example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA-DPB1-Example" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of HLA-DPB1" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dpb1" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dpb1>
+       ]
+     ], [
+       fhir:index 40 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/HLA-DQA1-Example> ;
+         fhir:Reference.reference [ fhir:value "Observation/HLA-DQA1-Example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA-DQA1-Example" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of HLA-DQA1" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dqa1" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dqa1>
+       ]
+     ], [
+       fhir:index 41 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/HLA-DQB1-Example> ;
+         fhir:Reference.reference [ fhir:value "Observation/HLA-DQB1-Example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA-DQB1-Example" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of HLA-DQB1" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dqb1" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dqb1>
+       ]
+     ], [
+       fhir:index 42 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/HLA-DRB1-Example> ;
+         fhir:Reference.reference [ fhir:value "Observation/HLA-DRB1-Example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA-DRB1-Example" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of HLA-DRB1" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb1" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb1>
+       ]
+     ], [
+       fhir:index 43 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/HLA-DRB3-Example> ;
+         fhir:Reference.reference [ fhir:value "Observation/HLA-DRB3-Example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA-DRB3-Example" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of HLA-DRB3" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb3" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb3>
+       ]
+     ], [
+       fhir:index 44 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/HLA-DRB4-Example> ;
+         fhir:Reference.reference [ fhir:value "Observation/HLA-DRB4-Example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA-DRB4-Example" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of HLA-DRB4" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb4" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb4>
+       ]
+     ], [
+       fhir:index 45 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/HLA-DRB5-Example> ;
+         fhir:Reference.reference [ fhir:value "Observation/HLA-DRB5-Example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA-DRB5-Example" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of HLA-DRB5" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb5" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb5>
+       ]
+     ], [
+       fhir:index 46 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Observation/HLA-Multilocus-Genotype-Example> ;
+         fhir:Reference.reference [ fhir:value "Observation/HLA-Multilocus-Genotype-Example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA-Multilocus-Genotype-Example" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Multilocus Genotype of HLA-A, HLA-B, HLA-DRB1, and HLA-DRB3" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-genotype" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-genotype>
+       ]
+     ], [
+       fhir:index 47 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-a> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hla-a" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA_A" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Genotype for HLA-A" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 48 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-b> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hla-b" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA_B" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Genotype for HLA-B" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-c> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hla-c" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA_C" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Genotype for HLA-C" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dpa1> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hla-dpa1" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA_DPA1" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Genotype for HLA-DPA1" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dpb1> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hla-dpb1" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA_DPB1" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Genotype for HLA-DPB1" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dqa1> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hla-dqa1" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA_DQA1" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Genotype for HLA-DQA1" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dqb1> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hla-dqb1" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA_DQB1" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Genotype for HLA-DQB1" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 54 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb1> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hla-drb1" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA_DRB1" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Genotype for HLA-DRB1" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 55 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb3> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hla-drb3" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA_DRB3" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Genotype for HLA-DRB3" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 56 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb4> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hla-drb4" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA_DRB4" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Genotype for HLA-DRB4" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 57 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-drb5> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hla-drb5" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HLA_DRB5" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Genotype for HLA-DRB5" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 58 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/icd10-gvhd-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/icd10-gvhd-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ICD-10 (GVHD) Codes" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "GVHD ICD-10 Codes" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 59 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ms-bundle" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MatchSync Bundle" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Collection Bundle for MatchSync" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 60 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Bundle/BundleExample-Practitioner> ;
+         fhir:Reference.reference [ fhir:value "Bundle/BundleExample-Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MatchSync Bundle Example - Practioners" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MatchSync Bundle Example with Patient, Search Coordinator, Referring Physician, and TC Physician" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle>
+       ]
+     ], [
+       fhir:index 61 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-separate> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ms-bundle-hla-separate" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MatchSync Bundle with Separate HLA" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Collection Bundle for MatchSync with separate HLA Observations for each locus" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 62 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-bundle-hla-multilocus> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ms-bundle-hla-multilocus" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MatchSync Bundle with single multilocus HLA" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Collection Bundle for MatchSync with single HLA multilocus Observation" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 63 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Condition/MSDiagnosisExample-AML> ;
+         fhir:Reference.reference [ fhir:value "Condition/MSDiagnosisExample-AML" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSDiagnosisExample-AML" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a Diagnois: AML" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis>
+       ]
+     ], [
+       fhir:index 64 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Condition/MSDiagnosisExample-OND> ;
+         fhir:Reference.reference [ fhir:value "Condition/MSDiagnosisExample-OND" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSDiagnosisExample-OND" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a Diagnois" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis>
+       ]
+     ], [
+       fhir:index 65 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mspatient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSPatient" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient needing a transplant" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 66 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientBirthSex> ;
+         fhir:Reference.reference [ fhir:value "Patient/MSPatientBirthSex" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSPatientBirthSex" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient using BirthSex codes" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient>
+       ]
+     ], [
+       fhir:index 67 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample> ;
+         fhir:Reference.reference [ fhir:value "Patient/MSPatientExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSPatientExample" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient needing a donor using us-core-race and us-core-ethnicity codes." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient>
+       ]
+     ], [
+       fhir:index 68 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample2> ;
+         fhir:Reference.reference [ fhir:value "Patient/MSPatientExample2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSPatientExample2" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient needing a donor using NMDP race code." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient>
+       ]
+     ], [
+       fhir:index 69 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample3> ;
+         fhir:Reference.reference [ fhir:value "Patient/MSPatientExample3" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSPatientExample3" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient without a race code" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient>
+       ]
+     ], [
+       fhir:index 70 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample4> ;
+         fhir:Reference.reference [ fhir:value "Patient/MSPatientExample4" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSPatientExample4" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient needing a donor using us-core-race code but not us-core-ethnicity" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient>
+       ]
+     ], [
+       fhir:index 71 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample5> ;
+         fhir:Reference.reference [ fhir:value "Patient/MSPatientExample5" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSPatientExample5" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient needing a donor using NMDP race code." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/mspatient>
+       ]
+     ], [
+       fhir:index 72 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/msdiagnosis" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSPrimaryDiagnosis" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diagnosis" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 73 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msspecimen> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/msspecimen" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSSpecimen" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient sample used for HLA typing" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 74 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Specimen" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Specimen/MSSpecimenExample> ;
+         fhir:Reference.reference [ fhir:value "Specimen/MSSpecimenExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MSSpecimenExample" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example patient specimen." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msspecimen" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msspecimen>
+       ]
+     ], [
+       fhir:index 75 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/nmdp-practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDPPractitioner" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP Practitioner" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 76 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/nmdp-practitioner-role" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NMDPPractitionerRole" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP Practitioner Role" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 77 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/number-of-remissions> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/number-of-remissions" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Number of Remissions of Primary Diagnosis" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Number of Remissions of Primary Diagnosis" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 78 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-abogroup-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ms-abogroup-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation_MS_ABOGroup" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ABO Blood Group of Patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 79 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-aborhgroup-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ms-aborhgroup-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation_MS_ABORH" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ABO and Rh group [Type] in Blood" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 80 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-cmvgroup-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ms-cmvgroup-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation_MS_CMV" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cytomeglovirus found in patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 81 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-form117-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ms-form117-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation_MS_Form117Compliance" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Form 117 Compliance for patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 82 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-height-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ms-height-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation_MS_PatientHeight" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Height of Patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 83 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-weight-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ms-weight-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation_MS_PatientWeight" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Weight of Patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 84 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ms-preferred-product-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation_MS_PreferredProduct" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Preferred product for transplant" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 85 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-rhstatus-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ms-rhstatus-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation_MS_RhStatus" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rh status of Patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 86 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-transplant-timeline-observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ms-transplant-timeline-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation_MS_TransplantTimeline" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Transplant timeline for patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 87 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Practitioner/PhysicianExample> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/PhysicianExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PhysicianExample" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a practitioner." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner>
+       ]
+     ], [
+       fhir:index 88 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/PractitionerRole/ReferringPhysicianRoleExample> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/ReferringPhysicianRoleExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ReferringPhysicianRoleExample" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Referring Physician Role" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role>
+       ]
+     ], [
+       fhir:index 89 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/CodeSystem/ietf-language-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/ietf-language-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tags for the Identification of Languages" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System for IETF languages" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 90 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Practitioner/TCCoordinatorExample> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/TCCoordinatorExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TCCoordinatorExample" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a practitioner." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner>
+       ]
+     ], [
+       fhir:index 91 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/PractitionerRole/TCCoordinatorRoleExample> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/TCCoordinatorRoleExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TCCoordinatorRoleExample" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Transplant Center Coordinotor Role" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role>
+       ]
+     ], [
+       fhir:index 92 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/Organization/TCExample> ;
+         fhir:Reference.reference [ fhir:value "Organization/TCExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TCExample" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a Transplant Center." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcenter" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcenter>
+       ]
+     ], [
+       fhir:index 93 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/PractitionerRole/TCPhysicianRoleExample> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/TCPhysicianRoleExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TCPhysicianRoleExample" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Transplant Center Physician Role" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role" ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role>
+       ]
+     ], [
+       fhir:index 94 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/transplantcenter> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/transplantcenter" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TransplantCenter" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Transplant Center" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 95 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-abo-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/loinc-abo-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Blood Group (ABO) - LOINC" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC codes for ABO blood group" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 96 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-abo-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Blood Group (ABO) - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP blood group codes" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 97 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-abo-rh-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/loinc-abo-rh-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Blood Group (ABO+RH) - LOINC" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC codes for ABO RH blood group" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 98 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-rh-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-abo-rh-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Blood Group (ABO+RH) - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP blood group codes" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 99 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-posneg-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/loinc-posneg-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Blood Group (Rh) - LOINC" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC codes for Positive and Negative" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 100 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-rh-status-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-rh-status-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Blood Group (Rh) - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP codes for Rh staus" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 101 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/loinc-cmv-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/loinc-cmv-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - CMV Group - LOINC" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC codes for CMV" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 102 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-cmv-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-cmv-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - CMV Group - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP cmv codes" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 103 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-disease-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-disease-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Disease - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP disease codes" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 104 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-diseasestage-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Disease Stage - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP disease stage codes" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 105 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-form117-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/ms-form117-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Form117 Compliance - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP Form 117 codes" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 106 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-language-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-language-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Language - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP language codes" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 107 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-ethnicity-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-ethnicity-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Patient Ethnicity - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP ethnicity codes" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 108 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-GenderIdentity-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-GenderIdentity-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Patient Gender Identity - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP GenderIdentity codes" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 109 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-race-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-race-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Patient Race - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP race codes" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 110 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-practitioner-role-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-practitioner-role-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - PractitionerRole - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP Practitioner Role Value Set" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 111 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-preferred-product-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-preferred-product-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Preferred Product - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP preferred product codes" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 112 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-transplant-timeline-codes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/nmdp-transplant-timeline-codes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Transplant Timeline - NMDP" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NMDP transplant timeline codes" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ] ;
+     fhir:ImplementationGuide.definition.page [
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+         fhir:Extension.valueUrl [ fhir:value "toc.html" ]
+       ] ;
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ] ;
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ] ;
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ] ;
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "index.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "Appendices.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Appendices.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Appendices" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "Downloads.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Downloads.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "extra.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "extra.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Extra" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ] ;
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/ImplementationGuide/nmdp.fhir.matchsync.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

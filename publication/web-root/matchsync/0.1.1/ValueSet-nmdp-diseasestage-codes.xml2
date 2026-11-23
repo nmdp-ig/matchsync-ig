@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nmdp-diseasestage-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nmdp-diseasestage-codes</b></p><a name="nmdp-diseasestage-codes"> </a><a name="hcnmdp-diseasestage-codes"> </a><a name="nmdp-diseasestage-codes-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nmdp-diseasestage-cs.html"><code>http://terminology.nmdp.org/codesystem/diseasestage</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-diseasestage-codes"/>
+  <version value="0.1.2"/>
+  <name value="NMDPDiseasStageVS"/>
+  <title value="ValueSet - Disease Stage - NMDP"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-15T15:35:56-05:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="NMDP disease stage codes"/>
+  <compose>
+    <include>
+      <system value="http://terminology.nmdp.org/codesystem/diseasestage"/>
+    </include>
+  </compose>
+</ValueSet>

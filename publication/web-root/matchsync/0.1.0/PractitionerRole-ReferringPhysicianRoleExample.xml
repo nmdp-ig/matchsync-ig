@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="ReferringPhysicianRoleExample"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role"/>
+    <security>
+      <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+      <code value="tc_123"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole ReferringPhysicianRoleExample</b></p><a name="ReferringPhysicianRoleExample"> </a><a name="hcReferringPhysicianRoleExample"> </a><a name="ReferringPhysicianRoleExample-en-US"> </a><p><b>practitioner</b>: <a href="Practitioner-PhysicianExample.html">Practitioner Lisa Simpson </a></p><p><b>code</b>: <span title="Codes:{http://terminology.nmdp.org/codesystem/practitionerrole referringphysician}">Referring Physician</span></p></div>
+  </text>
+  <practitioner>
+    <reference value="Practitioner/PhysicianExample"/>
+  </practitioner>
+  <code>
+    <coding>
+      <system value="http://terminology.nmdp.org/codesystem/practitionerrole"/>
+      <code value="referringphysician"/>
+      <display value="Referring Physician"/>
+    </coding>
+  </code>
+</PractitionerRole>

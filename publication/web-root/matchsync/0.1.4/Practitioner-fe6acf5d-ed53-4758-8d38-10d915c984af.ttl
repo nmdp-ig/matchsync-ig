@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/Practitioner/fe6acf5d-ed53-4758-8d38-10d915c984af> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fe6acf5d-ed53-4758-8d38-10d915c984af"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner>
+     ] ;
+     fhir:Meta.security [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ] ;
+       fhir:Coding.code [ fhir:value "tc_123" ]
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner fe6acf5d-ed53-4758-8d38-10d915c984af</b></p><a name=\"fe6acf5d-ed53-4758-8d38-10d915c984af\"> </a><a name=\"hcfe6acf5d-ed53-4758-8d38-10d915c984af\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nmdp-practitioner.html\">NMDPPractitioner</a></p><p style=\"margin-bottom: 0px\">Security Label: </p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Bart Simpson</p><hr/></div>"
+  ] ;
+  fhir:Practitioner.name [
+     fhir:index 0 ;
+     fhir:HumanName.family [ fhir:value "Simpson" ] ;
+     fhir:HumanName.given [
+       fhir:value "Bart" ;
+       fhir:index 0
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/Practitioner/fe6acf5d-ed53-4758-8d38-10d915c984af.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="MSRhObsExample"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-rhstatus-observation"/>
+    <security>
+      <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+      <code value="tc_123"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation MSRhObsExample</b></p><a name="MSRhObsExample"> </a><a name="hcMSRhObsExample"> </a><a name="MSRhObsExample-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 10331-7}">Rh [Type] in Blood</span></p><p><b>subject</b>: <a href="Patient-MSPatientExample.html">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: <span title="Codes:{http://loinc.org LA6576-8}">Positive</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="10331-7"/>
+      <display value="Rh [Type] in Blood"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/MSPatientExample"/>
+  </subject>
+  <effectiveDateTime value="2022-05-01"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA6576-8"/>
+      <display value="Positive"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

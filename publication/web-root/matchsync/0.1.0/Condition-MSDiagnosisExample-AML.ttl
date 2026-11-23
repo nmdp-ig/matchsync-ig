@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/Condition/MSDiagnosisExample-AML> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MSDiagnosisExample-AML"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition MSDiagnosisExample-AML</b></p><a name=\"MSDiagnosisExample-AML\"> </a><a name=\"hcMSDiagnosisExample-AML\"> </a><a name=\"MSDiagnosisExample-AML-en-US\"> </a><p><b>Number of Remissions of Primary Diagnosis</b>: 0</p><p><b>code</b>: <span title=\"Codes:{http://terminology.nmdp.org/codesystem/disease AML}\">ACUTE MYELOGENOUS LEUKEMIA</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample5.html\">Joe Everyperson  Male, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>recordedDate</b>: 2021-11-01</p><h3>Stages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Summary</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.nmdp.org/codesystem/diseasestage AP}\">Accelerated Phase</span></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/number-of-remissions"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "0"^^xsd:integer ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/disease"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "AML" ] ;
+       fhir:display [ fhir:v "ACUTE MYELOGENOUS LEUKEMIA" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample5> ;
+     fhir:reference [ fhir:v "Patient/MSPatientExample5" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-11-01"^^xsd:date] ; # 
+  fhir:stage ( [
+     fhir:summary [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/diseasestage"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AP" ] ;
+         fhir:display [ fhir:v "Accelerated Phase" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

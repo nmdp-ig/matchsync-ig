@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/PractitionerRole/8fd0ef20-d146-4fff-b2a8-1d607adf9802> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "8fd0ef20-d146-4fff-b2a8-1d607adf9802"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/nmdp-practitioner-role>
+     ] ;
+     fhir:Meta.security [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ] ;
+       fhir:Coding.code [ fhir:value "tc_123" ]
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole 8fd0ef20-d146-4fff-b2a8-1d607adf9802</b></p><a name=\"8fd0ef20-d146-4fff-b2a8-1d607adf9802\"> </a><a name=\"hc8fd0ef20-d146-4fff-b2a8-1d607adf9802\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nmdp-practitioner-role.html\">NMDPPractitionerRole</a></p><p style=\"margin-bottom: 0px\">Security Label: </p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Lisa Simpson: Transplant Center Physician</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The practitioner who is able to provide the services in this role\">Practitioner:</td><td colspan=\"3\"><a href=\"Bundle-BundleExample-Practitioner.html#urn-uuid-26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa\">Lisa Simpson</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Roles which this practitioner is authorized to perform for the organization\">Role:</td><td colspan=\"3\"><span title=\"Codes:{http://terminology.nmdp.org/codesystem/practitionerrole tcphysician}\">Transplant Center Physician</span></td></tr></table></div>"
+  ] ;
+  fhir:PractitionerRole.practitioner [
+     fhir:Reference.reference [ fhir:value "urn:uuid:26b2e265-9a7a-4e5e-b99d-bb301e8a3bfa" ] ;
+     fhir:Reference.display [ fhir:value "Lisa Simpson" ]
+  ] ;
+  fhir:PractitionerRole.code [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/practitionerrole" ] ;
+       fhir:Coding.code [ fhir:value "tcphysician" ] ;
+       fhir:Coding.display [ fhir:value "Transplant Center Physician" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/PractitionerRole/8fd0ef20-d146-4fff-b2a8-1d607adf9802.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

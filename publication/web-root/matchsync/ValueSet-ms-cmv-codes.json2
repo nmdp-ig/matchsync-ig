@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ms-cmv-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ms-cmv-codes</b></p><a name=\"ms-cmv-codes\"> </a><a name=\"hcms-cmv-codes\"> </a><a name=\"ms-cmv-codes-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-nmdp-cmv-codes.html\">NMDP CMV Value Set</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-loinc-cmv-codes.html\">LOINC CMV group Value Set</a></li></ul></div>"
+  },
+  "url" : "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-cmv-codes",
+  "version" : "0.1.2",
+  "name" : "MSCMVVS",
+  "title" : "MatchSync ABO Group Value Set",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-01-16T21:22:08-06:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "MatchSync ABO group codes. Combines LOINC and NMDP codes",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-cmv-codes"]
+    },
+    {
+      "valueSet" : ["http://loinc.org/vs/LL3639-3"]
+    }]
+  }
+}

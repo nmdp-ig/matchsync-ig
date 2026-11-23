@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/Condition/MSDiagnosisExample-OND> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MSDiagnosisExample-OND"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/msdiagnosis>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition MSDiagnosisExample-OND</b></p><a name=\"MSDiagnosisExample-OND\"> </a><a name=\"hcMSDiagnosisExample-OND\"> </a><a name=\"MSDiagnosisExample-OND-en-US\"> </a><p><b>code</b>: <span title=\"Codes:{http://terminology.nmdp.org/codesystem/disease OND}\">OTHER NON-MALIGNANT DISEASE</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>recordedDate</b>: 2021-11-01</p></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/disease"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "OND" ] ;
+       fhir:display [ fhir:v "OTHER NON-MALIGNANT DISEASE" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample> ;
+     fhir:reference [ fhir:v "Patient/MSPatientExample" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-11-01"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

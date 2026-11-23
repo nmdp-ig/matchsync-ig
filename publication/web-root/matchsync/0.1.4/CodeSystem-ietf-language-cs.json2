@@ -1,0 +1,475 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ietf-language-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ietf-language-cs</b></p><a name=\"ietf-language-cs\"> </a><a name=\"hcietf-language-cs\"> </a><p>This case-sensitive code system <code>urn:ietf:bcp:47</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ar<a name=\"ietf-language-cs-ar\"> </a></td><td>Arabic</td></tr><tr><td style=\"white-space:nowrap\">ara<a name=\"ietf-language-cs-ara\"> </a></td><td>Arabic</td></tr><tr><td style=\"white-space:nowrap\">jrb<a name=\"ietf-language-cs-jrb\"> </a></td><td>Judeo-Arabic</td></tr><tr><td style=\"white-space:nowrap\">ar-AE<a name=\"ietf-language-cs-ar-AE\"> </a></td><td>Arabic (United Arab Emirates)</td></tr><tr><td style=\"white-space:nowrap\">ar-BH<a name=\"ietf-language-cs-ar-BH\"> </a></td><td>Arabic (Bahrain)</td></tr><tr><td style=\"white-space:nowrap\">ar-DZ,<a name=\"ietf-language-cs-ar-DZ.44\"> </a></td><td>Arabic (Algeria)</td></tr><tr><td style=\"white-space:nowrap\">ar-EG<a name=\"ietf-language-cs-ar-EG\"> </a></td><td>Arabic (EgyptIraq)</td></tr><tr><td style=\"white-space:nowrap\">ar-IQ<a name=\"ietf-language-cs-ar-IQ\"> </a></td><td>Arabic (Iraq)</td></tr><tr><td style=\"white-space:nowrap\">ar-JO<a name=\"ietf-language-cs-ar-JO\"> </a></td><td>Arabic (Jordan)</td></tr><tr><td style=\"white-space:nowrap\">ar-KW<a name=\"ietf-language-cs-ar-KW\"> </a></td><td>Arabic (Kuwait)</td></tr><tr><td style=\"white-space:nowrap\">ar-LB<a name=\"ietf-language-cs-ar-LB\"> </a></td><td>Arabic (Lebanon)</td></tr><tr><td style=\"white-space:nowrap\">ar-LY<a name=\"ietf-language-cs-ar-LY\"> </a></td><td>Arabic (Libya)</td></tr><tr><td style=\"white-space:nowrap\">ar-MA<a name=\"ietf-language-cs-ar-MA\"> </a></td><td>Arabic (Morocco)</td></tr><tr><td style=\"white-space:nowrap\">ar-OM<a name=\"ietf-language-cs-ar-OM\"> </a></td><td>Arabic (Oman)</td></tr><tr><td style=\"white-space:nowrap\">ar-QA<a name=\"ietf-language-cs-ar-QA\"> </a></td><td>Arabic (Qatar)</td></tr><tr><td style=\"white-space:nowrap\">ar-SA<a name=\"ietf-language-cs-ar-SA\"> </a></td><td>Arabic (Saudi Arabia)</td></tr><tr><td style=\"white-space:nowrap\">ar-SY<a name=\"ietf-language-cs-ar-SY\"> </a></td><td>Arabic (Syrian Arab Republic)</td></tr><tr><td style=\"white-space:nowrap\">ar-TN<a name=\"ietf-language-cs-ar-TN\"> </a></td><td>Arabic (Tunisia)</td></tr><tr><td style=\"white-space:nowrap\">ar-YE<a name=\"ietf-language-cs-ar-YE\"> </a></td><td>Arabic (Yemen)</td></tr><tr><td style=\"white-space:nowrap\">zh<a name=\"ietf-language-cs-zh\"> </a></td><td>Chinese</td></tr><tr><td style=\"white-space:nowrap\">zho<a name=\"ietf-language-cs-zho\"> </a></td><td>Chinese</td></tr><tr><td style=\"white-space:nowrap\">chi<a name=\"ietf-language-cs-chi\"> </a></td><td>Chinese</td></tr><tr><td style=\"white-space:nowrap\">cmn<a name=\"ietf-language-cs-cmn\"> </a></td><td>Mandarin Chinese</td></tr><tr><td style=\"white-space:nowrap\">zh-CN<a name=\"ietf-language-cs-zh-CN\"> </a></td><td>Chinese (China)</td></tr><tr><td style=\"white-space:nowrap\">zh-HK<a name=\"ietf-language-cs-zh-HK\"> </a></td><td>Chinese (Hong Kong)</td></tr><tr><td style=\"white-space:nowrap\">zh-MO<a name=\"ietf-language-cs-zh-MO\"> </a></td><td>Chinese (Macao)</td></tr><tr><td style=\"white-space:nowrap\">zh-SG<a name=\"ietf-language-cs-zh-SG\"> </a></td><td>Chinese (Singapore)</td></tr><tr><td style=\"white-space:nowrap\">zh-TW<a name=\"ietf-language-cs-zh-TW\"> </a></td><td>Chinese (Taiwan)</td></tr><tr><td style=\"white-space:nowrap\">en<a name=\"ietf-language-cs-en\"> </a></td><td>English</td></tr><tr><td style=\"white-space:nowrap\">eng<a name=\"ietf-language-cs-eng\"> </a></td><td>English</td></tr><tr><td style=\"white-space:nowrap\">enm<a name=\"ietf-language-cs-enm\"> </a></td><td>English</td></tr><tr><td style=\"white-space:nowrap\">ang<a name=\"ietf-language-cs-ang\"> </a></td><td>Old English</td></tr><tr><td style=\"white-space:nowrap\">cpe<a name=\"ietf-language-cs-cpe\"> </a></td><td>English based creoles and pidgins</td></tr><tr><td style=\"white-space:nowrap\">en-AU<a name=\"ietf-language-cs-en-AU\"> </a></td><td>English (Australia)</td></tr><tr><td style=\"white-space:nowrap\">en-BZ<a name=\"ietf-language-cs-en-BZ\"> </a></td><td>English (Belize)</td></tr><tr><td style=\"white-space:nowrap\">en-CA<a name=\"ietf-language-cs-en-CA\"> </a></td><td>English (Canada)</td></tr><tr><td style=\"white-space:nowrap\">en-CB<a name=\"ietf-language-cs-en-CB\"> </a></td><td>English (Caribbean)</td></tr><tr><td style=\"white-space:nowrap\">en-GB<a name=\"ietf-language-cs-en-GB\"> </a></td><td>English (Greate Britain)</td></tr><tr><td style=\"white-space:nowrap\">en-IE<a name=\"ietf-language-cs-en-IE\"> </a></td><td>English (Ireland)</td></tr><tr><td style=\"white-space:nowrap\">en-JM<a name=\"ietf-language-cs-en-JM\"> </a></td><td>English (Jamaica)</td></tr><tr><td style=\"white-space:nowrap\">en-NZ<a name=\"ietf-language-cs-en-NZ\"> </a></td><td>English (New Zeland)</td></tr><tr><td style=\"white-space:nowrap\">en-PH<a name=\"ietf-language-cs-en-PH\"> </a></td><td>English (Philippines)</td></tr><tr><td style=\"white-space:nowrap\">en-TT<a name=\"ietf-language-cs-en-TT\"> </a></td><td>English (Trinidad and Tobago)</td></tr><tr><td style=\"white-space:nowrap\">en-US<a name=\"ietf-language-cs-en-US\"> </a></td><td>English (United States)</td></tr><tr><td style=\"white-space:nowrap\">en-ZA<a name=\"ietf-language-cs-en-ZA\"> </a></td><td>English (South Africa)</td></tr><tr><td style=\"white-space:nowrap\">en-ZW<a name=\"ietf-language-cs-en-ZW\"> </a></td><td>English (Zimbabwe)</td></tr><tr><td style=\"white-space:nowrap\">fr<a name=\"ietf-language-cs-fr\"> </a></td><td>French</td></tr><tr><td style=\"white-space:nowrap\">fra<a name=\"ietf-language-cs-fra\"> </a></td><td>French</td></tr><tr><td style=\"white-space:nowrap\">cpf<a name=\"ietf-language-cs-cpf\"> </a></td><td>French-based creoles and pidgins</td></tr><tr><td style=\"white-space:nowrap\">fre<a name=\"ietf-language-cs-fre\"> </a></td><td>French</td></tr><tr><td style=\"white-space:nowrap\">frm<a name=\"ietf-language-cs-frm\"> </a></td><td>Middle French</td></tr><tr><td style=\"white-space:nowrap\">fro<a name=\"ietf-language-cs-fro\"> </a></td><td>Old French</td></tr><tr><td style=\"white-space:nowrap\">fr-BE<a name=\"ietf-language-cs-fr-BE\"> </a></td><td>French (Blegium)</td></tr><tr><td style=\"white-space:nowrap\">fr-CA<a name=\"ietf-language-cs-fr-CA\"> </a></td><td>French (Canada)</td></tr><tr><td style=\"white-space:nowrap\">fr-CH<a name=\"ietf-language-cs-fr-CH\"> </a></td><td>French (Switzerland)</td></tr><tr><td style=\"white-space:nowrap\">fr-FR<a name=\"ietf-language-cs-fr-FR\"> </a></td><td>French (France)</td></tr><tr><td style=\"white-space:nowrap\">fr-LU<a name=\"ietf-language-cs-fr-LU\"> </a></td><td>French (Luxembourg)</td></tr><tr><td style=\"white-space:nowrap\">fr-MC<a name=\"ietf-language-cs-fr-MC\"> </a></td><td>French (Monaco)</td></tr><tr><td style=\"white-space:nowrap\">de<a name=\"ietf-language-cs-de\"> </a></td><td>German</td></tr><tr><td style=\"white-space:nowrap\">deu<a name=\"ietf-language-cs-deu\"> </a></td><td>German</td></tr><tr><td style=\"white-space:nowrap\">ger<a name=\"ietf-language-cs-ger\"> </a></td><td>German</td></tr><tr><td style=\"white-space:nowrap\">gmh<a name=\"ietf-language-cs-gmh\"> </a></td><td>Middle High German</td></tr><tr><td style=\"white-space:nowrap\">goh<a name=\"ietf-language-cs-goh\"> </a></td><td>Old High German</td></tr><tr><td style=\"white-space:nowrap\">gem<a name=\"ietf-language-cs-gem\"> </a></td><td>Germanic languages</td></tr><tr><td style=\"white-space:nowrap\">gsw<a name=\"ietf-language-cs-gsw\"> </a></td><td>Swiss German, Alemannic, Alsatian</td></tr><tr><td style=\"white-space:nowrap\">nds<a name=\"ietf-language-cs-nds\"> </a></td><td>Low German, Low Saxon</td></tr><tr><td style=\"white-space:nowrap\">de-AT<a name=\"ietf-language-cs-de-AT\"> </a></td><td>German (Austria)</td></tr><tr><td style=\"white-space:nowrap\">de-CH<a name=\"ietf-language-cs-de-CH\"> </a></td><td>German (Switzerland)</td></tr><tr><td style=\"white-space:nowrap\">de-DE<a name=\"ietf-language-cs-de-DE\"> </a></td><td>German (Germany)</td></tr><tr><td style=\"white-space:nowrap\">de-LI<a name=\"ietf-language-cs-de-LI\"> </a></td><td>German (Liechtenstein)</td></tr><tr><td style=\"white-space:nowrap\">de-LU<a name=\"ietf-language-cs-de-LU\"> </a></td><td>German (Luxembourg)</td></tr><tr><td style=\"white-space:nowrap\">it<a name=\"ietf-language-cs-it\"> </a></td><td>Italian</td></tr><tr><td style=\"white-space:nowrap\">ita<a name=\"ietf-language-cs-ita\"> </a></td><td>Italian</td></tr><tr><td style=\"white-space:nowrap\">it-CH<a name=\"ietf-language-cs-it-CH\"> </a></td><td>Italian (Switzerland)</td></tr><tr><td style=\"white-space:nowrap\">it-IT<a name=\"ietf-language-cs-it-IT\"> </a></td><td>Italian (Italy)</td></tr><tr><td style=\"white-space:nowrap\">ja<a name=\"ietf-language-cs-ja\"> </a></td><td>Japanese</td></tr><tr><td style=\"white-space:nowrap\">jpn<a name=\"ietf-language-cs-jpn\"> </a></td><td>Japanese</td></tr><tr><td style=\"white-space:nowrap\">ja-JP<a name=\"ietf-language-cs-ja-JP\"> </a></td><td>Japanese (Japan)</td></tr><tr><td style=\"white-space:nowrap\">ko<a name=\"ietf-language-cs-ko\"> </a></td><td>Korean</td></tr><tr><td style=\"white-space:nowrap\">kor<a name=\"ietf-language-cs-kor\"> </a></td><td>Korean</td></tr><tr><td style=\"white-space:nowrap\">ko-KR<a name=\"ietf-language-cs-ko-KR\"> </a></td><td>Korean (Korea)</td></tr><tr><td style=\"white-space:nowrap\">pt<a name=\"ietf-language-cs-pt\"> </a></td><td>Portuguese</td></tr><tr><td style=\"white-space:nowrap\">por<a name=\"ietf-language-cs-por\"> </a></td><td>Portuguese</td></tr><tr><td style=\"white-space:nowrap\">pt-BR<a name=\"ietf-language-cs-pt-BR\"> </a></td><td>Portuguese (Brazil)</td></tr><tr><td style=\"white-space:nowrap\">pt-PT<a name=\"ietf-language-cs-pt-PT\"> </a></td><td>Portuguese (Portugal)</td></tr><tr><td style=\"white-space:nowrap\">ru<a name=\"ietf-language-cs-ru\"> </a></td><td>Russian</td></tr><tr><td style=\"white-space:nowrap\">rus<a name=\"ietf-language-cs-rus\"> </a></td><td>Russian</td></tr><tr><td style=\"white-space:nowrap\">ru-RU<a name=\"ietf-language-cs-ru-RU\"> </a></td><td>Russian (Russia)</td></tr><tr><td style=\"white-space:nowrap\">es<a name=\"ietf-language-cs-es\"> </a></td><td>Spanish</td></tr><tr><td style=\"white-space:nowrap\">spa<a name=\"ietf-language-cs-spa\"> </a></td><td>Spanish</td></tr><tr><td style=\"white-space:nowrap\">es-AR<a name=\"ietf-language-cs-es-AR\"> </a></td><td>Spanish (Argentina)</td></tr><tr><td style=\"white-space:nowrap\">es-BO<a name=\"ietf-language-cs-es-BO\"> </a></td><td>Spanish (Bolivia, Plurinational State of)</td></tr><tr><td style=\"white-space:nowrap\">es-CL<a name=\"ietf-language-cs-es-CL\"> </a></td><td>Spanish (Chile)</td></tr><tr><td style=\"white-space:nowrap\">es-CO<a name=\"ietf-language-cs-es-CO\"> </a></td><td>Spanish (Colombia)</td></tr><tr><td style=\"white-space:nowrap\">es-CR<a name=\"ietf-language-cs-es-CR\"> </a></td><td>Spanish (Costa Rica)</td></tr><tr><td style=\"white-space:nowrap\">es-DO<a name=\"ietf-language-cs-es-DO\"> </a></td><td>Spanish (Dominican Republic)</td></tr><tr><td style=\"white-space:nowrap\">es-EC<a name=\"ietf-language-cs-es-EC\"> </a></td><td>Spanish (Ecuador)</td></tr><tr><td style=\"white-space:nowrap\">es-ES<a name=\"ietf-language-cs-es-ES\"> </a></td><td>Spanish (Spain)</td></tr><tr><td style=\"white-space:nowrap\">es-GT<a name=\"ietf-language-cs-es-GT\"> </a></td><td>Spanish (Guatemala)</td></tr><tr><td style=\"white-space:nowrap\">es-HN<a name=\"ietf-language-cs-es-HN\"> </a></td><td>Spanish (Honduras)</td></tr><tr><td style=\"white-space:nowrap\">es-MX<a name=\"ietf-language-cs-es-MX\"> </a></td><td>Spanish (Mexico)</td></tr><tr><td style=\"white-space:nowrap\">es-NI<a name=\"ietf-language-cs-es-NI\"> </a></td><td>Spanish (Nicaragua)</td></tr><tr><td style=\"white-space:nowrap\">es-PA<a name=\"ietf-language-cs-es-PA\"> </a></td><td>Spanish (Panama)</td></tr><tr><td style=\"white-space:nowrap\">es-PE<a name=\"ietf-language-cs-es-PE\"> </a></td><td>Spanish (Peru)</td></tr><tr><td style=\"white-space:nowrap\">es-PR<a name=\"ietf-language-cs-es-PR\"> </a></td><td>Spanish (Puerto Rico)</td></tr><tr><td style=\"white-space:nowrap\">es-PY<a name=\"ietf-language-cs-es-PY\"> </a></td><td>Spanish (Paraguay)</td></tr><tr><td style=\"white-space:nowrap\">es-SV<a name=\"ietf-language-cs-es-SV\"> </a></td><td>Spanish (El Salvador)</td></tr><tr><td style=\"white-space:nowrap\">es-UY<a name=\"ietf-language-cs-es-UY\"> </a></td><td>Spainsh (Uruguay)</td></tr><tr><td style=\"white-space:nowrap\">es-VE<a name=\"ietf-language-cs-es-VE\"> </a></td><td>Spanish (Venezuela, Bolivarian Republic of)</td></tr><tr><td style=\"white-space:nowrap\">vi<a name=\"ietf-language-cs-vi\"> </a></td><td>Vietnamese</td></tr><tr><td style=\"white-space:nowrap\">vie<a name=\"ietf-language-cs-vie\"> </a></td><td>Vietnamese</td></tr><tr><td style=\"white-space:nowrap\">vi-VN<a name=\"ietf-language-cs-vi-VN\"> </a></td><td>Vietnamese (Vietnam)</td></tr></table></div>"
+  },
+  "url" : "urn:ietf:bcp:47",
+  "version" : "0.1.4",
+  "name" : "IETFLanguageCS",
+  "title" : "Tags for the Identification of Languages",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-04-23T20:36:10+00:00",
+  "publisher" : "NMDP",
+  "contact" : [{
+    "name" : "NMDP",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://bethematch.org"
+    }]
+  }],
+  "description" : "Code System for IETF languages",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 112,
+  "concept" : [{
+    "code" : "ar",
+    "display" : "Arabic"
+  },
+  {
+    "code" : "ara",
+    "display" : "Arabic"
+  },
+  {
+    "code" : "jrb",
+    "display" : "Judeo-Arabic"
+  },
+  {
+    "code" : "ar-AE",
+    "display" : "Arabic (United Arab Emirates)"
+  },
+  {
+    "code" : "ar-BH",
+    "display" : "Arabic (Bahrain)"
+  },
+  {
+    "code" : "ar-DZ,",
+    "display" : "Arabic (Algeria)"
+  },
+  {
+    "code" : "ar-EG",
+    "display" : "Arabic (EgyptIraq)"
+  },
+  {
+    "code" : "ar-IQ",
+    "display" : "Arabic (Iraq)"
+  },
+  {
+    "code" : "ar-JO",
+    "display" : "Arabic (Jordan)"
+  },
+  {
+    "code" : "ar-KW",
+    "display" : "Arabic (Kuwait)"
+  },
+  {
+    "code" : "ar-LB",
+    "display" : "Arabic (Lebanon)"
+  },
+  {
+    "code" : "ar-LY",
+    "display" : "Arabic (Libya)"
+  },
+  {
+    "code" : "ar-MA",
+    "display" : "Arabic (Morocco)"
+  },
+  {
+    "code" : "ar-OM",
+    "display" : "Arabic (Oman)"
+  },
+  {
+    "code" : "ar-QA",
+    "display" : "Arabic (Qatar)"
+  },
+  {
+    "code" : "ar-SA",
+    "display" : "Arabic (Saudi Arabia)"
+  },
+  {
+    "code" : "ar-SY",
+    "display" : "Arabic (Syrian Arab Republic)"
+  },
+  {
+    "code" : "ar-TN",
+    "display" : "Arabic (Tunisia)"
+  },
+  {
+    "code" : "ar-YE",
+    "display" : "Arabic (Yemen)"
+  },
+  {
+    "code" : "zh",
+    "display" : "Chinese"
+  },
+  {
+    "code" : "zho",
+    "display" : "Chinese"
+  },
+  {
+    "code" : "chi",
+    "display" : "Chinese"
+  },
+  {
+    "code" : "cmn",
+    "display" : "Mandarin Chinese"
+  },
+  {
+    "code" : "zh-CN",
+    "display" : "Chinese (China)"
+  },
+  {
+    "code" : "zh-HK",
+    "display" : "Chinese (Hong Kong)"
+  },
+  {
+    "code" : "zh-MO",
+    "display" : "Chinese (Macao)"
+  },
+  {
+    "code" : "zh-SG",
+    "display" : "Chinese (Singapore)"
+  },
+  {
+    "code" : "zh-TW",
+    "display" : "Chinese (Taiwan)"
+  },
+  {
+    "code" : "en",
+    "display" : "English"
+  },
+  {
+    "code" : "eng",
+    "display" : "English"
+  },
+  {
+    "code" : "enm",
+    "display" : "English"
+  },
+  {
+    "code" : "ang",
+    "display" : "Old English"
+  },
+  {
+    "code" : "cpe",
+    "display" : "English based creoles and pidgins"
+  },
+  {
+    "code" : "en-AU",
+    "display" : "English (Australia)"
+  },
+  {
+    "code" : "en-BZ",
+    "display" : "English (Belize)"
+  },
+  {
+    "code" : "en-CA",
+    "display" : "English (Canada)"
+  },
+  {
+    "code" : "en-CB",
+    "display" : "English (Caribbean)"
+  },
+  {
+    "code" : "en-GB",
+    "display" : "English (Greate Britain)"
+  },
+  {
+    "code" : "en-IE",
+    "display" : "English (Ireland)"
+  },
+  {
+    "code" : "en-JM",
+    "display" : "English (Jamaica)"
+  },
+  {
+    "code" : "en-NZ",
+    "display" : "English (New Zeland)"
+  },
+  {
+    "code" : "en-PH",
+    "display" : "English (Philippines)"
+  },
+  {
+    "code" : "en-TT",
+    "display" : "English (Trinidad and Tobago)"
+  },
+  {
+    "code" : "en-US",
+    "display" : "English (United States)"
+  },
+  {
+    "code" : "en-ZA",
+    "display" : "English (South Africa)"
+  },
+  {
+    "code" : "en-ZW",
+    "display" : "English (Zimbabwe)"
+  },
+  {
+    "code" : "fr",
+    "display" : "French"
+  },
+  {
+    "code" : "fra",
+    "display" : "French"
+  },
+  {
+    "code" : "cpf",
+    "display" : "French-based creoles and pidgins"
+  },
+  {
+    "code" : "fre",
+    "display" : "French"
+  },
+  {
+    "code" : "frm",
+    "display" : "Middle French"
+  },
+  {
+    "code" : "fro",
+    "display" : "Old French"
+  },
+  {
+    "code" : "fr-BE",
+    "display" : "French (Blegium)"
+  },
+  {
+    "code" : "fr-CA",
+    "display" : "French (Canada)"
+  },
+  {
+    "code" : "fr-CH",
+    "display" : "French (Switzerland)"
+  },
+  {
+    "code" : "fr-FR",
+    "display" : "French (France)"
+  },
+  {
+    "code" : "fr-LU",
+    "display" : "French (Luxembourg)"
+  },
+  {
+    "code" : "fr-MC",
+    "display" : "French (Monaco)"
+  },
+  {
+    "code" : "de",
+    "display" : "German"
+  },
+  {
+    "code" : "deu",
+    "display" : "German"
+  },
+  {
+    "code" : "ger",
+    "display" : "German"
+  },
+  {
+    "code" : "gmh",
+    "display" : "Middle High German"
+  },
+  {
+    "code" : "goh",
+    "display" : "Old High German"
+  },
+  {
+    "code" : "gem",
+    "display" : "Germanic languages"
+  },
+  {
+    "code" : "gsw",
+    "display" : "Swiss German, Alemannic, Alsatian"
+  },
+  {
+    "code" : "nds",
+    "display" : "Low German, Low Saxon"
+  },
+  {
+    "code" : "de-AT",
+    "display" : "German (Austria)"
+  },
+  {
+    "code" : "de-CH",
+    "display" : "German (Switzerland)"
+  },
+  {
+    "code" : "de-DE",
+    "display" : "German (Germany)"
+  },
+  {
+    "code" : "de-LI",
+    "display" : "German (Liechtenstein)"
+  },
+  {
+    "code" : "de-LU",
+    "display" : "German (Luxembourg)"
+  },
+  {
+    "code" : "it",
+    "display" : "Italian"
+  },
+  {
+    "code" : "ita",
+    "display" : "Italian"
+  },
+  {
+    "code" : "it-CH",
+    "display" : "Italian (Switzerland)"
+  },
+  {
+    "code" : "it-IT",
+    "display" : "Italian (Italy)"
+  },
+  {
+    "code" : "ja",
+    "display" : "Japanese"
+  },
+  {
+    "code" : "jpn",
+    "display" : "Japanese"
+  },
+  {
+    "code" : "ja-JP",
+    "display" : "Japanese (Japan)"
+  },
+  {
+    "code" : "ko",
+    "display" : "Korean"
+  },
+  {
+    "code" : "kor",
+    "display" : "Korean"
+  },
+  {
+    "code" : "ko-KR",
+    "display" : "Korean (Korea)"
+  },
+  {
+    "code" : "pt",
+    "display" : "Portuguese"
+  },
+  {
+    "code" : "por",
+    "display" : "Portuguese"
+  },
+  {
+    "code" : "pt-BR",
+    "display" : "Portuguese (Brazil)"
+  },
+  {
+    "code" : "pt-PT",
+    "display" : "Portuguese (Portugal)"
+  },
+  {
+    "code" : "ru",
+    "display" : "Russian"
+  },
+  {
+    "code" : "rus",
+    "display" : "Russian"
+  },
+  {
+    "code" : "ru-RU",
+    "display" : "Russian (Russia)"
+  },
+  {
+    "code" : "es",
+    "display" : "Spanish"
+  },
+  {
+    "code" : "spa",
+    "display" : "Spanish"
+  },
+  {
+    "code" : "es-AR",
+    "display" : "Spanish (Argentina)"
+  },
+  {
+    "code" : "es-BO",
+    "display" : "Spanish (Bolivia, Plurinational State of)"
+  },
+  {
+    "code" : "es-CL",
+    "display" : "Spanish (Chile)"
+  },
+  {
+    "code" : "es-CO",
+    "display" : "Spanish (Colombia)"
+  },
+  {
+    "code" : "es-CR",
+    "display" : "Spanish (Costa Rica)"
+  },
+  {
+    "code" : "es-DO",
+    "display" : "Spanish (Dominican Republic)"
+  },
+  {
+    "code" : "es-EC",
+    "display" : "Spanish (Ecuador)"
+  },
+  {
+    "code" : "es-ES",
+    "display" : "Spanish (Spain)"
+  },
+  {
+    "code" : "es-GT",
+    "display" : "Spanish (Guatemala)"
+  },
+  {
+    "code" : "es-HN",
+    "display" : "Spanish (Honduras)"
+  },
+  {
+    "code" : "es-MX",
+    "display" : "Spanish (Mexico)"
+  },
+  {
+    "code" : "es-NI",
+    "display" : "Spanish (Nicaragua)"
+  },
+  {
+    "code" : "es-PA",
+    "display" : "Spanish (Panama)"
+  },
+  {
+    "code" : "es-PE",
+    "display" : "Spanish (Peru)"
+  },
+  {
+    "code" : "es-PR",
+    "display" : "Spanish (Puerto Rico)"
+  },
+  {
+    "code" : "es-PY",
+    "display" : "Spanish (Paraguay)"
+  },
+  {
+    "code" : "es-SV",
+    "display" : "Spanish (El Salvador)"
+  },
+  {
+    "code" : "es-UY",
+    "display" : "Spainsh (Uruguay)"
+  },
+  {
+    "code" : "es-VE",
+    "display" : "Spanish (Venezuela, Bolivarian Republic of)"
+  },
+  {
+    "code" : "vi",
+    "display" : "Vietnamese"
+  },
+  {
+    "code" : "vie",
+    "display" : "Vietnamese"
+  },
+  {
+    "code" : "vi-VN",
+    "display" : "Vietnamese (Vietnam)"
+  }]
+}

@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Observation",
+  "id" : "MSPreferredProductExample",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-preferred-product-observation"],
+    "security" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplant-center",
+      "code" : "tc_123"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation MSPreferredProductExample</b></p><a name=\"MSPreferredProductExample\"> </a><a name=\"hcMSPreferredProductExample\"> </a><a name=\"MSPreferredProductExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:\">Preferred Product</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: <span title=\"Codes:{http://terminology.nmdp.org/codesystem/preferredproduct PBSC}\">HPC, Apheresis</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "text" : "Preferred Product"
+  },
+  "subject" : {
+    "reference" : "Patient/MSPatientExample"
+  },
+  "effectiveDateTime" : "2022-05-01",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/preferredproduct",
+      "code" : "PBSC",
+      "display" : "HPC, Apheresis"
+    }]
+  }
+}

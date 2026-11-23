@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HLA-DQA1-Example"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/matchsync/StructureDefinition/hla-dqa1"/>
+    <security>
+      <system value="http://terminology.nmdp.org/codesystem/transplant-center"/>
+      <code value="tc_123"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation HLA-DQA1-Example</b></p><a name="HLA-DQA1-Example"> </a><a name="hcHLA-DQA1-Example"> </a><a name="HLA-DQA1-Example-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 84413-4}">Genotype display name</span></p><p><b>subject</b>: <a href="Patient-MSPatientExample.html">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: <span title="Codes:{http://glstring.org hla#3.25.0#HLA-DQA1*01:01:01:01+HLA-DQA1*01:02:01:01}">hla#3.25.0#HLA-DQA1*01:01:01:01+HLA-DQA1*01:02:01:01</span></p><p><b>specimen</b>: <a href="Specimen-MSSpecimenExample.html">Specimen: identifier = http://terminology.nmdp.org/identifier/transplantcenter#000</a></p><h3>Components</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org 48018-6}">Gene studied [ID]</span></td><td><span title="Codes:{http://www.genenames.org/geneId HGNC:4942}">HLA-DQA1</span></td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="84413-4"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/MSPatientExample"/>
+  </subject>
+  <effectiveDateTime value="2022-05-01"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://glstring.org"/>
+      <code value="hla#3.25.0#HLA-DQA1*01:01:01:01+HLA-DQA1*01:02:01:01"/>
+    </coding>
+  </valueCodeableConcept>
+  <specimen>
+    <reference value="Specimen/MSSpecimenExample"/>
+  </specimen>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48018-6"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://www.genenames.org/geneId"/>
+        <code value="HGNC:4942"/>
+        <display value="HLA-DQA1"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

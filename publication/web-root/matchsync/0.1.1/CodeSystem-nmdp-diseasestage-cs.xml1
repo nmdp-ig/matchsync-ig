@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nmdp-diseasestage-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nmdp-diseasestage-cs</b></p><a name="nmdp-diseasestage-cs"> </a><a name="hcnmdp-diseasestage-cs"> </a><a name="nmdp-diseasestage-cs-en-US"> </a><p>This case-sensitive code system <code>http://terminology.nmdp.org/codesystem/diseasestage</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">AP<a name="nmdp-diseasestage-cs-AP"> </a></td><td>Accelerated Phase</td></tr><tr><td style="white-space:nowrap">BP<a name="nmdp-diseasestage-cs-BP"> </a></td><td>Blastic Phase</td></tr><tr><td style="white-space:nowrap">CP<a name="nmdp-diseasestage-cs-CP"> </a></td><td>Chronic Phase</td></tr><tr><td style="white-space:nowrap">CR<a name="nmdp-diseasestage-cs-CR"> </a></td><td>Complete Remission</td></tr><tr><td style="white-space:nowrap">IF<a name="nmdp-diseasestage-cs-IF"> </a></td><td>Induction Failure</td></tr><tr><td style="white-space:nowrap">IT<a name="nmdp-diseasestage-cs-IT"> </a></td><td>Induction Therapy</td></tr><tr><td style="white-space:nowrap">RE<a name="nmdp-diseasestage-cs-RE"> </a></td><td>Relapse</td></tr><tr><td style="white-space:nowrap">RM<a name="nmdp-diseasestage-cs-RM"> </a></td><td>Remission</td></tr></table></div>
+  </text>
+  <url value="http://terminology.nmdp.org/codesystem/diseasestage"/>
+  <version value="0.1.2"/>
+  <name value="NMDPDiseaseStageCS"/>
+  <title value="CodeSystem - Disease Stage - NMDP"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-04-15T15:35:56-05:00"/>
+  <publisher value="NMDP"/>
+  <contact>
+    <name value="NMDP"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://bethematch.org"/>
+    </telecom>
+  </contact>
+  <description value="Code System for NMDP disease stages"/>
+  <copyright value="National Marrow Donor Program"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="AP"/>
+    <display value="Accelerated Phase"/>
+  </concept>
+  <concept>
+    <code value="BP"/>
+    <display value="Blastic Phase"/>
+  </concept>
+  <concept>
+    <code value="CP"/>
+    <display value="Chronic Phase"/>
+  </concept>
+  <concept>
+    <code value="CR"/>
+    <display value="Complete Remission"/>
+  </concept>
+  <concept>
+    <code value="IF"/>
+    <display value="Induction Failure"/>
+  </concept>
+  <concept>
+    <code value="IT"/>
+    <display value="Induction Therapy"/>
+  </concept>
+  <concept>
+    <code value="RE"/>
+    <display value="Relapse"/>
+  </concept>
+  <concept>
+    <code value="RM"/>
+    <display value="Remission"/>
+  </concept>
+</CodeSystem>

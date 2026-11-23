@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/Observation/Example-MS-ABORH> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Example-MS-ABORH"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-aborhgroup-observation" ;
+       fhir:index 0 ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-aborhgroup-observation>
+     ] ;
+     fhir:Meta.security [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.nmdp.org/codesystem/transplant-center" ] ;
+       fhir:Coding.code [ fhir:value "tc_123" ]
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-MS-ABORH</b></p><a name=\"Example-MS-ABORH\"> </a><a name=\"hcExample-MS-ABORH\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ms-aborhgroup-observation.html\">Observation_MS_ABORH</a></p><p style=\"margin-bottom: 0px\">Security Label: </p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 882-1}\">ABO and Rh group [Type] in Blood</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA21321-7}\">O Pos</span></p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:882-1 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "882-1" ] ;
+       fhir:Coding.display [ fhir:value "ABO and Rh group [Type] in Blood" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/MSPatientExample" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2022-05-01"^^xsd:date] ;
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:LA21321-7 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "LA21321-7" ] ;
+       fhir:Coding.display [ fhir:value "O Pos" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/Observation/Example-MS-ABORH.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

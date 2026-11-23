@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/Observation/MSForm117Example> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MSForm117Example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-form117-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-form117-observation>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/transplant-center"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tc_123" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation MSForm117Example</b></p><a name=\"MSForm117Example\"> </a><a name=\"hcMSForm117Example\"> </a><a name=\"MSForm117Example-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://terminology.nmdp.org/codesystem/form117compliance FORM117COMPLIANCE}\">Form 117 Compliance</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: true</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.nmdp.org/codesystem/form117compliance"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FORM117COMPLIANCE" ] ;
+       fhir:display [ fhir:v "Form 117 Compliance" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.nmdp.org/ig/matchsync/Patient/MSPatientExample> ;
+     fhir:reference [ fhir:v "Patient/MSPatientExample" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-05-01"^^xsd:date] ; # 
+  fhir:value [ fhir:v "true"^^xsd:boolean] . # 
+
+# -------------------------------------------------------------------------------------
+

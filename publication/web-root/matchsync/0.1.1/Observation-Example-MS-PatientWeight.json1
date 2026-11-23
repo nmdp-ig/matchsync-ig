@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Observation",
+  "id" : "Example-MS-PatientWeight",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-weight-observation"],
+    "security" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplant-center",
+      "code" : "tc_123"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-MS-PatientWeight</b></p><a name=\"Example-MS-PatientWeight\"> </a><a name=\"hcExample-MS-PatientWeight\"> </a><a name=\"Example-MS-PatientWeight-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ms-weight-observation.html\">Observation_MS_PatientWeight</a></p><p style=\"margin-bottom: 0px\">Security Label: tc_123 (Details: transplant-center code tc_123)</p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}\">Body weight</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: 70 kilogram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "29463-7"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/MSPatientExample"
+  },
+  "effectiveDateTime" : "2022-05-01",
+  "valueQuantity" : {
+    "value" : 70,
+    "unit" : "kilogram",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "kg"
+  }
+}

@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-form117-codes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ms-form117-codes"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ms-form117-codes</b></p><a name=\"ms-form117-codes\"> </a><a name=\"hcms-form117-codes\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nmdp-form117-cs.html\"><code>http://terminology.nmdp.org/codesystem/form117compliance</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.4</span></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-form117-codes"] ;
+  fhir:ValueSet.version [ fhir:value "0.1.4"] ;
+  fhir:ValueSet.name [ fhir:value "NMDPForm117VS"] ;
+  fhir:ValueSet.title [ fhir:value "ValueSet - Form117 Compliance - NMDP"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-23T18:39:33+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "NMDP"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NMDP" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://bethematch.org" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NMDP Form 117 codes"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.nmdp.org/codesystem/form117compliance" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-form117-codes.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

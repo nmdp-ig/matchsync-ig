@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Observation",
+  "id" : "MSTransplantTimelineExample",
+  "meta" : {
+    "profile" : ["http://fhir.nmdp.org/ig/matchsync/StructureDefinition/ms-transplant-timeline-observation"],
+    "security" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplant-center",
+      "code" : "tc_123"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation MSTransplantTimelineExample</b></p><a name=\"MSTransplantTimelineExample\"> </a><a name=\"hcMSTransplantTimelineExample\"> </a><a name=\"MSTransplantTimelineExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:\">Transplant Timeline</span></p><p><b>subject</b>: <a href=\"Patient-MSPatientExample.html\">Jane Everyperson  Female, DoB: 1974-12-25 ( http://example.org/mrn#123)</a></p><p><b>effective</b>: 2022-05-01</p><p><b>value</b>: <span title=\"Codes:{http://terminology.nmdp.org/codesystem/transplanttimeline P}\">Pending, Case manager to follow up</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "text" : "Transplant Timeline"
+  },
+  "subject" : {
+    "reference" : "Patient/MSPatientExample"
+  },
+  "effectiveDateTime" : "2022-05-01",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://terminology.nmdp.org/codesystem/transplanttimeline",
+      "code" : "P",
+      "display" : "Pending, Case manager to follow up"
+    }]
+  }
+}

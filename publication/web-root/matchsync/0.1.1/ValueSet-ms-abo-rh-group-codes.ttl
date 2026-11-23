@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-rh-group-codes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ms-abo-rh-group-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ms-abo-rh-group-codes</b></p><a name=\"ms-abo-rh-group-codes\"> </a><a name=\"hcms-abo-rh-group-codes\"> </a><a name=\"ms-abo-rh-group-codes-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-nmdp-abo-rh-codes.html\">NMDP Blood Group Value Set</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-loinc-abo-rh-codes.html\">LOINC ABO RH group Value Set</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nmdp.org/ig/matchsync/ValueSet/ms-abo-rh-group-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.2"] ; # 
+  fhir:name [ fhir:v "MSABORHGroupVS"] ; # 
+  fhir:title [ fhir:v "MatchSync ABO RH Group Value Set"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-01-16T21:13:27-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NMDP"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NMDP" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://bethematch.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "MatchSync ABO RH group codes. Combines LOINC and NMDP codes"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-rh-codes"^^xsd:anyURI ;
+         fhir:link <http://fhir.nmdp.org/ig/matchsync/ValueSet/nmdp-abo-rh-codes>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://loinc.org/vs/LL2972-9"^^xsd:anyURI ;
+         fhir:link <http://loinc.org/vs/LL2972-9>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
